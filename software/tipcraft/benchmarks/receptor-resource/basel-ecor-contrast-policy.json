@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "scope": "Secondary source contrast feasibility only; does not replace Ando, admit training, or create prediction scores",
+  "inputs": [
+    {
+      "path": "data/raw/genophi-external-validation/BASEL_ECOR_interaction_matrix.csv",
+      "sha256": "bc0426a80b392281815ab24066e97cdc445399a62d67bb4f8e56511088947ba5"
+    },
+    {
+      "path": "data/processed/basel-validation-source-audit.json",
+      "sha256": "5d2ae86d0ae4ee35a58174009b0675773cc88e10b4232088800f01980bd8ded4"
+    }
+  ],
+  "roster": "Use every observed pair and all52 phages/25 hosts from previously authenticated roster, before outcome inspection. No favorable subset.",
+  "values": "Parse finite numeric0/1 exactly using Decimal; abort other states; preserve missing Cartesian pairs as unknown.",
+  "contrast": "For every unordered host pair, count distinct phages providing each opposite0/1 orientation. Report how many pairs have both orientations and total within-phage positive-negative comparisons.",
+  "interpretation": "Both orientations imply no single fixed host order can satisfy all comparisons. Their presence is not model evidence; absence alone in a multihost panel does not prove a globally consistent order.",
+  "endpoint": "Source spot clearance/no clearance, not automatically productive infection or plaque formation",
+  "split": "No training/evaluation split, source subset, biological score or host genome download in this audit. Genomic groups and target exclusions remain mandatory before any fit."
+}

@@ -1,0 +1,7524 @@
+{
+  "cartesian_pairs": 1300,
+  "endpoint": "Published spot-clearance/no-clearance records; missing pairs unknown",
+  "host_genomes_downloaded": false,
+  "host_pair_contrasts": [
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR12",
+        "ECOR13"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas03",
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas08",
+        "Bas09",
+        "Bas10",
+        "Bas12",
+        "Bas13",
+        "Bas15",
+        "Bas16",
+        "Bas17",
+        "Bas21",
+        "Bas22",
+        "Bas25",
+        "Bas27",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas47",
+        "Bas54",
+        "Bas56",
+        "Bas61",
+        "Bas63",
+        "Bas64",
+        "Bas65",
+        "Bas67",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas45",
+        "Bas57",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR12",
+        "ECOR14"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas31",
+        "Bas47",
+        "Bas63"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas45"
+      ],
+      "hosts": [
+        "ECOR12",
+        "ECOR15"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas34",
+        "Bas47",
+        "Bas54",
+        "Bas56",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR12",
+        "ECOR16"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas09",
+        "Bas10",
+        "Bas16",
+        "Bas19",
+        "Bas20",
+        "Bas21",
+        "Bas22",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas47",
+        "Bas54",
+        "Bas56"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas35",
+        "Bas36",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas45",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR12",
+        "ECOR17"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas45",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR12",
+        "ECOR18"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas47"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas43",
+        "Bas45",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR12",
+        "ECOR19"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas47"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas35",
+        "Bas36",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas45",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas57",
+        "Bas58",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR12",
+        "ECOR20"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas35",
+        "Bas36",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas45",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas57",
+        "Bas58",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR12",
+        "ECOR21"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas35",
+        "Bas36",
+        "Bas43",
+        "Bas45"
+      ],
+      "hosts": [
+        "ECOR12",
+        "ECOR22"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas54",
+        "Bas56",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas35",
+        "Bas36",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas45",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas57",
+        "Bas59",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR12",
+        "ECOR23"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas13",
+        "Bas67"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas45",
+        "Bas51",
+        "Bas52",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR12",
+        "ECOR24"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas06",
+        "Bas09",
+        "Bas25",
+        "Bas31"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas35",
+        "Bas36",
+        "Bas39",
+        "Bas43",
+        "Bas45",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR12",
+        "ECOR25"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas47"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas35",
+        "Bas36",
+        "Bas45"
+      ],
+      "hosts": [
+        "ECOR12",
+        "ECOR26"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas54",
+        "Bas56",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas35",
+        "Bas36",
+        "Bas45"
+      ],
+      "hosts": [
+        "ECOR12",
+        "ECOR27"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas54",
+        "Bas56",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas35",
+        "Bas36",
+        "Bas45",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR12",
+        "ECOR28"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas54",
+        "Bas56",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas35",
+        "Bas36",
+        "Bas45"
+      ],
+      "hosts": [
+        "ECOR12",
+        "ECOR29"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas54",
+        "Bas56",
+        "Bas61",
+        "Bas65",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas35",
+        "Bas36",
+        "Bas45"
+      ],
+      "hosts": [
+        "ECOR12",
+        "ECOR30"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas54",
+        "Bas56",
+        "Bas61",
+        "Bas65",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas35",
+        "Bas36",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas45",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR12",
+        "ECOR31"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas54",
+        "Bas56",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas45"
+      ],
+      "hosts": [
+        "ECOR12",
+        "ECOR32"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas47",
+        "Bas54",
+        "Bas56",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas45"
+      ],
+      "hosts": [
+        "ECOR12",
+        "ECOR33"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas47",
+        "Bas54",
+        "Bas56",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas39",
+        "Bas42",
+        "Bas45"
+      ],
+      "hosts": [
+        "ECOR12",
+        "ECOR34"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas29",
+        "Bas31",
+        "Bas47",
+        "Bas54",
+        "Bas56",
+        "Bas61",
+        "Bas67",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas45",
+        "Bas51",
+        "Bas52",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR12",
+        "ECOR35"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas06",
+        "Bas25"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas45",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR12",
+        "ECOR38"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas06",
+        "Bas19"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas03",
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas08",
+        "Bas10",
+        "Bas12",
+        "Bas13",
+        "Bas15",
+        "Bas16",
+        "Bas17",
+        "Bas21",
+        "Bas22",
+        "Bas25",
+        "Bas27",
+        "Bas28",
+        "Bas33",
+        "Bas34",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas45",
+        "Bas57",
+        "Bas61",
+        "Bas64",
+        "Bas65",
+        "Bas67",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR13",
+        "ECOR14"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas03",
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas08",
+        "Bas09",
+        "Bas10",
+        "Bas12",
+        "Bas13",
+        "Bas15",
+        "Bas16",
+        "Bas17",
+        "Bas21",
+        "Bas22",
+        "Bas25",
+        "Bas27",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas45",
+        "Bas63",
+        "Bas64",
+        "Bas65",
+        "Bas67"
+      ],
+      "hosts": [
+        "ECOR13",
+        "ECOR15"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas03",
+        "Bas08",
+        "Bas12",
+        "Bas15",
+        "Bas17",
+        "Bas25",
+        "Bas63",
+        "Bas65",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR13",
+        "ECOR16"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas20"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas03",
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas08",
+        "Bas09",
+        "Bas10",
+        "Bas12",
+        "Bas13",
+        "Bas15",
+        "Bas16",
+        "Bas17",
+        "Bas21",
+        "Bas22",
+        "Bas25",
+        "Bas27",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas45",
+        "Bas47",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas63",
+        "Bas64",
+        "Bas65",
+        "Bas67",
+        "Bas68",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR13",
+        "ECOR17"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas03",
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas08",
+        "Bas09",
+        "Bas10",
+        "Bas12",
+        "Bas13",
+        "Bas15",
+        "Bas16",
+        "Bas17",
+        "Bas21",
+        "Bas22",
+        "Bas25",
+        "Bas27",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas37",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas45",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas61",
+        "Bas63",
+        "Bas64",
+        "Bas65",
+        "Bas67",
+        "Bas68",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR13",
+        "ECOR18"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas03",
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas08",
+        "Bas09",
+        "Bas10",
+        "Bas12",
+        "Bas13",
+        "Bas15",
+        "Bas16",
+        "Bas17",
+        "Bas21",
+        "Bas22",
+        "Bas25",
+        "Bas27",
+        "Bas28",
+        "Bas29",
+        "Bas33",
+        "Bas34",
+        "Bas39",
+        "Bas41",
+        "Bas43",
+        "Bas45",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas61",
+        "Bas63",
+        "Bas64",
+        "Bas65",
+        "Bas67",
+        "Bas68",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR13",
+        "ECOR19"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas03",
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas08",
+        "Bas09",
+        "Bas10",
+        "Bas12",
+        "Bas13",
+        "Bas15",
+        "Bas16",
+        "Bas17",
+        "Bas21",
+        "Bas22",
+        "Bas25",
+        "Bas27",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas45",
+        "Bas47",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas61",
+        "Bas63",
+        "Bas64",
+        "Bas65",
+        "Bas67",
+        "Bas68",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR13",
+        "ECOR20"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas03",
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas08",
+        "Bas09",
+        "Bas10",
+        "Bas12",
+        "Bas13",
+        "Bas15",
+        "Bas16",
+        "Bas17",
+        "Bas21",
+        "Bas22",
+        "Bas25",
+        "Bas27",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas45",
+        "Bas47",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas61",
+        "Bas63",
+        "Bas64",
+        "Bas65",
+        "Bas67",
+        "Bas68",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR13",
+        "ECOR21"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas03",
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas08",
+        "Bas09",
+        "Bas10",
+        "Bas12",
+        "Bas13",
+        "Bas15",
+        "Bas16",
+        "Bas17",
+        "Bas21",
+        "Bas22",
+        "Bas25",
+        "Bas27",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas43",
+        "Bas45",
+        "Bas63",
+        "Bas64",
+        "Bas65",
+        "Bas67"
+      ],
+      "hosts": [
+        "ECOR13",
+        "ECOR22"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas03",
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas08",
+        "Bas09",
+        "Bas10",
+        "Bas12",
+        "Bas15",
+        "Bas16",
+        "Bas17",
+        "Bas21",
+        "Bas22",
+        "Bas25",
+        "Bas27",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas45",
+        "Bas47",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas57",
+        "Bas59",
+        "Bas61",
+        "Bas63",
+        "Bas64",
+        "Bas65",
+        "Bas68",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR13",
+        "ECOR23"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas03",
+        "Bas05",
+        "Bas07",
+        "Bas08",
+        "Bas10",
+        "Bas12",
+        "Bas13",
+        "Bas15",
+        "Bas16",
+        "Bas17",
+        "Bas21",
+        "Bas22",
+        "Bas27",
+        "Bas28",
+        "Bas29",
+        "Bas33",
+        "Bas34",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas45",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas63",
+        "Bas64",
+        "Bas65",
+        "Bas68",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR13",
+        "ECOR24"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas03",
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas08",
+        "Bas10",
+        "Bas12",
+        "Bas13",
+        "Bas15",
+        "Bas16",
+        "Bas17",
+        "Bas21",
+        "Bas22",
+        "Bas25",
+        "Bas27",
+        "Bas28",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas39",
+        "Bas43",
+        "Bas45",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas63",
+        "Bas64",
+        "Bas65",
+        "Bas67",
+        "Bas68",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR13",
+        "ECOR25"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas03",
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas08",
+        "Bas09",
+        "Bas12",
+        "Bas13",
+        "Bas15",
+        "Bas16",
+        "Bas17",
+        "Bas21",
+        "Bas22",
+        "Bas25",
+        "Bas27",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas45",
+        "Bas47",
+        "Bas63",
+        "Bas64",
+        "Bas65",
+        "Bas67"
+      ],
+      "hosts": [
+        "ECOR13",
+        "ECOR26"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas03",
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas08",
+        "Bas09",
+        "Bas12",
+        "Bas13",
+        "Bas15",
+        "Bas16",
+        "Bas17",
+        "Bas21",
+        "Bas22",
+        "Bas25",
+        "Bas27",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas45",
+        "Bas47",
+        "Bas63",
+        "Bas64",
+        "Bas65",
+        "Bas67"
+      ],
+      "hosts": [
+        "ECOR13",
+        "ECOR27"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas03",
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas08",
+        "Bas09",
+        "Bas12",
+        "Bas13",
+        "Bas15",
+        "Bas16",
+        "Bas17",
+        "Bas21",
+        "Bas22",
+        "Bas25",
+        "Bas27",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas45",
+        "Bas47",
+        "Bas63",
+        "Bas64",
+        "Bas65",
+        "Bas67",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR13",
+        "ECOR28"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas03",
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas08",
+        "Bas09",
+        "Bas10",
+        "Bas12",
+        "Bas13",
+        "Bas15",
+        "Bas16",
+        "Bas17",
+        "Bas21",
+        "Bas22",
+        "Bas25",
+        "Bas27",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas45",
+        "Bas47",
+        "Bas63",
+        "Bas64",
+        "Bas67"
+      ],
+      "hosts": [
+        "ECOR13",
+        "ECOR29"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas03",
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas08",
+        "Bas09",
+        "Bas10",
+        "Bas12",
+        "Bas13",
+        "Bas15",
+        "Bas16",
+        "Bas17",
+        "Bas21",
+        "Bas22",
+        "Bas25",
+        "Bas27",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas45",
+        "Bas47",
+        "Bas63",
+        "Bas64",
+        "Bas67"
+      ],
+      "hosts": [
+        "ECOR13",
+        "ECOR30"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas03",
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas08",
+        "Bas09",
+        "Bas10",
+        "Bas12",
+        "Bas13",
+        "Bas15",
+        "Bas16",
+        "Bas17",
+        "Bas21",
+        "Bas22",
+        "Bas25",
+        "Bas27",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas45",
+        "Bas47",
+        "Bas63",
+        "Bas64",
+        "Bas65",
+        "Bas67",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR13",
+        "ECOR31"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas03",
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas08",
+        "Bas09",
+        "Bas10",
+        "Bas12",
+        "Bas13",
+        "Bas15",
+        "Bas16",
+        "Bas17",
+        "Bas21",
+        "Bas22",
+        "Bas25",
+        "Bas27",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas45",
+        "Bas63",
+        "Bas64",
+        "Bas65",
+        "Bas67"
+      ],
+      "hosts": [
+        "ECOR13",
+        "ECOR32"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas19"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas03",
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas08",
+        "Bas09",
+        "Bas10",
+        "Bas12",
+        "Bas13",
+        "Bas15",
+        "Bas16",
+        "Bas17",
+        "Bas21",
+        "Bas22",
+        "Bas25",
+        "Bas27",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas45",
+        "Bas63",
+        "Bas64",
+        "Bas65",
+        "Bas67"
+      ],
+      "hosts": [
+        "ECOR13",
+        "ECOR33"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas19"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas03",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas08",
+        "Bas09",
+        "Bas10",
+        "Bas12",
+        "Bas13",
+        "Bas15",
+        "Bas16",
+        "Bas17",
+        "Bas21",
+        "Bas22",
+        "Bas25",
+        "Bas27",
+        "Bas28",
+        "Bas33",
+        "Bas34",
+        "Bas39",
+        "Bas42",
+        "Bas45",
+        "Bas63",
+        "Bas64",
+        "Bas65"
+      ],
+      "hosts": [
+        "ECOR13",
+        "ECOR34"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas03",
+        "Bas05",
+        "Bas07",
+        "Bas08",
+        "Bas09",
+        "Bas10",
+        "Bas12",
+        "Bas13",
+        "Bas15",
+        "Bas16",
+        "Bas17",
+        "Bas21",
+        "Bas22",
+        "Bas27",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas45",
+        "Bas47",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas63",
+        "Bas64",
+        "Bas65",
+        "Bas67",
+        "Bas68",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR13",
+        "ECOR35"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas03",
+        "Bas04",
+        "Bas05",
+        "Bas07",
+        "Bas08",
+        "Bas09",
+        "Bas10",
+        "Bas12",
+        "Bas13",
+        "Bas15",
+        "Bas16",
+        "Bas17",
+        "Bas21",
+        "Bas22",
+        "Bas27",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas45",
+        "Bas47",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas63",
+        "Bas64",
+        "Bas65",
+        "Bas67",
+        "Bas68",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR13",
+        "ECOR38"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas19"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas31",
+        "Bas63"
+      ],
+      "hosts": [
+        "ECOR14",
+        "ECOR15"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas34",
+        "Bas57",
+        "Bas61",
+        "Bas68"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas63"
+      ],
+      "hosts": [
+        "ECOR14",
+        "ECOR16"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas10",
+        "Bas16",
+        "Bas19",
+        "Bas20",
+        "Bas21",
+        "Bas22",
+        "Bas28",
+        "Bas33",
+        "Bas34",
+        "Bas39",
+        "Bas41",
+        "Bas43",
+        "Bas45",
+        "Bas57",
+        "Bas68"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas47",
+        "Bas63"
+      ],
+      "hosts": [
+        "ECOR14",
+        "ECOR17"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas31",
+        "Bas63"
+      ],
+      "hosts": [
+        "ECOR14",
+        "ECOR18"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas63"
+      ],
+      "hosts": [
+        "ECOR14",
+        "ECOR19"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas47",
+        "Bas63"
+      ],
+      "hosts": [
+        "ECOR14",
+        "ECOR20"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas47",
+        "Bas63"
+      ],
+      "hosts": [
+        "ECOR14",
+        "ECOR21"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas63"
+      ],
+      "hosts": [
+        "ECOR14",
+        "ECOR22"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas41",
+        "Bas42",
+        "Bas57",
+        "Bas61"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas47",
+        "Bas63"
+      ],
+      "hosts": [
+        "ECOR14",
+        "ECOR23"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas13",
+        "Bas67"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas29",
+        "Bas63"
+      ],
+      "hosts": [
+        "ECOR14",
+        "ECOR24"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas06",
+        "Bas25"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas60",
+        "Bas63"
+      ],
+      "hosts": [
+        "ECOR14",
+        "ECOR25"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas42"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas47",
+        "Bas63"
+      ],
+      "hosts": [
+        "ECOR14",
+        "ECOR26"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas57",
+        "Bas61"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas47",
+        "Bas63"
+      ],
+      "hosts": [
+        "ECOR14",
+        "ECOR27"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas57",
+        "Bas61"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas47",
+        "Bas63"
+      ],
+      "hosts": [
+        "ECOR14",
+        "ECOR28"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas57",
+        "Bas61"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas47",
+        "Bas63"
+      ],
+      "hosts": [
+        "ECOR14",
+        "ECOR29"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas57",
+        "Bas61",
+        "Bas65",
+        "Bas68"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas47",
+        "Bas63"
+      ],
+      "hosts": [
+        "ECOR14",
+        "ECOR30"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas57",
+        "Bas61",
+        "Bas65",
+        "Bas68"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas47",
+        "Bas63"
+      ],
+      "hosts": [
+        "ECOR14",
+        "ECOR31"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas57",
+        "Bas61"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas31",
+        "Bas63"
+      ],
+      "hosts": [
+        "ECOR14",
+        "ECOR32"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas57",
+        "Bas61",
+        "Bas68"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas31",
+        "Bas63"
+      ],
+      "hosts": [
+        "ECOR14",
+        "ECOR33"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas57",
+        "Bas61",
+        "Bas68"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas63"
+      ],
+      "hosts": [
+        "ECOR14",
+        "ECOR34"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas57",
+        "Bas61",
+        "Bas67"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas31",
+        "Bas47",
+        "Bas60",
+        "Bas63"
+      ],
+      "hosts": [
+        "ECOR14",
+        "ECOR35"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas06",
+        "Bas25"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas31",
+        "Bas47",
+        "Bas60",
+        "Bas63"
+      ],
+      "hosts": [
+        "ECOR14",
+        "ECOR38"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas06",
+        "Bas19"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR15",
+        "ECOR16"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas09",
+        "Bas10",
+        "Bas16",
+        "Bas20",
+        "Bas21",
+        "Bas22",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas39",
+        "Bas41",
+        "Bas43",
+        "Bas45"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas34",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas68",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR15",
+        "ECOR17"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas34",
+        "Bas37",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas61",
+        "Bas68",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR15",
+        "ECOR18"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas34",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas61",
+        "Bas68",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR15",
+        "ECOR19"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas34",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas61",
+        "Bas68",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR15",
+        "ECOR20"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas34",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas61",
+        "Bas68",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR15",
+        "ECOR21"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas34",
+        "Bas35",
+        "Bas36",
+        "Bas37"
+      ],
+      "hosts": [
+        "ECOR15",
+        "ECOR22"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas41",
+        "Bas42"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas34",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas57",
+        "Bas59",
+        "Bas61",
+        "Bas68",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR15",
+        "ECOR23"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas13",
+        "Bas67"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas34",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas68",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR15",
+        "ECOR24"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas06",
+        "Bas09",
+        "Bas25",
+        "Bas31"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas34",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas68",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR15",
+        "ECOR25"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas42"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas34",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR15",
+        "ECOR26"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas34",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR15",
+        "ECOR27"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas34",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR15",
+        "ECOR28"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas34",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR15",
+        "ECOR29"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas65"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas34",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR15",
+        "ECOR30"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas65"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas34",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR15",
+        "ECOR31"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas34"
+      ],
+      "hosts": [
+        "ECOR15",
+        "ECOR32"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas34"
+      ],
+      "hosts": [
+        "ECOR15",
+        "ECOR33"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas34"
+      ],
+      "hosts": [
+        "ECOR15",
+        "ECOR34"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas29",
+        "Bas31",
+        "Bas67"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas34",
+        "Bas47",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas68",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR15",
+        "ECOR35"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas06",
+        "Bas25"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas34",
+        "Bas47",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas68",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR15",
+        "ECOR38"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas06"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas09",
+        "Bas10",
+        "Bas16",
+        "Bas19",
+        "Bas20",
+        "Bas21",
+        "Bas22",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas35",
+        "Bas39",
+        "Bas41",
+        "Bas43",
+        "Bas45",
+        "Bas47",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR16",
+        "ECOR17"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas09",
+        "Bas10",
+        "Bas16",
+        "Bas19",
+        "Bas20",
+        "Bas21",
+        "Bas22",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas39",
+        "Bas41",
+        "Bas43",
+        "Bas45",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR16",
+        "ECOR18"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas09",
+        "Bas10",
+        "Bas16",
+        "Bas19",
+        "Bas20",
+        "Bas21",
+        "Bas22",
+        "Bas28",
+        "Bas29",
+        "Bas33",
+        "Bas34",
+        "Bas39",
+        "Bas41",
+        "Bas43",
+        "Bas45",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR16",
+        "ECOR19"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas09",
+        "Bas10",
+        "Bas16",
+        "Bas19",
+        "Bas20",
+        "Bas21",
+        "Bas22",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas35",
+        "Bas39",
+        "Bas41",
+        "Bas43",
+        "Bas45",
+        "Bas47",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR16",
+        "ECOR20"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas09",
+        "Bas10",
+        "Bas16",
+        "Bas19",
+        "Bas20",
+        "Bas21",
+        "Bas22",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas35",
+        "Bas39",
+        "Bas41",
+        "Bas43",
+        "Bas45",
+        "Bas47",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR16",
+        "ECOR21"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas09",
+        "Bas10",
+        "Bas16",
+        "Bas19",
+        "Bas20",
+        "Bas21",
+        "Bas22",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas35",
+        "Bas43",
+        "Bas45"
+      ],
+      "hosts": [
+        "ECOR16",
+        "ECOR22"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas09",
+        "Bas10",
+        "Bas16",
+        "Bas19",
+        "Bas20",
+        "Bas21",
+        "Bas22",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas35",
+        "Bas39",
+        "Bas41",
+        "Bas43",
+        "Bas45",
+        "Bas47",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas57",
+        "Bas59",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR16",
+        "ECOR23"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas05",
+        "Bas07",
+        "Bas10",
+        "Bas16",
+        "Bas19",
+        "Bas20",
+        "Bas21",
+        "Bas22",
+        "Bas28",
+        "Bas29",
+        "Bas33",
+        "Bas34",
+        "Bas39",
+        "Bas41",
+        "Bas43",
+        "Bas45",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR16",
+        "ECOR24"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas25"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas10",
+        "Bas16",
+        "Bas19",
+        "Bas20",
+        "Bas21",
+        "Bas22",
+        "Bas28",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas35",
+        "Bas39",
+        "Bas43",
+        "Bas45",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR16",
+        "ECOR25"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas09",
+        "Bas16",
+        "Bas19",
+        "Bas20",
+        "Bas21",
+        "Bas22",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas35",
+        "Bas45",
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR16",
+        "ECOR26"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas09",
+        "Bas16",
+        "Bas19",
+        "Bas20",
+        "Bas21",
+        "Bas22",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas35",
+        "Bas45",
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR16",
+        "ECOR27"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas09",
+        "Bas16",
+        "Bas19",
+        "Bas20",
+        "Bas21",
+        "Bas22",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas35",
+        "Bas45",
+        "Bas47",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR16",
+        "ECOR28"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas09",
+        "Bas10",
+        "Bas16",
+        "Bas19",
+        "Bas20",
+        "Bas21",
+        "Bas22",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas35",
+        "Bas45",
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR16",
+        "ECOR29"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas65",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas09",
+        "Bas10",
+        "Bas16",
+        "Bas19",
+        "Bas20",
+        "Bas21",
+        "Bas22",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas35",
+        "Bas45",
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR16",
+        "ECOR30"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas65",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas09",
+        "Bas10",
+        "Bas16",
+        "Bas19",
+        "Bas20",
+        "Bas21",
+        "Bas22",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas35",
+        "Bas39",
+        "Bas41",
+        "Bas43",
+        "Bas45",
+        "Bas47",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR16",
+        "ECOR31"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas09",
+        "Bas10",
+        "Bas16",
+        "Bas20",
+        "Bas21",
+        "Bas22",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas39",
+        "Bas41",
+        "Bas43",
+        "Bas45"
+      ],
+      "hosts": [
+        "ECOR16",
+        "ECOR32"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas04",
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas09",
+        "Bas10",
+        "Bas16",
+        "Bas20",
+        "Bas21",
+        "Bas22",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas39",
+        "Bas41",
+        "Bas43",
+        "Bas45"
+      ],
+      "hosts": [
+        "ECOR16",
+        "ECOR33"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas05",
+        "Bas06",
+        "Bas07",
+        "Bas09",
+        "Bas10",
+        "Bas16",
+        "Bas20",
+        "Bas21",
+        "Bas22",
+        "Bas28",
+        "Bas33",
+        "Bas34",
+        "Bas39",
+        "Bas45"
+      ],
+      "hosts": [
+        "ECOR16",
+        "ECOR34"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas05",
+        "Bas07",
+        "Bas09",
+        "Bas10",
+        "Bas16",
+        "Bas19",
+        "Bas20",
+        "Bas21",
+        "Bas22",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas39",
+        "Bas41",
+        "Bas45",
+        "Bas47",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR16",
+        "ECOR35"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas25"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas04",
+        "Bas05",
+        "Bas07",
+        "Bas09",
+        "Bas10",
+        "Bas16",
+        "Bas20",
+        "Bas21",
+        "Bas22",
+        "Bas28",
+        "Bas29",
+        "Bas31",
+        "Bas33",
+        "Bas34",
+        "Bas39",
+        "Bas41",
+        "Bas43",
+        "Bas45",
+        "Bas47",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR16",
+        "ECOR38"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR17",
+        "ECOR18"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas47"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR17",
+        "ECOR19"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas47"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR17",
+        "ECOR22"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas41",
+        "Bas42",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR17",
+        "ECOR23"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas13",
+        "Bas67"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR17",
+        "ECOR24"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas06",
+        "Bas09",
+        "Bas25",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas49"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR17",
+        "ECOR25"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas42",
+        "Bas47"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR17",
+        "ECOR26"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR17",
+        "ECOR27"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR17",
+        "ECOR28"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR17",
+        "ECOR29"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas65",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR17",
+        "ECOR30"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas65",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR17",
+        "ECOR31"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR17",
+        "ECOR32"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR17",
+        "ECOR33"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR17",
+        "ECOR34"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas29",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas67",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR17",
+        "ECOR35"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas06",
+        "Bas25",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas49"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR17",
+        "ECOR38"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas06",
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR18",
+        "ECOR20"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR18",
+        "ECOR21"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR18",
+        "ECOR22"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas41",
+        "Bas42",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR18",
+        "ECOR23"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas13",
+        "Bas67"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR18",
+        "ECOR24"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas06",
+        "Bas09",
+        "Bas25",
+        "Bas31",
+        "Bas37",
+        "Bas49"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR18",
+        "ECOR25"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas42"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR18",
+        "ECOR26"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR18",
+        "ECOR27"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR18",
+        "ECOR28"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR18",
+        "ECOR29"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas61",
+        "Bas65",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR18",
+        "ECOR30"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas61",
+        "Bas65",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR18",
+        "ECOR31"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR18",
+        "ECOR32"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas37",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas61",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR18",
+        "ECOR33"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas37",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas61",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR18",
+        "ECOR34"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas29",
+        "Bas31",
+        "Bas37",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas61",
+        "Bas67",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR18",
+        "ECOR35"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas06",
+        "Bas25",
+        "Bas37",
+        "Bas49"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR18",
+        "ECOR38"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas06",
+        "Bas19",
+        "Bas37"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR19",
+        "ECOR20"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR19",
+        "ECOR21"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR19",
+        "ECOR22"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas41",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR19",
+        "ECOR23"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas13",
+        "Bas67"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR19",
+        "ECOR24"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas06",
+        "Bas09",
+        "Bas25",
+        "Bas49"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas60"
+      ],
+      "hosts": [
+        "ECOR19",
+        "ECOR25"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas09",
+        "Bas29"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR19",
+        "ECOR26"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR19",
+        "ECOR27"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas43",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR19",
+        "ECOR28"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR19",
+        "ECOR29"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas61",
+        "Bas65",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR19",
+        "ECOR30"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas61",
+        "Bas65",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR19",
+        "ECOR31"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR19",
+        "ECOR32"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas61",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR19",
+        "ECOR33"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas61",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR19",
+        "ECOR34"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas29",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas61",
+        "Bas67",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas47",
+        "Bas60"
+      ],
+      "hosts": [
+        "ECOR19",
+        "ECOR35"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas06",
+        "Bas25",
+        "Bas49"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas47",
+        "Bas60"
+      ],
+      "hosts": [
+        "ECOR19",
+        "ECOR38"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas06",
+        "Bas19"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR20",
+        "ECOR22"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas41",
+        "Bas42",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR20",
+        "ECOR23"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas13",
+        "Bas67"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR20",
+        "ECOR24"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas06",
+        "Bas09",
+        "Bas25",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas49"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR20",
+        "ECOR25"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas42",
+        "Bas47"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR20",
+        "ECOR26"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR20",
+        "ECOR27"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR20",
+        "ECOR28"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR20",
+        "ECOR29"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas61",
+        "Bas65",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR20",
+        "ECOR30"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas61",
+        "Bas65",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR20",
+        "ECOR31"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR20",
+        "ECOR32"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas61",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR20",
+        "ECOR33"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas61",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR20",
+        "ECOR34"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas29",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas61",
+        "Bas67",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR20",
+        "ECOR35"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas06",
+        "Bas25",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas49"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR20",
+        "ECOR38"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas06",
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR21",
+        "ECOR22"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas41",
+        "Bas42",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR21",
+        "ECOR23"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas13",
+        "Bas67"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR21",
+        "ECOR24"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas06",
+        "Bas09",
+        "Bas25",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas49"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR21",
+        "ECOR25"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas42",
+        "Bas47"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR21",
+        "ECOR26"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR21",
+        "ECOR27"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR21",
+        "ECOR28"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR21",
+        "ECOR29"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas61",
+        "Bas65",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR21",
+        "ECOR30"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas61",
+        "Bas65",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR21",
+        "ECOR31"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR21",
+        "ECOR32"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas61",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR21",
+        "ECOR33"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas61",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR21",
+        "ECOR34"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas29",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas61",
+        "Bas67",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR21",
+        "ECOR35"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas06",
+        "Bas25",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas49"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR21",
+        "ECOR38"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas06",
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas41",
+        "Bas42",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas57",
+        "Bas59",
+        "Bas61",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR22",
+        "ECOR23"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas13",
+        "Bas67"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas41",
+        "Bas42",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR22",
+        "ECOR24"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas06",
+        "Bas09",
+        "Bas25",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas37"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR22",
+        "ECOR25"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas09",
+        "Bas29"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR22",
+        "ECOR26"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas10"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR22",
+        "ECOR27"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas43"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR22",
+        "ECOR28"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas10"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR22",
+        "ECOR29"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas65"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR22",
+        "ECOR30"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas65"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas41",
+        "Bas42"
+      ],
+      "hosts": [
+        "ECOR22",
+        "ECOR31"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas41",
+        "Bas42"
+      ],
+      "hosts": [
+        "ECOR22",
+        "ECOR32"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas41",
+        "Bas42"
+      ],
+      "hosts": [
+        "ECOR22",
+        "ECOR33"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas42"
+      ],
+      "hosts": [
+        "ECOR22",
+        "ECOR34"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas29",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas67"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas41",
+        "Bas42",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR22",
+        "ECOR35"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas06",
+        "Bas25",
+        "Bas35",
+        "Bas36",
+        "Bas37"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas41",
+        "Bas42",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR22",
+        "ECOR38"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas06",
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas13"
+      ],
+      "hosts": [
+        "ECOR23",
+        "ECOR24"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas06",
+        "Bas09",
+        "Bas25",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas49"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas13",
+        "Bas60",
+        "Bas67"
+      ],
+      "hosts": [
+        "ECOR23",
+        "ECOR25"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas42",
+        "Bas47"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas13",
+        "Bas67"
+      ],
+      "hosts": [
+        "ECOR23",
+        "ECOR26"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas57",
+        "Bas59",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas13",
+        "Bas67"
+      ],
+      "hosts": [
+        "ECOR23",
+        "ECOR27"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas57",
+        "Bas59",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas13",
+        "Bas67"
+      ],
+      "hosts": [
+        "ECOR23",
+        "ECOR28"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas57",
+        "Bas59",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas13",
+        "Bas67"
+      ],
+      "hosts": [
+        "ECOR23",
+        "ECOR29"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas57",
+        "Bas59",
+        "Bas61",
+        "Bas65",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas13",
+        "Bas67"
+      ],
+      "hosts": [
+        "ECOR23",
+        "ECOR30"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas57",
+        "Bas59",
+        "Bas61",
+        "Bas65",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas13",
+        "Bas67"
+      ],
+      "hosts": [
+        "ECOR23",
+        "ECOR31"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas57",
+        "Bas59",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas13",
+        "Bas67"
+      ],
+      "hosts": [
+        "ECOR23",
+        "ECOR32"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas57",
+        "Bas59",
+        "Bas61",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas13",
+        "Bas67"
+      ],
+      "hosts": [
+        "ECOR23",
+        "ECOR33"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas57",
+        "Bas59",
+        "Bas61",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas13"
+      ],
+      "hosts": [
+        "ECOR23",
+        "ECOR34"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas29",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas57",
+        "Bas59",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas13",
+        "Bas60",
+        "Bas67"
+      ],
+      "hosts": [
+        "ECOR23",
+        "ECOR35"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas06",
+        "Bas25",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas49"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas13",
+        "Bas60",
+        "Bas67"
+      ],
+      "hosts": [
+        "ECOR23",
+        "ECOR38"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas06",
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas06",
+        "Bas25",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas49"
+      ],
+      "hosts": [
+        "ECOR24",
+        "ECOR25"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas29",
+        "Bas42"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas06",
+        "Bas09",
+        "Bas25",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas37"
+      ],
+      "hosts": [
+        "ECOR24",
+        "ECOR26"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas06",
+        "Bas09",
+        "Bas25",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas37"
+      ],
+      "hosts": [
+        "ECOR24",
+        "ECOR27"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas06",
+        "Bas09",
+        "Bas25",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas37"
+      ],
+      "hosts": [
+        "ECOR24",
+        "ECOR28"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas06",
+        "Bas09",
+        "Bas25",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas37"
+      ],
+      "hosts": [
+        "ECOR24",
+        "ECOR29"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas65",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas06",
+        "Bas09",
+        "Bas25",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas37"
+      ],
+      "hosts": [
+        "ECOR24",
+        "ECOR30"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas65",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas06",
+        "Bas09",
+        "Bas25",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas37"
+      ],
+      "hosts": [
+        "ECOR24",
+        "ECOR31"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas06",
+        "Bas09",
+        "Bas25",
+        "Bas31"
+      ],
+      "hosts": [
+        "ECOR24",
+        "ECOR32"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas06",
+        "Bas09",
+        "Bas25",
+        "Bas31"
+      ],
+      "hosts": [
+        "ECOR24",
+        "ECOR33"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas06",
+        "Bas09",
+        "Bas25"
+      ],
+      "hosts": [
+        "ECOR24",
+        "ECOR34"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas29",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas31"
+      ],
+      "hosts": [
+        "ECOR24",
+        "ECOR35"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas31",
+        "Bas49"
+      ],
+      "hosts": [
+        "ECOR24",
+        "ECOR38"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas19"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR25",
+        "ECOR26"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR25",
+        "ECOR27"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas43",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR25",
+        "ECOR28"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR25",
+        "ECOR29"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas39",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas65",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR25",
+        "ECOR30"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas39",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas65",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas42",
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR25",
+        "ECOR31"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas42"
+      ],
+      "hosts": [
+        "ECOR25",
+        "ECOR32"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas42"
+      ],
+      "hosts": [
+        "ECOR25",
+        "ECOR33"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas68",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas42"
+      ],
+      "hosts": [
+        "ECOR25",
+        "ECOR34"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas67",
+        "Bas69"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas42",
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR25",
+        "ECOR35"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas06",
+        "Bas25",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas49"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas09",
+        "Bas29",
+        "Bas42",
+        "Bas47"
+      ],
+      "hosts": [
+        "ECOR25",
+        "ECOR38"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas06",
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas10"
+      ],
+      "hosts": [
+        "ECOR26",
+        "ECOR29"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas65"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas10"
+      ],
+      "hosts": [
+        "ECOR26",
+        "ECOR30"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas65"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42"
+      ],
+      "hosts": [
+        "ECOR26",
+        "ECOR31"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42"
+      ],
+      "hosts": [
+        "ECOR26",
+        "ECOR32"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42"
+      ],
+      "hosts": [
+        "ECOR26",
+        "ECOR33"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas42"
+      ],
+      "hosts": [
+        "ECOR26",
+        "ECOR34"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas29",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47",
+        "Bas67"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR26",
+        "ECOR35"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas06",
+        "Bas25",
+        "Bas35",
+        "Bas36",
+        "Bas37"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR26",
+        "ECOR38"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas06",
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas10"
+      ],
+      "hosts": [
+        "ECOR27",
+        "ECOR29"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas65"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas10"
+      ],
+      "hosts": [
+        "ECOR27",
+        "ECOR30"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas65"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43"
+      ],
+      "hosts": [
+        "ECOR27",
+        "ECOR31"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43"
+      ],
+      "hosts": [
+        "ECOR27",
+        "ECOR32"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43"
+      ],
+      "hosts": [
+        "ECOR27",
+        "ECOR33"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas42"
+      ],
+      "hosts": [
+        "ECOR27",
+        "ECOR34"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas29",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47",
+        "Bas67"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR27",
+        "ECOR35"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas06",
+        "Bas25",
+        "Bas35",
+        "Bas36",
+        "Bas37"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas43",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR27",
+        "ECOR38"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas06",
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas10"
+      ],
+      "hosts": [
+        "ECOR28",
+        "ECOR29"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas65",
+        "Bas68"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas10"
+      ],
+      "hosts": [
+        "ECOR28",
+        "ECOR30"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas65",
+        "Bas68"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42"
+      ],
+      "hosts": [
+        "ECOR28",
+        "ECOR31"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42"
+      ],
+      "hosts": [
+        "ECOR28",
+        "ECOR32"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47",
+        "Bas68"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42"
+      ],
+      "hosts": [
+        "ECOR28",
+        "ECOR33"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47",
+        "Bas68"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas42"
+      ],
+      "hosts": [
+        "ECOR28",
+        "ECOR34"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas29",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47",
+        "Bas67"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR28",
+        "ECOR35"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas06",
+        "Bas25",
+        "Bas35",
+        "Bas36",
+        "Bas37"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas10",
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR28",
+        "ECOR38"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas06",
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas65",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR29",
+        "ECOR31"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas65"
+      ],
+      "hosts": [
+        "ECOR29",
+        "ECOR32"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas65"
+      ],
+      "hosts": [
+        "ECOR29",
+        "ECOR33"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas39",
+        "Bas42",
+        "Bas65"
+      ],
+      "hosts": [
+        "ECOR29",
+        "ECOR34"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas29",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47",
+        "Bas67"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas65",
+        "Bas68",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR29",
+        "ECOR35"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas06",
+        "Bas25",
+        "Bas35",
+        "Bas36",
+        "Bas37"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas42",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas65",
+        "Bas68",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR29",
+        "ECOR38"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas06",
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas65",
+        "Bas68"
+      ],
+      "hosts": [
+        "ECOR30",
+        "ECOR31"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": []
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas65"
+      ],
+      "hosts": [
+        "ECOR30",
+        "ECOR32"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas65"
+      ],
+      "hosts": [
+        "ECOR30",
+        "ECOR33"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas39",
+        "Bas65"
+      ],
+      "hosts": [
+        "ECOR30",
+        "ECOR34"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas29",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47",
+        "Bas67"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas65",
+        "Bas68",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR30",
+        "ECOR35"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas06",
+        "Bas25",
+        "Bas35",
+        "Bas36",
+        "Bas37"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas39",
+        "Bas41",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas65",
+        "Bas68",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR30",
+        "ECOR38"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas06",
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR31",
+        "ECOR32"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47",
+        "Bas68"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR31",
+        "ECOR33"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47",
+        "Bas68"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR31",
+        "ECOR34"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas29",
+        "Bas31",
+        "Bas35",
+        "Bas36",
+        "Bas37",
+        "Bas47",
+        "Bas67"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR31",
+        "ECOR35"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas06",
+        "Bas25",
+        "Bas35",
+        "Bas36",
+        "Bas37"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR31",
+        "ECOR38"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas06",
+        "Bas19",
+        "Bas35",
+        "Bas36",
+        "Bas37"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR32",
+        "ECOR34"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas29",
+        "Bas31",
+        "Bas67"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas19",
+        "Bas47",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas68",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR32",
+        "ECOR35"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas06",
+        "Bas25"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas47",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas68",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR32",
+        "ECOR38"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas06"
+      ]
+    },
+    {
+      "first_host_positive_phages": [],
+      "hosts": [
+        "ECOR33",
+        "ECOR34"
+      ],
+      "opposing_directions": false,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas29",
+        "Bas31",
+        "Bas67"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas19",
+        "Bas47",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas68",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR33",
+        "ECOR35"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas04",
+        "Bas06",
+        "Bas25"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas47",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas68",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR33",
+        "ECOR38"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas06"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas29",
+        "Bas31",
+        "Bas47",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas67",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR34",
+        "ECOR35"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas06",
+        "Bas25"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas04",
+        "Bas29",
+        "Bas31",
+        "Bas47",
+        "Bas49",
+        "Bas51",
+        "Bas52",
+        "Bas54",
+        "Bas56",
+        "Bas57",
+        "Bas58",
+        "Bas59",
+        "Bas60",
+        "Bas61",
+        "Bas67",
+        "Bas69"
+      ],
+      "hosts": [
+        "ECOR34",
+        "ECOR38"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas06"
+      ]
+    },
+    {
+      "first_host_positive_phages": [
+        "Bas04",
+        "Bas49"
+      ],
+      "hosts": [
+        "ECOR35",
+        "ECOR38"
+      ],
+      "opposing_directions": true,
+      "second_host_positive_phages": [
+        "Bas19"
+      ]
+    }
+  ],
+  "host_pairs_with_any_direction": 291,
+  "host_pairs_with_opposing_directions": 167,
+  "hosts": [
+    "ECOR12",
+    "ECOR13",
+    "ECOR14",
+    "ECOR15",
+    "ECOR16",
+    "ECOR17",
+    "ECOR18",
+    "ECOR19",
+    "ECOR20",
+    "ECOR21",
+    "ECOR22",
+    "ECOR23",
+    "ECOR24",
+    "ECOR25",
+    "ECOR26",
+    "ECOR27",
+    "ECOR28",
+    "ECOR29",
+    "ECOR30",
+    "ECOR31",
+    "ECOR32",
+    "ECOR33",
+    "ECOR34",
+    "ECOR35",
+    "ECOR38"
+  ],
+  "informative_query_count": 49,
+  "inputs": [
+    {
+      "path": "data/raw/genophi-external-validation/BASEL_ECOR_interaction_matrix.csv",
+      "sha256": "bc0426a80b392281815ab24066e97cdc445399a62d67bb4f8e56511088947ba5"
+    },
+    {
+      "path": "data/processed/basel-validation-source-audit.json",
+      "sha256": "5d2ae86d0ae4ee35a58174009b0675773cc88e10b4232088800f01980bd8ded4"
+    }
+  ],
+  "interpretation": "Opposing host-pair directions establish contrast availability, not a learned score, genetic independence, host stock identity or a new blind holdout.",
+  "missing_pairs": 60,
+  "model_fitted_or_scored": false,
+  "new_original_benchmark_coverage": 0,
+  "observed_pairs": 1240,
+  "original_benchmark_replaced": false,
+  "outcome_selected_subset": false,
+  "outcomes_inspected_for_source_feasibility": true,
+  "phages": [
+    "Bas01",
+    "Bas02",
+    "Bas03",
+    "Bas04",
+    "Bas05",
+    "Bas06",
+    "Bas07",
+    "Bas08",
+    "Bas09",
+    "Bas10",
+    "Bas12",
+    "Bas13",
+    "Bas14",
+    "Bas15",
+    "Bas16",
+    "Bas17",
+    "Bas19",
+    "Bas20",
+    "Bas21",
+    "Bas22",
+    "Bas25",
+    "Bas27",
+    "Bas28",
+    "Bas29",
+    "Bas31",
+    "Bas33",
+    "Bas34",
+    "Bas35",
+    "Bas36",
+    "Bas37",
+    "Bas39",
+    "Bas41",
+    "Bas42",
+    "Bas43",
+    "Bas45",
+    "Bas47",
+    "Bas49",
+    "Bas51",
+    "Bas52",
+    "Bas54",
+    "Bas56",
+    "Bas57",
+    "Bas58",
+    "Bas59",
+    "Bas60",
+    "Bas61",
+    "Bas63",
+    "Bas64",
+    "Bas65",
+    "Bas67",
+    "Bas68",
+    "Bas69"
+  ],
+  "policy_sha256": "96f717f58c1abde3aec0045dfee87df88ad171e7aa8c88a895af97efe2b9fb83",
+  "queries": {
+    "Bas01": {
+      "missing": 0,
+      "negative": 25,
+      "observed": 25,
+      "positive": 0,
+      "positive_negative_comparisons": 0
+    },
+    "Bas02": {
+      "missing": 0,
+      "negative": 25,
+      "observed": 25,
+      "positive": 0,
+      "positive_negative_comparisons": 0
+    },
+    "Bas03": {
+      "missing": 0,
+      "negative": 24,
+      "observed": 25,
+      "positive": 1,
+      "positive_negative_comparisons": 24
+    },
+    "Bas04": {
+      "missing": 1,
+      "negative": 20,
+      "observed": 24,
+      "positive": 4,
+      "positive_negative_comparisons": 80
+    },
+    "Bas05": {
+      "missing": 0,
+      "negative": 23,
+      "observed": 25,
+      "positive": 2,
+      "positive_negative_comparisons": 46
+    },
+    "Bas06": {
+      "missing": 0,
+      "negative": 20,
+      "observed": 25,
+      "positive": 5,
+      "positive_negative_comparisons": 100
+    },
+    "Bas07": {
+      "missing": 0,
+      "negative": 23,
+      "observed": 25,
+      "positive": 2,
+      "positive_negative_comparisons": 46
+    },
+    "Bas08": {
+      "missing": 0,
+      "negative": 24,
+      "observed": 25,
+      "positive": 1,
+      "positive_negative_comparisons": 24
+    },
+    "Bas09": {
+      "missing": 0,
+      "negative": 20,
+      "observed": 25,
+      "positive": 5,
+      "positive_negative_comparisons": 100
+    },
+    "Bas10": {
+      "missing": 0,
+      "negative": 20,
+      "observed": 25,
+      "positive": 5,
+      "positive_negative_comparisons": 100
+    },
+    "Bas12": {
+      "missing": 0,
+      "negative": 24,
+      "observed": 25,
+      "positive": 1,
+      "positive_negative_comparisons": 24
+    },
+    "Bas13": {
+      "missing": 1,
+      "negative": 22,
+      "observed": 24,
+      "positive": 2,
+      "positive_negative_comparisons": 44
+    },
+    "Bas14": {
+      "missing": 1,
+      "negative": 24,
+      "observed": 24,
+      "positive": 0,
+      "positive_negative_comparisons": 0
+    },
+    "Bas15": {
+      "missing": 0,
+      "negative": 24,
+      "observed": 25,
+      "positive": 1,
+      "positive_negative_comparisons": 24
+    },
+    "Bas16": {
+      "missing": 0,
+      "negative": 23,
+      "observed": 25,
+      "positive": 2,
+      "positive_negative_comparisons": 46
+    },
+    "Bas17": {
+      "missing": 0,
+      "negative": 24,
+      "observed": 25,
+      "positive": 1,
+      "positive_negative_comparisons": 24
+    },
+    "Bas19": {
+      "missing": 2,
+      "negative": 19,
+      "observed": 23,
+      "positive": 4,
+      "positive_negative_comparisons": 76
+    },
+    "Bas20": {
+      "missing": 0,
+      "negative": 24,
+      "observed": 25,
+      "positive": 1,
+      "positive_negative_comparisons": 24
+    },
+    "Bas21": {
+      "missing": 0,
+      "negative": 23,
+      "observed": 25,
+      "positive": 2,
+      "positive_negative_comparisons": 46
+    },
+    "Bas22": {
+      "missing": 0,
+      "negative": 23,
+      "observed": 25,
+      "positive": 2,
+      "positive_negative_comparisons": 46
+    },
+    "Bas25": {
+      "missing": 1,
+      "negative": 21,
+      "observed": 24,
+      "positive": 3,
+      "positive_negative_comparisons": 63
+    },
+    "Bas27": {
+      "missing": 1,
+      "negative": 23,
+      "observed": 24,
+      "positive": 1,
+      "positive_negative_comparisons": 23
+    },
+    "Bas28": {
+      "missing": 0,
+      "negative": 23,
+      "observed": 25,
+      "positive": 2,
+      "positive_negative_comparisons": 46
+    },
+    "Bas29": {
+      "missing": 0,
+      "negative": 20,
+      "observed": 25,
+      "positive": 5,
+      "positive_negative_comparisons": 100
+    },
+    "Bas31": {
+      "missing": 1,
+      "negative": 19,
+      "observed": 24,
+      "positive": 5,
+      "positive_negative_comparisons": 95
+    },
+    "Bas33": {
+      "missing": 0,
+      "negative": 23,
+      "observed": 25,
+      "positive": 2,
+      "positive_negative_comparisons": 46
+    },
+    "Bas34": {
+      "missing": 0,
+      "negative": 22,
+      "observed": 25,
+      "positive": 3,
+      "positive_negative_comparisons": 66
+    },
+    "Bas35": {
+      "missing": 2,
+      "negative": 12,
+      "observed": 23,
+      "positive": 11,
+      "positive_negative_comparisons": 132
+    },
+    "Bas36": {
+      "missing": 3,
+      "negative": 12,
+      "observed": 22,
+      "positive": 10,
+      "positive_negative_comparisons": 120
+    },
+    "Bas37": {
+      "missing": 4,
+      "negative": 13,
+      "observed": 21,
+      "positive": 8,
+      "positive_negative_comparisons": 104
+    },
+    "Bas39": {
+      "missing": 1,
+      "negative": 16,
+      "observed": 24,
+      "positive": 8,
+      "positive_negative_comparisons": 128
+    },
+    "Bas41": {
+      "missing": 2,
+      "negative": 14,
+      "observed": 23,
+      "positive": 9,
+      "positive_negative_comparisons": 126
+    },
+    "Bas42": {
+      "missing": 3,
+      "negative": 14,
+      "observed": 22,
+      "positive": 8,
+      "positive_negative_comparisons": 112
+    },
+    "Bas43": {
+      "missing": 6,
+      "negative": 15,
+      "observed": 19,
+      "positive": 4,
+      "positive_negative_comparisons": 60
+    },
+    "Bas45": {
+      "missing": 0,
+      "negative": 22,
+      "observed": 25,
+      "positive": 3,
+      "positive_negative_comparisons": 66
+    },
+    "Bas47": {
+      "missing": 2,
+      "negative": 13,
+      "observed": 23,
+      "positive": 10,
+      "positive_negative_comparisons": 130
+    },
+    "Bas49": {
+      "missing": 1,
+      "negative": 8,
+      "observed": 24,
+      "positive": 16,
+      "positive_negative_comparisons": 128
+    },
+    "Bas51": {
+      "missing": 1,
+      "negative": 10,
+      "observed": 24,
+      "positive": 14,
+      "positive_negative_comparisons": 140
+    },
+    "Bas52": {
+      "missing": 1,
+      "negative": 10,
+      "observed": 24,
+      "positive": 14,
+      "positive_negative_comparisons": 140
+    },
+    "Bas54": {
+      "missing": 2,
+      "negative": 10,
+      "observed": 23,
+      "positive": 13,
+      "positive_negative_comparisons": 130
+    },
+    "Bas56": {
+      "missing": 2,
+      "negative": 10,
+      "observed": 23,
+      "positive": 13,
+      "positive_negative_comparisons": 130
+    },
+    "Bas57": {
+      "missing": 0,
+      "negative": 11,
+      "observed": 25,
+      "positive": 14,
+      "positive_negative_comparisons": 154
+    },
+    "Bas58": {
+      "missing": 2,
+      "negative": 9,
+      "observed": 23,
+      "positive": 14,
+      "positive_negative_comparisons": 126
+    },
+    "Bas59": {
+      "missing": 3,
+      "negative": 8,
+      "observed": 22,
+      "positive": 14,
+      "positive_negative_comparisons": 112
+    },
+    "Bas60": {
+      "missing": 6,
+      "negative": 3,
+      "observed": 19,
+      "positive": 16,
+      "positive_negative_comparisons": 48
+    },
+    "Bas61": {
+      "missing": 3,
+      "negative": 10,
+      "observed": 22,
+      "positive": 12,
+      "positive_negative_comparisons": 120
+    },
+    "Bas63": {
+      "missing": 0,
+      "negative": 23,
+      "observed": 25,
+      "positive": 2,
+      "positive_negative_comparisons": 46
+    },
+    "Bas64": {
+      "missing": 1,
+      "negative": 23,
+      "observed": 24,
+      "positive": 1,
+      "positive_negative_comparisons": 23
+    },
+    "Bas65": {
+      "missing": 0,
+      "negative": 22,
+      "observed": 25,
+      "positive": 3,
+      "positive_negative_comparisons": 66
+    },
+    "Bas67": {
+      "missing": 2,
+      "negative": 20,
+      "observed": 23,
+      "positive": 3,
+      "positive_negative_comparisons": 60
+    },
+    "Bas68": {
+      "missing": 4,
+      "negative": 13,
+      "observed": 21,
+      "positive": 8,
+      "positive_negative_comparisons": 104
+    },
+    "Bas69": {
+      "missing": 1,
+      "negative": 12,
+      "observed": 24,
+      "positive": 12,
+      "positive_negative_comparisons": 144
+    }
+  },
+  "raw_value_counts": {
+    "0": 938,
+    "1": 302
+  },
+  "schema_version": 1,
+  "script_sha256": "b5117e5a2f4bbe6521bfef09cc5c1711169488de9ce9889ed8d679500066ae7e",
+  "status": "secondary_source_contrast_audit_not_prediction",
+  "target_exclusions_or_genomic_groups_applied": false,
+  "total_positive_negative_comparisons": 3962
+}
