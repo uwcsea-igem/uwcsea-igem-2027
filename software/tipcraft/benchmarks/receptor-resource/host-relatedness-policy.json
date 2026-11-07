@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "purpose": "Reference-host relatedness triage and evaluation-regime disclosure; not phenotype prediction or stock identity",
+  "timing": "Frozen beforefirstskanicomparison of these five references",
+  "files": [
+    {
+      "id": "author:BL21",
+      "role": "author_browser_reference",
+      "path": "data/raw/receptor-resource/host-payloads-v1/BL21/genome.fna",
+      "file_sha256": "520ffeade0c29f46765b9275d7473a63eee767388d111298295115bf1472e756",
+      "sequence_sha256": "c2cf71da4e7dae3b54cda5a621bc1142724a3cd526763cfddc9f627416af78d9"
+    },
+    {
+      "id": "author:Keio",
+      "role": "author_browser_reference",
+      "path": "data/raw/receptor-resource/host-payloads-v1/Keio/genome.fna",
+      "file_sha256": "a82899afe45debe75567d55dd7b0a7c6d77e5aae79fe6d45ba6f71bb87c91bb0",
+      "sequence_sha256": "b1d61ce0fac63311a301966a65d052c8061b6747afc537f879192027f14308f1"
+    },
+    {
+      "id": "original:BL21",
+      "role": "original_target_reference",
+      "path": "data/raw/wish/hosts/BL21.fna",
+      "file_sha256": "de11e02809f1653314ec4ae106c66c7efe738ef5060f5a9e45a0abe40e8c1340",
+      "sequence_sha256": "669a5120ac4305418137e69b37e85d8c5c099908b4f49f212d78effa6455fff9"
+    },
+    {
+      "id": "original:BW25113",
+      "role": "original_target_reference",
+      "path": "data/raw/wish/hosts/BW25113.fna",
+      "file_sha256": "156fe97d5450a12d5f52e17946d6cbbee9bc8b7b79c46f68aa0d4524ff1d8f6a",
+      "sequence_sha256": "3761072f8884add5e9facdafc583de5d81a4cf5dbc7e51023ba966f3cf4887ce"
+    },
+    {
+      "id": "original:MG1655",
+      "role": "original_target_reference",
+      "path": "data/raw/wish/hosts/MG1655.fna",
+      "file_sha256": "c41a4207c8916ba6138460d129ce5604cb307d40b7d56207878a9e731a418074",
+      "sequence_sha256": "e999dceccb76562d40e49a10d9e6d4cf1c05d184f4f80b92bb32d4a2420c11d0"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data/processed/receptor-host-payload-audit.json",
+      "sha256": "c115296621c8514d5d8e3b200695709cebcc7c856761a19791968b436c65c81d"
+    },
+    {
+      "path": "software/tipcraft/benchmarks/retro-t7-t3/wish-inputs.json",
+      "sha256": "939af977b8c00763b957ad9640e58c68387a306f8bde69068cf4a78baac28528"
+    },
+    {
+      "path": "software/tipcraft/benchmarks/retro-t7-t3/genophi-overlap-policy.json",
+      "sha256": "2d9fd98d19dc3b75f8f016a2ca87965d86ff305a8921e6b075d0a878df1da47e"
+    },
+    {
+      "path": "scripts/audit-genophi-host-overlap.py",
+      "sha256": "99f1fed2298092d9f2dfe783711899b613bc759ae8166c572dd873fb2d7ca39a"
+    }
+  ],
+  "executable": {
+    "path": "data/raw/tools/skani-0.4.0/bin/skani",
+    "sha256": "1f1d08abe20d592522faf3f2454634e815269f61e37bb0adda4608599e6a4efb",
+    "version": "skani 0.4.0"
+  },
+  "parameters": {
+    "compression": 125,
+    "marker_compression": 1000,
+    "screen_percent": 80,
+    "minimum_reported_af_percent": 15,
+    "threads": 1
+  },
+  "near_reference_rule": {
+    "ani_percent": 99.5,
+    "minimum_af_in_each_genome_percent": 90.0,
+    "ani_boundary_buffer_percent": 0.05,
+    "af_boundary_buffer_percent": 0.5,
+    "named_target_identifiers": [
+      "BL21",
+      "BW25113",
+      "MG1655"
+    ],
+    "unresolved_or_boundary_pairs": "exclude pending base-level alignment review; never silently retain a missing comparison"
+  },
+  "expected_directed_pairs_including_self": 25,
+  "self_control": "Each identical-input pair mustmeettheexisting99.5%ANI/90%reciprocalAFnear-referencerule; do not forcealignedfraction100",
+  "unreported_comparisons": "UnresolvedHOLD; neverimputezero",
+  "edge_rule": "Completefive-referencegraph: edgeif either directedcomparison isnear orbuffer-boundary underunchangedpriorrule",
+  "training_or_scoring_authorized": false,
+  "experimental_stock_correspondence_inferred": false
+}

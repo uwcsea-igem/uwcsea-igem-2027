@@ -1,0 +1,307 @@
+{
+  "schema_version": 1,
+  "policy_sha256": "df26e6fb3c0369bc6fc87dd433a996dd58de5b515435c0b4d2a424716fb56a87",
+  "script_sha256": "ceccc5b8e20ec48def3f2b78a243525cb1840315bfd41d6a07c2a61ecdfdc514",
+  "files": [
+    {
+      "id": "author:BL21",
+      "role": "author_browser_reference",
+      "path": "data/raw/receptor-resource/host-payloads-v1/BL21/genome.fna",
+      "file_sha256": "520ffeade0c29f46765b9275d7473a63eee767388d111298295115bf1472e756",
+      "sequence_sha256": "c2cf71da4e7dae3b54cda5a621bc1142724a3cd526763cfddc9f627416af78d9"
+    },
+    {
+      "id": "author:Keio",
+      "role": "author_browser_reference",
+      "path": "data/raw/receptor-resource/host-payloads-v1/Keio/genome.fna",
+      "file_sha256": "a82899afe45debe75567d55dd7b0a7c6d77e5aae79fe6d45ba6f71bb87c91bb0",
+      "sequence_sha256": "b1d61ce0fac63311a301966a65d052c8061b6747afc537f879192027f14308f1"
+    },
+    {
+      "id": "original:BL21",
+      "role": "original_target_reference",
+      "path": "data/raw/wish/hosts/BL21.fna",
+      "file_sha256": "de11e02809f1653314ec4ae106c66c7efe738ef5060f5a9e45a0abe40e8c1340",
+      "sequence_sha256": "669a5120ac4305418137e69b37e85d8c5c099908b4f49f212d78effa6455fff9"
+    },
+    {
+      "id": "original:BW25113",
+      "role": "original_target_reference",
+      "path": "data/raw/wish/hosts/BW25113.fna",
+      "file_sha256": "156fe97d5450a12d5f52e17946d6cbbee9bc8b7b79c46f68aa0d4524ff1d8f6a",
+      "sequence_sha256": "3761072f8884add5e9facdafc583de5d81a4cf5dbc7e51023ba966f3cf4887ce"
+    },
+    {
+      "id": "original:MG1655",
+      "role": "original_target_reference",
+      "path": "data/raw/wish/hosts/MG1655.fna",
+      "file_sha256": "c41a4207c8916ba6138460d129ce5604cb307d40b7d56207878a9e731a418074",
+      "sequence_sha256": "e999dceccb76562d40e49a10d9e6d4cf1c05d184f4f80b92bb32d4a2420c11d0"
+    }
+  ],
+  "command": [
+    "data/raw/tools/skani-0.4.0/bin/skani",
+    "dist",
+    "--rl",
+    "data/raw/receptor-resource/host-relatedness-v2/files.txt",
+    "--ql",
+    "data/raw/receptor-resource/host-relatedness-v2/files.txt",
+    "-c",
+    "125",
+    "-m",
+    "1000",
+    "-s",
+    "80",
+    "--min-af",
+    "15",
+    "-t",
+    "1",
+    "-o",
+    "data/raw/receptor-resource/host-relatedness-v2/skani.tsv"
+  ],
+  "reader_sha256": "9a6751417dbf02f2e00070e6d25f9285ec0d1a2bddbda297a31a1c65aa09aefd",
+  "directed_pair_count": 25,
+  "missing_directed_pairs": [],
+  "failed_self_controls": [],
+  "comparisons": [
+    {
+      "reference": "author:BL21",
+      "query": "author:BL21",
+      "ani_percent": 100.0,
+      "alignment_fraction_reference_percent": 100.0,
+      "alignment_fraction_query_percent": 100.0,
+      "status": "near_target_exclude"
+    },
+    {
+      "reference": "author:BL21",
+      "query": "author:Keio",
+      "ani_percent": 98.97,
+      "alignment_fraction_reference_percent": 93.09,
+      "alignment_fraction_query_percent": 91.47,
+      "status": "outside_declared_near_target_rule"
+    },
+    {
+      "reference": "author:BL21",
+      "query": "original:BL21",
+      "ani_percent": 100.0,
+      "alignment_fraction_reference_percent": 99.17,
+      "alignment_fraction_query_percent": 99.85,
+      "status": "near_target_exclude"
+    },
+    {
+      "reference": "author:BL21",
+      "query": "original:BW25113",
+      "ani_percent": 98.97,
+      "alignment_fraction_reference_percent": 92.89,
+      "alignment_fraction_query_percent": 91.43,
+      "status": "outside_declared_near_target_rule"
+    },
+    {
+      "reference": "author:BL21",
+      "query": "original:MG1655",
+      "ani_percent": 98.97,
+      "alignment_fraction_reference_percent": 93.11,
+      "alignment_fraction_query_percent": 91.45,
+      "status": "outside_declared_near_target_rule"
+    },
+    {
+      "reference": "author:Keio",
+      "query": "author:BL21",
+      "ani_percent": 98.97,
+      "alignment_fraction_reference_percent": 91.47,
+      "alignment_fraction_query_percent": 93.09,
+      "status": "outside_declared_near_target_rule"
+    },
+    {
+      "reference": "author:Keio",
+      "query": "author:Keio",
+      "ani_percent": 100.0,
+      "alignment_fraction_reference_percent": 99.97,
+      "alignment_fraction_query_percent": 99.97,
+      "status": "near_target_exclude"
+    },
+    {
+      "reference": "author:Keio",
+      "query": "original:BL21",
+      "ani_percent": 98.97,
+      "alignment_fraction_reference_percent": 91.33,
+      "alignment_fraction_query_percent": 93.58,
+      "status": "outside_declared_near_target_rule"
+    },
+    {
+      "reference": "author:Keio",
+      "query": "original:BW25113",
+      "ani_percent": 100.0,
+      "alignment_fraction_reference_percent": 99.88,
+      "alignment_fraction_query_percent": 100.0,
+      "status": "near_target_exclude"
+    },
+    {
+      "reference": "author:Keio",
+      "query": "original:MG1655",
+      "ani_percent": 100.0,
+      "alignment_fraction_reference_percent": 100.0,
+      "alignment_fraction_query_percent": 100.0,
+      "status": "near_target_exclude"
+    },
+    {
+      "reference": "original:BL21",
+      "query": "author:BL21",
+      "ani_percent": 100.0,
+      "alignment_fraction_reference_percent": 99.85,
+      "alignment_fraction_query_percent": 99.17,
+      "status": "near_target_exclude"
+    },
+    {
+      "reference": "original:BL21",
+      "query": "author:Keio",
+      "ani_percent": 98.97,
+      "alignment_fraction_reference_percent": 93.58,
+      "alignment_fraction_query_percent": 91.33,
+      "status": "outside_declared_near_target_rule"
+    },
+    {
+      "reference": "original:BL21",
+      "query": "original:BL21",
+      "ani_percent": 100.0,
+      "alignment_fraction_reference_percent": 100.0,
+      "alignment_fraction_query_percent": 100.0,
+      "status": "near_target_exclude"
+    },
+    {
+      "reference": "original:BL21",
+      "query": "original:BW25113",
+      "ani_percent": 98.97,
+      "alignment_fraction_reference_percent": 93.38,
+      "alignment_fraction_query_percent": 91.3,
+      "status": "outside_declared_near_target_rule"
+    },
+    {
+      "reference": "original:BL21",
+      "query": "original:MG1655",
+      "ani_percent": 98.97,
+      "alignment_fraction_reference_percent": 93.6,
+      "alignment_fraction_query_percent": 91.31,
+      "status": "outside_declared_near_target_rule"
+    },
+    {
+      "reference": "original:BW25113",
+      "query": "author:BL21",
+      "ani_percent": 98.97,
+      "alignment_fraction_reference_percent": 91.43,
+      "alignment_fraction_query_percent": 92.89,
+      "status": "outside_declared_near_target_rule"
+    },
+    {
+      "reference": "original:BW25113",
+      "query": "author:Keio",
+      "ani_percent": 100.0,
+      "alignment_fraction_reference_percent": 100.0,
+      "alignment_fraction_query_percent": 99.88,
+      "status": "near_target_exclude"
+    },
+    {
+      "reference": "original:BW25113",
+      "query": "original:BL21",
+      "ani_percent": 98.97,
+      "alignment_fraction_reference_percent": 91.3,
+      "alignment_fraction_query_percent": 93.38,
+      "status": "outside_declared_near_target_rule"
+    },
+    {
+      "reference": "original:BW25113",
+      "query": "original:BW25113",
+      "ani_percent": 100.0,
+      "alignment_fraction_reference_percent": 100.0,
+      "alignment_fraction_query_percent": 100.0,
+      "status": "near_target_exclude"
+    },
+    {
+      "reference": "original:BW25113",
+      "query": "original:MG1655",
+      "ani_percent": 100.0,
+      "alignment_fraction_reference_percent": 100.0,
+      "alignment_fraction_query_percent": 99.84,
+      "status": "near_target_exclude"
+    },
+    {
+      "reference": "original:MG1655",
+      "query": "author:BL21",
+      "ani_percent": 98.97,
+      "alignment_fraction_reference_percent": 91.45,
+      "alignment_fraction_query_percent": 93.11,
+      "status": "outside_declared_near_target_rule"
+    },
+    {
+      "reference": "original:MG1655",
+      "query": "author:Keio",
+      "ani_percent": 100.0,
+      "alignment_fraction_reference_percent": 100.0,
+      "alignment_fraction_query_percent": 100.0,
+      "status": "near_target_exclude"
+    },
+    {
+      "reference": "original:MG1655",
+      "query": "original:BL21",
+      "ani_percent": 98.97,
+      "alignment_fraction_reference_percent": 91.31,
+      "alignment_fraction_query_percent": 93.6,
+      "status": "outside_declared_near_target_rule"
+    },
+    {
+      "reference": "original:MG1655",
+      "query": "original:BW25113",
+      "ani_percent": 100.0,
+      "alignment_fraction_reference_percent": 99.84,
+      "alignment_fraction_query_percent": 100.0,
+      "status": "near_target_exclude"
+    },
+    {
+      "reference": "original:MG1655",
+      "query": "original:MG1655",
+      "ani_percent": 100.0,
+      "alignment_fraction_reference_percent": 100.0,
+      "alignment_fraction_query_percent": 100.0,
+      "status": "near_target_exclude"
+    }
+  ],
+  "near_reference_edges": [
+    [
+      "author:BL21",
+      "original:BL21"
+    ],
+    [
+      "author:Keio",
+      "original:BW25113"
+    ],
+    [
+      "author:Keio",
+      "original:MG1655"
+    ],
+    [
+      "original:BW25113",
+      "original:MG1655"
+    ]
+  ],
+  "reference_components": [
+    [
+      "author:BL21",
+      "original:BL21"
+    ],
+    [
+      "author:Keio",
+      "original:BW25113",
+      "original:MG1655"
+    ]
+  ],
+  "status": "complete_reference_triage",
+  "matrix": {
+    "path": "data/raw/receptor-resource/host-relatedness-v2/skani.tsv",
+    "sha256": "30077c6a04c559e59cbcf41f451b5eef5e6226156c7e844dd1757e1837592652"
+  },
+  "genomic_reference_relatedness_only": true,
+  "experimental_stock_identity_verified": false,
+  "phenotype_labels_loaded": false,
+  "models_trained_or_scored": false,
+  "interpretation": "Relatedness of five declared reference representations, not strain identity, experimental stock equivalence or receptor/functional infection prediction. Near-host overlap must be disclosed when selecting a known-host/cold-phage versus unseen-host evaluation regime. Missing comparisons never supply zero similarity."
+}

@@ -96,6 +96,8 @@ uv run --project software/tipcraft python scripts/audit-receptor-host-payloads.p
 ```
 
 
+The [executed five-reference host audit](25-reference-host-overlap.md) now places the available author references and original targets into two close genomic background groups. Under the existing unseen-host exclusion rule, both author backgrounds overlap target groups; a distinct represented-host/unseen-phage regime would require an explicit new contract. This does not remove the original strain-ranking objective or turn a receptor annotation into a host score.
+
 ## Required evidence before scoring
 
 1. Container authentication and translation inventory/checking are complete as reported above. Freeze how unresolved annotations, ambiguous residues and multiple records will be represented before feature construction; do not silently correct or remove them.
