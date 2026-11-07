@@ -13,8 +13,11 @@ import json
 import math
 import os
 from pathlib import Path
+import platform
+import resource
 import subprocess
 import sys
+import time
 
 
 BRIDGE = '''# SPDX-License-Identifier: GPL-3.0-only
@@ -26,7 +29,16 @@ tool = importlib.util.module_from_spec(spec)
 sys.modules[spec.name] = tool
 spec.loader.exec_module(tool)
 lengths = json.loads(pathlib.Path(sys.argv[3]).read_text())
-hsps = tool.parse_blast_tsv(pathlib.Path(sys.argv[2]).read_text(), lengths)
+tool._validate_lengths(lengths)
+hsps = []
+# Streaming changes allocation only: retain every HSP in original order and
+# apply the same pinned parser plus frozen ID/length checks for each row.
+with pathlib.Path(sys.argv[2]).open() as stream:
+    for line in stream:
+        for h in tool.parse_blast_tsv(line):
+            if lengths.get(h.qseqid) != h.qlen or lengths.get(h.sseqid) != h.slen:
+                raise ValueError("BLAST ID/length differs from frozen inputs")
+            hsps.append(h)
 pairs = tool.calculate_similarities(hsps, lengths)
 self_groups = {}
 for h in hsps:
@@ -255,14 +267,22 @@ def self_checks(adapter, r_rows, containers):
     return results
 
 
-def command(argv, log, timeout=600, env=None):
+def command(argv, log, timeout, env=None):
+    start, before = time.monotonic(), resource.getrusage(resource.RUSAGE_CHILDREN)
     try:
         result = subprocess.run(argv, capture_output=True, text=True, timeout=timeout, env=env)
         Path(log).write_text(result.stdout + result.stderr)
-        return {"argv": argv, "returncode": result.returncode, "log": bound(log)}
+        outcome = {"argv": argv, "returncode": result.returncode, "log": bound(log)}
     except subprocess.TimeoutExpired:
-        Path(log).write_text("Bounded calculation exceeded600seconds; no parameter change or retry.\n")
-        return {"argv": argv, "timeout_seconds": timeout, "returncode": None, "log": bound(log)}
+        Path(log).write_text(f"Bounded calculation exceeded{timeout}seconds; no parameter change or retry.\n")
+        outcome = {"argv": argv, "timeout_seconds": timeout, "returncode": None, "log": bound(log)}
+    after = resource.getrusage(resource.RUSAGE_CHILDREN)
+    return {**outcome, "wall_seconds": time.monotonic()-start,
+            "child_user_cpu_seconds": after.ru_utime-before.ru_utime,
+            "child_system_cpu_seconds": after.ru_stime-before.ru_stime,
+            "cumulative_max_direct_child_rss_bytes": after.ru_maxrss*(1 if sys.platform == "darwin" else 1024),
+            "resource_scope": "Serial direct-child CPU/time and cumulative child peak RSS; not aggregate workflow memory",
+            "parent_platform": platform.platform(), "parent_architecture": platform.machine()}
 
 
 def run(policy_path, alignment_report_path, workdir, output, matrix):
@@ -275,6 +295,14 @@ def run(policy_path, alignment_report_path, workdir, output, matrix):
     if Path(alignment_report_path).resolve() != Path(policy["alignment_report_path"]).resolve():
         raise ValueError("Unexpected alignment report source")
     inputs = {name: checked(spec) for name, spec in policy["inputs"].items()}
+    if policy["process_timeout_seconds"] != {"adapter": 1200, "original_R": 1800}:
+        raise ValueError("Unexpected predeclared resource-only process limits")
+    control = json.loads(inputs["streaming_control_report"])
+    if (control["status"] != "passed" or not control["exact_pair_array_equality"]
+            or control["pair_count"] != 4851 or control["self_controls"] != 99 or control["self_failures"]
+            or control["inputs"]["bridge"]["sha256"] != digest(BRIDGE.encode())
+            or control["inputs"]["adapter"] != policy["inputs"]["adapter_source"]):
+        raise ValueError("Streaming allocation control does not bind this bridge/adapter")
     if workdir.exists() or output.exists() or matrix.exists():
         raise ValueError("Fresh workdir/report/matrix required")
     if output.resolve().is_relative_to(workdir.resolve()) or matrix.resolve().is_relative_to(workdir.resolve()):
@@ -290,6 +318,15 @@ def run(policy_path, alignment_report_path, workdir, output, matrix):
         raise ValueError("Alignment was not run under frozen source policy")
     if alignment["wrapper_sha256"] != policy["inputs"]["alignment_helper"]["sha256"]:
         raise ValueError("Alignment helper differs from frozen implementation")
+    if "original_execution" in alignment:
+        original = alignment["original_execution"]
+        for field, name in [("policy", "original_alignment_policy"), ("helper_source", "original_alignment_helper"),
+                            ("report", "original_alignment_report")]:
+            if original[field] != policy["inputs"][name]:
+                raise ValueError("Protocol replay original execution differs from frozen lineage")
+        checked(original["helper_snapshot"])
+        if original["helper_snapshot"]["sha256"] != policy["inputs"]["original_alignment_helper"]["sha256"]:
+            raise ValueError("Protocol replay snapshot differs from original executed helper")
     record_bytes = checked(alignment["record_manifest"])
     if alignment["record_manifest"] != policy["prepared_record_manifest"]:
         raise ValueError("Alignment record map differs from frozen preparation")
@@ -364,7 +401,7 @@ def run(policy_path, alignment_report_path, workdir, output, matrix):
             "adapter_command": adapter_argv, "R_command": rargv, "HSP_rows": rows,
             "expected_unordered_pairs": 34453, "records": 270, "containers": 263}
     (workdir/"frozen-calculation-plan.json").write_bytes(encoded(plan))
-    runs = [command(adapter_argv, workdir/"adapter.log")]
+    runs = [command(adapter_argv, workdir/"adapter.log", policy["process_timeout_seconds"]["adapter"])]
     status, numeric_validation, grouping = "HOLD_calculation_unresolved", {}, None
     adapter = None
     if runs[0]["returncode"] == 0:
@@ -383,7 +420,7 @@ def run(policy_path, alignment_report_path, workdir, output, matrix):
         environment = os.environ.copy()
         environment.update(R_HOME=str(Path(policy["R_home"]).resolve()), R_LIBS_USER=str(Path(policy["R_library"]).resolve()),
                            DYLD_LIBRARY_PATH=str((Path(policy["R_home"])/"lib").resolve()))
-        runs.append(command(rargv, rdir/"execution.log", env=environment))
+        runs.append(command(rargv, rdir/"execution.log", policy["process_timeout_seconds"]["original_R"], env=environment))
         if runs[-1]["returncode"] == 0:
             try:
                 generic = compare_tool.compare(comparison_policy, rdir)
@@ -439,7 +476,7 @@ def run(policy_path, alignment_report_path, workdir, output, matrix):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--policy", type=Path, default=Path("software/tipcraft/benchmarks/receptor-resource/whole-genome-group-policy.json"))
+    parser.add_argument("--policy", type=Path, default=Path("software/tipcraft/benchmarks/receptor-resource/whole-genome-group-policy-v2.json"))
     parser.add_argument("--alignment-report", required=True, type=Path)
     parser.add_argument("--workdir", required=True, type=Path)
     parser.add_argument("--output", required=True, type=Path)

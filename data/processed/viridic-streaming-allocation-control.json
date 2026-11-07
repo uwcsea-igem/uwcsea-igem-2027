@@ -1,0 +1,64 @@
+{
+  "R_rerun": false,
+  "exact_pair_array_equality": true,
+  "execution_spec": {
+    "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/receptor-resource/streaming-calculator-control-v1/execution-spec.json",
+    "sha256": "10a1aae7c2017dd1e48537b080e377178bc390697105423be678333802e5941a"
+  },
+  "inputs": {
+    "adapter": {
+      "path": "scripts/third_party/viridic_directional.py",
+      "sha256": "e1d19de908f4f066ad79f88eb22bc021ea849b2b9b4c86baa501d371e9c872a4"
+    },
+    "blast": {
+      "path": "data/raw/genophi-phage-audit/alignment-v2/blastn-data.tsv",
+      "sha256": "2dff2995aebb354f39d1a8b8b52bda10056e50f2caf1b2adaa7ceb8f0a19bcbb"
+    },
+    "bridge": {
+      "path": "data/raw/receptor-resource/streaming-calculator-control-v1/bridge.py",
+      "sha256": "156a77911e8f6bdf712561bda8d6bf7f403c3429111b95907f0cda1c3e8c4174"
+    },
+    "expected_output": {
+      "path": "data/raw/genophi-phage-audit/alignment-v2/similarities.json",
+      "sha256": "0ad1ed3246533df09c9687e4ce1be8b460335d921e010d9950d69416f44ee26c"
+    },
+    "lengths": {
+      "path": "data/raw/genophi-phage-audit/normalized-v3/lengths.json",
+      "sha256": "e2ecc15d20cbdab5b1a99c93398c880cb4f1e7a9682a163a2698409bf8005da3"
+    },
+    "original_R_validation": {
+      "path": "data/processed/viridic-original-r-comparison-v2.json",
+      "sha256": "fae6206bb55734868eb2879215648e318600afe2a20f394d12fb321cf9400ee9"
+    },
+    "wrapper": {
+      "path": "scripts/aggregate-receptor-genomes.py",
+      "sha256": "e7a88cb7ec9e6f2bb57c731b67f3df2504f4a83685a4db2fa99730dc7bf737ef"
+    }
+  },
+  "log": {
+    "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/receptor-resource/streaming-calculator-control-v1/execution.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "new263_calculation": false,
+  "output": {
+    "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/receptor-resource/streaming-calculator-control-v1/output.json",
+    "sha256": "1087cb46e61f859d36fdc5e538f95cf076c8cad3cc9d993d960c786cd80073e0"
+  },
+  "pair_count": 4851,
+  "parameters_changed": false,
+  "plan": {
+    "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/receptor-resource/streaming-calculator-control-v1/plan.json",
+    "sha256": "e0e2841f3e0900d33f5100075ca263683861013e4ba3fee0ff4d03bd3d5b8765"
+  },
+  "resources": {
+    "child_system_cpu_seconds": 0.073785,
+    "child_user_cpu_seconds": 6.544448,
+    "peak_direct_child_rss_bytes": 263077888,
+    "scope": "Direct external calculator subprocess; postprocessing excluded.",
+    "wall_seconds": 6.676415208028629
+  },
+  "runner_sha256": "5cbf66ea9d18be5a33dec152613221354b23682d87a0683ab8a5949ee90c55cc",
+  "self_controls": 99,
+  "self_failures": [],
+  "status": "passed"
+}

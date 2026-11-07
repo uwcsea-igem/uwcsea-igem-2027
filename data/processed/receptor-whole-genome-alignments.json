@@ -1,0 +1,2352 @@
+{
+  "schema_version": 1,
+  "status": "failed_or_incomplete_hsp_audit",
+  "purpose": "All-query/all-subject nucleotide HSP audit on unchanged receptor-cohort records and original references; stop before aggregation or grouping",
+  "policy_sha256": "8a1f353ae507baddb68fe67603278c8860f2c3c788b94d1eb96fcc53c1bcd22d",
+  "wrapper_sha256": "29a71b539b1baee466bed5924a8718e1b4bedf53c9ab59aee090ba58ab8856c7",
+  "authenticated_inputs": [
+    {
+      "path": "software/tipcraft/benchmarks/receptor-resource/whole-genome-alignment-policy.json",
+      "sha256": "8a1f353ae507baddb68fe67603278c8860f2c3c788b94d1eb96fcc53c1bcd22d"
+    },
+    {
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/scripts/align-receptor-cohort.py",
+      "sha256": "29a71b539b1baee466bed5924a8718e1b4bedf53c9ab59aee090ba58ab8856c7"
+    },
+    {
+      "path": "scripts/audit-receptor-gp17-overlap.py",
+      "sha256": "40c361775d48979b2dfdf2427dc7e6a1653ba71a156a25cf4c19dcee7e99bea3"
+    },
+    {
+      "path": "software/tipcraft/benchmarks/receptor-resource/gp17-overlap-policy.json",
+      "sha256": "8e175847865c0b4fb7dc0c195d93111e162a680bf0dfcbd4075715039d316ed3"
+    },
+    {
+      "path": "data/processed/receptor-cohort-container-audit.json",
+      "sha256": "fd0f8fc39223336660b9f84a1e7ac7f6a2b374dd8880cdb99095e5b2086f5ab1"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/sequence-manifest.json",
+      "sha256": "56430d0452804aca4c69fd63872105bdda328f98c9fa150e59a506787cda4cd3"
+    },
+    {
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/scripts/audit-receptor-gp17-overlap.py",
+      "sha256": "40c361775d48979b2dfdf2427dc7e6a1653ba71a156a25cf4c19dcee7e99bea3"
+    },
+    {
+      "path": "software/tipcraft/benchmarks/receptor-resource/cohort-container-policy.json",
+      "sha256": "f2b98bd4dfe4721bff8d0696f5de3f13c88b68693ee7f44e379036960fc8be77"
+    },
+    {
+      "path": "data/raw/genophi-phage-audit/normalized-v3/manifest.json",
+      "sha256": "d0f66b3bba527aa8cc32b327ed7f15107fbcd0943faefa6b1fda2496f528185c"
+    },
+    {
+      "path": "data/raw/genophi-phage-audit/normalized-v3/reference-gp17.faa",
+      "sha256": "04f19688217d4601d62c7b1b2c8650575a4cf34dfba813ab79780f2d7ee38965"
+    },
+    {
+      "path": "scripts/audit-genophi-phage-overlap.py",
+      "sha256": "8026b82db228b3cb7c5e673d1c927f53de598925e282e0a9b3b89c536c928464"
+    },
+    {
+      "path": "data/raw/tools/blast-2.17.0/ncbi-blast-2.17.0+/bin/makeblastdb",
+      "sha256": "b18159370061729a685e5714b5a1d349fd2951f4f3aeceb576b0e696b403fc72"
+    },
+    {
+      "path": "data/raw/tools/blast-2.17.0/ncbi-blast-2.17.0+/bin/tblastn",
+      "sha256": "8bcde4b235916c6ed7e2a99bdccecdb4c46afbe4877d9d3952af9ac12042b535"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas01.gbk",
+      "sha256": "28f2a91e5fc10506e00dc40d22135bea4bc2aab48ae494f338575fb13ec5617d"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c000.fna",
+      "sha256": "50c4f22eea85d53c97903734406a4eef4a809f425e661ee3ae0c530d2ae34201"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas02.gbk",
+      "sha256": "cf79094ff5fc4e5b21a532146ba491aeea4eabc1d2c7d19d97aa5257a0e3fca1"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c001.fna",
+      "sha256": "0250eab59d77a1faad23f3273222ad063a8d90381543480c22c49363b3a8d431"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas03.gbk",
+      "sha256": "2d159292b2cd90daeb9fc5b514839f9a9fc3a22aeebe14dbb0db3e3295418973"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c002.fna",
+      "sha256": "e4e484f92334c9e2a47a696b430b9b5bae011b5fad64d515b54462eb87ac1947"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas04.gbk",
+      "sha256": "82686c848cce279cb8059561e35cfdbb5c8cc0c2274766e3346bfab4e40be1b1"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c003.fna",
+      "sha256": "2bab2bc902ec9d377f19b692db5833859eeab2a18122ee88c8b6b2ea993f0009"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas05.gbk",
+      "sha256": "e4ccb7b5d2bc813aea7648e9819282be6b1ac80c5a15d20286aad3094332fcdb"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c004.fna",
+      "sha256": "e50861984823a24a1b75c2780416c9d0e554671f142d06e3c4c41529762a460b"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas06.gbk",
+      "sha256": "1088509af2f91f8c5329da9a9123ab31f22340dc749311763f825c16541c397c"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c005.fna",
+      "sha256": "b07c605918d366a91a031a9a5e98f82982de443b70fff9986fa2728ac6228209"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas07.gbk",
+      "sha256": "fbcd5d45ee2bfbaee5f40eb00c55a77a6da445ad2fccf18c6a35d0a904f64656"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c006.fna",
+      "sha256": "5c9398304de671d74997f36d6f8fbd74943ca12e13e61e271b38ca06f88b426d"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas08.gbk",
+      "sha256": "20ac85d7e583c06348649797f3069154310f7eaf491f07498fedb91e82cf1b2f"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c007.fna",
+      "sha256": "e29f7f392d14c4536c930e0a8378e32b2c1ac18f33dd648ac9aa2550b4b31d04"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas09.gbk",
+      "sha256": "68aff71416728d5481d94dca009c4ae757554b236f082b0ef068eb722d4d8e06"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c008.fna",
+      "sha256": "721ac56dacf680efedd8e9430e2ff5e0053a4abaadcd46c25b699e4084e662e6"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas10.gbk",
+      "sha256": "af3672c68178ae7165c99a88cd7b64364c66bfb9f6f55ba30e62fd75b860062c"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c009.fna",
+      "sha256": "48ae6b86c32ebe0f5be7f1b4660e27392c6df652b0ebac5adb258f89cf668a92"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas100.gbk",
+      "sha256": "273b71e85aa0066195a4efc31c28e9a5b4a12ea944ec558b553a12896fd1b47a"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c010.fna",
+      "sha256": "f2acf9b98b459b931018071000332141e4116938374e592dc82ee896b8ae7dae"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas101.gbk",
+      "sha256": "897a93c8076bb244e1ccb259eae25a2d0435b55525cd2da30436cf6250c3855f"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c011.fna",
+      "sha256": "ff7212a0c8ea2a11d946da249f0ea139b6366d7d534f037ee192f1b9305310ca"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas102.gbk",
+      "sha256": "79180e284e6760320f7289dcf264392c6d91e698e2efd1c1f5f2447d1e09808e"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c012.fna",
+      "sha256": "d587f52a6ade6789e39b67e2cb9b604a27dd213b8f654d5e6251baef1e6af82f"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas103.gbk",
+      "sha256": "1a574554c8944493b81c8771b8a64c144231edcf2c99348f5e0e9e1ca8930de6"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c013.fna",
+      "sha256": "b6a65b4b356eb0eafbd9a6f95c22bfef11814a087f1a10de7be05c1617bc9c9f"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas105.gbk",
+      "sha256": "08d9181074b4281c99f76bd899f1bcf81403bc41e2a4a196d2f86309e9797d1a"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c014.fna",
+      "sha256": "d90517afc9d871e328fbd0f2af146c52889363b6119450fcb78b04ba1c428197"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas106.gbk",
+      "sha256": "dd0aff5b4b5dc55477a3ddd18765e75838e216c430d093fd0fefb1cdd0a355ab"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c015.fna",
+      "sha256": "2d89f4f6ad44bb72c43bdaf29d7cfff2f6978da8d40375fe7e8025afa9a314d4"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas11.gbk",
+      "sha256": "63ad502f4feebf376a939d24cb4128044a68ce8fb8139d8d4e090506e54ecdcd"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c016.fna",
+      "sha256": "4f7524dab7d450f4f72a757511108ec90c1bfcfbf08a3e2507f3f1471701fb18"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas12.gbk",
+      "sha256": "f99de7c5c6ddf96d3b8cc2a099b3ee09528de71bc101c5573de0d6045dd2eb10"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c017.fna",
+      "sha256": "945be26bbc87295d96dea57c72b9a192fae8ad1682a522e6874a82c601412963"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas13.gbk",
+      "sha256": "01f0d215dbb344156e489e4506546cb4396ed3576e6fbffb7480a2392ab0a1a1"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c018.fna",
+      "sha256": "9274cf7b227c1152abc8579da3ffbac851422e36736a38122fa97dbf3984d0d5"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas14.gbk",
+      "sha256": "c599a90a7af5a50b173ebf8c6e6fcb687b9d1265389f38fa2794dd62fe27b716"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c019.fna",
+      "sha256": "8367e5ea6f687008d776d68c6385755665cc2b2c1ee97a0c64013bd5045bc64b"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas15.gbk",
+      "sha256": "c4ec07c98625fed8cea5b3d192599d857975e609155e06e610354b16ffaeeb2e"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c020.fna",
+      "sha256": "d300334a1b1514ab62b276cdcb6dfcb1c7b8d707174a2dc6554b8e5eac4c5030"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas16.gbk",
+      "sha256": "ed29047b24c433b7bbbc5d4e280e7c79d421b98ab5fb3464de93302efda843c8"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c021.fna",
+      "sha256": "659c7e26f877c676cfa041eadae3011664b7c380cda5f7ca6f8d44f02d0981f1"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas17.gbk",
+      "sha256": "ec87a4ac0bc54cb3779f50858867c60b9b6d9faa8657b69114474460eac64108"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c022.fna",
+      "sha256": "973fc5ed8e715832767261b07ecdb490eb4c5b2411f42a3cb725fa315bdbefa8"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas18.gbk",
+      "sha256": "8ddd504d86ca83d8406b462343774b2f2e5dddb3582c6fe89b436d94fde488b4"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c023.fna",
+      "sha256": "9a40916c0984a76ddb73f7984dae584b951ce2d910025d3186bca3ef113a1414"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas19.gbk",
+      "sha256": "e1a473122c4a1af362799c24c89409a7f5909643bf6d44d87212c783e44e9848"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c024.fna",
+      "sha256": "abd8f133511727ad9aa5880e10e4c58b9ae574d6f561a0f0c6a1d1ed5764355e"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas20.gbk",
+      "sha256": "90b81e4d64eea91720a56f4b6a41e90843445e3647f55540acd822754fec8dc2"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c025.fna",
+      "sha256": "3edcaae6385820a3fbf47070bf7752a5ae70f429e8250792ca96480fb3093822"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas21.gbk",
+      "sha256": "ba18472a4ff1de2a343131aadae60ef665a8bc8a86cab9e6211be3cbbe408275"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c026.fna",
+      "sha256": "75ef0d839de3dc8e4d18d10beaba171619823593382112b9c827b38f6eeab1e2"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas22.gbk",
+      "sha256": "52924d7d43db2ffa36da392c318627bdeb53f709706b22da30445fd47ded7c47"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c027.fna",
+      "sha256": "920df2cfcbbcdf9b629c0036dc587cc7dc060d399720e9593ed9b72cf67dcaf1"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas23.gbk",
+      "sha256": "075de896009ad97a30f0a43b547654ec42125c1d6d066cd181384a544d6eb9c6"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c028.fna",
+      "sha256": "b99bed0d6f4026d4724ff468387c867f98d083675e01316820f7764e52590ad5"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas24.gbk",
+      "sha256": "7d92ea8ade1417b48bebb5dc5694442b434f266171e43159408c7ed6af17f154"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c029.fna",
+      "sha256": "51ea9546800eb106ad7bdea14e840e46e42a30e9799ae117e367dd710a0867cc"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas25.gbk",
+      "sha256": "89d7c9dc7ad75b73d78201b8fed32a17d256e0e4487a8ff0fc717f283aa59d54"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c030.fna",
+      "sha256": "c101111f1be8e57530c56947d47f51da364ca269c58bf746f2af701f22965a4e"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas26.gbk",
+      "sha256": "97d2cda15b2e16da3ba413af834b4c7ed608ebfca1615ff1c63344b957fd5485"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c031.fna",
+      "sha256": "d9b4ef874c3ca316f3f61eb100c95de3e8a7062d6fba255ee8d8edc2e52f656f"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas27.gbk",
+      "sha256": "b535b3de4215df2d73b06601a4f6e8f8c5917f63dd7de5f57f1b3dcef9863b36"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c032.fna",
+      "sha256": "d3089a8a19c1153bdfca9780fb369abd72853a6cc931b726777876cc532b9165"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas28.gbk",
+      "sha256": "6a4cfd021780474b980267380a920b4d9f185b1d41cad79e92095d6238c0156f"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c033.fna",
+      "sha256": "75726cb016e359bb3e55932a7fedcf707c6ac5df71dd6b211bc9531946c26836"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas29.gbk",
+      "sha256": "d9f5ba3147a0aede41106785618add42cb964c651991999c6e3262a59aa83866"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c034.fna",
+      "sha256": "cc0bdce8e0c3e4f7b54585cb691e60da440c18a39acc731eb7090f71223eb89e"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas30.gbk",
+      "sha256": "3369667727876bfb4bbb89a5cbec4ffb8911ca81dbcadb712c22eb252b9645dc"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c035.fna",
+      "sha256": "d0ad489d0181b9c10522bd5c9efef6283093cb3c5f06a819594cdcbc3f387344"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas31.gbk",
+      "sha256": "29e1079ff59ace7cca1b16041aa98cb10a6ee87e12144a5b55d1640b04e684bd"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c036.fna",
+      "sha256": "7b26788bb2cb1744c24353287b5689f2ec83019e0cf7ff62ac9d128cce9d08d6"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas32.gbk",
+      "sha256": "1f268b403086b8887d83149655d7983b4f601a441bfaf33a760113245618a51a"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c037.fna",
+      "sha256": "7caf04516b6f5cbf483c6420c0b44c09d498cfa1e106c3d34ca1e1688fe63031"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas33.gbk",
+      "sha256": "b0db0d7ecad003c030d83d4799216abb1b83133c8e3f338568e2e2f5b63c4d54"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c038.fna",
+      "sha256": "70b8f36ca4f091ab4d95b8abe9b87356addb9258f1295c8985ad1d3fb974a964"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas34.gbk",
+      "sha256": "1cc397af82483071221f16a4aaa0b967dda02d37a2482290b016f160710112c1"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c039.fna",
+      "sha256": "e60e8e10de804841dbad40509f15f8df6d7af73804319aecfa1c1db8c9f83032"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas35.gbk",
+      "sha256": "a2a8e4cdb93892427f5eb74ba61446fa22d2157d3bd4550125fc568676a880e4"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c040.fna",
+      "sha256": "5f5d4a2436c8a25b290e9369e2e6fac004203eff3713bc9c816b434d9fcd2120"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas36.gbk",
+      "sha256": "0fe80d013b908760927b85926a743fd7aa525b220657264e5d313eb18c492001"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c041.fna",
+      "sha256": "fb25ed8860687bae6ce7c03a1241891de63d51cab8f314edb1f14648436f25ba"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas37.gbk",
+      "sha256": "88f0d41a3cee9e62a0b1f84641903c322b0ffa4dfe2a331ac35b206487119d92"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c042.fna",
+      "sha256": "0a52883885990983f26374dbf324e40828cdaf06f6042b05e567fbc7636fd6f3"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas38.gbk",
+      "sha256": "db8be7e7306ff50195f189ead0712a2f0f7c50c090620ffa1e7ec1b8572fc5de"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c043.fna",
+      "sha256": "94243b47779291ffdffc3f10b093843a07e6b29159ff42d3e9eed13fbb7fb717"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas39.gbk",
+      "sha256": "509cfabdeecb7a1401edd4125d719934635349058113e1ae358b7eff39538b5c"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c044.fna",
+      "sha256": "697e16f767c4b763332cbcc72acf9f51ae22185b6993ccd8433221e98221b774"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas40.gbk",
+      "sha256": "70323511de1ce4ae431542da466690c7e5ce426da332ae4e26671ea0badd8826"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c045.fna",
+      "sha256": "2bdf0b9a5dfafda912ae881943ec7ea32e059bf5c08be49a1791033d588b3b58"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas41.gbk",
+      "sha256": "4ef2faefe4d9ac7cd7e54d0122560c5182debcad4c17d919f8e1f0845b8a92d7"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c046.fna",
+      "sha256": "420785756026c0f40d620f5baad85026ea61d8a252b199ee7fda6f345637c38c"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas42.gbk",
+      "sha256": "ca5931298a73f875a2f8e98d1fe44ee6078c98a359597dbde4082535982aa379"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c047.fna",
+      "sha256": "06250186959823cc77293a97a1dfd814abf9752d8a8f35b25a81096f7fcb53c3"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas43.gbk",
+      "sha256": "789d8c288647ab578532394fe5e0042839c0c7e5e241609033d2b8463737dd00"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c048.fna",
+      "sha256": "42512247a7ee56a29ab950a450b294c98e117152b5eaa63d5927917920ee564c"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas44.gbk",
+      "sha256": "7a73f625e9c3d41501f38a1f689db3c9993e9da65a94bbbea17b33dc85a67955"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c049.fna",
+      "sha256": "6900635b51dfa5c01782978898eb7b54a39bcb90dfbd6d9300ee5ebdd21d569e"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas45.gbk",
+      "sha256": "f6225e1efdc3baae726b4f368d17e94e0ce637c126ee5875aa06bb40a8622dfb"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c050.fna",
+      "sha256": "cef71f76952887d554fe580c3d8e21b4efb0737c0452f2430e5f2bf59ec27450"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas46.gbk",
+      "sha256": "c9e79a9728c55fefa7968ed41c1be1de09f1bb4102e4eedb4feaa934030f48db"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c051.fna",
+      "sha256": "43f9bf1f2d715a604ccc39f9de6f24dca6f1ecf51434b7437fd3980a23288d88"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas47.gbk",
+      "sha256": "13ec78d1d6874beda3c03d0006011861271e5c57e2d353c6c189bbbadb94d234"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c052.fna",
+      "sha256": "760feb1a8815a02845ebd79cdf3f6715aa0d1d8c879616f27c4ed5fc57a954f0"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas48.gbk",
+      "sha256": "f23104cfd80021fbba6468de5ad1f23b418d3681175aace09f2f164d4f02816d"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c053.fna",
+      "sha256": "ed7b9382ad82e8409d4cbdda6cd0d5ab604a9de8705f68dee8a8a640a8ec8200"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas49.gbk",
+      "sha256": "bfac8689eb39f1639c834c1ac62c31bb90b73a753e7cce6f973d3d7e90bac8d8"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c054.fna",
+      "sha256": "18f6208ded6d15fd6961eed054aa996a27d9a4b8bc0314022c40aa82237b92de"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas50.gbk",
+      "sha256": "c9118bda785832c3cb04038485b85e923fdf439c0b5e61cb2a749257c9caf4b0"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c055.fna",
+      "sha256": "40e236b6fe1dd00f3030c6283e279d4f82bb70880fa69d606e6011cc7680a363"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas51.gbk",
+      "sha256": "eb47881799905749214837927f9f619ce8d194f2d393e01c58ff1d564c5b0e9b"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c056.fna",
+      "sha256": "85cd0ebf3f4783864f6d89dc16cb063e65bbc46ae681e4235c72ba68070373d5"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas52.gbk",
+      "sha256": "22d4d6dcd0153e3ce49bc9975a67704ff71f481eec07a2c9b191d0b7b3d63f17"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c057.fna",
+      "sha256": "9b40497582f943b76b8c7bfc7b65859ace403ead3b848807928196548d0c80a2"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas53.gbk",
+      "sha256": "7fa1bf854c93a592cf16ec5fdb6872a8698adc4b3243a0a1da7fa95a11313637"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c058.fna",
+      "sha256": "2c0f6879789c52e710a43c37397d361cf205714f4a1f538a4da51d972a5a2605"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas54.gbk",
+      "sha256": "cc6671716d5cd8ca64a85458cb5633daea0dc821e062e0c486d7791e2b3e7b00"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c059.fna",
+      "sha256": "d7bf328513c5916d71ad67c06e3d75c30696a463993003e4d5b11860a0029810"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas55.gbk",
+      "sha256": "0d1660937af0880d17f426f4be97f906e2978d8d00092cf60cb3eac0c675880e"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c060.fna",
+      "sha256": "d20aea17b061e8ac474209e9d5208976778b11a29231f488677e350726e50f37"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas56.gbk",
+      "sha256": "e70f5b2a48f3e284d0a94758ae7e789a1fff70cdea4b2e93161ebe4208c376dc"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c061.fna",
+      "sha256": "1b271af90ccd7d5c0ee73abb024606277c221bde2fb82e3c90885e58b76b6b9f"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas57.gbk",
+      "sha256": "928a11d73164847092f140cc9156445048e08b19c81d99ab5bdf826fec1d61ca"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c062.fna",
+      "sha256": "9d8091e98478cc22a009bd6e75382e9f1e450111813ec37358b988b47e4cc5dd"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas58.gbk",
+      "sha256": "6e90142d14f2de710023cb1fecfcf2baa172f55deb00174a1690a4e73fea203d"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c063.fna",
+      "sha256": "7aa46183d35c91c494c9cb2c9fe52446199b742a54e52891208a66b85971b29a"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas59.gbk",
+      "sha256": "ed558f371f23d523519d02cbd1b8463871862b8c63df18b20549a8b0ba40c539"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c064.fna",
+      "sha256": "32a8820f9056e61fe114410b24709da6a9eacf3dd4b4418cca41ff4b271d7e11"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas60.gbk",
+      "sha256": "2b109dfec0d487bb2078c4b57aafc54fe1792c89042d8ab98a8c34c1fa5a902f"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c065.fna",
+      "sha256": "55c43d21f920f7ae7fe568fb14fff3a34b215b46d1a8b44bf553a8dc8d4c9ab8"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas61.gbk",
+      "sha256": "02a5a689402ddcb8da8f4e3aaa15f8ff79083563031629d7eb06e1fea81a1f8e"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c066.fna",
+      "sha256": "570a12b26068cbf32b65830141f54919c58ee3270aae1960084b4dda38be5c7d"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas62.gbk",
+      "sha256": "7ae599ec014298a8a5a0f0bee5d306f57dd16c7ceee7ac7826fd79612818707a"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c067.fna",
+      "sha256": "08ef74e34eb208b0e55e5f5a7378016a6adf45a87c9898b98100cb94d71b58fc"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas63.gbk",
+      "sha256": "5be50562297b1eda0aa93ff1333283cd61abedc67f1ae7a54e1180b56573d637"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c068.fna",
+      "sha256": "b55d7d1d7dd125a65b428c8f9f4d11b5c0a30acf1db28054d78514a1008c04e2"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas64.gbk",
+      "sha256": "284ed2cc6843f2ff3fa4858025bef1158c8398d758770258c2031cc85364ddae"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c069.fna",
+      "sha256": "4a3c3b088eeb39b533a1f494589c1daa727cfc5daf5f9922ebbaacd384ed0248"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas65.gbk",
+      "sha256": "dec7151e0e00ea2c03a9da6bd7b8017973b44280427443fa84e94586d144bee4"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c070.fna",
+      "sha256": "726bb613834fd3a5d2a90949508c288f719ddbc72530004c63e8b0b8c93e2139"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas66.gbk",
+      "sha256": "b89dcad8ae1ecc0824bd0226102230dba749a617947f44852d10fc9c9f6dd86c"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c071.fna",
+      "sha256": "b5e290dcec156753b60e543e9eaccea684464c14bfd9619523e465a2cb40b55f"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas67.gbk",
+      "sha256": "f67b9ff5f9af70fde0cd0ebee054eb96b93b90398fd2d8afef9a1dfee82b1488"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c072.fna",
+      "sha256": "be792e2c2bea1cae3b4910a12fb6f2f14f2461b0f3e7b8027dc9d934c1ed48aa"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas68.gbk",
+      "sha256": "9b0fdc6b529a0d848f235aaabab30bdc2ae201321804439588ecab031b2e5a72"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c073.fna",
+      "sha256": "4d7f5b13ca008328a0f026a07b574058efd3646249d0de2a1c5884f058ea01f7"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas69.gbk",
+      "sha256": "9d5601e4783895fb39c78216e0d548bec67103c9b20f1b562a037f01d8618672"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c074.fna",
+      "sha256": "a7b72d949047a474a9f48879424a625d80afa1e3a572f8f3475680b074ec2a77"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas70.gbk",
+      "sha256": "9e5773f9202d9d4f14614e85f5daee52a59e2a0c6d1e29c6ea413e51b2dcc7b4"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c075.fna",
+      "sha256": "a132e9f6655ff6f2dea263bf5ea40b426403d2c06c2b0db2813d6b6b0108a249"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas71.gbk",
+      "sha256": "358ffa206fe43224d40dfe0e6122b2e4a824e39547042f0654c2cd825e633ef1"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c076.fna",
+      "sha256": "c0dfcf7b80998576fba563b47e16febc3d34ca918d786f4db005b12d73caee51"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas72.gbk",
+      "sha256": "6fb1886741e033f0452170d82f5a806c70023fa33dc25aa8103cd6f22dd32387"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c077.fna",
+      "sha256": "bfda765646fbf42130ed20ffc0ea59ee8f909472bf8848c30fd28ad4543b38d5"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas73.gbk",
+      "sha256": "a0c3319658e728a12a2ec522fccb5284ca0e78827c8a87c62e085e81c18fd006"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c078.fna",
+      "sha256": "2c6297e903e8a5a1870c60161dfe495316213d1c039526c0a214733744b9a792"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas74.gbk",
+      "sha256": "8534fc9dba99d75c881b00f1f970cdb3614de29bdbe1d5857377438183b1ddf8"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c079.fna",
+      "sha256": "96d012619c9e6e94b33df8d997171d9df889c0a25d62ea11641e701b945bbda5"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas75.gbk",
+      "sha256": "d470d0f30c6c71e7f1f2ee751a329f56462a0441a84ed7a67b2326f3f8c91334"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c080.fna",
+      "sha256": "9f52eac96650a5bbe6cd942e67e7dbf6b46cbb4da820766aabd82345ee5ddaf8"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas76.gbk",
+      "sha256": "239031eea44c43bb4d66419ff138443f799b4aef9e6559e7a6dd94d8758cf4b5"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c081.fna",
+      "sha256": "852247d576a7b4da6dfc5709966a8b1e5a20954acd696763d2e21accb30d9adb"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas77.gbk",
+      "sha256": "4c713ff64c151d7ac4dc194e0e4de3e5778985b90e3e7774900fc751d266d3bc"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c082.fna",
+      "sha256": "e0bfd4e11a0fe9531bb904761870eb1ba95faae18c1e4823cb3ba76529172143"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas78.gbk",
+      "sha256": "e3d0a33e83d9d881f76649896042ec0a821256e7e2900a2b70a35bd115143792"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c083.fna",
+      "sha256": "71096e9510ebe6315aac8b595edbafc812209fe9adacf2f6314c26fd8b8ee315"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas79.gbk",
+      "sha256": "8577296231c2cd7678c7fa237c92b001100be2f92ce3ebfa64e0de19ef810db5"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c084.fna",
+      "sha256": "8a8da1b7b314c86c04b821585f74e364855101491caa1d1a67ffbd3aa864da3f"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas81.gbk",
+      "sha256": "7cdbb6f1ff1adc4a1c361620226da8f437c236da14c14abb9f8e4b46ccefb953"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c085.fna",
+      "sha256": "e936a9a01d996ab81db39ca10b14d8e7a1f003e3ccdb80c17ffd71ee1d2e157c"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas82.gbk",
+      "sha256": "edd9a7b29e98cc4d600a3e843054b7f964cfeb7c8307b7fda94e1f956e6e9af7"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c086.fna",
+      "sha256": "409540a98ac99d7e2a319ed1b15a95c427dd279bfbb7c97c7f7f7d0fda674b35"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas83.gbk",
+      "sha256": "984b792dd9f99464c59467d476dbb570c1c785ee053088238d2ad539602ac75d"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c087.fna",
+      "sha256": "bdec68df13a7c5950f5d88efca95c893dbb73d9d3f0e3bb3fee6723b3f890912"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas84.gbk",
+      "sha256": "72ba2515440e56c5497251c341b5b071393354a96a6de73fda2d447eb4aeaa71"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c088.fna",
+      "sha256": "f7d6dd0292fa9b36da1b45c7e073d79b41791f437719804cff51d7659de1f38c"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas85.gbk",
+      "sha256": "d22c686d674d377be9028289ef665d8b152fee94a4d6241d4cfdb4a0f3e83837"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c089.fna",
+      "sha256": "7f69106d8d9522fb5abbf985ec06fb7f6b6bc2918f5078d53d07b89a7e291c21"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas86.gbk",
+      "sha256": "66d0c9c99eb7dd61853127e4a8e8d00a2e952edf15ac05328dcdcc47848c8b2a"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c090.fna",
+      "sha256": "5c360b95cf4f8f4ddf72eb013e3203ba42434ccb62891d836bfc814438e58ee8"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas87.gbk",
+      "sha256": "937e01c1c5e8218f23a9b43efed0c1821d675b09e7e61949280bb0d6992ee346"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c091.fna",
+      "sha256": "fcafdbb95d5829ada5e08a4430c600907734f80917fe388ef00ada578e10cc66"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas90.gbk",
+      "sha256": "588848046d7582790f70c6b5a809a4561187565eaa8e1bced8b35f3002a89811"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c092.fna",
+      "sha256": "4275fc3b8bd3263da482d26c696e0119eb8a54822c44885b6a20345110b006ce"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas91.gbk",
+      "sha256": "f3a5df298e9ae11aa3762434080767d04ae2b575be6ffa2146b5c67e7b64289c"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c093.fna",
+      "sha256": "8a718bc35e76f5cd1db418cc57fa95a82ee0d293e021d340dde975fa09b54735"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas92.gbk",
+      "sha256": "d1305fb8c5f5946dc438657029ccdfb1747cce0b3a1885ed2e0c93c08b2d0025"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c094.fna",
+      "sha256": "b274a5b1352c377af3e276c357124a5bffdfadd2f9cc7540f35e1cb62132af54"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas93.gbk",
+      "sha256": "e9566b8e8df171d46310b70befb3d5452d01bf2c77e3336e6e4c991055f054ad"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c095.fna",
+      "sha256": "81213748224a10017d6df295a6e805e430c80ba4c658029e7f06088969cf2f0b"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas94.gbk",
+      "sha256": "1aa75c611898c93fced8a2c14613a6a1ff079af7585a1df80a4797601d646b6e"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c096.fna",
+      "sha256": "f8e3cbf86d43099cc9a4731145c5827914d1a4e4e5a191cd6839b5f485e0fba3"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas96.gbk",
+      "sha256": "fddbcffad7ef15c0f5b6811dfdc9d07abbf6f36185bdc36c2e4098f605bba6d2"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c097.fna",
+      "sha256": "85c80c343362364751d92f625688fc909cb514f3921b03ea9cff5a20124e5f56"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas97.gbk",
+      "sha256": "3414476f89cb8f51dea916dad21dd3d0cf6eacd54d01948394649e3bba2c5155"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c098.fna",
+      "sha256": "d540dee9ac432af130b3f8c57848351f19598f70d13dc7175a0628e9e90004c2"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas98.gbk",
+      "sha256": "3cb0250a614cb868e91e9f83201047c8b62b5a77ee01d5661a37ce09dc008db6"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c099.fna",
+      "sha256": "5d01a46339b0a30e04b5544d3eb78b38ff434b36af28abed33f467414148c933"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas99.gbk",
+      "sha256": "d30c2abda59599ab61b618276ae3cf22a7c1bcb646e7df8ab1781ebe73d72769"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c100.fna",
+      "sha256": "9e92430ef3053aabff8a7d424144843f0c0bf29e54dda6cae2725eae398042ce"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Borec.gbk",
+      "sha256": "42dfd5af9b6f8d63baf15c733b3b10c31ce873f954dcfe8eabe3d04f36241a1f"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c101.fna",
+      "sha256": "5f737153a66a46e033daebd43a5bccd15db34ff1594e7a7f92eae56f6f41e089"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/C16.gbk",
+      "sha256": "47e4fc876f3f7fe370ec551ac78f69997cbdfc5397608c7dcc33ea31a6250355"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c102.fna",
+      "sha256": "2ec62a9e90e64e69f3cd6616b8a03a7742611c38f5742428bd50e30afbd8b60b"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/CBA120.gbk",
+      "sha256": "a7bbc3d0a1492b62c105bf5376461a404d8921e367b99dcc85ce09c817e88e63"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c103.fna",
+      "sha256": "92169501cab5719321cc9709964f14ad6d19458b85b352a619bb6b7789282035"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/CEV1.gbk",
+      "sha256": "196e2feb6b504427ae2f40effe59d73bf01865359379cc93412b6077bd843d68"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c104.fna",
+      "sha256": "2a2ca101270b45e80ded22930fd742d96594f2216bdc550abd6e33abbad8ad24"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/CEV2.gbk",
+      "sha256": "5f9813c8c25b29f1d6ef61403e394717a1716cfea912b43dfdf499e4eb8ab37c"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c105.fna",
+      "sha256": "837b403bb7106cd8abc9da00795e7a10b62a25c002a6abf50ded1183039fcb28"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/CM1.gbk",
+      "sha256": "5ff9cc7e26b8dd0333b698d344635ba35f7060df79c9d577b37a2a9e24712e87"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c106.fna",
+      "sha256": "397b04c474a045fde47a993d44f3dcb8a3b61cdab59dc2d49ac27947d3e4f6b9"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/CM8.gbk",
+      "sha256": "ff631d3c3b6e045d92e8f3a3e02e3e072e071bffa90b3a677b9c1f3721f799bc"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c107.fna",
+      "sha256": "97b42a69c99e2c47ddf59a309ac3adf16ab7b2b9611f5ac63171a290c9a6b2eb"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/CM8m1.gbk",
+      "sha256": "778880f3dc1c98b1eb8322a0730f6fa590ca8f81b9f8130362ed363dbaf8abcd"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c108.fna",
+      "sha256": "afc83b1bb3b0cb923ae5799b273b1d70a26db6f85695b9b1d045a328e1c0fdfa"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/CM8m3.gbk",
+      "sha256": "2814dcbb87f984c41ba311633f03308abfac4c5d8f59a9ec1c816f98537171e5"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c109.fna",
+      "sha256": "9a936d63f02b71b85e4736c79d294699c69841a3e3ab5073bee06450d148c98f"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/CM8m4.gbk",
+      "sha256": "602594a97c7ea1ea914998088eb37ddd2dbcff370fe210617c4b30ee09345625"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c110.fna",
+      "sha256": "cbb2bc07935892f80be5fdc704bde84f2dee4d329e6525bbdcff3791c60bc409"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/CPL00124.gbk",
+      "sha256": "c5c8b112f065cf7759cdcbd8dd2bb157fcd11f0c2067de710c09df597417b01c"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c111.fna",
+      "sha256": "95542d63f11d040abc296cc1107596da1760fc65295642b008a2502d87c695f8"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/CPL00134L.gbk",
+      "sha256": "b4302790cca98efa9dc5ee5bfa5cd10c06548428f0a04727db8a0c73a353ca07"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c112.fna",
+      "sha256": "d12ea788a38f8ee2f5393eea7b6c9126f8dd304cab7dbff6668f3e16692ccc3c"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/CPL00136.gbk",
+      "sha256": "301ba9657dd976838dc7a4d145a6b5f26fc649f0ee80e15d1c48e10a9aa2f757"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c113.fna",
+      "sha256": "b819a361313476056345408d59275d3a69bf52a26843add4f89c98749998ae63"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/CPL00144L.gbk",
+      "sha256": "9410dfed3a00d7ce7ecd4dd514ebffb6660c4f45257035b3bd0984b53c15149d"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c114.fna",
+      "sha256": "0a652a7a7978713659da88565604339e95acff6b7ffb0bad68da0c9ebc0f883c"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/CPL00146S.gbk",
+      "sha256": "2f25e5e288c2978456741e4e29841e9843b7f59839ef06b9f1eb5e7b4408f1d0"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c115.fna",
+      "sha256": "460fd70e385fb9d8b37bf87df020189545d1e0a3362597af957a3e7af614ab1f"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/CPL00151.gbk",
+      "sha256": "f5c347dddd4c5c694cb167e289d5e4770362b7b99967eb59bca525e79db16b86"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c116.fna",
+      "sha256": "4714e52877ef5e340cffcaa593d8190472338762333cf94b294fe2c8dedc3992"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/CPL00152.gbk",
+      "sha256": "eb4f9bde29a6feade9997ebe9af9e710a6d4d77a47eb85542774222497b5a20d"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c117.fna",
+      "sha256": "12172cfd1e581007b6ef4fd0b916a9e9cc2698071710a0f30ecd010392eb3bc3"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/CPL00159.gbk",
+      "sha256": "e1c6e6507acb47a441832d35b71c23c77b9b848b7140d9d4e15ccb42bf756c58"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c118.fna",
+      "sha256": "d7304d6cba39a0f20cdbfb2770defd825af7278845ccf43c1e5835de3c4ae366"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/CPL00160.gbk",
+      "sha256": "08cc4861adf3c9be78b3cf640773548d715eba9036b50bd5789b024803515172"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c119.fna",
+      "sha256": "124789f0c4e703d320f324c4148d4aba6429e9b13a2ebea4898e043614609cf9"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/CPL00168.gbk",
+      "sha256": "2cbc26f7ac93480f0ac05560e699f97197c99210f09272b3f0bfc09508e99a39"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c120.fna",
+      "sha256": "bf9f9bff85f725fb9b0525b6ea7c14fdd74b48b917f00ea1ba741818f45b5e99"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/CPL00169L.gbk",
+      "sha256": "a702a323eff0cd0b399e17bace3defef5e9bb4f5fef78f71cb67c85b23c7c8cd"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c121.fna",
+      "sha256": "bed5b33f7927f3b332f89a12b85c38277035ec207fe39f8831c5cc9609f81a1f"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/CPL00169S.gbk",
+      "sha256": "200f21fe6294f5639a48441eb3593186f03147aee9a0e060d032978cab815287"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c122.fna",
+      "sha256": "2c948dbcaea012b52a20ae72f12bb57894776892f2afee12c77a2469fb2953d1"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/CPL00172.gbk",
+      "sha256": "b4e49ef3bd00e6add68df7f2d154135635eef8594709e9d09224458da0bdd2d4"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c123.fna",
+      "sha256": "12803e9c5ed05f8c34f8733f82adfdfcf233c0d805745ae0a046be06562c20b5"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/CPL00187.gbk",
+      "sha256": "e284aa86b557707e2042672d35ff522374a94321cdd4733c6babed86fcd47708"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c124.fna",
+      "sha256": "4def75a8a10f4e527983d920939768ce20cca93bc938f85ee1cb01c25b165864"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/CPL00188L.gbk",
+      "sha256": "6aec575cf9d71051cbcb17d261467816068836aad052815de356c1d18b4a14d4"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c125.fna",
+      "sha256": "9a81b46dea5cfb3a4672e3f13918eeaef71b6384eed4de74d475a0992361982e"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/CPL00220.gbk",
+      "sha256": "a96748c3b921fba8e088badfdaccf07f9cbd35e87c8d619278c58d572be51b4b"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c126.fna",
+      "sha256": "1b14a23daf01b914f96156bcd6270e43340580d800fade801e27945320a7aa45"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/CPL00221.gbk",
+      "sha256": "8b4a05f130701afd4ea2bc17ca52c0b5f51ba5efb044e505a89698f9861a3bb1"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c127.fna",
+      "sha256": "8cae5475fa0a632f0b319431f6e4e27685212fd3fca98f3064c2e86135a1b33b"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/CPL00224.gbk",
+      "sha256": "2efd168d640fdb3737d1bc166519672e68104a644e73f0d92d9340dacf03a564"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c128.fna",
+      "sha256": "e718d4661eee6e7a25bef994308709c7fd7ec07f5b30e5b5a1abcb8257cce0e1"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/CPL00229.gbk",
+      "sha256": "0f4f6e6007033eec8a2025c3e4b88b07c73a3dfaaf1238577ec873c2a67a969e"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c129.fna",
+      "sha256": "aa9a2bea4f187688490917a0d864b2557714ee84abb1a252d80abf916c0a838d"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/CPL00259L.gbk",
+      "sha256": "78d0a9bb3f5a3ada26683e15e013dc332f48f4d0933072c88bc7ceaac8b81bf1"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c130.fna",
+      "sha256": "a544b6dc1ae2fc9e57c0522cef9ab6cece17bfa0f914ff44e75eeb75616ac2b5"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/CPL00262.gbk",
+      "sha256": "83c0f7b89694eeefc52bffa7cb7046ddffd1bec9d16f0163c8da60bd2a04fedc"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c131.fna",
+      "sha256": "ae2042fe40a5a413dcc4cffbc0bbdcf1f77ac871d9893d7f972baeb24d6fcf92"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/EV116.gbk",
+      "sha256": "76816fe811197d340f0abef8d9b0a2a83a340470427c7990eec366b272b2590b"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c132.fna",
+      "sha256": "a19de123812c201809e383204765e57c786c6124c347e22b668d57baf264c59c"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/EV146.gbk",
+      "sha256": "78f3cb68cad6ebbe5c1e03939a850f10c786857a7bc130039f376b895e5bb642"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c133.fna",
+      "sha256": "b36173e28304596cde13863c579cb03a94700b27a3dda56d6f5f8b281343cef8"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/EV156.gbk",
+      "sha256": "7d0496422b0945de4c96bea4c3f1e5af8958d5bf34d44ae7453cc45c4ec55e54"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c134.fna",
+      "sha256": "287cf5c7ef3bdbadc671efd085c21c5ff8841d74668929da5c078d99c0f90d90"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/EV212.gbk",
+      "sha256": "54205f2a32b60ae93ba340853fc911bef4decf0dd241d1e219c7a09019ed91fe"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c135.fna",
+      "sha256": "802ee8651544c72e650aedb0935fdf54d0a4501e289159f5b25ba0c61129f233"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/EV219.gbk",
+      "sha256": "e620877a53daf7b38e2765708775aa1a6502512553e60bcf4215c4c7fc37cf21"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c136.fna",
+      "sha256": "1e60f3912f4eed8ec98f49c0e7cd957d37d52da8093f65fb5f70d9625d969228"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/EV240.gbk",
+      "sha256": "316e2b3a95c3cd603d30956c25f6833f7d61f0afdc671e71f031d87bc6c42619"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c137.fna",
+      "sha256": "32e1b964c0085590cd88ec8fdbc4156606dde35aa4a0bd0871d0978bcd331304"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/G17.gbk",
+      "sha256": "3e968ff70444d23a8971c27339afde572e1d54e4772be3eec552579638be8eb3"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c138.fna",
+      "sha256": "77ad754181e0517256ede9722fe6d4981807492d96b3bdb375a5d1cfd163f302"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Goslar.gbk",
+      "sha256": "eed4c119b38c6a2d89d58628394220d1e4eedce4f28b62ea2914fc46275ead15"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c139.fna",
+      "sha256": "82978661661a5ed38ea80e8ba63c7f47ffa1a1ccd103363612d65b5ce4df7471"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/HSDP1.gbk",
+      "sha256": "f95fd694e6e1751085892bddf2b96dbbc424b0a87e8837a989d6ce49bcdb9296"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c140.fna",
+      "sha256": "177b72721d00c53e4a885517e9159347d13a36773271f8576a1bafce839af5cd"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/HSDP2.gbk",
+      "sha256": "0a4cde6f522767bd5bfdede50cfb2d58353bbf7bf71ed2e11437e3142e4584b1"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c141.fna",
+      "sha256": "1c3f647f99943a4ef1b45a6c0319e8622091c7aa58ed1895f79a487264273d07"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/HSDP3.gbk",
+      "sha256": "b0b5a6f2f5015637e7ae054f018b2f6a3fc778ae27ab979dc039c2b2ca9edd84"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c142.fna",
+      "sha256": "fdf436a83a61fde36455fd07919924a7a525a577a6cf6747ca550a0adc015617"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/JK16.gbk",
+      "sha256": "19bd9931a60a182611997712b0385e5cf83426e67bfc18b82966e53d0cae1e61"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c143.fna",
+      "sha256": "5d196b0fca235b3b2126d88b3580d080ffb6d85070648055240189de614708a0"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/JK23.gbk",
+      "sha256": "f1ca8e62b0b3daa2dd11fc25ac53dc469ffa2440545184cbdbcb3904703563d4"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c144.fna",
+      "sha256": "a4952783487c18919c539d2cc411ba328e9c091d2bb69f3c0ee0b8067257ddce"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/JK32.gbk",
+      "sha256": "da604d3d67a0c680bbfcdf82f8940d781680a727a4334d0ac4e376741902d3b8"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c145.fna",
+      "sha256": "209beed26ef51e7dac1bd39d0df7ae3dcc0031e8348522f708674080bc899fe1"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/JK36.gbk",
+      "sha256": "78be54b55aa4ff69a8d782b7884f8b51f6f2d9b6996399180020ff664c89f58e"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c146.fna",
+      "sha256": "2203e1bd54df13a5fffd3d3045602a2dbf9e4b46fea3a0818e3025bc8fff005f"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/JK38.gbk",
+      "sha256": "a2e704128810ae43943c7d8d1f99e23b4fe6359fff97532dca22a1f64880219b"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c147.fna",
+      "sha256": "fd6e31064ad25f897da873a856092cfa4d100be14e94bea0f7fc2b8fe44bfb49"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/JK42.gbk",
+      "sha256": "115dfff4c98d7279fc1adc653c482e9ac44cb8563aa8a0178fa3ca0ecde7537e"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c148.fna",
+      "sha256": "7ed794c3f2a9183f81427d1b041a6932bc2856cf602dd777ed376f338184661b"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/JK45.gbk",
+      "sha256": "2a752f2144a3aeb24a44f838a255f1168d86e1e81159257eee20ecc39f01cd8f"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c149.fna",
+      "sha256": "0744aba7050f8218be41c06963ae7004f6ebe98c66086067f778b8806c7a57eb"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/K11.gbk",
+      "sha256": "722a34d51dd2c8009c5805a466034d2a422c6708a9693475eec8fd16e89fc92d"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c150.fna",
+      "sha256": "2fb0120bd93e1324c12312e01f6cb7af7539d7d70c6ff41f3baf06056d5f24a1"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/K18.gbk",
+      "sha256": "a00f392ca579ac159f45b3d8d400b6480b8981a07ba34bfd7701bb19428886c2"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c151.fna",
+      "sha256": "faeb326be3bd7e62c88a75db377353d8909af0333a045294af6a36807757c2c2"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/K20.gbk",
+      "sha256": "b02750970ee3746eb3aca622b61ec5de650271847cb6e1b37e59170c553c94bc"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c152.fna",
+      "sha256": "7dddcb0c0b2343ad601c8f0e6410664a7f29ff95be119164f4ce7d161441d0e6"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/K25.gbk",
+      "sha256": "e0b162a98fec6364ee57a4702f5e33a7df79a7a1eec44d33df842abbacb8b980"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c153.fna",
+      "sha256": "0029f20c1be0475040263df968a5a85aa2d5ea65963c65c3620ef82b773391eb"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/K3.gbk",
+      "sha256": "a529719738305c0527b2e6ed8662497dc0fcbd0fc4d6a918751c6f2507607c9f"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c154.fna",
+      "sha256": "0bfc03cda630c88cb094580e6a350c7c92377a2c6a2cb9c8f904fde7e1a541d5"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/K30.gbk",
+      "sha256": "2e0ff4a5c7fd883ea89c25fe537849f1b164aac2b9b02a00311b6bbda6d74c00"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c155.fna",
+      "sha256": "a49394328f40bae5380a8d32a9f7a05d1ac6f903992c7740437359de6ba8226c"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/K5.gbk",
+      "sha256": "da51557a1d871c1fa13d64359276f1542ecf24cdd13535f7162fd9c95cbd5ee2"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c156.fna",
+      "sha256": "041c2404233f958bbc3976b45c8b1a834746361df8ddb5acdd621c4e416c3616"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/K8.gbk",
+      "sha256": "bf9f90721eebb330f82d12b1e8a4ba0e67b2c5d1c6eed4d703e89ec792b45e64"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c157.fna",
+      "sha256": "66897b64cbfbc6dccbe1956380cd91f20dae867d98b6e15974a421700575f0af"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/K9.gbk",
+      "sha256": "64095b87173cfc1d11fa54efcbcf8249bb2e910e676d5c311d94c3280d5e0bb4"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c158.fna",
+      "sha256": "3b78411f91ba74b3002a364920b72271e055027e07f1cf8e62f9e1b0874fcb78"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/KCP017.gbk",
+      "sha256": "2ed6d533d61ce9d8e3b386ac1f8a08d83a8678226cdb80d0ec32d2b7ea949224"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c159.fna",
+      "sha256": "cd003ae3181f57e21361ccdb91fdfa6e24d5349c60e98010c66fe1e7306ea425"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/KCP031.gbk",
+      "sha256": "06cb846b2b49cd26bcede2409e5cd27005d8f3a4a4f493884e2e8f5988e702ee"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c160.fna",
+      "sha256": "99c1a4830c2128ca98d93066b47f77ff9c595489733d4f62c933082af75aab53"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/KCP042.gbk",
+      "sha256": "2a482536c355a32ba2d723fe5d7cff3d38a53e4b38afdade93f2ae5d66381569"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c161.fna",
+      "sha256": "13ab8c56892e59aae2d29bee4c55ee16ff6700df70be65215799e2e523921b50"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/KCP045.gbk",
+      "sha256": "ec638e44d03884c0885a42bc37f90ec9180a0e68f6f6274c577d4f4ca9f56f87"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c162.fna",
+      "sha256": "acaee175910cc4a6a394ef14a6780e9879012a8f4c5a79bcdfd72d0c04d9738d"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/KCP055.gbk",
+      "sha256": "05cb7350c635c0a5f04b405901e030a9c84c41e3072424cc9133b9acf9234289"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c163.fna",
+      "sha256": "c2700748f420c4d9039bb87d0100600ff9c2ae3dc6738be4c6203b63cd871e80"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/KCP064.gbk",
+      "sha256": "4f213ef97328a6d22cd56da41c257772623d9d77d91f8145d6151fe0f39faeb9"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c164.fna",
+      "sha256": "8f7644d979d52f6bb2e136645de63502517eda361612b1a76949a1cc6fa6c53e"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/KCP068.gbk",
+      "sha256": "0df2124e80b422bdd1c7a303b73cef6bf8837130af20d81984e48d8f918aa6d7"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c165.fna",
+      "sha256": "4294571de08d6776091c497433930dc9907f1df71736633072e44f284c6996b3"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/KCP072.gbk",
+      "sha256": "7e3cc21f51ed357b0e933babea28bdedf97a2c7850dfb530e5de4ea3618d3ce1"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c166.fna",
+      "sha256": "759966c6ac85bda557d662f2d5d85190ac267cc019ea44c28974d2089cc4675f"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/L24.gbk",
+      "sha256": "369a0c4133f11e77051cc68f2383931c15bcec79af1a2ae4785d8d3bacc4035b"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c167.fna",
+      "sha256": "a4cb9fec486736313d9b54c3ce2abc4defa5686f36a1913f408dc408abd053aa"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/L25.gbk",
+      "sha256": "b2b4af548061e85c79e6cd0d0da73a0df3e4968e0f7019cd7ab89c9e005c0b54"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c168.fna",
+      "sha256": "ac2f03f5090168c724d06443ceffb935635b0729c023a974130682c3cce266b8"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/LZ1.gbk",
+      "sha256": "8b069ead322f15a1e4f3c3137f85de02f1ac0ba06b8bcfa19d6929ea9a435957"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c169.fna",
+      "sha256": "d5784e5a3dea4ba6efa98af0c5c2d6941e8b5ee12b4aa348aecc00085deb095e"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/LZ10.gbk",
+      "sha256": "877d1ffca24f030ce00d57c058cae39beeeff60023f226527d3bc23b12e7ae5d"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c170.fna",
+      "sha256": "d51b31eb55a00da0a48c69f5591384669f42a18f94ed9496dc3e662e8e950c21"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/LZ3.gbk",
+      "sha256": "89332ae2c92146a556c6e4fda5ccead307824242d11f13f09038aba669711ef2"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c171.fna",
+      "sha256": "af8aaa88212eb5968bfc675f4da0f0824b32358f610e1db74cb985ccf9b73e7b"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/LZ4.gbk",
+      "sha256": "39377d814a9817276e34ee2a3cb4ede16804ece3775c303f37cdc1299a6aa634"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c172.fna",
+      "sha256": "cd800f73db09d0ca6a0432790ebae05cb0c310b5fbfb54bfb4b22d7cda0b040a"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/LZ5.gbk",
+      "sha256": "86847de3d339da07b5abb946c484b5fcac63905a3db89b4767d752c61abb9e98"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c173.fna",
+      "sha256": "c1c1e9ef2604400742959fa5d7f4740791455b80a11326f9ec52cf73348499f4"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/LZ6.gbk",
+      "sha256": "032b24b5ea59fff3d844a5f7ab3ae1c5edb9b311be7ff4de8f3fd3be8394bbf7"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c174.fna",
+      "sha256": "cd9072d03417e3de5b1a0c900ae58fc87df6ff628834efed522fba5c69590272"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/LZ7.gbk",
+      "sha256": "6604a157a9d6d75c96a27c300314b6be6cc7849c1ca99937e4f1475ce96a2118"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c175.fna",
+      "sha256": "5af3ce6bf45385100b24580a46d8fc4215138f862d11e17f5721ac077d994921"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/LZ9.gbk",
+      "sha256": "9322342cc919cf7a733897480a65dcab18b1e808e24b2f16d4f679184497eff3"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c176.fna",
+      "sha256": "d33011da9a287e8b91700575b7b117e4592cb63fb44f91a8cd6ff7f05539d900"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Lambda.gbk",
+      "sha256": "2a526fd2b55f85a2ffbc5201eded253c3425a2bf48922f8eb624e105573e9ad9"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c177.fna",
+      "sha256": "d654ac4f367b3e76fcb67f807f335ab25ee36a937ce38975e887ac2de0147d03"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/M1.gbk",
+      "sha256": "6269a34b67c7632f930f83017288be7a5425c077ca485871687c627e4ad414e5"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c178.fna",
+      "sha256": "3907a6a7861295ab3de478c88448dceee7d9c407dd8d988341d5a7b404aa58c5"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Mnm1.gbk",
+      "sha256": "f819bd84895d5a9deb28bc312b04633ff1a768fd90822045320f70ba9c401e55"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c179.fna",
+      "sha256": "5654135ae55fae8bb6c79ff8b029d817acf5364105877bb814330c6614699ece"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Mnm10.gbk",
+      "sha256": "f02b4d947f96665dd4725b4e32ce1b7e207b22831dee3127bda66049db3f020e"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c180.fna",
+      "sha256": "8ffb0ce4e738debaf5b253d6ff78bafc5e6912fb29e6bf4eb72dc82496f610a9"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Mnm11.gbk",
+      "sha256": "89b057a6630133c3e8883eeda4f2822e452ba2a9ae21c2301475f56731056763"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c181.fna",
+      "sha256": "f61af41eade36f8d2df341e88e36fa7943c79dafb6bd8713d7867e515eddef51"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Mnm2.gbk",
+      "sha256": "1f675bea3e1448b3e7669185dba840c1d49435fe5f0ef7321a436a445d733e69"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c182.fna",
+      "sha256": "1c7ddc3ad5681c6ee4197ac7574364f097cff8b76df9d3149e1f63a73d9bec22"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Mnm3.gbk",
+      "sha256": "9047ee24b86c12f67a4a6a758bb05016bcc9751d1cecda7a99c6909482ce529c"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c183.fna",
+      "sha256": "fdd55605e749f84890fb070be8538865635f4822df309fb3633f4caccb30e6f9"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Mnm4.gbk",
+      "sha256": "e80a6a198ff409da0394a338a62c8f7c3ef3e943c0aba236bdc1ce6276fc4a70"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c184.fna",
+      "sha256": "228126e15813d38599bdbb1501a5bc0ff60f77911207d09e5581763f558b2b8f"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Mnm5.gbk",
+      "sha256": "6284f450cfd3b26e6a2244cb3d838fe6b6634115437c3dc413cefb2c9f2d1486"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c185.fna",
+      "sha256": "3b84bc8f6669b6058320945c043abe472ab0eced766b978054d5073d74937944"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Mnm6.gbk",
+      "sha256": "983c9f6012e2c360376b3f59ef390c66d4dc9277fb76265cdb45413a5b666d40"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c186.fna",
+      "sha256": "0d9c12e300446fee63ed9ad10e5e7333ce9040b8f694c156ef47a7de70eaf77b"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Mnm7.gbk",
+      "sha256": "c34e750adbe96018f9d8efcae88ddcf6811a520d67105d8dd496f63c4d357fb7"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c187.fna",
+      "sha256": "33164bdacc037beffc79713dbd40cc7b232422de9d0d44451629b5b78957fbd8"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Mnm8.gbk",
+      "sha256": "68d1b519f49e76025fa0137610dc3f876a8f384bb7d8e09cdab48aeedb164360"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c188.fna",
+      "sha256": "88c4951ceb7dacb20387b9471a682cfd55ed29ebb45fb2e2e92795c25eafd34d"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Mpec1.gbk",
+      "sha256": "818a6b0a9dbe13a72117ceb5b756834c25e65d9d1d6cb4c2797b602565c4a475"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c189.fna",
+      "sha256": "14aecd19b1d60336fc12a34fb3dda79ddb172a5a6e16ce30f76844766bd84059"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Mpec10.gbk",
+      "sha256": "90c352d3172a50daa6458eba7b0679cc8b3513c80cd5fbcc2f5a176ed4158b87"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c190.fna",
+      "sha256": "50c6e0b9f6d54f5c25e8821867dee38fc515ce58c5e679e4b739b0e3f3fff689"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Mpec11.gbk",
+      "sha256": "d5ea2f2c45057a72abe90cbb21935c5b2c72d578cd9a1248f890c019e141b6ad"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c191.fna",
+      "sha256": "2d0b5cdd33371f08ceadd1b48b2976037506019ba1ef9fe7317a85ab71a2de99"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Mpec13.gbk",
+      "sha256": "31f566acc9956c631578fc3ab636d4b3a6d4b79096f83f12c55ce933054b57da"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c192.fna",
+      "sha256": "1582d6baf4a8d698ab9c07927ef01f10d26066c75aa088593e79f7ce599438fd"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Mpec15.gbk",
+      "sha256": "b512f87069e594aa06e3ea9d85752e9503bace03f428a6de9df77fb3dedc45d5"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c193.fna",
+      "sha256": "5fc67d0294b51e40b55a5b7625e8d9fd4e8dce516b4764ea4b0725d7b1c1beee"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Mpec16.gbk",
+      "sha256": "a0ec25dad7bee0a30de86bdf9c0d597e8b196e1ebac6ca2e8677aa77ecd5bc2f"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c194.fna",
+      "sha256": "0ae55b7ec7057d938e11319429ab38b41803a4f0f725a6ae10b25a917703f1c8"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Mpec18.gbk",
+      "sha256": "14138916b250f195c8167da5fec1a891de12090eb33a5df9bca7f91f9d39016d"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c195.fna",
+      "sha256": "a28c4ed0ae63a25c0d5b8c064ad14f7333f9bc38e55f35da2876d6531d868f0f"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Mpec2.gbk",
+      "sha256": "0071e57725a2b25194483de741f10ad4862aadc7a67b8e88ad6920ff3c1514c8"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c196.fna",
+      "sha256": "96ec78f8861f11a614f1be28cda94d6e38e4eaff898760a47f6274889a354d82"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Mpec20.gbk",
+      "sha256": "e6b0a1ae80bb11f746e7ce3c16a486af0b375b7bb48264670407039bea0d6331"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c197.fna",
+      "sha256": "791872771db640bffef9a9516c711e1e9e968634bff320936de1a361c7bd4905"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Mpec24.gbk",
+      "sha256": "6cb5da5edeb6252e5c8f109c393412cbe81ea35ca8ae47c2e8adf95cee5dd518"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c198.fna",
+      "sha256": "58361aa05c7a98c1f447e6ae67afbcf4089335440c0f93d156d212c4c9de124a"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Mpec26.gbk",
+      "sha256": "961e280cd6269a97217341d2550689962c74b7747b3dcf708dc7adf63d743783"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c199.fna",
+      "sha256": "28d3f09c4d65b53b881b5bc0a3c6af71edc31cc9ecd8220ec4272cb83ad696e1"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Mpec3.gbk",
+      "sha256": "84de3038f1cab040920d1fe680fedffc2e4d72df11f7793046988fa87548c057"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c200.fna",
+      "sha256": "6af1f083c36d35b8e7e3b49fb6ef345361fa54e222e28952744bebb73b3fef13"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Mpec4.gbk",
+      "sha256": "ab8173cfd92f494815896558d0620ee08e362188ae71b72411dcc7e16a813804"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c201.fna",
+      "sha256": "b18844a2481d9e677c45d767071eb6295ceb0e119dd39bfbf90bcdc32ce54958"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Mpec5.gbk",
+      "sha256": "7d20277c5dd3d1944a1c70241ae8edca2844013b34f29aefb7729935ac28d73e"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c202.fna",
+      "sha256": "1dbb598313c3eff6ba209de43b33eb9808cac3688a37ec380306a75056ab4f35"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Mpec6.gbk",
+      "sha256": "e719154458efb11d2b22d7334cbd38d0f5de31cf14818772abb1a49d357452ed"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c203.fna",
+      "sha256": "86b0970751887791b4c0bc2847cb7ba588ebb0e4ecb9520fcf9825ca4ed9252e"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Mpec7.gbk",
+      "sha256": "d4883e4bd0f5469dedde0e4263e8682b8f9139710059c9f173276e9ea2aa8af0"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c204.fna",
+      "sha256": "a65099e8882b4981ad56ce594ba6706eae60e65801fd575c40a1aa98da734fbb"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/N4.gbk",
+      "sha256": "abd7b21000d62133c059fd1cca051e826658a1fe95d518dd6178e7fd6fc13dfc"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c205.fna",
+      "sha256": "09eeaeefa784ce25f83be77b9584f4e5a20d5724800aefb7626369e995f8006a"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/NpA.gbk",
+      "sha256": "9f18b20649b86767850137a2008dd39b5e1b8db64fbe824505158304a4befe05"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c206.fna",
+      "sha256": "f5eb363c444aa37ddda3f5b3e57a4d9c4f4a289edca3b22adbb2d130d21b6921"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/NpAA.gbk",
+      "sha256": "182fe699b511e2397e8e457aa931922e1d464cf4a88aeb3d76d5768171c8aabb"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c207.fna",
+      "sha256": "fe7d2d819da16ffff8f8d13987572f54dd929a1d9186d6810c3bb35fcf61bfe2"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/NpB.gbk",
+      "sha256": "43375c632cc04326a58ddc682a08bd49f41824dde932711adc5c72ef898ea8b5"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c208.fna",
+      "sha256": "3da6a727ae5f46ebf087fe331a3cefd00c386003862b4ccd22be753331d0cfdc"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/NpD.gbk",
+      "sha256": "252a966b0b747f4119927df0e272b557f8e8833512c486be2645d3ea85ca07e4"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c209.fna",
+      "sha256": "50975159aa589a5b16d5d6ca88c11b6af12dc5b2d8e890d8e8498590396cb42a"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/NpE.gbk",
+      "sha256": "f38cd2d46d6747d9134aff2eedc399f42566afcf8df515fbc4a1f1eab850e645"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c210.fna",
+      "sha256": "a0f55778f546010c745649bb458232abd9dc63ab903cd00655fa3e5913bdc376"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/NpG.gbk",
+      "sha256": "f439faae32050180c50237db970d2a5802472a89aa7cc044a539fdce22bf817e"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c211.fna",
+      "sha256": "b0bc3c8f1221518c2274afa049a48a969a80d8e2aa6eea35bb662e037e4df03c"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/NpJ.gbk",
+      "sha256": "d5bd143aa77349c527f953b6d84577e90fe6a110f280b8bc81aa73529e3bcec5"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c212.fna",
+      "sha256": "81d33f81c8f9744ba7c4e65e973cb3b89e74b3e7c11d6c21fa7d75f6cf78750b"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/NpK.gbk",
+      "sha256": "4c8b387ec625ef971f9b966791c922c62352005d521c6f72f77602907dfcc545"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c213.fna",
+      "sha256": "e0607f33de647402bb779e7fe0961f40a1a76163608d56c65103852573730c64"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/NpM.gbk",
+      "sha256": "a6843224010d99f5d3f4a0cb3347c65c750cad5af50be764a1a907f147bca1dd"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c214.fna",
+      "sha256": "62a437a4d69f2d06ee45792036acabb46d17fd5bb3ec24f8a941c166d503d8ef"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/NpN.gbk",
+      "sha256": "e5214b3e0f5ddeb9acd1a347ccda7d2f59bde4a378a978fb72a9aae68f6af31c"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c215.fna",
+      "sha256": "57dd063bc6196ddbb95d92df118ed4a71538385ae615125a9cc68bdccd60622b"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/NpO.gbk",
+      "sha256": "d3ffb35d967813fc1531fb9a0ef0d9414f3a7a21fe2faa46ecb965aab8aa6468"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c216.fna",
+      "sha256": "5ff15eec259d0adaa7a480fbb8a33673eb6487216008c12b1799931d8f85bbbd"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/NpR.gbk",
+      "sha256": "664dac0cb6b8574c4146eb9c0fca1443b64ac5ee0cfb24f5b5175f863850a9ac"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c217.fna",
+      "sha256": "cfdaa6baa11d30532d3128bb8677c05d9e83a5ee7948c4d91b6b271f5076891f"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/NpS.gbk",
+      "sha256": "c4a268c6107287491f03cbc9591cec76e35c8d5140b76422eade79b237360017"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c218.fna",
+      "sha256": "cfc5e9ec00daca92673bd452f9982cfc3f47cd953984f20a8133838c4bb825ea"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/NpU.gbk",
+      "sha256": "6b06a484dac1f21d89e6e93bfaa4b3925665ff88bc284014b0736414bbbc5166"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c219.fna",
+      "sha256": "6a0c6e55004cd68c9ed3107ee5f5553f601ea271dbc0d1d7056ac6edb21b8df2"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/NpV.gbk",
+      "sha256": "e0accf20858a9d8adcbc3e336fb306fface28e92851bc12b76b07740005be1c8"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c220.fna",
+      "sha256": "9c98c3fc3e2bef4782dc318d59f597a74875825197200cb9a0e69a680507557a"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/NpW.gbk",
+      "sha256": "b76053df2d966a4f202b62e47972e6aefe7ad4c976b7ac4982f0c0652f5aa474"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c221.fna",
+      "sha256": "0333f487c8939350169ac2fa536ce71ce6936fe5d6c3033553a8bb898bf2386a"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/NpY.gbk",
+      "sha256": "6879b931c33f7eac9fec22d03129c2141927aaebf6a22b02bdf683105daa3ffe"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c222.fna",
+      "sha256": "af087eab2611534ddde86ecd809ad56debc51896aece25d70733102ae8f18a2b"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Ox2.gbk",
+      "sha256": "58c93ddf8a4f7291ce7a7b41d65a5b7cc58bd3b5cbb47447ae66617fb8f44bd6"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c223.fna",
+      "sha256": "bb310587464a019f983c9f283ce69fadfd0997888751b677761db2bba8b6d3ec"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Ox4.gbk",
+      "sha256": "065f1664bf540215ec4e3fc3fa3a863f9e6b667c466fbf86698deae2a5619fb2"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c224.fna",
+      "sha256": "ba198399039999d415c0153175a05aa32c2f2d2ff41dc929b3b2f94ccaea18b2"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/P1vir.gbk",
+      "sha256": "e769ab6e3f9891e91bf12b9fe0aaa150e1aeda3ff80ccc7e932005c07397ed9c"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c225.fna",
+      "sha256": "3673de151909439aee0f895ab5c7031794d574b2ac19790a5be40fc2a34cfff1"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/P2vir.gbk",
+      "sha256": "3f14834ab46164480030e199691089f3af1e565dcd1954d7283354b6c67a60b8"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c226.fna",
+      "sha256": "83c5cd3ef4bfa44d9bcbbe2ad7b92733655691d9c81aba7d2a3bdd9614e4d05a"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Phoecom.gbk",
+      "sha256": "322ef29cdd88b648cca1728271aeaa424d77cd3b0281b0eb49046f7bb267c4fe"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c227.fna",
+      "sha256": "7b542a352037ab1d0555c8d965647313377c3db40aebc46638748bc82d1d945e"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/RB14.gbk",
+      "sha256": "40b27edc1d6877f6813fa4b81b7a6f71461fe05bbf8c9abadd76e89ec00b829e"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c228.fna",
+      "sha256": "fd807c1a17a29b07fa940beba4f47f1988d746b0cf6e2f1e8991a75ab4d0881e"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/RB2.gbk",
+      "sha256": "d1a0c3c41d8d2d21ec5a69517913656228904521df8a81e257d9699f6013d156"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c229.fna",
+      "sha256": "cd9c42f313fbce66d0de1c3064c47476390c16fd3d16b1d94012429eac0bbc2b"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/RB23.gbk",
+      "sha256": "c18223d4bdc5fee2f007d9ee990086c81fdd0fd4ce3c9512cca8a27eee09f333"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c230.fna",
+      "sha256": "b139cc35384069bcd3ae63666bd92764b2d56af610c6b8c17f8e51f8c025ba06"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/RB25.gbk",
+      "sha256": "ac5ae0f9cc6150c6bcf498982b12aaa5b2df82736b03b20e6406decf2edc6c84"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c231.fna",
+      "sha256": "13361a2c36e9cd0ae3fae861a391542baeafac6a2cd880c6d4d5545fc294f2f8"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/RB26.gbk",
+      "sha256": "ad3bbaa1954c585c1292e7a2884267dab9664adc73b0bf221c9922b75ab91397"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c232.fna",
+      "sha256": "78b92bc222f02cd512906821b04a87a2424f8c69f727a856e73737ee98dfaf76"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/RB33.gbk",
+      "sha256": "4f95cb6ed264cffc3749c47fa6e89ae20b282ad3aebd3e7d24388a1024c9d9c2"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c233.fna",
+      "sha256": "d57cea59392e86b31bc979b49a4b9ed75120bfbb28b5d3b2884a0d7e6302127c"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/RB36.gbk",
+      "sha256": "2a1588ac1e9298d2c584a1023c1c7651491d903eb05d228dbca0dae4c7f03b36"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c234.fna",
+      "sha256": "d811a6e56b727d621e86dc7769e359ef73bdba449ebf6f42b5337f4af9bf14cc"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/RB38.gbk",
+      "sha256": "3badd9965b3f8a0f7af9e67bed9c7615c73f1704dc517f1d99bf9ed4678ce668"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c235.fna",
+      "sha256": "11c303234dcb4b54d5975a75ea1f4e4022476700ef443df166b0836f41305d03"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/RB49.gbk",
+      "sha256": "7ec8b3951b326ad617e09930d3cc019fc29411b90bc7f0153b3c97ee45a4e6f0"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c236.fna",
+      "sha256": "8b187e5d40e5a4d0414d401dc38c85bd775112ed779f957af366b0cc38c04cd3"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/RB51.gbk",
+      "sha256": "c511d568b4d3e033de4cf4c3e8d26c2f5cb04b75dd833e42c728a41416c8a6d9"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c237.fna",
+      "sha256": "3eeef659333d928b2fce8d1fb97bbc0f7f026ca61837a2fb60d19a00cd1bae82"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/RB51m1.gbk",
+      "sha256": "cd4147549a86476696c230e5c46c60d5ac5ab9f57cb01bab99140f335fc6af11"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c238.fna",
+      "sha256": "09a03e76bf9bded272fc0eb92ce5bceb5399efd85338cf53d7cc59fc0a33e578"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/RB58.gbk",
+      "sha256": "b54d46a8f4db65405f9049d3ab731807fd294ee1b96c114205b73a28ddcc4924"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c239.fna",
+      "sha256": "9ea4283729488035c68afd95c0e75aa1c0fe27983361bc91f03c99ec35a2da5d"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/RB68.gbk",
+      "sha256": "f8166342f2791bb8f4bf2295d709f52e153e84894d3c0825a4102045ff117a4f"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c240.fna",
+      "sha256": "87a16656d6f22735cbe443569e342edcf9e7b2120e26e797b9b961478938f197"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/RB68m1.gbk",
+      "sha256": "a94ed2aeb0fd544b149cd668c6142f79b5e82aa3ec1df9cade44cce6601061de"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c241.fna",
+      "sha256": "acdf5edca5b888fe1474437c85d8e5949c08139964ce1670cc2b37c8a1d3942a"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/RB69.gbk",
+      "sha256": "b538665171b172f436bda20744cdd02da60bae683f1e817dc4adc2017cdacdc9"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c242.fna",
+      "sha256": "8c0574f3768858206053c86611848d6ecdf4df2a81c5c7cc1d1cf2566956d67c"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Sew11.gbk",
+      "sha256": "48c626759a170a2ed6b6595552a8ff45112edcba667f8de1b7607d7f4c457ef5"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c243.fna",
+      "sha256": "0fcb2247b77b40bf6f93e56060746f20996209c6d6f9212b6792521122247f67"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Sew9.gbk",
+      "sha256": "58ab058da00c76f5ff940f4046fe0dfbee088f1d97f8d6c2ce743e423f8261ad"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c244.fna",
+      "sha256": "a587bc244cfcabaf7cb933685fc3692ccc201a231bd46fe3b3be9f998f061222"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/T1.gbk",
+      "sha256": "cdfb818fc40e35ea3c9580dc78c37207a1f1888ee3d248b14d660ed692d8df78"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c245.fna",
+      "sha256": "f209fa1c598c78a049afe279e78c47e1f063c76884cb216307332103c5ccfa35"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/T2.gbk",
+      "sha256": "a5b4bdcbbab21375545e88d2e49852dcbb78f901a0a89c2352562033797f232c"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c246.fna",
+      "sha256": "a2a20fe057afe004c034768db656e9b26a215e4e5bdfd5a64f93be32a8c88555"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/T3.gbk",
+      "sha256": "86e13347766002d65e18284ef47b0f9ffdb843a33a9b5efabbd7194711348b22"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c247.fna",
+      "sha256": "5f6d711e3e415957417ff131019bfdb6d26e928acf41904d9b689c7f7f3642a4"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/T4.gbk",
+      "sha256": "e2030a5396af238d02a25fa7a96aab702eb8937b8a6e50a5ac737fd8e7af27a3"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c248.fna",
+      "sha256": "821b59001eabcec33227a50a278e8f5b23b92164238fcec7c14d34d918982e46"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/T5.gbk",
+      "sha256": "8d21ba22061b51f75de9e9b2c1d728bf67589470b979f8f9b2077688c853b3b6"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c249.fna",
+      "sha256": "293511e75f49b37e0bd38dd967343074038280861ffd45ae8ed692f10172c5a8"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/T6.gbk",
+      "sha256": "7964d1fb5835f1169176277dd87dbc203c93771b96667747e3f8db9f0419dd9c"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c250.fna",
+      "sha256": "db72a1a5b4ec9ad7ea9d0bb2bbcfe0665f50b07726091771ebc3012abf82ed9c"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/T7.gbk",
+      "sha256": "c69ecbdc130278fe6a9e94f50892b3feb3cbb766d5694760793c812dd450f0a3"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c251.fna",
+      "sha256": "3ef21e0661c31e6af226376c12f563d8aa7e12ec5b4babbab14a253c0c815f9d"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/TP11.gbk",
+      "sha256": "99ff0bf57e000f5f0fe4f9f443ba4fcb7e4913db9a0a22244eaf810775a247a2"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c252.fna",
+      "sha256": "cbbfea05e16f9c25991ff11fc3995eb85479f5607ffd5cb8245fca3cf53d77e6"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/TP15.gbk",
+      "sha256": "ad19d75193f0e3c7bafccc3270adad3910799e6fbfbcebd576444d08935473f6"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c253.fna",
+      "sha256": "e121e1ef369e39fd7206859077b3d14f89007b021b243c3b82e9ac4a742531b5"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/TP3.gbk",
+      "sha256": "7335b0e1c223964d56b34c5fff19c0c799e850bf07557fd9c4b0c2d0481dcf9d"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c254.fna",
+      "sha256": "45ce78703a1e57ef887da1b806302beb115195f4afe039e964d682a5b1f110c2"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/TP5.gbk",
+      "sha256": "c0471e487166e167fd118204977c923cd4408cb6bb1a49ad99b6c7e6bd451895"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c255.fna",
+      "sha256": "361e2ea27f1530117532053bb82ba53df7e76dca8d980bd59ab31d5e88a9161a"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/TP6.gbk",
+      "sha256": "9af0e09d92ae602adfcc57cf5a968c775c23e2fa08dd42fe9f930aaafc932ba7"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c256.fna",
+      "sha256": "691233eb904432bba7d370c90e4bca3a4630091472df222b92edf1187c925361"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/TP7.gbk",
+      "sha256": "c9dbb164f47c7ba3955965db2fb80919080a1e61aa8dcd44ed27e967b3d1986a"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c257.fna",
+      "sha256": "d8c975bdba5eb8f2e06ea9e24221ee995bd2ab925caa6f214817d4cd72616774"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/TP9.gbk",
+      "sha256": "6559b9db8e8130b50dd93beb162bfd5ae42d706d6cd80f112bc3da113b230f32"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c258.fna",
+      "sha256": "1177f441de7d20c377b29aec9c74433b483cf3fe5a259f8931734c7caca18f09"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/TulB.gbk",
+      "sha256": "99cb1767802611f900f005cdac02a3a8cee880b077e728123931f1eb1960d868"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c259.fna",
+      "sha256": "2000a116053c3ed670faff376cc4bdd4c67a8b154784094ffaf32c7743f462c4"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/phi92.gbk",
+      "sha256": "5a14369113002e27bd197672543b08bff14ecf0be042b20cfd60535c7d905614"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/nucleotides/c260.fna",
+      "sha256": "f09d8f24e96c3e05f7856b1316272ba9d5beb54da73c118c6d710f5047479087"
+    },
+    {
+      "path": "data/raw/wish/phages/T7.fna",
+      "sha256": "4411e203f3ffac4d85f42d6994714cb86d495440b678ebab9e5a075f5fdc7c7a"
+    },
+    {
+      "path": "data/raw/wish/phages/T3.fna",
+      "sha256": "1ac1012cd4b506b4bcf7ee13d3cccef1a21683cc40026feabec4ea0e8a3ef6a6"
+    },
+    {
+      "path": "data/raw/tools/blast-2.17.0/ncbi-blast-2.17.0+/bin/blastn",
+      "sha256": "b13895ffdbc83a0a21025002bf33fb289c4be441536a1a88d7be80e8263c34a7"
+    },
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/subjects.fna",
+      "sha256": "7c6457883048f140eba6840fcf7131c00c6ed14523c84f6e2dc307848c6f10d5"
+    },
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/record-manifest.json",
+      "sha256": "187c1296a3bbb5119c325771b7a9326e4322dcc52ac7003270839ad23b329d2c"
+    },
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/frozen-plan.json",
+      "sha256": "3f38a41a4b9468f8a39a12a6cd243ddb0dbdfd247de6ee545cb9f74038a26305"
+    }
+  ],
+  "tool_versions": {
+    "makeblastdb": "makeblastdb: 2.17.0+",
+    "blastn": "blastn: 2.17.0+"
+  },
+  "preparation_tool_versions": {
+    "makeblastdb": "makeblastdb: 2.17.0+",
+    "tblastn": "tblastn: 2.17.0+"
+  },
+  "source_containers": 261,
+  "source_nucleotide_records": 268,
+  "original_reference_controls": 2,
+  "nucleotide_queries": 270,
+  "container_nodes": 263,
+  "subjects_fasta": {
+    "path": "data/raw/receptor-resource/whole-genome-alignments-v1/subjects.fna",
+    "sha256": "7c6457883048f140eba6840fcf7131c00c6ed14523c84f6e2dc307848c6f10d5"
+  },
+  "record_manifest": {
+    "path": "data/raw/receptor-resource/whole-genome-alignments-v1/record-manifest.json",
+    "sha256": "187c1296a3bbb5119c325771b7a9326e4322dcc52ac7003270839ad23b329d2c"
+  },
+  "frozen_plan": {
+    "path": "data/raw/receptor-resource/whole-genome-alignments-v1/frozen-plan.json",
+    "sha256": "3f38a41a4b9468f8a39a12a6cd243ddb0dbdfd247de6ee545cb9f74038a26305"
+  },
+  "commands": [
+    {
+      "argv": [
+        "data/raw/tools/blast-2.17.0/ncbi-blast-2.17.0+/bin/makeblastdb",
+        "-in",
+        "data/raw/receptor-resource/whole-genome-alignments-v1/subjects.fna",
+        "-dbtype",
+        "nucl",
+        "-parse_seqids",
+        "-out",
+        "data/raw/receptor-resource/whole-genome-alignments-v1/db"
+      ],
+      "exit_code": 0,
+      "log": "data/raw/receptor-resource/whole-genome-alignments-v1/step-1.log",
+      "log_sha256": "e5b69f33e3dd90f2db79ffd59fc06c61d92804a607be9737e31133eaf788f6e2",
+      "wall_seconds": 1.0121954998467118,
+      "child_user_cpu_seconds": 0.16202300000000003,
+      "child_system_cpu_seconds": 0.016214000000000003,
+      "cumulative_max_direct_child_rss_bytes": 24543232
+    },
+    {
+      "argv": [
+        "data/raw/tools/blast-2.17.0/ncbi-blast-2.17.0+/bin/blastn",
+        "-query",
+        "data/raw/receptor-resource/whole-genome-alignments-v1/subjects.fna",
+        "-db",
+        "data/raw/receptor-resource/whole-genome-alignments-v1/db",
+        "-evalue",
+        "1",
+        "-max_target_seqs",
+        "10000",
+        "-num_threads",
+        "4",
+        "-word_size",
+        "7",
+        "-reward",
+        "2",
+        "-penalty",
+        "-3",
+        "-gapopen",
+        "5",
+        "-gapextend",
+        "2",
+        "-outfmt",
+        "7 qseqid sseqid evalue bitscore qlen slen qstart qend sstart send qseq sseq nident gaps",
+        "-out",
+        "data/raw/receptor-resource/whole-genome-alignments-v1/blastn.tsv"
+      ],
+      "exit_code": 0,
+      "log": "data/raw/receptor-resource/whole-genome-alignments-v1/step-2.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "wall_seconds": 4126.538277625106,
+      "child_user_cpu_seconds": 13884.648796,
+      "child_system_cpu_seconds": 15.831857,
+      "cumulative_max_direct_child_rss_bytes": 1596522496
+    }
+  ],
+  "resource_scope": "Serial command CPU/time and cumulative direct-child peak RSS; not aggregate workflow memory",
+  "intergenomic_similarities_calculated": false,
+  "whole_genome_groups_created": false,
+  "graph_exclusions_or_admission_applied": false,
+  "phenotype_tables_loaded": false,
+  "training_or_scoring_executed": false,
+  "biological_predictions_produced": false,
+  "interpretation": "Validated per-record HSP output only. Container-coordinate aggregation, original-R numeric comparison, grouping and admission remain separate. No records joined, trimmed or filtered.",
+  "database_records_verified": 270,
+  "error": "Query appears after terminal completion",
+  "raw_artifacts": [
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/blastn-data.tsv",
+      "sha256": "aaa6401343aba88ed625c3fe31985131b7dd3e064f9dd042863f282a5ea19102",
+      "bytes": 420337933
+    },
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/blastn.tsv",
+      "sha256": "77e74d2115b7f1ea5704dc08b1c20a6d0c07dc9ef92ea5512a42b14a894018bb",
+      "bytes": 2243337312
+    },
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/db.ndb",
+      "sha256": "7142afce9ae72118eb5f345fe6643188f4b275c0307ef1d091b14c55910cfb5e",
+      "bytes": 131072
+    },
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/db.nhr",
+      "sha256": "9047242279031eb94405f7208b5835442117ad59e1c7cd328bc5d4d10b2f58e2",
+      "bytes": 12682
+    },
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/db.nin",
+      "sha256": "afedd8b7610052588fdb917c2cc59873db0267a6cf60cd759d7f845b64036e37",
+      "bytes": 3388
+    },
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/db.njs",
+      "sha256": "a39cabf9ec5e5e7da70dacc074b34985dd258673ae69c19a3f02921621996078",
+      "bytes": 501
+    },
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/db.nog",
+      "sha256": "c2b04ccf37eeaacd47109f883d68c43acb40b7a02577d8bba741e76ad2baf928",
+      "bytes": 1112
+    },
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/db.nos",
+      "sha256": "985260f13c48523a7785d9cf37f4c24142d96de8decf2f795525b0c84af16e45",
+      "bytes": 4590
+    },
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/db.not",
+      "sha256": "8083aabb5fb5b605e5d3e5eb177fc57ab533de610b2eaff8123c5671743e1ad7",
+      "bytes": 3248
+    },
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/db.nsq",
+      "sha256": "cb7df8eeed7b5d763b0732ccce53c7360538a22bbd947c655f5347915c29f992",
+      "bytes": 6964151
+    },
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/db.ntf",
+      "sha256": "a4846cf83c6cd188b3fc3f9fa4f1f1d3c33692a85065b54dc1e42095af3e7552",
+      "bytes": 65536
+    },
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/db.nto",
+      "sha256": "b3aa000aad71d0d7cbfcbe9ee8e8cd96945919d85a98bc665f5f6019f3720658",
+      "bytes": 1084
+    },
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/frozen-plan.json",
+      "sha256": "3f38a41a4b9468f8a39a12a6cd243ddb0dbdfd247de6ee545cb9f74038a26305",
+      "bytes": 83298
+    },
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/record-manifest.json",
+      "sha256": "187c1296a3bbb5119c325771b7a9326e4322dcc52ac7003270839ad23b329d2c",
+      "bytes": 66984
+    },
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/step-1.log",
+      "sha256": "e5b69f33e3dd90f2db79ffd59fc06c61d92804a607be9737e31133eaf788f6e2",
+      "bytes": 400
+    },
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/step-2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/subjects.fna",
+      "sha256": "7c6457883048f140eba6840fcf7131c00c6ed14523c84f6e2dc307848c6f10d5",
+      "bytes": 27858666
+    }
+  ]
+}

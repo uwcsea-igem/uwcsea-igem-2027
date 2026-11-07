@@ -32,7 +32,7 @@ A different, explicitly declared **unseen-phage / represented-host-background** 
 
 For any paired model, comparison with matched-subset host-only or training-prevalence baselines is necessary to distinguish phage-dependent information from a fixed host ordering. Existing constant baselines and the original ten-case denominator remain available; no new baseline or target score was manufactured by this audit. Novel phage and novel host generalization are separate claims, and neither establishes tail-fibre assembly compatibility.
 
-The current independent-method coverage of the ten original observations remains **0/10**. Four exact Ando exchange constructs remain source abstentions. Whole-phage relatedness grouping is still running and has no accepted numeric result at this checkpoint.
+The current independent-method coverage of the ten original observations remains **0/10**. Four exact Ando exchange constructs remain source abstentions. [Whole-phage grouping](27-phage-groups-and-source-split.md) is now complete and original-R-checked. It supplies exclusion and validation boundaries, not an admitted prediction model.
 
 ## Reproduction
 

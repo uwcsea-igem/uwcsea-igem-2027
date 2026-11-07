@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "purpose": "Protocol-only validation replay of the completed, unchanged 270-record nucleotide search; no second alignment, similarity calculation, grouping, phenotype access, training or scoring.",
+  "revision_reason": "The executed v1 receipt rejected valid BLAST batch boundaries with 'Query appears after terminal completion'. Both original search commands exited zero. Preserve that failed receipt and its partial numeric output; validate the same completed raw bytes with per-batch counts and global unique query coverage.",
+  "original_report": "data/processed/receptor-whole-genome-alignments.json",
+  "original_helper": "scripts/align-receptor-cohort.py",
+  "original_policy": "software/tipcraft/benchmarks/receptor-resource/whole-genome-alignment-policy.json",
+  "replay_helper_sha256": "b43840a191ef867da9c3f5d1baafaead8544a12aea0ca9338535bb7e73bd522c",
+  "search_rerun": false,
+  "expected_queries": 270,
+  "completion_requirements": [
+    "Every expected query occurs exactly once globally.",
+    "Each batch completion count equals its actual query count and each query's declared HSP count equals its observed count.",
+    "The sum of all completed batches is exactly 270, with no fixed choice of batch sizes.",
+    "The final nonblank record is a batch terminal marker.",
+    "Every nucleotide record has at least one self HSP under the unchanged executed v1 HSP validator.",
+    "Headerless output preserves every original HSP literal and row order; no coordinates, sequences, thresholds or numeric values change."
+  ],
+  "scientific_rules_changed": false,
+  "source_records_concatenated": false,
+  "original_execution_and_replay_provenance_separate": true,
+  "inputs": [
+    {
+      "path": "data/processed/receptor-whole-genome-alignments.json",
+      "sha256": "7120150804df5c32e08c0f5500f3eec34c54eb83dc6313d7c6d6461a47819993"
+    },
+    {
+      "path": "scripts/align-receptor-cohort.py",
+      "sha256": "29a71b539b1baee466bed5924a8718e1b4bedf53c9ab59aee090ba58ab8856c7"
+    },
+    {
+      "path": "software/tipcraft/benchmarks/receptor-resource/whole-genome-alignment-policy.json",
+      "sha256": "8a1f353ae507baddb68fe67603278c8860f2c3c788b94d1eb96fcc53c1bcd22d"
+    },
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/blastn.tsv",
+      "sha256": "77e74d2115b7f1ea5704dc08b1c20a6d0c07dc9ef92ea5512a42b14a894018bb"
+    },
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/blastn-data.tsv",
+      "sha256": "aaa6401343aba88ed625c3fe31985131b7dd3e064f9dd042863f282a5ea19102"
+    },
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/subjects.fna",
+      "sha256": "7c6457883048f140eba6840fcf7131c00c6ed14523c84f6e2dc307848c6f10d5"
+    },
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/record-manifest.json",
+      "sha256": "187c1296a3bbb5119c325771b7a9326e4322dcc52ac7003270839ad23b329d2c"
+    },
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/frozen-plan.json",
+      "sha256": "3f38a41a4b9468f8a39a12a6cd243ddb0dbdfd247de6ee545cb9f74038a26305"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "purpose": "Genotype-only source-role overlap audit and candidate partition; not label admission or model training",
+  "timing": "After verified whole-genome grouping and metadata-only role inspection; before any model fitting or evaluation results",
+  "group_report": {
+    "path": "data/processed/receptor-whole-genome-groups.json",
+    "sha256": "2b540c24915b22edd6347f19efc2f445a7fa8e743f3a271203e91634ab141159"
+  },
+  "numeric_matrix": {
+    "path": "data/processed/receptor-whole-genome-similarities.tsv",
+    "sha256": "469fa9b107edb71d19229004622aa7429217dd20566ceec53ad70f18c9d4ced6"
+  },
+  "rule": "Remove primarytarget/near-seed components first. Keep all remaining published testing phages together as the candidate holdout. Quarantine every published training phage in any holdout-containing group. Mutants remain nontraining bridge records. No relabeling, random fallback, outcome-based subgroup choice or dropping a testing phage to improve metrics.",
+  "label_or_feature_use": false,
+  "final_training_admission": false
+}

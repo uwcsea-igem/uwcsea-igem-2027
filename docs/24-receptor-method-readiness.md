@@ -102,10 +102,12 @@ The [executed five-reference host audit](25-reference-host-overlap.md) now place
 
 The [executed host-reference feature pilot](26-host-encoder-capacity.md) supports **NO-GO for this merged global5-mer/union host encoder as the sole host input to a paired ranker**. Fitting only the two author-browser proteomes retains 772,195 k-mers but merges them into three occurrence-pattern features. All three original host-reference proteomes project to `[1, 1, 1]`. A fixed phage representation paired with identical host vectors cannot produce different host scores through those inputs. A separately fixed uniform-Prodigal control retains 787,904 k-mers but again gives three identical target vectors, so caller uniformity did not remove the collision. This is a label-free capacity result, not an infection accuracy estimate; no downstream model was fitted. The phage-only receptor endpoint and alternative host encoders remain separate questions.
 
+The [completed phage matrix and source-role audit](27-phage-groups-and-source-split.md) now provide 52 relatedness groups and target exclusions. The published 200/49 eligible development split shares nine groups; the deterministic candidate split is 84 training /49 testing across disjoint groups. Source/label/model admission remains separate.
+
 ## Required evidence before scoring
 
 1. Container authentication and translation inventory/checking are complete as reported above. Freeze how unresolved annotations, ambiguous residues and multiple records will be represented before feature construction; do not silently correct or remove them.
-2. The direct target-gp17 screen is complete. Whole-genome/related-group analysis must still establish training and evaluation groups, including parent/mutant and nonmodel bridge records.
+2. Direct gp17 screening and [whole-genome grouping](27-phage-groups-and-source-split.md) are complete. All source/nonmodel/mutant bridges were retained. A candidate group-disjoint 84/49 partition preserves all eligible source testing members, with related training members quarantined; it is not final model admission.
 3. Resolve source-label version, negative/unknown semantics and host-context applicability. Freeze task membership, preprocessing, feature selection, model parameters, grouped splits and matched baselines before a result run. Related parent/mutant phages stay together.
 4. Report the receptor endpoint separately. The ten Ando observations, WIsH negative result, four construct abstentions and original strain-ranking decision criterion remain unchanged.
 
