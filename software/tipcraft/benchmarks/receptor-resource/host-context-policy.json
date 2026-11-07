@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "purpose": "Host-context field inventory and prevention of production-host/derivative alias substitution; no target labeling or scoring",
+  "timing": "Recorded after source-header and production-host inspection, before any biological model fit; not a blinded discovery",
+  "inputs": [
+    {
+      "name": "metadata",
+      "path": "data/raw/receptor-resource/Table_S1_updated.tsv",
+      "sha256": "c7c1eb51281d4c3121bf6918b6207e13cb7bae4482d2454e3d1975f9ec0ca79e"
+    },
+    {
+      "name": "workbook",
+      "path": "data/raw/receptor-resource/supplements/tables-v1.xlsx",
+      "sha256": "10de34fd37a7ba1d355b56cdb8b214b690fc71f8991108669dee9d223ab298b7"
+    }
+  ],
+  "phenotype_columns": {
+    "BW25113": "BW25113 susceptibility",
+    "BL21": "BL21 susceptibility"
+  },
+  "original_target_hosts": [
+    "BW25113",
+    "BL21",
+    "MG1655"
+  ],
+  "strain_table": {
+    "sheet": "Table S2",
+    "header_row": 2,
+    "columns": {
+      "A": "Strain",
+      "B": "Antibiotic",
+      "C": "Collection number (if any)",
+      "D": "Source",
+      "E": "Genome accession",
+      "F": "Reference"
+    }
+  },
+  "rules": [
+    "All260metadata rows; no outcome selection",
+    "Exact literal names; no guessed alias/stock equivalence",
+    "Production host is provenance only, not an infection label or model feature",
+    "All source susceptibility states stay literal; no negative/positive conversion"
+  ]
+}

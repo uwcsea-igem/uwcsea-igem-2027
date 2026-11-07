@@ -66,11 +66,23 @@ The [executed DNA-based gp17 screen](../data/processed/receptor-gp17-overlap.jso
 
 The 257 candidates without a reported hit meeting either rule are **not** cleared of whole-genome relatedness, distant homology or group overlap. No final training roster is admitted by this direct screen. The annotation-consistency findings do not change the DNA screen or cause samples to disappear from it.
 
+## Host-context coverage cannot be inferred from propagation metadata
+
+The [executed host-context audit](../data/processed/receptor-host-context-audit.json) retains all 260 metadata rows and finds explicit susceptibility fields for **BW25113 and BL21 only**, with no corresponding MG1655 field. Production metadata contains `MG1655_RM` (153 rows) and `MG1655_RM wbbL(+)` (33 rows); these are not additional susceptibility measurements and are not used as predictor features or positive labels.
+
+Official v1 Table S2 lists `MG1655ΔRM` with a Maffei et al. 2021 reference. That [primary study, Bacterial strains and strain construction](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3001424) describes a restriction-system-deficient MG1655 derivative and separately altered surface-glycan backgrounds. This establishes that derivative context matters; it does not establish stock equivalence between differently formatted names in the two resources. Neither derivative name is silently equated with the original Ando MG1655 case. Differences in intracellular defence also reinforce why receptor dependence and functional infection remain separate endpoints.
+
+The BL21 susceptibility column includes 96 `Not assayed` values and one literal `Resistant`, alongside `Yes` and `No`. The audit preserves all states without binary conversion. A future known-host diagnostic would require its own justified label semantics and would still not supply a validated score for the original third host. The existing six-native-observation criterion and ten-observation coverage denominator therefore remain unchanged.
+
+The [host-asset candidate audit](../data/processed/receptor-host-asset-candidates.json) identifies six pinned nucleotide/protein/annotation assets in the author browser, independently of Picard. Two small browser configurations are byte-authenticated: BW25113 loads `Keio`, while BL21 names `CP001509`. The [original genome publication](https://pubmed.ncbi.nlm.nih.gov/19786035/) identifies CP001509 as BL21(DE3). These configurations do not establish the identity of the as-yet uninspected genome payloads or experimental stocks, and do not replace the original BL21 TaKaRa reference.
+
+This leaves a concrete paired host-feature route to investigate after payload authentication and source correspondence. Missing MG1655 training annotations do not mathematically prevent an explicitly specified unseen-host model from producing a score; they do prevent treating production metadata as its ground truth. Training on two source host backgrounds would require clear limits on unseen-host validation and comparison with host-only/prevalence baselines. No such paired model has been specified or fitted here.
+
 ## Required evidence before scoring
 
 1. Container authentication and translation inventory/checking are complete as reported above. Freeze how unresolved annotations, ambiguous residues and multiple records will be represented before feature construction; do not silently correct or remove them.
 2. The direct target-gp17 screen is complete. Whole-genome/related-group analysis must still establish training and evaluation groups, including parent/mutant and nonmodel bridge records.
-3. Resolve source-label version and negative/unknown semantics. Freeze task membership, preprocessing, feature selection, model parameters, grouped splits and matched baselines before a result run. Related parent/mutant phages stay together.
+3. Resolve source-label version, negative/unknown semantics and host-context applicability. Freeze task membership, preprocessing, feature selection, model parameters, grouped splits and matched baselines before a result run. Related parent/mutant phages stay together.
 4. Report the receptor endpoint separately. The ten Ando observations, WIsH negative result, four construct abstentions and original strain-ranking decision criterion remain unchanged.
 
 Reproduce the literal label comparison with fresh destinations:

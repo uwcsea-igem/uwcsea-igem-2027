@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "purpose": "Bounded discovery of author host-genome/protein asset candidates; no stock substitution or training admission",
+  "commit": "ae2b5e0e59b24f84666a8ebed01f5d1c0ded7b04",
+  "tree_metadata": {
+    "path": "data/raw/receptor-resource/repository-tree-ae2b5e0.json",
+    "sha256": "e5c466a71515713a7210562125a2a91c4c5722cc713c865fbccc1af1cc5152c9",
+    "truncated": false
+  },
+  "authenticated_browser_configurations": [
+    {
+      "source_path": "Ecoli_phages/barseq_browser/BW25113/BW25113.js",
+      "source_url": "https://github.com/mjohnson11/PhageDataSheets/blob/ae2b5e0e59b24f84666a8ebed01f5d1c0ded7b04/Ecoli_phages/barseq_browser/BW25113/BW25113.js",
+      "cache_path": "data/raw/receptor-resource/host-configs/BW25113.js",
+      "bytes": 284,
+      "git_blob_sha1": "4eb996ab06e82616529f87b489390a66b3ef095c",
+      "sha256": "35c402253bc93e470006a740915add836e8d95b21280d46258cda3b8bf120257",
+      "browser_data_directory": "Keio",
+      "browser_initial_sequence_identifier": "7023",
+      "experimental_stock_identity_verified": false
+    },
+    {
+      "source_path": "Ecoli_phages/barseq_browser/BL21/BL21.js",
+      "source_url": "https://github.com/mjohnson11/PhageDataSheets/blob/ae2b5e0e59b24f84666a8ebed01f5d1c0ded7b04/Ecoli_phages/barseq_browser/BL21/BL21.js",
+      "cache_path": "data/raw/receptor-resource/host-configs/BL21.js",
+      "bytes": 297,
+      "git_blob_sha1": "acf6d67d4ff8d71eb1fb5850f81153dc64544200",
+      "sha256": "5170c36036f0ab4498c7f26c35512cc4c8d7a2e46cb0690ac64a20e2b553d838",
+      "browser_data_directory": "BL21",
+      "browser_initial_sequence_identifier": "CP001509",
+      "experimental_stock_identity_verified": false
+    }
+  ],
+  "candidate_assets": [
+    {
+      "source_path": "Ecoli_phages/barseq_browser/data/BL21/aaseq",
+      "bytes": 1364116,
+      "git_blob_sha1": "34f17b6531d6125d30298f9ba6be2a9be9206f7b",
+      "payload_downloaded_or_inspected": false
+    },
+    {
+      "source_path": "Ecoli_phages/barseq_browser/data/BL21/genes.tab",
+      "bytes": 391269,
+      "git_blob_sha1": "9bd74dbbc4604a353f51745a3cfdc6ecab0d84ec",
+      "payload_downloaded_or_inspected": false
+    },
+    {
+      "source_path": "Ecoli_phages/barseq_browser/data/BL21/genome.fna",
+      "bytes": 4634946,
+      "git_blob_sha1": "34d3d1bc1751af20f25d7db4f42c0c76cb5e420d",
+      "payload_downloaded_or_inspected": false
+    },
+    {
+      "source_path": "Ecoli_phages/barseq_browser/data/Keio/aaseq",
+      "bytes": 1366384,
+      "git_blob_sha1": "df41c9d472dd0adf86b2f8efe0aeee112303d419",
+      "payload_downloaded_or_inspected": false
+    },
+    {
+      "source_path": "Ecoli_phages/barseq_browser/data/Keio/genes.tab",
+      "bytes": 382021,
+      "git_blob_sha1": "4be94894fd01bd949079966fef608d4f6fdfa4f0",
+      "payload_downloaded_or_inspected": false
+    },
+    {
+      "source_path": "Ecoli_phages/barseq_browser/data/Keio/genome.fna",
+      "bytes": 4717009,
+      "git_blob_sha1": "9100f89f1583bbfdcc4ffc02e05f8ef5fdc1e9bc",
+      "payload_downloaded_or_inspected": false
+    }
+  ],
+  "external_accession_check": {
+    "accession": "CP001509",
+    "record_identity": "BL21(DE3) in the original genome publication",
+    "primary_source": "https://pubmed.ncbi.nlm.nih.gov/19786035/",
+    "not_proof_of_browser_genome_payload_identity": true
+  },
+  "interpretation": "The author browser repository lists host nucleotide/protein assets independent of the declined Picard deposit. Browser BL21 names CP001509; BW25113 loads the Keio directory. These are source-mapping candidates, not verified experimental stocks or replacements for the original Ando host references. Authentication and contents/stock correspondence must be checked before paired host-feature modelling. Two source host backgrounds would also require explicit disclosure of limited unseen-host validation.",
+  "host_sequence_payloads_loaded": false,
+  "training_or_scoring_executed": false,
+  "new_benchmark_rows_admitted": 0
+}

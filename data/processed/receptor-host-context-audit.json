@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "purpose": "Host-context field inventory and prevention of production-host/derivative alias substitution; no target labeling or scoring",
+  "policy_sha256": "e1003ad32d78214afc5ca8e3880402c3cdc5f1ff985526c78c96575a92e2500b",
+  "script_sha256": "de32e1b2f99c247e6f6a0e1306254a8317a44d4d509a0a5fa1a5ca1687e19435",
+  "ooxml_parser_sha256": "98b88150c75d3102a38a4882ddc64af66320a5b73e5419eae6622a5c4ff93d35",
+  "authenticated_inputs": [
+    {
+      "name": "metadata",
+      "path": "data/raw/receptor-resource/Table_S1_updated.tsv",
+      "sha256": "c7c1eb51281d4c3121bf6918b6207e13cb7bae4482d2454e3d1975f9ec0ca79e"
+    },
+    {
+      "name": "workbook",
+      "path": "data/raw/receptor-resource/supplements/tables-v1.xlsx",
+      "sha256": "10de34fd37a7ba1d355b56cdb8b214b690fc71f8991108669dee9d223ab298b7"
+    }
+  ],
+  "metadata_records": 260,
+  "declared_susceptibility_fields": {
+    "BW25113": "BW25113 susceptibility",
+    "BL21": "BL21 susceptibility"
+  },
+  "susceptibility_state_counts": {
+    "BW25113": {
+      "No": 58,
+      "Yes": 202
+    },
+    "BL21": {
+      "No": 74,
+      "Not assayed": 96,
+      "Resistant": 1,
+      "Yes": 89
+    }
+  },
+  "target_hosts_without_a_declared_susceptibility_field": [
+    "MG1655"
+  ],
+  "production_host_literal_counts": {
+    "BW25113-pCA24N(rcsA)": 3,
+    "BW25113_ompW": 1,
+    "BW25113_tsx": 2,
+    "Bos12": 1,
+    "C63": 29,
+    "E69 O9:K30:H12": 1,
+    "ECOR1": 9,
+    "ECOR20": 2,
+    "ECOR27": 1,
+    "ECOR38": 1,
+    "ECOR47": 2,
+    "ECRC22": 4,
+    "ECRC55": 1,
+    "ECRC62": 1,
+    "ECRC98": 2,
+    "HSF": 3,
+    "K12 MC4100": 1,
+    "MG1655_RM": 153,
+    "MG1655_RM wbbL(+)": 33,
+    "NCTC12900": 3,
+    "O157:H7 A7793-B1": 1,
+    "O157:H7 B1328-C10": 1,
+    "O157:H7 C-7111-85": 1,
+    "O157:H7 C-7142-85": 1,
+    "O157:H7 C-7685-84": 1,
+    "O157:H7 C7420-85": 1,
+    "O157:H7 CL40": 1
+  },
+  "exact_original_target_production_host_counts": {
+    "BW25113": 0,
+    "BL21": 0,
+    "MG1655": 0
+  },
+  "supplementary_strain_rows_containing_literal_MG1655": [
+    {
+      "row": 5,
+      "cells": {
+        "A": "MG1655ΔRM",
+        "D": "Alexander Harms",
+        "F": "Maffei et al. 2021"
+      },
+      "cell_types": {
+        "A": "s",
+        "B": "n",
+        "C": "n",
+        "D": "s",
+        "E": "n",
+        "F": "s"
+      },
+      "formulas": {}
+    }
+  ],
+  "production_hosts_used_as_phenotype_labels_or_predictive_features": false,
+  "MG1655_derivative_names_equated_to_original_target": false,
+  "unknown_or_not_assayed_states_converted_to_negatives": false,
+  "experimental_stock_identity_verified": false,
+  "training_or_scoring_executed": false,
+  "new_benchmark_rows_admitted": 0,
+  "interpretation": "The metadata schema declares susceptibility only for BW25113 and BL21. Production-host strings are provenance, not independent target labels or predictor inputs. Derivative names do not supply missing MG1655 observations or establish Ando stock identity. State counts are not infection classifications."
+}
