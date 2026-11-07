@@ -1,0 +1,123 @@
+{
+  "DNA_rotation_reverse_complement_or_editing_attempted": false,
+  "all52_inputs_authenticated": false,
+  "experimental_stock_identity_verified": false,
+  "exposure": "The researcher read existing source-summary prose; no additional interaction table was inspected. This is not blinded research.",
+  "interpretation": "Successful routes and exact DNA equality for these three records only; do not infer versions or sequence identities for the other49 records. Embedded length text in a custom record ID is not authoritative sequence length.",
+  "model_or_prediction_executed": false,
+  "new_original_benchmark_coverage": 0,
+  "observations": [
+    {
+      "author_container": {
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas01.gbk",
+        "sha256": "28f2a91e5fc10506e00dc40d22135bea4bc2aab48ae494f338575fb13ec5617d"
+      },
+      "length": 50126,
+      "official_formats_and_author_DNA_exactly_equal": true,
+      "official_payloads": [
+        {
+          "ambiguous_bases": 0,
+          "file_sha256": "fcb8c8f9cd79f8d19770376d45691cc7150e80d2be934d324550c19dc45f3cb5",
+          "length": 50126,
+          "path": "data/raw/genophi-external-validation/phage-accession-probe-v1/PZ445405-ena_embl.txt",
+          "sequence_sha256": "eb27d3f5fb6e79329610ad7cdc0537d890b6eb523029902a29c08f1b2080d5a6",
+          "topology": "circular",
+          "url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445405",
+          "versioned_accession": "PZ445405.1"
+        },
+        {
+          "ambiguous_bases": 0,
+          "file_sha256": "d166345698b6c52b443576f23b432782e35996dc0bbb3b97037bb61407f6afac",
+          "length": 50126,
+          "path": "data/raw/genophi-external-validation/phage-accession-probe-v1/PZ445405-ena_fasta.txt",
+          "sequence_sha256": "eb27d3f5fb6e79329610ad7cdc0537d890b6eb523029902a29c08f1b2080d5a6",
+          "topology": null,
+          "url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445405",
+          "versioned_accession": "PZ445405.1"
+        }
+      ],
+      "phage": "Bas01",
+      "requested_accession": "PZ445405",
+      "sequence_sha256": "eb27d3f5fb6e79329610ad7cdc0537d890b6eb523029902a29c08f1b2080d5a6",
+      "versioned_accession": "PZ445405.1"
+    },
+    {
+      "author_container": {
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas12.gbk",
+        "sha256": "f99de7c5c6ddf96d3b8cc2a099b3ee09528de71bc101c5573de0d6045dd2eb10"
+      },
+      "length": 49298,
+      "official_formats_and_author_DNA_exactly_equal": true,
+      "official_payloads": [
+        {
+          "ambiguous_bases": 0,
+          "file_sha256": "d4d1ed29279d4538d861483e0b41608e4655eac00242375f7a03ce98359f6f10",
+          "length": 49298,
+          "path": "data/raw/genophi-external-validation/phage-accession-probe-v1/MZ501053-ena_embl.txt",
+          "sequence_sha256": "bd57afd371a88e4a717c99dc3221e6f0ff48cdd441cb4578cffd25f6c015731b",
+          "topology": "linear",
+          "url": "https://www.ebi.ac.uk/ena/browser/api/embl/MZ501053",
+          "versioned_accession": "MZ501053.1"
+        },
+        {
+          "ambiguous_bases": 0,
+          "file_sha256": "6e5a842055093b5f3e857fd105b2b1b66d62be12190ffc03a6e4889f1bffd7b1",
+          "length": 49298,
+          "path": "data/raw/genophi-external-validation/phage-accession-probe-v1/MZ501053-ena_fasta.txt",
+          "sequence_sha256": "bd57afd371a88e4a717c99dc3221e6f0ff48cdd441cb4578cffd25f6c015731b",
+          "topology": null,
+          "url": "https://www.ebi.ac.uk/ena/browser/api/fasta/MZ501053",
+          "versioned_accession": "MZ501053.1"
+        }
+      ],
+      "phage": "Bas12",
+      "requested_accession": "MZ501053",
+      "sequence_sha256": "bd57afd371a88e4a717c99dc3221e6f0ff48cdd441cb4578cffd25f6c015731b",
+      "versioned_accession": "MZ501053.1"
+    },
+    {
+      "author_container": {
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas14.gbk",
+        "sha256": "c599a90a7af5a50b173ebf8c6e6fcb687b9d1265389f38fa2794dd62fe27b716"
+      },
+      "length": 43627,
+      "official_formats_and_author_DNA_exactly_equal": true,
+      "official_payloads": [
+        {
+          "ambiguous_bases": 0,
+          "file_sha256": "5a5efefe287d6f35711024ba081e91c2ffe5f5420e498d324702b647e040d387",
+          "length": 43627,
+          "path": "data/raw/genophi-external-validation/phage-accession-probe-v1/NC_073062-ncbi_gb.txt",
+          "sequence_sha256": "9dad1f981892b672154f7585d6c07fa59c06a70934c2f2bcde114de85af59393",
+          "topology": "linear",
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_073062&rettype=gbwithparts&retmode=text",
+          "versioned_accession": "NC_073062.1"
+        },
+        {
+          "ambiguous_bases": 0,
+          "file_sha256": "557375f3832979ad0c888875fc4e0198bcdb03d36e133f22a096979f43268764",
+          "length": 43627,
+          "path": "data/raw/genophi-external-validation/phage-accession-probe-v1/NC_073062-ncbi_fasta.txt",
+          "sequence_sha256": "9dad1f981892b672154f7585d6c07fa59c06a70934c2f2bcde114de85af59393",
+          "topology": null,
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_073062&rettype=fasta&retmode=text",
+          "versioned_accession": "NC_073062.1"
+        }
+      ],
+      "phage": "Bas14",
+      "requested_accession": "NC_073062",
+      "sequence_sha256": "9dad1f981892b672154f7585d6c07fa59c06a70934c2f2bcde114de85af59393",
+      "versioned_accession": "NC_073062.1"
+    }
+  ],
+  "parser": "Biopython 1.86",
+  "raw_probe": {
+    "path": "data/raw/genophi-external-validation/phage-accession-probe-v1/identity-observations.json",
+    "sha256": "042c53276ec8e67c78f3cfd8f0ad1ba1bd4162ec1a7add8518ee1984109b4cd7"
+  },
+  "schema_version": 1,
+  "scope": "Three-accession official route pilot, independently re-parsed from saved bytes by the root agent",
+  "selection": "Bas01 requested first; Bas12 and Bas14 cover the MZ and RefSeq_NC accession prefixes, without outcome selection",
+  "unretrieved_phages": 49,
+  "verified_phages": 3
+}

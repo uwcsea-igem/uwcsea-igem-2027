@@ -50,6 +50,8 @@ GO here means **continue source admission**, not train an admitted model or clai
 
 The subsequent [ECOR input execution](33-ecor-wgs-input-authentication.md) completes official WGS authentication for all 25 hosts and all 3,477 contigs. Master builds and individual sequence versions are recorded separately. GCA mapping beyond the ECOR12 route pilot and experimental-stock equivalence are not inferred. Host relatedness and phage accession reconciliation remain prerequisites before modelling.
 
+The subsequent [host-relatedness execution](34-ecor-host-groups-and-target-exclusions.md) completes 900 directed comparisons over 30 references, reproduces the prior 25 controls and excludes ECOR13/ECOR25. The 23 remaining candidate hosts occupy 15 components. Raw source contrasts have not yet been recomputed as a final eligible evaluation panel; phage accession reconciliation and the remaining admission gates still apply.
+
 ## Other source leads and rejected shortcuts
 
 The [Viral Host Range database source 135](https://viralhostrangedb.pasteur.cloud/data-source/135/) provides a separate Mt1B1/ECOR spotting-data lead. Its descriptive text says 17 phages/90 strains, while its current inventory lists 28/98 and three named phage accessions. That discrepancy, the downloadable payload and the primary publication correspondence require checking before admission. The page's generic T7/example matrix is **not** imported as a study observation.

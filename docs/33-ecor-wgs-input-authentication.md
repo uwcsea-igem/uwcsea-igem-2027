@@ -40,6 +40,8 @@ The matching source assembly metrics are corroborating metadata, not experimenta
 
 GO for **reference-input preparation and relatedness checks**. The next admission work is to group these hosts with the original target references under the previously specified sequence-overlap rules, and reconcile the 52 phage accessions against exact public sequence records. Complete an eligible, group-aware evaluation manifest before fitting or scoring.
 
+The subsequent [complete host comparison](34-ecor-host-groups-and-target-exclusions.md) now supplies that reference-group boundary: ECOR13 and ECOR25 are excluded as target-related, leaving 23 candidate references in 15 groups. This does not turn input authentication or grouping into final training admission.
+
 The [raw panel's opposing host preferences](32-secondary-contrast-source-selection.md) remain a source-feasibility finding. This input authentication adds no prediction, comparison against a baseline, binding evidence or assembly evidence. Original Ando independent-method coverage remains **0/10**; the measured WIsH failure and four exact-construct abstentions are preserved.
 
 ## Reproduction

@@ -1,0 +1,46 @@
+{
+  "candidate_source_group_count": 15,
+  "candidate_source_hosts": [
+    "ecor:ECOR12",
+    "ecor:ECOR14",
+    "ecor:ECOR15",
+    "ecor:ECOR16",
+    "ecor:ECOR17",
+    "ecor:ECOR18",
+    "ecor:ECOR19",
+    "ecor:ECOR20",
+    "ecor:ECOR21",
+    "ecor:ECOR22",
+    "ecor:ECOR23",
+    "ecor:ECOR24",
+    "ecor:ECOR26",
+    "ecor:ECOR27",
+    "ecor:ECOR28",
+    "ecor:ECOR29",
+    "ecor:ECOR30",
+    "ecor:ECOR31",
+    "ecor:ECOR32",
+    "ecor:ECOR33",
+    "ecor:ECOR34",
+    "ecor:ECOR35",
+    "ecor:ECOR38"
+  ],
+  "directed_pairs": 900,
+  "matrix": {
+    "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-host-groups-v1/skani.tsv",
+    "sha256": "9c13d7443d48acd58381c7f5255fd68b42bc7084086b824ddbe2d43a1aca9e96"
+  },
+  "prior25_control_exact": true,
+  "report": {
+    "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/processed/ecor-host-reference-groups.json",
+    "sha256": "afbc1be21ed3819f337d4c23c83b195307e75170cc5a5739355700861efec1d6"
+  },
+  "schema_version": 1,
+  "script_sha256": "98826b10ad33e1524cd33c733bde5b1f413ca80dae25d6876563a0a3f20b10a3",
+  "skani_network_or_model_execution": false,
+  "status": "exact_complete_matrix_and_partition_replay",
+  "target_related_source_hosts": [
+    "ecor:ECOR13",
+    "ecor:ECOR25"
+  ]
+}
