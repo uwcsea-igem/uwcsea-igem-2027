@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "purpose": "Authenticate two existing public GenBank containers and inspect deposited sequence/protein annotations; no prediction, new sequence design or stock-equivalence assertion",
+  "roster_sha256": "d8065d07a2cb6c4be58a0b7a9384d02fe3a416429fc1a443b01df4584a52b91b",
+  "selected_exact_names": [
+    "T7",
+    "T3"
+  ],
+  "selection_reason": "Original retrospective target names; T7 is a source training member and T3 is a catalogue extra. Selection does not use receptor or host outcomes.",
+  "source_commit": "ae2b5e0e59b24f84666a8ebed01f5d1c0ded7b04",
+  "files": [
+    {
+      "filename": "T7.gbk",
+      "repository_path": "Ecoli_phages/data/phage_genomes/T7.gbk",
+      "format": "GenBank",
+      "git_blob_sha1": "c00e0be58822616d4159765d4d47d89b2283ce37",
+      "declared_size_bytes": 92537,
+      "source_url": "https://github.com/mjohnson11/PhageDataSheets/blob/ae2b5e0e59b24f84666a8ebed01f5d1c0ded7b04/Ecoli_phages/data/phage_genomes/T7.gbk",
+      "sequence_payload_read": false,
+      "payload_bytes_authenticated": false
+    },
+    {
+      "filename": "T3.gbk",
+      "repository_path": "Ecoli_phages/data/phage_genomes/T3.gbk",
+      "format": "GenBank",
+      "git_blob_sha1": "3d6394771fff1069779831160b0d9019a2d1bd57",
+      "declared_size_bytes": 86423,
+      "source_url": "https://github.com/mjohnson11/PhageDataSheets/blob/ae2b5e0e59b24f84666a8ebed01f5d1c0ded7b04/Ecoli_phages/data/phage_genomes/T3.gbk",
+      "sequence_payload_read": false,
+      "payload_bytes_authenticated": false
+    }
+  ],
+  "parse_policy": {
+    "parser": "Biopython 1.86 SeqIO genbank",
+    "preserve_record_and_feature_counts": true,
+    "deposited_translations_only": true,
+    "do_not_retranslate_or_fill_missing_proteins": true,
+    "no_alias_or_stock_identity_inference": true,
+    "no_training_or_scoring": true
+  }
+}

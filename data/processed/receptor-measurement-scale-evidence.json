@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "source": "https://doi.org/10.6084/m9.figshare.31930314.v1",
+  "inspection": "Official v1 image files visually inspected; size and MD5 checked against deposit metadata",
+  "figures": [
+    {
+      "path": "data/raw/receptor-resource/supplements/Figure-S2.png",
+      "figshare_file_id": 63415080,
+      "bytes": 1476801,
+      "md5": "00514239263d3571fc8470eb019e9c51",
+      "sha256": "71cfc805d404196514e281b12521c66c988e30fe0dea9779905481d07fc01057",
+      "visual_observation": "EOP axis explicitly labelled Efficiency of plating (log10)"
+    },
+    {
+      "path": "data/raw/receptor-resource/supplements/Figure-S3.png",
+      "figshare_file_id": 63415089,
+      "bytes": 4760666,
+      "md5": "43b992d8944b93fea580f7a62dd54703",
+      "sha256": "91d70240aca08769b6a55b2b15a56cf348fe0ca803f738879c01e569cf325b42",
+      "visual_observation": "EOP axis explicitly labelled Efficiency of plating (log10)"
+    }
+  ],
+  "plotted_log10_scale_verified": true,
+  "all_tabulated_cell_units_verified": false,
+  "detection_floor_or_censoring_verified": false,
+  "correspondence_report": "data/processed/receptor-measurement-correspondence.json",
+  "binary_infection_conversion_performed": false,
+  "training_or_scoring_executed": false,
+  "interpretation": "The published plots use log10 EOP. Negative plotted values are not absence-of-infection labels. Workbook/browser serialization correspondence does not by itself certify all per-cell units, detection limits, stock identity or training eligibility."
+}

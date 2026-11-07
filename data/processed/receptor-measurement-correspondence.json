@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "status": "literal_correspondence_checked",
+  "purpose": "Exact source-workbook to browser serialization correspondence; no prediction or endpoint admission",
+  "policy_sha256": "2d81b1a1fd0bd5eb9c264a4d552c675d0a652b381a37b2482d43e74f61bffe94",
+  "script_sha256": "98b88150c75d3102a38a4882ddc64af66320a5b73e5419eae6622a5c4ff93d35",
+  "authenticated_inputs": [
+    {
+      "path": "software/tipcraft/benchmarks/receptor-resource/measurement-correspondence-policy.json",
+      "sha256": "2d81b1a1fd0bd5eb9c264a4d552c675d0a652b381a37b2482d43e74f61bffe94"
+    },
+    {
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/scripts/compare-receptor-measurements.py",
+      "sha256": "98b88150c75d3102a38a4882ddc64af66320a5b73e5419eae6622a5c4ff93d35"
+    },
+    {
+      "path": "data/raw/receptor-resource/supplements/datasets-v1.xlsx",
+      "sha256": "555b520f61f42455351123dc51dbdb20d30a41e5ca564921327789f04648309a"
+    },
+    {
+      "path": "data/raw/receptor-resource/supplements/literal-workbook-rows.json",
+      "sha256": "ce8bad036758853dbadf5252f06b6c6eb04234e52a8789eff9cb7966223cb924"
+    },
+    {
+      "path": "data/raw/receptor-resource/KEIO_EOP_reformatted.csv",
+      "sha256": "0440f6288873b4ecbe2df910c59ea89ef5f44458a1064e752de8cd43c51bae10"
+    },
+    {
+      "path": "data/processed/receptor-resource-audit.json",
+      "sha256": "81ddb93ab08fe50a7db0fccfa7bf7ecd9cfc73cf6a69ed1eba938de2f53a1565"
+    },
+    {
+      "path": "software/tipcraft/benchmarks/receptor-resource/source-audit-policy.json",
+      "sha256": "6c7204048fbb9457c0986dfb9678aef14babc0c10134eb7d661121dea624c39b"
+    },
+    {
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/scripts/audit-receptor-resource.py",
+      "sha256": "50bc4f42021ee674f6efec0bed74da0313756d0b1c1a55cfe92ae0fe62cbbd80"
+    },
+    {
+      "path": "data/raw/receptor-resource/Table_S1_updated.tsv",
+      "sha256": "c7c1eb51281d4c3121bf6918b6207e13cb7bae4482d2454e3d1975f9ec0ca79e"
+    },
+    {
+      "path": "data/raw/receptor-resource/audit-v1/literal-measurements.json",
+      "sha256": "3f6b4da301b1e38e184054ec4c92877b7bb5d9fdb37c2c1a77c6c7a32665af68"
+    },
+    {
+      "path": "data/raw/receptor-resource/audit-v1/metadata-and-duplicates.json",
+      "sha256": "86dfcb08ce60fcca9fe18f134cdd6df289a0b2128d77ae7357d26dbcd582bf39"
+    }
+  ],
+  "direct_ooxml_extraction_matches_prior_literal_artifact": true,
+  "worksheet_part": "xl/worksheets/sheet4.xml",
+  "empty_formatted_rows_after_header": [],
+  "formula_source_rows": [],
+  "source_rows": 1846,
+  "browser_context_records": 1846,
+  "paired_unique_keys": 1846,
+  "comparison_counts": {
+    "decimal_exact": 17,
+    "within_fixed_tolerance": 1829,
+    "value_mismatch": 0,
+    "noncomparable": 0
+  },
+  "within_absolute_tolerance_including_exact": 1846,
+  "literal_string_equal_pairs": 0,
+  "source_context_counts": {
+    "EOP": 923,
+    "EOP (complemented)": 923
+  },
+  "browser_context_counts": {
+    "EOP": 923,
+    "EOP (complemented)": 923
+  },
+  "source_unpaired_rows": [],
+  "browser_unpaired_contexts": [],
+  "unrecognized_suffix_source_rows": [],
+  "missing_key_source_rows": [],
+  "missing_key_browser_contexts": [],
+  "ambiguous_keys": [],
+  "value_mismatch_source_rows": [],
+  "all_source_and_browser_contexts_correspond_within_fixed_tolerance": true,
+  "absolute_tolerance_decimal": "1E-8",
+  "comparison_rule": "Signed finite Decimal literals; exact equality and fixed absolute serialization tolerance; no transform",
+  "artifact": {
+    "path": "data/raw/receptor-resource/correspondence-v1/row-correspondence.json",
+    "sha256": "c24b907c75ca4b6affbbef06bc542935c99adc78824e6996e8be20f24144370c",
+    "bytes": 2359797
+  },
+  "initial_source_audit_modified": false,
+  "measurement_scale_verified": false,
+  "censoring_or_detection_limit_verified": false,
+  "stock_identity_verified": false,
+  "all_rows_admitted": false,
+  "admitted_rows": 0,
+  "training_or_scoring_executed": false,
+  "predictions_or_performance_produced": false,
+  "original_benchmark_modified": false,
+  "interpretation": "Serialization/key correspondence only. All source rows and browser contexts are retained. No infection labels, inverse logarithms, averaging, assay-denominator inference or endpoint admission are produced."
+}

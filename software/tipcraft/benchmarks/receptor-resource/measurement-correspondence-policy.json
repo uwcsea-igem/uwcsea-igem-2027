@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "purpose": "Exact source-workbook to browser serialization correspondence; no prediction or endpoint admission",
+  "recorded_before_comparison": true,
+  "inputs": [
+    {"path": "data/raw/receptor-resource/supplements/datasets-v1.xlsx", "sha256": "555b520f61f42455351123dc51dbdb20d30a41e5ca564921327789f04648309a"},
+    {"path": "data/raw/receptor-resource/supplements/literal-workbook-rows.json", "sha256": "ce8bad036758853dbadf5252f06b6c6eb04234e52a8789eff9cb7966223cb924"},
+    {"path": "data/raw/receptor-resource/KEIO_EOP_reformatted.csv", "sha256": "0440f6288873b4ecbe2df910c59ea89ef5f44458a1064e752de8cd43c51bae10"},
+    {"path": "data/processed/receptor-resource-audit.json", "sha256": "81ddb93ab08fe50a7db0fccfa7bf7ecd9cfc73cf6a69ed1eba938de2f53a1565"},
+    {"path": "software/tipcraft/benchmarks/receptor-resource/source-audit-policy.json", "sha256": "6c7204048fbb9457c0986dfb9678aef14babc0c10134eb7d661121dea624c39b"}
+  ],
+  "workbook": {
+    "sheet": "Dataset S4",
+    "header_row": 2,
+    "columns": {"A": "Phage", "B": "Strain", "C": "EOP"},
+    "rows": "Retain every row after the header with any nonblank A/B/C literal; count entirely blank formatted rows separately",
+    "parsing": "Read OOXML directly with standard-library ZIP/XML readers; decode shared and inline strings; preserve numeric cached literals and flag formulas; require exact agreement with the authenticated prior literal-row artifact"
+  },
+  "formatter_source": "https://github.com/mjohnson11/PhageDataSheets/blob/ae2b5e0e59b24f84666a8ebed01f5d1c0ded7b04/Ecoli_phages/DataAssembly/format_EOP.ipynb",
+  "genotype_rule": "strain.split('-pCA')[0].split('::Y')[0]",
+  "context_rule": {"endswith_24N": "EOP", "endswith_closing_parenthesis": "EOP (complemented)", "otherwise": "unrecognized_suffix"},
+  "matching": "Exact literal (phage, derived Genotype, context) keys; no case/punctuation aliases. Keep every source row and every browser row-context. Only one-source/one-browser keys are comparable; duplicated keys on either side remain ambiguous without averaging or pairing guesses.",
+  "decimal_comparison": {
+    "finite_signed_literals_only": true,
+    "exact_decimal_equality": true,
+    "absolute_tolerance": "1e-8",
+    "tolerance_purpose": "Fixed serialization-rounding diagnostic, never an infection threshold",
+    "nonfinite_missing_or_uninterpreted": "Preserve literals and report noncomparable; no zero substitution",
+    "transforms": "None; no inverse logarithms, scaling, normalization or fitting"
+  },
+  "reporting": "Report exact and tolerance counts separately, all value mismatches, unpaired/unrecognized rows and ambiguous keys. Bind inputs, policy, implementation and row-level artifacts before/after comparison.",
+  "admission": "Correspondence alone does not authenticate stocks, censoring/LOD, assay conditions, complementation mechanism, functional infection or predictive validity. Initial literal audit remains unchanged and all rows remain unadmitted.",
+  "training_or_scoring_executed": false,
+  "predictions_or_performance_produced": false
+}
