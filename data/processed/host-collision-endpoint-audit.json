@@ -1,0 +1,121 @@
+{
+  "exchange_observations_excluded_from_diagnostic": 4,
+  "existing_feature_reports_and_policies_modified": false,
+  "inputs": [
+    {
+      "path": "software/tipcraft/benchmarks/retro-t7-t3/cases.csv",
+      "sha256": "716b09e3636c1d3c4653cac245bec7d7407c9a6a06eac08dcb5e353b0b0769c3"
+    },
+    {
+      "path": "software/tipcraft/benchmarks/retro-t7-t3/next-method-contract.json",
+      "sha256": "58b3b57941cdc49396bcf604ff41521f135bbceb61a542aacc10b9613dd4275a"
+    },
+    {
+      "path": "data/processed/receptor-host-feature-uniform-control.json",
+      "sha256": "9a96574b463d855469140a6e7dc01f115cc4e73dc867ecb072a93f4484cbf72a"
+    },
+    {
+      "path": "data/processed/receptor-family-host-capacity.json",
+      "sha256": "4ff1a2a0255e66321e02c1376dc7a0aca983f199a570d3de0a740221b11956a2"
+    }
+  ],
+  "interpretation": "The family collision does not force a positive-negative tie on this panel; no accuracy is measured. Existing source, stock, overlap, split and training-admission gates remain unresolved. A host-only comparator is essential because only T3 contributes mixed-label native ranking comparisons.",
+  "model_fitted": false,
+  "native_observations": 6,
+  "new_method_covered_cases": 0,
+  "primary_endpoint": "Within-phage positive-negative concordance, ties worth 0.5; macro-average only across queries having both labels",
+  "representations": {
+    "family_conditioned_binary": {
+      "all_hosts_distinct_required_by_this_endpoint": false,
+      "collision_groups": [
+        [
+          "BW25113",
+          "MG1655"
+        ]
+      ],
+      "forced_tied_primary_pair_count": 0,
+      "informative_queries": [
+        "T3"
+      ],
+      "queries": {
+        "T3": {
+          "forced_tied_positive_negative_pairs": [],
+          "informative_for_primary_concordance": true,
+          "observations": 3,
+          "positive_negative_pairs": 2
+        },
+        "T7": {
+          "forced_tied_positive_negative_pairs": [],
+          "informative_for_primary_concordance": false,
+          "observations": 3,
+          "positive_negative_pairs": 0
+        }
+      },
+      "required_host_separations": [
+        [
+          "BL21",
+          "BW25113"
+        ],
+        [
+          "BL21",
+          "MG1655"
+        ]
+      ],
+      "single_informative_query_cannot_establish_phage_dependent_ranking": true
+    },
+    "global_union_uniform": {
+      "all_hosts_distinct_required_by_this_endpoint": false,
+      "collision_groups": [
+        [
+          "BL21",
+          "BW25113",
+          "MG1655"
+        ]
+      ],
+      "forced_tied_primary_pair_count": 2,
+      "informative_queries": [
+        "T3"
+      ],
+      "queries": {
+        "T3": {
+          "forced_tied_positive_negative_pairs": [
+            {
+              "negative_host": "BW25113",
+              "positive_host": "BL21"
+            },
+            {
+              "negative_host": "MG1655",
+              "positive_host": "BL21"
+            }
+          ],
+          "informative_for_primary_concordance": true,
+          "observations": 3,
+          "positive_negative_pairs": 2
+        },
+        "T7": {
+          "forced_tied_positive_negative_pairs": [],
+          "informative_for_primary_concordance": false,
+          "observations": 3,
+          "positive_negative_pairs": 0
+        }
+      },
+      "required_host_separations": [
+        [
+          "BL21",
+          "BW25113"
+        ],
+        [
+          "BL21",
+          "MG1655"
+        ]
+      ],
+      "single_informative_query_cannot_establish_phage_dependent_ranking": true
+    }
+  },
+  "schema_version": 1,
+  "scores_generated": false,
+  "script_sha256": "ffac2be45011d9e3bf2e1d48d94b951838937759921acf2dcf5767320edc38d8",
+  "status": "post_hoc_endpoint_collision_diagnostic",
+  "target_label_use": "Interpret frozen collisions against the recorded endpoint only; not fit, select or calibrate any feature, threshold, model or score",
+  "target_labels_read": true
+}

@@ -1,6 +1,6 @@
 # Family-conditioned host representation capacity
 
-Updated 2026-11-07. **The frozen family-conditioned binary representation separates BL21 from the two K-12 references, but BW25113 and MG1655 still collide.** It cannot distinguish all three candidate hosts as the sole host input to a fixed paired predictor. This measured boundary applies to this representation and these inputs; it is not a rejection of every family-aware method.
+Updated 2026-11-07. **The frozen family-conditioned binary representation separates BL21 from the two K-12 references, but BW25113 and MG1655 still collide.** This limits representation resolution; it does not rule out the original native ranking endpoint, where those two hosts have the same label for each phage. The [endpoint correction](30-collision-endpoint-correction.md) supersedes the earlier interpretation that all three hosts had to have different vectors.
 
 ## Protocol and inputs
 
@@ -32,11 +32,11 @@ All 8,587 training proteins have self-search hits. The query search covers 12,83
 
 ## Decision
 
-Family conditioning changes the previous global-union result: BL21 no longer collides with the other two hosts. **BW25113/MG1655 discrimination remains NO-GO for this frozen binary host representation as the sole host input.** For a fixed phage, a predictor receiving only the same host vector cannot assign these two hosts different scores. More downstream model complexity cannot repair identical inputs without additional information.
+Family conditioning changes the previous global-union result: BL21 no longer collides with the other two hosts. For a fixed phage, a predictor receiving only the same host vector cannot assign BW25113 and MG1655 different scores. That is a resolution limit, rather than a sufficient reason to reject this representation for the current endpoint. Both hosts are positive for native T7 and negative for native T3 in the frozen case table. The post hoc [endpoint audit](../data/processed/host-collision-endpoint-audit.json) therefore finds zero positive-negative comparisons forced to tie under this representation, versus two under the global-union control. These are label-aware diagnostic counts, not predicted scores or an accuracy result.
 
 This does not establish biological equivalence, exact assay-stock correspondence, infection accuracy, binding or assembly compatibility. The two source host backgrounds already overlap the original reference groups; the result cannot establish unseen-host-group performance. Additional host diversity, different representations or continuous match features would be new methods requiring their own rationale and pre-score protocol, rather than post hoc repairs declared successful here. No threshold or family-assignment retuning followed this result.
 
-The appropriate next method decision is to resolve a representation and labelled host context that can support the original three-host task. The candidate [84/49 phage split](27-phage-groups-and-source-split.md) alone cannot supply the missing host axis. Training a classifier now would not resolve the demonstrated BW25113/MG1655 collision.
+The appropriate next method decision is to resolve independent labelled host context and a valid training/evaluation regime. The candidate [84/49 phage split](27-phage-groups-and-source-split.md) alone cannot supply the missing host axis. The family representation is not rejected by the current endpoint's required contrasts, but no predictive value or training admission follows. The existing host-only attribution control remains essential: T7 has no negative cases here, so T3 supplies all informative native ranking comparisons. A host-only ordering could therefore match an apparent paired-model ranking result without demonstrating phage-dependent specificity.
 
 Original Ando independent-method coverage remains **0/10**. WIsH's measured failure and the four exact-construct abstentions remain unchanged. This capacity diagnostic supplies no new infection accuracy or assembly success claim.
 

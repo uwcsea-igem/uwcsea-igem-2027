@@ -55,6 +55,8 @@ The subsequent [family-assignment source probe](28-family-assignment-semantics.m
 
 The [family-conditioned biological pilot](29-family-host-capacity.md) now passes source self-projection and separates BL21 from the K-12 references, but BW25113 and MG1655 remain identical under its frozen binary representation. This supplies a representation boundary, not infection scores or training admission.
 
+The [endpoint correction](30-collision-endpoint-correction.md) prevents overinterpreting this boundary: the two colliding K-12 hosts share labels in the native panel, so that collision alone is not a rejection criterion for the recorded concordance endpoint. The original all-host collision still forces positive-negative ties. A host-only ablation and independent label evaluation remain required.
+
 ## Executed annotation and near-homolog checks
 
 The [strict translation-consistency report](../data/processed/receptor-cds-translation-check.json) covers all 48,083 deposited translations under a policy fixed before checking:
