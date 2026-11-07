@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-11-07",
+  "scope": "All14 commits reachable through the public default-main commit listing as retrieved; not deleted/unreachable refs or all possible external sources",
+  "repository": "https://github.com/mdmparis/coli_phage_interactions_2023",
+  "head": "99656d8c020fcd1dbbc30a02ee10274a07655562",
+  "listed_commits": 14,
+  "archived_commits_previously_examined": 9,
+  "additional_recursive_trees_examined": [
+    {
+      "commit": "99656d8c020fcd1dbbc30a02ee10274a07655562",
+      "tree": "550f10819c6d565214bc26d1e3fea59af17ec398",
+      "tree_entries": 822,
+      "host_sequence_paths": [],
+      "archive_paths": [],
+      "recursive_tree_truncated": false
+    },
+    {
+      "commit": "39857dc79f819079cf314f634d9c0b0e6a824eea",
+      "tree": "cf4d72ecade433831409a90c47071854d7ce42f0",
+      "tree_entries": 820,
+      "host_sequence_paths": [],
+      "archive_paths": [],
+      "recursive_tree_truncated": false
+    },
+    {
+      "commit": "7160a5af3a0fa2c391ee135f614a105127824ed3",
+      "tree": "56d03ee3bff4b8472e82a4ddcec56199a5f9d3cb",
+      "tree_entries": 820,
+      "host_sequence_paths": [],
+      "archive_paths": [],
+      "recursive_tree_truncated": false
+    },
+    {
+      "commit": "29bd1bc8fde135e0ce63c742100984bde6beb763",
+      "tree": "13942f6536a1b580c21308060fc5f2852e1e87c5",
+      "tree_entries": 820,
+      "host_sequence_paths": [],
+      "archive_paths": [],
+      "recursive_tree_truncated": false
+    },
+    {
+      "commit": "53392d6ae8c66dc52372c201546cb70d29d354f1",
+      "tree": "a6394c9107c439a91abeba02e58d407de28debc3",
+      "tree_entries": 820,
+      "host_sequence_paths": [],
+      "archive_paths": [],
+      "recursive_tree_truncated": false
+    }
+  ],
+  "prior_archive_audit_sha256": "2cbb3ac31eb892688eaae83a9954c3aad5ba68a9cc1c607bf029a33af0284424",
+  "commit_listing_sha256": "24d3f223efbb9347f3b4d4790e18b56a3930d0b0e24098f895d205394bfb7597",
+  "newer_tree_cache_sha256": "ff39572d9abed213ceb0f98adef97f10a7541f49df9a28a792348c9c4ebfe87d",
+  "authenticated_host_files_recovered": 0,
+  "missing_host_files": 395,
+  "training_or_target_scoring_executed": false,
+  "decision": "HOLD for complete host input admission; request an accessible authoritative download or exact-byte mirror",
+  "interpretation": "The five newer repository snapshots provide no host nucleotide/proteome path or archive candidate. Combined with the nine archived commits, this closes the identified main-history route without establishing global data absence."
+}

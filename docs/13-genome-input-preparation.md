@@ -71,3 +71,7 @@ Whole-genome phage grouping and gp17 similarity require their own pre-training s
 The [relatedness follow-up](15-relatedness-audit.md) now records actual 97-phage/two-reference searches, the exact-hash-reviewed T4LD normalization, provisional near-target exclusions and reconstructed host groups. The full target-host ANI audit still awaits the remaining host genomes.
 
 The [source-admission follow-up](20-source-admission-and-partitions.md) verifies all 402 original-source IDs against deposit IDs, propagates exclusions through full groups and defines crossed outer blocks. Its current actual check writes HOLD only; it does not turn the eight-file host cache into an admitted training set.
+
+## Current main-history follow-up
+
+The [current-history audit](../data/processed/genophi-current-history-source-audit.json) checks the five newer recursive repository trees, completing the 14 commits in the retrieved default-main history together with the nine archived commits. No host sequence path or compressed-archive candidate occurs in those newer snapshots. This closes the identified main-history recovery route; other branches, unreachable objects and external deposits are outside this audit. Complete host admission remains HOLD. An [unsent author-request draft](genome-access-request-draft.md) now asks for an accessible authoritative download or exact-byte mirror.
