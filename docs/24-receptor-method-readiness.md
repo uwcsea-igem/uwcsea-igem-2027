@@ -89,6 +89,8 @@ The [executed host-payload audit](../data/processed/receptor-host-payload-audit.
 
 Both are single-record nucleotide files, and both sequence hashes differ from the corresponding original public Ando-case host references. The protein and gene-table counts describe different source objects and are not automatically a one-to-one CDS match. Each source protein file contains three U residues, retained explicitly by the candidate profile above. These author-browser reference representations are now available for a source-correspondence check, not automatically admitted experimental genomes. No source susceptibility label has been reassigned to another strain, and no original target reference has been replaced.
 
+The preprint's cited library source, [Mutalik et al. 2020, Methods](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000877), explicitly distinguishes its BL21 RB-TnSeq library from a BL21 Dub-seq library mapped to a BL21-DE3 reference and assayed in a BL21DE3C43 background. This supports treating reference mapping and assay stock as separate provenance fields. It does not establish that the 2026 susceptibility annotations or RB-TnSeq experiments used the Dub-seq background. The modalities and their source correspondences must not be merged by their shared BL21 name.
+
 ```bash
 uv run --project software/tipcraft python scripts/audit-receptor-host-payloads.py --cache data/raw/receptor-resource/host-payloads-v1 --output /tmp/receptor-host-payload-audit.json
 ```
