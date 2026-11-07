@@ -72,6 +72,28 @@ Use fresh output locations. The kernel is reusable for host and phage partitions
 
 ## Next decision evidence
 
+### Executed grouped source-phage preprocessing
+
+**Three independently rebuilt training vocabularies now establish the phage-side preprocessing boundary and expose a representation gap in one held-out partition.** The [policy](../software/tipcraft/benchmarks/retro-t7-t3/genophi-phage-fold-feature-policy.json), runner and tests were committed as `3f97b21` before execution. The 93 eligible source phages occupy 22 relatedness groups; the fixed seed-2027 assignment holds out each phage once, with no group crossing the training/query boundary. T7/T3 target references are absent from these queries.
+
+| Fold | Training phages | Held-out phages | Training groups / held-out groups | Retained features | Held-out zero vectors |
+| --- | ---: | ---: | --- | ---: | ---: |
+| 0 | 73 | 20 | 14 / 8 | 192 | 0 |
+| 1 | 53 | 40 | 15 / 7 | 162 | 0 |
+| 2 | 60 | 33 | 15 / 7 | 207 | 9 |
+
+The [actual run report](../data/processed/genophi-phage-fold-features.json) binds all inputs, commands, logs, databases and matrices. Numeric matrices are also versioned for inspection: [fold 0](../data/processed/genophi-phage-fold-matrices/fold-0.tsv), [fold 1](../data/processed/genophi-phage-fold-matrices/fold-1.tsv), [fold 2](../data/processed/genophi-phage-fold-matrices/fold-2.tsv). Feature IDs are local to each vocabulary: matching `pc_N` names across folds do not establish matching features, and these tables cannot be pooled as one shared schema. Each fold fits its vocabulary after five training commands and freezes its hash before creating the query database. Separately named copied-proteome controls reproduce their nonzero training vectors in all three folds. No cross-family best-hit ties occurred.
+
+Fold 2's zero vectors are `416_P5`, `423_P1`, `DIJ06_P1`, `LF31_P1`, `LF31_P3`, `LI10_P3`, `LI10_P4`, `LI10_P5` and `LI10_P6`. None of their 525 called proteins receives a returned hit under the frozen search settings. The rows remain in the matrix. For the same host input, these nine phages provide identical phage-feature inputs to a deterministic interaction model; phage-specific distinctions cannot come from this representation in that fold. This does not establish infection failure or absence of more remote/domain homologs. No threshold, fold or vocabulary rule was adjusted after this observation.
+
+All 24 commands completed in 73.11 seconds of summed command wall time. Cumulative maximum direct-child RSS reached 929,480,704 bytes under the recorded ARM64/Python 3.11.16 launcher context. This is a phage-only resource measurement, not total workflow memory or an estimate for host clustering/model fitting. An independent AI agent reviewed actual database lookup IDs, 35 frozen input bindings, all three vocabulary freezes and 420 ledger/artifact/log hash entries. The local core suite has 155 passing tests.
+
+```bash
+uv run --project software/tipcraft python scripts/check-genophi-phage-fold-features.py --workdir data/raw/genophi-phage-fold-features/reproduction-1 --output /tmp/genophi-phage-fold-features.json
+```
+
+This is a source-phage preprocessing pilot, not the nine complete host/phage outer test blocks. Host exclusions may still change the final admitted cohort. Reuse requires an exact match to the final fold's authenticated genome membership and preprocessing inputs; otherwise rebuild. Host features, interaction fitting and new-method case coverage remain unrun/zero. The representation gap strengthens the need for the frozen host-only attribution control; it supplies no biological accuracy estimate.
+
 Complete the full host transfer and ANI exclusions, then freeze retained labels/groups, feature preparation, model parameters, seeds and validation splits before fitting. Any external validation fold must rebuild its reference vocabulary and occurrence consolidation from that fold's training genomes only; this 93-phage vocabulary is not a reusable CV shortcut. New-method observation coverage remains **0/10** until actual host scores exist. WIsH's six scores and four exact-construct abstentions remain unchanged, and assembly remains a separate gate.
 
 For a possible future secondary panel, the [BASEL source audit](../data/processed/basel-validation-source-audit.json) maps all **52 phage IDs** and **25 host IDs** in the published 1,240-pair matrix to listed accessions. The roster follows actual matrix IDs: metadata flags contain four extra phages, and the host mapping contains two extra strains. All 25 host IDs occur in the original training table. This is the method's already-published novel-phage/known-host spot-assay panel, reused retrospectively; accession versions, sequence identity and homology have not been checked. It has not replaced or been selected to tune the T7/T3 evaluation, and missing/unclear outcomes are not negatives.

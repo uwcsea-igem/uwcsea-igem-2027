@@ -1,0 +1,4115 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "purpose": "Actual three-fold source-phage preprocessing and resource pilot; no host-axis blocks, labels, interaction fitting or target scores",
+  "frozen_plan_sha256": "08ce17b3e2473efb57b6304abd523981e6ab7152fc2bb557f3a8f63971a59cc3",
+  "authenticated_inputs": {
+    "scripts/check-protein-feature-kernel.py": "cc7cd05c795fc1e3395d27b2e17b2d9e0ccf166e89155b98de861d7579a780bb",
+    "scripts/check-genophi-phage-features.py": "c2c091b811ef6d9aaf590abe27cb71d19521354bfb0cac7baf9226f817b99875",
+    "data/processed/genophi-phage-feature-pilot-verified.json": "b8a4ea98682d64fe1bc6cb84bf5976fc578170d41745be7a6859cacf9e0bd7e8",
+    "data/processed/genophi-phage-groups.json": "e81fb71e633ccc40159a2f40339aead059e06f60f24a49fbd00319bcdf819574",
+    "software/tipcraft/benchmarks/retro-t7-t3/genophi-roster-policy.json": "78c8c464f9754c70635219a2c5480abda69b7904c0e5f532c8d405940d6c3b47",
+    "software/tipcraft/src/tipcraft/protein_features.py": "a6ae6d3253507846c5a44075b9c159c2ec752cec5d52d78cace668c7b9076cbc",
+    "software/tipcraft/src/tipcraft/partition.py": "c13020085c54e375bda4dc6542f647f5e32039b762eac704958db31907366be4",
+    "software/tipcraft/benchmarks/retro-t7-t3/genophi-phage-fold-feature-policy.json": "c70fbee5265fc1421e6339b1b124c138c1230c22e34de117a5256b563f2e4d49",
+    "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/scripts/check-genophi-phage-fold-features.py": "9baf11774e06a988f9d11a189a78a04badb460e48e614c8813df9b879c792a34",
+    "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs": "837eaf6cc9be92ff320c42c4cf56ae0d75f2a53c6ff6b24a577e803e9e3951be",
+    "software/tipcraft/benchmarks/retro-t7-t3/genophi-phage-feature-pilot.json": "bf97695296231cfe440d905dda515dec8430d5353983c7c7945413dadfbf55a2",
+    "data/raw/genophi-phage-features/pilot-v1/run-inputs.json": "2bf3394be04f36b06b527f8441daed1695f8370f4fd84a1b00ba66211fc503a3",
+    "data/raw/genophi-phage-features/pilot-v1/command-ledger.json": "990555900e7416e088af74304d61196ac16f40c981228508729583713cd3b7dd",
+    "data/raw/genophi-phage-features/pilot-v1/protein-map.json": "da35148dab94af2796bcdbc541fe14f55e6b97893a81d203ed82da57a9144550",
+    "data/raw/genophi-phage-features/pilot-v1/proteome-map.json": "ec589ae63ef29050994176520ff370add1141c7fb5ce15d9a898aa8194581692",
+    "data/raw/genophi-phage-features/pilot-v1/vocabulary-freeze.json": "6579ede1b7e6eee180bccfc59f0f38d9a654b5cfc7771ab341418438d2775353",
+    "data/raw/genophi-phage-features/pilot-v1/training.faa": "b9231092b106227efb96902e7177617e19ab13bda22193dfa811add1e8aea8a2",
+    "data/raw/genophi-phage-features/pilot-v1/queries.faa": "192ee35dcee7a2e08474028335385ef09e7e15b1815113cae38de6074a5e2c7e",
+    "data/raw/genophi-phage-features/pilot-v1/clusters.tsv": "b2014230e00e4f515eca2b79e712b5344cd1c4e14ba45ce2785709cfdee8c583",
+    "data/raw/genophi-phage-features/pilot-v1/self.tsv": "0038bcd2ad74e5b30956219e211e2e96dd08c6722039b93ae1f1cb1f7a14c6e1",
+    "data/raw/genophi-phage-features/pilot-v1/query.tsv": "5118aa5c0d89e9b735a5ddd8a04ecee2f77a5b80f7508d0ae041e93456370f3a",
+    "data/raw/genophi-phage-features/pilot-v1/feature-map.json": "6a9b7b056c6448cc09d355cd0823b8643458808788f98e1cebef8ed9ce5236fe",
+    "data/raw/genophi-phage-features/pilot-v1/member-family-map.json": "52a072b298d4d4207382aea8ca8bc8dddc6e80242226139a496fcac2353f8195",
+    "data/raw/genophi-phage-features/pilot-v1/best-self.json": "5c9648c7947e9c7d25bd93807a98d183532d15f214318e36e48a81c43838a947",
+    "data/raw/genophi-phage-features/pilot-v1/best-query.json": "40dab443f71552abde36495cdc028090598142d8dc4da7ad0e6ed105a1774a15",
+    "data/raw/genophi-phage-features/pilot-v1/feature-matrix.tsv": "70a5c64be0e3fb7e777778cc4c86bbb7b85b4a8859759578254f36ec496225e4",
+    "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/training.faa": "bdca49dfe5674bc6b92b7b6ee6e7f3ddf911678260a61a5eabfffe9157268b32",
+    "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/queries.faa": "ffe00556b742da89e991202faf82b9c260f827743dde35067850eadcf91e7a11",
+    "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/protein-map.json": "dc71c20982648b4679c2b8edc815287f10444378a69aeb024c2d84aa32936692",
+    "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/training.faa": "8dc9cc819cac05957601a6aa495f31995f1449d54035d158b4f03ddbe6eb9eec",
+    "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/queries.faa": "6d8bcac1f8c3a3e82c5c969f9498e96ab733e9c75ed3a27164d91e122b60791d",
+    "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/protein-map.json": "d8f14f5c18a0e4cb7c5ff518183c3a4fd5983e2b19647690979cc65e8545c07e",
+    "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/training.faa": "566e03fb1972746f874f46e878e3d5a517616d25924adf034f8a8c48a7c27d64",
+    "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/queries.faa": "7b4e0df1cf7e69ff061e126e873209c8f727c28480b0797215a51f7ce637ab83",
+    "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/protein-map.json": "57ae14d7db4c46703a01b9151cfdc0ce9f08c07c9b61095c921f6d60ab1b68e7"
+  },
+  "execution_context": {
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "architecture": "arm64",
+    "python": "3.11.16"
+  },
+  "resource_scope": "Serial command timings/CPU; cumulative maximum direct-child RSS, not aggregate workflow memory",
+  "software_deviation": "MMseqs18-8cc5c rather than paper-listed15.6f452; effective defaults retained in logs",
+  "folds": [
+    {
+      "fold": 0,
+      "status": "passed",
+      "training_phages": [
+        "409_P1",
+        "409_P3",
+        "409_P5",
+        "409_P6",
+        "409_P8",
+        "411_P2",
+        "412_P1",
+        "412_P2",
+        "412_P3",
+        "412_P4",
+        "412_P5",
+        "416_P4",
+        "416_P5",
+        "423_P1",
+        "423_P10",
+        "423_P5",
+        "423_P7",
+        "423_P9",
+        "427_P3",
+        "427_P4",
+        "536_P11",
+        "55989_P1",
+        "AL505_Ev3",
+        "AL505_Sd2",
+        "AN17_P1",
+        "AN17_P8",
+        "AN24_P4",
+        "BCH953_P1",
+        "BCH953_P3",
+        "BDX03_P1",
+        "BDX03_P2",
+        "DIJ06_P1",
+        "LF110_P1",
+        "LF110_P2",
+        "LF110_P3",
+        "LF110_P4",
+        "LF31_P1",
+        "LF31_P3",
+        "LF50_P3",
+        "LF7074_P1",
+        "LF7074_P2",
+        "LF7074_P3",
+        "LF73_P4",
+        "LF82_P1",
+        "LF82_P2",
+        "LF82_P3",
+        "LF82_P4",
+        "LF82_P5",
+        "LF82_P6",
+        "LF82_P9",
+        "LI10_P1",
+        "LI10_P2",
+        "LI10_P3",
+        "LI10_P4",
+        "LI10_P5",
+        "LI10_P6",
+        "LM02_P1",
+        "LM07_P1",
+        "LM08_P1",
+        "LM08_P2",
+        "LM33_P1",
+        "LM40_P1",
+        "LM40_P2",
+        "LM40_P3",
+        "MT1B1_3A1",
+        "NAN33_P1",
+        "NAN33_P2",
+        "NAN33_P4",
+        "NAN33_P6",
+        "NIC06_P3",
+        "NRG_11A2",
+        "NRG_11B1",
+        "NRG_12A1B"
+      ],
+      "heldout_phages": [
+        "411_P1",
+        "536_P1",
+        "536_P12",
+        "536_P6",
+        "536_P7",
+        "536_P9",
+        "55989_P2",
+        "AN24_P2",
+        "AN24_P3",
+        "BCH953_P2",
+        "BCH953_P4",
+        "BCH953_P5",
+        "BDX09_P1",
+        "DIJ07_P1",
+        "DIJ07_P2",
+        "LF73_P1",
+        "LF73_P3",
+        "LF82_P8",
+        "NAN33_P5",
+        "NIC06_P2"
+      ],
+      "training_group_count": 14,
+      "heldout_group_count": 8,
+      "training_proteins": 5560,
+      "query_proteins": 4165,
+      "features": 192,
+      "clustered_families": 1093,
+      "retained_families": 802,
+      "all_training_self_queries_represented": true,
+      "mapping_control": {
+        "source": "409_P1",
+        "nonzero_exact_match": true
+      },
+      "proteomes": [
+        {
+          "phage": "409_P1",
+          "role": "train",
+          "proteins": 48,
+          "assigned_proteins": 48,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 17,
+          "zero_vector": false
+        },
+        {
+          "phage": "409_P3",
+          "role": "train",
+          "proteins": 58,
+          "assigned_proteins": 58,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 20,
+          "zero_vector": false
+        },
+        {
+          "phage": "409_P5",
+          "role": "train",
+          "proteins": 58,
+          "assigned_proteins": 58,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 20,
+          "zero_vector": false
+        },
+        {
+          "phage": "409_P6",
+          "role": "train",
+          "proteins": 54,
+          "assigned_proteins": 54,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 16,
+          "zero_vector": false
+        },
+        {
+          "phage": "409_P8",
+          "role": "train",
+          "proteins": 71,
+          "assigned_proteins": 71,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 26,
+          "zero_vector": false
+        },
+        {
+          "phage": "411_P2",
+          "role": "train",
+          "proteins": 68,
+          "assigned_proteins": 68,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 1,
+          "zero_vector": false
+        },
+        {
+          "phage": "412_P1",
+          "role": "train",
+          "proteins": 75,
+          "assigned_proteins": 75,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 6,
+          "zero_vector": false
+        },
+        {
+          "phage": "412_P2",
+          "role": "train",
+          "proteins": 53,
+          "assigned_proteins": 53,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 13,
+          "zero_vector": false
+        },
+        {
+          "phage": "412_P3",
+          "role": "train",
+          "proteins": 77,
+          "assigned_proteins": 77,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 8,
+          "zero_vector": false
+        },
+        {
+          "phage": "412_P4",
+          "role": "train",
+          "proteins": 75,
+          "assigned_proteins": 75,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 6,
+          "zero_vector": false
+        },
+        {
+          "phage": "412_P5",
+          "role": "train",
+          "proteins": 76,
+          "assigned_proteins": 76,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 7,
+          "zero_vector": false
+        },
+        {
+          "phage": "416_P4",
+          "role": "train",
+          "proteins": 51,
+          "assigned_proteins": 51,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 15,
+          "zero_vector": false
+        },
+        {
+          "phage": "416_P5",
+          "role": "train",
+          "proteins": 52,
+          "assigned_proteins": 52,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 16,
+          "zero_vector": false
+        },
+        {
+          "phage": "423_P1",
+          "role": "train",
+          "proteins": 51,
+          "assigned_proteins": 51,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 16,
+          "zero_vector": false
+        },
+        {
+          "phage": "423_P10",
+          "role": "train",
+          "proteins": 51,
+          "assigned_proteins": 51,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 16,
+          "zero_vector": false
+        },
+        {
+          "phage": "423_P5",
+          "role": "train",
+          "proteins": 50,
+          "assigned_proteins": 50,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 20,
+          "zero_vector": false
+        },
+        {
+          "phage": "423_P7",
+          "role": "train",
+          "proteins": 51,
+          "assigned_proteins": 51,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 15,
+          "zero_vector": false
+        },
+        {
+          "phage": "423_P9",
+          "role": "train",
+          "proteins": 51,
+          "assigned_proteins": 51,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 16,
+          "zero_vector": false
+        },
+        {
+          "phage": "427_P3",
+          "role": "train",
+          "proteins": 44,
+          "assigned_proteins": 44,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 16,
+          "zero_vector": false
+        },
+        {
+          "phage": "427_P4",
+          "role": "train",
+          "proteins": 50,
+          "assigned_proteins": 50,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 20,
+          "zero_vector": false
+        },
+        {
+          "phage": "536_P11",
+          "role": "train",
+          "proteins": 74,
+          "assigned_proteins": 74,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 29,
+          "zero_vector": false
+        },
+        {
+          "phage": "55989_P1",
+          "role": "train",
+          "proteins": 50,
+          "assigned_proteins": 50,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 18,
+          "zero_vector": false
+        },
+        {
+          "phage": "AL505_Ev3",
+          "role": "train",
+          "proteins": 265,
+          "assigned_proteins": 265,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 6,
+          "zero_vector": false
+        },
+        {
+          "phage": "AL505_Sd2",
+          "role": "train",
+          "proteins": 54,
+          "assigned_proteins": 54,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 17,
+          "zero_vector": false
+        },
+        {
+          "phage": "AN17_P1",
+          "role": "train",
+          "proteins": 47,
+          "assigned_proteins": 47,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 18,
+          "zero_vector": false
+        },
+        {
+          "phage": "AN17_P8",
+          "role": "train",
+          "proteins": 122,
+          "assigned_proteins": 122,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 21,
+          "zero_vector": false
+        },
+        {
+          "phage": "AN24_P4",
+          "role": "train",
+          "proteins": 49,
+          "assigned_proteins": 49,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 20,
+          "zero_vector": false
+        },
+        {
+          "phage": "BCH953_P1",
+          "role": "train",
+          "proteins": 77,
+          "assigned_proteins": 77,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 27,
+          "zero_vector": false
+        },
+        {
+          "phage": "BCH953_P3",
+          "role": "train",
+          "proteins": 80,
+          "assigned_proteins": 80,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 30,
+          "zero_vector": false
+        },
+        {
+          "phage": "BDX03_P1",
+          "role": "train",
+          "proteins": 51,
+          "assigned_proteins": 51,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 18,
+          "zero_vector": false
+        },
+        {
+          "phage": "BDX03_P2",
+          "role": "train",
+          "proteins": 51,
+          "assigned_proteins": 51,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 18,
+          "zero_vector": false
+        },
+        {
+          "phage": "DIJ06_P1",
+          "role": "train",
+          "proteins": 54,
+          "assigned_proteins": 54,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 18,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF110_P1",
+          "role": "train",
+          "proteins": 126,
+          "assigned_proteins": 126,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 22,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF110_P2",
+          "role": "train",
+          "proteins": 126,
+          "assigned_proteins": 126,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 23,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF110_P3",
+          "role": "train",
+          "proteins": 127,
+          "assigned_proteins": 127,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 24,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF110_P4",
+          "role": "train",
+          "proteins": 124,
+          "assigned_proteins": 124,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 20,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF31_P1",
+          "role": "train",
+          "proteins": 101,
+          "assigned_proteins": 101,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 1,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF31_P3",
+          "role": "train",
+          "proteins": 50,
+          "assigned_proteins": 50,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 14,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF50_P3",
+          "role": "train",
+          "proteins": 58,
+          "assigned_proteins": 58,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 7,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF7074_P1",
+          "role": "train",
+          "proteins": 66,
+          "assigned_proteins": 66,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 28,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF7074_P2",
+          "role": "train",
+          "proteins": 66,
+          "assigned_proteins": 66,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 28,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF7074_P3",
+          "role": "train",
+          "proteins": 67,
+          "assigned_proteins": 67,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 26,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF73_P4",
+          "role": "train",
+          "proteins": 264,
+          "assigned_proteins": 264,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 6,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF82_P1",
+          "role": "train",
+          "proteins": 128,
+          "assigned_proteins": 128,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 26,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF82_P2",
+          "role": "train",
+          "proteins": 119,
+          "assigned_proteins": 119,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 20,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF82_P3",
+          "role": "train",
+          "proteins": 119,
+          "assigned_proteins": 119,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 20,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF82_P4",
+          "role": "train",
+          "proteins": 116,
+          "assigned_proteins": 116,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 18,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF82_P5",
+          "role": "train",
+          "proteins": 116,
+          "assigned_proteins": 116,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 17,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF82_P6",
+          "role": "train",
+          "proteins": 114,
+          "assigned_proteins": 114,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 16,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF82_P9",
+          "role": "train",
+          "proteins": 118,
+          "assigned_proteins": 118,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 19,
+          "zero_vector": false
+        },
+        {
+          "phage": "LI10_P1",
+          "role": "train",
+          "proteins": 46,
+          "assigned_proteins": 46,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 16,
+          "zero_vector": false
+        },
+        {
+          "phage": "LI10_P2",
+          "role": "train",
+          "proteins": 46,
+          "assigned_proteins": 46,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 16,
+          "zero_vector": false
+        },
+        {
+          "phage": "LI10_P3",
+          "role": "train",
+          "proteins": 55,
+          "assigned_proteins": 55,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 20,
+          "zero_vector": false
+        },
+        {
+          "phage": "LI10_P4",
+          "role": "train",
+          "proteins": 54,
+          "assigned_proteins": 54,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 19,
+          "zero_vector": false
+        },
+        {
+          "phage": "LI10_P5",
+          "role": "train",
+          "proteins": 53,
+          "assigned_proteins": 53,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 18,
+          "zero_vector": false
+        },
+        {
+          "phage": "LI10_P6",
+          "role": "train",
+          "proteins": 55,
+          "assigned_proteins": 55,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 20,
+          "zero_vector": false
+        },
+        {
+          "phage": "LM02_P1",
+          "role": "train",
+          "proteins": 77,
+          "assigned_proteins": 77,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 27,
+          "zero_vector": false
+        },
+        {
+          "phage": "LM07_P1",
+          "role": "train",
+          "proteins": 48,
+          "assigned_proteins": 48,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 10,
+          "zero_vector": false
+        },
+        {
+          "phage": "LM08_P1",
+          "role": "train",
+          "proteins": 73,
+          "assigned_proteins": 73,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 28,
+          "zero_vector": false
+        },
+        {
+          "phage": "LM08_P2",
+          "role": "train",
+          "proteins": 71,
+          "assigned_proteins": 71,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 27,
+          "zero_vector": false
+        },
+        {
+          "phage": "LM33_P1",
+          "role": "train",
+          "proteins": 50,
+          "assigned_proteins": 50,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 20,
+          "zero_vector": false
+        },
+        {
+          "phage": "LM40_P1",
+          "role": "train",
+          "proteins": 60,
+          "assigned_proteins": 60,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 8,
+          "zero_vector": false
+        },
+        {
+          "phage": "LM40_P2",
+          "role": "train",
+          "proteins": 60,
+          "assigned_proteins": 60,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 9,
+          "zero_vector": false
+        },
+        {
+          "phage": "LM40_P3",
+          "role": "train",
+          "proteins": 59,
+          "assigned_proteins": 59,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 8,
+          "zero_vector": false
+        },
+        {
+          "phage": "MT1B1_3A1",
+          "role": "train",
+          "proteins": 46,
+          "assigned_proteins": 46,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 15,
+          "zero_vector": false
+        },
+        {
+          "phage": "NAN33_P1",
+          "role": "train",
+          "proteins": 50,
+          "assigned_proteins": 50,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 9,
+          "zero_vector": false
+        },
+        {
+          "phage": "NAN33_P2",
+          "role": "train",
+          "proteins": 48,
+          "assigned_proteins": 48,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 13,
+          "zero_vector": false
+        },
+        {
+          "phage": "NAN33_P4",
+          "role": "train",
+          "proteins": 48,
+          "assigned_proteins": 48,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 13,
+          "zero_vector": false
+        },
+        {
+          "phage": "NAN33_P6",
+          "role": "train",
+          "proteins": 47,
+          "assigned_proteins": 47,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 12,
+          "zero_vector": false
+        },
+        {
+          "phage": "NIC06_P3",
+          "role": "train",
+          "proteins": 55,
+          "assigned_proteins": 55,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 15,
+          "zero_vector": false
+        },
+        {
+          "phage": "NRG_11A2",
+          "role": "train",
+          "proteins": 115,
+          "assigned_proteins": 115,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 14,
+          "zero_vector": false
+        },
+        {
+          "phage": "NRG_11B1",
+          "role": "train",
+          "proteins": 126,
+          "assigned_proteins": 126,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 23,
+          "zero_vector": false
+        },
+        {
+          "phage": "NRG_12A1B",
+          "role": "train",
+          "proteins": 75,
+          "assigned_proteins": 75,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 24,
+          "zero_vector": false
+        },
+        {
+          "phage": "411_P1",
+          "role": "heldout",
+          "proteins": 74,
+          "assigned_proteins": 20,
+          "assigned_fraction": 0.2702702702702703,
+          "retained_feature_count": 1,
+          "zero_vector": false
+        },
+        {
+          "phage": "536_P1",
+          "role": "heldout",
+          "proteins": 259,
+          "assigned_proteins": 6,
+          "assigned_fraction": 0.023166023166023165,
+          "retained_feature_count": 4,
+          "zero_vector": false
+        },
+        {
+          "phage": "536_P12",
+          "role": "heldout",
+          "proteins": 96,
+          "assigned_proteins": 2,
+          "assigned_fraction": 0.020833333333333332,
+          "retained_feature_count": 1,
+          "zero_vector": false
+        },
+        {
+          "phage": "536_P6",
+          "role": "heldout",
+          "proteins": 239,
+          "assigned_proteins": 7,
+          "assigned_fraction": 0.029288702928870293,
+          "retained_feature_count": 3,
+          "zero_vector": false
+        },
+        {
+          "phage": "536_P7",
+          "role": "heldout",
+          "proteins": 239,
+          "assigned_proteins": 7,
+          "assigned_fraction": 0.029288702928870293,
+          "retained_feature_count": 3,
+          "zero_vector": false
+        },
+        {
+          "phage": "536_P9",
+          "role": "heldout",
+          "proteins": 236,
+          "assigned_proteins": 7,
+          "assigned_fraction": 0.029661016949152543,
+          "retained_feature_count": 3,
+          "zero_vector": false
+        },
+        {
+          "phage": "55989_P2",
+          "role": "heldout",
+          "proteins": 270,
+          "assigned_proteins": 75,
+          "assigned_fraction": 0.2777777777777778,
+          "retained_feature_count": 2,
+          "zero_vector": false
+        },
+        {
+          "phage": "AN24_P2",
+          "role": "heldout",
+          "proteins": 85,
+          "assigned_proteins": 3,
+          "assigned_fraction": 0.03529411764705882,
+          "retained_feature_count": 2,
+          "zero_vector": false
+        },
+        {
+          "phage": "AN24_P3",
+          "role": "heldout",
+          "proteins": 85,
+          "assigned_proteins": 3,
+          "assigned_fraction": 0.03529411764705882,
+          "retained_feature_count": 2,
+          "zero_vector": false
+        },
+        {
+          "phage": "BCH953_P2",
+          "role": "heldout",
+          "proteins": 266,
+          "assigned_proteins": 75,
+          "assigned_fraction": 0.2819548872180451,
+          "retained_feature_count": 2,
+          "zero_vector": false
+        },
+        {
+          "phage": "BCH953_P4",
+          "role": "heldout",
+          "proteins": 264,
+          "assigned_proteins": 74,
+          "assigned_fraction": 0.2803030303030303,
+          "retained_feature_count": 2,
+          "zero_vector": false
+        },
+        {
+          "phage": "BCH953_P5",
+          "role": "heldout",
+          "proteins": 264,
+          "assigned_proteins": 74,
+          "assigned_fraction": 0.2803030303030303,
+          "retained_feature_count": 2,
+          "zero_vector": false
+        },
+        {
+          "phage": "BDX09_P1",
+          "role": "heldout",
+          "proteins": 101,
+          "assigned_proteins": 3,
+          "assigned_fraction": 0.0297029702970297,
+          "retained_feature_count": 2,
+          "zero_vector": false
+        },
+        {
+          "phage": "DIJ07_P1",
+          "role": "heldout",
+          "proteins": 246,
+          "assigned_proteins": 6,
+          "assigned_fraction": 0.024390243902439025,
+          "retained_feature_count": 4,
+          "zero_vector": false
+        },
+        {
+          "phage": "DIJ07_P2",
+          "role": "heldout",
+          "proteins": 240,
+          "assigned_proteins": 6,
+          "assigned_fraction": 0.025,
+          "retained_feature_count": 4,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF73_P1",
+          "role": "heldout",
+          "proteins": 268,
+          "assigned_proteins": 77,
+          "assigned_fraction": 0.2873134328358209,
+          "retained_feature_count": 2,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF73_P3",
+          "role": "heldout",
+          "proteins": 269,
+          "assigned_proteins": 77,
+          "assigned_fraction": 0.2862453531598513,
+          "retained_feature_count": 2,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF82_P8",
+          "role": "heldout",
+          "proteins": 259,
+          "assigned_proteins": 74,
+          "assigned_fraction": 0.2857142857142857,
+          "retained_feature_count": 2,
+          "zero_vector": false
+        },
+        {
+          "phage": "NAN33_P5",
+          "role": "heldout",
+          "proteins": 91,
+          "assigned_proteins": 2,
+          "assigned_fraction": 0.02197802197802198,
+          "retained_feature_count": 2,
+          "zero_vector": false
+        },
+        {
+          "phage": "NIC06_P2",
+          "role": "heldout",
+          "proteins": 266,
+          "assigned_proteins": 72,
+          "assigned_fraction": 0.2706766917293233,
+          "retained_feature_count": 3,
+          "zero_vector": false
+        },
+        {
+          "phage": "mapping_control",
+          "role": "control",
+          "proteins": 48,
+          "assigned_proteins": 48,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 17,
+          "zero_vector": false
+        }
+      ],
+      "training_hit_diagnostics": {
+        "raw_rows": 57479,
+        "queries_with_hits": 5560,
+        "queries_without_hits": 0,
+        "cross_family_best_hit_ties": [],
+        "raw_schema": [
+          "Query",
+          "Target",
+          "Score",
+          "SeqIdentity",
+          "E-value",
+          "qStartPos",
+          "qEndPos",
+          "qLen",
+          "tStartPos",
+          "tEndPos",
+          "tLen"
+        ]
+      },
+      "query_hit_diagnostics": {
+        "raw_rows": 2376,
+        "queries_with_hits": 718,
+        "queries_without_hits": 3447,
+        "cross_family_best_hit_ties": [],
+        "raw_schema": [
+          "Query",
+          "Target",
+          "Score",
+          "SeqIdentity",
+          "E-value",
+          "qStartPos",
+          "qEndPos",
+          "qLen",
+          "tStartPos",
+          "tEndPos",
+          "tLen"
+        ]
+      },
+      "commands": [
+        {
+          "command": [
+            "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+            "createdb",
+            "stdin",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db",
+            "-v",
+            "3"
+          ],
+          "stdin": "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/training.faa",
+          "input_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/training.faa": "bdca49dfe5674bc6b92b7b6ee6e7f3ddf911678260a61a5eabfffe9157268b32"
+          },
+          "output_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db": "71a84a1456d6b0f580aa8afc611526fd7b8ef94c0cc39ca9c8d201093c002b59",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db.index": "d2efeb5abbbd74dc6dd47cbcb5013f38efed56bf7cb9cecfa7953de3f8ab0963",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db.lookup": "36291bfe7f1743c53726de5f32bbef50a263f4e47cbbdace0ae4057979c34b5d",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db.source": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db_h": "89624e2df746f908a4cbea1e30c6ddffa84d8cc4460d43c0e503ce320958484d",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db_h.index": "21c0b0b4b8ec1b644b069c8abe804dd6bfdfe6c3321368d409af62d131918e84"
+          },
+          "exit_code": 0,
+          "log": "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/step-01.log",
+          "log_sha256": "1cea6562e1267e2bece7338b5b489b09964292f01bae0bb575e4131aa7da57c9",
+          "wall_seconds": 0.04311416600830853,
+          "child_user_cpu_seconds": 0.007370999999999999,
+          "child_system_cpu_seconds": 0.021237,
+          "cumulative_max_child_rss_bytes": 16744448
+        },
+        {
+          "command": [
+            "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+            "cluster",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/clusters",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/tmp_cluster",
+            "-c",
+            "0.8",
+            "--min-seq-id",
+            "0.4",
+            "-s",
+            "7.5",
+            "--threads",
+            "4",
+            "-v",
+            "3"
+          ],
+          "stdin": null,
+          "input_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db": "71a84a1456d6b0f580aa8afc611526fd7b8ef94c0cc39ca9c8d201093c002b59",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db.index": "d2efeb5abbbd74dc6dd47cbcb5013f38efed56bf7cb9cecfa7953de3f8ab0963",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db.lookup": "36291bfe7f1743c53726de5f32bbef50a263f4e47cbbdace0ae4057979c34b5d",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db.source": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db_h": "89624e2df746f908a4cbea1e30c6ddffa84d8cc4460d43c0e503ce320958484d",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db_h.index": "21c0b0b4b8ec1b644b069c8abe804dd6bfdfe6c3321368d409af62d131918e84"
+          },
+          "output_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/clusters.0": "6bb96e9383b0b61565d7362b7daaa38ad3369d27c78b02b955b0dc8c53b70065",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/clusters.1": "82873f021a44f931444e039a9139dbbcb9a3770ad8918308995e793bb51c05c7",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/clusters.2": "3dd39fbf827627839da3bddd5dc6ebad0c8c7f6985aa1597f96e990d979d2aa1",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/clusters.3": "a4736b68e88c1e9a8743ee53e88de6df2ff5a48e512b8e67cbf2665a963baae2",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/clusters.dbtype": "7aa8ca4a02506da9133d8f889678b76f716ce45d02e22fdb7b70a15e56a0eff8",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/clusters.index": "cbba6b4eb4a403d19da988fea24ba91657238ae4f8ba41167fa4b3d23e666164"
+          },
+          "exit_code": 0,
+          "log": "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/step-02.log",
+          "log_sha256": "5c24db50fcc120911a5feaf89c6da66586058a9332d7e6b3993363ffe3d9f101",
+          "wall_seconds": 3.2242835420183837,
+          "child_user_cpu_seconds": 10.75618,
+          "child_system_cpu_seconds": 0.7391719999999999,
+          "cumulative_max_child_rss_bytes": 913195008
+        },
+        {
+          "command": [
+            "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+            "createtsv",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/clusters",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/clusters.tsv",
+            "--threads",
+            "4",
+            "-v",
+            "3"
+          ],
+          "stdin": null,
+          "input_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db": "71a84a1456d6b0f580aa8afc611526fd7b8ef94c0cc39ca9c8d201093c002b59",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db.index": "d2efeb5abbbd74dc6dd47cbcb5013f38efed56bf7cb9cecfa7953de3f8ab0963",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db.lookup": "36291bfe7f1743c53726de5f32bbef50a263f4e47cbbdace0ae4057979c34b5d",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db.source": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db_h": "89624e2df746f908a4cbea1e30c6ddffa84d8cc4460d43c0e503ce320958484d",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db_h.index": "21c0b0b4b8ec1b644b069c8abe804dd6bfdfe6c3321368d409af62d131918e84",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/clusters.0": "6bb96e9383b0b61565d7362b7daaa38ad3369d27c78b02b955b0dc8c53b70065",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/clusters.1": "82873f021a44f931444e039a9139dbbcb9a3770ad8918308995e793bb51c05c7",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/clusters.2": "3dd39fbf827627839da3bddd5dc6ebad0c8c7f6985aa1597f96e990d979d2aa1",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/clusters.3": "a4736b68e88c1e9a8743ee53e88de6df2ff5a48e512b8e67cbf2665a963baae2",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/clusters.dbtype": "7aa8ca4a02506da9133d8f889678b76f716ce45d02e22fdb7b70a15e56a0eff8",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/clusters.index": "cbba6b4eb4a403d19da988fea24ba91657238ae4f8ba41167fa4b3d23e666164"
+          },
+          "output_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/clusters.tsv": "14557ee30ff9bc87f7cf6865c7f02b5f02d4ef31deb3e66b96b2319a6c36cc6f"
+          },
+          "exit_code": 0,
+          "log": "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/step-03.log",
+          "log_sha256": "1d3b25e64d02d28eaaee5817b7dddee5868505075619e51daadc84f6d3e17506",
+          "wall_seconds": 0.01514516700990498,
+          "child_user_cpu_seconds": 0.01113199999999992,
+          "child_system_cpu_seconds": 0.005429000000000017,
+          "cumulative_max_child_rss_bytes": 913195008
+        },
+        {
+          "command": [
+            "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+            "search",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/self_hits",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/tmp_self",
+            "-c",
+            "0.8",
+            "--min-seq-id",
+            "0.4",
+            "-s",
+            "7.5",
+            "--threads",
+            "4",
+            "-v",
+            "3"
+          ],
+          "stdin": null,
+          "input_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db": "71a84a1456d6b0f580aa8afc611526fd7b8ef94c0cc39ca9c8d201093c002b59",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db.index": "d2efeb5abbbd74dc6dd47cbcb5013f38efed56bf7cb9cecfa7953de3f8ab0963",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db.lookup": "36291bfe7f1743c53726de5f32bbef50a263f4e47cbbdace0ae4057979c34b5d",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db.source": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db_h": "89624e2df746f908a4cbea1e30c6ddffa84d8cc4460d43c0e503ce320958484d",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db_h.index": "21c0b0b4b8ec1b644b069c8abe804dd6bfdfe6c3321368d409af62d131918e84"
+          },
+          "output_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/self_hits.0": "fe61f78347dda042354c51b8560e689807b9279e4d3845b287e597cad5aa8ea4",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/self_hits.1": "e61160ef14863d3cbce8951401af7c11195323fbdb038c0eff40668618910b0a",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/self_hits.2": "6ff57234391f0a477194b003ae1f97a1404d2e55cd7e6b0dd4896a9df38d26d3",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/self_hits.3": "da8af68061810e524e2177d552c1e12cbbe3249aa4114e1b30cef1fa500ae4ae",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/self_hits.dbtype": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/self_hits.index": "f331e80e50b720dbfd94178fba68fda377469d73f6f7406b6dca03e101393976"
+          },
+          "exit_code": 0,
+          "log": "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/step-04.log",
+          "log_sha256": "4f89dd4088ffb7efb89fe0e6e1e28eef4fbbc4655fd2268d4afb9a834249a737",
+          "wall_seconds": 15.291407209122553,
+          "child_user_cpu_seconds": 58.106480000000005,
+          "child_system_cpu_seconds": 0.4276470000000001,
+          "cumulative_max_child_rss_bytes": 924876800
+        },
+        {
+          "command": [
+            "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+            "createtsv",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/self_hits",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/self.tsv",
+            "--threads",
+            "4",
+            "-v",
+            "3"
+          ],
+          "stdin": null,
+          "input_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db": "71a84a1456d6b0f580aa8afc611526fd7b8ef94c0cc39ca9c8d201093c002b59",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db.index": "d2efeb5abbbd74dc6dd47cbcb5013f38efed56bf7cb9cecfa7953de3f8ab0963",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db.lookup": "36291bfe7f1743c53726de5f32bbef50a263f4e47cbbdace0ae4057979c34b5d",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db.source": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db_h": "89624e2df746f908a4cbea1e30c6ddffa84d8cc4460d43c0e503ce320958484d",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db_h.index": "21c0b0b4b8ec1b644b069c8abe804dd6bfdfe6c3321368d409af62d131918e84",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/self_hits.0": "fe61f78347dda042354c51b8560e689807b9279e4d3845b287e597cad5aa8ea4",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/self_hits.1": "e61160ef14863d3cbce8951401af7c11195323fbdb038c0eff40668618910b0a",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/self_hits.2": "6ff57234391f0a477194b003ae1f97a1404d2e55cd7e6b0dd4896a9df38d26d3",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/self_hits.3": "da8af68061810e524e2177d552c1e12cbbe3249aa4114e1b30cef1fa500ae4ae",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/self_hits.dbtype": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/self_hits.index": "f331e80e50b720dbfd94178fba68fda377469d73f6f7406b6dca03e101393976"
+          },
+          "output_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/self.tsv": "2321f6bae97ea1d52c41047ad360c04d67baf078e3e31099604496010606cf56"
+          },
+          "exit_code": 0,
+          "log": "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/step-05.log",
+          "log_sha256": "087a8b6af3198880a418b05b55f75b488081987291ece0d0cdfc91b36dd3ff18",
+          "wall_seconds": 0.022937416099011898,
+          "child_user_cpu_seconds": 0.031998999999999,
+          "child_system_cpu_seconds": 0.008745000000000003,
+          "cumulative_max_child_rss_bytes": 924876800
+        },
+        {
+          "command": [
+            "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+            "createdb",
+            "stdin",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_db",
+            "-v",
+            "3"
+          ],
+          "stdin": "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/queries.faa",
+          "input_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/queries.faa": "ffe00556b742da89e991202faf82b9c260f827743dde35067850eadcf91e7a11"
+          },
+          "output_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_db": "e4a307f6ad4e8a515ccd9c82089cc8d9b3ba9463d43b331255c2704bf1fe0821",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_db.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_db.index": "7fb3bf98ca983b25748684180242dbc13079a74e6a090fc022bf9eb14c1faa18",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_db.lookup": "61a6472c4843a5aba936dac20d59ee70c5d58d0e00e1b700c160cd70058624df",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_db.source": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_db_h": "2f1de5fa2b26ff031a5d6a2385f3580a763ab4d6464d06adc2cf0f9e00779ce6",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_db_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_db_h.index": "caf3e2d8d2f3182954f74a817a530ab64087e322c0f79647069d27a9fa87bfe4"
+          },
+          "exit_code": 0,
+          "log": "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/step-06.log",
+          "log_sha256": "d1af00d3f14621777dbebe76e577f06623525990b8d32e308e47ca4b17799156",
+          "wall_seconds": 0.04310720809735358,
+          "child_user_cpu_seconds": 0.006439000000000306,
+          "child_system_cpu_seconds": 0.0207409999999999,
+          "cumulative_max_child_rss_bytes": 924876800
+        },
+        {
+          "command": [
+            "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+            "search",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_hits",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/tmp_query",
+            "-c",
+            "0.8",
+            "--min-seq-id",
+            "0.4",
+            "-s",
+            "7.5",
+            "--threads",
+            "4",
+            "-v",
+            "3"
+          ],
+          "stdin": null,
+          "input_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_db": "e4a307f6ad4e8a515ccd9c82089cc8d9b3ba9463d43b331255c2704bf1fe0821",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_db.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_db.index": "7fb3bf98ca983b25748684180242dbc13079a74e6a090fc022bf9eb14c1faa18",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_db.lookup": "61a6472c4843a5aba936dac20d59ee70c5d58d0e00e1b700c160cd70058624df",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_db.source": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_db_h": "2f1de5fa2b26ff031a5d6a2385f3580a763ab4d6464d06adc2cf0f9e00779ce6",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_db_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_db_h.index": "caf3e2d8d2f3182954f74a817a530ab64087e322c0f79647069d27a9fa87bfe4",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db": "71a84a1456d6b0f580aa8afc611526fd7b8ef94c0cc39ca9c8d201093c002b59",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db.index": "d2efeb5abbbd74dc6dd47cbcb5013f38efed56bf7cb9cecfa7953de3f8ab0963",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db.lookup": "36291bfe7f1743c53726de5f32bbef50a263f4e47cbbdace0ae4057979c34b5d",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db.source": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db_h": "89624e2df746f908a4cbea1e30c6ddffa84d8cc4460d43c0e503ce320958484d",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db_h.index": "21c0b0b4b8ec1b644b069c8abe804dd6bfdfe6c3321368d409af62d131918e84"
+          },
+          "output_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_hits.0": "83cfb45931e0dbf732badea48ab96e717b6879f3b8da79083c2728b76d2f34f1",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_hits.1": "a0279185aa69cb4554a8e050337135e494637dc07ed799f1bec26970cd735611",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_hits.2": "a712703ecbbb6ddcba44368cb0191c5cda6dfefb4cbdab7148596015d040cd73",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_hits.3": "3aab69cc681bfdc21f390a70df78b5849dec65f797f0a7a4788ddafac29cf06d",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_hits.dbtype": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_hits.index": "96076d8e8668e5cad169b537e83589f9d8c4844d585913b13c0972450816b43b"
+          },
+          "exit_code": 0,
+          "log": "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/step-07.log",
+          "log_sha256": "33fa9330af5bff67de932b93b57b67420c4bd96dfabbe862fdddd3b23723517b",
+          "wall_seconds": 6.9738811671268195,
+          "child_user_cpu_seconds": 24.305538999999996,
+          "child_system_cpu_seconds": 0.527798,
+          "cumulative_max_child_rss_bytes": 924876800
+        },
+        {
+          "command": [
+            "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+            "createtsv",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_hits",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query.tsv",
+            "--threads",
+            "4",
+            "-v",
+            "3"
+          ],
+          "stdin": null,
+          "input_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_db": "e4a307f6ad4e8a515ccd9c82089cc8d9b3ba9463d43b331255c2704bf1fe0821",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_db.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_db.index": "7fb3bf98ca983b25748684180242dbc13079a74e6a090fc022bf9eb14c1faa18",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_db.lookup": "61a6472c4843a5aba936dac20d59ee70c5d58d0e00e1b700c160cd70058624df",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_db.source": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_db_h": "2f1de5fa2b26ff031a5d6a2385f3580a763ab4d6464d06adc2cf0f9e00779ce6",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_db_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_db_h.index": "caf3e2d8d2f3182954f74a817a530ab64087e322c0f79647069d27a9fa87bfe4",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db": "71a84a1456d6b0f580aa8afc611526fd7b8ef94c0cc39ca9c8d201093c002b59",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db.index": "d2efeb5abbbd74dc6dd47cbcb5013f38efed56bf7cb9cecfa7953de3f8ab0963",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db.lookup": "36291bfe7f1743c53726de5f32bbef50a263f4e47cbbdace0ae4057979c34b5d",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db.source": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db_h": "89624e2df746f908a4cbea1e30c6ddffa84d8cc4460d43c0e503ce320958484d",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/train_db_h.index": "21c0b0b4b8ec1b644b069c8abe804dd6bfdfe6c3321368d409af62d131918e84",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_hits.0": "83cfb45931e0dbf732badea48ab96e717b6879f3b8da79083c2728b76d2f34f1",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_hits.1": "a0279185aa69cb4554a8e050337135e494637dc07ed799f1bec26970cd735611",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_hits.2": "a712703ecbbb6ddcba44368cb0191c5cda6dfefb4cbdab7148596015d040cd73",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_hits.3": "3aab69cc681bfdc21f390a70df78b5849dec65f797f0a7a4788ddafac29cf06d",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_hits.dbtype": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query_hits.index": "96076d8e8668e5cad169b537e83589f9d8c4844d585913b13c0972450816b43b"
+          },
+          "output_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query.tsv": "44f219ce84d39b62d26b14a84ff2747af1f399a54247c852819cbafa26261b21"
+          },
+          "exit_code": 0,
+          "log": "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/step-08.log",
+          "log_sha256": "43727da33b521e94a368b43a2652b835b7b607a2b214a4eef4dcdc8cf40fd40a",
+          "wall_seconds": 0.012077959021553397,
+          "child_user_cpu_seconds": 0.011527999999998428,
+          "child_system_cpu_seconds": 0.0049920000000001075,
+          "cumulative_max_child_rss_bytes": 924876800
+        }
+      ],
+      "artifacts": {
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/training.faa": "bdca49dfe5674bc6b92b7b6ee6e7f3ddf911678260a61a5eabfffe9157268b32",
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/queries.faa": "ffe00556b742da89e991202faf82b9c260f827743dde35067850eadcf91e7a11",
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/protein-map.json": "dc71c20982648b4679c2b8edc815287f10444378a69aeb024c2d84aa32936692",
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/clusters.tsv": "14557ee30ff9bc87f7cf6865c7f02b5f02d4ef31deb3e66b96b2319a6c36cc6f",
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/self.tsv": "2321f6bae97ea1d52c41047ad360c04d67baf078e3e31099604496010606cf56",
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/query.tsv": "44f219ce84d39b62d26b14a84ff2747af1f399a54247c852819cbafa26261b21",
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/vocabulary.json": "e0a9797ce31b8ccd6674e26ce25b6c74674a312a7e81baf05117e10b7d4ddebd",
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/pre-query-freeze.json": "11affbb9dcbc3aeca319c71c0e087d5c39a062b2b3dbf521f86afdc4d0825e93",
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/feature-matrix.tsv": "3100f75c716e4ef6b9b1dc2c251e8845648cfca6c6e2a8abb74b9a1ba5d67ab2",
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/best-query.json": "0cda458bcf2cdf65e2597df553ab1290b31cd7632ad01ad615031dd8e4203f9d",
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-0/best-self.json": "155d07742dea1f0f84ba72be2e804de0f5ce8f2f517cf028239822b869636ee5"
+      }
+    },
+    {
+      "fold": 1,
+      "status": "passed",
+      "training_phages": [
+        "409_P3",
+        "409_P5",
+        "409_P6",
+        "411_P1",
+        "411_P2",
+        "412_P1",
+        "412_P2",
+        "412_P3",
+        "412_P4",
+        "412_P5",
+        "416_P4",
+        "416_P5",
+        "423_P1",
+        "423_P10",
+        "423_P7",
+        "423_P9",
+        "536_P1",
+        "536_P11",
+        "536_P12",
+        "536_P6",
+        "536_P7",
+        "536_P9",
+        "55989_P2",
+        "AL505_Sd2",
+        "AN24_P2",
+        "AN24_P3",
+        "BCH953_P1",
+        "BCH953_P2",
+        "BCH953_P3",
+        "BCH953_P4",
+        "BCH953_P5",
+        "BDX09_P1",
+        "DIJ06_P1",
+        "DIJ07_P1",
+        "DIJ07_P2",
+        "LF31_P1",
+        "LF31_P3",
+        "LF73_P1",
+        "LF73_P3",
+        "LF82_P8",
+        "LI10_P3",
+        "LI10_P4",
+        "LI10_P5",
+        "LI10_P6",
+        "LM07_P1",
+        "NAN33_P1",
+        "NAN33_P2",
+        "NAN33_P4",
+        "NAN33_P5",
+        "NAN33_P6",
+        "NIC06_P2",
+        "NIC06_P3",
+        "NRG_12A1B"
+      ],
+      "heldout_phages": [
+        "409_P1",
+        "409_P8",
+        "423_P5",
+        "427_P3",
+        "427_P4",
+        "55989_P1",
+        "AL505_Ev3",
+        "AN17_P1",
+        "AN17_P8",
+        "AN24_P4",
+        "BDX03_P1",
+        "BDX03_P2",
+        "LF110_P1",
+        "LF110_P2",
+        "LF110_P3",
+        "LF110_P4",
+        "LF50_P3",
+        "LF7074_P1",
+        "LF7074_P2",
+        "LF7074_P3",
+        "LF73_P4",
+        "LF82_P1",
+        "LF82_P2",
+        "LF82_P3",
+        "LF82_P4",
+        "LF82_P5",
+        "LF82_P6",
+        "LF82_P9",
+        "LI10_P1",
+        "LI10_P2",
+        "LM02_P1",
+        "LM08_P1",
+        "LM08_P2",
+        "LM33_P1",
+        "LM40_P1",
+        "LM40_P2",
+        "LM40_P3",
+        "MT1B1_3A1",
+        "NRG_11A2",
+        "NRG_11B1"
+      ],
+      "training_group_count": 15,
+      "heldout_group_count": 7,
+      "training_proteins": 6096,
+      "query_proteins": 3639,
+      "features": 162,
+      "clustered_families": 1634,
+      "retained_families": 1102,
+      "all_training_self_queries_represented": true,
+      "mapping_control": {
+        "source": "409_P3",
+        "nonzero_exact_match": true
+      },
+      "proteomes": [
+        {
+          "phage": "409_P3",
+          "role": "train",
+          "proteins": 58,
+          "assigned_proteins": 58,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 20,
+          "zero_vector": false
+        },
+        {
+          "phage": "409_P5",
+          "role": "train",
+          "proteins": 58,
+          "assigned_proteins": 58,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 20,
+          "zero_vector": false
+        },
+        {
+          "phage": "409_P6",
+          "role": "train",
+          "proteins": 54,
+          "assigned_proteins": 54,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 16,
+          "zero_vector": false
+        },
+        {
+          "phage": "411_P1",
+          "role": "train",
+          "proteins": 74,
+          "assigned_proteins": 74,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 3,
+          "zero_vector": false
+        },
+        {
+          "phage": "411_P2",
+          "role": "train",
+          "proteins": 68,
+          "assigned_proteins": 68,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 3,
+          "zero_vector": false
+        },
+        {
+          "phage": "412_P1",
+          "role": "train",
+          "proteins": 75,
+          "assigned_proteins": 75,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 6,
+          "zero_vector": false
+        },
+        {
+          "phage": "412_P2",
+          "role": "train",
+          "proteins": 53,
+          "assigned_proteins": 53,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 13,
+          "zero_vector": false
+        },
+        {
+          "phage": "412_P3",
+          "role": "train",
+          "proteins": 77,
+          "assigned_proteins": 77,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 8,
+          "zero_vector": false
+        },
+        {
+          "phage": "412_P4",
+          "role": "train",
+          "proteins": 75,
+          "assigned_proteins": 75,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 6,
+          "zero_vector": false
+        },
+        {
+          "phage": "412_P5",
+          "role": "train",
+          "proteins": 76,
+          "assigned_proteins": 76,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 7,
+          "zero_vector": false
+        },
+        {
+          "phage": "416_P4",
+          "role": "train",
+          "proteins": 51,
+          "assigned_proteins": 51,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 16,
+          "zero_vector": false
+        },
+        {
+          "phage": "416_P5",
+          "role": "train",
+          "proteins": 52,
+          "assigned_proteins": 52,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 17,
+          "zero_vector": false
+        },
+        {
+          "phage": "423_P1",
+          "role": "train",
+          "proteins": 51,
+          "assigned_proteins": 51,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 17,
+          "zero_vector": false
+        },
+        {
+          "phage": "423_P10",
+          "role": "train",
+          "proteins": 51,
+          "assigned_proteins": 51,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 17,
+          "zero_vector": false
+        },
+        {
+          "phage": "423_P7",
+          "role": "train",
+          "proteins": 51,
+          "assigned_proteins": 51,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 16,
+          "zero_vector": false
+        },
+        {
+          "phage": "423_P9",
+          "role": "train",
+          "proteins": 51,
+          "assigned_proteins": 51,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 17,
+          "zero_vector": false
+        },
+        {
+          "phage": "536_P1",
+          "role": "train",
+          "proteins": 259,
+          "assigned_proteins": 259,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 25,
+          "zero_vector": false
+        },
+        {
+          "phage": "536_P11",
+          "role": "train",
+          "proteins": 74,
+          "assigned_proteins": 74,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 9,
+          "zero_vector": false
+        },
+        {
+          "phage": "536_P12",
+          "role": "train",
+          "proteins": 96,
+          "assigned_proteins": 96,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 3,
+          "zero_vector": false
+        },
+        {
+          "phage": "536_P6",
+          "role": "train",
+          "proteins": 239,
+          "assigned_proteins": 239,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 22,
+          "zero_vector": false
+        },
+        {
+          "phage": "536_P7",
+          "role": "train",
+          "proteins": 239,
+          "assigned_proteins": 239,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 22,
+          "zero_vector": false
+        },
+        {
+          "phage": "536_P9",
+          "role": "train",
+          "proteins": 236,
+          "assigned_proteins": 236,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 19,
+          "zero_vector": false
+        },
+        {
+          "phage": "55989_P2",
+          "role": "train",
+          "proteins": 270,
+          "assigned_proteins": 270,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 26,
+          "zero_vector": false
+        },
+        {
+          "phage": "AL505_Sd2",
+          "role": "train",
+          "proteins": 54,
+          "assigned_proteins": 54,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 17,
+          "zero_vector": false
+        },
+        {
+          "phage": "AN24_P2",
+          "role": "train",
+          "proteins": 85,
+          "assigned_proteins": 85,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 7,
+          "zero_vector": false
+        },
+        {
+          "phage": "AN24_P3",
+          "role": "train",
+          "proteins": 85,
+          "assigned_proteins": 85,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 7,
+          "zero_vector": false
+        },
+        {
+          "phage": "BCH953_P1",
+          "role": "train",
+          "proteins": 77,
+          "assigned_proteins": 77,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 9,
+          "zero_vector": false
+        },
+        {
+          "phage": "BCH953_P2",
+          "role": "train",
+          "proteins": 266,
+          "assigned_proteins": 266,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 34,
+          "zero_vector": false
+        },
+        {
+          "phage": "BCH953_P3",
+          "role": "train",
+          "proteins": 80,
+          "assigned_proteins": 80,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 10,
+          "zero_vector": false
+        },
+        {
+          "phage": "BCH953_P4",
+          "role": "train",
+          "proteins": 264,
+          "assigned_proteins": 264,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 36,
+          "zero_vector": false
+        },
+        {
+          "phage": "BCH953_P5",
+          "role": "train",
+          "proteins": 264,
+          "assigned_proteins": 264,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 36,
+          "zero_vector": false
+        },
+        {
+          "phage": "BDX09_P1",
+          "role": "train",
+          "proteins": 101,
+          "assigned_proteins": 101,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 3,
+          "zero_vector": false
+        },
+        {
+          "phage": "DIJ06_P1",
+          "role": "train",
+          "proteins": 54,
+          "assigned_proteins": 54,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 19,
+          "zero_vector": false
+        },
+        {
+          "phage": "DIJ07_P1",
+          "role": "train",
+          "proteins": 246,
+          "assigned_proteins": 246,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 24,
+          "zero_vector": false
+        },
+        {
+          "phage": "DIJ07_P2",
+          "role": "train",
+          "proteins": 240,
+          "assigned_proteins": 240,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 20,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF31_P1",
+          "role": "train",
+          "proteins": 101,
+          "assigned_proteins": 101,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 1,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF31_P3",
+          "role": "train",
+          "proteins": 50,
+          "assigned_proteins": 50,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 15,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF73_P1",
+          "role": "train",
+          "proteins": 268,
+          "assigned_proteins": 268,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 38,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF73_P3",
+          "role": "train",
+          "proteins": 269,
+          "assigned_proteins": 269,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 39,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF82_P8",
+          "role": "train",
+          "proteins": 259,
+          "assigned_proteins": 259,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 27,
+          "zero_vector": false
+        },
+        {
+          "phage": "LI10_P3",
+          "role": "train",
+          "proteins": 55,
+          "assigned_proteins": 55,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 21,
+          "zero_vector": false
+        },
+        {
+          "phage": "LI10_P4",
+          "role": "train",
+          "proteins": 54,
+          "assigned_proteins": 54,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 20,
+          "zero_vector": false
+        },
+        {
+          "phage": "LI10_P5",
+          "role": "train",
+          "proteins": 53,
+          "assigned_proteins": 53,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 19,
+          "zero_vector": false
+        },
+        {
+          "phage": "LI10_P6",
+          "role": "train",
+          "proteins": 55,
+          "assigned_proteins": 55,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 21,
+          "zero_vector": false
+        },
+        {
+          "phage": "LM07_P1",
+          "role": "train",
+          "proteins": 48,
+          "assigned_proteins": 48,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 5,
+          "zero_vector": false
+        },
+        {
+          "phage": "NAN33_P1",
+          "role": "train",
+          "proteins": 50,
+          "assigned_proteins": 50,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 5,
+          "zero_vector": false
+        },
+        {
+          "phage": "NAN33_P2",
+          "role": "train",
+          "proteins": 48,
+          "assigned_proteins": 48,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 6,
+          "zero_vector": false
+        },
+        {
+          "phage": "NAN33_P4",
+          "role": "train",
+          "proteins": 48,
+          "assigned_proteins": 48,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 6,
+          "zero_vector": false
+        },
+        {
+          "phage": "NAN33_P5",
+          "role": "train",
+          "proteins": 91,
+          "assigned_proteins": 91,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 4,
+          "zero_vector": false
+        },
+        {
+          "phage": "NAN33_P6",
+          "role": "train",
+          "proteins": 47,
+          "assigned_proteins": 47,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 6,
+          "zero_vector": false
+        },
+        {
+          "phage": "NIC06_P2",
+          "role": "train",
+          "proteins": 266,
+          "assigned_proteins": 266,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 37,
+          "zero_vector": false
+        },
+        {
+          "phage": "NIC06_P3",
+          "role": "train",
+          "proteins": 55,
+          "assigned_proteins": 55,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 17,
+          "zero_vector": false
+        },
+        {
+          "phage": "NRG_12A1B",
+          "role": "train",
+          "proteins": 75,
+          "assigned_proteins": 75,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 8,
+          "zero_vector": false
+        },
+        {
+          "phage": "409_P1",
+          "role": "heldout",
+          "proteins": 48,
+          "assigned_proteins": 21,
+          "assigned_fraction": 0.4375,
+          "retained_feature_count": 2,
+          "zero_vector": false
+        },
+        {
+          "phage": "409_P8",
+          "role": "heldout",
+          "proteins": 71,
+          "assigned_proteins": 56,
+          "assigned_fraction": 0.7887323943661971,
+          "retained_feature_count": 10,
+          "zero_vector": false
+        },
+        {
+          "phage": "423_P5",
+          "role": "heldout",
+          "proteins": 50,
+          "assigned_proteins": 23,
+          "assigned_fraction": 0.46,
+          "retained_feature_count": 2,
+          "zero_vector": false
+        },
+        {
+          "phage": "427_P3",
+          "role": "heldout",
+          "proteins": 44,
+          "assigned_proteins": 24,
+          "assigned_fraction": 0.5454545454545454,
+          "retained_feature_count": 2,
+          "zero_vector": false
+        },
+        {
+          "phage": "427_P4",
+          "role": "heldout",
+          "proteins": 50,
+          "assigned_proteins": 26,
+          "assigned_fraction": 0.52,
+          "retained_feature_count": 4,
+          "zero_vector": false
+        },
+        {
+          "phage": "55989_P1",
+          "role": "heldout",
+          "proteins": 50,
+          "assigned_proteins": 24,
+          "assigned_fraction": 0.48,
+          "retained_feature_count": 4,
+          "zero_vector": false
+        },
+        {
+          "phage": "AL505_Ev3",
+          "role": "heldout",
+          "proteins": 265,
+          "assigned_proteins": 87,
+          "assigned_fraction": 0.3283018867924528,
+          "retained_feature_count": 15,
+          "zero_vector": false
+        },
+        {
+          "phage": "AN17_P1",
+          "role": "heldout",
+          "proteins": 47,
+          "assigned_proteins": 24,
+          "assigned_fraction": 0.5106382978723404,
+          "retained_feature_count": 4,
+          "zero_vector": false
+        },
+        {
+          "phage": "AN17_P8",
+          "role": "heldout",
+          "proteins": 122,
+          "assigned_proteins": 6,
+          "assigned_fraction": 0.04918032786885246,
+          "retained_feature_count": 4,
+          "zero_vector": false
+        },
+        {
+          "phage": "AN24_P4",
+          "role": "heldout",
+          "proteins": 49,
+          "assigned_proteins": 23,
+          "assigned_fraction": 0.46938775510204084,
+          "retained_feature_count": 3,
+          "zero_vector": false
+        },
+        {
+          "phage": "BDX03_P1",
+          "role": "heldout",
+          "proteins": 51,
+          "assigned_proteins": 26,
+          "assigned_fraction": 0.5098039215686274,
+          "retained_feature_count": 5,
+          "zero_vector": false
+        },
+        {
+          "phage": "BDX03_P2",
+          "role": "heldout",
+          "proteins": 51,
+          "assigned_proteins": 26,
+          "assigned_fraction": 0.5098039215686274,
+          "retained_feature_count": 5,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF110_P1",
+          "role": "heldout",
+          "proteins": 126,
+          "assigned_proteins": 5,
+          "assigned_fraction": 0.03968253968253968,
+          "retained_feature_count": 3,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF110_P2",
+          "role": "heldout",
+          "proteins": 126,
+          "assigned_proteins": 6,
+          "assigned_fraction": 0.047619047619047616,
+          "retained_feature_count": 4,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF110_P3",
+          "role": "heldout",
+          "proteins": 127,
+          "assigned_proteins": 6,
+          "assigned_fraction": 0.047244094488188976,
+          "retained_feature_count": 4,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF110_P4",
+          "role": "heldout",
+          "proteins": 124,
+          "assigned_proteins": 7,
+          "assigned_fraction": 0.056451612903225805,
+          "retained_feature_count": 5,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF50_P3",
+          "role": "heldout",
+          "proteins": 58,
+          "assigned_proteins": 12,
+          "assigned_fraction": 0.20689655172413793,
+          "retained_feature_count": 4,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF7074_P1",
+          "role": "heldout",
+          "proteins": 66,
+          "assigned_proteins": 55,
+          "assigned_fraction": 0.8333333333333334,
+          "retained_feature_count": 10,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF7074_P2",
+          "role": "heldout",
+          "proteins": 66,
+          "assigned_proteins": 54,
+          "assigned_fraction": 0.8181818181818182,
+          "retained_feature_count": 9,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF7074_P3",
+          "role": "heldout",
+          "proteins": 67,
+          "assigned_proteins": 54,
+          "assigned_fraction": 0.8059701492537313,
+          "retained_feature_count": 8,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF73_P4",
+          "role": "heldout",
+          "proteins": 264,
+          "assigned_proteins": 90,
+          "assigned_fraction": 0.3409090909090909,
+          "retained_feature_count": 17,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF82_P1",
+          "role": "heldout",
+          "proteins": 128,
+          "assigned_proteins": 5,
+          "assigned_fraction": 0.0390625,
+          "retained_feature_count": 3,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF82_P2",
+          "role": "heldout",
+          "proteins": 119,
+          "assigned_proteins": 5,
+          "assigned_fraction": 0.04201680672268908,
+          "retained_feature_count": 3,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF82_P3",
+          "role": "heldout",
+          "proteins": 119,
+          "assigned_proteins": 5,
+          "assigned_fraction": 0.04201680672268908,
+          "retained_feature_count": 3,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF82_P4",
+          "role": "heldout",
+          "proteins": 116,
+          "assigned_proteins": 5,
+          "assigned_fraction": 0.04310344827586207,
+          "retained_feature_count": 3,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF82_P5",
+          "role": "heldout",
+          "proteins": 116,
+          "assigned_proteins": 5,
+          "assigned_fraction": 0.04310344827586207,
+          "retained_feature_count": 3,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF82_P6",
+          "role": "heldout",
+          "proteins": 114,
+          "assigned_proteins": 5,
+          "assigned_fraction": 0.043859649122807015,
+          "retained_feature_count": 3,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF82_P9",
+          "role": "heldout",
+          "proteins": 118,
+          "assigned_proteins": 6,
+          "assigned_fraction": 0.05084745762711865,
+          "retained_feature_count": 4,
+          "zero_vector": false
+        },
+        {
+          "phage": "LI10_P1",
+          "role": "heldout",
+          "proteins": 46,
+          "assigned_proteins": 21,
+          "assigned_fraction": 0.45652173913043476,
+          "retained_feature_count": 1,
+          "zero_vector": false
+        },
+        {
+          "phage": "LI10_P2",
+          "role": "heldout",
+          "proteins": 46,
+          "assigned_proteins": 21,
+          "assigned_fraction": 0.45652173913043476,
+          "retained_feature_count": 1,
+          "zero_vector": false
+        },
+        {
+          "phage": "LM02_P1",
+          "role": "heldout",
+          "proteins": 77,
+          "assigned_proteins": 62,
+          "assigned_fraction": 0.8051948051948052,
+          "retained_feature_count": 10,
+          "zero_vector": false
+        },
+        {
+          "phage": "LM08_P1",
+          "role": "heldout",
+          "proteins": 73,
+          "assigned_proteins": 57,
+          "assigned_fraction": 0.7808219178082192,
+          "retained_feature_count": 9,
+          "zero_vector": false
+        },
+        {
+          "phage": "LM08_P2",
+          "role": "heldout",
+          "proteins": 71,
+          "assigned_proteins": 57,
+          "assigned_fraction": 0.8028169014084507,
+          "retained_feature_count": 10,
+          "zero_vector": false
+        },
+        {
+          "phage": "LM33_P1",
+          "role": "heldout",
+          "proteins": 50,
+          "assigned_proteins": 23,
+          "assigned_fraction": 0.46,
+          "retained_feature_count": 3,
+          "zero_vector": false
+        },
+        {
+          "phage": "LM40_P1",
+          "role": "heldout",
+          "proteins": 60,
+          "assigned_proteins": 13,
+          "assigned_fraction": 0.21666666666666667,
+          "retained_feature_count": 4,
+          "zero_vector": false
+        },
+        {
+          "phage": "LM40_P2",
+          "role": "heldout",
+          "proteins": 60,
+          "assigned_proteins": 13,
+          "assigned_fraction": 0.21666666666666667,
+          "retained_feature_count": 4,
+          "zero_vector": false
+        },
+        {
+          "phage": "LM40_P3",
+          "role": "heldout",
+          "proteins": 59,
+          "assigned_proteins": 13,
+          "assigned_fraction": 0.22033898305084745,
+          "retained_feature_count": 4,
+          "zero_vector": false
+        },
+        {
+          "phage": "MT1B1_3A1",
+          "role": "heldout",
+          "proteins": 46,
+          "assigned_proteins": 24,
+          "assigned_fraction": 0.5217391304347826,
+          "retained_feature_count": 3,
+          "zero_vector": false
+        },
+        {
+          "phage": "NRG_11A2",
+          "role": "heldout",
+          "proteins": 115,
+          "assigned_proteins": 6,
+          "assigned_fraction": 0.05217391304347826,
+          "retained_feature_count": 4,
+          "zero_vector": false
+        },
+        {
+          "phage": "NRG_11B1",
+          "role": "heldout",
+          "proteins": 126,
+          "assigned_proteins": 6,
+          "assigned_fraction": 0.047619047619047616,
+          "retained_feature_count": 4,
+          "zero_vector": false
+        },
+        {
+          "phage": "mapping_control",
+          "role": "control",
+          "proteins": 58,
+          "assigned_proteins": 58,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 20,
+          "zero_vector": false
+        }
+      ],
+      "training_hit_diagnostics": {
+        "raw_rows": 40416,
+        "queries_with_hits": 6096,
+        "queries_without_hits": 0,
+        "cross_family_best_hit_ties": [],
+        "raw_schema": [
+          "Query",
+          "Target",
+          "Score",
+          "SeqIdentity",
+          "E-value",
+          "qStartPos",
+          "qEndPos",
+          "qLen",
+          "tStartPos",
+          "tEndPos",
+          "tLen"
+        ]
+      },
+      "query_hit_diagnostics": {
+        "raw_rows": 5520,
+        "queries_with_hits": 1065,
+        "queries_without_hits": 2574,
+        "cross_family_best_hit_ties": [],
+        "raw_schema": [
+          "Query",
+          "Target",
+          "Score",
+          "SeqIdentity",
+          "E-value",
+          "qStartPos",
+          "qEndPos",
+          "qLen",
+          "tStartPos",
+          "tEndPos",
+          "tLen"
+        ]
+      },
+      "commands": [
+        {
+          "command": [
+            "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+            "createdb",
+            "stdin",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db",
+            "-v",
+            "3"
+          ],
+          "stdin": "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/training.faa",
+          "input_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/training.faa": "8dc9cc819cac05957601a6aa495f31995f1449d54035d158b4f03ddbe6eb9eec"
+          },
+          "output_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db": "59e338159bd63131e52bbe66ab5b429b715d65a4cf8871e9c4ba77afd91b55ab",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db.index": "7b766b6d817f3edb2e6957c6d7baedd69ed7081f28e818bb331fd4c24cd38bf3",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db.lookup": "1649375f7e9bd356e2deabb8eefa2d6b18e043600740a9df20133ea8da655292",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db.source": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db_h": "e977c56d7981485410efcbe28ce45606acb8171013d6867e96d99e2f70a222bf",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db_h.index": "d6289f7a9d8004ec49ce180e2f4ebf9b5a6387ff1b2642fadafe241a7a20a217"
+          },
+          "exit_code": 0,
+          "log": "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/step-01.log",
+          "log_sha256": "2fa4e906221a77b17b34f9a14ccbc0295ffef25ff585003f09ddd11b20ed5963",
+          "wall_seconds": 0.04179083299823105,
+          "child_user_cpu_seconds": 0.007953999999998018,
+          "child_system_cpu_seconds": 0.022405999999999926,
+          "cumulative_max_child_rss_bytes": 924876800
+        },
+        {
+          "command": [
+            "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+            "cluster",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/clusters",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/tmp_cluster",
+            "-c",
+            "0.8",
+            "--min-seq-id",
+            "0.4",
+            "-s",
+            "7.5",
+            "--threads",
+            "4",
+            "-v",
+            "3"
+          ],
+          "stdin": null,
+          "input_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db": "59e338159bd63131e52bbe66ab5b429b715d65a4cf8871e9c4ba77afd91b55ab",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db.index": "7b766b6d817f3edb2e6957c6d7baedd69ed7081f28e818bb331fd4c24cd38bf3",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db.lookup": "1649375f7e9bd356e2deabb8eefa2d6b18e043600740a9df20133ea8da655292",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db.source": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db_h": "e977c56d7981485410efcbe28ce45606acb8171013d6867e96d99e2f70a222bf",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db_h.index": "d6289f7a9d8004ec49ce180e2f4ebf9b5a6387ff1b2642fadafe241a7a20a217"
+          },
+          "output_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/clusters.0": "112979c9b1486950313405d2b605a28d91439523d6f2825b34fbca9f51d9b284",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/clusters.1": "7983244245684b2e172e240c1df97520ffb5b99aa9427ce326fbd8e10f869346",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/clusters.2": "c60c5ddd5e98d90bea80990349a9e908028089fbaee22d06775a5f6d3825f12e",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/clusters.3": "34d31e57f31a1e9163b715eb622a05aa4d8a5fecb814d038d932206444c494c0",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/clusters.dbtype": "7aa8ca4a02506da9133d8f889678b76f716ce45d02e22fdb7b70a15e56a0eff8",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/clusters.index": "3856f0f386dd9c29b223cd26df43430ae30a49d59c9ac91f80b96605101c6b1d"
+          },
+          "exit_code": 0,
+          "log": "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/step-02.log",
+          "log_sha256": "07633eac04ad9bcfd0717688b75b6e39567dd9f1ab69f5e21ef044ff7881f952",
+          "wall_seconds": 3.6990763328503817,
+          "child_user_cpu_seconds": 13.160825000000003,
+          "child_system_cpu_seconds": 0.5083119999999999,
+          "cumulative_max_child_rss_bytes": 924876800
+        },
+        {
+          "command": [
+            "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+            "createtsv",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/clusters",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/clusters.tsv",
+            "--threads",
+            "4",
+            "-v",
+            "3"
+          ],
+          "stdin": null,
+          "input_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db": "59e338159bd63131e52bbe66ab5b429b715d65a4cf8871e9c4ba77afd91b55ab",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db.index": "7b766b6d817f3edb2e6957c6d7baedd69ed7081f28e818bb331fd4c24cd38bf3",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db.lookup": "1649375f7e9bd356e2deabb8eefa2d6b18e043600740a9df20133ea8da655292",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db.source": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db_h": "e977c56d7981485410efcbe28ce45606acb8171013d6867e96d99e2f70a222bf",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db_h.index": "d6289f7a9d8004ec49ce180e2f4ebf9b5a6387ff1b2642fadafe241a7a20a217",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/clusters.0": "112979c9b1486950313405d2b605a28d91439523d6f2825b34fbca9f51d9b284",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/clusters.1": "7983244245684b2e172e240c1df97520ffb5b99aa9427ce326fbd8e10f869346",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/clusters.2": "c60c5ddd5e98d90bea80990349a9e908028089fbaee22d06775a5f6d3825f12e",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/clusters.3": "34d31e57f31a1e9163b715eb622a05aa4d8a5fecb814d038d932206444c494c0",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/clusters.dbtype": "7aa8ca4a02506da9133d8f889678b76f716ce45d02e22fdb7b70a15e56a0eff8",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/clusters.index": "3856f0f386dd9c29b223cd26df43430ae30a49d59c9ac91f80b96605101c6b1d"
+          },
+          "output_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/clusters.tsv": "88244ae0b8404ff95a91609e995a2f6c9ea0e4853b7023df5f937fc506cc1a8f"
+          },
+          "exit_code": 0,
+          "log": "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/step-03.log",
+          "log_sha256": "b8519cae9e5d5b7e07488fbb5f552f59b067122dac578afe57e279727e4f0385",
+          "wall_seconds": 0.011977707967162132,
+          "child_user_cpu_seconds": 0.009873999999996386,
+          "child_system_cpu_seconds": 0.00542100000000012,
+          "cumulative_max_child_rss_bytes": 924876800
+        },
+        {
+          "command": [
+            "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+            "search",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/self_hits",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/tmp_self",
+            "-c",
+            "0.8",
+            "--min-seq-id",
+            "0.4",
+            "-s",
+            "7.5",
+            "--threads",
+            "4",
+            "-v",
+            "3"
+          ],
+          "stdin": null,
+          "input_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db": "59e338159bd63131e52bbe66ab5b429b715d65a4cf8871e9c4ba77afd91b55ab",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db.index": "7b766b6d817f3edb2e6957c6d7baedd69ed7081f28e818bb331fd4c24cd38bf3",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db.lookup": "1649375f7e9bd356e2deabb8eefa2d6b18e043600740a9df20133ea8da655292",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db.source": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db_h": "e977c56d7981485410efcbe28ce45606acb8171013d6867e96d99e2f70a222bf",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db_h.index": "d6289f7a9d8004ec49ce180e2f4ebf9b5a6387ff1b2642fadafe241a7a20a217"
+          },
+          "output_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/self_hits.0": "5f1843044c5916f8347ef41fe0328decdd9152ad67856743b91194432e94a3b5",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/self_hits.1": "1a0f2b9ec5fad8bbbc7340f6f6e6293625c0cf2b933797d62112e0b606f14074",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/self_hits.2": "a683dd269a2d23c6c62dfb0eb31981f749b718ba4fc282da8dae6f7187f3f6ee",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/self_hits.3": "14dc7b8e2c4b40c4a7eedb31a9fd35939d112660f60474e53a20e1591d65257a",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/self_hits.dbtype": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/self_hits.index": "fd90d08ec33ebfc25e2f23dc35925dea08f0c950d3744a8ec8528c5dae7beb72"
+          },
+          "exit_code": 0,
+          "log": "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/step-04.log",
+          "log_sha256": "0a81963ee02cabeac98801e80bb43183569e475233002e109538652c5cd44627",
+          "wall_seconds": 12.677639374975115,
+          "child_user_cpu_seconds": 49.140399,
+          "child_system_cpu_seconds": 0.4418470000000001,
+          "cumulative_max_child_rss_bytes": 927416320
+        },
+        {
+          "command": [
+            "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+            "createtsv",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/self_hits",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/self.tsv",
+            "--threads",
+            "4",
+            "-v",
+            "3"
+          ],
+          "stdin": null,
+          "input_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db": "59e338159bd63131e52bbe66ab5b429b715d65a4cf8871e9c4ba77afd91b55ab",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db.index": "7b766b6d817f3edb2e6957c6d7baedd69ed7081f28e818bb331fd4c24cd38bf3",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db.lookup": "1649375f7e9bd356e2deabb8eefa2d6b18e043600740a9df20133ea8da655292",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db.source": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db_h": "e977c56d7981485410efcbe28ce45606acb8171013d6867e96d99e2f70a222bf",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db_h.index": "d6289f7a9d8004ec49ce180e2f4ebf9b5a6387ff1b2642fadafe241a7a20a217",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/self_hits.0": "5f1843044c5916f8347ef41fe0328decdd9152ad67856743b91194432e94a3b5",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/self_hits.1": "1a0f2b9ec5fad8bbbc7340f6f6e6293625c0cf2b933797d62112e0b606f14074",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/self_hits.2": "a683dd269a2d23c6c62dfb0eb31981f749b718ba4fc282da8dae6f7187f3f6ee",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/self_hits.3": "14dc7b8e2c4b40c4a7eedb31a9fd35939d112660f60474e53a20e1591d65257a",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/self_hits.dbtype": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/self_hits.index": "fd90d08ec33ebfc25e2f23dc35925dea08f0c950d3744a8ec8528c5dae7beb72"
+          },
+          "output_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/self.tsv": "3be6ec7b9e8a5ec255f7756149734b31e7811eab1442b89f4905d6ba48b2195e"
+          },
+          "exit_code": 0,
+          "log": "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/step-05.log",
+          "log_sha256": "104ff2f4abdb9a436299a333b5b091bc4d0252defaa5fc64584f773f51a80b09",
+          "wall_seconds": 0.023599083069711924,
+          "child_user_cpu_seconds": 0.027007999999995036,
+          "child_system_cpu_seconds": 0.0067070000000000185,
+          "cumulative_max_child_rss_bytes": 927416320
+        },
+        {
+          "command": [
+            "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+            "createdb",
+            "stdin",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_db",
+            "-v",
+            "3"
+          ],
+          "stdin": "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/queries.faa",
+          "input_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/queries.faa": "6d8bcac1f8c3a3e82c5c969f9498e96ab733e9c75ed3a27164d91e122b60791d"
+          },
+          "output_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_db": "a21fb52149c86e172be1d1478745e94db5933361d646c8fbe9f2a17013ddf141",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_db.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_db.index": "5de38c4fc08baea0c900bd59b2d3580d36b96bd064b3b6df5e910a36e232549b",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_db.lookup": "f81d36dcf162d713eed333f89cff39dad746fa988867ca4830257e863088a4b6",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_db.source": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_db_h": "8904fdea8714310702b03c9cfa034ea9e379e362570af719bbb22b91a81f40d8",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_db_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_db_h.index": "6c03a7122abe53e7c511bda8efd4f6f2a01658f6ce4f06b6e9deb4f51e8a41eb"
+          },
+          "exit_code": 0,
+          "log": "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/step-06.log",
+          "log_sha256": "632be470cea6949e5bd4ca0f83c2c17b38618e82dfe79277b65c699e2378a27f",
+          "wall_seconds": 0.04179825005121529,
+          "child_user_cpu_seconds": 0.0061300000000130694,
+          "child_system_cpu_seconds": 0.023368000000000055,
+          "cumulative_max_child_rss_bytes": 927416320
+        },
+        {
+          "command": [
+            "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+            "search",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_hits",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/tmp_query",
+            "-c",
+            "0.8",
+            "--min-seq-id",
+            "0.4",
+            "-s",
+            "7.5",
+            "--threads",
+            "4",
+            "-v",
+            "3"
+          ],
+          "stdin": null,
+          "input_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_db": "a21fb52149c86e172be1d1478745e94db5933361d646c8fbe9f2a17013ddf141",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_db.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_db.index": "5de38c4fc08baea0c900bd59b2d3580d36b96bd064b3b6df5e910a36e232549b",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_db.lookup": "f81d36dcf162d713eed333f89cff39dad746fa988867ca4830257e863088a4b6",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_db.source": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_db_h": "8904fdea8714310702b03c9cfa034ea9e379e362570af719bbb22b91a81f40d8",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_db_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_db_h.index": "6c03a7122abe53e7c511bda8efd4f6f2a01658f6ce4f06b6e9deb4f51e8a41eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db": "59e338159bd63131e52bbe66ab5b429b715d65a4cf8871e9c4ba77afd91b55ab",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db.index": "7b766b6d817f3edb2e6957c6d7baedd69ed7081f28e818bb331fd4c24cd38bf3",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db.lookup": "1649375f7e9bd356e2deabb8eefa2d6b18e043600740a9df20133ea8da655292",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db.source": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db_h": "e977c56d7981485410efcbe28ce45606acb8171013d6867e96d99e2f70a222bf",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db_h.index": "d6289f7a9d8004ec49ce180e2f4ebf9b5a6387ff1b2642fadafe241a7a20a217"
+          },
+          "output_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_hits.0": "3d5e63a0a5dc1c8549c967f14d3828a113269aa2d711d5148de1c9129573d712",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_hits.1": "733955fdefb2b5ff25ae9d57315da8270b8c1dbd41c614805234ebd26607127f",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_hits.2": "f7cff38534081c7e8488740f4e4b5fcf728dca6f203aaa932d01a9f9b82d9301",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_hits.3": "0485117432be699bc1d2f832b76f9bcac79ce8b3869146eda7427843ff7bcd83",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_hits.dbtype": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_hits.index": "901599f0806bb27f81f7476426b982e0596faa739ba46780940a7f85a7542f9d"
+          },
+          "exit_code": 0,
+          "log": "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/step-07.log",
+          "log_sha256": "67bc360e1fc1a88fcc1bdc257fed7641c9ab54774e04fa5a62a16911ea45b782",
+          "wall_seconds": 6.54059199988842,
+          "child_user_cpu_seconds": 25.195740999999998,
+          "child_system_cpu_seconds": 0.3175319999999999,
+          "cumulative_max_child_rss_bytes": 927416320
+        },
+        {
+          "command": [
+            "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+            "createtsv",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_hits",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query.tsv",
+            "--threads",
+            "4",
+            "-v",
+            "3"
+          ],
+          "stdin": null,
+          "input_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_db": "a21fb52149c86e172be1d1478745e94db5933361d646c8fbe9f2a17013ddf141",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_db.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_db.index": "5de38c4fc08baea0c900bd59b2d3580d36b96bd064b3b6df5e910a36e232549b",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_db.lookup": "f81d36dcf162d713eed333f89cff39dad746fa988867ca4830257e863088a4b6",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_db.source": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_db_h": "8904fdea8714310702b03c9cfa034ea9e379e362570af719bbb22b91a81f40d8",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_db_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_db_h.index": "6c03a7122abe53e7c511bda8efd4f6f2a01658f6ce4f06b6e9deb4f51e8a41eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db": "59e338159bd63131e52bbe66ab5b429b715d65a4cf8871e9c4ba77afd91b55ab",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db.index": "7b766b6d817f3edb2e6957c6d7baedd69ed7081f28e818bb331fd4c24cd38bf3",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db.lookup": "1649375f7e9bd356e2deabb8eefa2d6b18e043600740a9df20133ea8da655292",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db.source": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db_h": "e977c56d7981485410efcbe28ce45606acb8171013d6867e96d99e2f70a222bf",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/train_db_h.index": "d6289f7a9d8004ec49ce180e2f4ebf9b5a6387ff1b2642fadafe241a7a20a217",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_hits.0": "3d5e63a0a5dc1c8549c967f14d3828a113269aa2d711d5148de1c9129573d712",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_hits.1": "733955fdefb2b5ff25ae9d57315da8270b8c1dbd41c614805234ebd26607127f",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_hits.2": "f7cff38534081c7e8488740f4e4b5fcf728dca6f203aaa932d01a9f9b82d9301",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_hits.3": "0485117432be699bc1d2f832b76f9bcac79ce8b3869146eda7427843ff7bcd83",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_hits.dbtype": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query_hits.index": "901599f0806bb27f81f7476426b982e0596faa739ba46780940a7f85a7542f9d"
+          },
+          "output_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query.tsv": "287c9bd4e356cf21faed9dfdd7ec98dd9e03100876e77f051ed263c483d01496"
+          },
+          "exit_code": 0,
+          "log": "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/step-08.log",
+          "log_sha256": "7be0cdca75203f77467b16c8afcccaa5037a501e336901a9f73cba18a5bfc558",
+          "wall_seconds": 0.011153042083606124,
+          "child_user_cpu_seconds": 0.01168200000000752,
+          "child_system_cpu_seconds": 0.006121999999999961,
+          "cumulative_max_child_rss_bytes": 927416320
+        }
+      ],
+      "artifacts": {
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/training.faa": "8dc9cc819cac05957601a6aa495f31995f1449d54035d158b4f03ddbe6eb9eec",
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/queries.faa": "6d8bcac1f8c3a3e82c5c969f9498e96ab733e9c75ed3a27164d91e122b60791d",
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/protein-map.json": "d8f14f5c18a0e4cb7c5ff518183c3a4fd5983e2b19647690979cc65e8545c07e",
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/clusters.tsv": "88244ae0b8404ff95a91609e995a2f6c9ea0e4853b7023df5f937fc506cc1a8f",
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/self.tsv": "3be6ec7b9e8a5ec255f7756149734b31e7811eab1442b89f4905d6ba48b2195e",
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/query.tsv": "287c9bd4e356cf21faed9dfdd7ec98dd9e03100876e77f051ed263c483d01496",
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/vocabulary.json": "e0ad25cf56490dd2f953f912e50860e18b06641263860c214e87a1368ad3d171",
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/pre-query-freeze.json": "7eab9372f4107055773fd4fad5f9f5cca4bdfb43a9e3e35c409fb43fc0fe8207",
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/feature-matrix.tsv": "5a2878868c202437cada91caba8702bbbf1bbab15860430598d76533be393cc7",
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/best-query.json": "86b448ebaa8337fdc3b2e7d56848c7ecb3c56ce7ced971913dfae3041ccb6750",
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-1/best-self.json": "cf4e16fdc643acd9fdca8c9a26784bbdfa1fcf984bd2e2eae4679df9326fdc9e"
+      }
+    },
+    {
+      "fold": 2,
+      "status": "passed",
+      "training_phages": [
+        "409_P1",
+        "409_P8",
+        "411_P1",
+        "423_P5",
+        "427_P3",
+        "427_P4",
+        "536_P1",
+        "536_P12",
+        "536_P6",
+        "536_P7",
+        "536_P9",
+        "55989_P1",
+        "55989_P2",
+        "AL505_Ev3",
+        "AN17_P1",
+        "AN17_P8",
+        "AN24_P2",
+        "AN24_P3",
+        "AN24_P4",
+        "BCH953_P2",
+        "BCH953_P4",
+        "BCH953_P5",
+        "BDX03_P1",
+        "BDX03_P2",
+        "BDX09_P1",
+        "DIJ07_P1",
+        "DIJ07_P2",
+        "LF110_P1",
+        "LF110_P2",
+        "LF110_P3",
+        "LF110_P4",
+        "LF50_P3",
+        "LF7074_P1",
+        "LF7074_P2",
+        "LF7074_P3",
+        "LF73_P1",
+        "LF73_P3",
+        "LF73_P4",
+        "LF82_P1",
+        "LF82_P2",
+        "LF82_P3",
+        "LF82_P4",
+        "LF82_P5",
+        "LF82_P6",
+        "LF82_P8",
+        "LF82_P9",
+        "LI10_P1",
+        "LI10_P2",
+        "LM02_P1",
+        "LM08_P1",
+        "LM08_P2",
+        "LM33_P1",
+        "LM40_P1",
+        "LM40_P2",
+        "LM40_P3",
+        "MT1B1_3A1",
+        "NAN33_P5",
+        "NIC06_P2",
+        "NRG_11A2",
+        "NRG_11B1"
+      ],
+      "heldout_phages": [
+        "409_P3",
+        "409_P5",
+        "409_P6",
+        "411_P2",
+        "412_P1",
+        "412_P2",
+        "412_P3",
+        "412_P4",
+        "412_P5",
+        "416_P4",
+        "416_P5",
+        "423_P1",
+        "423_P10",
+        "423_P7",
+        "423_P9",
+        "536_P11",
+        "AL505_Sd2",
+        "BCH953_P1",
+        "BCH953_P3",
+        "DIJ06_P1",
+        "LF31_P1",
+        "LF31_P3",
+        "LI10_P3",
+        "LI10_P4",
+        "LI10_P5",
+        "LI10_P6",
+        "LM07_P1",
+        "NAN33_P1",
+        "NAN33_P2",
+        "NAN33_P4",
+        "NAN33_P6",
+        "NIC06_P3",
+        "NRG_12A1B"
+      ],
+      "training_group_count": 15,
+      "heldout_group_count": 7,
+      "training_proteins": 7698,
+      "query_proteins": 2027,
+      "features": 207,
+      "clustered_families": 1745,
+      "retained_families": 1316,
+      "all_training_self_queries_represented": true,
+      "mapping_control": {
+        "source": "409_P1",
+        "nonzero_exact_match": true
+      },
+      "proteomes": [
+        {
+          "phage": "409_P1",
+          "role": "train",
+          "proteins": 48,
+          "assigned_proteins": 48,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 16,
+          "zero_vector": false
+        },
+        {
+          "phage": "409_P8",
+          "role": "train",
+          "proteins": 71,
+          "assigned_proteins": 71,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 14,
+          "zero_vector": false
+        },
+        {
+          "phage": "411_P1",
+          "role": "train",
+          "proteins": 74,
+          "assigned_proteins": 74,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 1,
+          "zero_vector": false
+        },
+        {
+          "phage": "423_P5",
+          "role": "train",
+          "proteins": 50,
+          "assigned_proteins": 50,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 18,
+          "zero_vector": false
+        },
+        {
+          "phage": "427_P3",
+          "role": "train",
+          "proteins": 44,
+          "assigned_proteins": 44,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 14,
+          "zero_vector": false
+        },
+        {
+          "phage": "427_P4",
+          "role": "train",
+          "proteins": 50,
+          "assigned_proteins": 50,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 19,
+          "zero_vector": false
+        },
+        {
+          "phage": "536_P1",
+          "role": "train",
+          "proteins": 259,
+          "assigned_proteins": 259,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 27,
+          "zero_vector": false
+        },
+        {
+          "phage": "536_P12",
+          "role": "train",
+          "proteins": 96,
+          "assigned_proteins": 96,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 4,
+          "zero_vector": false
+        },
+        {
+          "phage": "536_P6",
+          "role": "train",
+          "proteins": 239,
+          "assigned_proteins": 239,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 24,
+          "zero_vector": false
+        },
+        {
+          "phage": "536_P7",
+          "role": "train",
+          "proteins": 239,
+          "assigned_proteins": 239,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 24,
+          "zero_vector": false
+        },
+        {
+          "phage": "536_P9",
+          "role": "train",
+          "proteins": 236,
+          "assigned_proteins": 236,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 21,
+          "zero_vector": false
+        },
+        {
+          "phage": "55989_P1",
+          "role": "train",
+          "proteins": 50,
+          "assigned_proteins": 50,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 17,
+          "zero_vector": false
+        },
+        {
+          "phage": "55989_P2",
+          "role": "train",
+          "proteins": 270,
+          "assigned_proteins": 270,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 29,
+          "zero_vector": false
+        },
+        {
+          "phage": "AL505_Ev3",
+          "role": "train",
+          "proteins": 265,
+          "assigned_proteins": 265,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 17,
+          "zero_vector": false
+        },
+        {
+          "phage": "AN17_P1",
+          "role": "train",
+          "proteins": 47,
+          "assigned_proteins": 47,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 17,
+          "zero_vector": false
+        },
+        {
+          "phage": "AN17_P8",
+          "role": "train",
+          "proteins": 122,
+          "assigned_proteins": 122,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 22,
+          "zero_vector": false
+        },
+        {
+          "phage": "AN24_P2",
+          "role": "train",
+          "proteins": 85,
+          "assigned_proteins": 85,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 5,
+          "zero_vector": false
+        },
+        {
+          "phage": "AN24_P3",
+          "role": "train",
+          "proteins": 85,
+          "assigned_proteins": 85,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 5,
+          "zero_vector": false
+        },
+        {
+          "phage": "AN24_P4",
+          "role": "train",
+          "proteins": 49,
+          "assigned_proteins": 49,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 19,
+          "zero_vector": false
+        },
+        {
+          "phage": "BCH953_P2",
+          "role": "train",
+          "proteins": 266,
+          "assigned_proteins": 266,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 39,
+          "zero_vector": false
+        },
+        {
+          "phage": "BCH953_P4",
+          "role": "train",
+          "proteins": 264,
+          "assigned_proteins": 264,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 40,
+          "zero_vector": false
+        },
+        {
+          "phage": "BCH953_P5",
+          "role": "train",
+          "proteins": 264,
+          "assigned_proteins": 264,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 40,
+          "zero_vector": false
+        },
+        {
+          "phage": "BDX03_P1",
+          "role": "train",
+          "proteins": 51,
+          "assigned_proteins": 51,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 16,
+          "zero_vector": false
+        },
+        {
+          "phage": "BDX03_P2",
+          "role": "train",
+          "proteins": 51,
+          "assigned_proteins": 51,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 16,
+          "zero_vector": false
+        },
+        {
+          "phage": "BDX09_P1",
+          "role": "train",
+          "proteins": 101,
+          "assigned_proteins": 101,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 4,
+          "zero_vector": false
+        },
+        {
+          "phage": "DIJ07_P1",
+          "role": "train",
+          "proteins": 246,
+          "assigned_proteins": 246,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 25,
+          "zero_vector": false
+        },
+        {
+          "phage": "DIJ07_P2",
+          "role": "train",
+          "proteins": 240,
+          "assigned_proteins": 240,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 22,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF110_P1",
+          "role": "train",
+          "proteins": 126,
+          "assigned_proteins": 126,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 23,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF110_P2",
+          "role": "train",
+          "proteins": 126,
+          "assigned_proteins": 126,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 24,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF110_P3",
+          "role": "train",
+          "proteins": 127,
+          "assigned_proteins": 127,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 25,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF110_P4",
+          "role": "train",
+          "proteins": 124,
+          "assigned_proteins": 124,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 21,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF50_P3",
+          "role": "train",
+          "proteins": 58,
+          "assigned_proteins": 58,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 5,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF7074_P1",
+          "role": "train",
+          "proteins": 66,
+          "assigned_proteins": 66,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 16,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF7074_P2",
+          "role": "train",
+          "proteins": 66,
+          "assigned_proteins": 66,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 16,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF7074_P3",
+          "role": "train",
+          "proteins": 67,
+          "assigned_proteins": 67,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 15,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF73_P1",
+          "role": "train",
+          "proteins": 268,
+          "assigned_proteins": 268,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 43,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF73_P3",
+          "role": "train",
+          "proteins": 269,
+          "assigned_proteins": 269,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 44,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF73_P4",
+          "role": "train",
+          "proteins": 264,
+          "assigned_proteins": 264,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 19,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF82_P1",
+          "role": "train",
+          "proteins": 128,
+          "assigned_proteins": 128,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 27,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF82_P2",
+          "role": "train",
+          "proteins": 119,
+          "assigned_proteins": 119,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 21,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF82_P3",
+          "role": "train",
+          "proteins": 119,
+          "assigned_proteins": 119,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 21,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF82_P4",
+          "role": "train",
+          "proteins": 116,
+          "assigned_proteins": 116,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 19,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF82_P5",
+          "role": "train",
+          "proteins": 116,
+          "assigned_proteins": 116,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 18,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF82_P6",
+          "role": "train",
+          "proteins": 114,
+          "assigned_proteins": 114,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 17,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF82_P8",
+          "role": "train",
+          "proteins": 259,
+          "assigned_proteins": 259,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 30,
+          "zero_vector": false
+        },
+        {
+          "phage": "LF82_P9",
+          "role": "train",
+          "proteins": 118,
+          "assigned_proteins": 118,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 20,
+          "zero_vector": false
+        },
+        {
+          "phage": "LI10_P1",
+          "role": "train",
+          "proteins": 46,
+          "assigned_proteins": 46,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 15,
+          "zero_vector": false
+        },
+        {
+          "phage": "LI10_P2",
+          "role": "train",
+          "proteins": 46,
+          "assigned_proteins": 46,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 15,
+          "zero_vector": false
+        },
+        {
+          "phage": "LM02_P1",
+          "role": "train",
+          "proteins": 77,
+          "assigned_proteins": 77,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 12,
+          "zero_vector": false
+        },
+        {
+          "phage": "LM08_P1",
+          "role": "train",
+          "proteins": 73,
+          "assigned_proteins": 73,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 15,
+          "zero_vector": false
+        },
+        {
+          "phage": "LM08_P2",
+          "role": "train",
+          "proteins": 71,
+          "assigned_proteins": 71,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 15,
+          "zero_vector": false
+        },
+        {
+          "phage": "LM33_P1",
+          "role": "train",
+          "proteins": 50,
+          "assigned_proteins": 50,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 18,
+          "zero_vector": false
+        },
+        {
+          "phage": "LM40_P1",
+          "role": "train",
+          "proteins": 60,
+          "assigned_proteins": 60,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 6,
+          "zero_vector": false
+        },
+        {
+          "phage": "LM40_P2",
+          "role": "train",
+          "proteins": 60,
+          "assigned_proteins": 60,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 7,
+          "zero_vector": false
+        },
+        {
+          "phage": "LM40_P3",
+          "role": "train",
+          "proteins": 59,
+          "assigned_proteins": 59,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 6,
+          "zero_vector": false
+        },
+        {
+          "phage": "MT1B1_3A1",
+          "role": "train",
+          "proteins": 46,
+          "assigned_proteins": 46,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 14,
+          "zero_vector": false
+        },
+        {
+          "phage": "NAN33_P5",
+          "role": "train",
+          "proteins": 91,
+          "assigned_proteins": 91,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 3,
+          "zero_vector": false
+        },
+        {
+          "phage": "NIC06_P2",
+          "role": "train",
+          "proteins": 266,
+          "assigned_proteins": 266,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 40,
+          "zero_vector": false
+        },
+        {
+          "phage": "NRG_11A2",
+          "role": "train",
+          "proteins": 115,
+          "assigned_proteins": 115,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 15,
+          "zero_vector": false
+        },
+        {
+          "phage": "NRG_11B1",
+          "role": "train",
+          "proteins": 126,
+          "assigned_proteins": 126,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 24,
+          "zero_vector": false
+        },
+        {
+          "phage": "409_P3",
+          "role": "heldout",
+          "proteins": 58,
+          "assigned_proteins": 2,
+          "assigned_fraction": 0.034482758620689655,
+          "retained_feature_count": 2,
+          "zero_vector": false
+        },
+        {
+          "phage": "409_P5",
+          "role": "heldout",
+          "proteins": 58,
+          "assigned_proteins": 2,
+          "assigned_fraction": 0.034482758620689655,
+          "retained_feature_count": 2,
+          "zero_vector": false
+        },
+        {
+          "phage": "409_P6",
+          "role": "heldout",
+          "proteins": 54,
+          "assigned_proteins": 1,
+          "assigned_fraction": 0.018518518518518517,
+          "retained_feature_count": 1,
+          "zero_vector": false
+        },
+        {
+          "phage": "411_P2",
+          "role": "heldout",
+          "proteins": 68,
+          "assigned_proteins": 19,
+          "assigned_fraction": 0.27941176470588236,
+          "retained_feature_count": 1,
+          "zero_vector": false
+        },
+        {
+          "phage": "412_P1",
+          "role": "heldout",
+          "proteins": 75,
+          "assigned_proteins": 5,
+          "assigned_fraction": 0.06666666666666667,
+          "retained_feature_count": 2,
+          "zero_vector": false
+        },
+        {
+          "phage": "412_P2",
+          "role": "heldout",
+          "proteins": 53,
+          "assigned_proteins": 2,
+          "assigned_fraction": 0.03773584905660377,
+          "retained_feature_count": 2,
+          "zero_vector": false
+        },
+        {
+          "phage": "412_P3",
+          "role": "heldout",
+          "proteins": 77,
+          "assigned_proteins": 5,
+          "assigned_fraction": 0.06493506493506493,
+          "retained_feature_count": 2,
+          "zero_vector": false
+        },
+        {
+          "phage": "412_P4",
+          "role": "heldout",
+          "proteins": 75,
+          "assigned_proteins": 5,
+          "assigned_fraction": 0.06666666666666667,
+          "retained_feature_count": 2,
+          "zero_vector": false
+        },
+        {
+          "phage": "412_P5",
+          "role": "heldout",
+          "proteins": 76,
+          "assigned_proteins": 5,
+          "assigned_fraction": 0.06578947368421052,
+          "retained_feature_count": 2,
+          "zero_vector": false
+        },
+        {
+          "phage": "416_P4",
+          "role": "heldout",
+          "proteins": 51,
+          "assigned_proteins": 1,
+          "assigned_fraction": 0.0196078431372549,
+          "retained_feature_count": 1,
+          "zero_vector": false
+        },
+        {
+          "phage": "416_P5",
+          "role": "heldout",
+          "proteins": 52,
+          "assigned_proteins": 0,
+          "assigned_fraction": 0.0,
+          "retained_feature_count": 0,
+          "zero_vector": true
+        },
+        {
+          "phage": "423_P1",
+          "role": "heldout",
+          "proteins": 51,
+          "assigned_proteins": 0,
+          "assigned_fraction": 0.0,
+          "retained_feature_count": 0,
+          "zero_vector": true
+        },
+        {
+          "phage": "423_P10",
+          "role": "heldout",
+          "proteins": 51,
+          "assigned_proteins": 1,
+          "assigned_fraction": 0.0196078431372549,
+          "retained_feature_count": 1,
+          "zero_vector": false
+        },
+        {
+          "phage": "423_P7",
+          "role": "heldout",
+          "proteins": 51,
+          "assigned_proteins": 1,
+          "assigned_fraction": 0.0196078431372549,
+          "retained_feature_count": 1,
+          "zero_vector": false
+        },
+        {
+          "phage": "423_P9",
+          "role": "heldout",
+          "proteins": 51,
+          "assigned_proteins": 1,
+          "assigned_fraction": 0.0196078431372549,
+          "retained_feature_count": 1,
+          "zero_vector": false
+        },
+        {
+          "phage": "536_P11",
+          "role": "heldout",
+          "proteins": 74,
+          "assigned_proteins": 61,
+          "assigned_fraction": 0.8243243243243243,
+          "retained_feature_count": 14,
+          "zero_vector": false
+        },
+        {
+          "phage": "AL505_Sd2",
+          "role": "heldout",
+          "proteins": 54,
+          "assigned_proteins": 2,
+          "assigned_fraction": 0.037037037037037035,
+          "retained_feature_count": 2,
+          "zero_vector": false
+        },
+        {
+          "phage": "BCH953_P1",
+          "role": "heldout",
+          "proteins": 77,
+          "assigned_proteins": 62,
+          "assigned_fraction": 0.8051948051948052,
+          "retained_feature_count": 17,
+          "zero_vector": false
+        },
+        {
+          "phage": "BCH953_P3",
+          "role": "heldout",
+          "proteins": 80,
+          "assigned_proteins": 67,
+          "assigned_fraction": 0.8375,
+          "retained_feature_count": 17,
+          "zero_vector": false
+        },
+        {
+          "phage": "DIJ06_P1",
+          "role": "heldout",
+          "proteins": 54,
+          "assigned_proteins": 0,
+          "assigned_fraction": 0.0,
+          "retained_feature_count": 0,
+          "zero_vector": true
+        },
+        {
+          "phage": "LF31_P1",
+          "role": "heldout",
+          "proteins": 101,
+          "assigned_proteins": 0,
+          "assigned_fraction": 0.0,
+          "retained_feature_count": 0,
+          "zero_vector": true
+        },
+        {
+          "phage": "LF31_P3",
+          "role": "heldout",
+          "proteins": 50,
+          "assigned_proteins": 0,
+          "assigned_fraction": 0.0,
+          "retained_feature_count": 0,
+          "zero_vector": true
+        },
+        {
+          "phage": "LI10_P3",
+          "role": "heldout",
+          "proteins": 55,
+          "assigned_proteins": 0,
+          "assigned_fraction": 0.0,
+          "retained_feature_count": 0,
+          "zero_vector": true
+        },
+        {
+          "phage": "LI10_P4",
+          "role": "heldout",
+          "proteins": 54,
+          "assigned_proteins": 0,
+          "assigned_fraction": 0.0,
+          "retained_feature_count": 0,
+          "zero_vector": true
+        },
+        {
+          "phage": "LI10_P5",
+          "role": "heldout",
+          "proteins": 53,
+          "assigned_proteins": 0,
+          "assigned_fraction": 0.0,
+          "retained_feature_count": 0,
+          "zero_vector": true
+        },
+        {
+          "phage": "LI10_P6",
+          "role": "heldout",
+          "proteins": 55,
+          "assigned_proteins": 0,
+          "assigned_fraction": 0.0,
+          "retained_feature_count": 0,
+          "zero_vector": true
+        },
+        {
+          "phage": "LM07_P1",
+          "role": "heldout",
+          "proteins": 48,
+          "assigned_proteins": 26,
+          "assigned_fraction": 0.5416666666666666,
+          "retained_feature_count": 3,
+          "zero_vector": false
+        },
+        {
+          "phage": "NAN33_P1",
+          "role": "heldout",
+          "proteins": 50,
+          "assigned_proteins": 26,
+          "assigned_fraction": 0.52,
+          "retained_feature_count": 4,
+          "zero_vector": false
+        },
+        {
+          "phage": "NAN33_P2",
+          "role": "heldout",
+          "proteins": 48,
+          "assigned_proteins": 27,
+          "assigned_fraction": 0.5625,
+          "retained_feature_count": 4,
+          "zero_vector": false
+        },
+        {
+          "phage": "NAN33_P4",
+          "role": "heldout",
+          "proteins": 48,
+          "assigned_proteins": 27,
+          "assigned_fraction": 0.5625,
+          "retained_feature_count": 4,
+          "zero_vector": false
+        },
+        {
+          "phage": "NAN33_P6",
+          "role": "heldout",
+          "proteins": 47,
+          "assigned_proteins": 27,
+          "assigned_fraction": 0.574468085106383,
+          "retained_feature_count": 4,
+          "zero_vector": false
+        },
+        {
+          "phage": "NIC06_P3",
+          "role": "heldout",
+          "proteins": 55,
+          "assigned_proteins": 2,
+          "assigned_fraction": 0.03636363636363636,
+          "retained_feature_count": 2,
+          "zero_vector": false
+        },
+        {
+          "phage": "NRG_12A1B",
+          "role": "heldout",
+          "proteins": 75,
+          "assigned_proteins": 57,
+          "assigned_fraction": 0.76,
+          "retained_feature_count": 15,
+          "zero_vector": false
+        },
+        {
+          "phage": "mapping_control",
+          "role": "control",
+          "proteins": 48,
+          "assigned_proteins": 48,
+          "assigned_fraction": 1.0,
+          "retained_feature_count": 16,
+          "zero_vector": false
+        }
+      ],
+      "training_hit_diagnostics": {
+        "raw_rows": 59318,
+        "queries_with_hits": 7698,
+        "queries_without_hits": 0,
+        "cross_family_best_hit_ties": [],
+        "raw_schema": [
+          "Query",
+          "Target",
+          "Score",
+          "SeqIdentity",
+          "E-value",
+          "qStartPos",
+          "qEndPos",
+          "qLen",
+          "tStartPos",
+          "tEndPos",
+          "tLen"
+        ]
+      },
+      "query_hit_diagnostics": {
+        "raw_rows": 3602,
+        "queries_with_hits": 482,
+        "queries_without_hits": 1545,
+        "cross_family_best_hit_ties": [],
+        "raw_schema": [
+          "Query",
+          "Target",
+          "Score",
+          "SeqIdentity",
+          "E-value",
+          "qStartPos",
+          "qEndPos",
+          "qLen",
+          "tStartPos",
+          "tEndPos",
+          "tLen"
+        ]
+      },
+      "commands": [
+        {
+          "command": [
+            "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+            "createdb",
+            "stdin",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db",
+            "-v",
+            "3"
+          ],
+          "stdin": "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/training.faa",
+          "input_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/training.faa": "566e03fb1972746f874f46e878e3d5a517616d25924adf034f8a8c48a7c27d64"
+          },
+          "output_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db": "d8b2e2b95f8ec766582eab1b275387030a37bb0f1c72caae386e3185aee65545",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db.index": "9d5354e3b194ac71b629a0ff2fa4dfe8856212522ef1f4765af3152e4e5aae14",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db.lookup": "ea0321eea0dd71154ca2ab3ea7841389db95e67881f6d1b13693df4d31b6fd2a",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db.source": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db_h": "7a49391a2ed26cb95268862238d346e08612cd18e7d60c78a25cebb4ba4db807",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db_h.index": "1b2e5909130865c89060f75d16caa8ce78ac7437abcda6836fe0515181a800d6"
+          },
+          "exit_code": 0,
+          "log": "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/step-01.log",
+          "log_sha256": "5f392ca22306dbb38799cabf5dd134934022369ccc3f680242417be6794e28ea",
+          "wall_seconds": 0.07690987503156066,
+          "child_user_cpu_seconds": 0.02025399999999422,
+          "child_system_cpu_seconds": 0.034359999999999946,
+          "cumulative_max_child_rss_bytes": 927416320
+        },
+        {
+          "command": [
+            "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+            "cluster",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/clusters",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/tmp_cluster",
+            "-c",
+            "0.8",
+            "--min-seq-id",
+            "0.4",
+            "-s",
+            "7.5",
+            "--threads",
+            "4",
+            "-v",
+            "3"
+          ],
+          "stdin": null,
+          "input_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db": "d8b2e2b95f8ec766582eab1b275387030a37bb0f1c72caae386e3185aee65545",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db.index": "9d5354e3b194ac71b629a0ff2fa4dfe8856212522ef1f4765af3152e4e5aae14",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db.lookup": "ea0321eea0dd71154ca2ab3ea7841389db95e67881f6d1b13693df4d31b6fd2a",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db.source": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db_h": "7a49391a2ed26cb95268862238d346e08612cd18e7d60c78a25cebb4ba4db807",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db_h.index": "1b2e5909130865c89060f75d16caa8ce78ac7437abcda6836fe0515181a800d6"
+          },
+          "output_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/clusters.0": "07e50b774299a0b9f16c3d770a9b7b51969a3a0af6ca4d9c9fabf6b817c89742",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/clusters.1": "3283eaee569f24fdd894184de1ef7132d106a0f59638f125b9c04bda39cf2da8",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/clusters.2": "c020e82e2850c206e43a86a6ee33d8f99a461cf3cbd12e6757b233faf5711705",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/clusters.3": "60f6abdf6881f0a5695a0095b56825eb0e528bea13a720a4d74785dc1bb55817",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/clusters.dbtype": "7aa8ca4a02506da9133d8f889678b76f716ce45d02e22fdb7b70a15e56a0eff8",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/clusters.index": "efa12b8ee123589cd89b904b43ef33202fb799d538f800a0162ca7d48730f255"
+          },
+          "exit_code": 0,
+          "log": "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/step-02.log",
+          "log_sha256": "31979706a070f8b3603a4952cc82fb96a9e01e70eeccd9efcfa309ca1cb2dfe2",
+          "wall_seconds": 4.144292541081086,
+          "child_user_cpu_seconds": 14.143788,
+          "child_system_cpu_seconds": 0.6222880000000002,
+          "cumulative_max_child_rss_bytes": 927416320
+        },
+        {
+          "command": [
+            "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+            "createtsv",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/clusters",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/clusters.tsv",
+            "--threads",
+            "4",
+            "-v",
+            "3"
+          ],
+          "stdin": null,
+          "input_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db": "d8b2e2b95f8ec766582eab1b275387030a37bb0f1c72caae386e3185aee65545",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db.index": "9d5354e3b194ac71b629a0ff2fa4dfe8856212522ef1f4765af3152e4e5aae14",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db.lookup": "ea0321eea0dd71154ca2ab3ea7841389db95e67881f6d1b13693df4d31b6fd2a",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db.source": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db_h": "7a49391a2ed26cb95268862238d346e08612cd18e7d60c78a25cebb4ba4db807",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db_h.index": "1b2e5909130865c89060f75d16caa8ce78ac7437abcda6836fe0515181a800d6",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/clusters.0": "07e50b774299a0b9f16c3d770a9b7b51969a3a0af6ca4d9c9fabf6b817c89742",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/clusters.1": "3283eaee569f24fdd894184de1ef7132d106a0f59638f125b9c04bda39cf2da8",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/clusters.2": "c020e82e2850c206e43a86a6ee33d8f99a461cf3cbd12e6757b233faf5711705",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/clusters.3": "60f6abdf6881f0a5695a0095b56825eb0e528bea13a720a4d74785dc1bb55817",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/clusters.dbtype": "7aa8ca4a02506da9133d8f889678b76f716ce45d02e22fdb7b70a15e56a0eff8",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/clusters.index": "efa12b8ee123589cd89b904b43ef33202fb799d538f800a0162ca7d48730f255"
+          },
+          "output_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/clusters.tsv": "bdf3657f534a3a52649c6cb35a5b005a970fe9823ee84ae812c9a7751639eec0"
+          },
+          "exit_code": 0,
+          "log": "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/step-03.log",
+          "log_sha256": "52f75d0b8b0e6b58220ed84b9d5ca733f2fa8cdf7f8c94e655927a5352339b2b",
+          "wall_seconds": 0.011840332997962832,
+          "child_user_cpu_seconds": 0.01231999999998834,
+          "child_system_cpu_seconds": 0.0043239999999999945,
+          "cumulative_max_child_rss_bytes": 927416320
+        },
+        {
+          "command": [
+            "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+            "search",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/self_hits",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/tmp_self",
+            "-c",
+            "0.8",
+            "--min-seq-id",
+            "0.4",
+            "-s",
+            "7.5",
+            "--threads",
+            "4",
+            "-v",
+            "3"
+          ],
+          "stdin": null,
+          "input_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db": "d8b2e2b95f8ec766582eab1b275387030a37bb0f1c72caae386e3185aee65545",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db.index": "9d5354e3b194ac71b629a0ff2fa4dfe8856212522ef1f4765af3152e4e5aae14",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db.lookup": "ea0321eea0dd71154ca2ab3ea7841389db95e67881f6d1b13693df4d31b6fd2a",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db.source": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db_h": "7a49391a2ed26cb95268862238d346e08612cd18e7d60c78a25cebb4ba4db807",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db_h.index": "1b2e5909130865c89060f75d16caa8ce78ac7437abcda6836fe0515181a800d6"
+          },
+          "output_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/self_hits.0": "5b1b31dbcdfc60e60508477e3bd196d9570efba5ac0097501576e2c065555d81",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/self_hits.1": "baccca20da6f60a32452880da3bb9426782a540e1c13c0491afa3d832b2c8d7a",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/self_hits.2": "715e9602da8d2204ad8e68bf862b3e861979c24d39038f46dcb6db5909ec7de8",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/self_hits.3": "fd6d268f3c9eaf5e7a0524b57bdb56b230aec12f36c5d4ddd90245c65101c670",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/self_hits.dbtype": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/self_hits.index": "d96da9a6c5e792c6c6fa86a009cd063fca8bcc817d72a541db59fc061cb9f598"
+          },
+          "exit_code": 0,
+          "log": "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/step-04.log",
+          "log_sha256": "12559e8986279a0ac28338c53ce5569c6323d555f895fedcf13f8ba57c9a2d6f",
+          "wall_seconds": 15.857838208088651,
+          "child_user_cpu_seconds": 61.03132900000003,
+          "child_system_cpu_seconds": 0.48281300000000016,
+          "cumulative_max_child_rss_bytes": 929480704
+        },
+        {
+          "command": [
+            "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+            "createtsv",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/self_hits",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/self.tsv",
+            "--threads",
+            "4",
+            "-v",
+            "3"
+          ],
+          "stdin": null,
+          "input_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db": "d8b2e2b95f8ec766582eab1b275387030a37bb0f1c72caae386e3185aee65545",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db.index": "9d5354e3b194ac71b629a0ff2fa4dfe8856212522ef1f4765af3152e4e5aae14",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db.lookup": "ea0321eea0dd71154ca2ab3ea7841389db95e67881f6d1b13693df4d31b6fd2a",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db.source": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db_h": "7a49391a2ed26cb95268862238d346e08612cd18e7d60c78a25cebb4ba4db807",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db_h.index": "1b2e5909130865c89060f75d16caa8ce78ac7437abcda6836fe0515181a800d6",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/self_hits.0": "5b1b31dbcdfc60e60508477e3bd196d9570efba5ac0097501576e2c065555d81",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/self_hits.1": "baccca20da6f60a32452880da3bb9426782a540e1c13c0491afa3d832b2c8d7a",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/self_hits.2": "715e9602da8d2204ad8e68bf862b3e861979c24d39038f46dcb6db5909ec7de8",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/self_hits.3": "fd6d268f3c9eaf5e7a0524b57bdb56b230aec12f36c5d4ddd90245c65101c670",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/self_hits.dbtype": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/self_hits.index": "d96da9a6c5e792c6c6fa86a009cd063fca8bcc817d72a541db59fc061cb9f598"
+          },
+          "output_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/self.tsv": "75e7b5be2458952ae73414ad60ce2d008fa77b6ef33bd6d9ffce927c2c0a0b0f"
+          },
+          "exit_code": 0,
+          "log": "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/step-05.log",
+          "log_sha256": "92c63c6281ed60f7b82ee2c51e2ff9158f92456066cd54d0d86d8ada1976a64b",
+          "wall_seconds": 0.0221604579128325,
+          "child_user_cpu_seconds": 0.0438570000000027,
+          "child_system_cpu_seconds": 0.008102000000000054,
+          "cumulative_max_child_rss_bytes": 929480704
+        },
+        {
+          "command": [
+            "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+            "createdb",
+            "stdin",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_db",
+            "-v",
+            "3"
+          ],
+          "stdin": "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/queries.faa",
+          "input_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/queries.faa": "7b4e0df1cf7e69ff061e126e873209c8f727c28480b0797215a51f7ce637ab83"
+          },
+          "output_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_db": "b229077141afe9bb713352375323854bc7ac277f7ff95da0f24e6bbf3f58e016",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_db.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_db.index": "20d185be72d35b4510ef97b7d88e1217f16019303041d7af1b52655dbd410986",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_db.lookup": "ea1a7f7fd311714e002b0b24b27838e6c51a9c88d21287a491782cff09ce10af",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_db.source": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_db_h": "4fcd23d2a611fab1f12c25020b3aa0a25c64cc965eb6d46e4cb0905b8fe2c5cb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_db_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_db_h.index": "4f2a82734ee3c3c446ab3199f80c5db82c4fc271b68f16d6284e6fd9c2ff465c"
+          },
+          "exit_code": 0,
+          "log": "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/step-06.log",
+          "log_sha256": "aed9cabfcb524d487a779f0fc9e6bc54ea227178fd1fb68f49267690016d2542",
+          "wall_seconds": 0.041117167100310326,
+          "child_user_cpu_seconds": 0.004618999999991047,
+          "child_system_cpu_seconds": 0.01855499999999921,
+          "cumulative_max_child_rss_bytes": 929480704
+        },
+        {
+          "command": [
+            "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+            "search",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_hits",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/tmp_query",
+            "-c",
+            "0.8",
+            "--min-seq-id",
+            "0.4",
+            "-s",
+            "7.5",
+            "--threads",
+            "4",
+            "-v",
+            "3"
+          ],
+          "stdin": null,
+          "input_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_db": "b229077141afe9bb713352375323854bc7ac277f7ff95da0f24e6bbf3f58e016",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_db.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_db.index": "20d185be72d35b4510ef97b7d88e1217f16019303041d7af1b52655dbd410986",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_db.lookup": "ea1a7f7fd311714e002b0b24b27838e6c51a9c88d21287a491782cff09ce10af",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_db.source": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_db_h": "4fcd23d2a611fab1f12c25020b3aa0a25c64cc965eb6d46e4cb0905b8fe2c5cb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_db_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_db_h.index": "4f2a82734ee3c3c446ab3199f80c5db82c4fc271b68f16d6284e6fd9c2ff465c",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db": "d8b2e2b95f8ec766582eab1b275387030a37bb0f1c72caae386e3185aee65545",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db.index": "9d5354e3b194ac71b629a0ff2fa4dfe8856212522ef1f4765af3152e4e5aae14",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db.lookup": "ea0321eea0dd71154ca2ab3ea7841389db95e67881f6d1b13693df4d31b6fd2a",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db.source": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db_h": "7a49391a2ed26cb95268862238d346e08612cd18e7d60c78a25cebb4ba4db807",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db_h.index": "1b2e5909130865c89060f75d16caa8ce78ac7437abcda6836fe0515181a800d6"
+          },
+          "output_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_hits.0": "db472320a132104ffad2071c886787ab19698c47123f5a42a2e6bfada3352797",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_hits.1": "00e979baa9f4378294f2a21069d4d621f65dbf153cf6995596c8d317bd8744e1",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_hits.2": "197d38f147e394fe595a2827cce4cf6ea4f57f9eeebf54416db45b6e67862c39",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_hits.3": "03246a34ed456b1b788318c80905632018caa3e5ee3875b98e3b3378b9cdbada",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_hits.dbtype": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_hits.index": "1e86951fb7d5bc717e67c3819d3e43fc14abc9f67572bb6ce76c47ffea0a59b3"
+          },
+          "exit_code": 0,
+          "log": "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/step-07.log",
+          "log_sha256": "bd81e00010c875531a535e46ad562701b2112ad3979a91cf5f870f429c42afe3",
+          "wall_seconds": 4.268227957887575,
+          "child_user_cpu_seconds": 16.362021999999968,
+          "child_system_cpu_seconds": 0.2278570000000002,
+          "cumulative_max_child_rss_bytes": 929480704
+        },
+        {
+          "command": [
+            "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+            "createtsv",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_hits",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query.tsv",
+            "--threads",
+            "4",
+            "-v",
+            "3"
+          ],
+          "stdin": null,
+          "input_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_db": "b229077141afe9bb713352375323854bc7ac277f7ff95da0f24e6bbf3f58e016",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_db.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_db.index": "20d185be72d35b4510ef97b7d88e1217f16019303041d7af1b52655dbd410986",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_db.lookup": "ea1a7f7fd311714e002b0b24b27838e6c51a9c88d21287a491782cff09ce10af",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_db.source": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_db_h": "4fcd23d2a611fab1f12c25020b3aa0a25c64cc965eb6d46e4cb0905b8fe2c5cb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_db_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_db_h.index": "4f2a82734ee3c3c446ab3199f80c5db82c4fc271b68f16d6284e6fd9c2ff465c",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db": "d8b2e2b95f8ec766582eab1b275387030a37bb0f1c72caae386e3185aee65545",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db.dbtype": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db.index": "9d5354e3b194ac71b629a0ff2fa4dfe8856212522ef1f4765af3152e4e5aae14",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db.lookup": "ea0321eea0dd71154ca2ab3ea7841389db95e67881f6d1b13693df4d31b6fd2a",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db.source": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db_h": "7a49391a2ed26cb95268862238d346e08612cd18e7d60c78a25cebb4ba4db807",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db_h.dbtype": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/train_db_h.index": "1b2e5909130865c89060f75d16caa8ce78ac7437abcda6836fe0515181a800d6",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_hits.0": "db472320a132104ffad2071c886787ab19698c47123f5a42a2e6bfada3352797",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_hits.1": "00e979baa9f4378294f2a21069d4d621f65dbf153cf6995596c8d317bd8744e1",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_hits.2": "197d38f147e394fe595a2827cce4cf6ea4f57f9eeebf54416db45b6e67862c39",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_hits.3": "03246a34ed456b1b788318c80905632018caa3e5ee3875b98e3b3378b9cdbada",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_hits.dbtype": "2594b6a92ebfb1c3312deb7d01c015fb95e9fbe9bd7bc6b527af07813ec7b910",
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query_hits.index": "1e86951fb7d5bc717e67c3819d3e43fc14abc9f67572bb6ce76c47ffea0a59b3"
+          },
+          "output_artifacts": {
+            "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query.tsv": "532163f7c7f75a0b890195c1c7754c4c77c52eac3474ce4cfd34a47e400e2606"
+          },
+          "exit_code": 0,
+          "log": "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/step-08.log",
+          "log_sha256": "4f4f002491506aa5eab262dc7c2123a2fff90ff71fbb0d321e4652a03149e35b",
+          "wall_seconds": 0.011769833043217659,
+          "child_user_cpu_seconds": 0.010335999999995238,
+          "child_system_cpu_seconds": 0.00449400000000022,
+          "cumulative_max_child_rss_bytes": 929480704
+        }
+      ],
+      "artifacts": {
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/training.faa": "566e03fb1972746f874f46e878e3d5a517616d25924adf034f8a8c48a7c27d64",
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/queries.faa": "7b4e0df1cf7e69ff061e126e873209c8f727c28480b0797215a51f7ce637ab83",
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/protein-map.json": "57ae14d7db4c46703a01b9151cfdc0ce9f08c07c9b61095c921f6d60ab1b68e7",
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/clusters.tsv": "bdf3657f534a3a52649c6cb35a5b005a970fe9823ee84ae812c9a7751639eec0",
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/self.tsv": "75e7b5be2458952ae73414ad60ce2d008fa77b6ef33bd6d9ffce927c2c0a0b0f",
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/query.tsv": "532163f7c7f75a0b890195c1c7754c4c77c52eac3474ce4cfd34a47e400e2606",
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/vocabulary.json": "0aff8895f08da1d0d237f5492b86006318fdfcb92c0cdf0f860c6935ba20d936",
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/pre-query-freeze.json": "d4de3dc1ce4917f3018c126409f62d34f1bedfddec80e9c1434f39f27f273711",
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/feature-matrix.tsv": "690f5c075cb5fc78283dcea464931a7b17e264328a26a5bdb11f21ab9835919d",
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/best-query.json": "62c662df3eb5b7dafe22f47d8d516f492a43acca4bd32207eb86528ef5989713",
+        "data/raw/genophi-phage-fold-features/pilot-v1/fold-2/best-self.json": "fe5fbd3cf6d999a572bf99544a9151fc18784312a82a40e55a4c9fa8ebd49a6c"
+      }
+    }
+  ],
+  "raw_workdir": "data/raw/genophi-phage-fold-features/pilot-v1",
+  "phenotype_tables_loaded": false,
+  "host_features_prepared": false,
+  "interaction_model_fitted": false,
+  "target_scores_generated": false,
+  "production_run_spec_complete": false,
+  "interpretation": "Final admitted full-source roster, host features, complete outer host/phage blocks, model run settings and biological validation remain separate"
+}
