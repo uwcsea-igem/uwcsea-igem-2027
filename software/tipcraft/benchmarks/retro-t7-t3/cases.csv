@@ -1,0 +1,11 @@
+case_id,phage,host,label,source,locator,interpretation
+T7__BL21,T7,BL21,1,https://pmc.ncbi.nlm.nih.gov/articles/PMC4785837/,Swapping tail fibers section; Figure 3,plaque formation reported
+T7__BW25113,T7,BW25113,1,https://pmc.ncbi.nlm.nih.gov/articles/PMC4785837/,Swapping tail fibers section; Figure 3,plaque formation reported
+T7__MG1655,T7,MG1655,1,https://pmc.ncbi.nlm.nih.gov/articles/PMC4785837/,Swapping tail fibers section; Figure 3,plaque formation reported
+T3__BL21,T3,BL21,1,https://pmc.ncbi.nlm.nih.gov/articles/PMC4785837/,Swapping tail fibers section; Figure 3,plaque formation reported
+T3__BW25113,T3,BW25113,0,https://pmc.ncbi.nlm.nih.gov/articles/PMC4785837/,Swapping tail fibers section; Figure 3,no plaques detected under reported conditions
+T3__MG1655,T3,MG1655,0,https://pmc.ncbi.nlm.nih.gov/articles/PMC4785837/,Swapping tail fibers section; Figure 3,no plaques detected under reported conditions
+T7_T3_gp17__BW25113,T7_T3_gp17,BW25113,0,https://pmc.ncbi.nlm.nih.gov/articles/PMC4785837/,Swapping tail fibers section; Figure 3,no plaques detected under reported conditions
+T7_T3_gp17__MG1655,T7_T3_gp17,MG1655,0,https://pmc.ncbi.nlm.nih.gov/articles/PMC4785837/,Swapping tail fibers section; Figure 3,no plaques detected under reported conditions
+T3_T7_gp17__BW25113,T3_T7_gp17,BW25113,1,https://pmc.ncbi.nlm.nih.gov/articles/PMC4785837/,Swapping tail fibers section; Figure 3,plaque formation reported
+T3_T7_gp17__MG1655,T3_T7_gp17,MG1655,1,https://pmc.ncbi.nlm.nih.gov/articles/PMC4785837/,Swapping tail fibers section; Figure 3,plaque formation reported

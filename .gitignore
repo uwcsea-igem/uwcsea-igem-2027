@@ -1,0 +1,19 @@
+# Python / tools
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+# Local raw data and private exports
+/data/raw/*
+!/data/raw/.gitkeep
+.env
+.env.*
+!.env.example
+WhatsApp*
+_chat.txt
+*.opus

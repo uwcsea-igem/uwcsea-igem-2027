@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "dataset": "retro-t7-t3-v0.1",
+  "label_type": "qualitative published plaque observation",
+  "cases": 10,
+  "baseline": {
+    "method": "always-positive",
+    "n": 10,
+    "accuracy": 0.6,
+    "balanced_accuracy": 0.5,
+    "threshold": 0.5
+  },
+  "assembly": {
+    "supported": 0,
+    "unsupported": 0,
+    "unknown": 10,
+    "total": 10,
+    "direct_evidence_coverage": 0.0
+  },
+  "model": {
+    "status": "not_evaluated",
+    "prediction_coverage": 0.0
+  },
+  "gate": "HOLD: no independent model predictions; baseline is not validation",
+  "limitations": [
+    "Small correlated cases from one publication; no generalization claim",
+    "Negative labels mean no plaques detected under the reported conditions",
+    "No quantitative EOP values or direct assembly assays included",
+    "Prediction independence and leakage require human review"
+  ],
+  "case_sha256": "716b09e3636c1d3c4653cac245bec7d7407c9a6a06eac08dcb5e353b0b0769c3"
+}

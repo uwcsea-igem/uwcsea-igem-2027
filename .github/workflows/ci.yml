@@ -1,0 +1,17 @@
+name: CI
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  tipcraft:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv python install 3.11
+      - run: uv sync --project software/tipcraft --locked --python 3.11
+      - run: uv run --project software/tipcraft --no-sync python -m unittest discover -s software/tipcraft/tests -v
+      - run: uv run --project software/tipcraft --no-sync tipcraft benchmark --cases software/tipcraft/benchmarks/retro-t7-t3/cases.csv --output /tmp/retro-t7-t3.json
+      - run: diff -u data/processed/retro-t7-t3.json /tmp/retro-t7-t3.json
