@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "scope": "Official ECOR WGS input authentication only; no annotations, labels, model fitting or target scores",
+  "inputs": [
+    {
+      "path": "data/processed/basel-validation-source-audit.json",
+      "sha256": "5d2ae86d0ae4ee35a58174009b0675773cc88e10b4232088800f01980bd8ded4"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ECOR_validation_strain_assemblies.csv",
+      "sha256": "fb5ff1a75f4caaeafb0ea1a48361a68572c6249b2f391d86d9b7773d58774927"
+    }
+  ],
+  "roster": "All25 observed-panel hosts from the prior accession audit; no outcomes read. The two metadata-only hosts ECOR36/37 remain outside this prior panel roster.",
+  "pilot_disclosure": "ECOR12 master, assembly XML and compressed WGS FASTA were inspected to establish the route before this bulk policy. Reuse the authenticated master/FASTA pilot bytes for ECOR12; fetch remaining24 under the same rule.",
+  "pilot_files": [
+    {
+      "path": "data/raw/genophi-external-validation/ena-metadata-probe-v1/master.txt",
+      "sha256": "f897aca4cd96275e16ea8160c9ca428568d162dfc2b7ad97ec1bc8b6dd0787e5"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ena-metadata-probe-v1/QOWX01.fasta.gz",
+      "sha256": "6b55a85a8d8f35f2bef78cd7ef358e36d3ed09ce6de0f14ea16166b207e6db6f"
+    }
+  ],
+  "master_url_template": "https://www.ebi.ac.uk/ena/browser/api/embl/{accession}",
+  "fasta_url_template": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/{prefix3}/{set_id}.fasta.gz",
+  "route_authority": "ENA official browser/FTP documentation; ECOR12 assembly XML independently lists this FASTA URL",
+  "expected_project": "PRJNA230969",
+  "strain_rule": "Exact MOD1-ECORn master strain for ECORn source mapping",
+  "identity_controls": [
+    "Master prefix must equal frozen WGS accession prefix",
+    "Require WGS build/set declaration and complete inclusive contig range",
+    "Validate gzip CRC, exact expected contig set, unique versioned accessions, nonempty IUPAC DNA and per-contig strain declarations",
+    "Never concatenate, trim, fill or choose longest contigs"
+  ],
+  "source_metric_rule": "Compare master contig count to supplied Scaffolds as a descriptive source-metric check; preserve any discrepancy without silently substituting genomes",
+  "outputs": "Raw master and compressed/expanded original FASTA retained; full per-contig IDs, lengths and sequence SHA256 in raw manifest; compact hash-bound public receipt",
+  "workers": 2,
+  "timeout_seconds": 40,
+  "max_download_bytes": 33554432,
+  "retries": 0,
+  "failure_rule": "Retain failed/pending entries; do not create zero-length sequences or omit a host from the roster",
+  "limits": "WGS builds and contig sequence versions are distinct. Accession identity does not establish experimental-stock equivalence or training admission. GCA mapping beyond the ECOR12 pilot is not inferred."
+}

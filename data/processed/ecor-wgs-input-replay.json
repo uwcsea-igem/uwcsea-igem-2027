@@ -1,0 +1,648 @@
+{
+  "ambiguous_bases": 0,
+  "artifacts": [
+    {
+      "host": "ECOR12",
+      "kind": "master_file",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR12/master.embl",
+      "sha256": "f897aca4cd96275e16ea8160c9ca428568d162dfc2b7ad97ec1bc8b6dd0787e5"
+    },
+    {
+      "host": "ECOR12",
+      "kind": "fasta_gzip",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR12/contigs.fasta.gz",
+      "sha256": "6b55a85a8d8f35f2bef78cd7ef358e36d3ed09ce6de0f14ea16166b207e6db6f"
+    },
+    {
+      "host": "ECOR12",
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR12/contigs.fasta",
+      "sha256": "fa72709dd3cbac8987d87baa8bb6f1867a1fe416861d4ae8f112a9bc2f0277e2"
+    },
+    {
+      "host": "ECOR12",
+      "kind": "contig_manifest",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR12/contig-manifest.json",
+      "sha256": "79b9df8ce24e4505e2aa2cf80e64a269678ed556fc04c4b807fdd8eea4d557e6"
+    },
+    {
+      "host": "ECOR13",
+      "kind": "master_file",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR13/master.embl",
+      "sha256": "0bdd0ca014ee0b14d9d7e4fd8315e5f820b6a2355017ea14a4751973dfd2d395"
+    },
+    {
+      "host": "ECOR13",
+      "kind": "fasta_gzip",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR13/contigs.fasta.gz",
+      "sha256": "2e19b68cfe1e511c373a4718668d2cfe747e4236361f1f96d6bacf9038dc560d"
+    },
+    {
+      "host": "ECOR13",
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR13/contigs.fasta",
+      "sha256": "445f2b7c537d84cd2de232e9a60d6cc9d9312a3ff4f864bd46b9ce33c01827ed"
+    },
+    {
+      "host": "ECOR13",
+      "kind": "contig_manifest",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR13/contig-manifest.json",
+      "sha256": "5c7ac9554a79e762bd9c6d4f7b56b2e96384cd78ab2b0c23cb2a982d13ef6ebb"
+    },
+    {
+      "host": "ECOR14",
+      "kind": "master_file",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR14/master.embl",
+      "sha256": "13492dce63f1add41f93ed3e315773958a8b018130563ba4401b0b69575c6ac9"
+    },
+    {
+      "host": "ECOR14",
+      "kind": "fasta_gzip",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR14/contigs.fasta.gz",
+      "sha256": "0a2270fc1ce8f9859f572fb5224a649e9b0d921cbe265718a3cebd0afc60d3f7"
+    },
+    {
+      "host": "ECOR14",
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR14/contigs.fasta",
+      "sha256": "311b1c106fcabe30d1ff693a6fc83fc9bee5c39680eedbe03c47073a53706308"
+    },
+    {
+      "host": "ECOR14",
+      "kind": "contig_manifest",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR14/contig-manifest.json",
+      "sha256": "af18bc037e03f3e60fa8c9286be4fbe204ad4b8c47ac4a9b896f4afd57280f31"
+    },
+    {
+      "host": "ECOR15",
+      "kind": "master_file",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR15/master.embl",
+      "sha256": "055929323f3317210a3b50f17f0c9a85e08612337cc9d7a4ae1af93d7f5b9383"
+    },
+    {
+      "host": "ECOR15",
+      "kind": "fasta_gzip",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR15/contigs.fasta.gz",
+      "sha256": "04780d1324e21189acb69d597e9f1a5ce82335a6537afeebd30cd8f9f3690f98"
+    },
+    {
+      "host": "ECOR15",
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR15/contigs.fasta",
+      "sha256": "8172961ebd7b0455b98b7a8b92a23e9fcdeba70212ee6b42df7c62d4adf86396"
+    },
+    {
+      "host": "ECOR15",
+      "kind": "contig_manifest",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR15/contig-manifest.json",
+      "sha256": "ce6787f8ade7a2f25d36c16b20b87ef412aacbebc6c0940b26f40bd49bab499c"
+    },
+    {
+      "host": "ECOR16",
+      "kind": "master_file",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR16/master.embl",
+      "sha256": "e6473236fecaecfe02b601611dda3165182aa6436b790ae82bcd86e6b3534c92"
+    },
+    {
+      "host": "ECOR16",
+      "kind": "fasta_gzip",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR16/contigs.fasta.gz",
+      "sha256": "41fae0ea4b59950fdf70aebd19fc0b408e808be3b313fb78a7f16ce2cd6c2799"
+    },
+    {
+      "host": "ECOR16",
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR16/contigs.fasta",
+      "sha256": "bc662f78e43129907102c0276d6d0e7e203f7412a30d84e04fe4d7b06ce05b29"
+    },
+    {
+      "host": "ECOR16",
+      "kind": "contig_manifest",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR16/contig-manifest.json",
+      "sha256": "f18ed789420f316c737bd525b0da3c4acb76ddc24246dd3307637c94f77f889b"
+    },
+    {
+      "host": "ECOR17",
+      "kind": "master_file",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR17/master.embl",
+      "sha256": "388043d40cc32672c32563b5f9f5eebb1ee4edfbc6923a5ed36498dca65a3124"
+    },
+    {
+      "host": "ECOR17",
+      "kind": "fasta_gzip",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR17/contigs.fasta.gz",
+      "sha256": "1b4b6dccdabdf98760dfb052ca26b538fb4818d12a998b8ec33fb3105a772b36"
+    },
+    {
+      "host": "ECOR17",
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR17/contigs.fasta",
+      "sha256": "61c512368a766da8a6866ea1e8cbfa9226783174b7d93ae8f32e905651879e56"
+    },
+    {
+      "host": "ECOR17",
+      "kind": "contig_manifest",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR17/contig-manifest.json",
+      "sha256": "56ac27443d0fd14d5c5ad85cad081ecdfd4fc869418c5b83ed9c5052339a9b84"
+    },
+    {
+      "host": "ECOR18",
+      "kind": "master_file",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR18/master.embl",
+      "sha256": "c6f304ff18b1894f202e21a1bfbfd99fb8e47c946b7199fc128495788d0c0d68"
+    },
+    {
+      "host": "ECOR18",
+      "kind": "fasta_gzip",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR18/contigs.fasta.gz",
+      "sha256": "5b782d48e4c80811de438b7653399451b97301cd29d1467ec292bb1e52645975"
+    },
+    {
+      "host": "ECOR18",
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR18/contigs.fasta",
+      "sha256": "171ffb1326f41e78d1980a0c9229a0425d20c68b89007421d4662c2fd7d3206b"
+    },
+    {
+      "host": "ECOR18",
+      "kind": "contig_manifest",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR18/contig-manifest.json",
+      "sha256": "343bd8851db3136344d8ff4168dafb64961944a651be3af99c2a6346b93be470"
+    },
+    {
+      "host": "ECOR19",
+      "kind": "master_file",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR19/master.embl",
+      "sha256": "eb79998237b6dd0fad0a6993abecebf4d181311c8d07cc24f9d7913f458b322d"
+    },
+    {
+      "host": "ECOR19",
+      "kind": "fasta_gzip",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR19/contigs.fasta.gz",
+      "sha256": "4573d59b88b0b1cb35c88624251a5113ccff17a3b4821f783e29c4d625926c97"
+    },
+    {
+      "host": "ECOR19",
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR19/contigs.fasta",
+      "sha256": "a487bd6287f691293343b17e0adbb82968e087810ff858c2894f13a8fc8864fe"
+    },
+    {
+      "host": "ECOR19",
+      "kind": "contig_manifest",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR19/contig-manifest.json",
+      "sha256": "3a915e2da5dc929c6044c4fafaef80a7d89a377dd26bc1a2f021fca86b9b8a8d"
+    },
+    {
+      "host": "ECOR20",
+      "kind": "master_file",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR20/master.embl",
+      "sha256": "7afb467b5a5b0c58f14749c666ed8f383c2c88f523ae0757d9b7112aa87c5a67"
+    },
+    {
+      "host": "ECOR20",
+      "kind": "fasta_gzip",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR20/contigs.fasta.gz",
+      "sha256": "3a822babbe567141b8c001c5470ad48b3959e0f33cbfad1c4389c259f299ccb0"
+    },
+    {
+      "host": "ECOR20",
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR20/contigs.fasta",
+      "sha256": "2c5df77923e07b488031c4e05603241192b2e1ff7838c20a23a9e04de58ae4db"
+    },
+    {
+      "host": "ECOR20",
+      "kind": "contig_manifest",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR20/contig-manifest.json",
+      "sha256": "fdca31e4df04ced6d5c514f9b964ed81f1aa6ec109a955ff517a7e6d58ba24f2"
+    },
+    {
+      "host": "ECOR21",
+      "kind": "master_file",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR21/master.embl",
+      "sha256": "553af32109c02e0214f6ca4c5a2620574e10e9be69a184e020ff15d67435339b"
+    },
+    {
+      "host": "ECOR21",
+      "kind": "fasta_gzip",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR21/contigs.fasta.gz",
+      "sha256": "75139f740330b0e0f0274b3f0ee89cffe100c253bc887767da0bdf2d6f53faaf"
+    },
+    {
+      "host": "ECOR21",
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR21/contigs.fasta",
+      "sha256": "be1169923f512d00964b7a0c09935b7652a5d570689ba4e0ad608dac33b42737"
+    },
+    {
+      "host": "ECOR21",
+      "kind": "contig_manifest",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR21/contig-manifest.json",
+      "sha256": "dac017bf60c53ffac5f0cfca24ac1826f24fc17c865e759cbf8502e366dc1b80"
+    },
+    {
+      "host": "ECOR22",
+      "kind": "master_file",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR22/master.embl",
+      "sha256": "7314047897b7bf8a58c988de764b63d6f13b5dbf39624bd54c246ab17bbea6fa"
+    },
+    {
+      "host": "ECOR22",
+      "kind": "fasta_gzip",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR22/contigs.fasta.gz",
+      "sha256": "f3db6307d386fe86262b10ea1e97b3ed074590776657c09489cd1302d5c5cb19"
+    },
+    {
+      "host": "ECOR22",
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR22/contigs.fasta",
+      "sha256": "9c9c34805cb65d6e0c29f87ce59453e4ca4b54b664c51e69e555da06a679232a"
+    },
+    {
+      "host": "ECOR22",
+      "kind": "contig_manifest",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR22/contig-manifest.json",
+      "sha256": "394aaffd0673a84b06c4ce0efb6b05e5e36508428da465853e57e02afb11c397"
+    },
+    {
+      "host": "ECOR23",
+      "kind": "master_file",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR23/master.embl",
+      "sha256": "d6d70e949fb9d4ce1379c014d20992ea5d45465de0858910484becabc42cd9b1"
+    },
+    {
+      "host": "ECOR23",
+      "kind": "fasta_gzip",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR23/contigs.fasta.gz",
+      "sha256": "36aa9c379a8f91114724ca7e906ce46766481a01ba9942daf5b5afc2ac718b58"
+    },
+    {
+      "host": "ECOR23",
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR23/contigs.fasta",
+      "sha256": "d1cae07d5384667bcbdd8e210d9be761a3519711a27ebac06bae4ad1f00a9c9e"
+    },
+    {
+      "host": "ECOR23",
+      "kind": "contig_manifest",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR23/contig-manifest.json",
+      "sha256": "7c7397b1b3472f66747c86d4546cb718aa1fcf7673c7a4d15b621e92d536c45d"
+    },
+    {
+      "host": "ECOR24",
+      "kind": "master_file",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR24/master.embl",
+      "sha256": "787875cb3166920af748a8cdc87328b5dbe15e2578f1214b5f50bd2feed15ba0"
+    },
+    {
+      "host": "ECOR24",
+      "kind": "fasta_gzip",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR24/contigs.fasta.gz",
+      "sha256": "8dd7c2e190b7cf1dc822bfebdd6a3d5fde9222cea2dd31a1a33f5c1479382cd4"
+    },
+    {
+      "host": "ECOR24",
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR24/contigs.fasta",
+      "sha256": "972b3ee45dd7e3312cf2d52ca99306636e2ead9794eba5fd0dad22e95086d17c"
+    },
+    {
+      "host": "ECOR24",
+      "kind": "contig_manifest",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR24/contig-manifest.json",
+      "sha256": "02bc8efecaaca4329b1d94a285ba780b89ab5deb5e37412c5d22c57bfd93549d"
+    },
+    {
+      "host": "ECOR25",
+      "kind": "master_file",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR25/master.embl",
+      "sha256": "0a8fe26b883c40eac7f6721323d3f796ced2f97f48caf80456088d545abec6cb"
+    },
+    {
+      "host": "ECOR25",
+      "kind": "fasta_gzip",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR25/contigs.fasta.gz",
+      "sha256": "3cba9160046cd6cb853c6949eff61ec6ae9d2ced292542c07b26eff42db5679b"
+    },
+    {
+      "host": "ECOR25",
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR25/contigs.fasta",
+      "sha256": "dd714da9312ff9840e518d45a6211a35aeb6b85806835b3a52a9139178aecea6"
+    },
+    {
+      "host": "ECOR25",
+      "kind": "contig_manifest",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR25/contig-manifest.json",
+      "sha256": "93a96aee30d406357509a32e9eda9d12a40cf205b2dc098895ca38888d7e7c32"
+    },
+    {
+      "host": "ECOR26",
+      "kind": "master_file",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR26/master.embl",
+      "sha256": "e6ff0231aa0c43ad28bc443268ad7c654ed5145972e2f715c75fe82d41810f11"
+    },
+    {
+      "host": "ECOR26",
+      "kind": "fasta_gzip",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR26/contigs.fasta.gz",
+      "sha256": "3abb3b8c0a04a9d0795db05019775d5d4fe5c9dab4e50d7b3f435d6df3313833"
+    },
+    {
+      "host": "ECOR26",
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR26/contigs.fasta",
+      "sha256": "d09ee85d085e4b599bf9ed8d85d7122e490332f02b34f9253caf32653bdeee6c"
+    },
+    {
+      "host": "ECOR26",
+      "kind": "contig_manifest",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR26/contig-manifest.json",
+      "sha256": "7bc57919b6b653ff6d7c6d0d6797e89c74717159917cbdc57f25f75dc8ae2141"
+    },
+    {
+      "host": "ECOR27",
+      "kind": "master_file",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR27/master.embl",
+      "sha256": "6445ee24d281bede324d5751b4511e948c4428ac288c94667ab8cca8296934ad"
+    },
+    {
+      "host": "ECOR27",
+      "kind": "fasta_gzip",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR27/contigs.fasta.gz",
+      "sha256": "6a3c7eaa25f4570aac054cf7e971bb2910fedf2c3f70f37196f768d2c39a5307"
+    },
+    {
+      "host": "ECOR27",
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR27/contigs.fasta",
+      "sha256": "38e72a6d488e6d244e229bd0644e787b3965302eed0f9bcd81e5acbce8e3b702"
+    },
+    {
+      "host": "ECOR27",
+      "kind": "contig_manifest",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR27/contig-manifest.json",
+      "sha256": "069e1874b69cc16e09ea4024322b05446007b7cc108d11dea0ac70fbaaed0b85"
+    },
+    {
+      "host": "ECOR28",
+      "kind": "master_file",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR28/master.embl",
+      "sha256": "59977687eea2d7ffe5d9d4dc9b0f758f71f21c0b737de8933582dd21a01bf047"
+    },
+    {
+      "host": "ECOR28",
+      "kind": "fasta_gzip",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR28/contigs.fasta.gz",
+      "sha256": "5d35d545a727b55dd8ba9e2d5c92ff1c3aeb4313f5f2d64f03c5f5f0350866f6"
+    },
+    {
+      "host": "ECOR28",
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR28/contigs.fasta",
+      "sha256": "8012e14d2c48b7035c15ad01b3b69f29f1b4d5b2b3884fb4dfde3c6c15403d6f"
+    },
+    {
+      "host": "ECOR28",
+      "kind": "contig_manifest",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR28/contig-manifest.json",
+      "sha256": "f855eaad617f3f081a9ad852021eca855a7883527ea27c49c6afed6df4339158"
+    },
+    {
+      "host": "ECOR29",
+      "kind": "master_file",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR29/master.embl",
+      "sha256": "b4b582e1d91e4ba3c1b694a22bb4db2a86979e7a7a1c62f6b28fbb9c81e795e4"
+    },
+    {
+      "host": "ECOR29",
+      "kind": "fasta_gzip",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR29/contigs.fasta.gz",
+      "sha256": "f9a915347e3ef0c22fdeeb379365545c676bdd0a533e1fd09568efb72358739e"
+    },
+    {
+      "host": "ECOR29",
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR29/contigs.fasta",
+      "sha256": "3899c4cfb22ffc8bdc9069b8e973b149c7c61db81fad787f9b11a88870873229"
+    },
+    {
+      "host": "ECOR29",
+      "kind": "contig_manifest",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR29/contig-manifest.json",
+      "sha256": "cc77bbc33002b7255567555fdec969355de35b6b7f4fabdef2029735214be55d"
+    },
+    {
+      "host": "ECOR30",
+      "kind": "master_file",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR30/master.embl",
+      "sha256": "c557e789c21d8320d82056666ed76fdb717a27816a1b219471a01a695b8cab62"
+    },
+    {
+      "host": "ECOR30",
+      "kind": "fasta_gzip",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR30/contigs.fasta.gz",
+      "sha256": "84cd1d940d7b7e49bc0b6d585a94020b89dd9e57b09c89dcbcd204efa383647f"
+    },
+    {
+      "host": "ECOR30",
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR30/contigs.fasta",
+      "sha256": "960e4be00c685568dd5434aa5ea5a0bb5f8f6880768ed3ba1408545a9e671bd4"
+    },
+    {
+      "host": "ECOR30",
+      "kind": "contig_manifest",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR30/contig-manifest.json",
+      "sha256": "f05f5ba6bb2292888286c01699fb56a1bedbfc11ea19ccb98ecf307e9e153432"
+    },
+    {
+      "host": "ECOR31",
+      "kind": "master_file",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR31/master.embl",
+      "sha256": "e0aa0dba12e6fe39de00c44c01f7e8ffc7f812730f97b6caa309488f9599bf48"
+    },
+    {
+      "host": "ECOR31",
+      "kind": "fasta_gzip",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR31/contigs.fasta.gz",
+      "sha256": "77d6898b3e7727ed5cc09fb09e6659e9e1ab7dacb063c806fdd2f9b40ec2645f"
+    },
+    {
+      "host": "ECOR31",
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR31/contigs.fasta",
+      "sha256": "89377dae8b0359e257e650f4ac756ba11e745b3c8fd365436239416483bef71f"
+    },
+    {
+      "host": "ECOR31",
+      "kind": "contig_manifest",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR31/contig-manifest.json",
+      "sha256": "1d0bac1a4cb606696e048135a282f6b6b2c483d5ec4583687f6478f908bb7c7b"
+    },
+    {
+      "host": "ECOR32",
+      "kind": "master_file",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR32/master.embl",
+      "sha256": "e694b814d37f2ab750d3d88908485c4dd57b1ae855f757c7f012c520d809536f"
+    },
+    {
+      "host": "ECOR32",
+      "kind": "fasta_gzip",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR32/contigs.fasta.gz",
+      "sha256": "f6ac85ee2816ea83f5180e492ac0f15265c0c7fc2bf022106f301863d25dcccf"
+    },
+    {
+      "host": "ECOR32",
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR32/contigs.fasta",
+      "sha256": "29e764c4d8b217bf24ec3221ee5af2fef08a9a587d1b7910cf1cd7a16c232b5d"
+    },
+    {
+      "host": "ECOR32",
+      "kind": "contig_manifest",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR32/contig-manifest.json",
+      "sha256": "0cfa80a3ca79d283a61a02cba24ca769c5bafae2831ec60e48245e4995cb8e7d"
+    },
+    {
+      "host": "ECOR33",
+      "kind": "master_file",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR33/master.embl",
+      "sha256": "f7e05f5426f1af1714bdd6a11ce3e44b4d6af0ee46f3c027759ea08e93f4cf9d"
+    },
+    {
+      "host": "ECOR33",
+      "kind": "fasta_gzip",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR33/contigs.fasta.gz",
+      "sha256": "233929ec74ec592f9e90ade72f34816117721e87d9817670b7163602267b71f5"
+    },
+    {
+      "host": "ECOR33",
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR33/contigs.fasta",
+      "sha256": "7a4b2912e7ef37f31d4c8848357ef847f01b77b640be55d35df6e96ecd085c34"
+    },
+    {
+      "host": "ECOR33",
+      "kind": "contig_manifest",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR33/contig-manifest.json",
+      "sha256": "338e693174d1d5fe81b9ea76f5d1ddbda56641c2bdf538c58730466631d804a2"
+    },
+    {
+      "host": "ECOR34",
+      "kind": "master_file",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR34/master.embl",
+      "sha256": "40a14484514e7679b66fcc89751450a27b2a7ad1a2b513cd6398774ce2bce2bb"
+    },
+    {
+      "host": "ECOR34",
+      "kind": "fasta_gzip",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR34/contigs.fasta.gz",
+      "sha256": "d8ab5afb4b669976c36f72ad918dd9290346f70724925523a75fc5622b938551"
+    },
+    {
+      "host": "ECOR34",
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR34/contigs.fasta",
+      "sha256": "1dcb5736a834e0503ef83710f49f1987646cb291a8d4fb9611f1b8da3029d072"
+    },
+    {
+      "host": "ECOR34",
+      "kind": "contig_manifest",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR34/contig-manifest.json",
+      "sha256": "be256387d4b2dc5fcddc96bd4e75ee0c17d75e288a98866a73345cbe48cd2fef"
+    },
+    {
+      "host": "ECOR35",
+      "kind": "master_file",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR35/master.embl",
+      "sha256": "f09dbdf4c4ff0cc8baec091a8c144a5a8d05fc7212e59ad9574e278049b51914"
+    },
+    {
+      "host": "ECOR35",
+      "kind": "fasta_gzip",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR35/contigs.fasta.gz",
+      "sha256": "95d68e00f0cd4b4e65b0607d9d24c8a65e98ec06ea57efcbed0504407488f7af"
+    },
+    {
+      "host": "ECOR35",
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR35/contigs.fasta",
+      "sha256": "0362b2e6442ccc3e2582df11ad89d105e582875df538df4ca01aab15b5f92ed4"
+    },
+    {
+      "host": "ECOR35",
+      "kind": "contig_manifest",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR35/contig-manifest.json",
+      "sha256": "be7443102ab3cd9250ab55baf603c301cfcc70b4f02cbe8173c8063c8fd8b675"
+    },
+    {
+      "host": "ECOR38",
+      "kind": "master_file",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR38/master.embl",
+      "sha256": "7251a836386d47601ae9e82008356c4a31caa40c1d63d5cd7f252994bd0d44a1"
+    },
+    {
+      "host": "ECOR38",
+      "kind": "fasta_gzip",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR38/contigs.fasta.gz",
+      "sha256": "87457bf2707ca63501651ddd7e4313ca6951cebbf769f95a614af6056105d557"
+    },
+    {
+      "host": "ECOR38",
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR38/contigs.fasta",
+      "sha256": "bddd9a3d45e7fe19e628012cff102300c5ca54b8870a8380a3d57dab82b9827d"
+    },
+    {
+      "host": "ECOR38",
+      "kind": "contig_manifest",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR38/contig-manifest.json",
+      "sha256": "ecdf0b702ada4c0fb6f0e65ed96d3c7f44b27509865b5a9a0d531a96b953658b"
+    }
+  ],
+  "contig_sequence_multiset_fingerprints": {
+    "ECOR12": "6788f8da5e54a4254bf7897429a33da112c3d5d08c4cc944fde451a05dd04b00",
+    "ECOR13": "374f5362b1bb77cb093e85ceaf69acc370a348b9ef175a9deabf9287d4e54d7f",
+    "ECOR14": "bd1fa01009135f7d3fe49900280d11dabe19583a401494426653e16ec8f0a4b3",
+    "ECOR15": "7b122e158c8b2be6724ff16fc7cb784cc834caec4a79d5f50c9baa27964e539e",
+    "ECOR16": "51ff60eeca2f81be8840d58475b10a408f8263a9c9ccbc9699579ed65d644c58",
+    "ECOR17": "3018c15eb9018c62be21f4219d7e2471fff9579a2859db882fff36aeaba7636c",
+    "ECOR18": "9d94fdd4c977c2058e8e173d116990781921da4d34962fc8546f79223d7b4dab",
+    "ECOR19": "3308b8fcbebfdca0360b948d369cbf81792f876097d7ded1386e60793ab619b5",
+    "ECOR20": "a80e66f3314b093acbd248784ac3091a949a5a30a73eb60b1eca44263add860a",
+    "ECOR21": "9c86a745e6923665ddf0ec22fe857e9f6a3fb9b391d70fad8894636d9dd2ad6d",
+    "ECOR22": "a1cfc9af2534ed54259a3002b7f21ea5f037b27a5a766f1f4794cd51a84baac7",
+    "ECOR23": "b250030a8ccc1847c6d7369d8bdcc47a24accfea09526134fc414fbbd9c3ff63",
+    "ECOR24": "9a1906ee60ab7660444a1851d65957dd2d5794fd335d9b11ddd809730d514e28",
+    "ECOR25": "3defc2cfb37887863320715e6055bd9798aff1a4fbec1c3d59d308d1b0096921",
+    "ECOR26": "5dd64f4bfca3f3c433250bd70e554ef03bb0dd0fb6634a476fb93a0b6baa97da",
+    "ECOR27": "3181fcec9852b5a8938ce608463550554f359248ec0753aaf17fa06aaef2caf2",
+    "ECOR28": "158900d884d0dcb008e4bfe1fec087f15adaf08b98b42b30cd8066a896e13f6a",
+    "ECOR29": "20e5f1112db0b29f35b2b0e81ecdcd16425a73d0e0216b72adfb1ba3a8ca97f4",
+    "ECOR30": "a078769c0521701417844a7645f7d91d4a1211c380561b8c72ebfbb142851ff5",
+    "ECOR31": "345566d2a0287f25beaaab1b6382553acd8d4b48c6a607aa58de1064a0405161",
+    "ECOR32": "e8f6b5df14b617dd81cdf273f4774d67881ab6356b2b6efcfacd42b4aa4c845f",
+    "ECOR33": "73af269bfcb03fe5b9a24ca6bff7fdb4ec44a3d41a06f5cdd0251ef27b53e813",
+    "ECOR34": "04fd7ebdcdbf83d52fd1c240ffad3e782a9ebe4fe6b74f805b8629b7d42c2b9c",
+    "ECOR35": "362f0fd0e7cf627ad4d213bcb041bf89b77cc79b3f312af8089e4e9b95b9759c",
+    "ECOR38": "c6a4b60742b6bcc1d4d9e892cf21c23818e6fe3ac769ce309184f2e6c362f51d"
+  },
+  "contigs": 3477,
+  "fingerprint_definition": "SHA256 of compact JSON of sorted (length, sequence SHA256) tuples, preserving duplicate contig multiplicity; no DNA concatenation",
+  "fingerprint_limit": "Not reverse-complement or fragmentation invariant; no-hit is not biological independence or relatedness clearance",
+  "hosts": 25,
+  "identical_contig_sequence_multiset_groups": [],
+  "network_requests_or_models_executed": false,
+  "report": {
+    "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/processed/ecor-wgs-input-authentication.json",
+    "sha256": "a8e6aafb15a172d59ea304fbb8bfc9cca356d385967e821260031b65272267c3"
+  },
+  "schema_version": 1,
+  "script_sha256": "6e9a1c5fea0889aba3777f7d1b9df7a72590fbaa8fec95c8c66837743fee5b81",
+  "status": "all25_official_contig_sets_replayed_offline",
+  "stock_identity_verified": false,
+  "total_bases": 120989458,
+  "verified_raw_artifact_count": 100
+}

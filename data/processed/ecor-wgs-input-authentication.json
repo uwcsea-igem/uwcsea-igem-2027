@@ -1,0 +1,1340 @@
+{
+  "GCA_accessions_inferred_for_all_hosts": false,
+  "Picard_collection_downloaded": false,
+  "authenticated_hosts": 25,
+  "entries": [
+    {
+      "ambiguous_bases": 0,
+      "contig_manifest": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR12/contig-manifest.json",
+        "sha256": "79b9df8ce24e4505e2aa2cf80e64a269678ed556fc04c4b807fdd8eea4d557e6"
+      },
+      "contigs": 218,
+      "fasta": {
+        "bytes": 5193233,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR12/contigs.fasta",
+        "sha256": "fa72709dd3cbac8987d87baa8bb6f1867a1fe416861d4ae8f112a9bc2f0277e2"
+      },
+      "fasta_gzip": {
+        "bytes": 1591471,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR12/contigs.fasta.gz",
+        "retrieval": {
+          "reused_pilot": {
+            "path": "data/raw/genophi-external-validation/ena-metadata-probe-v1/QOWX01.fasta.gz",
+            "sha256": "6b55a85a8d8f35f2bef78cd7ef358e36d3ed09ce6de0f14ea16166b207e6db6f"
+          },
+          "url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qow/QOWX01.fasta.gz"
+        },
+        "sha256": "6b55a85a8d8f35f2bef78cd7ef358e36d3ed09ce6de0f14ea16166b207e6db6f"
+      },
+      "host": "ECOR12",
+      "master": {
+        "biosample": "SAMN04158349",
+        "declared_contigs": 218,
+        "project": "PRJNA230969",
+        "set_id": "QOWX01",
+        "strain": "MOD1-ECOR12",
+        "wgs_build": "01",
+        "wgs_master": "QOWX01000000"
+      },
+      "master_file": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR12/master.embl",
+        "retrieval": {
+          "reused_pilot": {
+            "path": "data/raw/genophi-external-validation/ena-metadata-probe-v1/master.txt",
+            "sha256": "f897aca4cd96275e16ea8160c9ca428568d162dfc2b7ad97ec1bc8b6dd0787e5"
+          },
+          "url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOWX00000000"
+        },
+        "sha256": "f897aca4cd96275e16ea8160c9ca428568d162dfc2b7ad97ec1bc8b6dd0787e5"
+      },
+      "sequence_versions": [
+        1
+      ],
+      "source_scaffold_count_matches_master": true,
+      "source_scaffolds": 218,
+      "source_wgs_accession": "QOWX00000000",
+      "status": "authenticated_official_wgs_contig_set",
+      "total_bases": 5078970
+    },
+    {
+      "ambiguous_bases": 0,
+      "contig_manifest": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR13/contig-manifest.json",
+        "sha256": "5c7ac9554a79e762bd9c6d4f7b56b2e96384cd78ab2b0c23cb2a982d13ef6ebb"
+      },
+      "contigs": 165,
+      "fasta": {
+        "bytes": 4718473,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR13/contigs.fasta",
+        "sha256": "445f2b7c537d84cd2de232e9a60d6cc9d9312a3ff4f864bd46b9ce33c01827ed"
+      },
+      "fasta_gzip": {
+        "bytes": 1450212,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR13/contigs.fasta.gz",
+        "retrieval": {
+          "final_url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qow/QOWY01.fasta.gz",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:06.033118+00:00",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qow/QOWY01.fasta.gz"
+        },
+        "sha256": "2e19b68cfe1e511c373a4718668d2cfe747e4236361f1f96d6bacf9038dc560d"
+      },
+      "host": "ECOR13",
+      "master": {
+        "biosample": "SAMN04158350",
+        "declared_contigs": 165,
+        "project": "PRJNA230969",
+        "set_id": "QOWY01",
+        "strain": "MOD1-ECOR13",
+        "wgs_build": "01",
+        "wgs_master": "QOWY01000000"
+      },
+      "master_file": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR13/master.embl",
+        "retrieval": {
+          "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOWY00000000",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:02.352623+00:00",
+          "url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOWY00000000"
+        },
+        "sha256": "0bdd0ca014ee0b14d9d7e4fd8315e5f820b6a2355017ea14a4751973dfd2d395"
+      },
+      "sequence_versions": [
+        1
+      ],
+      "source_scaffold_count_matches_master": true,
+      "source_scaffolds": 165,
+      "source_wgs_accession": "QOWY00000000",
+      "status": "authenticated_official_wgs_contig_set",
+      "total_bases": 4619031
+    },
+    {
+      "ambiguous_bases": 0,
+      "contig_manifest": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR14/contig-manifest.json",
+        "sha256": "af18bc037e03f3e60fa8c9286be4fbe204ad4b8c47ac4a9b896f4afd57280f31"
+      },
+      "contigs": 150,
+      "fasta": {
+        "bytes": 5044605,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR14/contigs.fasta",
+        "sha256": "311b1c106fcabe30d1ff693a6fc83fc9bee5c39680eedbe03c47073a53706308"
+      },
+      "fasta_gzip": {
+        "bytes": 1549188,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR14/contigs.fasta.gz",
+        "retrieval": {
+          "final_url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qow/QOWZ01.fasta.gz",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:05.817320+00:00",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qow/QOWZ01.fasta.gz"
+        },
+        "sha256": "0a2270fc1ce8f9859f572fb5224a649e9b0d921cbe265718a3cebd0afc60d3f7"
+      },
+      "host": "ECOR14",
+      "master": {
+        "biosample": "SAMN04158351",
+        "declared_contigs": 150,
+        "project": "PRJNA230969",
+        "set_id": "QOWZ01",
+        "strain": "MOD1-ECOR14",
+        "wgs_build": "01",
+        "wgs_master": "QOWZ01000000"
+      },
+      "master_file": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR14/master.embl",
+        "retrieval": {
+          "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOWZ00000000",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:02.234562+00:00",
+          "url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOWZ00000000"
+        },
+        "sha256": "13492dce63f1add41f93ed3e315773958a8b018130563ba4401b0b69575c6ac9"
+      },
+      "sequence_versions": [
+        1
+      ],
+      "source_scaffold_count_matches_master": true,
+      "source_scaffolds": 150,
+      "source_wgs_accession": "QOWZ00000000",
+      "status": "authenticated_official_wgs_contig_set",
+      "total_bases": 4941866
+    },
+    {
+      "ambiguous_bases": 0,
+      "contig_manifest": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR15/contig-manifest.json",
+        "sha256": "ce6787f8ade7a2f25d36c16b20b87ef412aacbebc6c0940b26f40bd49bab499c"
+      },
+      "contigs": 128,
+      "fasta": {
+        "bytes": 5010626,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR15/contigs.fasta",
+        "sha256": "8172961ebd7b0455b98b7a8b92a23e9fcdeba70212ee6b42df7c62d4adf86396"
+      },
+      "fasta_gzip": {
+        "bytes": 1538730,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR15/contigs.fasta.gz",
+        "retrieval": {
+          "final_url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXA01.fasta.gz",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:09.451641+00:00",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXA01.fasta.gz"
+        },
+        "sha256": "04780d1324e21189acb69d597e9f1a5ce82335a6537afeebd30cd8f9f3690f98"
+      },
+      "host": "ECOR15",
+      "master": {
+        "biosample": "SAMN04914021",
+        "declared_contigs": 128,
+        "project": "PRJNA230969",
+        "set_id": "QOXA01",
+        "strain": "MOD1-ECOR15",
+        "wgs_build": "01",
+        "wgs_master": "QOXA01000000"
+      },
+      "master_file": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR15/master.embl",
+        "retrieval": {
+          "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXA00000000",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:06.952686+00:00",
+          "url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXA00000000"
+        },
+        "sha256": "055929323f3317210a3b50f17f0c9a85e08612337cc9d7a4ae1af93d7f5b9383"
+      },
+      "sequence_versions": [
+        1
+      ],
+      "source_scaffold_count_matches_master": true,
+      "source_scaffolds": 128,
+      "source_wgs_accession": "QOXA00000000",
+      "status": "authenticated_official_wgs_contig_set",
+      "total_bases": 4911383
+    },
+    {
+      "ambiguous_bases": 0,
+      "contig_manifest": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR16/contig-manifest.json",
+        "sha256": "f18ed789420f316c737bd525b0da3c4acb76ddc24246dd3307637c94f77f889b"
+      },
+      "contigs": 126,
+      "fasta": {
+        "bytes": 4731383,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR16/contigs.fasta",
+        "sha256": "bc662f78e43129907102c0276d6d0e7e203f7412a30d84e04fe4d7b06ce05b29"
+      },
+      "fasta_gzip": {
+        "bytes": 1454973,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR16/contigs.fasta.gz",
+        "retrieval": {
+          "final_url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXB01.fasta.gz",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:10.058428+00:00",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXB01.fasta.gz"
+        },
+        "sha256": "41fae0ea4b59950fdf70aebd19fc0b408e808be3b313fb78a7f16ce2cd6c2799"
+      },
+      "host": "ECOR16",
+      "master": {
+        "biosample": "SAMN04158353",
+        "declared_contigs": 126,
+        "project": "PRJNA230969",
+        "set_id": "QOXB01",
+        "strain": "MOD1-ECOR16",
+        "wgs_build": "01",
+        "wgs_master": "QOXB01000000"
+      },
+      "master_file": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR16/master.embl",
+        "retrieval": {
+          "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXB00000000",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:06.955153+00:00",
+          "url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXB00000000"
+        },
+        "sha256": "e6473236fecaecfe02b601611dda3165182aa6436b790ae82bcd86e6b3534c92"
+      },
+      "sequence_versions": [
+        1
+      ],
+      "source_scaffold_count_matches_master": true,
+      "source_scaffolds": 126,
+      "source_wgs_accession": "QOXB00000000",
+      "status": "authenticated_official_wgs_contig_set",
+      "total_bases": 4636981
+    },
+    {
+      "ambiguous_bases": 0,
+      "contig_manifest": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR17/contig-manifest.json",
+        "sha256": "56ac27443d0fd14d5c5ad85cad081ecdfd4fc869418c5b83ed9c5052339a9b84"
+      },
+      "contigs": 110,
+      "fasta": {
+        "bytes": 4596755,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR17/contigs.fasta",
+        "sha256": "61c512368a766da8a6866ea1e8cbfa9226783174b7d93ae8f32e905651879e56"
+      },
+      "fasta_gzip": {
+        "bytes": 1413852,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR17/contigs.fasta.gz",
+        "retrieval": {
+          "final_url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXC01.fasta.gz",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:13.572490+00:00",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXC01.fasta.gz"
+        },
+        "sha256": "1b4b6dccdabdf98760dfb052ca26b538fb4818d12a998b8ec33fb3105a772b36"
+      },
+      "host": "ECOR17",
+      "master": {
+        "biosample": "SAMN04158354",
+        "declared_contigs": 110,
+        "project": "PRJNA230969",
+        "set_id": "QOXC01",
+        "strain": "MOD1-ECOR17",
+        "wgs_build": "01",
+        "wgs_master": "QOXC01000000"
+      },
+      "master_file": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR17/master.embl",
+        "retrieval": {
+          "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXC00000000",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:10.570416+00:00",
+          "url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXC00000000"
+        },
+        "sha256": "388043d40cc32672c32563b5f9f5eebb1ee4edfbc6923a5ed36498dca65a3124"
+      },
+      "sequence_versions": [
+        1
+      ],
+      "source_scaffold_count_matches_master": true,
+      "source_scaffolds": 110,
+      "source_wgs_accession": "QOXC00000000",
+      "status": "authenticated_official_wgs_contig_set",
+      "total_bases": 4506698
+    },
+    {
+      "ambiguous_bases": 0,
+      "contig_manifest": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR18/contig-manifest.json",
+        "sha256": "343bd8851db3136344d8ff4168dafb64961944a651be3af99c2a6346b93be470"
+      },
+      "contigs": 112,
+      "fasta": {
+        "bytes": 4727001,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR18/contigs.fasta",
+        "sha256": "171ffb1326f41e78d1980a0c9229a0425d20c68b89007421d4662c2fd7d3206b"
+      },
+      "fasta_gzip": {
+        "bytes": 1453208,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR18/contigs.fasta.gz",
+        "retrieval": {
+          "final_url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXD01.fasta.gz",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:13.658084+00:00",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXD01.fasta.gz"
+        },
+        "sha256": "5b782d48e4c80811de438b7653399451b97301cd29d1467ec292bb1e52645975"
+      },
+      "host": "ECOR18",
+      "master": {
+        "biosample": "SAMN04158355",
+        "declared_contigs": 112,
+        "project": "PRJNA230969",
+        "set_id": "QOXD01",
+        "strain": "MOD1-ECOR18",
+        "wgs_build": "01",
+        "wgs_master": "QOXD01000000"
+      },
+      "master_file": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR18/master.embl",
+        "retrieval": {
+          "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXD00000000",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:11.067557+00:00",
+          "url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXD00000000"
+        },
+        "sha256": "c6f304ff18b1894f202e21a1bfbfd99fb8e47c946b7199fc128495788d0c0d68"
+      },
+      "sequence_versions": [
+        1
+      ],
+      "source_scaffold_count_matches_master": true,
+      "source_scaffolds": 112,
+      "source_wgs_accession": "QOXD00000000",
+      "status": "authenticated_official_wgs_contig_set",
+      "total_bases": 4634531
+    },
+    {
+      "ambiguous_bases": 0,
+      "contig_manifest": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR19/contig-manifest.json",
+        "sha256": "3a915e2da5dc929c6044c4fafaef80a7d89a377dd26bc1a2f021fca86b9b8a8d"
+      },
+      "contigs": 164,
+      "fasta": {
+        "bytes": 4633446,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR19/contigs.fasta",
+        "sha256": "a487bd6287f691293343b17e0adbb82968e087810ff858c2894f13a8fc8864fe"
+      },
+      "fasta_gzip": {
+        "bytes": 1424016,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR19/contigs.fasta.gz",
+        "retrieval": {
+          "final_url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXE01.fasta.gz",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:16.893486+00:00",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXE01.fasta.gz"
+        },
+        "sha256": "4573d59b88b0b1cb35c88624251a5113ccff17a3b4821f783e29c4d625926c97"
+      },
+      "host": "ECOR19",
+      "master": {
+        "biosample": "SAMN04158356",
+        "declared_contigs": 164,
+        "project": "PRJNA230969",
+        "set_id": "QOXE01",
+        "strain": "MOD1-ECOR19",
+        "wgs_build": "01",
+        "wgs_master": "QOXE01000000"
+      },
+      "master_file": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR19/master.embl",
+        "retrieval": {
+          "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXE00000000",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:14.677128+00:00",
+          "url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXE00000000"
+        },
+        "sha256": "eb79998237b6dd0fad0a6993abecebf4d181311c8d07cc24f9d7913f458b322d"
+      },
+      "sequence_versions": [
+        1
+      ],
+      "source_scaffold_count_matches_master": true,
+      "source_scaffolds": 164,
+      "source_wgs_accession": "QOXE00000000",
+      "status": "authenticated_official_wgs_contig_set",
+      "total_bases": 4535554
+    },
+    {
+      "ambiguous_bases": 0,
+      "contig_manifest": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR20/contig-manifest.json",
+        "sha256": "fdca31e4df04ced6d5c514f9b964ed81f1aa6ec109a955ff517a7e6d58ba24f2"
+      },
+      "contigs": 154,
+      "fasta": {
+        "bytes": 4693261,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR20/contigs.fasta",
+        "sha256": "2c5df77923e07b488031c4e05603241192b2e1ff7838c20a23a9e04de58ae4db"
+      },
+      "fasta_gzip": {
+        "bytes": 1442256,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR20/contigs.fasta.gz",
+        "retrieval": {
+          "final_url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXF01.fasta.gz",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:17.217916+00:00",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXF01.fasta.gz"
+        },
+        "sha256": "3a822babbe567141b8c001c5470ad48b3959e0f33cbfad1c4389c259f299ccb0"
+      },
+      "host": "ECOR20",
+      "master": {
+        "biosample": "SAMN04158357",
+        "declared_contigs": 154,
+        "project": "PRJNA230969",
+        "set_id": "QOXF01",
+        "strain": "MOD1-ECOR20",
+        "wgs_build": "01",
+        "wgs_master": "QOXF01000000"
+      },
+      "master_file": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR20/master.embl",
+        "retrieval": {
+          "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXF00000000",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:14.637538+00:00",
+          "url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXF00000000"
+        },
+        "sha256": "7afb467b5a5b0c58f14749c666ed8f383c2c88f523ae0757d9b7112aa87c5a67"
+      },
+      "sequence_versions": [
+        1
+      ],
+      "source_scaffold_count_matches_master": true,
+      "source_scaffolds": 154,
+      "source_wgs_accession": "QOXF00000000",
+      "status": "authenticated_official_wgs_contig_set",
+      "total_bases": 4595721
+    },
+    {
+      "ambiguous_bases": 0,
+      "contig_manifest": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR21/contig-manifest.json",
+        "sha256": "dac017bf60c53ffac5f0cfca24ac1826f24fc17c865e759cbf8502e366dc1b80"
+      },
+      "contigs": 159,
+      "fasta": {
+        "bytes": 4666422,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR21/contigs.fasta",
+        "sha256": "be1169923f512d00964b7a0c09935b7652a5d570689ba4e0ad608dac33b42737"
+      },
+      "fasta_gzip": {
+        "bytes": 1433706,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR21/contigs.fasta.gz",
+        "retrieval": {
+          "final_url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXG01.fasta.gz",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:21.213424+00:00",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXG01.fasta.gz"
+        },
+        "sha256": "75139f740330b0e0f0274b3f0ee89cffe100c253bc887767da0bdf2d6f53faaf"
+      },
+      "host": "ECOR21",
+      "master": {
+        "biosample": "SAMN04158358",
+        "declared_contigs": 159,
+        "project": "PRJNA230969",
+        "set_id": "QOXG01",
+        "strain": "MOD1-ECOR21",
+        "wgs_build": "01",
+        "wgs_master": "QOXG01000000"
+      },
+      "master_file": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR21/master.embl",
+        "retrieval": {
+          "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXG00000000",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:17.932890+00:00",
+          "url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXG00000000"
+        },
+        "sha256": "553af32109c02e0214f6ca4c5a2620574e10e9be69a184e020ff15d67435339b"
+      },
+      "sequence_versions": [
+        1
+      ],
+      "source_scaffold_count_matches_master": true,
+      "source_scaffolds": 159,
+      "source_wgs_accession": "QOXG00000000",
+      "status": "authenticated_official_wgs_contig_set",
+      "total_bases": 4568662
+    },
+    {
+      "ambiguous_bases": 0,
+      "contig_manifest": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR22/contig-manifest.json",
+        "sha256": "394aaffd0673a84b06c4ce0efb6b05e5e36508428da465853e57e02afb11c397"
+      },
+      "contigs": 84,
+      "fasta": {
+        "bytes": 4601645,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR22/contigs.fasta",
+        "sha256": "9c9c34805cb65d6e0c29f87ce59453e4ca4b54b664c51e69e555da06a679232a"
+      },
+      "fasta_gzip": {
+        "bytes": 1412747,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR22/contigs.fasta.gz",
+        "retrieval": {
+          "final_url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXH01.fasta.gz",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:22.184231+00:00",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXH01.fasta.gz"
+        },
+        "sha256": "f3db6307d386fe86262b10ea1e97b3ed074590776657c09489cd1302d5c5cb19"
+      },
+      "host": "ECOR22",
+      "master": {
+        "biosample": "SAMN04158359",
+        "declared_contigs": 84,
+        "project": "PRJNA230969",
+        "set_id": "QOXH01",
+        "strain": "MOD1-ECOR22",
+        "wgs_build": "01",
+        "wgs_master": "QOXH01000000"
+      },
+      "master_file": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR22/master.embl",
+        "retrieval": {
+          "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXH00000000",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:18.456541+00:00",
+          "url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXH00000000"
+        },
+        "sha256": "7314047897b7bf8a58c988de764b63d6f13b5dbf39624bd54c246ab17bbea6fa"
+      },
+      "sequence_versions": [
+        1
+      ],
+      "source_scaffold_count_matches_master": true,
+      "source_scaffolds": 84,
+      "source_wgs_accession": "QOXH00000000",
+      "status": "authenticated_official_wgs_contig_set",
+      "total_bases": 4514994
+    },
+    {
+      "ambiguous_bases": 0,
+      "contig_manifest": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR23/contig-manifest.json",
+        "sha256": "7c7397b1b3472f66747c86d4546cb718aa1fcf7673c7a4d15b621e92d536c45d"
+      },
+      "contigs": 161,
+      "fasta": {
+        "bytes": 5200597,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR23/contigs.fasta",
+        "sha256": "d1cae07d5384667bcbdd8e210d9be761a3519711a27ebac06bae4ad1f00a9c9e"
+      },
+      "fasta_gzip": {
+        "bytes": 1594179,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR23/contigs.fasta.gz",
+        "retrieval": {
+          "final_url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXI01.fasta.gz",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:24.596615+00:00",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXI01.fasta.gz"
+        },
+        "sha256": "36aa9c379a8f91114724ca7e906ce46766481a01ba9942daf5b5afc2ac718b58"
+      },
+      "host": "ECOR23",
+      "master": {
+        "biosample": "SAMN04158360",
+        "declared_contigs": 161,
+        "project": "PRJNA230969",
+        "set_id": "QOXI01",
+        "strain": "MOD1-ECOR23",
+        "wgs_build": "01",
+        "wgs_master": "QOXI01000000"
+      },
+      "master_file": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR23/master.embl",
+        "retrieval": {
+          "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXI00000000",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:22.192489+00:00",
+          "url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXI00000000"
+        },
+        "sha256": "d6d70e949fb9d4ce1379c014d20992ea5d45465de0858910484becabc42cd9b1"
+      },
+      "sequence_versions": [
+        1
+      ],
+      "source_scaffold_count_matches_master": true,
+      "source_scaffolds": 161,
+      "source_wgs_accession": "QOXI00000000",
+      "status": "authenticated_official_wgs_contig_set",
+      "total_bases": 5093876
+    },
+    {
+      "ambiguous_bases": 0,
+      "contig_manifest": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR24/contig-manifest.json",
+        "sha256": "02bc8efecaaca4329b1d94a285ba780b89ab5deb5e37412c5d22c57bfd93549d"
+      },
+      "contigs": 146,
+      "fasta": {
+        "bytes": 5334492,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR24/contigs.fasta",
+        "sha256": "972b3ee45dd7e3312cf2d52ca99306636e2ead9794eba5fd0dad22e95086d17c"
+      },
+      "fasta_gzip": {
+        "bytes": 1637139,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR24/contigs.fasta.gz",
+        "retrieval": {
+          "final_url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXJ01.fasta.gz",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:25.635739+00:00",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXJ01.fasta.gz"
+        },
+        "sha256": "8dd7c2e190b7cf1dc822bfebdd6a3d5fde9222cea2dd31a1a33f5c1479382cd4"
+      },
+      "host": "ECOR24",
+      "master": {
+        "biosample": "SAMN04158361",
+        "declared_contigs": 146,
+        "project": "PRJNA230969",
+        "set_id": "QOXJ01",
+        "strain": "MOD1-ECOR24",
+        "wgs_build": "01",
+        "wgs_master": "QOXJ01000000"
+      },
+      "master_file": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR24/master.embl",
+        "retrieval": {
+          "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXJ00000000",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:23.072936+00:00",
+          "url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXJ00000000"
+        },
+        "sha256": "787875cb3166920af748a8cdc87328b5dbe15e2578f1214b5f50bd2feed15ba0"
+      },
+      "sequence_versions": [
+        1
+      ],
+      "source_scaffold_count_matches_master": true,
+      "source_scaffolds": 146,
+      "source_wgs_accession": "QOXJ00000000",
+      "status": "authenticated_official_wgs_contig_set",
+      "total_bases": 5227547
+    },
+    {
+      "ambiguous_bases": 0,
+      "contig_manifest": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR25/contig-manifest.json",
+        "sha256": "93a96aee30d406357509a32e9eda9d12a40cf205b2dc098895ca38888d7e7c32"
+      },
+      "contigs": 125,
+      "fasta": {
+        "bytes": 4849054,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR25/contigs.fasta",
+        "sha256": "dd714da9312ff9840e518d45a6211a35aeb6b85806835b3a52a9139178aecea6"
+      },
+      "fasta_gzip": {
+        "bytes": 1488368,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR25/contigs.fasta.gz",
+        "retrieval": {
+          "final_url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXK01.fasta.gz",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:28.324926+00:00",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXK01.fasta.gz"
+        },
+        "sha256": "3cba9160046cd6cb853c6949eff61ec6ae9d2ced292542c07b26eff42db5679b"
+      },
+      "host": "ECOR25",
+      "master": {
+        "biosample": "SAMN04158362",
+        "declared_contigs": 125,
+        "project": "PRJNA230969",
+        "set_id": "QOXK01",
+        "strain": "MOD1-ECOR25",
+        "wgs_build": "01",
+        "wgs_master": "QOXK01000000"
+      },
+      "master_file": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR25/master.embl",
+        "retrieval": {
+          "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXK00000000",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:25.521071+00:00",
+          "url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXK00000000"
+        },
+        "sha256": "0a8fe26b883c40eac7f6721323d3f796ced2f97f48caf80456088d545abec6cb"
+      },
+      "sequence_versions": [
+        1
+      ],
+      "source_scaffold_count_matches_master": true,
+      "source_scaffolds": 125,
+      "source_wgs_accession": "QOXK00000000",
+      "status": "authenticated_official_wgs_contig_set",
+      "total_bases": 4752894
+    },
+    {
+      "ambiguous_bases": 0,
+      "contig_manifest": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR26/contig-manifest.json",
+        "sha256": "7bc57919b6b653ff6d7c6d0d6797e89c74717159917cbdc57f25f75dc8ae2141"
+      },
+      "contigs": 93,
+      "fasta": {
+        "bytes": 4769222,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR26/contigs.fasta",
+        "sha256": "d09ee85d085e4b599bf9ed8d85d7122e490332f02b34f9253caf32653bdeee6c"
+      },
+      "fasta_gzip": {
+        "bytes": 1462817,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR26/contigs.fasta.gz",
+        "retrieval": {
+          "final_url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXL01.fasta.gz",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:29.969487+00:00",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXL01.fasta.gz"
+        },
+        "sha256": "3abb3b8c0a04a9d0795db05019775d5d4fe5c9dab4e50d7b3f435d6df3313833"
+      },
+      "host": "ECOR26",
+      "master": {
+        "biosample": "SAMN04158363",
+        "declared_contigs": 93,
+        "project": "PRJNA230969",
+        "set_id": "QOXL01",
+        "strain": "MOD1-ECOR26",
+        "wgs_build": "01",
+        "wgs_master": "QOXL01000000"
+      },
+      "master_file": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR26/master.embl",
+        "retrieval": {
+          "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXL00000000",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:26.551838+00:00",
+          "url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXL00000000"
+        },
+        "sha256": "e6ff0231aa0c43ad28bc443268ad7c654ed5145972e2f715c75fe82d41810f11"
+      },
+      "sequence_versions": [
+        1
+      ],
+      "source_scaffold_count_matches_master": true,
+      "source_scaffolds": 93,
+      "source_wgs_accession": "QOXL00000000",
+      "status": "authenticated_official_wgs_contig_set",
+      "total_bases": 4678648
+    },
+    {
+      "ambiguous_bases": 0,
+      "contig_manifest": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR27/contig-manifest.json",
+        "sha256": "069e1874b69cc16e09ea4024322b05446007b7cc108d11dea0ac70fbaaed0b85"
+      },
+      "contigs": 109,
+      "fasta": {
+        "bytes": 4962953,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR27/contigs.fasta",
+        "sha256": "38e72a6d488e6d244e229bd0644e787b3965302eed0f9bcd81e5acbce8e3b702"
+      },
+      "fasta_gzip": {
+        "bytes": 1522526,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR27/contigs.fasta.gz",
+        "retrieval": {
+          "final_url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXM01.fasta.gz",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:31.634564+00:00",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXM01.fasta.gz"
+        },
+        "sha256": "6a3c7eaa25f4570aac054cf7e971bb2910fedf2c3f70f37196f768d2c39a5307"
+      },
+      "host": "ECOR27",
+      "master": {
+        "biosample": "SAMN04158364",
+        "declared_contigs": 109,
+        "project": "PRJNA230969",
+        "set_id": "QOXM01",
+        "strain": "MOD1-ECOR27",
+        "wgs_build": "01",
+        "wgs_master": "QOXM01000000"
+      },
+      "master_file": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR27/master.embl",
+        "retrieval": {
+          "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXM00000000",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:29.208614+00:00",
+          "url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXM00000000"
+        },
+        "sha256": "6445ee24d281bede324d5751b4511e948c4428ac288c94667ab8cca8296934ad"
+      },
+      "sequence_versions": [
+        1
+      ],
+      "source_scaffold_count_matches_master": true,
+      "source_scaffolds": 109,
+      "source_wgs_accession": "QOXM00000000",
+      "status": "authenticated_official_wgs_contig_set",
+      "total_bases": 4867073
+    },
+    {
+      "ambiguous_bases": 0,
+      "contig_manifest": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR28/contig-manifest.json",
+        "sha256": "f855eaad617f3f081a9ad852021eca855a7883527ea27c49c6afed6df4339158"
+      },
+      "contigs": 109,
+      "fasta": {
+        "bytes": 5021907,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR28/contigs.fasta",
+        "sha256": "8012e14d2c48b7035c15ad01b3b69f29f1b4d5b2b3884fb4dfde3c6c15403d6f"
+      },
+      "fasta_gzip": {
+        "bytes": 1541516,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR28/contigs.fasta.gz",
+        "retrieval": {
+          "final_url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXN01.fasta.gz",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:34.087700+00:00",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXN01.fasta.gz"
+        },
+        "sha256": "5d35d545a727b55dd8ba9e2d5c92ff1c3aeb4313f5f2d64f03c5f5f0350866f6"
+      },
+      "host": "ECOR28",
+      "master": {
+        "biosample": "SAMN04913875",
+        "declared_contigs": 109,
+        "project": "PRJNA230969",
+        "set_id": "QOXN01",
+        "strain": "MOD1-ECOR28",
+        "wgs_build": "01",
+        "wgs_master": "QOXN01000000"
+      },
+      "master_file": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR28/master.embl",
+        "retrieval": {
+          "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXN00000000",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:30.838920+00:00",
+          "url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXN00000000"
+        },
+        "sha256": "59977687eea2d7ffe5d9d4dc9b0f758f71f21c0b737de8933582dd21a01bf047"
+      },
+      "sequence_versions": [
+        1
+      ],
+      "source_scaffold_count_matches_master": true,
+      "source_scaffolds": 109,
+      "source_wgs_accession": "QOXN00000000",
+      "status": "authenticated_official_wgs_contig_set",
+      "total_bases": 4925046
+    },
+    {
+      "ambiguous_bases": 0,
+      "contig_manifest": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR29/contig-manifest.json",
+        "sha256": "cc77bbc33002b7255567555fdec969355de35b6b7f4fabdef2029735214be55d"
+      },
+      "contigs": 112,
+      "fasta": {
+        "bytes": 5025902,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR29/contigs.fasta",
+        "sha256": "3899c4cfb22ffc8bdc9069b8e973b149c7c61db81fad787f9b11a88870873229"
+      },
+      "fasta_gzip": {
+        "bytes": 1542222,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR29/contigs.fasta.gz",
+        "retrieval": {
+          "final_url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXO01.fasta.gz",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:35.477294+00:00",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXO01.fasta.gz"
+        },
+        "sha256": "f9a915347e3ef0c22fdeeb379365545c676bdd0a533e1fd09568efb72358739e"
+      },
+      "host": "ECOR29",
+      "master": {
+        "biosample": "SAMN04913876",
+        "declared_contigs": 112,
+        "project": "PRJNA230969",
+        "set_id": "QOXO01",
+        "strain": "MOD1-ECOR29",
+        "wgs_build": "01",
+        "wgs_master": "QOXO01000000"
+      },
+      "master_file": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR29/master.embl",
+        "retrieval": {
+          "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXO00000000",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:32.735206+00:00",
+          "url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXO00000000"
+        },
+        "sha256": "b4b582e1d91e4ba3c1b694a22bb4db2a86979e7a7a1c62f6b28fbb9c81e795e4"
+      },
+      "sequence_versions": [
+        1
+      ],
+      "source_scaffold_count_matches_master": true,
+      "source_scaffolds": 112,
+      "source_wgs_accession": "QOXO00000000",
+      "status": "authenticated_official_wgs_contig_set",
+      "total_bases": 4928564
+    },
+    {
+      "ambiguous_bases": 0,
+      "contig_manifest": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR30/contig-manifest.json",
+        "sha256": "f05f5ba6bb2292888286c01699fb56a1bedbfc11ea19ccb98ecf307e9e153432"
+      },
+      "contigs": 120,
+      "fasta": {
+        "bytes": 4922205,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR30/contigs.fasta",
+        "sha256": "960e4be00c685568dd5434aa5ea5a0bb5f8f6880768ed3ba1408545a9e671bd4"
+      },
+      "fasta_gzip": {
+        "bytes": 1509417,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR30/contigs.fasta.gz",
+        "retrieval": {
+          "final_url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXP01.fasta.gz",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:38.856985+00:00",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXP01.fasta.gz"
+        },
+        "sha256": "84cd1d940d7b7e49bc0b6d585a94020b89dd9e57b09c89dcbcd204efa383647f"
+      },
+      "host": "ECOR30",
+      "master": {
+        "biosample": "SAMN04913877",
+        "declared_contigs": 120,
+        "project": "PRJNA230969",
+        "set_id": "QOXP01",
+        "strain": "MOD1-ECOR30",
+        "wgs_build": "01",
+        "wgs_master": "QOXP01000000"
+      },
+      "master_file": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR30/master.embl",
+        "retrieval": {
+          "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXP00000000",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:34.993854+00:00",
+          "url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXP00000000"
+        },
+        "sha256": "c557e789c21d8320d82056666ed76fdb717a27816a1b219471a01a695b8cab62"
+      },
+      "sequence_versions": [
+        1
+      ],
+      "source_scaffold_count_matches_master": true,
+      "source_scaffolds": 120,
+      "source_wgs_accession": "QOXP00000000",
+      "status": "authenticated_official_wgs_contig_set",
+      "total_bases": 4825526
+    },
+    {
+      "ambiguous_bases": 0,
+      "contig_manifest": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR31/contig-manifest.json",
+        "sha256": "1d0bac1a4cb606696e048135a282f6b6b2c483d5ec4583687f6478f908bb7c7b"
+      },
+      "contigs": 120,
+      "fasta": {
+        "bytes": 5407336,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR31/contigs.fasta",
+        "sha256": "89377dae8b0359e257e650f4ac756ba11e745b3c8fd365436239416483bef71f"
+      },
+      "fasta_gzip": {
+        "bytes": 1660913,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR31/contigs.fasta.gz",
+        "retrieval": {
+          "final_url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXQ01.fasta.gz",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:40.033894+00:00",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXQ01.fasta.gz"
+        },
+        "sha256": "77d6898b3e7727ed5cc09fb09e6659e9e1ab7dacb063c806fdd2f9b40ec2645f"
+      },
+      "host": "ECOR31",
+      "master": {
+        "biosample": "SAMN04913878",
+        "declared_contigs": 120,
+        "project": "PRJNA230969",
+        "set_id": "QOXQ01",
+        "strain": "MOD1-ECOR31",
+        "wgs_build": "01",
+        "wgs_master": "QOXQ01000000"
+      },
+      "master_file": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR31/master.embl",
+        "retrieval": {
+          "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXQ00000000",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:36.849822+00:00",
+          "url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXQ00000000"
+        },
+        "sha256": "e0aa0dba12e6fe39de00c44c01f7e8ffc7f812730f97b6caa309488f9599bf48"
+      },
+      "sequence_versions": [
+        1
+      ],
+      "source_scaffold_count_matches_master": true,
+      "source_scaffolds": 120,
+      "source_wgs_accession": "QOXQ00000000",
+      "status": "authenticated_official_wgs_contig_set",
+      "total_bases": 5302667
+    },
+    {
+      "ambiguous_bases": 0,
+      "contig_manifest": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR32/contig-manifest.json",
+        "sha256": "0cfa80a3ca79d283a61a02cba24ca769c5bafae2831ec60e48245e4995cb8e7d"
+      },
+      "contigs": 129,
+      "fasta": {
+        "bytes": 4891598,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR32/contigs.fasta",
+        "sha256": "29e764c4d8b217bf24ec3221ee5af2fef08a9a587d1b7910cf1cd7a16c232b5d"
+      },
+      "fasta_gzip": {
+        "bytes": 1501461,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR32/contigs.fasta.gz",
+        "retrieval": {
+          "final_url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXR01.fasta.gz",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:42.183451+00:00",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXR01.fasta.gz"
+        },
+        "sha256": "f6ac85ee2816ea83f5180e492ac0f15265c0c7fc2bf022106f301863d25dcccf"
+      },
+      "host": "ECOR32",
+      "master": {
+        "biosample": "SAMN04914022",
+        "declared_contigs": 129,
+        "project": "PRJNA230969",
+        "set_id": "QOXR01",
+        "strain": "MOD1-ECOR32",
+        "wgs_build": "01",
+        "wgs_master": "QOXR01000000"
+      },
+      "master_file": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR32/master.embl",
+        "retrieval": {
+          "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXR00000000",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:39.765112+00:00",
+          "url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXR00000000"
+        },
+        "sha256": "e694b814d37f2ab750d3d88908485c4dd57b1ae855f757c7f012c520d809536f"
+      },
+      "sequence_versions": [
+        1
+      ],
+      "source_scaffold_count_matches_master": true,
+      "source_scaffolds": 129,
+      "source_wgs_accession": "QOXR00000000",
+      "status": "authenticated_official_wgs_contig_set",
+      "total_bases": 4794190
+    },
+    {
+      "ambiguous_bases": 0,
+      "contig_manifest": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR33/contig-manifest.json",
+        "sha256": "338e693174d1d5fe81b9ea76f5d1ddbda56641c2bdf538c58730466631d804a2"
+      },
+      "contigs": 129,
+      "fasta": {
+        "bytes": 4892894,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR33/contigs.fasta",
+        "sha256": "7a4b2912e7ef37f31d4c8848357ef847f01b77b640be55d35df6e96ecd085c34"
+      },
+      "fasta_gzip": {
+        "bytes": 1501441,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR33/contigs.fasta.gz",
+        "retrieval": {
+          "final_url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXS01.fasta.gz",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:43.841563+00:00",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXS01.fasta.gz"
+        },
+        "sha256": "233929ec74ec592f9e90ade72f34816117721e87d9817670b7163602267b71f5"
+      },
+      "host": "ECOR33",
+      "master": {
+        "biosample": "SAMN04913879",
+        "declared_contigs": 129,
+        "project": "PRJNA230969",
+        "set_id": "QOXS01",
+        "strain": "MOD1-ECOR33",
+        "wgs_build": "01",
+        "wgs_master": "QOXS01000000"
+      },
+      "master_file": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR33/master.embl",
+        "retrieval": {
+          "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXS00000000",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:41.106251+00:00",
+          "url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXS00000000"
+        },
+        "sha256": "f7e05f5426f1af1714bdd6a11ce3e44b4d6af0ee46f3c027759ea08e93f4cf9d"
+      },
+      "sequence_versions": [
+        1
+      ],
+      "source_scaffold_count_matches_master": true,
+      "source_scaffolds": 129,
+      "source_wgs_accession": "QOXS00000000",
+      "status": "authenticated_official_wgs_contig_set",
+      "total_bases": 4795454
+    },
+    {
+      "ambiguous_bases": 0,
+      "contig_manifest": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR34/contig-manifest.json",
+        "sha256": "be256387d4b2dc5fcddc96bd4e75ee0c17d75e288a98866a73345cbe48cd2fef"
+      },
+      "contigs": 128,
+      "fasta": {
+        "bytes": 5007932,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR34/contigs.fasta",
+        "sha256": "1dcb5736a834e0503ef83710f49f1987646cb291a8d4fb9611f1b8da3029d072"
+      },
+      "fasta_gzip": {
+        "bytes": 1537213,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR34/contigs.fasta.gz",
+        "retrieval": {
+          "final_url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXT01.fasta.gz",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:45.689492+00:00",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXT01.fasta.gz"
+        },
+        "sha256": "d8ab5afb4b669976c36f72ad918dd9290346f70724925523a75fc5622b938551"
+      },
+      "host": "ECOR34",
+      "master": {
+        "biosample": "SAMN04913880",
+        "declared_contigs": 128,
+        "project": "PRJNA230969",
+        "set_id": "QOXT01",
+        "strain": "MOD1-ECOR34",
+        "wgs_build": "01",
+        "wgs_master": "QOXT01000000"
+      },
+      "master_file": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR34/master.embl",
+        "retrieval": {
+          "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXT00000000",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:43.105085+00:00",
+          "url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXT00000000"
+        },
+        "sha256": "40a14484514e7679b66fcc89751450a27b2a7ad1a2b513cd6398774ce2bce2bb"
+      },
+      "sequence_versions": [
+        1
+      ],
+      "source_scaffold_count_matches_master": true,
+      "source_scaffolds": 128,
+      "source_wgs_accession": "QOXT00000000",
+      "status": "authenticated_official_wgs_contig_set",
+      "total_bases": 4908743
+    },
+    {
+      "ambiguous_bases": 0,
+      "contig_manifest": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR35/contig-manifest.json",
+        "sha256": "be7443102ab3cd9250ab55baf603c301cfcc70b4f02cbe8173c8063c8fd8b675"
+      },
+      "contigs": 220,
+      "fasta": {
+        "bytes": 5219518,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR35/contigs.fasta",
+        "sha256": "0362b2e6442ccc3e2582df11ad89d105e582875df538df4ca01aab15b5f92ed4"
+      },
+      "fasta_gzip": {
+        "bytes": 1603480,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR35/contigs.fasta.gz",
+        "retrieval": {
+          "final_url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXU01.fasta.gz",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:47.735165+00:00",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXU01.fasta.gz"
+        },
+        "sha256": "95d68e00f0cd4b4e65b0607d9d24c8a65e98ec06ea57efcbed0504407488f7af"
+      },
+      "host": "ECOR35",
+      "master": {
+        "biosample": "SAMN04913881",
+        "declared_contigs": 220,
+        "project": "PRJNA230969",
+        "set_id": "QOXU01",
+        "strain": "MOD1-ECOR35",
+        "wgs_build": "01",
+        "wgs_master": "QOXU01000000"
+      },
+      "master_file": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR35/master.embl",
+        "retrieval": {
+          "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXU00000000",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:44.775342+00:00",
+          "url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXU00000000"
+        },
+        "sha256": "f09dbdf4c4ff0cc8baec091a8c144a5a8d05fc7212e59ad9574e278049b51914"
+      },
+      "sequence_versions": [
+        1
+      ],
+      "source_scaffold_count_matches_master": true,
+      "source_scaffolds": 220,
+      "source_wgs_accession": "QOXU00000000",
+      "status": "authenticated_official_wgs_contig_set",
+      "total_bases": 5104518
+    },
+    {
+      "ambiguous_bases": 0,
+      "contig_manifest": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR38/contig-manifest.json",
+        "sha256": "ecdf0b702ada4c0fb6f0e65ed96d3c7f44b27509865b5a9a0d531a96b953658b"
+      },
+      "contigs": 206,
+      "fasta": {
+        "bytes": 5355686,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR38/contigs.fasta",
+        "sha256": "bddd9a3d45e7fe19e628012cff102300c5ca54b8870a8380a3d57dab82b9827d"
+      },
+      "fasta_gzip": {
+        "bytes": 1644558,
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR38/contigs.fasta.gz",
+        "retrieval": {
+          "final_url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXX01.fasta.gz",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:50.118598+00:00",
+          "url": "https://ftp.ebi.ac.uk/pub/databases/ena/wgs/public/qox/QOXX01.fasta.gz"
+        },
+        "sha256": "87457bf2707ca63501651ddd7e4313ca6951cebbf769f95a614af6056105d557"
+      },
+      "host": "ECOR38",
+      "master": {
+        "biosample": "SAMN04913884",
+        "declared_contigs": 206,
+        "project": "PRJNA230969",
+        "set_id": "QOXX01",
+        "strain": "MOD1-ECOR38",
+        "wgs_build": "01",
+        "wgs_master": "QOXX01000000"
+      },
+      "master_file": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR38/master.embl",
+        "retrieval": {
+          "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXX00000000",
+          "http_status": 200,
+          "retrieved_utc": "2026-11-07T15:32:46.595628+00:00",
+          "url": "https://www.ebi.ac.uk/ena/browser/api/embl/QOXX00000000"
+        },
+        "sha256": "7251a836386d47601ae9e82008356c4a31caa40c1d63d5cd7f252994bd0d44a1"
+      },
+      "sequence_versions": [
+        1
+      ],
+      "source_scaffold_count_matches_master": true,
+      "source_scaffolds": 206,
+      "source_wgs_accession": "QOXX00000000",
+      "status": "authenticated_official_wgs_contig_set",
+      "total_bases": 5240321
+    }
+  ],
+  "experimental_stock_identity_verified": false,
+  "host_range_outcomes_loaded": false,
+  "inputs": [
+    {
+      "path": "data/processed/basel-validation-source-audit.json",
+      "sha256": "5d2ae86d0ae4ee35a58174009b0675773cc88e10b4232088800f01980bd8ded4"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ECOR_validation_strain_assemblies.csv",
+      "sha256": "fb5ff1a75f4caaeafb0ea1a48361a68572c6249b2f391d86d9b7773d58774927"
+    }
+  ],
+  "new_original_benchmark_coverage": 0,
+  "pilot_files": [
+    {
+      "path": "data/raw/genophi-external-validation/ena-metadata-probe-v1/master.txt",
+      "sha256": "f897aca4cd96275e16ea8160c9ca428568d162dfc2b7ad97ec1bc8b6dd0787e5"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ena-metadata-probe-v1/QOWX01.fasta.gz",
+      "sha256": "6b55a85a8d8f35f2bef78cd7ef358e36d3ed09ce6de0f14ea16166b207e6db6f"
+    }
+  ],
+  "policy_sha256": "1d7cbf1d462f65df94cbcfbaf72bfb04d66ef0cecc226efc3639d3a54ba2312f",
+  "roster_hosts": 25,
+  "schema_version": 1,
+  "script_sha256": "9f337fbec9ae4f775a9b2b28f47cb8b2a1ed4469a514669fb7e4c2f9f941c69f",
+  "source_scaffold_metric_mismatches": [],
+  "status": "completed_source_authentication_with_explicit_per_host_status",
+  "training_admission_or_prediction": false,
+  "unresolved_hosts": []
+}

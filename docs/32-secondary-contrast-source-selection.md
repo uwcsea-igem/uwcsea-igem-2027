@@ -48,6 +48,8 @@ Existing accession lists do not establish byte-identical assay-stock genomes or 
 
 GO here means **continue source admission**, not train an admitted model or claim host prediction. Original Ando independent-method coverage remains **0/10**, and four exact exchange-construct cases still abstain. Binding, assembly and functional infection remain separate questions.
 
+The subsequent [ECOR input execution](33-ecor-wgs-input-authentication.md) completes official WGS authentication for all 25 hosts and all 3,477 contigs. Master builds and individual sequence versions are recorded separately. GCA mapping beyond the ECOR12 route pilot and experimental-stock equivalence are not inferred. Host relatedness and phage accession reconciliation remain prerequisites before modelling.
+
 ## Other source leads and rejected shortcuts
 
 The [Viral Host Range database source 135](https://viralhostrangedb.pasteur.cloud/data-source/135/) provides a separate Mt1B1/ECOR spotting-data lead. Its descriptive text says 17 phages/90 strains, while its current inventory lists 28/98 and three named phage accessions. That discrepancy, the downloadable payload and the primary publication correspondence require checking before admission. The page's generic T7/example matrix is **not** imported as a study observation.

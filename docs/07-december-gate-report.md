@@ -16,6 +16,8 @@ The [independent source-host audit](31-source-host-contrast-readiness.md) now id
 
 The subsequent [BASEL–ECOR source audit](32-secondary-contrast-source-selection.md) identifies 167 host pairs with opposite observed directions across phages in a different, published 52-phage/25-host panel. This supports continued admission work for a secondary validation source. Genomic exclusions, splits, stock correspondence and spot-clearance endpoint limits remain unresolved; no new model or original Ando coverage follows.
 
+All 25 secondary-panel [ECOR WGS inputs are now authenticated](33-ecor-wgs-input-authentication.md), retaining 3,477 versioned contigs with a complete offline replay of 100 raw artifacts. This removes a reference-input prerequisite without using the skipped Picard collection. It does not establish genetic independence, stock equivalence or prediction; grouping and phage accession checks remain pending.
+
 ## Method and fixed inputs
 
 We used the [authors' WIsH executable](https://github.com/soedinglab/WIsH/tree/10e3f11779e926fb6dbdb20197c248367a75887f), version 1.1, with its default order 8 and alpha 16, built in Release mode with Apple clang 21, single-threaded without OpenMP. [Galiez et al., 2017, Methods](https://pmc.ncbi.nlm.nih.gov/articles/PMC5870724/) motivates fitting one Markov sequence model per candidate host and selecting the host with maximum likelihood. No known interaction labels or donor mapping are used to fit or score. The original paper evaluates taxonomic host prediction, including genus-level performance. This run is an exploratory strain-level stress test beyond that demonstrated task. It does not score gp17 structure or assembly.
