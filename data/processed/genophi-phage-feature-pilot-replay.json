@@ -1,0 +1,2058 @@
+{
+  "schema_version": 1,
+  "purpose": "Train-only phage protein representation capacity and resource pilot; no host infection model or target outcome evaluation",
+  "status": "complete",
+  "policy_path": "software/tipcraft/benchmarks/retro-t7-t3/genophi-phage-feature-pilot.json",
+  "policy_sha256": "bf97695296231cfe440d905dda515dec8430d5353983c7c7945413dadfbf55a2",
+  "script_sha256": "e300b9ebde796d4dc8298933eb6110b398ce71ec86636444de2a37ef044a0f0a",
+  "raw_workdir": "data/raw/genophi-phage-features/pilot-v1",
+  "software_deviation": "MMseqs18 rather than the paper-listed15.6f452; explicit methodological adaptation, with effective parameter logs retained.",
+  "mmseqs_executable": "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+  "mmseqs_sha256": "837eaf6cc9be92ff320c42c4cf56ae0d75f2a53c6ff6b24a577e803e9e3951be",
+  "commands": [
+    {
+      "command": [
+        "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "createdb",
+        "stdin",
+        "data/raw/genophi-phage-features/pilot-v1/train_db",
+        "-v",
+        "3"
+      ],
+      "exit_code": 0,
+      "log": "data/raw/genophi-phage-features/pilot-v1/step-01.log",
+      "stdin": "data/raw/genophi-phage-features/pilot-v1/training.faa",
+      "stdin_sha256": "b9231092b106227efb96902e7177617e19ab13bda22193dfa811add1e8aea8a2",
+      "log_sha256": "cf9d6e837fd6798460a40b734b18d35a05bd0e2a5ab8301ab3c772187f859e38",
+      "wall_seconds": 0.8607959580000001,
+      "child_user_cpu_seconds": 0.061998,
+      "child_system_cpu_seconds": 0.042178,
+      "cumulative_max_child_rss_bytes": 19365888
+    },
+    {
+      "command": [
+        "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "cluster",
+        "data/raw/genophi-phage-features/pilot-v1/train_db",
+        "data/raw/genophi-phage-features/pilot-v1/clusters",
+        "data/raw/genophi-phage-features/pilot-v1/tmp_cluster",
+        "-c",
+        "0.8",
+        "--min-seq-id",
+        "0.4",
+        "-s",
+        "7.5",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "exit_code": 0,
+      "log": "data/raw/genophi-phage-features/pilot-v1/step-02.log",
+      "stdin": null,
+      "stdin_sha256": null,
+      "log_sha256": "6b2cfe60010f1361677f2ad3d4aeb405b63482e35823cdc22eaf1f747fa7a954",
+      "wall_seconds": 7.223904749999999,
+      "child_user_cpu_seconds": 22.050876000000002,
+      "child_system_cpu_seconds": 1.407949,
+      "cumulative_max_child_rss_bytes": 943796224
+    },
+    {
+      "command": [
+        "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "createtsv",
+        "data/raw/genophi-phage-features/pilot-v1/train_db",
+        "data/raw/genophi-phage-features/pilot-v1/train_db",
+        "data/raw/genophi-phage-features/pilot-v1/clusters",
+        "data/raw/genophi-phage-features/pilot-v1/clusters.tsv",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "exit_code": 0,
+      "log": "data/raw/genophi-phage-features/pilot-v1/step-03.log",
+      "stdin": null,
+      "stdin_sha256": null,
+      "log_sha256": "57f7949802ec3d9c5b0c7f5312b573592804163f33543b02ee54da57e9ea347a",
+      "wall_seconds": 0.0431277080000001,
+      "child_user_cpu_seconds": 0.05222899999999697,
+      "child_system_cpu_seconds": 0.008275000000000032,
+      "cumulative_max_child_rss_bytes": 943796224
+    },
+    {
+      "command": [
+        "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "search",
+        "data/raw/genophi-phage-features/pilot-v1/train_db",
+        "data/raw/genophi-phage-features/pilot-v1/train_db",
+        "data/raw/genophi-phage-features/pilot-v1/train_hits",
+        "data/raw/genophi-phage-features/pilot-v1/tmp_self",
+        "-c",
+        "0.8",
+        "--min-seq-id",
+        "0.4",
+        "-s",
+        "7.5",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "exit_code": 0,
+      "log": "data/raw/genophi-phage-features/pilot-v1/step-04.log",
+      "stdin": null,
+      "stdin_sha256": null,
+      "log_sha256": "33808beb74c4dfa01e55e92d51056a6e712fcd52a7e610531da139a9772d7e59",
+      "wall_seconds": 40.357655875,
+      "child_user_cpu_seconds": 134.66307600000002,
+      "child_system_cpu_seconds": 1.8095820000000002,
+      "cumulative_max_child_rss_bytes": 961773568
+    },
+    {
+      "command": [
+        "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "createtsv",
+        "data/raw/genophi-phage-features/pilot-v1/train_db",
+        "data/raw/genophi-phage-features/pilot-v1/train_db",
+        "data/raw/genophi-phage-features/pilot-v1/train_hits",
+        "data/raw/genophi-phage-features/pilot-v1/self.tsv",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "exit_code": 0,
+      "log": "data/raw/genophi-phage-features/pilot-v1/step-05.log",
+      "stdin": null,
+      "stdin_sha256": null,
+      "log_sha256": "0cefff868670fdfb4b2b798f225f04c73992893b81131388492804d53374703d",
+      "wall_seconds": 0.044933792000001915,
+      "child_user_cpu_seconds": 0.07801399999999603,
+      "child_system_cpu_seconds": 0.0144709999999999,
+      "cumulative_max_child_rss_bytes": 961773568
+    },
+    {
+      "command": [
+        "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "createdb",
+        "stdin",
+        "data/raw/genophi-phage-features/pilot-v1/query_db",
+        "-v",
+        "3"
+      ],
+      "exit_code": 0,
+      "log": "data/raw/genophi-phage-features/pilot-v1/step-06.log",
+      "stdin": "data/raw/genophi-phage-features/pilot-v1/queries.faa",
+      "stdin_sha256": "192ee35dcee7a2e08474028335385ef09e7e15b1815113cae38de6074a5e2c7e",
+      "log_sha256": "7e99907c2ab7c19b2f1878a2d9881e2cdb10e9d0e132343a238f33878ceb3aef",
+      "wall_seconds": 0.054484250000001566,
+      "child_user_cpu_seconds": 0.00855300000000625,
+      "child_system_cpu_seconds": 0.023004999999999942,
+      "cumulative_max_child_rss_bytes": 961773568
+    },
+    {
+      "command": [
+        "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "search",
+        "data/raw/genophi-phage-features/pilot-v1/query_db",
+        "data/raw/genophi-phage-features/pilot-v1/train_db",
+        "data/raw/genophi-phage-features/pilot-v1/query_hits",
+        "data/raw/genophi-phage-features/pilot-v1/tmp_query",
+        "-c",
+        "0.8",
+        "--min-seq-id",
+        "0.4",
+        "-s",
+        "7.5",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "exit_code": 0,
+      "log": "data/raw/genophi-phage-features/pilot-v1/step-07.log",
+      "stdin": null,
+      "stdin_sha256": null,
+      "log_sha256": "51e3093632eb0bfe00924e3cf90a394f5d407176ff955f7d3488dd2047074215",
+      "wall_seconds": 1.8846162500000005,
+      "child_user_cpu_seconds": 6.691181999999998,
+      "child_system_cpu_seconds": 0.35459799999999975,
+      "cumulative_max_child_rss_bytes": 961773568
+    },
+    {
+      "command": [
+        "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "createtsv",
+        "data/raw/genophi-phage-features/pilot-v1/query_db",
+        "data/raw/genophi-phage-features/pilot-v1/train_db",
+        "data/raw/genophi-phage-features/pilot-v1/query_hits",
+        "data/raw/genophi-phage-features/pilot-v1/query.tsv",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "exit_code": 0,
+      "log": "data/raw/genophi-phage-features/pilot-v1/step-08.log",
+      "stdin": null,
+      "stdin_sha256": null,
+      "log_sha256": "6b7faa769d89a8f82ac793149e04def790f806c537835c90b64cfa3a7c8c0baf",
+      "wall_seconds": 0.02836762500000134,
+      "child_user_cpu_seconds": 0.014191999999979998,
+      "child_system_cpu_seconds": 0.005685000000000162,
+      "cumulative_max_child_rss_bytes": 961773568
+    }
+  ],
+  "commands_sha256": "002cf6e1031ac5df10e5d36e85a5270fe85457b241f207da584ac0260841787d",
+  "phenotype_tables_loaded": false,
+  "interaction_models_fitted": false,
+  "interaction_scores_generated": false,
+  "training_vocabulary_fitted": true,
+  "train_only_vocabulary_and_occurrence": true,
+  "normalization": "Remove exactly one terminal stop, retain copies/internal sequences/X residues; assign globally unique neutral protein IDs. No target protein enters the training database or occurrence consolidation.",
+  "createdb_input": "Sorted deterministic concatenated protein FASTA supplied as stdin, matching upstream createdb stdin semantics",
+  "vocabulary_frozen_after_command": 5,
+  "unoverridden_defaults": [
+    "coverage mode",
+    "alignment mode",
+    "sequence identity mode",
+    "cluster mode",
+    "E-value threshold",
+    "maximum results per query"
+  ],
+  "effective_parameter_logs": [
+    "data/raw/genophi-phage-features/pilot-v1/step-01.log",
+    "data/raw/genophi-phage-features/pilot-v1/step-02.log",
+    "data/raw/genophi-phage-features/pilot-v1/step-03.log",
+    "data/raw/genophi-phage-features/pilot-v1/step-04.log",
+    "data/raw/genophi-phage-features/pilot-v1/step-05.log",
+    "data/raw/genophi-phage-features/pilot-v1/step-06.log",
+    "data/raw/genophi-phage-features/pilot-v1/step-07.log",
+    "data/raw/genophi-phage-features/pilot-v1/step-08.log"
+  ],
+  "resources": {
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "architecture": "arm64",
+    "rss_scope": "Cumulative maximum RSS of serial direct child processes, not aggregate workflow memory"
+  },
+  "verified_annotation_files": [
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s000/proteins.faa",
+      "sha256": "bf502f4864b12b546108816313713356a4d9129a75330bd5a77f480932a475c8"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s001/proteins.faa",
+      "sha256": "5dec6927ae03cd183ec1c7aeb0ef0b232e32d9b51ca050cdbdcdec5a825d40ae"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s002/proteins.faa",
+      "sha256": "e49506eca4fa3ec011a6d0506775aa39a0e93a0045021fe83901bdd1a4b43e22"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s003/proteins.faa",
+      "sha256": "1b496f1ca9b15350791859d320fb1f454f0e6846c9d31bfa7c726e2817166e94"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s004/proteins.faa",
+      "sha256": "3def928fd902da422a751a3165ad1559b9f9117e7582ae84872ab53ad48d8109"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s005/proteins.faa",
+      "sha256": "782478a102f43b3afeb2fe4c9a74da25d2c4e5d773c3e53059687d7fecc5507d"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s006/proteins.faa",
+      "sha256": "fc02a3c751d8ab52dbe4b53df2fc9a512176d569e5544838f9b8c48ba7b145f2"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s007/proteins.faa",
+      "sha256": "106268c3883dbe10cd87f0e0383cfaa783da3d9b51e67309624f83c3e6af02a3"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s008/proteins.faa",
+      "sha256": "77ffbde2d607e128277e42945e8f2387a6c6494dda3aac135df2f414331a71c2"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s009/proteins.faa",
+      "sha256": "8153d2ccab6c333dcb3357697bb520c6f83358ebbd52782493f4e2697f4fc62a"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s010/proteins.faa",
+      "sha256": "d060d0da31f02304c4b0907eb89d08dac9f2630791a7b37aaabaf18910ab8c58"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s011/proteins.faa",
+      "sha256": "a7556d8421ad6f3bad91c24e6536c761bef3a18028371f79f17c9c8389b2d641"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s012/proteins.faa",
+      "sha256": "983ce04ee34b5cd8a08b219e78e0c1707335ef0edb6c0af99e8063c77bed5930"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s013/proteins.faa",
+      "sha256": "dcf1b2f1a5b8daed9a00f1e7a0a649c3abde7d567da41b0904960147a07258af"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s014/proteins.faa",
+      "sha256": "13ef5fea7521f6701ddde83fc859a8fd2fa384d594d00d2e3d7763b9dee43480"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s015/proteins.faa",
+      "sha256": "5fb24ef2c85bb627fa14ddde00f341858b98ada132f48017582dde2de6bfaab0"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s016/proteins.faa",
+      "sha256": "73defd5f7bc7aac8e66998c445ad1297cd874d657fa0ad8d50eef9e04b185587"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s017/proteins.faa",
+      "sha256": "0cff5c7f9c6e2349b9fbe506d7a18a428228b472288e8d44ee85c5deb97d2926"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s018/proteins.faa",
+      "sha256": "d64dfb0b668cfa33adca6b54c709740d8535d8b46c34110a2a3c5b4362015296"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s019/proteins.faa",
+      "sha256": "73defd5f7bc7aac8e66998c445ad1297cd874d657fa0ad8d50eef9e04b185587"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s020/proteins.faa",
+      "sha256": "b3f79d274f593d7c3b2d3615d9cd8c5a9c5244879f5471731c4d9d8d15c2258a"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s021/proteins.faa",
+      "sha256": "15106ec63545b16bb461a77120611254ab05e128699bb69a3e045a9d316b74e8"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s022/proteins.faa",
+      "sha256": "a2ffb030b693080c20ac6534c145c2f13321147658571d3ca36cc1cae9a35d52"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s023/proteins.faa",
+      "sha256": "2545eff26e13e8adf013a56fa9c124ac1f4c042fe08a62513102e1bd01d0fe56"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s024/proteins.faa",
+      "sha256": "e4d06779e5772dcf01b27fbe262e852d22a8952da3cf48355810e363208f8de2"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s025/proteins.faa",
+      "sha256": "3a05cbd9caa606789f6eac6479b9ff79d4d67279ad464d4be48ddcb29a99fbef"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s026/proteins.faa",
+      "sha256": "2774923d309b42af338b635c59d85c1c19ddf0a4fd484826057f221441bd003a"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s027/proteins.faa",
+      "sha256": "846f24cb421b080ee6345f7373fb11f379139f10cd138fc35f2de0eb835d865f"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s028/proteins.faa",
+      "sha256": "b17f80f8d9a9addc16bbe9c28b2b5d226e5cf7b52c5c82fd83d6d3cc23c64114"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s029/proteins.faa",
+      "sha256": "16aab45eae8e45ecbb3599e7c1b30af7f99b1e008c9a2b1ebbc3a67daa89d208"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s030/proteins.faa",
+      "sha256": "44be321406b6aacb979cb8f6daec1935568a9f9f562ee335ef27c275718ad0f2"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s031/proteins.faa",
+      "sha256": "0c4203487a986be70df4a25816039b8340e6260668a28b2a1dbfce7288b03205"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s032/proteins.faa",
+      "sha256": "9e8de05527ca1691ecd5c51027fca15a958b8049eeddc24b7b6aba981e83c0a5"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s033/proteins.faa",
+      "sha256": "077a7de9d8874c75ac8a2887dd9717bffdf16bd0a28eb2531277f2a3b7513d0e"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s034/proteins.faa",
+      "sha256": "fac2effc6564bf5b6e9e2cc4eb4314e71adc25957fd5b55a6547a97ee959b82f"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s035/proteins.faa",
+      "sha256": "6bb1a26f6fac177b98d231ada0f6a6180dae869c81d288a8be058551ee70931f"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s036/proteins.faa",
+      "sha256": "c95c6e5b15c6c446e70c66b13befbd104e5856aac87f11ad46151b074c21aaae"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s037/proteins.faa",
+      "sha256": "02396b8798de2751ce3a94e7741f0ef4672e498d3fa3004e915e68288683ace1"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s038/proteins.faa",
+      "sha256": "da3d453fba31590f52bab0923254b930b79261675a416100ba60eb18a7a82b80"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s039/proteins.faa",
+      "sha256": "7779eeaf493e24bf8eced71ad9a2852a818a789f74d6e88022550a94b9120efa"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s040/proteins.faa",
+      "sha256": "0352c496c1a28e962da3e54e33b44e70a70fe83858eba1eb03d849bfb4f2132f"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s041/proteins.faa",
+      "sha256": "785951297339527761c643055586df0f3a107831040e448345328e665f7fce5a"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s042/proteins.faa",
+      "sha256": "785951297339527761c643055586df0f3a107831040e448345328e665f7fce5a"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s043/proteins.faa",
+      "sha256": "e30368497bcd959a26f34f2f7822b868625d767e9dce48ef5f6c8fbf18a7e739"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s044/proteins.faa",
+      "sha256": "e30368497bcd959a26f34f2f7822b868625d767e9dce48ef5f6c8fbf18a7e739"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s045/proteins.faa",
+      "sha256": "570a3252c5427a9203c4eed6d55c0354a778f198543e18a9db4ffd99d3fe2a73"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s046/proteins.faa",
+      "sha256": "e48857c89ac7fa632615503c9e3efdfd2df9eb828f9d12b0790ec61d6bea553a"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s047/proteins.faa",
+      "sha256": "4472a77bfd6771233c7687d194c83a0a4e573559c9d44671395dcc4b67a10d89"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s048/proteins.faa",
+      "sha256": "25ec15358b2fcf696c285f8c1b0a58db585f7ec170433cd33c73d1853db83a4e"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s049/proteins.faa",
+      "sha256": "a9a719a426a78cfdc82b4d58559b8cd9742cd3a6547769ba7a4de4684a97aa00"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s050/proteins.faa",
+      "sha256": "c25ed5d7cedd32ffd234f6c454b61cb412956223f6b9a7845aff0c827f192de7"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s051/proteins.faa",
+      "sha256": "29b588394c102e23dcb06ce27d673b50f8e73f5e9fa352392dade84923e7dce7"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s052/proteins.faa",
+      "sha256": "47fac10389a449a5febfa1360b293f4145c65da44a382fe4669a9500891f400d"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s053/proteins.faa",
+      "sha256": "929b4a4382d3da5493e4529963a6e9700fb13adcc232d558c46f3e234b5a9516"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s054/proteins.faa",
+      "sha256": "378aa0bd20c4ea0f98cb59a7725bf5d69b5852906bae32b70565bff3b749578b"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s055/proteins.faa",
+      "sha256": "4b467a284f431809d1d6405563a30831dad8a1cec978775e97d4105e312d9096"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s056/proteins.faa",
+      "sha256": "959efa9697572d5fd3b0e42b5508c82dbdb0d181c8722aee609483dd6da3abc8"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s057/proteins.faa",
+      "sha256": "ede9451d61cd3e2827c0496bdb4eb6da82a5a7d94313bf72f88e390ca062452b"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s058/proteins.faa",
+      "sha256": "615777c7f23b19876881785e3386021ba74e06bfa91784878185641a684b9902"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s059/proteins.faa",
+      "sha256": "7add1329a2fa0edc60b23ea3783ad177e3198ca6d75faea16593f591cce98a42"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s060/proteins.faa",
+      "sha256": "efec9bb5ee07286ec6b5ecd4682984c53c38c8ca4ef763eaa03604ba2015756f"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s061/proteins.faa",
+      "sha256": "b975f6d80bed62b01ad0bd7ef552d9779bea74b6686add993123858abceb9328"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s062/proteins.faa",
+      "sha256": "b7b520c3945975178288e99908eb3b962721fde045534b057876599975399f6f"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s063/proteins.faa",
+      "sha256": "97cef3d79927e21a33abb6d8d5a59db0738e775e555c2426255d9296951220d4"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s064/proteins.faa",
+      "sha256": "9aa435153be9c3101f7bb5f0279f32a33af626f00b1f55cef29a41cc8e4f4122"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s065/proteins.faa",
+      "sha256": "0b610dc5489278dfb51dad8b5431f2f82e6644df4f46a9e9cb72331a51a9e91a"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s066/proteins.faa",
+      "sha256": "2b49afa1cd8c156e94967d69b3b5851b9d27debfb6bfc7a0bf2064892fdab8cd"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s067/proteins.faa",
+      "sha256": "642ba7f0dda9737aad56320e4c76c8278c0914fc687803e81694becc4168e80e"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s068/proteins.faa",
+      "sha256": "6fa92dd30f33dd7b81286c7dc94dde8d1f92a74ca44865bf497e944c3150104a"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s069/proteins.faa",
+      "sha256": "f9c9da9c0a2db763db2285b3a7005c9ca0ae385d80ad0b8ebe8b6d66d716ae1e"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s070/proteins.faa",
+      "sha256": "674f2645ee429f7c349d8defae73ebd5e3a899510257142cded844c8885f6b92"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s071/proteins.faa",
+      "sha256": "674f2645ee429f7c349d8defae73ebd5e3a899510257142cded844c8885f6b92"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s072/proteins.faa",
+      "sha256": "ec7c8c74ef333a151c78304921f8e0c52fc1e1cbe4582607077e9a96e7aa5b0e"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s073/proteins.faa",
+      "sha256": "d4403899364f8f6550b96c9b723f391a61762becfbbc470a42fac7c8f3c4e798"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s074/proteins.faa",
+      "sha256": "9b9db4472af75388b54f4625ac4ae56c6d313e5c6eb246317edc2871c4e4b53f"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s075/proteins.faa",
+      "sha256": "e1fee7766147ed5ba0a54e11814d4359f3993f522d5aef8e2041716115f56014"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s076/proteins.faa",
+      "sha256": "6834f3a016c8b6cec3ba93a91f9096a6f312c5fa4b51c5971a3835554da252af"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s077/proteins.faa",
+      "sha256": "7264f5b3062d6e66c7bac5a96732809a21fc7e858d7d9676785d549a82a6e205"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s078/proteins.faa",
+      "sha256": "a1c73bf5916beeb480c2d0acca71d5daa9f90da44c325b667c16f027da4f0dd7"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s079/proteins.faa",
+      "sha256": "5c79715a80699bd90de95e7636f9b2aefaf546cbc3fe1892856913b8c05d6328"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s080/proteins.faa",
+      "sha256": "117adb6dfa6bd692f840f6142fb66fb609a144d82892bdbe529e367df77e1a86"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s081/proteins.faa",
+      "sha256": "e7207ecd7376f2e75443968011ca9a13590a86498e3a34003906799a69e85ccf"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s082/proteins.faa",
+      "sha256": "72313bb91f777b935c8b3028109fca675559bc0b949bbea3e20113a3b1a4b6b2"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s083/proteins.faa",
+      "sha256": "6cb8c1e50c96bf2921a35e91c06912f048aeed33a1da2950389a70dbdbb063df"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s084/proteins.faa",
+      "sha256": "d5d394d04c836ea3fc649cb8c1bd1251ab9e0cc67772b7325c3d3f1f00545e59"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s085/proteins.faa",
+      "sha256": "33c73953efbd2f1b177487ebc0073d2cc16716aa61586dae58d89ecf1d563841"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s086/proteins.faa",
+      "sha256": "fccc982bad4b5169ee08698409d0d524caa80bc153255acde7fac2b68d7cb2aa"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s087/proteins.faa",
+      "sha256": "fccc982bad4b5169ee08698409d0d524caa80bc153255acde7fac2b68d7cb2aa"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s088/proteins.faa",
+      "sha256": "258666ae574a5c6b64d41c09f2f4320dfad5df1397a91b2e3803918939dbf7fe"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s089/proteins.faa",
+      "sha256": "fe4d5f418b48fa69674e667cbd564cd819ecef49ed2a4e4f84ae315eb608304f"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s090/proteins.faa",
+      "sha256": "b70cf3beb424bef6c7dac1a025c1c05b2cbc5f1428f96130dc1bcd0286ce9019"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s091/proteins.faa",
+      "sha256": "4f4f6bd08f4a988b31f88ae1f725f36d8d972e3f3e0f8410f738d9a9ffc1ff29"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s092/proteins.faa",
+      "sha256": "0466b50664e78802c133451c7e8cf4285e098c0bd59a5343022cc4df622d1967"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s093/proteins.faa",
+      "sha256": "a7af42167689b97a0270157971fa57cb2c56c54e8c25afb0d96de3e9efad8ec5"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s094/proteins.faa",
+      "sha256": "d6595333f1582f985e72c5531fe53b810d94e5dbd0ee6ccf712f066a1a7f4110"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s095/proteins.faa",
+      "sha256": "b0a94539ed63a41dc46e1c47542dcaf21c8e2ca7000c2c5ac0fd54248f4ee128"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_s096/proteins.faa",
+      "sha256": "d306abcdc00e4567dec78d5d9fc1db4a5cbbd1e3cbb7720ef5596d96e66ec17b"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_t000/proteins.faa",
+      "sha256": "5626dfcaa7c3a75fd4f64558a0ce68e467bb49c97deddbc2824afdae4942c986"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_t001/proteins.faa",
+      "sha256": "9fa94e6899e1761991f9bc0e4d4b2490e0be336758516dbab58a75b58a7e567b"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/h_000/proteins.faa",
+      "sha256": "f51943645b05c061f8502f6cb687892b3acd9c482f14acc9c29c2ac761768d07"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/h_001/proteins.faa",
+      "sha256": "580828307641cf98ad9935acf615c8245405e6a9ffb9bd3edb078509e0caa5ad"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/h_002/proteins.faa",
+      "sha256": "87e1a2bcde3792ab38bad269b92ca0163f7fe8664e6218c9a43cb83cb42676a3"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/h_003/proteins.faa",
+      "sha256": "28f460c2f630a39abc176e1954c002b1f80611f5760a8ab951cf8247382dcac9"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/h_004/proteins.faa",
+      "sha256": "2db318497a5c5fe9b1cf12631af44b5307a7208f8e69f22d07974a66aa699b93"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/h_005/proteins.faa",
+      "sha256": "e95e8a16dcb4cdb3c5aea8ef936efcbbbc8b1ddd8a533bf3a9f69190ff245d63"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/h_006/proteins.faa",
+      "sha256": "9cf5de5f383a1efb8628edb7034468128901ed208f2f8fab7b19160fdce44563"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/h_007/proteins.faa",
+      "sha256": "a2c58f155ee5f9eb8da6f4bc6821802dea3b4a88524338b3eba069daa9de8ea2"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/h_t000/proteins.faa",
+      "sha256": "ca283d9fcab37135334a334b405221d4083ad547c10e31a9e4e802a52e135699"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/h_t001/proteins.faa",
+      "sha256": "62c2d853f6ea4c21a59433ec13ed9079937227834756c2a83ac8c60faa2c9c5d"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/h_t002/proteins.faa",
+      "sha256": "c253fff8298229a782b6bb81f1666d9d09cd2b80389ffc027aabdd2790a4fcc0"
+    }
+  ],
+  "interpretation": "Distinct vectors only establish potential representational capacity, not strain specificity or accuracy. Equal phage vectors preclude distinguishing phage-dependent responses within this feature scheme but do not alone rule out a host-only T3 ranking. No infection score, assembly score, design or DNA export is generated.",
+  "full_training_ready": false,
+  "training_genomes": 93,
+  "training_proteins": 9677,
+  "clustered_families": 2123,
+  "complete_member_coverage": true,
+  "families_after_self_search": 2123,
+  "families_retained_more_than_one_training_genome": 1527,
+  "features_after_exact_occurrence_consolidation": 297,
+  "self_search": {
+    "raw_rows": 83418,
+    "queries_with_hits": 9677,
+    "cross_family_best_hit_ties": [],
+    "raw_schema": [
+      "Query",
+      "Target",
+      "Score",
+      "SeqIdentity",
+      "E-value",
+      "qStartPos",
+      "qEndPos",
+      "qLen",
+      "tStartPos",
+      "tEndPos",
+      "tLen"
+    ]
+  },
+  "query_search": {
+    "raw_rows": 1441,
+    "queries_with_hits": 113,
+    "cross_family_best_hit_ties": [],
+    "raw_schema": [
+      "Query",
+      "Target",
+      "Score",
+      "SeqIdentity",
+      "E-value",
+      "qStartPos",
+      "qEndPos",
+      "qLen",
+      "tStartPos",
+      "tEndPos",
+      "tLen"
+    ]
+  },
+  "proteomes": [
+    {
+      "genome": "409_P1",
+      "role": "train",
+      "proteins": 48,
+      "residues": 12065,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g000.faa",
+      "sha256": "df9f01f58a5bb07cf9a2a6c46eb43b375892ef023449ead98212b9bc8e0f13e3",
+      "assigned_proteins": 48,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 46,
+      "retained_feature_count": 17,
+      "zero_vector": false
+    },
+    {
+      "genome": "409_P3",
+      "role": "train",
+      "proteins": 58,
+      "residues": 14082,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g001.faa",
+      "sha256": "92ef1867553c3eef7a5c56982df3193ad18e5ffb2422111ff924a2d44124fb9c",
+      "assigned_proteins": 58,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 58,
+      "retained_feature_count": 21,
+      "zero_vector": false
+    },
+    {
+      "genome": "409_P5",
+      "role": "train",
+      "proteins": 58,
+      "residues": 14082,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g002.faa",
+      "sha256": "c9ea284e285fdec8e7386500ded53ac5c5720910c4657be48d26ba7ad4fde53e",
+      "assigned_proteins": 58,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 58,
+      "retained_feature_count": 21,
+      "zero_vector": false
+    },
+    {
+      "genome": "409_P6",
+      "role": "train",
+      "proteins": 54,
+      "residues": 13716,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g003.faa",
+      "sha256": "e50323368bb87ad3a7f7aa2d3c16804ff3fad238cb369bfae761af99e45755d5",
+      "assigned_proteins": 54,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 53,
+      "retained_feature_count": 17,
+      "zero_vector": false
+    },
+    {
+      "genome": "409_P8",
+      "role": "train",
+      "proteins": 71,
+      "residues": 13283,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g004.faa",
+      "sha256": "372ec729c29035a24dcea9928423b5c7d7e196332bef9fd4dc9cb874e6066ab6",
+      "assigned_proteins": 71,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 66,
+      "retained_feature_count": 25,
+      "zero_vector": false
+    },
+    {
+      "genome": "411_P1",
+      "role": "train",
+      "proteins": 74,
+      "residues": 14533,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g005.faa",
+      "sha256": "8f81fa585673d70e85b828200461f030b05616c079fb2ec4e2d5883a7e7ed101",
+      "assigned_proteins": 74,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 20,
+      "retained_feature_count": 3,
+      "zero_vector": false
+    },
+    {
+      "genome": "411_P2",
+      "role": "train",
+      "proteins": 68,
+      "residues": 13201,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g006.faa",
+      "sha256": "91970b6b5b30ee58b55732f0f3fc222e1feb3e4af08b78cc325a5bf33665d506",
+      "assigned_proteins": 68,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 20,
+      "retained_feature_count": 3,
+      "zero_vector": false
+    },
+    {
+      "genome": "412_P1",
+      "role": "train",
+      "proteins": 75,
+      "residues": 13299,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g007.faa",
+      "sha256": "ea3c45a9a3cf08ed9431a880470fbd8d2dc2af835f2b7cf21318b77939942cab",
+      "assigned_proteins": 75,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 75,
+      "retained_feature_count": 6,
+      "zero_vector": false
+    },
+    {
+      "genome": "412_P2",
+      "role": "train",
+      "proteins": 53,
+      "residues": 13605,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g008.faa",
+      "sha256": "2e3176fe983629328e3e45c76662b5bb0081d82410e114740c040b0659dfa31a",
+      "assigned_proteins": 53,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 50,
+      "retained_feature_count": 14,
+      "zero_vector": false
+    },
+    {
+      "genome": "412_P3",
+      "role": "train",
+      "proteins": 77,
+      "residues": 13533,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g009.faa",
+      "sha256": "bc77b58ebe649156c6610ec8264aad22faeee2d0b9006ab2f2730007444b7996",
+      "assigned_proteins": 77,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 77,
+      "retained_feature_count": 8,
+      "zero_vector": false
+    },
+    {
+      "genome": "412_P4",
+      "role": "train",
+      "proteins": 75,
+      "residues": 13362,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g010.faa",
+      "sha256": "96aec6ef880f72711534166bcef868b3b24a03336e4c48ab68a138b7debd17b3",
+      "assigned_proteins": 75,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 74,
+      "retained_feature_count": 6,
+      "zero_vector": false
+    },
+    {
+      "genome": "412_P5",
+      "role": "train",
+      "proteins": 76,
+      "residues": 13467,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g011.faa",
+      "sha256": "43516f511878205cd220b63168585de8f304bfb7ebf503bbbc760f414260f589",
+      "assigned_proteins": 76,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 76,
+      "retained_feature_count": 7,
+      "zero_vector": false
+    },
+    {
+      "genome": "416_P4",
+      "role": "train",
+      "proteins": 51,
+      "residues": 13424,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g012.faa",
+      "sha256": "bc085fc83defab150848658a9c24862c66be31b8a3cac973f495fd65187499a5",
+      "assigned_proteins": 51,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 50,
+      "retained_feature_count": 16,
+      "zero_vector": false
+    },
+    {
+      "genome": "416_P5",
+      "role": "train",
+      "proteins": 52,
+      "residues": 13428,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g013.faa",
+      "sha256": "9ad22d81230f7647a8571999d76c9f210eef01152c77b1e76c9f49970f6c670c",
+      "assigned_proteins": 52,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 51,
+      "retained_feature_count": 17,
+      "zero_vector": false
+    },
+    {
+      "genome": "423_P1",
+      "role": "train",
+      "proteins": 51,
+      "residues": 13340,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g014.faa",
+      "sha256": "fea2476cb56e3240a1c3c4f5ecca39ad6292c3bdb5668120a0f1ed7e03aa17bf",
+      "assigned_proteins": 51,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 51,
+      "retained_feature_count": 17,
+      "zero_vector": false
+    },
+    {
+      "genome": "423_P10",
+      "role": "train",
+      "proteins": 51,
+      "residues": 13617,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g015.faa",
+      "sha256": "731512d9bba5f5149a3d0316ddd474f5d6f00142b9f50974525b4dd342f10fae",
+      "assigned_proteins": 51,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 51,
+      "retained_feature_count": 17,
+      "zero_vector": false
+    },
+    {
+      "genome": "423_P5",
+      "role": "train",
+      "proteins": 50,
+      "residues": 12050,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g016.faa",
+      "sha256": "094dffa98cce5f32b9cc1d192ccbde883bf9a52b4e1684adf56abfeb6ad917e4",
+      "assigned_proteins": 50,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 50,
+      "retained_feature_count": 20,
+      "zero_vector": false
+    },
+    {
+      "genome": "423_P7",
+      "role": "train",
+      "proteins": 51,
+      "residues": 13322,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g017.faa",
+      "sha256": "7ea59905d4e69db322ca9a0b3afa744ccd9670c7c5a0c0de2efed63def13fd89",
+      "assigned_proteins": 51,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 50,
+      "retained_feature_count": 16,
+      "zero_vector": false
+    },
+    {
+      "genome": "423_P9",
+      "role": "train",
+      "proteins": 51,
+      "residues": 13617,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g018.faa",
+      "sha256": "b2031ec263beb19cd817e66e2e6af7a821ecf727249da4736c784ee9267519e4",
+      "assigned_proteins": 51,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 51,
+      "retained_feature_count": 17,
+      "zero_vector": false
+    },
+    {
+      "genome": "427_P3",
+      "role": "train",
+      "proteins": 44,
+      "residues": 11558,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g019.faa",
+      "sha256": "4eedf58a60c34e4ce4a8be425802f599d077a9f7965c21e8461164aaa95646d2",
+      "assigned_proteins": 44,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 44,
+      "retained_feature_count": 16,
+      "zero_vector": false
+    },
+    {
+      "genome": "427_P4",
+      "role": "train",
+      "proteins": 50,
+      "residues": 11893,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g020.faa",
+      "sha256": "c7ec8258a25acd3e0d36da41e540dc733de371d91c59697f057146d615394f39",
+      "assigned_proteins": 50,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 48,
+      "retained_feature_count": 20,
+      "zero_vector": false
+    },
+    {
+      "genome": "536_P1",
+      "role": "train",
+      "proteins": 259,
+      "residues": 44576,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g021.faa",
+      "sha256": "1be55dfed3785cc341830f7a21861879448ba9460e86b48256a5a57dea1525db",
+      "assigned_proteins": 259,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 242,
+      "retained_feature_count": 27,
+      "zero_vector": false
+    },
+    {
+      "genome": "536_P11",
+      "role": "train",
+      "proteins": 74,
+      "residues": 13535,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g022.faa",
+      "sha256": "d1318857bb8ce96bb73219fe50099413c24aef260fb8a7b6779d074d05ec2ada",
+      "assigned_proteins": 74,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 65,
+      "retained_feature_count": 28,
+      "zero_vector": false
+    },
+    {
+      "genome": "536_P12",
+      "role": "train",
+      "proteins": 96,
+      "residues": 16976,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g023.faa",
+      "sha256": "b161a045ec44b8ba40bad4c7f6701544b29c6f68c06b414f55f5d446ce03ec3f",
+      "assigned_proteins": 96,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 66,
+      "retained_feature_count": 4,
+      "zero_vector": false
+    },
+    {
+      "genome": "536_P6",
+      "role": "train",
+      "proteins": 239,
+      "residues": 44067,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g024.faa",
+      "sha256": "4ba8b3a36a105f66e60c6ad8e43e5ad8d5330b0468daec39882a6eefb7e881f5",
+      "assigned_proteins": 239,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 239,
+      "retained_feature_count": 24,
+      "zero_vector": false
+    },
+    {
+      "genome": "536_P7",
+      "role": "train",
+      "proteins": 239,
+      "residues": 44067,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g025.faa",
+      "sha256": "b9444ed8e26bbedfe28a67b026e004807e6aaecc3741ef785b82df22a0c84528",
+      "assigned_proteins": 239,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 239,
+      "retained_feature_count": 24,
+      "zero_vector": false
+    },
+    {
+      "genome": "536_P9",
+      "role": "train",
+      "proteins": 236,
+      "residues": 44196,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g026.faa",
+      "sha256": "af95508ab70eea304a7fb7bc23348294b57bb2e07fcd6d4986870c6687397fab",
+      "assigned_proteins": 236,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 231,
+      "retained_feature_count": 21,
+      "zero_vector": false
+    },
+    {
+      "genome": "55989_P1",
+      "role": "train",
+      "proteins": 50,
+      "residues": 12034,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g027.faa",
+      "sha256": "368722dc787e9677dc9cebaa314d10d7502f6a90be77894828bc4b3d13193cc9",
+      "assigned_proteins": 50,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 46,
+      "retained_feature_count": 18,
+      "zero_vector": false
+    },
+    {
+      "genome": "55989_P2",
+      "role": "train",
+      "proteins": 270,
+      "residues": 53746,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g028.faa",
+      "sha256": "6386d160711cba8236e4d9aa48416b58b6a20970d0f561e7f9f39c903e10a9a7",
+      "assigned_proteins": 270,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 207,
+      "retained_feature_count": 29,
+      "zero_vector": false
+    },
+    {
+      "genome": "AL505_Ev3",
+      "role": "train",
+      "proteins": 265,
+      "residues": 50408,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g029.faa",
+      "sha256": "b3cdc11c85e1f2fddb67359441eeb2254edc696f570cce79591a9021dbb1466f",
+      "assigned_proteins": 265,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 255,
+      "retained_feature_count": 18,
+      "zero_vector": false
+    },
+    {
+      "genome": "AL505_Sd2",
+      "role": "train",
+      "proteins": 54,
+      "residues": 13556,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g030.faa",
+      "sha256": "123e3efe4e17333c12a693d7db1316d7587861719ee7961a517868cd405af859",
+      "assigned_proteins": 54,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 54,
+      "retained_feature_count": 18,
+      "zero_vector": false
+    },
+    {
+      "genome": "AN17_P1",
+      "role": "train",
+      "proteins": 47,
+      "residues": 11616,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g031.faa",
+      "sha256": "6e0540b1000c8e140a56b0567b32e3942149176908596bdd115a671c7aa0e677",
+      "assigned_proteins": 47,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 46,
+      "retained_feature_count": 18,
+      "zero_vector": false
+    },
+    {
+      "genome": "AN17_P8",
+      "role": "train",
+      "proteins": 122,
+      "residues": 25166,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g032.faa",
+      "sha256": "6c63213ee785fb1c21104428e9edb0c83ce6af2f1e274decef387814e08f7c7c",
+      "assigned_proteins": 122,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 121,
+      "retained_feature_count": 22,
+      "zero_vector": false
+    },
+    {
+      "genome": "AN24_P2",
+      "role": "train",
+      "proteins": 85,
+      "residues": 22041,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g033.faa",
+      "sha256": "83e4dc0ae0449a8a4097a36b43634dadf16d7fcaad1b89ee7d1c4681e55dd986",
+      "assigned_proteins": 85,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 85,
+      "retained_feature_count": 7,
+      "zero_vector": false
+    },
+    {
+      "genome": "AN24_P3",
+      "role": "train",
+      "proteins": 85,
+      "residues": 22041,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g034.faa",
+      "sha256": "6979fed6d89ac2d213b1a2761b103a0e88c0537113497bec96b16ef46cb93344",
+      "assigned_proteins": 85,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 85,
+      "retained_feature_count": 7,
+      "zero_vector": false
+    },
+    {
+      "genome": "AN24_P4",
+      "role": "train",
+      "proteins": 49,
+      "residues": 11776,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g035.faa",
+      "sha256": "8ecac3d91b331383f962dea8fb64f47b77293458bad0a41d88f04afc1a25b90f",
+      "assigned_proteins": 49,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 48,
+      "retained_feature_count": 20,
+      "zero_vector": false
+    },
+    {
+      "genome": "BCH953_P1",
+      "role": "train",
+      "proteins": 77,
+      "residues": 13403,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g036.faa",
+      "sha256": "d6c119c2a07b461bd8813eed944ba712f7a96f2db5063ff0f6a0b75557736a9f",
+      "assigned_proteins": 77,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 74,
+      "retained_feature_count": 27,
+      "zero_vector": false
+    },
+    {
+      "genome": "BCH953_P2",
+      "role": "train",
+      "proteins": 266,
+      "residues": 52857,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g037.faa",
+      "sha256": "de6edc8deb02bcc8b93e7c4fc62315b98bc6c28833b11105a158442ca29fe879",
+      "assigned_proteins": 266,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 257,
+      "retained_feature_count": 39,
+      "zero_vector": false
+    },
+    {
+      "genome": "BCH953_P3",
+      "role": "train",
+      "proteins": 80,
+      "residues": 13689,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g038.faa",
+      "sha256": "d6a6d8fe40d924608e3c2ab403b994e6a62bc9910ab0c12dcc3369f7ccd7109f",
+      "assigned_proteins": 80,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 78,
+      "retained_feature_count": 30,
+      "zero_vector": false
+    },
+    {
+      "genome": "BCH953_P4",
+      "role": "train",
+      "proteins": 264,
+      "residues": 52788,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g039.faa",
+      "sha256": "7e82f1f9c16b249f6bc9a5c083ae31a0ef54d4c83312457fe6ff86fd1a8246a9",
+      "assigned_proteins": 264,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 264,
+      "retained_feature_count": 40,
+      "zero_vector": false
+    },
+    {
+      "genome": "BCH953_P5",
+      "role": "train",
+      "proteins": 264,
+      "residues": 52788,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g040.faa",
+      "sha256": "c8e7762de9408ed0dfc9b3167cf587ff76f07280b441bfada0a413e6dabc01b7",
+      "assigned_proteins": 264,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 264,
+      "retained_feature_count": 40,
+      "zero_vector": false
+    },
+    {
+      "genome": "BDX03_P1",
+      "role": "train",
+      "proteins": 51,
+      "residues": 12141,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g041.faa",
+      "sha256": "76bb55b7554875d936996a86c2cb5a26c1d8fc53acc41067b814ac76b727f9f3",
+      "assigned_proteins": 51,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 51,
+      "retained_feature_count": 18,
+      "zero_vector": false
+    },
+    {
+      "genome": "BDX03_P2",
+      "role": "train",
+      "proteins": 51,
+      "residues": 12141,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g042.faa",
+      "sha256": "3806b9615076c896cbb95e9f80aeba1b736894cc103f7f94cc1758bb660ab50b",
+      "assigned_proteins": 51,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 51,
+      "retained_feature_count": 18,
+      "zero_vector": false
+    },
+    {
+      "genome": "BDX09_P1",
+      "role": "train",
+      "proteins": 101,
+      "residues": 17607,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g043.faa",
+      "sha256": "416cad28d84a8907dd3eb586a065c7779f4d8b37df10d29d3209d0f8906f0185",
+      "assigned_proteins": 101,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 66,
+      "retained_feature_count": 4,
+      "zero_vector": false
+    },
+    {
+      "genome": "DIJ06_P1",
+      "role": "train",
+      "proteins": 54,
+      "residues": 13724,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g044.faa",
+      "sha256": "402ad7f4b772dc8cf865ca619a4d551818877a8bdf918a45dbfe13d8a414d62b",
+      "assigned_proteins": 54,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 53,
+      "retained_feature_count": 19,
+      "zero_vector": false
+    },
+    {
+      "genome": "DIJ07_P1",
+      "role": "train",
+      "proteins": 246,
+      "residues": 42729,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g045.faa",
+      "sha256": "144126b824c5ce5b583e1170c5ae0374b67f0d6037a82ac31e718d23871bed98",
+      "assigned_proteins": 246,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 237,
+      "retained_feature_count": 25,
+      "zero_vector": false
+    },
+    {
+      "genome": "DIJ07_P2",
+      "role": "train",
+      "proteins": 240,
+      "residues": 42988,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g046.faa",
+      "sha256": "c7df542ed27b171de2786792d755c9f96a6d871ef06dfba858092f0cfc23bbb7",
+      "assigned_proteins": 240,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 223,
+      "retained_feature_count": 22,
+      "zero_vector": false
+    },
+    {
+      "genome": "LF110_P1",
+      "role": "train",
+      "proteins": 126,
+      "residues": 25249,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g047.faa",
+      "sha256": "6f72a34df6911f388d0dcf837a869746b8d3d797a75cedeffe18951e33712d9c",
+      "assigned_proteins": 126,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 123,
+      "retained_feature_count": 23,
+      "zero_vector": false
+    },
+    {
+      "genome": "LF110_P2",
+      "role": "train",
+      "proteins": 126,
+      "residues": 25426,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g048.faa",
+      "sha256": "a40f43457a9c668e6ed9fc595d5a77e7b962b6e6155f6bdadfe4a8aae3e645a6",
+      "assigned_proteins": 126,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 126,
+      "retained_feature_count": 24,
+      "zero_vector": false
+    },
+    {
+      "genome": "LF110_P3",
+      "role": "train",
+      "proteins": 127,
+      "residues": 25553,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g049.faa",
+      "sha256": "71681a876b00a499cd59632dee973d415d1ef0fc2e337e13d109165fb71587ef",
+      "assigned_proteins": 127,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 127,
+      "retained_feature_count": 25,
+      "zero_vector": false
+    },
+    {
+      "genome": "LF110_P4",
+      "role": "train",
+      "proteins": 124,
+      "residues": 25380,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g050.faa",
+      "sha256": "8164651f5efafd08782d6eaad7c5eaa6c5387682869797d3def21380f75938f0",
+      "assigned_proteins": 124,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 122,
+      "retained_feature_count": 21,
+      "zero_vector": false
+    },
+    {
+      "genome": "LF31_P1",
+      "role": "train",
+      "proteins": 101,
+      "residues": 20989,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g051.faa",
+      "sha256": "c439f36e55001bdb4ea52807d91fb4e2762bf0bfa1ae1380b3d5af835aaf2b0f",
+      "assigned_proteins": 101,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 1,
+      "retained_feature_count": 1,
+      "zero_vector": false
+    },
+    {
+      "genome": "LF31_P3",
+      "role": "train",
+      "proteins": 50,
+      "residues": 13416,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g052.faa",
+      "sha256": "0a600cdaee21cf437fb7dfa205cf111f24d921abadc930c19b764ebb85814c76",
+      "assigned_proteins": 50,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 49,
+      "retained_feature_count": 15,
+      "zero_vector": false
+    },
+    {
+      "genome": "LF50_P3",
+      "role": "train",
+      "proteins": 58,
+      "residues": 13756,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g053.faa",
+      "sha256": "c30960ed699e8351698c63275ebcc18ef1907b2a21d11e95f1777f982e3fe3d4",
+      "assigned_proteins": 58,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 51,
+      "retained_feature_count": 6,
+      "zero_vector": false
+    },
+    {
+      "genome": "LF7074_P1",
+      "role": "train",
+      "proteins": 66,
+      "residues": 12724,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g054.faa",
+      "sha256": "511d6a3b30c864662e6c3bcbb1a9a6711cc0c84d656df0a5d62c5ff06efdff8f",
+      "assigned_proteins": 66,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 66,
+      "retained_feature_count": 27,
+      "zero_vector": false
+    },
+    {
+      "genome": "LF7074_P2",
+      "role": "train",
+      "proteins": 66,
+      "residues": 12708,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g055.faa",
+      "sha256": "9ec22fbb185f8b72d9dd617614f15423e3f3815c6d65b841003ead2329b8e614",
+      "assigned_proteins": 66,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 66,
+      "retained_feature_count": 27,
+      "zero_vector": false
+    },
+    {
+      "genome": "LF7074_P3",
+      "role": "train",
+      "proteins": 67,
+      "residues": 12609,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g056.faa",
+      "sha256": "5506640a2d74b60baba8831623dd5a3c8c83cf441afa7639e87be92914c82d6f",
+      "assigned_proteins": 67,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 63,
+      "retained_feature_count": 25,
+      "zero_vector": false
+    },
+    {
+      "genome": "LF73_P1",
+      "role": "train",
+      "proteins": 268,
+      "residues": 53068,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g057.faa",
+      "sha256": "4624bcac08a5c73099fd8e4ea893bfd59c3f7b2504e2ff767bc9f88213d02380",
+      "assigned_proteins": 268,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 264,
+      "retained_feature_count": 43,
+      "zero_vector": false
+    },
+    {
+      "genome": "LF73_P3",
+      "role": "train",
+      "proteins": 269,
+      "residues": 52502,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g058.faa",
+      "sha256": "06449f1b341c90598d2db14d1e7960b24145527dd35dd09e6b27c96d0fdbe9d3",
+      "assigned_proteins": 269,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 260,
+      "retained_feature_count": 44,
+      "zero_vector": false
+    },
+    {
+      "genome": "LF73_P4",
+      "role": "train",
+      "proteins": 264,
+      "residues": 50653,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g059.faa",
+      "sha256": "19942d2676ca35cfd70ca5124388cb07f1647287bf7402b1a6ab8d44adaf846f",
+      "assigned_proteins": 264,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 258,
+      "retained_feature_count": 20,
+      "zero_vector": false
+    },
+    {
+      "genome": "LF82_P1",
+      "role": "train",
+      "proteins": 128,
+      "residues": 25876,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g060.faa",
+      "sha256": "fe8c46078cb90bcc01972f51aed7ed90e7cb82de435868cf97def2d1516ddbc9",
+      "assigned_proteins": 128,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 128,
+      "retained_feature_count": 27,
+      "zero_vector": false
+    },
+    {
+      "genome": "LF82_P2",
+      "role": "train",
+      "proteins": 119,
+      "residues": 24909,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g061.faa",
+      "sha256": "de643053c056c5bb8fd5c43c313807302f0f37184c475656288d3c9f10af5dee",
+      "assigned_proteins": 119,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 119,
+      "retained_feature_count": 21,
+      "zero_vector": false
+    },
+    {
+      "genome": "LF82_P3",
+      "role": "train",
+      "proteins": 119,
+      "residues": 24770,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g062.faa",
+      "sha256": "ebc674e4f2368d46a7199c7884e6ee4eaf680c63c86c487f2babc144f535ef0e",
+      "assigned_proteins": 119,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 119,
+      "retained_feature_count": 21,
+      "zero_vector": false
+    },
+    {
+      "genome": "LF82_P4",
+      "role": "train",
+      "proteins": 116,
+      "residues": 24306,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g063.faa",
+      "sha256": "8a6508d1e2e24926ca0c229f0eebf63c8595076ca39ce8421df5302b962a2470",
+      "assigned_proteins": 116,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 116,
+      "retained_feature_count": 19,
+      "zero_vector": false
+    },
+    {
+      "genome": "LF82_P5",
+      "role": "train",
+      "proteins": 116,
+      "residues": 24695,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g064.faa",
+      "sha256": "0d55c9bd6ee5f978736cad64855177bcae5d8e5dba3f35a6e118a32f9ddda613",
+      "assigned_proteins": 116,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 116,
+      "retained_feature_count": 18,
+      "zero_vector": false
+    },
+    {
+      "genome": "LF82_P6",
+      "role": "train",
+      "proteins": 114,
+      "residues": 24354,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g065.faa",
+      "sha256": "2846e5900ccd8c68f1ba349b9496fc847a2fc7e646fc764bce853afab0cc315d",
+      "assigned_proteins": 114,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 114,
+      "retained_feature_count": 17,
+      "zero_vector": false
+    },
+    {
+      "genome": "LF82_P8",
+      "role": "train",
+      "proteins": 259,
+      "residues": 52838,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g066.faa",
+      "sha256": "3fa5e97afca6bda9c7bc50df1ccaabc2876aa1d651882dbfec29bdb079e4fa76",
+      "assigned_proteins": 259,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 217,
+      "retained_feature_count": 30,
+      "zero_vector": false
+    },
+    {
+      "genome": "LF82_P9",
+      "role": "train",
+      "proteins": 118,
+      "residues": 24789,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g067.faa",
+      "sha256": "a3ce3270ba7ec2e3fb6e348d623a9280a2d231cd40960432d1f7fcf7028e3810",
+      "assigned_proteins": 118,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 118,
+      "retained_feature_count": 20,
+      "zero_vector": false
+    },
+    {
+      "genome": "LI10_P1",
+      "role": "train",
+      "proteins": 46,
+      "residues": 11848,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g068.faa",
+      "sha256": "a39399466bcbb7bac408f75dc05ade7d8f3d77bc35fd2d23591c824fc0c45380",
+      "assigned_proteins": 46,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 46,
+      "retained_feature_count": 16,
+      "zero_vector": false
+    },
+    {
+      "genome": "LI10_P2",
+      "role": "train",
+      "proteins": 46,
+      "residues": 11848,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g069.faa",
+      "sha256": "c9738985ab9e9a57404896b41c5e5c543050e197e383d943a0a77f6cae154fe0",
+      "assigned_proteins": 46,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 46,
+      "retained_feature_count": 16,
+      "zero_vector": false
+    },
+    {
+      "genome": "LI10_P3",
+      "role": "train",
+      "proteins": 55,
+      "residues": 13793,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g070.faa",
+      "sha256": "6a9535a5ae94c0ab7c8355681f42e5f9b80fb9aca0cb400e01d8afeb5bcf1f6c",
+      "assigned_proteins": 55,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 55,
+      "retained_feature_count": 21,
+      "zero_vector": false
+    },
+    {
+      "genome": "LI10_P4",
+      "role": "train",
+      "proteins": 54,
+      "residues": 13625,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g071.faa",
+      "sha256": "e5263827a55f451460b6f1587fd5cc768a1f54caeb838e80b5a05f992c4c4247",
+      "assigned_proteins": 54,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 54,
+      "retained_feature_count": 20,
+      "zero_vector": false
+    },
+    {
+      "genome": "LI10_P5",
+      "role": "train",
+      "proteins": 53,
+      "residues": 13577,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g072.faa",
+      "sha256": "3ca569cc077d828acb44f59240086d2004441fcc16babe18706514f23e05ec24",
+      "assigned_proteins": 53,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 53,
+      "retained_feature_count": 19,
+      "zero_vector": false
+    },
+    {
+      "genome": "LI10_P6",
+      "role": "train",
+      "proteins": 55,
+      "residues": 13689,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g073.faa",
+      "sha256": "90191e6e64077cb2096ed3fe9e919a1dc5cc81df88dd6991ca3c9c3f7efc52ec",
+      "assigned_proteins": 55,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 55,
+      "retained_feature_count": 21,
+      "zero_vector": false
+    },
+    {
+      "genome": "LM02_P1",
+      "role": "train",
+      "proteins": 77,
+      "residues": 13420,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g074.faa",
+      "sha256": "63681613584484a7bff621efff81feae596e551e02d87e7890252bc2cb380032",
+      "assigned_proteins": 77,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 67,
+      "retained_feature_count": 27,
+      "zero_vector": false
+    },
+    {
+      "genome": "LM07_P1",
+      "role": "train",
+      "proteins": 48,
+      "residues": 12324,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g075.faa",
+      "sha256": "c3c0f8a47494312e5f7452a8f57210e7808b472df7acc0cd6de73cd74f25e0b9",
+      "assigned_proteins": 48,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 45,
+      "retained_feature_count": 10,
+      "zero_vector": false
+    },
+    {
+      "genome": "LM08_P1",
+      "role": "train",
+      "proteins": 73,
+      "residues": 13185,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g076.faa",
+      "sha256": "cebb7b0dd99a446c1f5c1afe4ddfc3c73e399237cc7b02c12b00e1e2f33ff901",
+      "assigned_proteins": 73,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 70,
+      "retained_feature_count": 27,
+      "zero_vector": false
+    },
+    {
+      "genome": "LM08_P2",
+      "role": "train",
+      "proteins": 71,
+      "residues": 13239,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g077.faa",
+      "sha256": "73d6570dd89618dda7bd478bb778311a1d86ab05bee4850b57d765f4813bfe41",
+      "assigned_proteins": 71,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 69,
+      "retained_feature_count": 26,
+      "zero_vector": false
+    },
+    {
+      "genome": "LM33_P1",
+      "role": "train",
+      "proteins": 50,
+      "residues": 11805,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g078.faa",
+      "sha256": "e673b203b357b5986cf4a4646c6515826aa2cc48c75bc149e5eaeb14873a85a8",
+      "assigned_proteins": 50,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 48,
+      "retained_feature_count": 20,
+      "zero_vector": false
+    },
+    {
+      "genome": "LM40_P1",
+      "role": "train",
+      "proteins": 60,
+      "residues": 14045,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g079.faa",
+      "sha256": "52a2b14d92dc140e9445a622166c321a901d5bc7ebefd20a9bf4511ec61b90cf",
+      "assigned_proteins": 60,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 59,
+      "retained_feature_count": 7,
+      "zero_vector": false
+    },
+    {
+      "genome": "LM40_P2",
+      "role": "train",
+      "proteins": 60,
+      "residues": 14100,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g080.faa",
+      "sha256": "54249bb5f60c721238088e913f763a0be60da480392226ddc53be7c6428c5f12",
+      "assigned_proteins": 60,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 60,
+      "retained_feature_count": 8,
+      "zero_vector": false
+    },
+    {
+      "genome": "LM40_P3",
+      "role": "train",
+      "proteins": 59,
+      "residues": 14024,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g081.faa",
+      "sha256": "65a3d78810f020c6c746daf11cc81694931fca7f86bb89658e947b9063134e39",
+      "assigned_proteins": 59,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 59,
+      "retained_feature_count": 7,
+      "zero_vector": false
+    },
+    {
+      "genome": "MT1B1_3A1",
+      "role": "train",
+      "proteins": 46,
+      "residues": 11962,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g082.faa",
+      "sha256": "57b902c8ed59ffe85ae694aa239b10a7ae4227c81cfad03045710452d7f53097",
+      "assigned_proteins": 46,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 43,
+      "retained_feature_count": 15,
+      "zero_vector": false
+    },
+    {
+      "genome": "NAN33_P1",
+      "role": "train",
+      "proteins": 50,
+      "residues": 12510,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g083.faa",
+      "sha256": "b321a66c74dfcce02c12a027c429134ad501526eab33219fe32556ec85d4078c",
+      "assigned_proteins": 50,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 45,
+      "retained_feature_count": 9,
+      "zero_vector": false
+    },
+    {
+      "genome": "NAN33_P2",
+      "role": "train",
+      "proteins": 48,
+      "residues": 12455,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g084.faa",
+      "sha256": "5e3578728052da3821fa49d479861ef3f2e5a11652ebf6cc4e385961484d4143",
+      "assigned_proteins": 48,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 48,
+      "retained_feature_count": 13,
+      "zero_vector": false
+    },
+    {
+      "genome": "NAN33_P4",
+      "role": "train",
+      "proteins": 48,
+      "residues": 12455,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g085.faa",
+      "sha256": "cd58337cf5269c54ede3ec85f7511cc88fb73c8f394ea124caa536497b0bae28",
+      "assigned_proteins": 48,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 48,
+      "retained_feature_count": 13,
+      "zero_vector": false
+    },
+    {
+      "genome": "NAN33_P5",
+      "role": "train",
+      "proteins": 91,
+      "residues": 22594,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g086.faa",
+      "sha256": "b54f31b1e762e972216b2b597a9fc0b17b5625228f5e4a882c123e26837c7624",
+      "assigned_proteins": 91,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 68,
+      "retained_feature_count": 4,
+      "zero_vector": false
+    },
+    {
+      "genome": "NAN33_P6",
+      "role": "train",
+      "proteins": 47,
+      "residues": 12355,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g087.faa",
+      "sha256": "f92f64265c5bf57dbfffad75fa37fe5327f0c122f5e21a7b7dec6cb91725d39c",
+      "assigned_proteins": 47,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 47,
+      "retained_feature_count": 12,
+      "zero_vector": false
+    },
+    {
+      "genome": "NIC06_P2",
+      "role": "train",
+      "proteins": 266,
+      "residues": 52087,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g088.faa",
+      "sha256": "7db51edf4214ab838dfa694dab165d115cab7fbe7be9b64fa7daf1d0f76c45a7",
+      "assigned_proteins": 266,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 257,
+      "retained_feature_count": 40,
+      "zero_vector": false
+    },
+    {
+      "genome": "NIC06_P3",
+      "role": "train",
+      "proteins": 55,
+      "residues": 14026,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g089.faa",
+      "sha256": "2be2be9c74bd32880191cd85d0615c02f25a7a63d50164780dc2df97a1c5bae8",
+      "assigned_proteins": 55,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 51,
+      "retained_feature_count": 17,
+      "zero_vector": false
+    },
+    {
+      "genome": "NRG_11A2",
+      "role": "train",
+      "proteins": 115,
+      "residues": 24341,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g090.faa",
+      "sha256": "53a3f6c6e6df78e47ac2861342ddc297699208e64b86d653fd704a850fb0d0ab",
+      "assigned_proteins": 115,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 114,
+      "retained_feature_count": 15,
+      "zero_vector": false
+    },
+    {
+      "genome": "NRG_11B1",
+      "role": "train",
+      "proteins": 126,
+      "residues": 25409,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g091.faa",
+      "sha256": "6721801d77aa2070e2947b23d838516069a78f629ef6970a2cf95deda12001ce",
+      "assigned_proteins": 126,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 126,
+      "retained_feature_count": 24,
+      "zero_vector": false
+    },
+    {
+      "genome": "NRG_12A1B",
+      "role": "train",
+      "proteins": 75,
+      "residues": 13813,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g092.faa",
+      "sha256": "442b4a71368a2b12ea0099c0cb39ec346062c85a15a9302406e049f816ac2e47",
+      "assigned_proteins": 75,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 59,
+      "retained_feature_count": 22,
+      "zero_vector": false
+    },
+    {
+      "genome": "T7",
+      "role": "target",
+      "proteins": 49,
+      "residues": 12036,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g093.faa",
+      "sha256": "3be71d603a92d1c592870e4e69162efb1b97f51a853265440449c1b5364c51ad",
+      "assigned_proteins": 33,
+      "assigned_protein_fraction": 0.673469387755102,
+      "proteins_mapped_to_retained_features": 33,
+      "retained_feature_count": 10,
+      "zero_vector": false
+    },
+    {
+      "genome": "T3",
+      "role": "target",
+      "proteins": 43,
+      "residues": 11394,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g094.faa",
+      "sha256": "f12ce1830f6e2c04bcd4376bc0d7fc8e006cbfd494e6a65ca8a4888d875b24b2",
+      "assigned_proteins": 32,
+      "assigned_protein_fraction": 0.7441860465116279,
+      "proteins_mapped_to_retained_features": 32,
+      "retained_feature_count": 5,
+      "zero_vector": false
+    },
+    {
+      "genome": "mapping_control",
+      "role": "control",
+      "proteins": 48,
+      "residues": 12065,
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteomes/g095.faa",
+      "sha256": "515f4fc48728cb1a713fea3e6b05d33b31be868e03fe7721ab969fa8ee132234",
+      "assigned_proteins": 48,
+      "assigned_protein_fraction": 1.0,
+      "proteins_mapped_to_retained_features": 46,
+      "retained_feature_count": 17,
+      "zero_vector": false
+    }
+  ],
+  "target_vectors_equal": false,
+  "mapping_control": {
+    "source_training_phage": "409_P1",
+    "exact_feature_vector_match": true,
+    "training_control_nonzero": true,
+    "clean_nonzero_mapping_control": true,
+    "interpretation": "Mapping control only; not specificity validation"
+  },
+  "replay_provenance": {
+    "external_commands_repeated": false,
+    "original_execution_helper": "data/raw/genophi-phage-features/pilot-v1/executed-helper.py",
+    "original_execution_helper_sha256": "2feaed2cd232324351ff68914be6f24c2a02ac3ab13655eb12a2e7c0fd3fbbca",
+    "original_report": "data/raw/genophi-phage-features/pilot-v1/initial-report.json",
+    "original_report_sha256": "891e396e438136e3337b398beb0b39a40ff611c5493e79e13d7530d535df9959",
+    "refinement": "Reject internal/double-terminal stops; strengthen source/command/raw replay authentication; no parameter or numeric retuning"
+  },
+  "artifacts": [
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/run-inputs.json",
+      "sha256": "2bf3394be04f36b06b527f8441daed1695f8370f4fd84a1b00ba66211fc503a3"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/command-ledger.json",
+      "sha256": "990555900e7416e088af74304d61196ac16f40c981228508729583713cd3b7dd"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/protein-map.json",
+      "sha256": "da35148dab94af2796bcdbc541fe14f55e6b97893a81d203ed82da57a9144550"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteome-map.json",
+      "sha256": "ec589ae63ef29050994176520ff370add1141c7fb5ce15d9a898aa8194581692"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/vocabulary-freeze.json",
+      "sha256": "6579ede1b7e6eee180bccfc59f0f38d9a654b5cfc7771ab341418438d2775353"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/training.faa",
+      "sha256": "b9231092b106227efb96902e7177617e19ab13bda22193dfa811add1e8aea8a2"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/queries.faa",
+      "sha256": "192ee35dcee7a2e08474028335385ef09e7e15b1815113cae38de6074a5e2c7e"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/clusters.tsv",
+      "sha256": "b2014230e00e4f515eca2b79e712b5344cd1c4e14ba45ce2785709cfdee8c583"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/self.tsv",
+      "sha256": "0038bcd2ad74e5b30956219e211e2e96dd08c6722039b93ae1f1cb1f7a14c6e1"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/query.tsv",
+      "sha256": "5118aa5c0d89e9b735a5ddd8a04ecee2f77a5b80f7508d0ae041e93456370f3a"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/feature-map.json",
+      "sha256": "6a9b7b056c6448cc09d355cd0823b8643458808788f98e1cebef8ed9ce5236fe"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/member-family-map.json",
+      "sha256": "52a072b298d4d4207382aea8ca8bc8dddc6e80242226139a496fcac2353f8195"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/best-self.json",
+      "sha256": "5c9648c7947e9c7d25bd93807a98d183532d15f214318e36e48a81c43838a947"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/best-query.json",
+      "sha256": "40dab443f71552abde36495cdc028090598142d8dc4da7ad0e6ed105a1774a15"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/feature-matrix.tsv",
+      "sha256": "70a5c64be0e3fb7e777778cc4c86bbb7b85b4a8859759578254f36ec496225e4"
+    }
+  ],
+  "processed_matrix": {
+    "path": "data/processed/genophi-phage-feature-matrix-replay.tsv",
+    "sha256": "70a5c64be0e3fb7e777778cc4c86bbb7b85b4a8859759578254f36ec496225e4"
+  }
+}

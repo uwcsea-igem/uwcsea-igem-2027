@@ -55,8 +55,8 @@ def proteins(data):
         out.append((name, "".join(chunks).removesuffix("*")))
     if not out or len({n for n, _ in out}) != len(out):
         raise ValueError("Empty FASTA or duplicate protein ID")
-    if any(not seq or not set(seq) <= set("ABCDEFGHIJKLMNOPQRSTUVWXYZ*") for _, seq in out):
-        raise ValueError("Empty or invalid protein sequence")
+    if any(not seq or not set(seq) <= set("ACDEFGHIKLMNPQRSTVWYBXZJUO") for _, seq in out):
+        raise ValueError("Empty protein, internal stop or invalid amino acid")
     return out
 
 
@@ -344,6 +344,7 @@ def postprocess(policy, workdir, train, target, train_genome, target_genome, gen
 
 
 def execute(policy_path, workdir, replay=False):
+    helper_sha = digest(Path(__file__).read_bytes())
     policy_bytes = policy_path.read_bytes()
     policy = json.loads(policy_bytes)
     aa, verified = prepare(policy)  # Authenticate every actual annotation FASTA before commands.
@@ -351,6 +352,12 @@ def execute(policy_path, workdir, replay=False):
         prior = json.loads((workdir / "run-inputs.json").read_text())
         if prior["policy_sha256"] != digest(policy_bytes):
             raise ValueError("Replay policy differs")
+        if prior["verified_annotation_files"] != verified:
+            raise ValueError("Replay source annotation inventory differs")
+        expected_commands = commands(policy, workdir)
+        if (prior["commands"] != expected_commands or prior["commands_sha256"] !=
+                digest(json.dumps(expected_commands, separators=(",", ":")).encode())):
+            raise ValueError("Replay command plan differs")
     elif workdir.exists():
         raise ValueError("Preserve existing raw workdir; use --replay for completed raw output")
     else:
@@ -362,15 +369,33 @@ def execute(policy_path, workdir, replay=False):
         train = {n: s for n, s in proteins((workdir / "training.faa").read_bytes())}
         target = {n: s for n, s in proteins((workdir / "queries.faa").read_bytes())}
         pmap = json.loads((workdir / "protein-map.json").read_text())
+        selections = [(g, "train", aa[g]) for g in policy["training_phages"]]
+        selections += [(g, "target", aa[g]) for g in policy["target_phages"]]
+        selections += [("mapping_control", "control", aa[policy["training_phages"][0]])]
+        expected_map, expected_train, expected_target = [], {}, {}
+        for gi, (genome, role, source) in enumerate(selections):
+            for pi, (original, sequence) in enumerate(source):
+                neutral = f"g{gi:03d}p{pi:06d}"
+                expected_map.append({"protein": neutral, "genome": genome, "role": role,
+                                     "source_protein": original, "sequence_sha256": digest(sequence.encode()),
+                                     "length": len(sequence)})
+                (expected_train if role == "train" else expected_target)[neutral] = sequence
+        if pmap != expected_map or train != expected_train or target != expected_target:
+            raise ValueError("Replay normalized proteins differ from authenticated source proteins")
         train_genome = {p["protein"]: p["genome"] for p in pmap if p["role"] == "train"}
         target_genome = {p["protein"]: p["genome"] for p in pmap if p["role"] != "train"}
         genomes = json.loads((workdir / "proteome-map.json").read_text())
         ledger = json.loads((workdir / "command-ledger.json").read_text())
         if len(ledger) != 8 or any(c["exit_code"] for c in ledger):
             raise ValueError("Replay requires all eight completed commands")
+        if [c["command"] for c in ledger] != expected_commands:
+            raise ValueError("Completed command ledger differs from frozen command plan")
         for c in ledger:
             checked(c["log"], c["log_sha256"])
-        for item in prior.get("completed_artifacts", []):
+        completed = prior.get("completed_artifacts", [])
+        if [c["path"] for c in completed] != [str(workdir / n) for n in ["clusters.tsv", "self.tsv", "query.tsv"]]:
+            raise ValueError("Missing/invalid completed external artifact inventory")
+        for item in completed:
             checked(item["path"], item["sha256"])
     else:
         train, target, train_genome, target_genome, genomes = normalized_inputs(policy, aa, workdir)
@@ -390,7 +415,7 @@ def execute(policy_path, workdir, replay=False):
         dump(workdir / "run-inputs.json", prior)
     report = {"schema_version": 1, "purpose": policy["purpose"], "status": "complete",
               "policy_path": str(policy_path), "policy_sha256": digest(policy_bytes),
-              "script_sha256": digest(Path(__file__).read_bytes()), "raw_workdir": str(workdir),
+              "script_sha256": helper_sha, "raw_workdir": str(workdir),
               "software_deviation": policy["software_deviation"],
               "mmseqs_executable": policy["mmseqs_executable"], "mmseqs_sha256": policy["mmseqs_sha256"],
               "commands": ledger, "commands_sha256": prior["commands_sha256"],
@@ -407,6 +432,21 @@ def execute(policy_path, workdir, replay=False):
               "verified_annotation_files": verified,
               "interpretation": policy["interpretation"], "full_training_ready": False}
     report.update(postprocess(policy, workdir, train, target, train_genome, target_genome, genomes))
+    if digest(Path(__file__).read_bytes()) != helper_sha:
+        raise ValueError("Helper changed during execution; preserve raw output and replay with a stable helper")
+    if replay and (workdir / "initial-report.json").exists():
+        initial_bytes = (workdir / "initial-report.json").read_bytes()
+        initial_report = json.loads(initial_bytes)
+        checked(workdir / "executed-helper.py", initial_report["script_sha256"])
+        if initial_report["policy_sha256"] != digest(policy_bytes):
+            raise ValueError("Retained execution report refers to a different policy")
+        report["replay_provenance"] = {
+            "external_commands_repeated": False,
+            "original_execution_helper": str(workdir / "executed-helper.py"),
+            "original_execution_helper_sha256": initial_report["script_sha256"],
+            "original_report": str(workdir / "initial-report.json"),
+            "original_report_sha256": digest(initial_bytes),
+            "refinement": "Reject internal/double-terminal stops; strengthen source/command/raw replay authentication; no parameter or numeric retuning"}
     artifact_names = ["run-inputs.json", "command-ledger.json", "protein-map.json", "proteome-map.json", "vocabulary-freeze.json",
                       "training.faa", "queries.faa", "clusters.tsv", "self.tsv", "query.tsv",
                       "feature-map.json", "member-family-map.json", "best-self.json", "best-query.json", "feature-matrix.tsv"]
