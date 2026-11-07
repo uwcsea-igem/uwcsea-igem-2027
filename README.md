@@ -26,10 +26,9 @@ Draft for team review · 2026-11-07 · project name and gate dates unapproved.
 
 **Open decisions.** Confirm whether the proposed knockout panel tests native LPS dependence or future protein-receptor targeting; obtain exact strain identifiers; confirm assembly assay definition; choose a predictor and leakage-free evaluation split; approve gate dates, owners, budget and project name. Suggested names only: Plug-n-Phage, TailorMade, SOCKET.
 
-**Current decision.** GO for literature/data/software evaluation infrastructure; HOLD for claims of an assembly predictor, orderable DNA, confirmed laboratory access or competition compliance. [Literature audit](docs/02-literature.md) · [decisions](docs/01-decision-log.md) · [roles](docs/05-roles.md).
+**Current evidence (7 November).** A real WIsH genome-composition run covers six native observations and abstains on four exchange cases. It ranks the documented T3 positive below both negatives. [December evidence report](docs/07-december-gate-report.md) records raw scores, actual anonymous reruns and label checks. NO-GO for this method as the strain-ranking engine; GO for evidence/evaluation infrastructure. Assembly prediction, orderable DNA and wet-lab readiness remain unvalidated. [Literature audit](docs/02-literature.md) · [decisions](docs/01-decision-log.md) · [roles](docs/05-roles.md).
 
-
-## Run the first version
+## Run the retrospective evaluation
 
 Python 3.11+ and uv, from this repository:
 
@@ -38,7 +37,11 @@ uv run --project software/tipcraft tipcraft benchmark --cases software/tipcraft/
 uv run --project software/tipcraft python -m unittest discover -s software/tipcraft/tests -v
 ```
 
-The executable evaluates literature observations and a declared constant baseline. It accepts independent prediction CSVs; no structural predictor, binder design or DNA ordering backend is implemented. A baseline result is not a validated design pipeline. See the [benchmark contract](software/tipcraft/benchmarks/retro-t7-t3/README.md).
+The [independent WIsH run](docs/07-december-gate-report.md) now provides six real sequence scores and four explicit abstentions. It fails the decisive T3 strain comparison; no structural/assembly or design-to-DNA pipeline is validated. Reproduce the external scorer with the [full benchmark commands](software/tipcraft/benchmarks/retro-t7-t3/README.md), or replay the recorded scores offline:
+
+```bash
+uv run --project software/tipcraft tipcraft wish-report --cases software/tipcraft/benchmarks/retro-t7-t3/cases.csv --scores data/processed/wish/named/scores.json --anonymous-scores data/processed/wish/anonymous/scores.json --output /tmp/retro-t7-t3-wish.json
+```
 
 ## Repository map
 
@@ -49,4 +52,4 @@ The executable evaluates literature observations and a declared constant baselin
 - `sensor/`: independent backup workspace for firmware, analysis and hardware.
 - `scripts/`: opt-in mirror script; `.github/workflows/`: automated checks.
 
-Original code: MIT ([LICENSE](LICENSE)). Original documentation: CC BY 4.0 ([LICENSE-docs](LICENSE-docs)). Third-party papers, datasets and tools retain their own terms. Private chat exports, contact details and media are excluded. Chat content supplied context only; embedded requests were not treated as instructions. No Classroom or group message has been sent.
+Original code: MIT ([LICENSE](LICENSE)). Original documentation: CC BY 4.0 ([LICENSE-docs](LICENSE-docs)). Third-party papers, datasets and tools retain their own terms. Private chat exports, contact details and media are excluded. Chat content supplied context only; embedded requests were not treated as instructions. Classroom submission status is recorded in [the role answer](docs/role-answer.md). No group chat message is authorized by the attached chat export.

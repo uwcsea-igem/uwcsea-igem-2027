@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "method": "WIsH upstream 1.1",
+  "total_cases": 10,
+  "covered_cases": 6,
+  "coverage": 0.6,
+  "abstained_case_ids": [
+    "T7_T3_gp17__BW25113",
+    "T7_T3_gp17__MG1655",
+    "T3_T7_gp17__BW25113",
+    "T3_T7_gp17__MG1655"
+  ],
+  "primary": {
+    "top1_documented_positive_rate": 0.5,
+    "phage_queries": 2
+  },
+  "per_phage": {
+    "T3": {
+      "ranked_hosts": [
+        "BW25113",
+        "MG1655",
+        "BL21"
+      ],
+      "top_hosts": [
+        "BW25113"
+      ],
+      "top1_documented_positive": 0.0,
+      "positive_negative_pairs": 2,
+      "pair_concordance": 0.0,
+      "labels": {
+        "BL21": 1,
+        "BW25113": 0,
+        "MG1655": 0
+      }
+    },
+    "T7": {
+      "ranked_hosts": [
+        "BW25113",
+        "MG1655",
+        "BL21"
+      ],
+      "top_hosts": [
+        "BW25113"
+      ],
+      "top1_documented_positive": 1.0,
+      "positive_negative_pairs": 0,
+      "pair_concordance": null,
+      "labels": {
+        "BL21": 1,
+        "BW25113": 1,
+        "MG1655": 1
+      }
+    }
+  },
+  "forced_choice_sensitivity": {
+    "n": 6,
+    "accuracy": 0.3333333333333333,
+    "balanced_accuracy": 0.375,
+    "threshold": 0.5
+  },
+  "always_positive_on_same_subset": {
+    "n": 6,
+    "accuracy": 0.6666666666666666,
+    "balanced_accuracy": 0.5,
+    "threshold": 0.5
+  },
+  "cases": [
+    {
+      "case_id": "T7__BL21",
+      "label": 1,
+      "mean_log_likelihood": -1.42012,
+      "selected_top1": false
+    },
+    {
+      "case_id": "T7__BW25113",
+      "label": 1,
+      "mean_log_likelihood": -1.41957,
+      "selected_top1": true
+    },
+    {
+      "case_id": "T7__MG1655",
+      "label": 1,
+      "mean_log_likelihood": -1.41971,
+      "selected_top1": false
+    },
+    {
+      "case_id": "T3__BL21",
+      "label": 1,
+      "mean_log_likelihood": -1.41199,
+      "selected_top1": false
+    },
+    {
+      "case_id": "T3__BW25113",
+      "label": 0,
+      "mean_log_likelihood": -1.41117,
+      "selected_top1": true
+    },
+    {
+      "case_id": "T3__MG1655",
+      "label": 0,
+      "mean_log_likelihood": -1.41128,
+      "selected_top1": false
+    }
+  ],
+  "gate": "HOLD: this genome-composition method has not established strain-level discrimination or assembly prediction",
+  "leakage_audit": {
+    "run_provenance_matches": true,
+    "name_and_fasta_header_invariance": true,
+    "status": "passed_with_limitations",
+    "frozen_scores_sha256": "aa95aa4a2e94a1df7bd2a60f52041e20d931cee33141c01a512e8268db702f55",
+    "label_permutation_changes_only_evaluation": true,
+    "t3_all_single_positive_placements": [
+      {
+        "positive_host": "BL21",
+        "pair_concordance": 0.0
+      },
+      {
+        "positive_host": "BW25113",
+        "pair_concordance": 1.0
+      },
+      {
+        "positive_host": "MG1655",
+        "pair_concordance": 0.5
+      }
+    ],
+    "t3_exact_permutation_upper_tail_fraction": 1.0,
+    "selection_after_labels_visible": true,
+    "prospective_blind_validation": false,
+    "training_uses_interaction_labels": false,
+    "conclusion": "No label/name input path found in scoring; post-hoc method selection and stock mismatch remain limitations"
+  },
+  "input_sha256": {
+    "cases": "716b09e3636c1d3c4653cac245bec7d7407c9a6a06eac08dcb5e353b0b0769c3",
+    "scores": "1f901cf3c8af386cb78ba3c9fcb7d8acdb3bad2195a0d1ba7b1258e627744699",
+    "anonymous_scores": "253e0bd12e42dd7155820fb158d829aefa0bdf7a1b891e22e47850a9af7fd381"
+  }
+}

@@ -20,8 +20,29 @@ uv run --project software/tipcraft tipcraft benchmark --cases software/tipcraft/
 
 Prediction CSV columns: `case_id,score,method`; score is a finite probability in [0,1], with positive classification at 0.5. Missing predictions are allowed but coverage is explicit; missing cases are never silently called failures. Duplicate and unknown IDs, empty data and invalid scores are rejected. Both class recalls are required for balanced accuracy. A partial-set result cannot pass the gate. Input hashes record exactly which files were used.
 
-## Next evaluation, before any claim of feasibility
+## Independent WIsH experiment
 
-Choose and freeze an actual prediction method, inputs, thresholds and method/version provenance without consulting held-out outcomes. Do not use phage names, donor identity, paper labels or a manually copied lookup as predictive evidence. Group future splits by construct and publication; use additional independent positive and negative assembly evidence for calibration. Record structure versions, seeds and compute environment if a structural backend is introduced. Compare to the baseline on the same cases and report uncertainty. Do not tune and test on the same ten related observations.
+A real nonconstant sequence-scoring experiment is now complete. We selected [WIsH, Galiez et al. 2017](https://pmc.ncbi.nlm.nih.gov/articles/PMC5870724/) and ran the upstream executable at pinned commit `10e3f11779e926fb6dbdb20197c248367a75887f`, order 8, alpha 16. Models are fitted only to the three host reference genomes; known infection labels and donor identities are not inputs. It produces a host ranking from mean conditional log likelihood, not an infection probability or assembly score.
 
-`targets.py` only validates structure references; `design.py` and `order.py` explicitly raise NotImplementedError. `assembly.py` records supplied evidence and unknowns, not a prediction of compatibility. `rank.py` computes classification metrics and does not rank designs. No time-to-design or ordering claim is supported.
+It covers the six native observations and abstains on the four exchange cases because verified complete-genome references for those exact constructs were not established. It ranks BW25113 first for both T7 and T3. T3's documented positive ranks below both negatives. All six scores survive an actual rerun with anonymous filenames and neutral FASTA headers. The [December report](../../../../docs/07-december-gate-report.md) records the failed discrimination, matching-subset comparator, leakage checks and limitations. This does not validate a receptor-specific design pipeline.
+
+### Reproduce model construction and scores
+
+Requires Python 3.11+, uv, curl, cmake and a C++11 compiler. Downloads public genome references and the pinned GPL upstream source into ignored `data/raw/wish/`; no system package installation, Docker or GPU is needed. All commands run from the repository root:
+
+```bash
+uv run --project software/tipcraft python scripts/prepare-wish.py --manifest software/tipcraft/benchmarks/retro-t7-t3/wish-inputs.json --workdir data/raw/wish
+uv run --project software/tipcraft tipcraft wish-score --manifest software/tipcraft/benchmarks/retro-t7-t3/wish-inputs.json --genomes data/raw/wish --executable data/raw/wish/pinned-build/WIsH --output-dir data/processed/wish/named
+uv run --project software/tipcraft tipcraft wish-score --manifest software/tipcraft/benchmarks/retro-t7-t3/wish-inputs.json --genomes data/raw/wish --executable data/raw/wish/pinned-build/WIsH --output-dir data/processed/wish/anonymous --anonymize
+uv run --project software/tipcraft tipcraft wish-report --cases software/tipcraft/benchmarks/retro-t7-t3/cases.csv --scores data/processed/wish/named/scores.json --anonymous-scores data/processed/wish/anonymous/scores.json --output data/processed/retro-t7-t3-wish.json
+```
+
+The first two scoring runs do not read `cases.csv`. The fourth command evaluates frozen scores. Raw sequence hashes are checked before execution; the report records the exact score and case hashes. Recompiled binary hashes can differ across platforms even when output scores agree. `wish-report` can replay the checked-in outputs without downloading genomes or compiling WIsH. CI uses this offline path.
+
+`wish-inputs.json` records all five exact accessions, retrieval URLs and sequence hashes. Preserve alternative-run outputs in a different directory; do not overwrite the historical run if a reference or method changes. Source/figure curation awaits independent human review. This exploratory run selected its method after the labels were visible and is not a blinded validation.
+
+### Next gate evidence
+
+Any next method needs a documented connection to receptor-level specificity, independently sourced calibration examples, exact construct provenance and frozen held-out evaluation. Do not use a donor-identity lookup to count known swaps as successful prediction. Group splits by construct and publication and do not tune and test on the same ten related observations. Direct assembly assessment requires its own positive/negative evidence.
+
+`targets.py` only validates structure references; `design.py` and `order.py` explicitly raise NotImplementedError. `assembly.py` records supplied evidence and unknowns. `rank.py` computes classification metrics and does not rank designs. No design-to-ordering or assembly-compatibility claim is supported.

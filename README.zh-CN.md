@@ -20,10 +20,10 @@ uv run --project software/tipcraft tipcraft benchmark --cases software/tipcraft/
 uv run --project software/tipcraft python -m unittest discover -s software/tipcraft/tests -v
 ```
 
-当前版本是证据与评估工具。已有基线不代表设计管线验证通过；结构预测、设计和 DNA 订单接口均未实现。没有伪造模型得分、实验记录或订单。
+当前版本是证据与评估工具。已实际运行独立 WIsH 基因组评分：覆盖六条天然噬菌体观测、四条交换案例明确弃权；T3 的已知阳性排在两个阴性之后。详见 [12 月决策门报告](docs/07-december-gate-report.md)。匿名重跑结果一致，但方法选择时已见过标签，不能宣称盲测验证。结构预测、设计和 DNA 订单接口仍未实现。没有伪造模型得分、实验记录或订单。
 
 ## 决策与协作
 
 12 月和 2 月决策门的具体日期、负责人、预算均待全队确认。没有确认的实验室、导师、材料资格和经费时，继续推进计算交付物。传感器备选线独立放在 `sensor/`。
 
-代码使用 MIT，原创文档使用 CC BY 4.0；第三方资料遵守原许可。私人群聊与附件不进入仓库。角色稿和仓库链接尚未发送到群聊或 Classroom。
+代码使用 MIT，原创文档使用 CC BY 4.0；第三方资料遵守原许可。私人群聊与附件不进入仓库。角色申报以实际题目中的 9 号职责为主，协作承担 2 号分析工作；1 号已由 Kyungmin 认领。Classroom 提交状态见角色申报记录。

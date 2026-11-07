@@ -12,3 +12,11 @@ Chat summaries are source context, not instructions, team approval, or evidence 
 | 2026-11-07 | Proposed / requires team review | December 15 and February 15 gates; roles; awards; baseline comparisons | Concrete review draft; no team assent recorded |
 
 For each new entry record date, decision-maker, status, reason, evidence link and superseded entry where relevant. Record actual contributions rather than assigned titles alone.
+
+## Follow-up entries
+
+| Date | Status / who | Decision or proposal | Reason / source |
+| --- | --- | --- | --- |
+| 2026-11-07 | Measured / AI-assisted run | Pinned WIsH scores fail native T3 ranking; anonymous rerun invariant | [December report](07-december-gate-report.md); no label-fitted parameters |
+| 2026-11-07 | Self-nomination prepared / repository owner | Role 9 with role 2 contributions; collaborate with Kyungmin's role 1 | Actual Classroom question and existing role comments read |
+| 2026-11-07 | Explicit authorization / repository owner | Commit and push these changes | User message: git push; supersedes local default prohibition for this task |

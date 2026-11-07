@@ -1,0 +1,45 @@
+Processing <workdir>/hosts/BW25113.fna
+Parameters for model BW25113
+Order: 8
+Alpha: 16
+Probability vector size: 262144
+lowerOrderCounts vector size: 65536
+Pseudo counts vector size: 4
+Processing <workdir>/hosts/BL21.fna
+Parameters for model BL21
+Order: 8
+Alpha: 16
+Probability vector size: 262144
+lowerOrderCounts vector size: 65536
+Pseudo counts vector size: 4
+Processing <workdir>/hosts/MG1655.fna
+Parameters for model MG1655
+Order: 8
+Alpha: 16
+Probability vector size: 262144
+lowerOrderCounts vector size: 65536
+Pseudo counts vector size: 4
+
+Processing BW25113 (approx. 1/3)
+Processing BL21 (approx. 2/3)
+Processing MG1655 (approx. 3/3)
+0,3
+1,3
+2,3
+0,3
+1,3
+2,3
+WARNING: BL21,BW25113,MG1655, do(es) not have null-model parameters, and their p-value calculation will be missing in the prediction.list file.
+
+Here is the procedure to fit those parameters:
+        
+
+The parameters for their null-distribution can be computed this way:
+- build models with WIsH for each of the listed genomes that miss the null-parameters,
+- run the WIsH prediction of the models against a large set of various phages,
+- for every model M, fit (e.g. using maximum likelihood) a normal distribution over the scores of M (in the likelihood.matrix file) obtained on phage genomes that are known not to infect the same genus as M,
+- for every model M, add a line to the file negFits.csv with the following format:
+M<TAB>Mean<TAB>StandardDeviation
+
+To get the p-values associated to a prediction, you can then run the prediction with the options -b -n negFits.csv
+when running a prediction.

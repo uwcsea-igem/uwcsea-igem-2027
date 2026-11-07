@@ -1,18 +1,18 @@
-# Proposed role answer
+# Role answer
 
-Ready-to-copy draft for the role question · 2026-11-07 · not submitted.
+Prepared against the actual Classroom role question on 2026-11-07. Role 1 (Dry lab lead) is already claimed by Kyungmin; this answer proposes role 9 with contributions to role 2. Formal team confirmation remains separate from self-nomination.
 
-**Proposed role: Software, Modelling and Technical Infrastructure**
+## Classroom answer
 
-I would like to take responsibility for four connected areas of the project:
+9 — Wiki, software, presentation (primary), with a proposed contribution to 2 — Data analyst/modelling, in coordination with the team.
 
-1. **TipCraft software pipeline:** build and maintain the package, starting with a reproducible retrospective benchmark using published T7/T3 observations. I will keep target inputs, design-tool integration, assembly assessment, ranking and future sequence export as separate interfaces, with clear evidence for what each stage can actually do.
-2. **Computational modelling:** define evaluation metrics, compare predictions with known outcomes, record uncertainty and failure cases, and bring a concrete feasibility report to the December decision gate. Binding, assembly and infection will be evaluated separately.
-3. **Sensor backup:** develop signal processing and algorithms, and contribute to firmware, hardware integration and bench testing if the team activates this direction. I will agree the scope with the people working on the sensor.
-4. **Wiki and data infrastructure:** maintain the repository, reproducible data formats, automated checks and wiki source, and help everyone record their work accurately for Attributions.
+I would like to take responsibility for the software and technical infrastructure: implementing and maintaining the TipCraft pipeline, computational modelling and retrospective benchmarks, reproducible data formats and analysis, automated checks, and the wiki/GitHub infrastructure. I will work with Kyungmin as the dry-lab lead rather than duplicate that role. If we activate the sensor backup, I would also take on signal-processing algorithms, firmware and hardware integration/bench testing in coordination with that team.
 
-My first deliverables will be the four-claim literature audit, a runnable benchmark with a documented baseline, and a one-page plan with proposed go/no-go criteria. I will coordinate the biological assumptions with Kyungmin, project priorities and laboratory access with Kevin, and experimental validation with the team and supervisor. This is a proposal for responsibilities, not a claim that these tools or experiments are already complete.
+My first deliverables are the four-claim literature audit, a runnable benchmark with explicit failure cases, and a one-page plan for the December decision gate. The first real WIsH run is complete: it does not distinguish the critical native T3 strain cases, so I have documented that limitation instead of treating the model as validated. Binding, assembly and infection will remain separate claims.
 
-Submission link once the files are published: https://github.com/TypeThe0ry/uwcsea-igem-2027#one-page-project-plan
+Project plan and code: https://github.com/TypeThe0ry/uwcsea-igem-2027
+December evidence report: https://github.com/TypeThe0ry/uwcsea-igem-2027/blob/main/docs/07-december-gate-report.md
 
-The URL identifies the configured remote; these local files have not been pushed, and the link is not yet verified to show this content.
+## Submission status
+
+Prepared for submission to the iGEM Classroom role question. This file records proposed responsibility; it does not assert team approval. Submission status will be updated after the website confirms completion.

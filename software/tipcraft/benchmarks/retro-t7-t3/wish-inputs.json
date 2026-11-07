@@ -1,0 +1,74 @@
+{
+  "method": "WIsH 1.1, upstream executable; order 8 and default alpha; top-1 host ranking",
+  "selected_before_first_score_run": true,
+  "selection_context": "Ando labels were already visible; no prospective blinding is claimed",
+  "hosts": {
+    "BL21": "CP010816.1",
+    "BW25113": "CP009273.1",
+    "MG1655": "U00096.3"
+  },
+  "phages": {
+    "T7": "NC_001604.1",
+    "T3": "NC_003298.1"
+  },
+  "excluded_constructs": {
+    "T7_T3_gp17": "No verified full-genome accession mapped to the exact Ando construct",
+    "T3_T7_gp17": "No verified full-genome accession mapped to the exact Ando construct"
+  },
+  "primary_endpoint": "Per-phage top-1 selected host is a documented positive; do not infer all other hosts negative",
+  "secondary_endpoint": "Within-phage positive-negative pair concordance where both labels exist",
+  "binary_sensitivity_only": "Top-1 as positive and other candidates as negative; a forced-choice adaptation, not calibrated host-range prediction",
+  "label_access": "Genome fetching and WIsH build/predict do not read cases.csv; evaluation occurs after score files are written",
+  "no_tuning": "Default order and alpha, fixed candidate set, no label-fitted threshold or parameter search",
+  "upstream_commit": "10e3f11779e926fb6dbdb20197c248367a75887f",
+  "order": 8,
+  "alpha": 16,
+  "upstream_archive_url": "https://codeload.github.com/soedinglab/WIsH/tar.gz/10e3f11779e926fb6dbdb20197c248367a75887f",
+  "genome_sources": {
+    "BL21": {
+      "accession": "CP010816.1",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/fasta/CP010816.1?download=false",
+      "length": 4528118,
+      "file_sha256": "de11e02809f1653314ec4ae106c66c7efe738ef5060f5a9e45a0abe40e8c1340",
+      "sequence_sha256": "669a5120ac4305418137e69b37e85d8c5c099908b4f49f212d78effa6455fff9",
+      "retrieved_date": "2026-11-07",
+      "header": ">ENA|CP010816|CP010816.1 Escherichia coli strain BL21 (TaKaRa), complete genome."
+    },
+    "BW25113": {
+      "accession": "CP009273.1",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/fasta/CP009273.1?download=false",
+      "length": 4631469,
+      "file_sha256": "156fe97d5450a12d5f52e17946d6cbbee9bc8b7b79c46f68aa0d4524ff1d8f6a",
+      "sequence_sha256": "3761072f8884add5e9facdafc583de5d81a4cf5dbc7e51023ba966f3cf4887ce",
+      "retrieved_date": "2026-11-07",
+      "header": ">ENA|CP009273|CP009273.1 Escherichia coli BW25113, complete genome."
+    },
+    "MG1655": {
+      "accession": "U00096.3",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/fasta/U00096.3?download=false",
+      "length": 4641652,
+      "file_sha256": "c41a4207c8916ba6138460d129ce5604cb307d40b7d56207878a9e731a418074",
+      "sequence_sha256": "e999dceccb76562d40e49a10d9e6d4cf1c05d184f4f80b92bb32d4a2420c11d0",
+      "retrieved_date": "2026-11-07",
+      "header": ">ENA|U00096|U00096.3 Escherichia coli str. K-12 substr. MG1655, complete genome."
+    },
+    "T7": {
+      "accession": "NC_001604.1",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_001604.1&rettype=fasta&retmode=text",
+      "length": 39937,
+      "file_sha256": "4411e203f3ffac4d85f42d6994714cb86d495440b678ebab9e5a075f5fdc7c7a",
+      "sequence_sha256": "00ce104454ea06f9b47d6fba8e62499bfbff7e84bc17141665b96a80588a81fd",
+      "retrieved_date": "2026-11-07",
+      "header": ">NC_001604.1 Enterobacteria phage T7, complete genome"
+    },
+    "T3": {
+      "accession": "NC_003298.1",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_003298.1&rettype=fasta&retmode=text",
+      "length": 38208,
+      "file_sha256": "1ac1012cd4b506b4bcf7ee13d3cccef1a21683cc40026feabec4ea0e8a3ef6a6",
+      "sequence_sha256": "a53b31f426a5bf450257f4f1a5dc5ee625f70c8df85204eed8e0033e6fe0d338",
+      "retrieved_date": "2026-11-07",
+      "header": ">NC_003298.1 Enterobacteria phage T3, complete genome"
+    }
+  }
+}

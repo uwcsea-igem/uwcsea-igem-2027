@@ -4,9 +4,9 @@ Single source for eventual Attributions. [Role answer](role-answer.md) is a prop
 
 | Person / identity | Proposed or discussed area | Status | Contribution evidence |
 | --- | --- | --- | --- |
-| Repository owner — preferred attribution name pending | TipCraft, modelling, sensor algorithms/hardware, wiki and data infrastructure | Self-nomination draft | No completed human contribution claimed by this scaffold |
+| Repository owner — preferred attribution name pending | TipCraft, modelling, sensor algorithms/hardware, wiki and data infrastructure | Role 9 + proposed role 2 contribution | AI-assisted package, audit and [actual benchmark run](07-december-gate-report.md); human review pending |
 | Kevin | Project coordination; investigating lab access | Discussed in chat | Access not yet verified |
-| Kyungmin | Initial computational/biological concept and budget estimates | Discussion source | Estimates and assumptions require verification |
+| Kyungmin | Initial computational/biological concept, budget estimates and claimed role 1 (Dry lab lead) | Discussion source | Estimates and assumptions require verification |
 
 For every actual contribution add date, contributor, task, artifact/commit or notebook link, collaborators and review status. No other responsibilities are assigned here.
 

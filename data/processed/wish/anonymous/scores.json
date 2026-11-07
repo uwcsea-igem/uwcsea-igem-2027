@@ -1,0 +1,27 @@
+{
+  "method": "WIsH upstream 1.1",
+  "order": 8,
+  "alpha": 16,
+  "upstream_commit": "10e3f11779e926fb6dbdb20197c248367a75887f",
+  "executable_sha256": "3c2e456346d2903a09c3392880f1e10559620107fac085df4be20c64f44e47ff",
+  "manifest_sha256": "939af977b8c00763b957ad9640e58c68387a306f8bde69068cf4a78baac28528",
+  "score_type": "mean conditional log likelihood; higher is better; not probability",
+  "anonymized": true,
+  "scores": {
+    "T3": {
+      "BL21": -1.41199,
+      "BW25113": -1.41117,
+      "MG1655": -1.41128
+    },
+    "T7": {
+      "BL21": -1.42012,
+      "BW25113": -1.41957,
+      "MG1655": -1.41971
+    }
+  },
+  "excluded_constructs": {
+    "T7_T3_gp17": "No verified full-genome accession mapped to the exact Ando construct",
+    "T3_T7_gp17": "No verified full-genome accession mapped to the exact Ando construct"
+  },
+  "no_labels_loaded": true
+}

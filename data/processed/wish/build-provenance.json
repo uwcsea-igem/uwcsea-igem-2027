@@ -1,0 +1,27 @@
+{
+  "upstream_commit": "10e3f11779e926fb6dbdb20197c248367a75887f",
+  "archive_sha256": "6aa2586cec3ce4f20b493091380e998b14bfcc8b912c75ce02db5cbc2df63d43",
+  "binary_sha256": "3c2e456346d2903a09c3392880f1e10559620107fac085df4be20c64f44e47ff",
+  "compiler": "Apple clang version 21.0.0 (clang-2100.3.34.2)",
+  "cmake_commands": [
+    [
+      "cmake",
+      "-S",
+      "<workdir>/WIsH-10e3f11779e926fb6dbdb20197c248367a75887f",
+      "-B",
+      "<workdir>/pinned-build",
+      "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
+      "-DCMAKE_BUILD_TYPE=Release"
+    ],
+    [
+      "cmake",
+      "--build",
+      "<workdir>/pinned-build",
+      "-j",
+      "2"
+    ]
+  ],
+  "build_type": "Release",
+  "openmp_available": false,
+  "execution_threads": 1
+}
