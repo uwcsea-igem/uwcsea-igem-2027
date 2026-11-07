@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "reviewed_date": "2026-11-07",
+  "upstream_commit": "f7e30abc1b0bbba1ae76b8f58a3363bbbc5cd54f",
+  "notebook": {
+    "path": "manuscript_scripts/results_analysis/public_data_modeling_analysis.ipynb",
+    "url": "https://github.com/Noonanav/GenoPHI/blob/f7e30abc1b0bbba1ae76b8f58a3363bbbc5cd54f/manuscript_scripts/results_analysis/public_data_modeling_analysis.ipynb",
+    "git_blob_sha1": "d656397f712f14bd0d1cb87961ca308d1f2f344f",
+    "sha256": "878aa6cec41dd12b6cce696f6b40601b20182f81ea96ad50d75a7cc52561ed14",
+    "bytes": 103115194,
+    "inspection_scope": "Code cells only; notebook prediction outputs not inspected"
+  },
+  "observations": [
+    {
+      "zero_based_notebook_cell_index": 10,
+      "zero_based_code_cell_ordinal": 6,
+      "source_sha256": "698582466d5475c89edf02d7395f03cf43cb534d4a2ca98b36dcae73cfda2986",
+      "cell_source_lines": [
+        23,
+        29
+      ],
+      "observation": "External filtering consumes pre-called host/phage protein directories; phage path ends Gaborieau/prodigal-gv/genome_AAs."
+    },
+    {
+      "zero_based_notebook_cell_index": 18,
+      "zero_based_code_cell_ordinal": 13,
+      "source_sha256": "f3dd93a2fb34c6c44ac92c5784882ef6ffcb6afffaa66a825239b0ff3575cea4",
+      "cell_source_lines": [
+        11,
+        21,
+        32,
+        43
+      ],
+      "observation": "Demo preparation selects existing host/phage .faa files and copies them with shutil.copy into data/test_data/strain_AAs and phage_AAs."
+    }
+  ],
+  "other_inspected_paths": [
+    "README.md",
+    "genophi/cli.py",
+    "genophi/utils.py",
+    "genophi/workflows/protein_family_workflow.py",
+    "setup.py"
+  ],
+  "bounded_conclusion": "The inspected source establishes protein-input consumption and demo-copy provenance, but no exact gene-caller invocation, version/mode, DNA source representation or terminal treatment. Directory naming alone does not establish these details.",
+  "gene_callers_executed": false,
+  "parameters_selected_from_target_outcomes": false
+}

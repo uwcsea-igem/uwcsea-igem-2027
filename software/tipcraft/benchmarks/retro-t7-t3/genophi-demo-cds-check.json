@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-07",
+  "purpose": "Check whether deposited demo protein coordinate annotations translate from the authenticated deposited DNA, without rerunning gene callers or changing sequences",
+  "selection_context": "0/25 exact regenerated protein multisets already observed; all2980 demo headers were inspected for format: code11 only; ATG/GTG/TTG and Edge starts. Seven partial headers observed. No CDS translation comparisons run before this specification.",
+  "inputs": {
+    "annotation_policy": {
+      "path": "software/tipcraft/benchmarks/retro-t7-t3/genophi-annotation-check.json",
+      "sha256": "9374ccdd57b41f235fbffa2d61c940019031c2c9196e3714d1f120c0f1884dea"
+    },
+    "annotation_report": {
+      "path": "data/processed/genophi-annotation-check.json",
+      "sha256": "4618f08ac18ca4eb739f2b4b6ec5c23dd0798570f95e3f3182a8a6835a0459cf"
+    },
+    "source_lengths": {
+      "path": "data/processed/genophi-phage-source-lengths.json",
+      "sha256": "1bf2b9f23692a8c77591cb28ed8e9b26fe085f9336e8a967e713c79dde899f71"
+    }
+  },
+  "annotation_workdir": "data/raw/genophi-annotation/run-1",
+  "scope": "All25 pinned demo phage proteomes, all2980 deposited protein records, and the corresponding frozen regenerated proteomes. Not a host or infection evaluation.",
+  "rules": [
+    "Use exactly the declared one-based inclusive start/end/strand; no shifts, alternative frames, trimming, sequence edits or searches for better matches.",
+    "Translate bacterial code11; reverse-complement minus-strand CDS. Require complete codons.",
+    "For a declared non-Edge ATG/GTG/TTG start, verify that codon and translate initiation as M; Edge retains its actual first translated codon.",
+    "Interpret partial flags as left/right genomic boundary flags; use strand to identify partial translation start/end. Check declared start/stop consistency and exact protein sequence including terminal stop where declared complete.",
+    "Preserve invalid/unsupported records as explicit failed checks, not invented corrections.",
+    "Compare deposited and regenerated start/end/strand coordinate sets and same-strand stop positions descriptively, retaining changed-start cases; never select new caller parameters from these results.",
+    "Count coordinates exceeding metadata genome length as representation diagnostics only, without declaring physical termini."
+  ],
+  "sources": [
+    "https://github.com/hyattpd/Prodigal/wiki/Understanding-the-Prodigal-Output",
+    "https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi#SG11"
+  ],
+  "interpretation": "Translation agreement supports sequence correspondence for the annotated intervals. It does not authenticate experimental stock identity, prove gene calling correct, establish the authors exact calling commands, or reproduce infection predictions."
+}

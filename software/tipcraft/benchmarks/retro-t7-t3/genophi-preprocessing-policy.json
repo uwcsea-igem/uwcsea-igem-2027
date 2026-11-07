@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-07",
+  "status": "fixed_annotation_component_for_next_retraining_specification",
+  "method_description": "GenoPHI-inspired protein-family/CatBoost experiment with uniform reannotation; an explicit methodological adaptation, not exact replication of published proteomes",
+  "decision_context": "Frozen after label-free annotation and CDS correspondence diagnostics, before feature clustering, model fitting or new target interaction scores. Ando labels were already known; study remains exploratory retrospective.",
+  "decision": "Use the same pinned gene callers and commands for every retained training, validation and target genome; deposited example proteomes remain technical controls and are never mixed into feature inputs.",
+  "annotation_pilot": {
+    "path": "software/tipcraft/benchmarks/retro-t7-t3/genophi-annotation-check.json",
+    "sha256": "9374ccdd57b41f235fbffa2d61c940019031c2c9196e3714d1f120c0f1884dea"
+  },
+  "evidence": [
+    {
+      "path": "data/processed/genophi-annotation-check.json",
+      "sha256": "4618f08ac18ca4eb739f2b4b6ec5c23dd0798570f95e3f3182a8a6835a0459cf"
+    },
+    {
+      "path": "data/processed/genophi-demo-cds-audit.json",
+      "sha256": "d3f38e1e79666ab0cf95b1e1ffad28e1f30300a5ed4720873c11ad1c7366e94c"
+    },
+    {
+      "path": "data/processed/genophi-annotation-source-provenance.json",
+      "sha256": "a27e7de6ebc4f70a7bb81b335037e019ec5341972332c06792b82b19d576ac74"
+    },
+    {
+      "path": "data/processed/genophi-phage-source-lengths.json",
+      "sha256": "1bf2b9f23692a8c77591cb28ed8e9b26fe085f9336e8a967e713c79dde899f71"
+    }
+  ],
+  "tools": {
+    "host": {
+      "provenance_path": "data/raw/tools/prodigal-2.6.3/provenance.json",
+      "provenance_sha256": "fca12f2b49e9835ec5ee842d865331ca2abe04532134b1d6b971b30f9647a40a",
+      "repository": "https://github.com/hyattpd/Prodigal",
+      "commit": "004218fbeb2cf54fe12d88ec2eede6a27d70ebf7",
+      "executable": "data/raw/tools/prodigal-2.6.3/source/prodigal",
+      "executable_sha256": "4d797d04df4c259e5f46c512269a543d9d53f9614c27eef07a2e6f10ebdb898e",
+      "version_stderr": "\nProdigal V2.6.3: February, 2016\n\n"
+    },
+    "phage": {
+      "provenance_path": "data/raw/tools/prodigal-gv-2.11.0/provenance.json",
+      "provenance_sha256": "ca1a66af44590ec22001c431e0edee0cb75c50fdc45aff4c671690629839905b",
+      "repository": "https://github.com/apcamargo/prodigal-gv",
+      "commit": "80e488b3cdd7123684f001759eaf50cdb879c81a",
+      "executable": "data/raw/tools/prodigal-gv-2.11.0/source/prodigal-gv",
+      "executable_sha256": "e91deecbdefaad79dfc7ce37610deab0c6eee3b47b30d91a1c1581d24269c900",
+      "version_stderr": "\nProdigal V2.11.0-gv: March, 2023\n\n"
+    }
+  },
+  "commands": {
+    "host": [
+      "-p",
+      "single",
+      "-g",
+      "11",
+      "-q",
+      "-f",
+      "gff"
+    ],
+    "phage": [
+      "-p",
+      "meta",
+      "-q",
+      "-f",
+      "gff"
+    ]
+  },
+  "sequence_rules": [
+    "Authenticate exact source bytes and bind source-to-phenotype mapping separately from protein prediction.",
+    "Retain original contig order and boundaries, all IUPAC DNA bases and their multiplicities; uppercase bases and replace only headers with unique neutral identifiers.",
+    "For phages use the deposited representation unchanged; only the exact-hash-reviewed T4LD leading empty-record exception is permitted by the normalizer. Do not trim the observed terminal60 overlap or infer circularity.",
+    "Keep raw caller .faa/.gff/logs; bind all actual tool, source and output hashes.",
+    "For later protein-feature inputs, remove exactly one terminal stop symbol per protein; preserve predicted start, length, copy count and internal amino-acid sequence. Reject internal stops or empty records; retain and count ambiguous X residues. Give all proteins globally unique neutral IDs."
+  ],
+  "training_isolation": [
+    "Gene calling operates independently per genome, without infection labels or donor identity. Host single mode fits a within-genome coding model; phage meta mode uses the built-in distributed coding models.",
+    "Built-in coding-model training-genome overlap was not audited here. These are gene-calling models, not supervised infection predictors; do not claim generic pretraining independence.",
+    "Fit reference protein clusters, occurrence consolidation, feature selection, hyperparameters and any calibration using external training partitions only. Assign validation/target proteins to frozen training references.",
+    "Do not choose new annotation settings based on Ando infection results or transfer donor phenotypes."
+  ],
+  "full_training_ready": false,
+  "remaining_before_fit": [
+    "All host input files authenticated and target-near hosts excluded by frozen ANI policy",
+    "Final external training/validation memberships combining source-label mask and host/phage relatedness groups",
+    "Exact feature-clustering/assignment, feature-selection and CatBoost parameters, dependency versions, group splits and seeds frozen in a complete run manifest",
+    "Resource measurement for full feature preparation and modelling; no full-workflow estimate is inferred from the annotation pilot"
+  ],
+  "interpretation": "CDS correspondence supports using these deposited sequences as the declared representations for preprocessing, not experimental stock identity. Annotation choices do not establish adsorption, binding, assembly or functional infection."
+}

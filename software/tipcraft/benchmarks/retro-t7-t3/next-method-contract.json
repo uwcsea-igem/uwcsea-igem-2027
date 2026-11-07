@@ -57,6 +57,11 @@
     "Historical WIsH restricted to exactly the same evaluated query-host pairs",
     "Always-positive binary baseline on the identical subset, only for a separately declared binary sensitivity analysis"
   ],
+  "additional_attribution_controls_recorded_before_feature_pilot_or_model_fitting": [
+    "Record whether frozen phage features can distinguish T7 and T3; if vectors are equal, no prediction differences can be attributed to phage-dependent input features in this representation",
+    "Before interaction-model fitting, specify a host-only ablation using the same external training partitions and eligible host features, with no phage features; compare on identical covered target cases",
+    "The existing ranking screening condition is unchanged, but an apparent ranking win alone cannot establish recognition-head or phage-dependent specificity, especially if a phage-agnostic host model achieves the same ordering"
+  ],
   "secondary_endpoint": "Per-query top-ranked host documented positive, averaging tied winners; do not count unselected hosts as negative",
   "no_target_threshold_tuning": true,
   "source_label_curation_followup": {

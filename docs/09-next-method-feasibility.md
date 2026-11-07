@@ -42,7 +42,7 @@ The [genome-preparation follow-up](13-genome-input-preparation.md) now records a
 
 The [actual relatedness audit](15-relatedness-audit.md) identifies a near-target source genome, `427_P2`, in the training table despite the absence of a T7/T3 name. It also reconstructs 301 related-host groups. Direct execution of the original R function verifies the directional calculation on all frozen pair data; an unrelated publication-control name/accession conflict remains unresolved. Final exclusions still await the complete host audit and training manifest. These are input-curation results, not host-prediction validation.
 
-The [annotation check](16-annotation-feasibility.md) now actually runs a frozen gene-calling procedure on 110 available inputs and recovers both reference gp17 sequences exactly. Its outputs do not exactly reproduce any of the 25 pinned example proteomes. Preprocessing correspondence or a declared uniform-reannotation adaptation must be settled before fitting; successful program execution is not yet reproduction of the complete published predictor.
+The [annotation follow-up](16-annotation-feasibility.md) runs a frozen gene-calling procedure on 110 inputs and recovers both reference gp17 sequences. The regenerated sets differ from all 25 pinned example proteomes, while all 2,980 deposited proteins translate exactly from their declared intervals in the authenticated DNA. A separate component policy now fixes uniform reannotation as an explicit adaptation for every retained training, validation and target genome. This settles the annotation choice without claiming exact upstream replication; full clustering, splits and modelling parameters remain to be frozen before fitting.
 
 ## Fixed next-run contract and reopening conditions
 

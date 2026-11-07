@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-07",
+  "purpose": "Train-only phage protein representation capacity and resource pilot; no host infection model or target outcome evaluation",
+  "context": "Ando outcomes already known; this is exploratory. Freeze representation rules before target assignment. The full host cache remains incomplete, so no partial-set interaction model is substituted.",
+  "inputs": [
+    {
+      "path": "data/processed/genophi-training-source-map.json",
+      "sha256": "39aaf9067132ea492622f13ee98f7acd1e12758366f521609f58b538df73e60d"
+    },
+    {
+      "path": "data/processed/genophi-phage-overlap.json",
+      "sha256": "dc6a514fc081e9320edeeccabfe7aa61fd1f23d2b5232ec11957ea1fc230be90"
+    },
+    {
+      "path": "data/processed/viridic-original-r-comparison-v2.json",
+      "sha256": "fae6206bb55734868eb2879215648e318600afe2a20f394d12fb321cf9400ee9"
+    },
+    {
+      "path": "data/processed/genophi-annotation-check.json",
+      "sha256": "4618f08ac18ca4eb739f2b4b6ec5c23dd0798570f95e3f3182a8a6835a0459cf"
+    },
+    {
+      "path": "software/tipcraft/benchmarks/retro-t7-t3/genophi-preprocessing-policy.json",
+      "sha256": "01d972afdbed81a73f4d19a008a100de3adfbd45e68894a925fe1cf6b7352f82"
+    },
+    {
+      "path": "data/processed/genophi-audit-tool-provenance.json",
+      "sha256": "ed82d72c0edd1ec59d8781a04beee8a932f05997ee75c242abc01405ebea0bf4"
+    }
+  ],
+  "training_phages": [
+    "409_P1",
+    "409_P3",
+    "409_P5",
+    "409_P6",
+    "409_P8",
+    "411_P1",
+    "411_P2",
+    "412_P1",
+    "412_P2",
+    "412_P3",
+    "412_P4",
+    "412_P5",
+    "416_P4",
+    "416_P5",
+    "423_P1",
+    "423_P10",
+    "423_P5",
+    "423_P7",
+    "423_P9",
+    "427_P3",
+    "427_P4",
+    "536_P1",
+    "536_P11",
+    "536_P12",
+    "536_P6",
+    "536_P7",
+    "536_P9",
+    "55989_P1",
+    "55989_P2",
+    "AL505_Ev3",
+    "AL505_Sd2",
+    "AN17_P1",
+    "AN17_P8",
+    "AN24_P2",
+    "AN24_P3",
+    "AN24_P4",
+    "BCH953_P1",
+    "BCH953_P2",
+    "BCH953_P3",
+    "BCH953_P4",
+    "BCH953_P5",
+    "BDX03_P1",
+    "BDX03_P2",
+    "BDX09_P1",
+    "DIJ06_P1",
+    "DIJ07_P1",
+    "DIJ07_P2",
+    "LF110_P1",
+    "LF110_P2",
+    "LF110_P3",
+    "LF110_P4",
+    "LF31_P1",
+    "LF31_P3",
+    "LF50_P3",
+    "LF7074_P1",
+    "LF7074_P2",
+    "LF7074_P3",
+    "LF73_P1",
+    "LF73_P3",
+    "LF73_P4",
+    "LF82_P1",
+    "LF82_P2",
+    "LF82_P3",
+    "LF82_P4",
+    "LF82_P5",
+    "LF82_P6",
+    "LF82_P8",
+    "LF82_P9",
+    "LI10_P1",
+    "LI10_P2",
+    "LI10_P3",
+    "LI10_P4",
+    "LI10_P5",
+    "LI10_P6",
+    "LM02_P1",
+    "LM07_P1",
+    "LM08_P1",
+    "LM08_P2",
+    "LM33_P1",
+    "LM40_P1",
+    "LM40_P2",
+    "LM40_P3",
+    "MT1B1_3A1",
+    "NAN33_P1",
+    "NAN33_P2",
+    "NAN33_P4",
+    "NAN33_P5",
+    "NAN33_P6",
+    "NIC06_P2",
+    "NIC06_P3",
+    "NRG_11A2",
+    "NRG_11B1",
+    "NRG_12A1B"
+  ],
+  "excluded_model_table_phages": [
+    "427_P2"
+  ],
+  "excluded_collection_phage_absent_from_model_table": [
+    "T7_Portugal"
+  ],
+  "target_phages": [
+    "T7",
+    "T3"
+  ],
+  "positive_control": "Copy the lexicographically first retained training phage proteome, under separate neutral query IDs; exact feature-vector equality with the training row is required for a clean mapping control.",
+  "annotation_workdir": "data/raw/genophi-annotation/run-1",
+  "mmseqs_executable": "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+  "mmseqs_sha256": "837eaf6cc9be92ff320c42c4cf56ae0d75f2a53c6ff6b24a577e803e9e3951be",
+  "mmseqs_release": "18-8cc5c",
+  "software_deviation": "MMseqs18 rather than the paper-listed15.6f452; explicit methodological adaptation, with effective parameter logs retained.",
+  "search_parameters": {
+    "coverage": 0.8,
+    "minimum_sequence_identity_parameter": 0.4,
+    "sensitivity": 7.5,
+    "threads": 4,
+    "verbosity": 3
+  },
+  "unoverridden_defaults": [
+    "coverage mode",
+    "alignment mode",
+    "sequence identity mode",
+    "cluster mode",
+    "E-value threshold",
+    "maximum results per query"
+  ],
+  "protein_normalization": "Remove exactly one terminal stop, retain copies/internal sequences/X residues; assign globally unique neutral protein IDs. No target protein enters the training database or occurrence consolidation.",
+  "upstream_semantics": [
+    "Cluster only training proteins; self-search training proteins against all training proteins; novel query proteins search the same all-protein training database, not representatives only.",
+    "Parse11-field MMseqs createtsv alignment records; best target is descending float32 SeqIdentity then ascending float32 E-value. Use first raw-row order for otherwise equal best hits, and report cross-family ties.",
+    "Retain families occurring in more than one selected training genome, matching the selected-subset GenoPHI path.",
+    "Collapse exactly equal training occurrence vectors into one feature, verifying tuple equality instead of relying only on a Python hash. Map novel proteins through frozen family/feature maps and OR presence. Keep explicit zero-vector rows."
+  ],
+  "outputs": [
+    "All93 training protein counts, clustered family counts, filtered/consolidated feature counts",
+    "Per-proteome assigned-protein fraction and retained-feature count; explicit zero vectors; T7/T3 feature-vector equality",
+    "Cross-family best-hit ambiguities and positive control correspondence",
+    "Executable/input/command/raw-output/feature-map/vector hashes and bounded actual resource observations"
+  ],
+  "interpretation": "Distinct vectors only establish potential representational capacity, not strain specificity or accuracy. Equal phage vectors preclude distinguishing phage-dependent responses within this feature scheme but do not alone rule out a host-only T3 ranking. No infection score, assembly score, design or DNA export is generated.",
+  "limits": {
+    "timeout_seconds_per_command": 600,
+    "workers": 1,
+    "full_training_ready": false
+  }
+}

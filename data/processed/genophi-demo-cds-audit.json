@@ -1,0 +1,3172 @@
+{
+  "schema_version": 1,
+  "purpose": "Check whether deposited demo protein coordinate annotations translate from the authenticated deposited DNA, without rerunning gene callers or changing sequences",
+  "policy_sha256": "c53ffef0216d476e880b3c1fad43f1e13f7605e2188d5e0195522d82192dc59a",
+  "helper_sha256": "57c5a8ec640ca0dd17e3c545cdf7f1d84c93dddf276a6a034e735a88eafcee2e",
+  "inputs": {
+    "annotation_policy": {
+      "path": "software/tipcraft/benchmarks/retro-t7-t3/genophi-annotation-check.json",
+      "sha256": "9374ccdd57b41f235fbffa2d61c940019031c2c9196e3714d1f120c0f1884dea"
+    },
+    "annotation_report": {
+      "path": "data/processed/genophi-annotation-check.json",
+      "sha256": "4618f08ac18ca4eb739f2b4b6ec5c23dd0798570f95e3f3182a8a6835a0459cf"
+    },
+    "source_lengths": {
+      "path": "data/processed/genophi-phage-source-lengths.json",
+      "sha256": "1bf2b9f23692a8c77591cb28ed8e9b26fe085f9336e8a967e713c79dde899f71"
+    }
+  },
+  "proteomes": 25,
+  "deposited_proteins": 2980,
+  "translation_checks_passed": 2980,
+  "coordinate_changes": {
+    "deposited_no_same_stop": 59,
+    "predicted_no_same_stop": 54,
+    "deposited_same_stop_changed_start": 79,
+    "predicted_same_stop_changed_start": 79
+  },
+  "exact_shared_coordinate_copies": 2842,
+  "files": [
+    {
+      "source_id": "411_P1",
+      "deposited_faa_git_blob_sha1": "71e9cfa80adbffc2221a6c4e24ce7db9e453e363",
+      "deposited_faa_sha256": "4003fbc57780b66edf3b341b405ace62f5a5a204830a8f4400c94fca70828eee",
+      "source_sequence_sha256": "9f075c211538436f7772e1eafde4b05f04a272665dc0c0d8fc404e14e6f570b7",
+      "regenerated_faa_sha256": "782478a102f43b3afeb2fe4c9a74da25d2c4e5d773c3e53059687d7fecc5507d",
+      "source_bases": 48550,
+      "metadata_genome_size": 48490,
+      "deposited_proteins": 73,
+      "translation_checks_passed": 73,
+      "failed_checks": [],
+      "deposited_coordinates_beyond_metadata_length": 0,
+      "predicted_coordinates_beyond_metadata_length": 0,
+      "exact_shared_coordinate_copies": 71,
+      "unshared_coordinates": [
+        {
+          "side": "deposited",
+          "id": "411_P1_33",
+          "coordinates": [
+            28454,
+            28672,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "411_P1_42",
+          "coordinates": [
+            32523,
+            32687,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_24",
+          "coordinates": [
+            18289,
+            18669,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_53",
+          "coordinates": [
+            37849,
+            38004,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_63",
+          "coordinates": [
+            42959,
+            43168,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        }
+      ]
+    },
+    {
+      "source_id": "411_P2",
+      "deposited_faa_git_blob_sha1": "53b83561111b4c25f929499c47c124f9be49b77f",
+      "deposited_faa_sha256": "af75d9f9b94c48ffd9711de4f41266dff04050622690b1ad536c4e7ac19071e7",
+      "source_sequence_sha256": "7c3d781e0fbcce4d8f743305d2f831882c4b60d24288a3e3474aefbf95b1cc45",
+      "regenerated_faa_sha256": "fc02a3c751d8ab52dbe4b53df2fc9a512176d569e5544838f9b8c48ba7b145f2",
+      "source_bases": 44194,
+      "metadata_genome_size": 44134,
+      "deposited_proteins": 67,
+      "translation_checks_passed": 67,
+      "failed_checks": [],
+      "deposited_coordinates_beyond_metadata_length": 0,
+      "predicted_coordinates_beyond_metadata_length": 0,
+      "exact_shared_coordinate_copies": 65,
+      "unshared_coordinates": [
+        {
+          "side": "deposited",
+          "id": "411_P2_4",
+          "coordinates": [
+            3902,
+            4450,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "411_P2_33",
+          "coordinates": [
+            26297,
+            26515,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_4",
+          "coordinates": [
+            3917,
+            4450,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_12",
+          "coordinates": [
+            8737,
+            9279,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_49",
+          "coordinates": [
+            33220,
+            33411,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        }
+      ]
+    },
+    {
+      "source_id": "412_P5",
+      "deposited_faa_git_blob_sha1": "456759f7e969689fe10f6fcba6cb885caf134808",
+      "deposited_faa_sha256": "cba136d12613760a1852b88b453d3cd939efa65d337d60195687d60ec77060c7",
+      "source_sequence_sha256": "530665e6779f620a34a9703f30bfc236d393aab23a66aea8760414ded6dcf713",
+      "regenerated_faa_sha256": "983ce04ee34b5cd8a08b219e78e0c1707335ef0edb6c0af99e8063c77bed5930",
+      "source_bases": 45372,
+      "metadata_genome_size": 45312,
+      "deposited_proteins": 76,
+      "translation_checks_passed": 76,
+      "failed_checks": [],
+      "deposited_coordinates_beyond_metadata_length": 0,
+      "predicted_coordinates_beyond_metadata_length": 0,
+      "exact_shared_coordinate_copies": 73,
+      "unshared_coordinates": [
+        {
+          "side": "deposited",
+          "id": "412_P5_16",
+          "coordinates": [
+            10034,
+            10291,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "412_P5_36",
+          "coordinates": [
+            30821,
+            31021,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "412_P5_49",
+          "coordinates": [
+            35168,
+            35503,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_16",
+          "coordinates": [
+            9980,
+            10291,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_36",
+          "coordinates": [
+            30773,
+            31021,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_49",
+          "coordinates": [
+            35168,
+            35335,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        }
+      ]
+    },
+    {
+      "source_id": "427_P2",
+      "deposited_faa_git_blob_sha1": "785e60239854bffb03c79362bb3c4f12c2decd3f",
+      "deposited_faa_sha256": "8d1a62faf984f8a252f7f37acb00f4cf3708cb41900470c95ab1ea2f12d66011",
+      "source_sequence_sha256": "1a9f43754b2e46ca743cdcebedf99325d0e092cdcb407c637905f8a419bae918",
+      "regenerated_faa_sha256": "b3f79d274f593d7c3b2d3615d9cd8c5a9c5244879f5471731c4d9d8d15c2258a",
+      "source_bases": 40387,
+      "metadata_genome_size": 40327,
+      "deposited_proteins": 52,
+      "translation_checks_passed": 52,
+      "failed_checks": [],
+      "deposited_coordinates_beyond_metadata_length": 1,
+      "predicted_coordinates_beyond_metadata_length": 1,
+      "exact_shared_coordinate_copies": 50,
+      "unshared_coordinates": [
+        {
+          "side": "deposited",
+          "id": "427_P2_9",
+          "coordinates": [
+            5808,
+            5966,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "427_P2_18",
+          "coordinates": [
+            12382,
+            12498,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_9",
+          "coordinates": [
+            5841,
+            5966,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_18",
+          "coordinates": [
+            12385,
+            12498,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        }
+      ]
+    },
+    {
+      "source_id": "536_P1",
+      "deposited_faa_git_blob_sha1": "1b6617cc16e7680642b8e6ae609cce2b15145d5d",
+      "deposited_faa_sha256": "08df7ca3c39541e51c3f6a1284cf8851fe263e07911c025812857ecc9325a3ee",
+      "source_sequence_sha256": "6a12a534733460f7b9944e389fe26a5ba269ba128bdcc95a55bece5fe5f08d4c",
+      "regenerated_faa_sha256": "2545eff26e13e8adf013a56fa9c124ac1f4c042fe08a62513102e1bd01d0fe56",
+      "source_bases": 149531,
+      "metadata_genome_size": 149471,
+      "deposited_proteins": 270,
+      "translation_checks_passed": 270,
+      "failed_checks": [],
+      "deposited_coordinates_beyond_metadata_length": 0,
+      "predicted_coordinates_beyond_metadata_length": 0,
+      "exact_shared_coordinate_copies": 250,
+      "unshared_coordinates": [
+        {
+          "side": "deposited",
+          "id": "536_P1_4",
+          "coordinates": [
+            1031,
+            1315,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "536_P1_14",
+          "coordinates": [
+            9720,
+            10136,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "536_P1_68",
+          "coordinates": [
+            57996,
+            58586,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "536_P1_71",
+          "coordinates": [
+            59577,
+            59822,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "536_P1_81",
+          "coordinates": [
+            64758,
+            65723,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "536_P1_90",
+          "coordinates": [
+            72086,
+            72628,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "536_P1_115",
+          "coordinates": [
+            81294,
+            81473,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "536_P1_117",
+          "coordinates": [
+            82820,
+            83086,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "536_P1_120",
+          "coordinates": [
+            83999,
+            84256,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "536_P1_122",
+          "coordinates": [
+            84898,
+            84993,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "536_P1_130",
+          "coordinates": [
+            87619,
+            87765,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "536_P1_133",
+          "coordinates": [
+            88340,
+            88654,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "536_P1_134",
+          "coordinates": [
+            88753,
+            88872,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "536_P1_139",
+          "coordinates": [
+            90182,
+            90286,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "536_P1_193",
+          "coordinates": [
+            109677,
+            109778,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "536_P1_196",
+          "coordinates": [
+            110417,
+            110620,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "536_P1_215",
+          "coordinates": [
+            119354,
+            119548,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "536_P1_222",
+          "coordinates": [
+            122247,
+            123005,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "536_P1_239",
+          "coordinates": [
+            132574,
+            132768,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "536_P1_267",
+          "coordinates": [
+            145370,
+            145486,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_4",
+          "coordinates": [
+            1034,
+            1315,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_14",
+          "coordinates": [
+            9696,
+            10136,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_68",
+          "coordinates": [
+            57996,
+            58544,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_80",
+          "coordinates": [
+            64758,
+            65702,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_89",
+          "coordinates": [
+            72086,
+            72490,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_114",
+          "coordinates": [
+            81258,
+            81473,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_116",
+          "coordinates": [
+            82311,
+            82505,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_188",
+          "coordinates": [
+            110390,
+            110620,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_213",
+          "coordinates": [
+            122247,
+            123056,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        }
+      ]
+    },
+    {
+      "source_id": "536_P11",
+      "deposited_faa_git_blob_sha1": "6915aa8f1bb732a102a3ac6ee80182d11ed45459",
+      "deposited_faa_sha256": "d694a424e37fd0f4c623a75d3a0f6ffbb711e37bd3541c2e1bba3c046a8afd3c",
+      "source_sequence_sha256": "a537bed03aa5f620cc4107c848e640d3e4ca959a623e667fcb222012dcc47b49",
+      "regenerated_faa_sha256": "e4d06779e5772dcf01b27fbe262e852d22a8952da3cf48355810e363208f8de2",
+      "source_bases": 44482,
+      "metadata_genome_size": 44422,
+      "deposited_proteins": 68,
+      "translation_checks_passed": 68,
+      "failed_checks": [],
+      "deposited_coordinates_beyond_metadata_length": 1,
+      "predicted_coordinates_beyond_metadata_length": 1,
+      "exact_shared_coordinate_copies": 65,
+      "unshared_coordinates": [
+        {
+          "side": "deposited",
+          "id": "536_P11_17",
+          "coordinates": [
+            12314,
+            12802,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "536_P11_32",
+          "coordinates": [
+            26664,
+            27617,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "536_P11_37",
+          "coordinates": [
+            30692,
+            30847,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_7",
+          "coordinates": [
+            5736,
+            5882,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_14",
+          "coordinates": [
+            9860,
+            9958,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_19",
+          "coordinates": [
+            12314,
+            12853,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_25",
+          "coordinates": [
+            15305,
+            15571,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_35",
+          "coordinates": [
+            26708,
+            27529,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_38",
+          "coordinates": [
+            28117,
+            28269,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_57",
+          "coordinates": [
+            39310,
+            39531,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_69",
+          "coordinates": [
+            42617,
+            42820,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_70",
+          "coordinates": [
+            43039,
+            43224,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        }
+      ]
+    },
+    {
+      "source_id": "536_P12",
+      "deposited_faa_git_blob_sha1": "66d68ce88b1c64a7e3b39a3a2e6129cf495987e3",
+      "deposited_faa_sha256": "3aa40c4f3f65fcaa0b45bf32aaa6c3c1e0733b9b78f9af2875ebd79d67cd40c8",
+      "source_sequence_sha256": "4aae724b0cbea432171ece32763249f9accb62983193594e58c88575f94dd0f8",
+      "regenerated_faa_sha256": "3a05cbd9caa606789f6eac6479b9ff79d4d67279ad464d4be48ddcb29a99fbef",
+      "source_bases": 55987,
+      "metadata_genome_size": 55927,
+      "deposited_proteins": 95,
+      "translation_checks_passed": 95,
+      "failed_checks": [],
+      "deposited_coordinates_beyond_metadata_length": 0,
+      "predicted_coordinates_beyond_metadata_length": 0,
+      "exact_shared_coordinate_copies": 90,
+      "unshared_coordinates": [
+        {
+          "side": "deposited",
+          "id": "536_P12_4",
+          "coordinates": [
+            1277,
+            1597,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "536_P12_42",
+          "coordinates": [
+            21008,
+            21418,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "536_P12_56",
+          "coordinates": [
+            30434,
+            32998,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "536_P12_79",
+          "coordinates": [
+            50195,
+            50452,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "536_P12_91",
+          "coordinates": [
+            53647,
+            53787,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_4",
+          "coordinates": [
+            1277,
+            1675,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_5",
+          "coordinates": [
+            1641,
+            1793,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_43",
+          "coordinates": [
+            20900,
+            21418,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_57",
+          "coordinates": [
+            30446,
+            32998,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_85",
+          "coordinates": [
+            51591,
+            51731,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_89",
+          "coordinates": [
+            52430,
+            52672,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        }
+      ]
+    },
+    {
+      "source_id": "536_P6",
+      "deposited_faa_git_blob_sha1": "a031b6bf33313ea535d5b5b86e356a44ddb56e0a",
+      "deposited_faa_sha256": "c7094d6ea9065adcd5688f9187968630649b2b2d2d1cbc1455b7796ed792901d",
+      "source_sequence_sha256": "32e32d75e515c4cec485200ec1925302ef06374d462257ccde551fcc31993179",
+      "regenerated_faa_sha256": "2774923d309b42af338b635c59d85c1c19ddf0a4fd484826057f221441bd003a",
+      "source_bases": 148502,
+      "metadata_genome_size": 148442,
+      "deposited_proteins": 246,
+      "translation_checks_passed": 246,
+      "failed_checks": [],
+      "deposited_coordinates_beyond_metadata_length": 1,
+      "predicted_coordinates_beyond_metadata_length": 1,
+      "exact_shared_coordinate_copies": 232,
+      "unshared_coordinates": [
+        {
+          "side": "deposited",
+          "id": "536_P6_44",
+          "coordinates": [
+            46196,
+            47140,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "536_P6_61",
+          "coordinates": [
+            55737,
+            55943,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "536_P6_65",
+          "coordinates": [
+            57517,
+            58233,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "536_P6_72",
+          "coordinates": [
+            61788,
+            62753,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "536_P6_91",
+          "coordinates": [
+            73565,
+            73711,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "536_P6_105",
+          "coordinates": [
+            80574,
+            80840,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "536_P6_106",
+          "coordinates": [
+            81106,
+            81201,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "536_P6_109",
+          "coordinates": [
+            82089,
+            82235,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "536_P6_116",
+          "coordinates": [
+            84630,
+            84875,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "536_P6_119",
+          "coordinates": [
+            85598,
+            85735,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "536_P6_126",
+          "coordinates": [
+            88120,
+            88389,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "536_P6_127",
+          "coordinates": [
+            88440,
+            88664,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "536_P6_136",
+          "coordinates": [
+            94212,
+            94427,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "536_P6_164",
+          "coordinates": [
+            103255,
+            103359,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_44",
+          "coordinates": [
+            46196,
+            47179,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_64",
+          "coordinates": [
+            57517,
+            58251,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_71",
+          "coordinates": [
+            61788,
+            62732,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_111",
+          "coordinates": [
+            84612,
+            84875,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_128",
+          "coordinates": [
+            94167,
+            94427,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_142",
+          "coordinates": [
+            98852,
+            99046,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_157",
+          "coordinates": [
+            103258,
+            103359,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        }
+      ]
+    },
+    {
+      "source_id": "55989_P2",
+      "deposited_faa_git_blob_sha1": "0ce591e9b8e09b494cd697c1a1ae0db602ace1f0",
+      "deposited_faa_sha256": "7ff5a75c3e842068ba4a3c4e6953d06eb8cd2f477fa229d3f86c2ac7d7b346ee",
+      "source_sequence_sha256": "932350ab7d2a11a8bf62db42bec24242988a86845b03789e2577562d04515ca5",
+      "regenerated_faa_sha256": "44be321406b6aacb979cb8f6daec1935568a9f9f562ee335ef27c275718ad0f2",
+      "source_bases": 171847,
+      "metadata_genome_size": 171787,
+      "deposited_proteins": 276,
+      "translation_checks_passed": 276,
+      "failed_checks": [],
+      "deposited_coordinates_beyond_metadata_length": 1,
+      "predicted_coordinates_beyond_metadata_length": 1,
+      "exact_shared_coordinate_copies": 250,
+      "unshared_coordinates": [
+        {
+          "side": "deposited",
+          "id": "55989_P2_17",
+          "coordinates": [
+            17153,
+            17266,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "55989_P2_36",
+          "coordinates": [
+            33789,
+            33962,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "55989_P2_40",
+          "coordinates": [
+            36382,
+            36840,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "55989_P2_43",
+          "coordinates": [
+            37241,
+            37528,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "55989_P2_53",
+          "coordinates": [
+            41116,
+            41670,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "55989_P2_55",
+          "coordinates": [
+            42019,
+            42234,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "55989_P2_58",
+          "coordinates": [
+            42614,
+            43522,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "55989_P2_67",
+          "coordinates": [
+            47238,
+            48377,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "55989_P2_69",
+          "coordinates": [
+            50753,
+            51046,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "55989_P2_98",
+          "coordinates": [
+            72320,
+            72424,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "55989_P2_100",
+          "coordinates": [
+            73938,
+            74099,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "55989_P2_104",
+          "coordinates": [
+            75329,
+            75439,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "55989_P2_106",
+          "coordinates": [
+            75893,
+            76159,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "55989_P2_107",
+          "coordinates": [
+            76231,
+            76788,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "55989_P2_113",
+          "coordinates": [
+            81113,
+            81265,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "55989_P2_123",
+          "coordinates": [
+            86787,
+            87026,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "55989_P2_130",
+          "coordinates": [
+            91075,
+            91248,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "55989_P2_158",
+          "coordinates": [
+            105010,
+            105147,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "55989_P2_161",
+          "coordinates": [
+            108238,
+            108495,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "55989_P2_173",
+          "coordinates": [
+            115413,
+            115613,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "55989_P2_200",
+          "coordinates": [
+            124058,
+            124273,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "55989_P2_206",
+          "coordinates": [
+            128491,
+            128943,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "55989_P2_223",
+          "coordinates": [
+            135171,
+            135467,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "55989_P2_224",
+          "coordinates": [
+            135464,
+            135991,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "55989_P2_231",
+          "coordinates": [
+            139082,
+            139312,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "55989_P2_254",
+          "coordinates": [
+            148335,
+            148544,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_35",
+          "coordinates": [
+            33789,
+            33998,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_39",
+          "coordinates": [
+            36382,
+            36762,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_42",
+          "coordinates": [
+            37241,
+            37561,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_52",
+          "coordinates": [
+            41116,
+            41781,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_54",
+          "coordinates": [
+            42019,
+            42288,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_57",
+          "coordinates": [
+            42614,
+            43519,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_66",
+          "coordinates": [
+            47238,
+            48407,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_68",
+          "coordinates": [
+            50753,
+            51154,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_102",
+          "coordinates": [
+            75893,
+            76204,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_103",
+          "coordinates": [
+            76231,
+            76749,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_104",
+          "coordinates": [
+            76721,
+            77020,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_119",
+          "coordinates": [
+            86787,
+            87050,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_126",
+          "coordinates": [
+            91075,
+            91263,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_156",
+          "coordinates": [
+            108238,
+            108453,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_199",
+          "coordinates": [
+            128491,
+            128829,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_201",
+          "coordinates": [
+            129524,
+            129706,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_211",
+          "coordinates": [
+            132601,
+            132807,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_218",
+          "coordinates": [
+            135171,
+            135464,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_219",
+          "coordinates": [
+            135464,
+            135958,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_226",
+          "coordinates": [
+            139082,
+            139333,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        }
+      ]
+    },
+    {
+      "source_id": "AL505_Ev3",
+      "deposited_faa_git_blob_sha1": "fec91eb8473f2202c7a0a07b4bfeacc4130e6856",
+      "deposited_faa_sha256": "621474b200cbef09e2db0524782353a795a16d426f9f277185b0c9733c6de2e4",
+      "source_sequence_sha256": "dc0043939832cdc70eb3c9c440e0f41ceebbd92565ae9eba835c3599d4ee204d",
+      "regenerated_faa_sha256": "0c4203487a986be70df4a25816039b8340e6260668a28b2a1dbfce7288b03205",
+      "source_bases": 162165,
+      "metadata_genome_size": 162105,
+      "deposited_proteins": 266,
+      "translation_checks_passed": 266,
+      "failed_checks": [],
+      "deposited_coordinates_beyond_metadata_length": 1,
+      "predicted_coordinates_beyond_metadata_length": 1,
+      "exact_shared_coordinate_copies": 254,
+      "unshared_coordinates": [
+        {
+          "side": "deposited",
+          "id": "AL505_Ev3_49",
+          "coordinates": [
+            34981,
+            35301,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "AL505_Ev3_52",
+          "coordinates": [
+            35725,
+            36003,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "AL505_Ev3_70",
+          "coordinates": [
+            43446,
+            43769,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "AL505_Ev3_79",
+          "coordinates": [
+            48371,
+            48538,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "AL505_Ev3_146",
+          "coordinates": [
+            93323,
+            93511,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "AL505_Ev3_171",
+          "coordinates": [
+            109840,
+            110349,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "AL505_Ev3_174",
+          "coordinates": [
+            111106,
+            111648,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "AL505_Ev3_184",
+          "coordinates": [
+            118399,
+            118653,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "AL505_Ev3_190",
+          "coordinates": [
+            120262,
+            120525,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "AL505_Ev3_225",
+          "coordinates": [
+            133600,
+            133758,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "AL505_Ev3_230",
+          "coordinates": [
+            134770,
+            134952,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "AL505_Ev3_238",
+          "coordinates": [
+            136917,
+            137141,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_49",
+          "coordinates": [
+            34981,
+            35352,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_52",
+          "coordinates": [
+            35725,
+            36000,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_70",
+          "coordinates": [
+            43446,
+            43712,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_139",
+          "coordinates": [
+            89041,
+            89199,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_146",
+          "coordinates": [
+            93323,
+            93550,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_154",
+          "coordinates": [
+            99823,
+            100053,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_172",
+          "coordinates": [
+            109840,
+            110343,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_175",
+          "coordinates": [
+            111106,
+            111642,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_185",
+          "coordinates": [
+            118399,
+            118692,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_191",
+          "coordinates": [
+            120262,
+            120546,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_226",
+          "coordinates": [
+            133600,
+            133764,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        }
+      ]
+    },
+    {
+      "source_id": "AN17_P1",
+      "deposited_faa_git_blob_sha1": "aa9b37ce2a56b75031ab300dc5bb16c8f024bc41",
+      "deposited_faa_sha256": "181c5082cfacee6778c80d403954b6dfb7cc8c34aefeb096eed8d153c8a78e4d",
+      "source_sequence_sha256": "4b285836ea4bc0dc6a0f736949522a8e190986b9f674f98cc31d70cf9be80180",
+      "regenerated_faa_sha256": "077a7de9d8874c75ac8a2887dd9717bffdf16bd0a28eb2531277f2a3b7513d0e",
+      "source_bases": 39716,
+      "metadata_genome_size": 39656,
+      "deposited_proteins": 48,
+      "translation_checks_passed": 48,
+      "failed_checks": [],
+      "deposited_coordinates_beyond_metadata_length": 1,
+      "predicted_coordinates_beyond_metadata_length": 1,
+      "exact_shared_coordinate_copies": 46,
+      "unshared_coordinates": [
+        {
+          "side": "deposited",
+          "id": "AN17_P1_10",
+          "coordinates": [
+            5606,
+            5803,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "AN17_P1_12",
+          "coordinates": [
+            6065,
+            6358,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_46",
+          "coordinates": [
+            39152,
+            39280,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        }
+      ]
+    },
+    {
+      "source_id": "AN24_P3",
+      "deposited_faa_git_blob_sha1": "3cecfa9962ed12c7c24002989fdb3459179e1446",
+      "deposited_faa_sha256": "476255cd8c26c63821df3f5d16e67714e3d6c4b0c1c302eaf78582951a334830",
+      "source_sequence_sha256": "68a88b19de98475cdb1921742105122a8b1b0524ca27a50a77049870349c5c46",
+      "regenerated_faa_sha256": "c95c6e5b15c6c446e70c66b13befbd104e5856aac87f11ad46151b074c21aaae",
+      "source_bases": 71285,
+      "metadata_genome_size": 71225,
+      "deposited_proteins": 85,
+      "translation_checks_passed": 85,
+      "failed_checks": [],
+      "deposited_coordinates_beyond_metadata_length": 0,
+      "predicted_coordinates_beyond_metadata_length": 0,
+      "exact_shared_coordinate_copies": 84,
+      "unshared_coordinates": [
+        {
+          "side": "deposited",
+          "id": "AN24_P3_85",
+          "coordinates": [
+            70793,
+            71071,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_85",
+          "coordinates": [
+            70793,
+            71083,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        }
+      ]
+    },
+    {
+      "source_id": "BCH953_P3",
+      "deposited_faa_git_blob_sha1": "41eff7a80c6acdb70f249036bf760f4f9c414c36",
+      "deposited_faa_sha256": "a5a0c5d2cf66dfbe16a573d532d081a8f48b6743e3476824c178dc98e4dafa85",
+      "source_sequence_sha256": "2c81fb80c1538957ebded85d3e943b28b56ddde8aea3d138d8536d309eadd47d",
+      "regenerated_faa_sha256": "0352c496c1a28e962da3e54e33b44e70a70fe83858eba1eb03d849bfb4f2132f",
+      "source_bases": 44682,
+      "metadata_genome_size": 44622,
+      "deposited_proteins": 78,
+      "translation_checks_passed": 78,
+      "failed_checks": [],
+      "deposited_coordinates_beyond_metadata_length": 1,
+      "predicted_coordinates_beyond_metadata_length": 1,
+      "exact_shared_coordinate_copies": 74,
+      "unshared_coordinates": [
+        {
+          "side": "deposited",
+          "id": "BCH953_P3_28",
+          "coordinates": [
+            18446,
+            21001,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "BCH953_P3_33",
+          "coordinates": [
+            23702,
+            25126,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "BCH953_P3_57",
+          "coordinates": [
+            38138,
+            38416,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "BCH953_P3_60",
+          "coordinates": [
+            39194,
+            39355,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_6",
+          "coordinates": [
+            4933,
+            5079,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_29",
+          "coordinates": [
+            18518,
+            21001,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_32",
+          "coordinates": [
+            23215,
+            23343,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_35",
+          "coordinates": [
+            23702,
+            25090,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_59",
+          "coordinates": [
+            38144,
+            38416,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_62",
+          "coordinates": [
+            39152,
+            39355,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        }
+      ]
+    },
+    {
+      "source_id": "BCH953_P5",
+      "deposited_faa_git_blob_sha1": "787aa11409cb5a236b2398ab00027d43b8c7ac94",
+      "deposited_faa_sha256": "d36ac1d4dfa483b91fa3213c4521a3a1a5d2e247b0b6b42801722f3dd377fa58",
+      "source_sequence_sha256": "1e183754fb39adb705499f7c2974c8c12105f8af81641bfac6239dcec71c27ab",
+      "regenerated_faa_sha256": "785951297339527761c643055586df0f3a107831040e448345328e665f7fce5a",
+      "source_bases": 169307,
+      "metadata_genome_size": 169247,
+      "deposited_proteins": 267,
+      "translation_checks_passed": 267,
+      "failed_checks": [],
+      "deposited_coordinates_beyond_metadata_length": 1,
+      "predicted_coordinates_beyond_metadata_length": 1,
+      "exact_shared_coordinate_copies": 256,
+      "unshared_coordinates": [
+        {
+          "side": "deposited",
+          "id": "BCH953_P5_55",
+          "coordinates": [
+            39077,
+            39985,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "BCH953_P5_66",
+          "coordinates": [
+            47402,
+            47728,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "BCH953_P5_77",
+          "coordinates": [
+            52041,
+            52268,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "BCH953_P5_100",
+          "coordinates": [
+            70774,
+            70929,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "BCH953_P5_103",
+          "coordinates": [
+            71925,
+            72035,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "BCH953_P5_105",
+          "coordinates": [
+            72237,
+            72350,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "BCH953_P5_132",
+          "coordinates": [
+            87873,
+            88025,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "BCH953_P5_166",
+          "coordinates": [
+            109839,
+            110045,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "BCH953_P5_196",
+          "coordinates": [
+            123272,
+            124228,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "BCH953_P5_199",
+          "coordinates": [
+            126185,
+            126592,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "BCH953_P5_229",
+          "coordinates": [
+            137847,
+            138176,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_55",
+          "coordinates": [
+            39077,
+            39982,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_76",
+          "coordinates": [
+            52041,
+            52289,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_128",
+          "coordinates": [
+            87873,
+            88037,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_162",
+          "coordinates": [
+            109839,
+            110054,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_186",
+          "coordinates": [
+            121607,
+            121762,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_193",
+          "coordinates": [
+            123272,
+            124198,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_196",
+          "coordinates": [
+            126185,
+            126502,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_226",
+          "coordinates": [
+            137847,
+            138173,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        }
+      ]
+    },
+    {
+      "source_id": "BDX09_P1",
+      "deposited_faa_git_blob_sha1": "7c91b06ee9304248b6618283e7665413fd9cfce0",
+      "deposited_faa_sha256": "da2cffcbf25774bdc13513ce46f524edafbaa27aa6efc1377f8f40239ea744e7",
+      "source_sequence_sha256": "c79cdec480cda16b58cf227217afb2d24b40625d7351b0588348a9cc65208825",
+      "regenerated_faa_sha256": "570a3252c5427a9203c4eed6d55c0354a778f198543e18a9db4ffd99d3fe2a73",
+      "source_bases": 58431,
+      "metadata_genome_size": 58371,
+      "deposited_proteins": 100,
+      "translation_checks_passed": 100,
+      "failed_checks": [],
+      "deposited_coordinates_beyond_metadata_length": 0,
+      "predicted_coordinates_beyond_metadata_length": 0,
+      "exact_shared_coordinate_copies": 97,
+      "unshared_coordinates": [
+        {
+          "side": "deposited",
+          "id": "BDX09_P1_33",
+          "coordinates": [
+            14553,
+            14861,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "BDX09_P1_34",
+          "coordinates": [
+            14839,
+            15312,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "BDX09_P1_52",
+          "coordinates": [
+            24093,
+            24503,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_33",
+          "coordinates": [
+            14773,
+            15312,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_51",
+          "coordinates": [
+            23270,
+            23707,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_52",
+          "coordinates": [
+            23985,
+            24503,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_96",
+          "coordinates": [
+            55573,
+            55833,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        }
+      ]
+    },
+    {
+      "source_id": "LF31_P1",
+      "deposited_faa_git_blob_sha1": "3959c8adac5e55a0217e647a1cf23cba44508a52",
+      "deposited_faa_sha256": "029ceaca692b1b604a294b76f678101fd703fae3bd99907b6e30736893bd212f",
+      "source_sequence_sha256": "1fced5b8a5a5fe01bed33f0c4291554009b22da70c077d6bf79919d56c43fd2a",
+      "regenerated_faa_sha256": "929b4a4382d3da5493e4529963a6e9700fb13adcc232d558c46f3e234b5a9516",
+      "source_bases": 68379,
+      "metadata_genome_size": 68319,
+      "deposited_proteins": 99,
+      "translation_checks_passed": 99,
+      "failed_checks": [],
+      "deposited_coordinates_beyond_metadata_length": 0,
+      "predicted_coordinates_beyond_metadata_length": 0,
+      "exact_shared_coordinate_copies": 95,
+      "unshared_coordinates": [
+        {
+          "side": "deposited",
+          "id": "LF31_P1_5",
+          "coordinates": [
+            4653,
+            5504,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "LF31_P1_15",
+          "coordinates": [
+            12180,
+            12692,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "LF31_P1_19",
+          "coordinates": [
+            15174,
+            15440,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "LF31_P1_63",
+          "coordinates": [
+            51713,
+            51934,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_5",
+          "coordinates": [
+            4590,
+            5504,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_15",
+          "coordinates": [
+            12207,
+            12692,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_19",
+          "coordinates": [
+            15084,
+            15440,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_63",
+          "coordinates": [
+            51659,
+            51934,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_85",
+          "coordinates": [
+            59837,
+            60100,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_98",
+          "coordinates": [
+            67326,
+            67481,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        }
+      ]
+    },
+    {
+      "source_id": "LF7074_P2",
+      "deposited_faa_git_blob_sha1": "b13c0900359a6e8dc3aba030047280a3e79bcb2c",
+      "deposited_faa_sha256": "5d7569ed26d16b58b05a81c902ae74d86fe624457c772d56a1b607d0c1fda87a",
+      "source_sequence_sha256": "bef9d042c5ffb7ba5b2de8280cd3d98633b7d38c45b5e0849314fd3ed1d318ce",
+      "regenerated_faa_sha256": "ede9451d61cd3e2827c0496bdb4eb6da82a5a7d94313bf72f88e390ca062452b",
+      "source_bases": 41131,
+      "metadata_genome_size": 41071,
+      "deposited_proteins": 63,
+      "translation_checks_passed": 63,
+      "failed_checks": [],
+      "deposited_coordinates_beyond_metadata_length": 1,
+      "predicted_coordinates_beyond_metadata_length": 1,
+      "exact_shared_coordinate_copies": 61,
+      "unshared_coordinates": [
+        {
+          "side": "deposited",
+          "id": "LF7074_P2_20",
+          "coordinates": [
+            16215,
+            16715,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "LF7074_P2_23",
+          "coordinates": [
+            17580,
+            20135,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_6",
+          "coordinates": [
+            5051,
+            5197,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_19",
+          "coordinates": [
+            12809,
+            13000,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_21",
+          "coordinates": [
+            13683,
+            13949,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_23",
+          "coordinates": [
+            16272,
+            16715,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_26",
+          "coordinates": [
+            17652,
+            20135,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        }
+      ]
+    },
+    {
+      "source_id": "LF82_P4",
+      "deposited_faa_git_blob_sha1": "72aedab52eb30eb147e49e82e4399a9581e5cbe3",
+      "deposited_faa_sha256": "d57f9359d2fed7fea624a865d8dfb8084d036bd181219589d7248358edf7005c",
+      "source_sequence_sha256": "8fb7d12e73b2def6ba5cf248ebc9853ef3269bd3917d6a66d01838776ff6feed",
+      "regenerated_faa_sha256": "0b610dc5489278dfb51dad8b5431f2f82e6644df4f46a9e9cb72331a51a9e91a",
+      "source_bases": 83262,
+      "metadata_genome_size": 83202,
+      "deposited_proteins": 117,
+      "translation_checks_passed": 117,
+      "failed_checks": [],
+      "deposited_coordinates_beyond_metadata_length": 1,
+      "predicted_coordinates_beyond_metadata_length": 1,
+      "exact_shared_coordinate_copies": 114,
+      "unshared_coordinates": [
+        {
+          "side": "deposited",
+          "id": "LF82_P4_59",
+          "coordinates": [
+            44302,
+            44559,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "LF82_P4_111",
+          "coordinates": [
+            75124,
+            75285,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "LF82_P4_114",
+          "coordinates": [
+            80630,
+            80872,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_59",
+          "coordinates": [
+            44239,
+            44559,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_81",
+          "coordinates": [
+            60317,
+            60538,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        }
+      ]
+    },
+    {
+      "source_id": "LF82_P8",
+      "deposited_faa_git_blob_sha1": "496a593a789e6b6e47bec899992a48d934ad140b",
+      "deposited_faa_sha256": "1a85c910a020af6fb90db4837aafcb70d04d8f7ee9a8545cf4f39eec108110f4",
+      "source_sequence_sha256": "2c5a6148f50d25692881107bfdfd95d46e774afa45fd1b78901a699a943ae7b6",
+      "regenerated_faa_sha256": "6fa92dd30f33dd7b81286c7dc94dde8d1f92a74ca44865bf497e944c3150104a",
+      "source_bases": 169022,
+      "metadata_genome_size": 168962,
+      "deposited_proteins": 264,
+      "translation_checks_passed": 264,
+      "failed_checks": [],
+      "deposited_coordinates_beyond_metadata_length": 1,
+      "predicted_coordinates_beyond_metadata_length": 1,
+      "exact_shared_coordinate_copies": 254,
+      "unshared_coordinates": [
+        {
+          "side": "deposited",
+          "id": "LF82_P8_37",
+          "coordinates": [
+            20261,
+            20404,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "LF82_P8_73",
+          "coordinates": [
+            39522,
+            39689,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "LF82_P8_88",
+          "coordinates": [
+            48609,
+            48719,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "LF82_P8_103",
+          "coordinates": [
+            53591,
+            53899,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "LF82_P8_104",
+          "coordinates": [
+            53896,
+            54435,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "LF82_P8_107",
+          "coordinates": [
+            55341,
+            55595,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "LF82_P8_122",
+          "coordinates": [
+            61534,
+            61929,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "LF82_P8_238",
+          "coordinates": [
+            152736,
+            152954,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "deposited",
+          "id": "LF82_P8_244",
+          "coordinates": [
+            156305,
+            156451,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "LF82_P8_253",
+          "coordinates": [
+            161815,
+            162015,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_100",
+          "coordinates": [
+            53591,
+            53896,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_101",
+          "coordinates": [
+            53896,
+            54399,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_104",
+          "coordinates": [
+            55341,
+            55667,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_119",
+          "coordinates": [
+            61534,
+            61908,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_235",
+          "coordinates": [
+            152736,
+            152951,
+            -1
+          ],
+          "same_strand_stop_in_other": true
+        }
+      ]
+    },
+    {
+      "source_id": "LI10_P5",
+      "deposited_faa_git_blob_sha1": "995658549d09a60cecc700053897335366a0e083",
+      "deposited_faa_sha256": "66685325f77497543847c28434de3473cbeeabc86eecc2e1729d6edd544e27d0",
+      "source_sequence_sha256": "c23671ac4f0bc82c6ef8e7c5877c8788639048e27abf8b813e6a279ea5170e23",
+      "regenerated_faa_sha256": "9b9db4472af75388b54f4625ac4ae56c6d313e5c6eb246317edc2871c4e4b53f",
+      "source_bases": 44370,
+      "metadata_genome_size": 44310,
+      "deposited_proteins": 54,
+      "translation_checks_passed": 54,
+      "failed_checks": [],
+      "deposited_coordinates_beyond_metadata_length": 1,
+      "predicted_coordinates_beyond_metadata_length": 1,
+      "exact_shared_coordinate_copies": 51,
+      "unshared_coordinates": [
+        {
+          "side": "deposited",
+          "id": "LI10_P5_8",
+          "coordinates": [
+            4107,
+            4304,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "LI10_P5_15",
+          "coordinates": [
+            9853,
+            9963,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "LI10_P5_18",
+          "coordinates": [
+            10661,
+            10786,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_8",
+          "coordinates": [
+            4010,
+            4231,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_24",
+          "coordinates": [
+            18043,
+            18219,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        }
+      ]
+    },
+    {
+      "source_id": "LM02_P1",
+      "deposited_faa_git_blob_sha1": "ee67b1ca297230f243025def094908da2964acba",
+      "deposited_faa_sha256": "e8eaf221c7984a4589eb70307727861d130db2d90e7d68fd204c46c0f970156c",
+      "source_sequence_sha256": "b5284fd6cfdaa4b4a7bf85cd2f0eaa2f9ad1e5d0fcb92100daff576e578d3f9e",
+      "regenerated_faa_sha256": "6834f3a016c8b6cec3ba93a91f9096a6f312c5fa4b51c5971a3835554da252af",
+      "source_bases": 43480,
+      "metadata_genome_size": 43420,
+      "deposited_proteins": 75,
+      "translation_checks_passed": 75,
+      "failed_checks": [],
+      "deposited_coordinates_beyond_metadata_length": 1,
+      "predicted_coordinates_beyond_metadata_length": 1,
+      "exact_shared_coordinate_copies": 73,
+      "unshared_coordinates": [
+        {
+          "side": "deposited",
+          "id": "LM02_P1_60",
+          "coordinates": [
+            38651,
+            38818,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "deposited",
+          "id": "LM02_P1_73",
+          "coordinates": [
+            42546,
+            42647,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_7",
+          "coordinates": [
+            5373,
+            5519,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_40",
+          "coordinates": [
+            25980,
+            26132,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_41",
+          "coordinates": [
+            26215,
+            26346,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_72",
+          "coordinates": [
+            41499,
+            41681,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        }
+      ]
+    },
+    {
+      "source_id": "LM08_P2",
+      "deposited_faa_git_blob_sha1": "5ec1ce540381f3e39705eac53a641b5fbcb1307b",
+      "deposited_faa_sha256": "2c61535e2a6b14512762924a12a3632e617e895ee3d45768976dace84a8cb5a6",
+      "source_sequence_sha256": "4e34e78b44d1956f48e22173013b6b10db4f501ef020c50c94d76a53206d5dfd",
+      "regenerated_faa_sha256": "5c79715a80699bd90de95e7636f9b2aefaf546cbc3fe1892856913b8c05d6328",
+      "source_bases": 43059,
+      "metadata_genome_size": 42999,
+      "deposited_proteins": 68,
+      "translation_checks_passed": 68,
+      "failed_checks": [],
+      "deposited_coordinates_beyond_metadata_length": 1,
+      "predicted_coordinates_beyond_metadata_length": 1,
+      "exact_shared_coordinate_copies": 67,
+      "unshared_coordinates": [
+        {
+          "side": "deposited",
+          "id": "LM08_P2_68",
+          "coordinates": [
+            42487,
+            43032,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_7",
+          "coordinates": [
+            5346,
+            5492,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_67",
+          "coordinates": [
+            41283,
+            41465,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_68",
+          "coordinates": [
+            41553,
+            41834,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_71",
+          "coordinates": [
+            42448,
+            43032,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        }
+      ]
+    },
+    {
+      "source_id": "LM40_P3",
+      "deposited_faa_git_blob_sha1": "d13fef24f339a77697e623f677f0b7d5a08ae621",
+      "deposited_faa_sha256": "dd4926828a7e472de2dd76cf17d58a0c1eb1c0aebad9d3b3fdb255c6ce69e4ab",
+      "source_sequence_sha256": "f4ceca4113d89dad90e2c59f86501ee964440c47a8b5999f51703ca2e9adbf12",
+      "regenerated_faa_sha256": "6cb8c1e50c96bf2921a35e91c06912f048aeed33a1da2950389a70dbdbb063df",
+      "source_bases": 45101,
+      "metadata_genome_size": 45041,
+      "deposited_proteins": 57,
+      "translation_checks_passed": 57,
+      "failed_checks": [],
+      "deposited_coordinates_beyond_metadata_length": 0,
+      "predicted_coordinates_beyond_metadata_length": 0,
+      "exact_shared_coordinate_copies": 56,
+      "unshared_coordinates": [
+        {
+          "side": "deposited",
+          "id": "LM40_P3_4",
+          "coordinates": [
+            3477,
+            4586,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_4",
+          "coordinates": [
+            3483,
+            4586,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_50",
+          "coordinates": [
+            40779,
+            40958,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_53",
+          "coordinates": [
+            41673,
+            41960,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        }
+      ]
+    },
+    {
+      "source_id": "NAN33_P2",
+      "deposited_faa_git_blob_sha1": "b8cc7e5d0c29f87623fc39f1fb1a39811989e579",
+      "deposited_faa_sha256": "ed9b79d1409d908669d88d064e717d25546d441347bfc551bdaff42b05477283",
+      "source_sequence_sha256": "871e41ef9acea48473b35e1a6452d12b0ba8bc0e7b70f065f2afc21039bf6204",
+      "regenerated_faa_sha256": "fccc982bad4b5169ee08698409d0d524caa80bc153255acde7fac2b68d7cb2aa",
+      "source_bases": 40768,
+      "metadata_genome_size": 40708,
+      "deposited_proteins": 46,
+      "translation_checks_passed": 46,
+      "failed_checks": [],
+      "deposited_coordinates_beyond_metadata_length": 1,
+      "predicted_coordinates_beyond_metadata_length": 1,
+      "exact_shared_coordinate_copies": 45,
+      "unshared_coordinates": [
+        {
+          "side": "deposited",
+          "id": "NAN33_P2_6",
+          "coordinates": [
+            4677,
+            4823,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_4",
+          "coordinates": [
+            2829,
+            2978,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_8",
+          "coordinates": [
+            4982,
+            5161,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_23",
+          "coordinates": [
+            14295,
+            14393,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        }
+      ]
+    },
+    {
+      "source_id": "NRG_12A1B",
+      "deposited_faa_git_blob_sha1": "78dbf6ce94acb45108fd420b27201f95bb99429c",
+      "deposited_faa_sha256": "0d003b15796210626c5227f9bd49b88d6751fbd83fa4bc61e73621232a9cf288",
+      "source_sequence_sha256": "a55bd390eb0818c45d326880f4c21bea07a9856c58c7268e7eef452d3c3c1264",
+      "regenerated_faa_sha256": "d6595333f1582f985e72c5531fe53b810d94e5dbd0ee6ccf712f066a1a7f4110",
+      "source_bases": 44294,
+      "metadata_genome_size": 44234,
+      "deposited_proteins": 70,
+      "translation_checks_passed": 70,
+      "failed_checks": [],
+      "deposited_coordinates_beyond_metadata_length": 1,
+      "predicted_coordinates_beyond_metadata_length": 1,
+      "exact_shared_coordinate_copies": 69,
+      "unshared_coordinates": [
+        {
+          "side": "deposited",
+          "id": "NRG_12A1B_53",
+          "coordinates": [
+            39124,
+            39372,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_8",
+          "coordinates": [
+            5934,
+            6080,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_23",
+          "coordinates": [
+            14512,
+            14703,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_25",
+          "coordinates": [
+            15389,
+            15655,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_37",
+          "coordinates": [
+            27314,
+            27445,
+            -1
+          ],
+          "same_strand_stop_in_other": false
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_57",
+          "coordinates": [
+            39121,
+            39372,
+            1
+          ],
+          "same_strand_stop_in_other": true
+        },
+        {
+          "side": "predicted",
+          "id": "c000000_69",
+          "coordinates": [
+            42313,
+            42543,
+            1
+          ],
+          "same_strand_stop_in_other": false
+        }
+      ]
+    }
+  ],
+  "gene_callers_rerun": false,
+  "sequences_changed": false,
+  "phenotype_labels_loaded": false,
+  "interaction_scores_generated": false,
+  "interpretation": "Translation agreement supports sequence correspondence for the annotated intervals. It does not authenticate experimental stock identity, prove gene calling correct, establish the authors exact calling commands, or reproduce infection predictions."
+}

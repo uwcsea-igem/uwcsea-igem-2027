@@ -1,6 +1,6 @@
 # Protein-calling feasibility and correspondence
 
-Updated 2026-11-07. **The protein-calling stage runs on the current computer, but its outputs are not an exact reproduction of GenoPHI's bundled example proteomes.** This identifies a concrete preprocessing choice to settle before fitting a model. It supplies no interaction scores and does not evaluate host specificity or assembly.
+Updated 2026-11-07. **All 2,980 deposited example proteins translate exactly from their declared intervals in the authenticated deposited DNA.** Our fixed gene-calling procedure selects different coordinate sets and is now declared as a uniform-reannotation adaptation for the next experiment. The original 0/25 exact-proteome result remains unchanged. No interaction scores have been produced.
 
 ## Fixed check and actual inputs
 
@@ -20,6 +20,22 @@ The [source-length diagnostic](15-relatedness-audit.md#authenticated-inputs-and-
 | Serial resource observation | 102.03 seconds; peak child RSS 911,163,392 bytes (about 0.91 GB) | Adequate local capacity for this annotation check. The RSS covers serial gene-caller child processes, not subsequent clustering or model training. |
 
 The exact comparison ignores record names, order, wrapping and one terminal stop symbol, while retaining duplicate protein copies. It rejects internal stops and empty records. All 25 deposited example files are authenticated against their pinned Git blobs; they are technical controls, with no phenotype-table input. The shared-copy count is a proteome-correspondence statistic, **not prediction accuracy**. No observed mismatch is automatically attributed to a tool bug, version difference, sequence error or biological difference.
+
+## DNA correspondence and source follow-up
+
+A [separately frozen CDS check](../software/tipcraft/benchmarks/retro-t7-t3/genophi-demo-cds-check.json) uses the deposited headers' one-based inclusive coordinates, strand, partial flags and code 11. It translates those exact intervals without searching other frames, shifting coordinates, trimming DNA or rerunning a gene caller. Initiation and partial-record handling follow the [Prodigal output documentation](https://github.com/hyattpd/Prodigal/wiki/Understanding-the-Prodigal-Output) and [NCBI code 11](https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi#SG11). The [result](../data/processed/genophi-demo-cds-audit.json) passes **2,980/2,980** exact translation/start/stop checks, including the seven partial records. Independent review also checked their actual contig-edge positions; the script itself checks declared partial flags without enforcing physical-edge proximity.
+
+The deposited and regenerated sets share **2,842 exact coordinate triples**. On each side, **79** other calls share a strand and stop position with the other set but select a different start. A further **59 deposited** and **54 regenerated** calls have no same-strand stop counterpart. These are descriptions of coordinate differences, not an attribution to a particular software version or input-processing cause. Sixteen calls in each set extend beyond the metadata-listed genome length, so the length discrepancy alone does not justify removing the final 60 bases. The check preserves the original evidence and establishes sequence correspondence for the annotated intervals; it does not validate biological gene boundaries or experimental-stock identity.
+
+The [source-provenance record](../data/processed/genophi-annotation-source-provenance.json) authenticates the pinned notebook. Zero-based **notebook cell 18** (code-cell ordinal 13), source lines 11 and 21, selects existing host/phage protein directories; lines 32–43 copy `.faa` files into the demo. Cell 10 uses the same input directories. The phage directory name includes `prodigal-gv`; it does not establish a version, mode, flags or exact DNA input. The inspected code consumes pre-called proteins and does not supply their exact generation command. Notebook prediction outputs were not inspected for this follow-up.
+
+Reproduce the CDS audit after the earlier annotation check:
+
+```bash
+uv run --project software/tipcraft python scripts/audit-genophi-demo-cds.py --policy software/tipcraft/benchmarks/retro-t7-t3/genophi-demo-cds-check.json --output /tmp/genophi-demo-cds-audit.json
+```
+
+Use a new output path. The check authenticates the deposited examples, DNA, previous annotation outputs and declared policies before comparison. No source sequences or gene calls are changed.
 
 ## Reproduction
 
@@ -41,6 +57,8 @@ The check requires a new output directory and verifies the declared executable, 
 
 ## Consequence for the next independent model
 
-Choose and freeze one defensible preprocessing route before training: either establish the deposited proteomes' generation correspondence, or declare uniform reannotation of every retained training, validation and target genome as an explicit methodological adaptation. Document differences rather than mixing old example proteomes with newly called inputs. No need to optimize annotation against Ando infection outcomes.
+The [preprocessing component policy](../software/tipcraft/benchmarks/retro-t7-t3/genophi-preprocessing-policy.json) now fixes **uniform reannotation** with the same pinned callers and commands for all retained training, validation and target genomes. Deposited example proteins remain technical controls and are not mixed with new calls as model inputs. Keep contig boundaries and the declared deposited sequence representations; later protein-feature input removes one terminal stop per protein while retaining sequence, length, multiplicity and counted ambiguous residues. These choices were fixed before feature clustering, model fitting and new target scores; they were not selected using Ando infection outcomes. This is a named adaptation, not exact replication of upstream preprocessing.
+
+The gene callers' distributed coding models are used as supplied; their training-genome overlap has not been audited here. They are coding models rather than supervised infection predictors, so do not describe this as generic pretraining independence. Host single mode fits a coding model to each genome independently. Neither operation reads infection labels.
 
 Then complete target-host sequence exclusions, record the final curated training membership, and construct reference protein families using training partitions alone. Assign held-out and target proteins to frozen references. The [next-method contract](../software/tipcraft/benchmarks/retro-t7-t3/next-method-contract.json) still requires exact splits, features, parameters, seeds and a trained bundle before inference. Full clustering and model training need their own resource measurement; the present check establishes no full-workflow hardware requirement.
