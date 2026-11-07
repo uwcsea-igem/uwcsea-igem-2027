@@ -69,6 +69,8 @@ PZ/MZ records were available through ENA EMBL/FASTA endpoints; the RefSeq record
 
 This pilot establishes the route for a subsequent frozen bulk reconciliation, **not authentication of all 52 phages**. The other 49 records remain unretrieved by this pilot. Exact DNA equality of public representations still does not authenticate the experimental stock.
 
+The subsequent [full-roster accession execution](35-basel-phage-accession-correspondence.md) now verifies all 52 official annotation/FASTA pairs. Forty-nine match their author-cache DNA exactly; Bas06, Bas21 and Bas68 do not. This supersedes the pilot's retrieval scope for later work without rewriting its bounded result. New genotype comparisons are required for the three differing official records.
+
 ## Replay and reproduction
 
 The [offline replay](../scripts/replay-ecor-host-groups.py) re-authenticates dependencies and all 30 FASTAs, parses the saved raw matrix, reconstructs the complete comparison summary, checks the prior 25 controls and reproduces the full component/exclusion partition. Its [receipt](../data/processed/ecor-host-reference-groups-replay.json) confirms exact agreement without executing skani, network requests or a model.

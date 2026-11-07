@@ -20,6 +20,8 @@ All 25 secondary-panel [ECOR WGS inputs are now authenticated](33-ecor-wgs-input
 
 The [complete ECOR host comparison](34-ecor-host-groups-and-target-exclusions.md) now resolves the host grouping prerequisite: all 900 comparisons and 30 self-controls pass, with the prior 25 controls exactly reproduced. ECOR13 and ECOR25 are excluded as target-related; 23 candidate hosts remain in 15 components. Phage accession checks, eligible-subset contrasts and a completed pre-score evaluation manifest remain pending; no model or new coverage is admitted.
 
+All 52 secondary-panel [official phage records are now verified across two formats](35-basel-phage-accession-correspondence.md). Forty-nine match old author-cache DNA exactly; Bas06, Bas21 and Bas68 do not. Their official genomes require measured genotype-group correspondence before old grouping can be reused. Input availability is distinct from stock identity and training admission; no new prediction or original-case coverage is claimed.
+
 ## Method and fixed inputs
 
 We used the [authors' WIsH executable](https://github.com/soedinglab/WIsH/tree/10e3f11779e926fb6dbdb20197c248367a75887f), version 1.1, with its default order 8 and alpha 16, built in Release mode with Apple clang 21, single-threaded without OpenMP. [Galiez et al., 2017, Methods](https://pmc.ncbi.nlm.nih.gov/articles/PMC5870724/) motivates fitting one Markov sequence model per candidate host and selecting the host with maximum likelihood. No known interaction labels or donor mapping are used to fit or score. The original paper evaluates taxonomic host prediction, including genus-level performance. This run is an exploratory strain-level stress test beyond that demonstrated task. It does not score gp17 structure or assembly.

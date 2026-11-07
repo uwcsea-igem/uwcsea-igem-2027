@@ -1,0 +1,2406 @@
+{
+  "DNA_edited_rotated_or_reverse_complemented": false,
+  "authenticated_phages": 49,
+  "entries": [
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 50126,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas01.gbk",
+        "record_id": "Bas01-240223-A07_1_NODE_1_length_50247_cov_74.468479",
+        "sequence_sha256": "eb27d3f5fb6e79329610ad7cdc0537d890b6eb523029902a29c08f1b2080d5a6",
+        "sha256": "28f2a91e5fc10506e00dc40d22135bea4bc2aab48ae494f338575fb13ec5617d"
+      },
+      "length": 50126,
+      "official_payloads": [
+        {
+          "bytes": 113960,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas01/annotation.txt",
+          "retrieval": {
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445405",
+            "reused_pilot_payload": {
+              "ambiguous_bases": 0,
+              "file_sha256": "fcb8c8f9cd79f8d19770376d45691cc7150e80d2be934d324550c19dc45f3cb5",
+              "length": 50126,
+              "path": "data/raw/genophi-external-validation/phage-accession-probe-v1/PZ445405-ena_embl.txt",
+              "sequence_sha256": "eb27d3f5fb6e79329610ad7cdc0537d890b6eb523029902a29c08f1b2080d5a6",
+              "topology": "circular",
+              "url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445405",
+              "versioned_accession": "PZ445405.1"
+            }
+          },
+          "sha256": "fcb8c8f9cd79f8d19770376d45691cc7150e80d2be934d324550c19dc45f3cb5"
+        },
+        {
+          "bytes": 51038,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas01/fasta.txt",
+          "retrieval": {
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445405",
+            "reused_pilot_payload": {
+              "ambiguous_bases": 0,
+              "file_sha256": "d166345698b6c52b443576f23b432782e35996dc0bbb3b97037bb61407f6afac",
+              "length": 50126,
+              "path": "data/raw/genophi-external-validation/phage-accession-probe-v1/PZ445405-ena_fasta.txt",
+              "sequence_sha256": "eb27d3f5fb6e79329610ad7cdc0537d890b6eb523029902a29c08f1b2080d5a6",
+              "topology": null,
+              "url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445405",
+              "versioned_accession": "PZ445405.1"
+            }
+          },
+          "sha256": "d166345698b6c52b443576f23b432782e35996dc0bbb3b97037bb61407f6afac"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas01",
+      "requested_accession": "PZ445405",
+      "sequence_sha256": "eb27d3f5fb6e79329610ad7cdc0537d890b6eb523029902a29c08f1b2080d5a6",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445405.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 47149,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas02.gbk",
+        "record_id": "Bas02-240405-A03_1_NODE_1_length_47270_cov_44.487667",
+        "sequence_sha256": "f67025c980399ae62c889b5f45e9780c296a1a8b6a44fcd64ed9d65001ff3202",
+        "sha256": "cf79094ff5fc4e5b21a532146ba491aeea4eabc1d2c7d19d97aa5257a0e3fca1"
+      },
+      "length": 47149,
+      "official_payloads": [
+        {
+          "bytes": 108747,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas02/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445406",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445406",
+            "retrieved_utc": "2026-11-07T15:46:51.303026+00:00"
+          },
+          "sha256": "21721a94be46f2d994e8d5a36d669c2984d2907d15a40a03930bd9ae9cc50b6d"
+        },
+        {
+          "bytes": 48008,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas02/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445406",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445406",
+            "retrieved_utc": "2026-11-07T15:46:52.445449+00:00"
+          },
+          "sha256": "7b469a88627cd3cf1a90d5cfa55dd39d03a4d1a7bdc9fef569645209b6636e36"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas02",
+      "requested_accession": "PZ445406",
+      "sequence_sha256": "f67025c980399ae62c889b5f45e9780c296a1a8b6a44fcd64ed9d65001ff3202",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445406.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 47731,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas03.gbk",
+        "record_id": "Bas03-240223-A08_1_NODE_1_length_47852_cov_65.32222",
+        "sequence_sha256": "1ce15311041ae158df9616366352125aca96ee83ed708d8c55b4ac1690205cfb",
+        "sha256": "2d159292b2cd90daeb9fc5b514839f9a9fc3a22aeebe14dbb0db3e3295418973"
+      },
+      "length": 47731,
+      "official_payloads": [
+        {
+          "bytes": 111593,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas03/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445407",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445407",
+            "retrieved_utc": "2026-11-07T15:46:51.466095+00:00"
+          },
+          "sha256": "9512eab55cd154f659bb4c553ba77ea4123584489cc0ea52c099f29c4c3c7dc6"
+        },
+        {
+          "bytes": 48601,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas03/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445407",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445407",
+            "retrieved_utc": "2026-11-07T15:46:52.663831+00:00"
+          },
+          "sha256": "7dbbe12f80f709ce8bd0265893bcf0c59c0ab114e084b837215d83de85840648"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas03",
+      "requested_accession": "PZ445407",
+      "sequence_sha256": "1ce15311041ae158df9616366352125aca96ee83ed708d8c55b4ac1690205cfb",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445407.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 51777,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas04.gbk",
+        "record_id": "Bas04-240223-A09_1_NODE_1_length_51898_cov_74.213879",
+        "sequence_sha256": "5070864898ed06e4617178dcf0257a963d549e743560ec91760bfc1922859c33",
+        "sha256": "82686c848cce279cb8059561e35cfdbb5c8cc0c2274766e3346bfab4e40be1b1"
+      },
+      "length": 51777,
+      "official_payloads": [
+        {
+          "bytes": 119641,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas04/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445408",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445408",
+            "retrieved_utc": "2026-11-07T15:46:53.778923+00:00"
+          },
+          "sha256": "31d9684c50f01796f74640d1654d7c70a9b95d48302909a13b5ea6f1edacddee"
+        },
+        {
+          "bytes": 52714,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas04/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445408",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445408",
+            "retrieved_utc": "2026-11-07T15:46:54.767633+00:00"
+          },
+          "sha256": "6a91420345d36fa3211fed962b5cd1eba80418facae982169daf002af4dec8d9"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas04",
+      "requested_accession": "PZ445408",
+      "sequence_sha256": "5070864898ed06e4617178dcf0257a963d549e743560ec91760bfc1922859c33",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445408.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 47775,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas05.gbk",
+        "record_id": "Bas05-240405-A05_1_NODE_1_length_47896_cov_67.878723",
+        "sequence_sha256": "c653a9e6b2b1d1c137618021265425ed8d623597e0498083e1c8ae711db8e804",
+        "sha256": "e4ccb7b5d2bc813aea7648e9819282be6b1ac80c5a15d20286aad3094332fcdb"
+      },
+      "length": 47775,
+      "official_payloads": [
+        {
+          "bytes": 110702,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas05/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445409",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445409",
+            "retrieved_utc": "2026-11-07T15:46:53.922114+00:00"
+          },
+          "sha256": "a2b764d820cfeead2f8c33c08c90eee0c8d6be1954473ce641bd5436629002ba"
+        },
+        {
+          "bytes": 48645,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas05/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445409",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445409",
+            "retrieved_utc": "2026-11-07T15:46:54.949904+00:00"
+          },
+          "sha256": "d88f265c3b38a3148fe890b5e33be611998c4bac4cde893f14756f86d4cef1ed"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas05",
+      "requested_accession": "PZ445409",
+      "sequence_sha256": "c653a9e6b2b1d1c137618021265425ed8d623597e0498083e1c8ae711db8e804",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445409.1"
+    },
+    {
+      "author_container": {
+        "length": 51473,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas06.gbk",
+        "record_id": "Bas06-240405-A07_1_NODE_1_length_51473_cov_65.149712",
+        "sequence_sha256": "70006653e41955d48e544987cb9aa317d40de1761236f24da1ed0f90269debc1",
+        "sha256": "1088509af2f91f8c5329da9a9123ab31f22340dc749311763f825c16541c397c"
+      },
+      "error": "Official DNA differs from authenticated author container",
+      "official_payloads": [
+        {
+          "bytes": 119347,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas06/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445410",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445410",
+            "retrieved_utc": "2026-11-07T15:46:55.971656+00:00"
+          },
+          "sha256": "7297fe3ba096feb7343c780aa809d0cd32efcc00e946a711dd26ea2d4b8514e9"
+        },
+        {
+          "bytes": 52405,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas06/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445410",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445410",
+            "retrieved_utc": "2026-11-07T15:46:56.933483+00:00"
+          },
+          "sha256": "0009ad01d168bed4e325a7adee2038ad1979d2f813bf4eb409e1346922dafc35"
+        }
+      ],
+      "phage": "Bas06",
+      "requested_accession": "PZ445410",
+      "status": "unresolved_input"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 51129,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas07.gbk",
+        "record_id": "Bas07-240405-A09_1_NODE_1_length_51250_cov_64.810421",
+        "sequence_sha256": "e08e53edfa7d522d11aa347f59e688d89f6a8d0f4beaf3b628d600ad87a22b73",
+        "sha256": "fbcd5d45ee2bfbaee5f40eb00c55a77a6da445ad2fccf18c6a35d0a904f64656"
+      },
+      "length": 51129,
+      "official_payloads": [
+        {
+          "bytes": 118691,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas07/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445411",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445411",
+            "retrieved_utc": "2026-11-07T15:46:56.282038+00:00"
+          },
+          "sha256": "276e2adc2ce30f71cbc95a589816da30a60f4d5a87833cd734ee024d88702d97"
+        },
+        {
+          "bytes": 52058,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas07/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445411",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445411",
+            "retrieved_utc": "2026-11-07T15:46:57.267472+00:00"
+          },
+          "sha256": "407a396e9de3ea1626c563898863823927ab943d6832da189c86ebf68853ae30"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas07",
+      "requested_accession": "PZ445411",
+      "sequence_sha256": "e08e53edfa7d522d11aa347f59e688d89f6a8d0f4beaf3b628d600ad87a22b73",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445411.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 50731,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas08.gbk",
+        "record_id": "Bas08-240808-E05_2_NODE_1_length_50852_cov_55.707674",
+        "sequence_sha256": "e37a86b4cbf8997223367592fbcf68b16f3644231121a07d9ae803291253fde6",
+        "sha256": "20ac85d7e583c06348649797f3069154310f7eaf491f07498fedb91e82cf1b2f"
+      },
+      "length": 50731,
+      "official_payloads": [
+        {
+          "bytes": 118592,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas08/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445412",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445412",
+            "retrieved_utc": "2026-11-07T15:46:58.185376+00:00"
+          },
+          "sha256": "61c32ab509597f69295376e3acdc361464098d430acdfdc713181a48e7beb52e"
+        },
+        {
+          "bytes": 51654,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas08/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445412",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445412",
+            "retrieved_utc": "2026-11-07T15:46:59.321908+00:00"
+          },
+          "sha256": "4b003f6bb441c21fb83e54dd909613bd98b66613a7afd00e6e7f19a6aeae278e"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas08",
+      "requested_accession": "PZ445412",
+      "sequence_sha256": "e37a86b4cbf8997223367592fbcf68b16f3644231121a07d9ae803291253fde6",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445412.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 51285,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas09.gbk",
+        "record_id": "Bas09-240405-A11_1_NODE_1_length_51406_cov_60.29073",
+        "sequence_sha256": "17718b438f69a4b275ac4e4f8a224c12b5cef8f1bd94db84177a9be5654bb725",
+        "sha256": "68aff71416728d5481d94dca009c4ae757554b236f082b0ef068eb722d4d8e06"
+      },
+      "length": 51285,
+      "official_payloads": [
+        {
+          "bytes": 118343,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas09/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445413",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445413",
+            "retrieved_utc": "2026-11-07T15:46:58.419418+00:00"
+          },
+          "sha256": "53c1eae5a454bbb332a461e4e222b3800bd20fcc287c7d51c0c73f17fbdf5ea0"
+        },
+        {
+          "bytes": 52213,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas09/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445413",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445413",
+            "retrieved_utc": "2026-11-07T15:46:59.378444+00:00"
+          },
+          "sha256": "fdabffcbaa563f4d88801f067d5963ac93e040a75298bf0b7196a8909870033d"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas09",
+      "requested_accession": "PZ445413",
+      "sequence_sha256": "17718b438f69a4b275ac4e4f8a224c12b5cef8f1bd94db84177a9be5654bb725",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445413.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 49911,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas10.gbk",
+        "record_id": "Bas10-240808-E06_2_NODE_1_length_50032_cov_74.30935",
+        "sequence_sha256": "c27c460f4353158c52da9ee2112b3aac43916dad81408a0d07b0cc072bdda6fd",
+        "sha256": "af3672c68178ae7165c99a88cd7b64364c66bfb9f6f55ba30e62fd75b860062c"
+      },
+      "length": 49911,
+      "official_payloads": [
+        {
+          "bytes": 116417,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas10/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445414",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445414",
+            "retrieved_utc": "2026-11-07T15:47:00.500843+00:00"
+          },
+          "sha256": "228a48d07c8a1d8eff94c0aaa0dba0620c643db0c9fc98cbbf9ddf033694ea41"
+        },
+        {
+          "bytes": 50816,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas10/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445414",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445414",
+            "retrieved_utc": "2026-11-07T15:47:01.537146+00:00"
+          },
+          "sha256": "c0c77b41e4d6e434bc9724c291f33e448710c98953270f469e48e56baa512b83"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas10",
+      "requested_accession": "PZ445414",
+      "sequence_sha256": "c27c460f4353158c52da9ee2112b3aac43916dad81408a0d07b0cc072bdda6fd",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445414.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 49298,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas12.gbk",
+        "record_id": "MZ501053.1",
+        "sequence_sha256": "bd57afd371a88e4a717c99dc3221e6f0ff48cdd441cb4578cffd25f6c015731b",
+        "sha256": "f99de7c5c6ddf96d3b8cc2a099b3ee09528de71bc101c5573de0d6045dd2eb10"
+      },
+      "length": 49298,
+      "official_payloads": [
+        {
+          "bytes": 119856,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas12/annotation.txt",
+          "retrieval": {
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/MZ501053",
+            "reused_pilot_payload": {
+              "ambiguous_bases": 0,
+              "file_sha256": "d4d1ed29279d4538d861483e0b41608e4655eac00242375f7a03ce98359f6f10",
+              "length": 49298,
+              "path": "data/raw/genophi-external-validation/phage-accession-probe-v1/MZ501053-ena_embl.txt",
+              "sequence_sha256": "bd57afd371a88e4a717c99dc3221e6f0ff48cdd441cb4578cffd25f6c015731b",
+              "topology": "linear",
+              "url": "https://www.ebi.ac.uk/ena/browser/api/embl/MZ501053",
+              "versioned_accession": "MZ501053.1"
+            }
+          },
+          "sha256": "d4d1ed29279d4538d861483e0b41608e4655eac00242375f7a03ce98359f6f10"
+        },
+        {
+          "bytes": 50193,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas12/fasta.txt",
+          "retrieval": {
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/MZ501053",
+            "reused_pilot_payload": {
+              "ambiguous_bases": 0,
+              "file_sha256": "6e5a842055093b5f3e857fd105b2b1b66d62be12190ffc03a6e4889f1bffd7b1",
+              "length": 49298,
+              "path": "data/raw/genophi-external-validation/phage-accession-probe-v1/MZ501053-ena_fasta.txt",
+              "sequence_sha256": "bd57afd371a88e4a717c99dc3221e6f0ff48cdd441cb4578cffd25f6c015731b",
+              "topology": null,
+              "url": "https://www.ebi.ac.uk/ena/browser/api/fasta/MZ501053",
+              "versioned_accession": "MZ501053.1"
+            }
+          },
+          "sha256": "6e5a842055093b5f3e857fd105b2b1b66d62be12190ffc03a6e4889f1bffd7b1"
+        }
+      ],
+      "official_topology": "linear",
+      "phage": "Bas12",
+      "requested_accession": "MZ501053",
+      "sequence_sha256": "bd57afd371a88e4a717c99dc3221e6f0ff48cdd441cb4578cffd25f6c015731b",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "MZ501053.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 50192,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas13.gbk",
+        "record_id": "Bas13-240514-A04_1_NODE_1_length_50313_cov_64.82284",
+        "sequence_sha256": "fbaa322c04f0ae76b8fc2f9eb83b855d92321fb7955fe9c59dd75df1244070d3",
+        "sha256": "01f0d215dbb344156e489e4506546cb4396ed3576e6fbffb7480a2392ab0a1a1"
+      },
+      "length": 50192,
+      "official_payloads": [
+        {
+          "bytes": 114200,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas13/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445416",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445416",
+            "retrieved_utc": "2026-11-07T15:47:00.684478+00:00"
+          },
+          "sha256": "f44b632e8d0a4b5faca3714838fabb19bc7de68a9abfdccab7528904cb3f354a"
+        },
+        {
+          "bytes": 51104,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas13/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445416",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445416",
+            "retrieved_utc": "2026-11-07T15:47:01.645393+00:00"
+          },
+          "sha256": "34913a21bbc5aa91766a7310e726afe93e857c30a76ff6153ea3dbf2d9387c61"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas13",
+      "requested_accession": "PZ445416",
+      "sequence_sha256": "fbaa322c04f0ae76b8fc2f9eb83b855d92321fb7955fe9c59dd75df1244070d3",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445416.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 43627,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas14.gbk",
+        "record_id": "NC_073062.1",
+        "sequence_sha256": "9dad1f981892b672154f7585d6c07fa59c06a70934c2f2bcde114de85af59393",
+        "sha256": "c599a90a7af5a50b173ebf8c6e6fcb687b9d1265389f38fa2794dd62fe27b716"
+      },
+      "length": 43627,
+      "official_payloads": [
+        {
+          "bytes": 106200,
+          "format": "genbank",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas14/annotation.txt",
+          "retrieval": {
+            "requested_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_073062&rettype=gbwithparts&retmode=text",
+            "reused_pilot_payload": {
+              "ambiguous_bases": 0,
+              "file_sha256": "5a5efefe287d6f35711024ba081e91c2ffe5f5420e498d324702b647e040d387",
+              "length": 43627,
+              "path": "data/raw/genophi-external-validation/phage-accession-probe-v1/NC_073062-ncbi_gb.txt",
+              "sequence_sha256": "9dad1f981892b672154f7585d6c07fa59c06a70934c2f2bcde114de85af59393",
+              "topology": "linear",
+              "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_073062&rettype=gbwithparts&retmode=text",
+              "versioned_accession": "NC_073062.1"
+            }
+          },
+          "sha256": "5a5efefe287d6f35711024ba081e91c2ffe5f5420e498d324702b647e040d387"
+        },
+        {
+          "bytes": 44313,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas14/fasta.txt",
+          "retrieval": {
+            "requested_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_073062&rettype=fasta&retmode=text",
+            "reused_pilot_payload": {
+              "ambiguous_bases": 0,
+              "file_sha256": "557375f3832979ad0c888875fc4e0198bcdb03d36e133f22a096979f43268764",
+              "length": 43627,
+              "path": "data/raw/genophi-external-validation/phage-accession-probe-v1/NC_073062-ncbi_fasta.txt",
+              "sequence_sha256": "9dad1f981892b672154f7585d6c07fa59c06a70934c2f2bcde114de85af59393",
+              "topology": null,
+              "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_073062&rettype=fasta&retmode=text",
+              "versioned_accession": "NC_073062.1"
+            }
+          },
+          "sha256": "557375f3832979ad0c888875fc4e0198bcdb03d36e133f22a096979f43268764"
+        }
+      ],
+      "official_topology": "linear",
+      "phage": "Bas14",
+      "requested_accession": "NC_073062",
+      "sequence_sha256": "9dad1f981892b672154f7585d6c07fa59c06a70934c2f2bcde114de85af59393",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "NC_073062.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 44550,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas15.gbk",
+        "record_id": "Bas15-240514-A06_1_NODE_1_length_44671_cov_72.321437",
+        "sequence_sha256": "c1f983df30b24306efc93eda4386179e402535b14f9d4cd56b90427e2d5dfdb2",
+        "sha256": "c4ec07c98625fed8cea5b3d192599d857975e609155e06e610354b16ffaeeb2e"
+      },
+      "length": 44550,
+      "official_payloads": [
+        {
+          "bytes": 100618,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas15/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445417",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445417",
+            "retrieved_utc": "2026-11-07T15:47:02.852746+00:00"
+          },
+          "sha256": "0c05d84ad4ec843cf0ac9d1a2941e6aa422fdcbc8edb28c932bc628b2ffba043"
+        },
+        {
+          "bytes": 45369,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas15/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445417",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445417",
+            "retrieved_utc": "2026-11-07T15:47:03.822251+00:00"
+          },
+          "sha256": "f8e8514973acf692a855cb77d76ababd0584f33d8d9b421bead14816caee3ed5"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas15",
+      "requested_accession": "PZ445417",
+      "sequence_sha256": "c1f983df30b24306efc93eda4386179e402535b14f9d4cd56b90427e2d5dfdb2",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445417.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 44295,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas16.gbk",
+        "record_id": "NC_073066.1",
+        "sequence_sha256": "62ec7816e579cc02148f634370406f50ff45606bc8b292c56a7f2e8bd87b4132",
+        "sha256": "ed29047b24c433b7bbbc5d4e280e7c79d421b98ab5fb3464de93302efda843c8"
+      },
+      "length": 44295,
+      "official_payloads": [
+        {
+          "bytes": 107721,
+          "format": "genbank",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas16/annotation.txt",
+          "retrieval": {
+            "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_073066&rettype=gbwithparts&retmode=text",
+            "http_status": 200,
+            "requested_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_073066&rettype=gbwithparts&retmode=text",
+            "retrieved_utc": "2026-11-07T15:47:03.199960+00:00"
+          },
+          "sha256": "1f4cda8597c614d63f0d180ef57c5c3ed5a66b5fa3dc087a416e753e726bbfc6"
+        },
+        {
+          "bytes": 44991,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas16/fasta.txt",
+          "retrieval": {
+            "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_073066&rettype=fasta&retmode=text",
+            "http_status": 200,
+            "requested_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_073066&rettype=fasta&retmode=text",
+            "retrieved_utc": "2026-11-07T15:47:04.272803+00:00"
+          },
+          "sha256": "e7e8c3b5a1e473fa63f0ecaf9be7c1269869bea9bdf0ca659e531dbac16f285a"
+        }
+      ],
+      "official_topology": "linear",
+      "phage": "Bas16",
+      "requested_accession": "NC_073066",
+      "sequence_sha256": "62ec7816e579cc02148f634370406f50ff45606bc8b292c56a7f2e8bd87b4132",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "NC_073066.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 43104,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas17.gbk",
+        "record_id": "Bas17-240514-A08_1_NODE_1_length_43225_cov_52.213994",
+        "sequence_sha256": "1c22c66d9f223cdeaa3181c5ee3158b31fffc309560abe84213e69149f355b5f",
+        "sha256": "ec87a4ac0bc54cb3779f50858867c60b9b6d9faa8657b69114474460eac64108"
+      },
+      "length": 43104,
+      "official_payloads": [
+        {
+          "bytes": 97942,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas17/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445418",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445418",
+            "retrieved_utc": "2026-11-07T15:47:04.952266+00:00"
+          },
+          "sha256": "58f124eb60274f36d405d80652c353321f20219732770e65aab870d586b82337"
+        },
+        {
+          "bytes": 43894,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas17/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445418",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445418",
+            "retrieved_utc": "2026-11-07T15:47:06.124280+00:00"
+          },
+          "sha256": "87644352885e230b90f25b119ddf57d3b3dddaa5cfd9c8bc9e4e6e85d49ad3de"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas17",
+      "requested_accession": "PZ445418",
+      "sequence_sha256": "1c22c66d9f223cdeaa3181c5ee3158b31fffc309560abe84213e69149f355b5f",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445418.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 58073,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas19.gbk",
+        "record_id": "Bas19-240417-C07_1_NODE_1_length_58194_cov_74.251511",
+        "sequence_sha256": "0273ebf70ee8291be50e746bc68f6c892f9e8e3f29b592a2336efd7ca379a5a1",
+        "sha256": "e1a473122c4a1af362799c24c89409a7f5909643bf6d44d87212c783e44e9848"
+      },
+      "length": 58073,
+      "official_payloads": [
+        {
+          "bytes": 131612,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas19/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445420",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445420",
+            "retrieved_utc": "2026-11-07T15:47:05.521148+00:00"
+          },
+          "sha256": "7311b3409935450cf27fca385c4eef9d50cef2a7d4fddcfcd92b2191bc6c6577"
+        },
+        {
+          "bytes": 59118,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas19/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445420",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445420",
+            "retrieved_utc": "2026-11-07T15:47:06.708675+00:00"
+          },
+          "sha256": "f39c144d15fb76339218f1b5a905eba0f8b3c86b594659c216253a74735ac401"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas19",
+      "requested_accession": "PZ445420",
+      "sequence_sha256": "0273ebf70ee8291be50e746bc68f6c892f9e8e3f29b592a2336efd7ca379a5a1",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445420.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 59835,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas20.gbk",
+        "record_id": "Bas20-240808-E07_2_NODE_1_length_59956_cov_21.615092",
+        "sequence_sha256": "11a2c203aa309d991b492e19bade3c4ccdc918f9a515cc307e04f7decbf2ba30",
+        "sha256": "90b81e4d64eea91720a56f4b6a41e90843445e3647f55540acd822754fec8dc2"
+      },
+      "length": 59835,
+      "official_payloads": [
+        {
+          "bytes": 135142,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas20/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445421",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445421",
+            "retrieved_utc": "2026-11-07T15:47:07.346869+00:00"
+          },
+          "sha256": "a6eaab335bdca15ec695dd5a1c93ae6069afdfb81083c06dee2c42aafb393238"
+        },
+        {
+          "bytes": 60908,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas20/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445421",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445421",
+            "retrieved_utc": "2026-11-07T15:47:08.741458+00:00"
+          },
+          "sha256": "2c8a13b3792bd4fe9b5c142fb5297d6b746e8447075be8c00047665166e54026"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas20",
+      "requested_accession": "PZ445421",
+      "sequence_sha256": "11a2c203aa309d991b492e19bade3c4ccdc918f9a515cc307e04f7decbf2ba30",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445421.1"
+    },
+    {
+      "author_container": {
+        "length": 56738,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas21.gbk",
+        "record_id": "Bas21-240808-E08_2_NODE_1_length_56738_cov_11.392179",
+        "sequence_sha256": "972f6f5ab26a414da61cc35ea96504c8cf11f2d7b0255edd938b954ba3372ac6",
+        "sha256": "ba18472a4ff1de2a343131aadae60ef665a8bc8a86cab9e6211be3cbbe408275"
+      },
+      "error": "Official DNA differs from authenticated author container",
+      "official_payloads": [
+        {
+          "bytes": 130032,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas21/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445422",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445422",
+            "retrieved_utc": "2026-11-07T15:47:07.915558+00:00"
+          },
+          "sha256": "42d82820a80f99aadd7b85aacb5a148673a92b5b610c97cf59976d757f7bc4f4"
+        },
+        {
+          "bytes": 57610,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas21/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445422",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445422",
+            "retrieved_utc": "2026-11-07T15:47:09.251076+00:00"
+          },
+          "sha256": "9294d0b2ad7bfa7d1f0a3fe09073e0d92de34452836f335efc7a2b531c89bad9"
+        }
+      ],
+      "phage": "Bas21",
+      "requested_accession": "PZ445422",
+      "status": "unresolved_input"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 58567,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas22.gbk",
+        "record_id": "Bas22-240514-A11_1_NODE_1_length_58600_cov_71.145676",
+        "sequence_sha256": "fd03c976c262105a2c176354ee04f4abaf262e0c5b301f39d31e849ef9babd75",
+        "sha256": "52924d7d43db2ffa36da392c318627bdeb53f709706b22da30445fd47ded7c47"
+      },
+      "length": 58567,
+      "official_payloads": [
+        {
+          "bytes": 132681,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas22/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445423",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445423",
+            "retrieved_utc": "2026-11-07T15:47:10.056637+00:00"
+          },
+          "sha256": "99812afb825e95f413166227786b2bec603ba1d6d9a6ee3d2f577f8111c90d1f"
+        },
+        {
+          "bytes": 59618,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas22/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445423",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445423",
+            "retrieved_utc": "2026-11-07T15:47:11.212433+00:00"
+          },
+          "sha256": "22e15f0b34634bcfe7588693f68ceb04a83dbc85537190255e4a6835f3a29eac"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas22",
+      "requested_accession": "PZ445423",
+      "sequence_sha256": "fd03c976c262105a2c176354ee04f4abaf262e0c5b301f39d31e849ef9babd75",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445423.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 58342,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas25.gbk",
+        "record_id": "Bas25-240808-E09_2_NODE_1_length_58463_cov_14.463903",
+        "sequence_sha256": "586bdf1020434c48d97f78b232e206299b54af741316ce06fd815c67c9277b5b",
+        "sha256": "89d7c9dc7ad75b73d78201b8fed32a17d256e0e4487a8ff0fc717f283aa59d54"
+      },
+      "length": 58342,
+      "official_payloads": [
+        {
+          "bytes": 132911,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas25/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445426",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445426",
+            "retrieved_utc": "2026-11-07T15:47:11.747902+00:00"
+          },
+          "sha256": "20aef63e949931f3bcd6d33cb5e7ed379408f5b402e2286d94584ef3b6115f75"
+        },
+        {
+          "bytes": 59387,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas25/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445426",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445426",
+            "retrieved_utc": "2026-11-07T15:47:12.740933+00:00"
+          },
+          "sha256": "63faee88db29b282e050a5e881fec2e8a9696f7d2c524169302e3eecf9f60bd2"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas25",
+      "requested_accession": "PZ445426",
+      "sequence_sha256": "586bdf1020434c48d97f78b232e206299b54af741316ce06fd815c67c9277b5b",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445426.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 114181,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas27.gbk",
+        "record_id": "Bas27-240808-E10_2_NODE_1_length_114302_cov_30.505075",
+        "sequence_sha256": "8ff6cc0e6e6cc8a94c58dd11f57d125390889fa380c472cfe3f1cc2911d2b3dc",
+        "sha256": "b535b3de4215df2d73b06601a4f6e8f8c5917f63dd7de5f57f1b3dcef9863b36"
+      },
+      "length": 114181,
+      "official_payloads": [
+        {
+          "bytes": 261211,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas27/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445428",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445428",
+            "retrieved_utc": "2026-11-07T15:47:12.565807+00:00"
+          },
+          "sha256": "f5b632cc2155d587d31fc05b2adfc4c1b83dabfecab7fe9a4cb738db33654358"
+        },
+        {
+          "bytes": 116159,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas27/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445428",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445428",
+            "retrieved_utc": "2026-11-07T15:47:13.740145+00:00"
+          },
+          "sha256": "69ea8808a89cf2d6a19a9283a23921a257862a5a3374b8b3359e19f1c1fbbab6"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas27",
+      "requested_accession": "PZ445428",
+      "sequence_sha256": "8ff6cc0e6e6cc8a94c58dd11f57d125390889fa380c472cfe3f1cc2911d2b3dc",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445428.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 115446,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas28.gbk",
+        "record_id": "Bas28-240417-C09_1_NODE_1_length_115567_cov_47.949396",
+        "sequence_sha256": "1cc00d606000417d2a8e4547934ee581c0c62bf23d2bfa272933682977d87dfa",
+        "sha256": "6a4cfd021780474b980267380a920b4d9f185b1d41cad79e92095d6238c0156f"
+      },
+      "length": 115446,
+      "official_payloads": [
+        {
+          "bytes": 264347,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas28/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445429",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445429",
+            "retrieved_utc": "2026-11-07T15:47:14.211309+00:00"
+          },
+          "sha256": "89b2c622a04c752ed95f8c025b59250fcf08e0d808c205c292e72d4e3b3fd69d"
+        },
+        {
+          "bytes": 117444,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas28/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445429",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445429",
+            "retrieved_utc": "2026-11-07T15:47:15.392067+00:00"
+          },
+          "sha256": "daa1f7dff618ce24c51294a5bedab7c490f65b32324103a2fe7f92528a6e1b3c"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas28",
+      "requested_accession": "PZ445429",
+      "sequence_sha256": "1cc00d606000417d2a8e4547934ee581c0c62bf23d2bfa272933682977d87dfa",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445429.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 110823,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas29.gbk",
+        "record_id": "Bas29-240808-E11_2_NODE_1_length_110944_cov_55.925656",
+        "sequence_sha256": "9533d31946ce99f9e3f3ecf7989ab71ddba150c27824a6975eceefbf9c9019cf",
+        "sha256": "d9f5ba3147a0aede41106785618add42cb964c651991999c6e3262a59aa83866"
+      },
+      "length": 110823,
+      "official_payloads": [
+        {
+          "bytes": 254551,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas29/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445430",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445430",
+            "retrieved_utc": "2026-11-07T15:47:15.077138+00:00"
+          },
+          "sha256": "c019900dc672a28a1bfb02085d4036bcb3b6c789fa6cdd4f8cbdf922a125b4a1"
+        },
+        {
+          "bytes": 112742,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas29/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445430",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445430",
+            "retrieved_utc": "2026-11-07T15:47:16.305291+00:00"
+          },
+          "sha256": "890d9c1dfa2260fb7fc458fd210746a079e95ee6641abbc980694a4042a120ec"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas29",
+      "requested_accession": "PZ445430",
+      "sequence_sha256": "9533d31946ce99f9e3f3ecf7989ab71ddba150c27824a6975eceefbf9c9019cf",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445430.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 113532,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas31.gbk",
+        "record_id": "MZ501058.1",
+        "sequence_sha256": "31e801fc449fde3db239895bc894f77228136608875b04bbc3c4e085922920bb",
+        "sha256": "29e1079ff59ace7cca1b16041aa98cb10a6ee87e12144a5b55d1640b04e684bd"
+      },
+      "length": 113532,
+      "official_payloads": [
+        {
+          "bytes": 269364,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas31/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/MZ501058",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/MZ501058",
+            "retrieved_utc": "2026-11-07T15:47:16.839216+00:00"
+          },
+          "sha256": "d0b34df8dd68bd144c9bf6ed0eb401f9175a0eeeb36c8f064ea354cafe048376"
+        },
+        {
+          "bytes": 115499,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas31/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/MZ501058",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/MZ501058",
+            "retrieved_utc": "2026-11-07T15:47:18.065784+00:00"
+          },
+          "sha256": "d3d44a6bd5050e03a52fb6893982e4d5578e1c60a99f7cb418a016e25a613f59"
+        }
+      ],
+      "official_topology": "linear",
+      "phage": "Bas31",
+      "requested_accession": "MZ501058",
+      "sequence_sha256": "31e801fc449fde3db239895bc894f77228136608875b04bbc3c4e085922920bb",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "MZ501058.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 106566,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas33.gbk",
+        "record_id": "bas33-240808-E12_1_NODE_1_length_106687_cov_45.191177",
+        "sequence_sha256": "c620a1128337c1e0d92bd5323186ff8906b6ac864b83e64dda66b62f2f51a160",
+        "sha256": "b0db0d7ecad003c030d83d4799216abb1b83133c8e3f338568e2e2f5b63c4d54"
+      },
+      "length": 106566,
+      "official_payloads": [
+        {
+          "bytes": 243006,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas33/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445432",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445432",
+            "retrieved_utc": "2026-11-07T15:47:17.783518+00:00"
+          },
+          "sha256": "dcb42d3bf9e44084e33d2d0941a8d4e2d54129442c26b7dda078aac2b1cb8664"
+        },
+        {
+          "bytes": 108417,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas33/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445432",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445432",
+            "retrieved_utc": "2026-11-07T15:47:18.934655+00:00"
+          },
+          "sha256": "b98d042d229b5466a2110bd3c4c9544e4ab093126fe2bc599757ebfa1d1a65c8"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas33",
+      "requested_accession": "PZ445432",
+      "sequence_sha256": "c620a1128337c1e0d92bd5323186ff8906b6ac864b83e64dda66b62f2f51a160",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445432.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 107080,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas34.gbk",
+        "record_id": "MZ501103.1",
+        "sequence_sha256": "7f04f2aec355668ecdff9cdfcf7be7c02a34c9d6b44e3fbe9f05faf3e71103c8",
+        "sha256": "1cc397af82483071221f16a4aaa0b967dda02d37a2482290b016f160710112c1"
+      },
+      "length": 107080,
+      "official_payloads": [
+        {
+          "bytes": 251977,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas34/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/MZ501103",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/MZ501103",
+            "retrieved_utc": "2026-11-07T15:47:19.658585+00:00"
+          },
+          "sha256": "634223be586245c7ecf02efb38919d8979be3fa34917c6cf0e3bfca1b8e0412a"
+        },
+        {
+          "bytes": 108937,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas34/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/MZ501103",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/MZ501103",
+            "retrieved_utc": "2026-11-07T15:47:20.867315+00:00"
+          },
+          "sha256": "8421e4c883364e0ebbf430e2e474075a374c60b11152c2b044e866b9324c2351"
+        }
+      ],
+      "official_topology": "linear",
+      "phage": "Bas34",
+      "requested_accession": "MZ501103",
+      "sequence_sha256": "7f04f2aec355668ecdff9cdfcf7be7c02a34c9d6b44e3fbe9f05faf3e71103c8",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "MZ501103.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 166861,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas35.gbk",
+        "record_id": "Bas35-240514-B10_1_NODE_1_length_166982_cov_19.122701",
+        "sequence_sha256": "7925de364f153d84077c845ee3517bfc96e3b406d5aac1895d9994d7dbdf5a48",
+        "sha256": "a2a8e4cdb93892427f5eb74ba61446fa22d2157d3bd4550125fc568676a880e4"
+      },
+      "length": 166861,
+      "official_payloads": [
+        {
+          "bytes": 382255,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas35/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445433",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445433",
+            "retrieved_utc": "2026-11-07T15:47:20.381127+00:00"
+          },
+          "sha256": "553a5182cf6326025975a2c22b96b9e7a675182b7b34363f0fe1647ea64f46c3"
+        },
+        {
+          "bytes": 169715,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas35/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445433",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445433",
+            "retrieved_utc": "2026-11-07T15:47:22.060545+00:00"
+          },
+          "sha256": "73295338368bfd25c0dd1000071b5827b55b002726a4c6008017f15b0a91c369"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas35",
+      "requested_accession": "PZ445433",
+      "sequence_sha256": "7925de364f153d84077c845ee3517bfc96e3b406d5aac1895d9994d7dbdf5a48",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445433.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 167732,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas36.gbk",
+        "record_id": "Bas36-241023-A08_2_NODE_1_length_167853_cov_71.347399",
+        "sequence_sha256": "f3ee25a79f31ef38cea4ae8321a6bbb57a72d85a2236d9012617b5a4f0dda61b",
+        "sha256": "0fe80d013b908760927b85926a743fd7aa525b220657264e5d313eb18c492001"
+      },
+      "length": 167732,
+      "official_payloads": [
+        {
+          "bytes": 383404,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas36/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445434",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445434",
+            "retrieved_utc": "2026-11-07T15:47:22.431920+00:00"
+          },
+          "sha256": "bdc25bd1be549b4b839dfd9b6b6a4627d19c86fe5a0758675e3152403f813cbe"
+        },
+        {
+          "bytes": 170600,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas36/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445434",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445434",
+            "retrieved_utc": "2026-11-07T15:47:24.146560+00:00"
+          },
+          "sha256": "64719307e248da1f0aaa9ef46f9e4e76cf00fe76d8426139bc2525048a987d17"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas36",
+      "requested_accession": "PZ445434",
+      "sequence_sha256": "f3ee25a79f31ef38cea4ae8321a6bbb57a72d85a2236d9012617b5a4f0dda61b",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445434.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 167832,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas37.gbk",
+        "record_id": "MZ501089.1",
+        "sequence_sha256": "82072cb7fda87ec335c6b905cfb7b969e54bfd042bf9df77271cbfa04b01652b",
+        "sha256": "88f0d41a3cee9e62a0b1f84641903c322b0ffa4dfe2a331ac35b206487119d92"
+      },
+      "length": 167832,
+      "official_payloads": [
+        {
+          "bytes": 411544,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas37/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/MZ501089",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/MZ501089",
+            "retrieved_utc": "2026-11-07T15:47:23.711150+00:00"
+          },
+          "sha256": "1176913bd4ba303ee11aec7b7f0a2872c34c6d0ab0cd30c1a11752467600eee8"
+        },
+        {
+          "bytes": 170701,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas37/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/MZ501089",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/MZ501089",
+            "retrieved_utc": "2026-11-07T15:47:24.954594+00:00"
+          },
+          "sha256": "eeeeb858d2c44494c064a64e7b27d0ae8c8771dbbc87e9f0d57203e71c606d62"
+        }
+      ],
+      "official_topology": "linear",
+      "phage": "Bas37",
+      "requested_accession": "MZ501089",
+      "sequence_sha256": "82072cb7fda87ec335c6b905cfb7b969e54bfd042bf9df77271cbfa04b01652b",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "MZ501089.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 169509,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas39.gbk",
+        "record_id": "MZ501066.1",
+        "sequence_sha256": "8ee4b789008459ccf4ce143441ae19f8beb9c64fb0b37b9dc17b85755cdc307b",
+        "sha256": "509cfabdeecb7a1401edd4125d719934635349058113e1ae358b7eff39538b5c"
+      },
+      "length": 169509,
+      "official_payloads": [
+        {
+          "bytes": 418935,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas39/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/MZ501066",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/MZ501066",
+            "retrieved_utc": "2026-11-07T15:47:25.711073+00:00"
+          },
+          "sha256": "75747c138c4a34c8ce2689645c066f23bff8e72c0f747a55ecc0d9fcb0956a2b"
+        },
+        {
+          "bytes": 172414,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas39/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/MZ501066",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/MZ501066",
+            "retrieved_utc": "2026-11-07T15:47:27.055277+00:00"
+          },
+          "sha256": "5962fc827a8720ff6feec1110c091e1827ec8a20b95af4b06984e97688544f81"
+        }
+      ],
+      "official_topology": "linear",
+      "phage": "Bas39",
+      "requested_accession": "MZ501066",
+      "sequence_sha256": "8ee4b789008459ccf4ce143441ae19f8beb9c64fb0b37b9dc17b85755cdc307b",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "MZ501066.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 165574,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas41.gbk",
+        "record_id": "MZ501067.1",
+        "sequence_sha256": "3f07bcbb5c9e4ec448daf432c476982198ee0bfe05ff2f403a4002c6da7f1dc0",
+        "sha256": "4ef2faefe4d9ac7cd7e54d0122560c5182debcad4c17d919f8e1f0845b8a92d7"
+      },
+      "length": 165574,
+      "official_payloads": [
+        {
+          "bytes": 409470,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas41/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/MZ501067",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/MZ501067",
+            "retrieved_utc": "2026-11-07T15:47:26.445195+00:00"
+          },
+          "sha256": "cc3ac4fbd0efe9d9a8daaff06378b21249ef21bebb1745f59cf9ff2255ee22cc"
+        },
+        {
+          "bytes": 168413,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas41/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/MZ501067",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/MZ501067",
+            "retrieved_utc": "2026-11-07T15:47:27.774848+00:00"
+          },
+          "sha256": "fa1d56feefac1b274977620e6a10e10e1b0771137c61d3b60c0f4156a655bcbe"
+        }
+      ],
+      "official_topology": "linear",
+      "phage": "Bas41",
+      "requested_accession": "MZ501067",
+      "sequence_sha256": "3f07bcbb5c9e4ec448daf432c476982198ee0bfe05ff2f403a4002c6da7f1dc0",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "MZ501067.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 168255,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas42.gbk",
+        "record_id": "Bas42-240417-C12_1_NODE_1_length_168376_cov_74.280033",
+        "sequence_sha256": "f6ff74b01ae2f9ff997f8c260cc4e60c70eb6434f64e1db61ed0cf26412e06a3",
+        "sha256": "ca5931298a73f875a2f8e98d1fe44ee6078c98a359597dbde4082535982aa379"
+      },
+      "length": 168255,
+      "official_payloads": [
+        {
+          "bytes": 383634,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas42/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445436",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445436",
+            "retrieved_utc": "2026-11-07T15:47:28.494098+00:00"
+          },
+          "sha256": "60380db5d67b589a641d8d2959282aa82407e82a699dd990bc7aa24b6ba8d9e6"
+        },
+        {
+          "bytes": 171137,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas42/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445436",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445436",
+            "retrieved_utc": "2026-11-07T15:47:29.800131+00:00"
+          },
+          "sha256": "387fcf0fca2db84fa1b234a51d2935baf4684e0313a9a7a9d1fc91a068c9f33f"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas42",
+      "requested_accession": "PZ445436",
+      "sequence_sha256": "f6ff74b01ae2f9ff997f8c260cc4e60c70eb6434f64e1db61ed0cf26412e06a3",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445436.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 166115,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas43.gbk",
+        "record_id": "Bas43-240417-D01_1_NODE_1_length_166236_cov_65.779635",
+        "sequence_sha256": "6b31e89a8a5416bcf8006b10ee5dc318d8dcdabe36cd7742766c13615a5b2cf9",
+        "sha256": "789d8c288647ab578532394fe5e0042839c0c7e5e241609033d2b8463737dd00"
+      },
+      "length": 166115,
+      "official_payloads": [
+        {
+          "bytes": 380120,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas43/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445437",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445437",
+            "retrieved_utc": "2026-11-07T15:47:29.293186+00:00"
+          },
+          "sha256": "6ba8ade7d732da2c160aa00d68dab0c1b3c949bd412e1cc912c6e93dc4e7d055"
+        },
+        {
+          "bytes": 168963,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas43/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445437",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445437",
+            "retrieved_utc": "2026-11-07T15:47:30.692314+00:00"
+          },
+          "sha256": "5c9f01e441adf4dbb1457d2a270f57c77950d1771a6eb54de896d8bd43b210ef"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas43",
+      "requested_accession": "PZ445437",
+      "sequence_sha256": "6b31e89a8a5416bcf8006b10ee5dc318d8dcdabe36cd7742766c13615a5b2cf9",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445437.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 170053,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas45.gbk",
+        "record_id": "Bas45-240417-D02_1_NODE_1_length_170174_cov_50.297137",
+        "sequence_sha256": "5e6e72a7ad369b13f2bd42a3941919b90a6b7f0ea83d03c5b272b97f82205ff5",
+        "sha256": "f6225e1efdc3baae726b4f368d17e94e0ce637c126ee5875aa06bb40a8622dfb"
+      },
+      "length": 170053,
+      "official_payloads": [
+        {
+          "bytes": 387758,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas45/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445439",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445439",
+            "retrieved_utc": "2026-11-07T15:47:31.319274+00:00"
+          },
+          "sha256": "c2e4894af6137b2177994c8399eddede78c4b8425a1fb5ea278f8f5553437744"
+        },
+        {
+          "bytes": 172962,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas45/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445439",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445439",
+            "retrieved_utc": "2026-11-07T15:47:32.574659+00:00"
+          },
+          "sha256": "816f0aa4d0003291ed20b698b1fd93d3fcfdfceab9407163deae49a660d0f1fa"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas45",
+      "requested_accession": "PZ445439",
+      "sequence_sha256": "5e6e72a7ad369b13f2bd42a3941919b90a6b7f0ea83d03c5b272b97f82205ff5",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445439.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 168968,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas47.gbk",
+        "record_id": "MZ501047.1",
+        "sequence_sha256": "752f5c71ef4672d34cb4ddc92d3b3789f7985cb6cbbcf57e3ea93d84751689bf",
+        "sha256": "13ec78d1d6874beda3c03d0006011861271e5c57e2d353c6c189bbbadb94d234"
+      },
+      "length": 168968,
+      "official_payloads": [
+        {
+          "bytes": 411016,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas47/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/MZ501047",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/MZ501047",
+            "retrieved_utc": "2026-11-07T15:47:32.416676+00:00"
+          },
+          "sha256": "5a06ea1cc44f0ab414109b8ec6378da700442e9cf0bebb998dbab9c9ee78a01f"
+        },
+        {
+          "bytes": 171860,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas47/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/MZ501047",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/MZ501047",
+            "retrieved_utc": "2026-11-07T15:47:33.783262+00:00"
+          },
+          "sha256": "bb3e6bc783d2c1f46687e190b6947735d245a37767f058f449b2c0159fcb0591"
+        }
+      ],
+      "official_topology": "linear",
+      "phage": "Bas47",
+      "requested_accession": "MZ501047",
+      "sequence_sha256": "752f5c71ef4672d34cb4ddc92d3b3789f7985cb6cbbcf57e3ea93d84751689bf",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "MZ501047.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 140076,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas49.gbk",
+        "record_id": "Bas49-240808-F02_2_NODE_1_length_140197_cov_16.474464",
+        "sequence_sha256": "2d8ce1822a4cb336d10c91d79396434126099c3d1187275cae3aef381ec662b5",
+        "sha256": "bfac8689eb39f1639c834c1ac62c31bb90b73a753e7cce6f973d3d7e90bac8d8"
+      },
+      "length": 140076,
+      "official_payloads": [
+        {
+          "bytes": 319373,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas49/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445442",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445442",
+            "retrieved_utc": "2026-11-07T15:47:34.100180+00:00"
+          },
+          "sha256": "c2568cafc016d51e86fab71f64f6aeac4469ce1d9c748bda1628919ed7f2bef4"
+        },
+        {
+          "bytes": 142482,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas49/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445442",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445442",
+            "retrieved_utc": "2026-11-07T15:47:35.294450+00:00"
+          },
+          "sha256": "acda7bff87936054a8c2a48d3bd10d23b2757d40e035e9a422a601d183384349"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas49",
+      "requested_accession": "PZ445442",
+      "sequence_sha256": "2d8ce1822a4cb336d10c91d79396434126099c3d1187275cae3aef381ec662b5",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445442.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 140659,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas51.gbk",
+        "record_id": "Bas51-240514-C08_1_NODE_1_length_140780_cov_70.227323",
+        "sequence_sha256": "d569dad393abb70fbc69caad6b339507b69ab3899814bb23ae0f42ea85157645",
+        "sha256": "eb47881799905749214837927f9f619ce8d194f2d393e01c58ff1d564c5b0e9b"
+      },
+      "length": 140659,
+      "official_payloads": [
+        {
+          "bytes": 321684,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas51/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445444",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445444",
+            "retrieved_utc": "2026-11-07T15:47:35.170997+00:00"
+          },
+          "sha256": "e225f45f74026387cd8066c5ff165617a4fc3ce1f340cc722ed397aab3da9358"
+        },
+        {
+          "bytes": 143079,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas51/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445444",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445444",
+            "retrieved_utc": "2026-11-07T15:47:36.377270+00:00"
+          },
+          "sha256": "6b48592565c589df5a77c5820798c9945cd977e7f3c47f88bf593402dca99810"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas51",
+      "requested_accession": "PZ445444",
+      "sequence_sha256": "d569dad393abb70fbc69caad6b339507b69ab3899814bb23ae0f42ea85157645",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445444.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 137380,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas52.gbk",
+        "record_id": "Bas52-240514-C09_1_NODE_1_length_137501_cov_22.865745",
+        "sequence_sha256": "b2d324739bf20719748b140e7533bdf6bb1adb704e4837219d699c29bdfcfd3a",
+        "sha256": "22d4d6dcd0153e3ce49bc9975a67704ff71f481eec07a2c9b191d0b7b3d63f17"
+      },
+      "length": 137380,
+      "official_payloads": [
+        {
+          "bytes": 313932,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas52/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445445",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445445",
+            "retrieved_utc": "2026-11-07T15:47:36.715396+00:00"
+          },
+          "sha256": "f4a17f5a806bb44b57b0861553153418e16c865dafee357658ebe101e031dfca"
+        },
+        {
+          "bytes": 139743,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas52/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445445",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445445",
+            "retrieved_utc": "2026-11-07T15:47:38.239212+00:00"
+          },
+          "sha256": "883b11bf33a4c76edc2d55fb7a5ae3b9292d2d1feb51b928494bb20ce08d0df9"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas52",
+      "requested_accession": "PZ445445",
+      "sequence_sha256": "b2d324739bf20719748b140e7533bdf6bb1adb704e4837219d699c29bdfcfd3a",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445445.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 136346,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas54.gbk",
+        "record_id": "Bas54-240924-A17_2_NODE_1_length_136467_cov_74.781614",
+        "sequence_sha256": "ce42a33678bac596a95ea2e3f8373a0155a35efefe670c520a2c852c791aecec",
+        "sha256": "cc6671716d5cd8ca64a85458cb5633daea0dc821e062e0c486d7791e2b3e7b00"
+      },
+      "length": 136346,
+      "official_payloads": [
+        {
+          "bytes": 309232,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas54/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445447",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445447",
+            "retrieved_utc": "2026-11-07T15:47:37.758598+00:00"
+          },
+          "sha256": "4ce3c96811d95b32af0144e5143635e3822fe27a982439b62a1b626e9f4c2ebe"
+        },
+        {
+          "bytes": 138690,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas54/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445447",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445447",
+            "retrieved_utc": "2026-11-07T15:47:38.925995+00:00"
+          },
+          "sha256": "2bd5c23f1cf158f572fcca20911848bf41eadd2b4cc78bb8f9a735c35d4348fa"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas54",
+      "requested_accession": "PZ445447",
+      "sequence_sha256": "ce42a33678bac596a95ea2e3f8373a0155a35efefe670c520a2c852c791aecec",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445447.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 135345,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas56.gbk",
+        "record_id": "Bas56-240514-D01_1_NODE_1_length_135466_cov_42.151361",
+        "sequence_sha256": "8366e2228124915fdaff7944c282da0f8ea04e1c0b26f59b121eb2b62716cf52",
+        "sha256": "e70f5b2a48f3e284d0a94758ae7e789a1fff70cdea4b2e93161ebe4208c376dc"
+      },
+      "length": 135345,
+      "official_payloads": [
+        {
+          "bytes": 308746,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas56/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445448",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445448",
+            "retrieved_utc": "2026-11-07T15:47:39.865191+00:00"
+          },
+          "sha256": "43f8a2719b384cc0b7e31c0dc03d7bf1b41386fc2e41ed5c34d25766f2b4f001"
+        },
+        {
+          "bytes": 137672,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas56/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445448",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445448",
+            "retrieved_utc": "2026-11-07T15:47:41.074016+00:00"
+          },
+          "sha256": "66e8099ee74d06fcf06e5e0e2f937a3428fe6a0a7a8715e39be0e6dfcb7714b6"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas56",
+      "requested_accession": "PZ445448",
+      "sequence_sha256": "8366e2228124915fdaff7944c282da0f8ea04e1c0b26f59b121eb2b62716cf52",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445448.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 135061,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas57.gbk",
+        "record_id": "MZ501094.1",
+        "sequence_sha256": "87a0dc5bb3a12bf8842778cc210d3ebfccca8cb4943839de1c9b1f29d8db0df0",
+        "sha256": "928a11d73164847092f140cc9156445048e08b19c81d99ab5bdf826fec1d61ca"
+      },
+      "length": 135061,
+      "official_payloads": [
+        {
+          "bytes": 326550,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas57/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/MZ501094",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/MZ501094",
+            "retrieved_utc": "2026-11-07T15:47:40.354164+00:00"
+          },
+          "sha256": "fdd655a7fff4167a7b19cd72c63a0c5d79feb7032b8147260c1d59809388fc57"
+        },
+        {
+          "bytes": 137384,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas57/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/MZ501094",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/MZ501094",
+            "retrieved_utc": "2026-11-07T15:47:41.582514+00:00"
+          },
+          "sha256": "af1197d86eac92186c2bb911d450da317d79b1ede84e6f40b01c83cbe9939135"
+        }
+      ],
+      "official_topology": "linear",
+      "phage": "Bas57",
+      "requested_accession": "MZ501094",
+      "sequence_sha256": "87a0dc5bb3a12bf8842778cc210d3ebfccca8cb4943839de1c9b1f29d8db0df0",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "MZ501094.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 136906,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas58.gbk",
+        "record_id": "Bas58-240514-D03_1_NODE_1_length_137027_cov_74.183571",
+        "sequence_sha256": "f79460f82a5442734b2d72fe9ff50be2a079acdf919a84b76021730d62aa35cc",
+        "sha256": "6e90142d14f2de710023cb1fecfcf2baa172f55deb00174a1690a4e73fea203d"
+      },
+      "length": 136906,
+      "official_payloads": [
+        {
+          "bytes": 312929,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas58/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445449",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445449",
+            "retrieved_utc": "2026-11-07T15:47:42.450104+00:00"
+          },
+          "sha256": "86c986dcd944f71fcb8f06c1ed63ca4c0496fbc7ebba01955b218e781f9d9c64"
+        },
+        {
+          "bytes": 139266,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas58/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445449",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445449",
+            "retrieved_utc": "2026-11-07T15:47:43.659373+00:00"
+          },
+          "sha256": "2130653c0d09315bc42baff8760857029b174e790a9a9254c188c125d00877e4"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas58",
+      "requested_accession": "PZ445449",
+      "sequence_sha256": "f79460f82a5442734b2d72fe9ff50be2a079acdf919a84b76021730d62aa35cc",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445449.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 131526,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas59.gbk",
+        "record_id": "Bas59-240514-D04_1_NODE_1_length_131647_cov_73.619049",
+        "sequence_sha256": "d63f2fdc22e1cfffdc43874e9ab229b66c24eb70c204ca06eb3c92653ba06f7f",
+        "sha256": "ed558f371f23d523519d02cbd1b8463871862b8c63df18b20549a8b0ba40c539"
+      },
+      "length": 131526,
+      "official_payloads": [
+        {
+          "bytes": 297900,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas59/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445450",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445450",
+            "retrieved_utc": "2026-11-07T15:47:43.037598+00:00"
+          },
+          "sha256": "5aadcbfb9d0b73d181458e664ddafb36c02405ddd1e55328b26f5a3c8bdbedc4"
+        },
+        {
+          "bytes": 133799,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas59/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445450",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445450",
+            "retrieved_utc": "2026-11-07T15:47:44.212142+00:00"
+          },
+          "sha256": "5b952c043f9b07ac992559fc8eec07c2241ccfeaf3da9456a2fea53a7071f118"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas59",
+      "requested_accession": "PZ445450",
+      "sequence_sha256": "d63f2fdc22e1cfffdc43874e9ab229b66c24eb70c204ca06eb3c92653ba06f7f",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445450.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 150425,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas60.gbk",
+        "record_id": "Bas60-241023-A09_2_NODE_1_length_150546_cov_80.941512",
+        "sequence_sha256": "8f7017aa1b407987ddf2d30e2e8bcd95ea5d7369efbd9aa98aa98ff8cae561c0",
+        "sha256": "2b109dfec0d487bb2078c4b57aafc54fe1792c89042d8ab98a8c34c1fa5a902f"
+      },
+      "length": 150425,
+      "official_payloads": [
+        {
+          "bytes": 344795,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas60/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445451",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445451",
+            "retrieved_utc": "2026-11-07T15:47:45.095592+00:00"
+          },
+          "sha256": "685c15516c6be8c2717573d50573a888ee65fb0b0fb1cc6ab66162e14587abcf"
+        },
+        {
+          "bytes": 153007,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas60/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445451",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445451",
+            "retrieved_utc": "2026-11-07T15:47:46.292756+00:00"
+          },
+          "sha256": "f62697cbc2d17f7087e416b78b71d513fd0fed8bf0db9f8958c8bdff0b834290"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas60",
+      "requested_accession": "PZ445451",
+      "sequence_sha256": "8f7017aa1b407987ddf2d30e2e8bcd95ea5d7369efbd9aa98aa98ff8cae561c0",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445451.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 146666,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas61.gbk",
+        "record_id": "Bas61-240514-D06_1_NODE_1_length_146787_cov_79.893547",
+        "sequence_sha256": "61dca6cb4df1773585ff2a0eb52cca70182bd53ad7f38ba1dc14faefd45e2895",
+        "sha256": "02a5a689402ddcb8da8f4e3aaa15f8ff79083563031629d7eb06e1fea81a1f8e"
+      },
+      "length": 146666,
+      "official_payloads": [
+        {
+          "bytes": 337499,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas61/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445452",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445452",
+            "retrieved_utc": "2026-11-07T15:47:45.653742+00:00"
+          },
+          "sha256": "115ff85bea530d647afb210061a2f38d4143f1fb94ecf71b956b728d66c74164"
+        },
+        {
+          "bytes": 149183,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas61/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445452",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445452",
+            "retrieved_utc": "2026-11-07T15:47:46.858752+00:00"
+          },
+          "sha256": "428ef8c4fb10321ac94548dc6ce4f931047ded5271eee5acaf88d142716da5d9"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas61",
+      "requested_accession": "PZ445452",
+      "sequence_sha256": "61dca6cb4df1773585ff2a0eb52cca70182bd53ad7f38ba1dc14faefd45e2895",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445452.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 87100,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas63.gbk",
+        "record_id": "Bas63-240514-D07_1_NODE_1_length_87221_cov_79.358278",
+        "sequence_sha256": "d943c9ba17aad0398240c23274a7fe17743cbfd5a756905c8ee22bbc636989fa",
+        "sha256": "5be50562297b1eda0aa93ff1333283cd61abedc67f1ae7a54e1180b56573d637"
+      },
+      "length": 87100,
+      "official_payloads": [
+        {
+          "bytes": 196682,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas63/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445454",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445454",
+            "retrieved_utc": "2026-11-07T15:47:47.693361+00:00"
+          },
+          "sha256": "0fe9a948841b086e5607f11314e183951953d38398224370f4578a0ed4f9b7a7"
+        },
+        {
+          "bytes": 88630,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas63/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445454",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445454",
+            "retrieved_utc": "2026-11-07T15:47:48.774218+00:00"
+          },
+          "sha256": "643642afd06c7a7976d4d1edae23ae043cec9454d5c81fddbd5cf975384028a4"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas63",
+      "requested_accession": "PZ445454",
+      "sequence_sha256": "d943c9ba17aad0398240c23274a7fe17743cbfd5a756905c8ee22bbc636989fa",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445454.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 39842,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas64.gbk",
+        "record_id": "MZ501081.1",
+        "sequence_sha256": "f2ced350fe23ef7913aaac44912020da442f871404e372b1dfcfe2a3dab23b2c",
+        "sha256": "284ed2cc6843f2ff3fa4858025bef1158c8398d758770258c2031cc85364ddae"
+      },
+      "length": 39842,
+      "official_payloads": [
+        {
+          "bytes": 91169,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas64/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/MZ501081",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/MZ501081",
+            "retrieved_utc": "2026-11-07T15:47:48.028677+00:00"
+          },
+          "sha256": "25f81075ab4ef20262c2b8a45f951fbc3edcbbbbaf28708fc728f0f3b68524d7"
+        },
+        {
+          "bytes": 40581,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas64/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/MZ501081",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/MZ501081",
+            "retrieved_utc": "2026-11-07T15:47:49.023636+00:00"
+          },
+          "sha256": "e71044a072422f5ac752a43c5f79bb28deb638bd5d6a0c44673a428601b48555"
+        }
+      ],
+      "official_topology": "linear",
+      "phage": "Bas64",
+      "requested_accession": "MZ501081",
+      "sequence_sha256": "f2ced350fe23ef7913aaac44912020da442f871404e372b1dfcfe2a3dab23b2c",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "MZ501081.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 39451,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas65.gbk",
+        "record_id": "Bas65-240514-D09_1_NODE_1_length_39572_cov_71.118121",
+        "sequence_sha256": "dc194e3540c904cbe6a40f15ecb2e67560855433fbc7bc8908a71324153857f7",
+        "sha256": "dec7151e0e00ea2c03a9da6bd7b8017973b44280427443fa84e94586d144bee4"
+      },
+      "length": 39451,
+      "official_payloads": [
+        {
+          "bytes": 88459,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas65/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445455",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445455",
+            "retrieved_utc": "2026-11-07T15:47:49.940932+00:00"
+          },
+          "sha256": "78e00b0f90d7cf015bf582a31ff78c9cb71c3ca39adaf6ac08d287368938de2e"
+        },
+        {
+          "bytes": 40186,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas65/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445455",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445455",
+            "retrieved_utc": "2026-11-07T15:47:50.887879+00:00"
+          },
+          "sha256": "4e5555ff377a103bdde49b7afb2a85fe31bb3be5c16f2f027149d791e54d3768"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas65",
+      "requested_accession": "PZ445455",
+      "sequence_sha256": "dc194e3540c904cbe6a40f15ecb2e67560855433fbc7bc8908a71324153857f7",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445455.1"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 39315,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas67.gbk",
+        "record_id": "Bas67-240514-D11_1_NODE_1_length_39436_cov_66.346585",
+        "sequence_sha256": "c2f85081c240b664638b70d99827b8ab7914aca80ebb581522f355b538d41aa9",
+        "sha256": "f67b9ff5f9af70fde0cd0ebee054eb96b93b90398fd2d8afef9a1dfee82b1488"
+      },
+      "length": 39315,
+      "official_payloads": [
+        {
+          "bytes": 88306,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas67/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445456",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445456",
+            "retrieved_utc": "2026-11-07T15:47:50.149345+00:00"
+          },
+          "sha256": "24fab538b7a1f7fd40522f2e34d89ed1257910b4a29ee08a4b506f4d38aa8733"
+        },
+        {
+          "bytes": 40045,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas67/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445456",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445456",
+            "retrieved_utc": "2026-11-07T15:47:51.253074+00:00"
+          },
+          "sha256": "0c8e8856d172b8828d6847da24968a94ff56df63ec2da8da99160410e3871e73"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas67",
+      "requested_accession": "PZ445456",
+      "sequence_sha256": "c2f85081c240b664638b70d99827b8ab7914aca80ebb581522f355b538d41aa9",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445456.1"
+    },
+    {
+      "author_container": {
+        "length": 39465,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas68.gbk",
+        "record_id": "Bas68-240514-D12_1_NODE_1_length_39465_cov_47.718331",
+        "sequence_sha256": "9628d0030c7ecf95e32d6c6a32cd44e209c20df11fd8bf51c1c8c1bd7cabbaa0",
+        "sha256": "9b0fdc6b529a0d848f235aaabab30bdc2ae201321804439588ecab031b2e5a72"
+      },
+      "error": "Official DNA differs from authenticated author container",
+      "official_payloads": [
+        {
+          "bytes": 87682,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas68/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445457",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445457",
+            "retrieved_utc": "2026-11-07T15:47:51.983617+00:00"
+          },
+          "sha256": "bc192cc0bb3e92b71da8fbc6bddf6a6db165655d3b0a6627c891e85ef28b40cc"
+        },
+        {
+          "bytes": 40199,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas68/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445457",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445457",
+            "retrieved_utc": "2026-11-07T15:47:53.179134+00:00"
+          },
+          "sha256": "78d7747b3b71af04548702549a524bfe4f65fe2749877c63310cdb184dbf3eb4"
+        }
+      ],
+      "phage": "Bas68",
+      "requested_accession": "PZ445457",
+      "status": "unresolved_input"
+    },
+    {
+      "ambiguous_bases": 0,
+      "author_container": {
+        "length": 70850,
+        "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas69.gbk",
+        "record_id": "B69A-240808-D11_1_NODE_1_length_70971_cov_33.512308",
+        "sequence_sha256": "603e835dab4886ce04c7f706e8212282762a36c41a04472ea3c8bae99c82d648",
+        "sha256": "9d5601e4783895fb39c78216e0d548bec67103c9b20f1b562a037f01d8618672"
+      },
+      "length": 70850,
+      "official_payloads": [
+        {
+          "bytes": 153033,
+          "format": "embl",
+          "kind": "annotation",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas69/annotation.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445458",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/embl/PZ445458",
+            "retrieved_utc": "2026-11-07T15:47:52.508329+00:00"
+          },
+          "sha256": "7de3a00f6fe2953725524693721655a5edeb2e527d114c7625cf3c88edd1f182"
+        },
+        {
+          "bytes": 72105,
+          "format": "fasta",
+          "kind": "fasta",
+          "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas69/fasta.txt",
+          "retrieval": {
+            "final_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445458",
+            "http_status": 200,
+            "requested_url": "https://www.ebi.ac.uk/ena/browser/api/fasta/PZ445458",
+            "retrieved_utc": "2026-11-07T15:47:53.715842+00:00"
+          },
+          "sha256": "3ef37bdae5edd0aead7f61e128699d3c6c6afda31ab743bd42e5a19dfdae4b92"
+        }
+      ],
+      "official_topology": "circular",
+      "phage": "Bas69",
+      "requested_accession": "PZ445458",
+      "sequence_sha256": "603e835dab4886ce04c7f706e8212282762a36c41a04472ea3c8bae99c82d648",
+      "status": "authenticated_official_formats_and_author_DNA_exact_match",
+      "versioned_accession": "PZ445458.1"
+    }
+  ],
+  "experimental_stock_identity_verified": false,
+  "inputs": [
+    {
+      "path": "data/processed/basel-validation-source-audit.json",
+      "sha256": "5d2ae86d0ae4ee35a58174009b0675773cc88e10b4232088800f01980bd8ded4"
+    },
+    {
+      "path": "data/processed/receptor-cohort-container-audit.json",
+      "sha256": "fd0f8fc39223336660b9f84a1e7ac7f6a2b374dd8880cdb99095e5b2086f5ab1"
+    },
+    {
+      "path": "data/processed/basel-phage-accession-route-pilot.json",
+      "sha256": "f0d281b92c92491b0e228de73258e278c5aeb107f85613d602f5d37dbc8167e8"
+    }
+  ],
+  "interaction_outcomes_loaded": false,
+  "new_original_benchmark_coverage": 0,
+  "parser": "Biopython 1.86",
+  "policy_sha256": "8131622f6523f1141ccb9180519a0bc8106688d46d046904ba7d2bfabbe6a330",
+  "protein_annotation_equivalence_verified": false,
+  "roster_phages": 52,
+  "schema_version": 1,
+  "script_sha256": "b784dd9dcd2dc5701483fae811edb1cac4231a045a9bc76252f9962373793697",
+  "status": "completed_full_roster_accession_authentication_with_per_record_status",
+  "training_or_prediction": false,
+  "unresolved_phages": [
+    "Bas06",
+    "Bas21",
+    "Bas68"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "scope": "Official accession/version and exact DNA correspondence for all52 BASEL panel phages; no labels or training admission",
+  "inputs": [
+    {
+      "path": "data/processed/basel-validation-source-audit.json",
+      "sha256": "5d2ae86d0ae4ee35a58174009b0675773cc88e10b4232088800f01980bd8ded4"
+    },
+    {
+      "path": "data/processed/receptor-cohort-container-audit.json",
+      "sha256": "fd0f8fc39223336660b9f84a1e7ac7f6a2b374dd8880cdb99095e5b2086f5ab1"
+    },
+    {
+      "path": "data/processed/basel-phage-accession-route-pilot.json",
+      "sha256": "f0d281b92c92491b0e228de73258e278c5aeb107f85613d602f5d37dbc8167e8"
+    }
+  ],
+  "roster": "All52 prior phage IDs and unversioned accessions; no outcome-based removal or role-based selection",
+  "pilot_disclosure": "Bas01, Bas12 and Bas14 official format pairs were inspected before this policy. Reuse their hash-bound saved payloads; fetch the remaining49 using the same accession-prefix routes.",
+  "parser": "Biopython1.86",
+  "routes": {
+    "PZ_MZ": {
+      "annotation": "https://www.ebi.ac.uk/ena/browser/api/embl/{accession}",
+      "fasta": "https://www.ebi.ac.uk/ena/browser/api/fasta/{accession}"
+    },
+    "RefSeq_NC": {
+      "annotation": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id={accession}&rettype=gbwithparts&retmode=text",
+      "fasta": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id={accession}&rettype=fasta&retmode=text"
+    }
+  },
+  "comparison": [
+    "Each official format must parse exactly one nonempty IUPAC DNA record with a versioned accession matching the requested accession root",
+    "Official annotation and FASTA must resolve the same accession version and identical upper-case nucleotide sequence",
+    "Authenticate original author GenBank container hash, require one record and exact upper-case DNA equality; custom record ID is not accession proof",
+    "No trimming, concatenation, reverse-complement/rotation search, sequence edits or nearest-reference replacement"
+  ],
+  "failure": "Retain every failed/mismatched source entry with its raw payload and explicit unresolved status; never substitute another sequence or add coverage",
+  "workers": 2,
+  "timeout_seconds": 40,
+  "max_download_bytes": 16777216,
+  "retries": 0,
+  "ncbi_minimum_request_spacing_seconds": 0.4,
+  "limits": "Accession/reference DNA equality does not establish physical experimental-stock identity, matching protein annotations, relatedness clearance or prediction. No experimental construct is inferred."
+}

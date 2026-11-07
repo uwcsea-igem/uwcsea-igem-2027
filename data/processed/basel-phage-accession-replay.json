@@ -1,0 +1,1639 @@
+{
+  "artifacts": [
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas01.gbk",
+      "phage": "Bas01",
+      "sha256": "28f2a91e5fc10506e00dc40d22135bea4bc2aab48ae494f338575fb13ec5617d"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas01/annotation.txt",
+      "phage": "Bas01",
+      "sha256": "fcb8c8f9cd79f8d19770376d45691cc7150e80d2be934d324550c19dc45f3cb5"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas01/fasta.txt",
+      "phage": "Bas01",
+      "sha256": "d166345698b6c52b443576f23b432782e35996dc0bbb3b97037bb61407f6afac"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas02.gbk",
+      "phage": "Bas02",
+      "sha256": "cf79094ff5fc4e5b21a532146ba491aeea4eabc1d2c7d19d97aa5257a0e3fca1"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas02/annotation.txt",
+      "phage": "Bas02",
+      "sha256": "21721a94be46f2d994e8d5a36d669c2984d2907d15a40a03930bd9ae9cc50b6d"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas02/fasta.txt",
+      "phage": "Bas02",
+      "sha256": "7b469a88627cd3cf1a90d5cfa55dd39d03a4d1a7bdc9fef569645209b6636e36"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas03.gbk",
+      "phage": "Bas03",
+      "sha256": "2d159292b2cd90daeb9fc5b514839f9a9fc3a22aeebe14dbb0db3e3295418973"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas03/annotation.txt",
+      "phage": "Bas03",
+      "sha256": "9512eab55cd154f659bb4c553ba77ea4123584489cc0ea52c099f29c4c3c7dc6"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas03/fasta.txt",
+      "phage": "Bas03",
+      "sha256": "7dbbe12f80f709ce8bd0265893bcf0c59c0ab114e084b837215d83de85840648"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas04.gbk",
+      "phage": "Bas04",
+      "sha256": "82686c848cce279cb8059561e35cfdbb5c8cc0c2274766e3346bfab4e40be1b1"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas04/annotation.txt",
+      "phage": "Bas04",
+      "sha256": "31d9684c50f01796f74640d1654d7c70a9b95d48302909a13b5ea6f1edacddee"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas04/fasta.txt",
+      "phage": "Bas04",
+      "sha256": "6a91420345d36fa3211fed962b5cd1eba80418facae982169daf002af4dec8d9"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas05.gbk",
+      "phage": "Bas05",
+      "sha256": "e4ccb7b5d2bc813aea7648e9819282be6b1ac80c5a15d20286aad3094332fcdb"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas05/annotation.txt",
+      "phage": "Bas05",
+      "sha256": "a2b764d820cfeead2f8c33c08c90eee0c8d6be1954473ce641bd5436629002ba"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas05/fasta.txt",
+      "phage": "Bas05",
+      "sha256": "d88f265c3b38a3148fe890b5e33be611998c4bac4cde893f14756f86d4cef1ed"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas06.gbk",
+      "phage": "Bas06",
+      "sha256": "1088509af2f91f8c5329da9a9123ab31f22340dc749311763f825c16541c397c"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas06/annotation.txt",
+      "phage": "Bas06",
+      "sha256": "7297fe3ba096feb7343c780aa809d0cd32efcc00e946a711dd26ea2d4b8514e9"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas06/fasta.txt",
+      "phage": "Bas06",
+      "sha256": "0009ad01d168bed4e325a7adee2038ad1979d2f813bf4eb409e1346922dafc35"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas07.gbk",
+      "phage": "Bas07",
+      "sha256": "fbcd5d45ee2bfbaee5f40eb00c55a77a6da445ad2fccf18c6a35d0a904f64656"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas07/annotation.txt",
+      "phage": "Bas07",
+      "sha256": "276e2adc2ce30f71cbc95a589816da30a60f4d5a87833cd734ee024d88702d97"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas07/fasta.txt",
+      "phage": "Bas07",
+      "sha256": "407a396e9de3ea1626c563898863823927ab943d6832da189c86ebf68853ae30"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas08.gbk",
+      "phage": "Bas08",
+      "sha256": "20ac85d7e583c06348649797f3069154310f7eaf491f07498fedb91e82cf1b2f"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas08/annotation.txt",
+      "phage": "Bas08",
+      "sha256": "61c32ab509597f69295376e3acdc361464098d430acdfdc713181a48e7beb52e"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas08/fasta.txt",
+      "phage": "Bas08",
+      "sha256": "4b003f6bb441c21fb83e54dd909613bd98b66613a7afd00e6e7f19a6aeae278e"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas09.gbk",
+      "phage": "Bas09",
+      "sha256": "68aff71416728d5481d94dca009c4ae757554b236f082b0ef068eb722d4d8e06"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas09/annotation.txt",
+      "phage": "Bas09",
+      "sha256": "53c1eae5a454bbb332a461e4e222b3800bd20fcc287c7d51c0c73f17fbdf5ea0"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas09/fasta.txt",
+      "phage": "Bas09",
+      "sha256": "fdabffcbaa563f4d88801f067d5963ac93e040a75298bf0b7196a8909870033d"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas10.gbk",
+      "phage": "Bas10",
+      "sha256": "af3672c68178ae7165c99a88cd7b64364c66bfb9f6f55ba30e62fd75b860062c"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas10/annotation.txt",
+      "phage": "Bas10",
+      "sha256": "228a48d07c8a1d8eff94c0aaa0dba0620c643db0c9fc98cbbf9ddf033694ea41"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas10/fasta.txt",
+      "phage": "Bas10",
+      "sha256": "c0c77b41e4d6e434bc9724c291f33e448710c98953270f469e48e56baa512b83"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas12.gbk",
+      "phage": "Bas12",
+      "sha256": "f99de7c5c6ddf96d3b8cc2a099b3ee09528de71bc101c5573de0d6045dd2eb10"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas12/annotation.txt",
+      "phage": "Bas12",
+      "sha256": "d4d1ed29279d4538d861483e0b41608e4655eac00242375f7a03ce98359f6f10"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas12/fasta.txt",
+      "phage": "Bas12",
+      "sha256": "6e5a842055093b5f3e857fd105b2b1b66d62be12190ffc03a6e4889f1bffd7b1"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas13.gbk",
+      "phage": "Bas13",
+      "sha256": "01f0d215dbb344156e489e4506546cb4396ed3576e6fbffb7480a2392ab0a1a1"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas13/annotation.txt",
+      "phage": "Bas13",
+      "sha256": "f44b632e8d0a4b5faca3714838fabb19bc7de68a9abfdccab7528904cb3f354a"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas13/fasta.txt",
+      "phage": "Bas13",
+      "sha256": "34913a21bbc5aa91766a7310e726afe93e857c30a76ff6153ea3dbf2d9387c61"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas14.gbk",
+      "phage": "Bas14",
+      "sha256": "c599a90a7af5a50b173ebf8c6e6fcb687b9d1265389f38fa2794dd62fe27b716"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas14/annotation.txt",
+      "phage": "Bas14",
+      "sha256": "5a5efefe287d6f35711024ba081e91c2ffe5f5420e498d324702b647e040d387"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas14/fasta.txt",
+      "phage": "Bas14",
+      "sha256": "557375f3832979ad0c888875fc4e0198bcdb03d36e133f22a096979f43268764"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas15.gbk",
+      "phage": "Bas15",
+      "sha256": "c4ec07c98625fed8cea5b3d192599d857975e609155e06e610354b16ffaeeb2e"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas15/annotation.txt",
+      "phage": "Bas15",
+      "sha256": "0c05d84ad4ec843cf0ac9d1a2941e6aa422fdcbc8edb28c932bc628b2ffba043"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas15/fasta.txt",
+      "phage": "Bas15",
+      "sha256": "f8e8514973acf692a855cb77d76ababd0584f33d8d9b421bead14816caee3ed5"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas16.gbk",
+      "phage": "Bas16",
+      "sha256": "ed29047b24c433b7bbbc5d4e280e7c79d421b98ab5fb3464de93302efda843c8"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas16/annotation.txt",
+      "phage": "Bas16",
+      "sha256": "1f4cda8597c614d63f0d180ef57c5c3ed5a66b5fa3dc087a416e753e726bbfc6"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas16/fasta.txt",
+      "phage": "Bas16",
+      "sha256": "e7e8c3b5a1e473fa63f0ecaf9be7c1269869bea9bdf0ca659e531dbac16f285a"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas17.gbk",
+      "phage": "Bas17",
+      "sha256": "ec87a4ac0bc54cb3779f50858867c60b9b6d9faa8657b69114474460eac64108"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas17/annotation.txt",
+      "phage": "Bas17",
+      "sha256": "58f124eb60274f36d405d80652c353321f20219732770e65aab870d586b82337"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas17/fasta.txt",
+      "phage": "Bas17",
+      "sha256": "87644352885e230b90f25b119ddf57d3b3dddaa5cfd9c8bc9e4e6e85d49ad3de"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas19.gbk",
+      "phage": "Bas19",
+      "sha256": "e1a473122c4a1af362799c24c89409a7f5909643bf6d44d87212c783e44e9848"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas19/annotation.txt",
+      "phage": "Bas19",
+      "sha256": "7311b3409935450cf27fca385c4eef9d50cef2a7d4fddcfcd92b2191bc6c6577"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas19/fasta.txt",
+      "phage": "Bas19",
+      "sha256": "f39c144d15fb76339218f1b5a905eba0f8b3c86b594659c216253a74735ac401"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas20.gbk",
+      "phage": "Bas20",
+      "sha256": "90b81e4d64eea91720a56f4b6a41e90843445e3647f55540acd822754fec8dc2"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas20/annotation.txt",
+      "phage": "Bas20",
+      "sha256": "a6eaab335bdca15ec695dd5a1c93ae6069afdfb81083c06dee2c42aafb393238"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas20/fasta.txt",
+      "phage": "Bas20",
+      "sha256": "2c8a13b3792bd4fe9b5c142fb5297d6b746e8447075be8c00047665166e54026"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas21.gbk",
+      "phage": "Bas21",
+      "sha256": "ba18472a4ff1de2a343131aadae60ef665a8bc8a86cab9e6211be3cbbe408275"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas21/annotation.txt",
+      "phage": "Bas21",
+      "sha256": "42d82820a80f99aadd7b85aacb5a148673a92b5b610c97cf59976d757f7bc4f4"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas21/fasta.txt",
+      "phage": "Bas21",
+      "sha256": "9294d0b2ad7bfa7d1f0a3fe09073e0d92de34452836f335efc7a2b531c89bad9"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas22.gbk",
+      "phage": "Bas22",
+      "sha256": "52924d7d43db2ffa36da392c318627bdeb53f709706b22da30445fd47ded7c47"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas22/annotation.txt",
+      "phage": "Bas22",
+      "sha256": "99812afb825e95f413166227786b2bec603ba1d6d9a6ee3d2f577f8111c90d1f"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas22/fasta.txt",
+      "phage": "Bas22",
+      "sha256": "22e15f0b34634bcfe7588693f68ceb04a83dbc85537190255e4a6835f3a29eac"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas25.gbk",
+      "phage": "Bas25",
+      "sha256": "89d7c9dc7ad75b73d78201b8fed32a17d256e0e4487a8ff0fc717f283aa59d54"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas25/annotation.txt",
+      "phage": "Bas25",
+      "sha256": "20aef63e949931f3bcd6d33cb5e7ed379408f5b402e2286d94584ef3b6115f75"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas25/fasta.txt",
+      "phage": "Bas25",
+      "sha256": "63faee88db29b282e050a5e881fec2e8a9696f7d2c524169302e3eecf9f60bd2"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas27.gbk",
+      "phage": "Bas27",
+      "sha256": "b535b3de4215df2d73b06601a4f6e8f8c5917f63dd7de5f57f1b3dcef9863b36"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas27/annotation.txt",
+      "phage": "Bas27",
+      "sha256": "f5b632cc2155d587d31fc05b2adfc4c1b83dabfecab7fe9a4cb738db33654358"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas27/fasta.txt",
+      "phage": "Bas27",
+      "sha256": "69ea8808a89cf2d6a19a9283a23921a257862a5a3374b8b3359e19f1c1fbbab6"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas28.gbk",
+      "phage": "Bas28",
+      "sha256": "6a4cfd021780474b980267380a920b4d9f185b1d41cad79e92095d6238c0156f"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas28/annotation.txt",
+      "phage": "Bas28",
+      "sha256": "89b2c622a04c752ed95f8c025b59250fcf08e0d808c205c292e72d4e3b3fd69d"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas28/fasta.txt",
+      "phage": "Bas28",
+      "sha256": "daa1f7dff618ce24c51294a5bedab7c490f65b32324103a2fe7f92528a6e1b3c"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas29.gbk",
+      "phage": "Bas29",
+      "sha256": "d9f5ba3147a0aede41106785618add42cb964c651991999c6e3262a59aa83866"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas29/annotation.txt",
+      "phage": "Bas29",
+      "sha256": "c019900dc672a28a1bfb02085d4036bcb3b6c789fa6cdd4f8cbdf922a125b4a1"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas29/fasta.txt",
+      "phage": "Bas29",
+      "sha256": "890d9c1dfa2260fb7fc458fd210746a079e95ee6641abbc980694a4042a120ec"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas31.gbk",
+      "phage": "Bas31",
+      "sha256": "29e1079ff59ace7cca1b16041aa98cb10a6ee87e12144a5b55d1640b04e684bd"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas31/annotation.txt",
+      "phage": "Bas31",
+      "sha256": "d0b34df8dd68bd144c9bf6ed0eb401f9175a0eeeb36c8f064ea354cafe048376"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas31/fasta.txt",
+      "phage": "Bas31",
+      "sha256": "d3d44a6bd5050e03a52fb6893982e4d5578e1c60a99f7cb418a016e25a613f59"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas33.gbk",
+      "phage": "Bas33",
+      "sha256": "b0db0d7ecad003c030d83d4799216abb1b83133c8e3f338568e2e2f5b63c4d54"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas33/annotation.txt",
+      "phage": "Bas33",
+      "sha256": "dcb42d3bf9e44084e33d2d0941a8d4e2d54129442c26b7dda078aac2b1cb8664"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas33/fasta.txt",
+      "phage": "Bas33",
+      "sha256": "b98d042d229b5466a2110bd3c4c9544e4ab093126fe2bc599757ebfa1d1a65c8"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas34.gbk",
+      "phage": "Bas34",
+      "sha256": "1cc397af82483071221f16a4aaa0b967dda02d37a2482290b016f160710112c1"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas34/annotation.txt",
+      "phage": "Bas34",
+      "sha256": "634223be586245c7ecf02efb38919d8979be3fa34917c6cf0e3bfca1b8e0412a"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas34/fasta.txt",
+      "phage": "Bas34",
+      "sha256": "8421e4c883364e0ebbf430e2e474075a374c60b11152c2b044e866b9324c2351"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas35.gbk",
+      "phage": "Bas35",
+      "sha256": "a2a8e4cdb93892427f5eb74ba61446fa22d2157d3bd4550125fc568676a880e4"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas35/annotation.txt",
+      "phage": "Bas35",
+      "sha256": "553a5182cf6326025975a2c22b96b9e7a675182b7b34363f0fe1647ea64f46c3"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas35/fasta.txt",
+      "phage": "Bas35",
+      "sha256": "73295338368bfd25c0dd1000071b5827b55b002726a4c6008017f15b0a91c369"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas36.gbk",
+      "phage": "Bas36",
+      "sha256": "0fe80d013b908760927b85926a743fd7aa525b220657264e5d313eb18c492001"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas36/annotation.txt",
+      "phage": "Bas36",
+      "sha256": "bdc25bd1be549b4b839dfd9b6b6a4627d19c86fe5a0758675e3152403f813cbe"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas36/fasta.txt",
+      "phage": "Bas36",
+      "sha256": "64719307e248da1f0aaa9ef46f9e4e76cf00fe76d8426139bc2525048a987d17"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas37.gbk",
+      "phage": "Bas37",
+      "sha256": "88f0d41a3cee9e62a0b1f84641903c322b0ffa4dfe2a331ac35b206487119d92"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas37/annotation.txt",
+      "phage": "Bas37",
+      "sha256": "1176913bd4ba303ee11aec7b7f0a2872c34c6d0ab0cd30c1a11752467600eee8"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas37/fasta.txt",
+      "phage": "Bas37",
+      "sha256": "eeeeb858d2c44494c064a64e7b27d0ae8c8771dbbc87e9f0d57203e71c606d62"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas39.gbk",
+      "phage": "Bas39",
+      "sha256": "509cfabdeecb7a1401edd4125d719934635349058113e1ae358b7eff39538b5c"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas39/annotation.txt",
+      "phage": "Bas39",
+      "sha256": "75747c138c4a34c8ce2689645c066f23bff8e72c0f747a55ecc0d9fcb0956a2b"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas39/fasta.txt",
+      "phage": "Bas39",
+      "sha256": "5962fc827a8720ff6feec1110c091e1827ec8a20b95af4b06984e97688544f81"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas41.gbk",
+      "phage": "Bas41",
+      "sha256": "4ef2faefe4d9ac7cd7e54d0122560c5182debcad4c17d919f8e1f0845b8a92d7"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas41/annotation.txt",
+      "phage": "Bas41",
+      "sha256": "cc3ac4fbd0efe9d9a8daaff06378b21249ef21bebb1745f59cf9ff2255ee22cc"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas41/fasta.txt",
+      "phage": "Bas41",
+      "sha256": "fa1d56feefac1b274977620e6a10e10e1b0771137c61d3b60c0f4156a655bcbe"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas42.gbk",
+      "phage": "Bas42",
+      "sha256": "ca5931298a73f875a2f8e98d1fe44ee6078c98a359597dbde4082535982aa379"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas42/annotation.txt",
+      "phage": "Bas42",
+      "sha256": "60380db5d67b589a641d8d2959282aa82407e82a699dd990bc7aa24b6ba8d9e6"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas42/fasta.txt",
+      "phage": "Bas42",
+      "sha256": "387fcf0fca2db84fa1b234a51d2935baf4684e0313a9a7a9d1fc91a068c9f33f"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas43.gbk",
+      "phage": "Bas43",
+      "sha256": "789d8c288647ab578532394fe5e0042839c0c7e5e241609033d2b8463737dd00"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas43/annotation.txt",
+      "phage": "Bas43",
+      "sha256": "6ba8ade7d732da2c160aa00d68dab0c1b3c949bd412e1cc912c6e93dc4e7d055"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas43/fasta.txt",
+      "phage": "Bas43",
+      "sha256": "5c9f01e441adf4dbb1457d2a270f57c77950d1771a6eb54de896d8bd43b210ef"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas45.gbk",
+      "phage": "Bas45",
+      "sha256": "f6225e1efdc3baae726b4f368d17e94e0ce637c126ee5875aa06bb40a8622dfb"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas45/annotation.txt",
+      "phage": "Bas45",
+      "sha256": "c2e4894af6137b2177994c8399eddede78c4b8425a1fb5ea278f8f5553437744"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas45/fasta.txt",
+      "phage": "Bas45",
+      "sha256": "816f0aa4d0003291ed20b698b1fd93d3fcfdfceab9407163deae49a660d0f1fa"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas47.gbk",
+      "phage": "Bas47",
+      "sha256": "13ec78d1d6874beda3c03d0006011861271e5c57e2d353c6c189bbbadb94d234"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas47/annotation.txt",
+      "phage": "Bas47",
+      "sha256": "5a06ea1cc44f0ab414109b8ec6378da700442e9cf0bebb998dbab9c9ee78a01f"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas47/fasta.txt",
+      "phage": "Bas47",
+      "sha256": "bb3e6bc783d2c1f46687e190b6947735d245a37767f058f449b2c0159fcb0591"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas49.gbk",
+      "phage": "Bas49",
+      "sha256": "bfac8689eb39f1639c834c1ac62c31bb90b73a753e7cce6f973d3d7e90bac8d8"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas49/annotation.txt",
+      "phage": "Bas49",
+      "sha256": "c2568cafc016d51e86fab71f64f6aeac4469ce1d9c748bda1628919ed7f2bef4"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas49/fasta.txt",
+      "phage": "Bas49",
+      "sha256": "acda7bff87936054a8c2a48d3bd10d23b2757d40e035e9a422a601d183384349"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas51.gbk",
+      "phage": "Bas51",
+      "sha256": "eb47881799905749214837927f9f619ce8d194f2d393e01c58ff1d564c5b0e9b"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas51/annotation.txt",
+      "phage": "Bas51",
+      "sha256": "e225f45f74026387cd8066c5ff165617a4fc3ce1f340cc722ed397aab3da9358"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas51/fasta.txt",
+      "phage": "Bas51",
+      "sha256": "6b48592565c589df5a77c5820798c9945cd977e7f3c47f88bf593402dca99810"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas52.gbk",
+      "phage": "Bas52",
+      "sha256": "22d4d6dcd0153e3ce49bc9975a67704ff71f481eec07a2c9b191d0b7b3d63f17"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas52/annotation.txt",
+      "phage": "Bas52",
+      "sha256": "f4a17f5a806bb44b57b0861553153418e16c865dafee357658ebe101e031dfca"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas52/fasta.txt",
+      "phage": "Bas52",
+      "sha256": "883b11bf33a4c76edc2d55fb7a5ae3b9292d2d1feb51b928494bb20ce08d0df9"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas54.gbk",
+      "phage": "Bas54",
+      "sha256": "cc6671716d5cd8ca64a85458cb5633daea0dc821e062e0c486d7791e2b3e7b00"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas54/annotation.txt",
+      "phage": "Bas54",
+      "sha256": "4ce3c96811d95b32af0144e5143635e3822fe27a982439b62a1b626e9f4c2ebe"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas54/fasta.txt",
+      "phage": "Bas54",
+      "sha256": "2bd5c23f1cf158f572fcca20911848bf41eadd2b4cc78bb8f9a735c35d4348fa"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas56.gbk",
+      "phage": "Bas56",
+      "sha256": "e70f5b2a48f3e284d0a94758ae7e789a1fff70cdea4b2e93161ebe4208c376dc"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas56/annotation.txt",
+      "phage": "Bas56",
+      "sha256": "43f8a2719b384cc0b7e31c0dc03d7bf1b41386fc2e41ed5c34d25766f2b4f001"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas56/fasta.txt",
+      "phage": "Bas56",
+      "sha256": "66e8099ee74d06fcf06e5e0e2f937a3428fe6a0a7a8715e39be0e6dfcb7714b6"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas57.gbk",
+      "phage": "Bas57",
+      "sha256": "928a11d73164847092f140cc9156445048e08b19c81d99ab5bdf826fec1d61ca"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas57/annotation.txt",
+      "phage": "Bas57",
+      "sha256": "fdd655a7fff4167a7b19cd72c63a0c5d79feb7032b8147260c1d59809388fc57"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas57/fasta.txt",
+      "phage": "Bas57",
+      "sha256": "af1197d86eac92186c2bb911d450da317d79b1ede84e6f40b01c83cbe9939135"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas58.gbk",
+      "phage": "Bas58",
+      "sha256": "6e90142d14f2de710023cb1fecfcf2baa172f55deb00174a1690a4e73fea203d"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas58/annotation.txt",
+      "phage": "Bas58",
+      "sha256": "86c986dcd944f71fcb8f06c1ed63ca4c0496fbc7ebba01955b218e781f9d9c64"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas58/fasta.txt",
+      "phage": "Bas58",
+      "sha256": "2130653c0d09315bc42baff8760857029b174e790a9a9254c188c125d00877e4"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas59.gbk",
+      "phage": "Bas59",
+      "sha256": "ed558f371f23d523519d02cbd1b8463871862b8c63df18b20549a8b0ba40c539"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas59/annotation.txt",
+      "phage": "Bas59",
+      "sha256": "5aadcbfb9d0b73d181458e664ddafb36c02405ddd1e55328b26f5a3c8bdbedc4"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas59/fasta.txt",
+      "phage": "Bas59",
+      "sha256": "5b952c043f9b07ac992559fc8eec07c2241ccfeaf3da9456a2fea53a7071f118"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas60.gbk",
+      "phage": "Bas60",
+      "sha256": "2b109dfec0d487bb2078c4b57aafc54fe1792c89042d8ab98a8c34c1fa5a902f"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas60/annotation.txt",
+      "phage": "Bas60",
+      "sha256": "685c15516c6be8c2717573d50573a888ee65fb0b0fb1cc6ab66162e14587abcf"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas60/fasta.txt",
+      "phage": "Bas60",
+      "sha256": "f62697cbc2d17f7087e416b78b71d513fd0fed8bf0db9f8958c8bdff0b834290"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas61.gbk",
+      "phage": "Bas61",
+      "sha256": "02a5a689402ddcb8da8f4e3aaa15f8ff79083563031629d7eb06e1fea81a1f8e"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas61/annotation.txt",
+      "phage": "Bas61",
+      "sha256": "115ff85bea530d647afb210061a2f38d4143f1fb94ecf71b956b728d66c74164"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas61/fasta.txt",
+      "phage": "Bas61",
+      "sha256": "428ef8c4fb10321ac94548dc6ce4f931047ded5271eee5acaf88d142716da5d9"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas63.gbk",
+      "phage": "Bas63",
+      "sha256": "5be50562297b1eda0aa93ff1333283cd61abedc67f1ae7a54e1180b56573d637"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas63/annotation.txt",
+      "phage": "Bas63",
+      "sha256": "0fe9a948841b086e5607f11314e183951953d38398224370f4578a0ed4f9b7a7"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas63/fasta.txt",
+      "phage": "Bas63",
+      "sha256": "643642afd06c7a7976d4d1edae23ae043cec9454d5c81fddbd5cf975384028a4"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas64.gbk",
+      "phage": "Bas64",
+      "sha256": "284ed2cc6843f2ff3fa4858025bef1158c8398d758770258c2031cc85364ddae"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas64/annotation.txt",
+      "phage": "Bas64",
+      "sha256": "25f81075ab4ef20262c2b8a45f951fbc3edcbbbbaf28708fc728f0f3b68524d7"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas64/fasta.txt",
+      "phage": "Bas64",
+      "sha256": "e71044a072422f5ac752a43c5f79bb28deb638bd5d6a0c44673a428601b48555"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas65.gbk",
+      "phage": "Bas65",
+      "sha256": "dec7151e0e00ea2c03a9da6bd7b8017973b44280427443fa84e94586d144bee4"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas65/annotation.txt",
+      "phage": "Bas65",
+      "sha256": "78e00b0f90d7cf015bf582a31ff78c9cb71c3ca39adaf6ac08d287368938de2e"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas65/fasta.txt",
+      "phage": "Bas65",
+      "sha256": "4e5555ff377a103bdde49b7afb2a85fe31bb3be5c16f2f027149d791e54d3768"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas67.gbk",
+      "phage": "Bas67",
+      "sha256": "f67b9ff5f9af70fde0cd0ebee054eb96b93b90398fd2d8afef9a1dfee82b1488"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas67/annotation.txt",
+      "phage": "Bas67",
+      "sha256": "24fab538b7a1f7fd40522f2e34d89ed1257910b4a29ee08a4b506f4d38aa8733"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas67/fasta.txt",
+      "phage": "Bas67",
+      "sha256": "0c8e8856d172b8828d6847da24968a94ff56df63ec2da8da99160410e3871e73"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas68.gbk",
+      "phage": "Bas68",
+      "sha256": "9b0fdc6b529a0d848f235aaabab30bdc2ae201321804439588ecab031b2e5a72"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas68/annotation.txt",
+      "phage": "Bas68",
+      "sha256": "bc192cc0bb3e92b71da8fbc6bddf6a6db165655d3b0a6627c891e85ef28b40cc"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas68/fasta.txt",
+      "phage": "Bas68",
+      "sha256": "78d7747b3b71af04548702549a524bfe4f65fe2749877c63310cdb184dbf3eb4"
+    },
+    {
+      "kind": "author_container",
+      "path": "data/raw/receptor-resource/cohort-containers-v1/containers/Bas69.gbk",
+      "phage": "Bas69",
+      "sha256": "9d5601e4783895fb39c78216e0d548bec67103c9b20f1b562a037f01d8618672"
+    },
+    {
+      "kind": "annotation",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas69/annotation.txt",
+      "phage": "Bas69",
+      "sha256": "7de3a00f6fe2953725524693721655a5edeb2e527d114c7625cf3c88edd1f182"
+    },
+    {
+      "kind": "fasta",
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas69/fasta.txt",
+      "phage": "Bas69",
+      "sha256": "3ef37bdae5edd0aead7f61e128699d3c6c6afda31ab743bd42e5a19dfdae4b92"
+    }
+  ],
+  "author_DNA_mismatches": [
+    "Bas06",
+    "Bas21",
+    "Bas68"
+  ],
+  "exact_author_DNA_matches": 49,
+  "interpretation": "All official records can be authenticated even when three correspondences to the old author cache fail. Those three official genomes need their own relatedness checks before old groups can be reused; neither representation is declared erroneous or stock-identical.",
+  "network_requests_models_or_sequence_edits_executed": false,
+  "observations": [
+    {
+      "author_length": 50126,
+      "author_sequence_sha256": "eb27d3f5fb6e79329610ad7cdc0537d890b6eb523029902a29c08f1b2080d5a6",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 50126,
+      "official_sequence_sha256": "eb27d3f5fb6e79329610ad7cdc0537d890b6eb523029902a29c08f1b2080d5a6",
+      "official_versioned_accession": "PZ445405.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas01",
+      "requested_accession": "PZ445405"
+    },
+    {
+      "author_length": 47149,
+      "author_sequence_sha256": "f67025c980399ae62c889b5f45e9780c296a1a8b6a44fcd64ed9d65001ff3202",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 47149,
+      "official_sequence_sha256": "f67025c980399ae62c889b5f45e9780c296a1a8b6a44fcd64ed9d65001ff3202",
+      "official_versioned_accession": "PZ445406.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas02",
+      "requested_accession": "PZ445406"
+    },
+    {
+      "author_length": 47731,
+      "author_sequence_sha256": "1ce15311041ae158df9616366352125aca96ee83ed708d8c55b4ac1690205cfb",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 47731,
+      "official_sequence_sha256": "1ce15311041ae158df9616366352125aca96ee83ed708d8c55b4ac1690205cfb",
+      "official_versioned_accession": "PZ445407.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas03",
+      "requested_accession": "PZ445407"
+    },
+    {
+      "author_length": 51777,
+      "author_sequence_sha256": "5070864898ed06e4617178dcf0257a963d549e743560ec91760bfc1922859c33",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 51777,
+      "official_sequence_sha256": "5070864898ed06e4617178dcf0257a963d549e743560ec91760bfc1922859c33",
+      "official_versioned_accession": "PZ445408.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas04",
+      "requested_accession": "PZ445408"
+    },
+    {
+      "author_length": 47775,
+      "author_sequence_sha256": "c653a9e6b2b1d1c137618021265425ed8d623597e0498083e1c8ae711db8e804",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 47775,
+      "official_sequence_sha256": "c653a9e6b2b1d1c137618021265425ed8d623597e0498083e1c8ae711db8e804",
+      "official_versioned_accession": "PZ445409.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas05",
+      "requested_accession": "PZ445409"
+    },
+    {
+      "author_length": 51473,
+      "author_sequence_sha256": "70006653e41955d48e544987cb9aa317d40de1761236f24da1ed0f90269debc1",
+      "exact_author_DNA_match": false,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 51474,
+      "official_sequence_sha256": "3279887f2553d321c6af49171f0cbd363a6036a62dda8b8a5cb1de17ac12df14",
+      "official_versioned_accession": "PZ445410.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": false,
+      "phage": "Bas06",
+      "requested_accession": "PZ445410"
+    },
+    {
+      "author_length": 51129,
+      "author_sequence_sha256": "e08e53edfa7d522d11aa347f59e688d89f6a8d0f4beaf3b628d600ad87a22b73",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 51129,
+      "official_sequence_sha256": "e08e53edfa7d522d11aa347f59e688d89f6a8d0f4beaf3b628d600ad87a22b73",
+      "official_versioned_accession": "PZ445411.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas07",
+      "requested_accession": "PZ445411"
+    },
+    {
+      "author_length": 50731,
+      "author_sequence_sha256": "e37a86b4cbf8997223367592fbcf68b16f3644231121a07d9ae803291253fde6",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 50731,
+      "official_sequence_sha256": "e37a86b4cbf8997223367592fbcf68b16f3644231121a07d9ae803291253fde6",
+      "official_versioned_accession": "PZ445412.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas08",
+      "requested_accession": "PZ445412"
+    },
+    {
+      "author_length": 51285,
+      "author_sequence_sha256": "17718b438f69a4b275ac4e4f8a224c12b5cef8f1bd94db84177a9be5654bb725",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 51285,
+      "official_sequence_sha256": "17718b438f69a4b275ac4e4f8a224c12b5cef8f1bd94db84177a9be5654bb725",
+      "official_versioned_accession": "PZ445413.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas09",
+      "requested_accession": "PZ445413"
+    },
+    {
+      "author_length": 49911,
+      "author_sequence_sha256": "c27c460f4353158c52da9ee2112b3aac43916dad81408a0d07b0cc072bdda6fd",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 49911,
+      "official_sequence_sha256": "c27c460f4353158c52da9ee2112b3aac43916dad81408a0d07b0cc072bdda6fd",
+      "official_versioned_accession": "PZ445414.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas10",
+      "requested_accession": "PZ445414"
+    },
+    {
+      "author_length": 49298,
+      "author_sequence_sha256": "bd57afd371a88e4a717c99dc3221e6f0ff48cdd441cb4578cffd25f6c015731b",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 49298,
+      "official_sequence_sha256": "bd57afd371a88e4a717c99dc3221e6f0ff48cdd441cb4578cffd25f6c015731b",
+      "official_versioned_accession": "MZ501053.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas12",
+      "requested_accession": "MZ501053"
+    },
+    {
+      "author_length": 50192,
+      "author_sequence_sha256": "fbaa322c04f0ae76b8fc2f9eb83b855d92321fb7955fe9c59dd75df1244070d3",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 50192,
+      "official_sequence_sha256": "fbaa322c04f0ae76b8fc2f9eb83b855d92321fb7955fe9c59dd75df1244070d3",
+      "official_versioned_accession": "PZ445416.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas13",
+      "requested_accession": "PZ445416"
+    },
+    {
+      "author_length": 43627,
+      "author_sequence_sha256": "9dad1f981892b672154f7585d6c07fa59c06a70934c2f2bcde114de85af59393",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 43627,
+      "official_sequence_sha256": "9dad1f981892b672154f7585d6c07fa59c06a70934c2f2bcde114de85af59393",
+      "official_versioned_accession": "NC_073062.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas14",
+      "requested_accession": "NC_073062"
+    },
+    {
+      "author_length": 44550,
+      "author_sequence_sha256": "c1f983df30b24306efc93eda4386179e402535b14f9d4cd56b90427e2d5dfdb2",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 44550,
+      "official_sequence_sha256": "c1f983df30b24306efc93eda4386179e402535b14f9d4cd56b90427e2d5dfdb2",
+      "official_versioned_accession": "PZ445417.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas15",
+      "requested_accession": "PZ445417"
+    },
+    {
+      "author_length": 44295,
+      "author_sequence_sha256": "62ec7816e579cc02148f634370406f50ff45606bc8b292c56a7f2e8bd87b4132",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 44295,
+      "official_sequence_sha256": "62ec7816e579cc02148f634370406f50ff45606bc8b292c56a7f2e8bd87b4132",
+      "official_versioned_accession": "NC_073066.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas16",
+      "requested_accession": "NC_073066"
+    },
+    {
+      "author_length": 43104,
+      "author_sequence_sha256": "1c22c66d9f223cdeaa3181c5ee3158b31fffc309560abe84213e69149f355b5f",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 43104,
+      "official_sequence_sha256": "1c22c66d9f223cdeaa3181c5ee3158b31fffc309560abe84213e69149f355b5f",
+      "official_versioned_accession": "PZ445418.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas17",
+      "requested_accession": "PZ445418"
+    },
+    {
+      "author_length": 58073,
+      "author_sequence_sha256": "0273ebf70ee8291be50e746bc68f6c892f9e8e3f29b592a2336efd7ca379a5a1",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 58073,
+      "official_sequence_sha256": "0273ebf70ee8291be50e746bc68f6c892f9e8e3f29b592a2336efd7ca379a5a1",
+      "official_versioned_accession": "PZ445420.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas19",
+      "requested_accession": "PZ445420"
+    },
+    {
+      "author_length": 59835,
+      "author_sequence_sha256": "11a2c203aa309d991b492e19bade3c4ccdc918f9a515cc307e04f7decbf2ba30",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 59835,
+      "official_sequence_sha256": "11a2c203aa309d991b492e19bade3c4ccdc918f9a515cc307e04f7decbf2ba30",
+      "official_versioned_accession": "PZ445421.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas20",
+      "requested_accession": "PZ445421"
+    },
+    {
+      "author_length": 56738,
+      "author_sequence_sha256": "972f6f5ab26a414da61cc35ea96504c8cf11f2d7b0255edd938b954ba3372ac6",
+      "exact_author_DNA_match": false,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 56589,
+      "official_sequence_sha256": "d2dba21f96bffc6dd0cbdcf6756fa6b985dbdeeb47212e67e59f54dd93171961",
+      "official_versioned_accession": "PZ445422.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": false,
+      "phage": "Bas21",
+      "requested_accession": "PZ445422"
+    },
+    {
+      "author_length": 58567,
+      "author_sequence_sha256": "fd03c976c262105a2c176354ee04f4abaf262e0c5b301f39d31e849ef9babd75",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 58567,
+      "official_sequence_sha256": "fd03c976c262105a2c176354ee04f4abaf262e0c5b301f39d31e849ef9babd75",
+      "official_versioned_accession": "PZ445423.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas22",
+      "requested_accession": "PZ445423"
+    },
+    {
+      "author_length": 58342,
+      "author_sequence_sha256": "586bdf1020434c48d97f78b232e206299b54af741316ce06fd815c67c9277b5b",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 58342,
+      "official_sequence_sha256": "586bdf1020434c48d97f78b232e206299b54af741316ce06fd815c67c9277b5b",
+      "official_versioned_accession": "PZ445426.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas25",
+      "requested_accession": "PZ445426"
+    },
+    {
+      "author_length": 114181,
+      "author_sequence_sha256": "8ff6cc0e6e6cc8a94c58dd11f57d125390889fa380c472cfe3f1cc2911d2b3dc",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 114181,
+      "official_sequence_sha256": "8ff6cc0e6e6cc8a94c58dd11f57d125390889fa380c472cfe3f1cc2911d2b3dc",
+      "official_versioned_accession": "PZ445428.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas27",
+      "requested_accession": "PZ445428"
+    },
+    {
+      "author_length": 115446,
+      "author_sequence_sha256": "1cc00d606000417d2a8e4547934ee581c0c62bf23d2bfa272933682977d87dfa",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 115446,
+      "official_sequence_sha256": "1cc00d606000417d2a8e4547934ee581c0c62bf23d2bfa272933682977d87dfa",
+      "official_versioned_accession": "PZ445429.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas28",
+      "requested_accession": "PZ445429"
+    },
+    {
+      "author_length": 110823,
+      "author_sequence_sha256": "9533d31946ce99f9e3f3ecf7989ab71ddba150c27824a6975eceefbf9c9019cf",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 110823,
+      "official_sequence_sha256": "9533d31946ce99f9e3f3ecf7989ab71ddba150c27824a6975eceefbf9c9019cf",
+      "official_versioned_accession": "PZ445430.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas29",
+      "requested_accession": "PZ445430"
+    },
+    {
+      "author_length": 113532,
+      "author_sequence_sha256": "31e801fc449fde3db239895bc894f77228136608875b04bbc3c4e085922920bb",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 113532,
+      "official_sequence_sha256": "31e801fc449fde3db239895bc894f77228136608875b04bbc3c4e085922920bb",
+      "official_versioned_accession": "MZ501058.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas31",
+      "requested_accession": "MZ501058"
+    },
+    {
+      "author_length": 106566,
+      "author_sequence_sha256": "c620a1128337c1e0d92bd5323186ff8906b6ac864b83e64dda66b62f2f51a160",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 106566,
+      "official_sequence_sha256": "c620a1128337c1e0d92bd5323186ff8906b6ac864b83e64dda66b62f2f51a160",
+      "official_versioned_accession": "PZ445432.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas33",
+      "requested_accession": "PZ445432"
+    },
+    {
+      "author_length": 107080,
+      "author_sequence_sha256": "7f04f2aec355668ecdff9cdfcf7be7c02a34c9d6b44e3fbe9f05faf3e71103c8",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 107080,
+      "official_sequence_sha256": "7f04f2aec355668ecdff9cdfcf7be7c02a34c9d6b44e3fbe9f05faf3e71103c8",
+      "official_versioned_accession": "MZ501103.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas34",
+      "requested_accession": "MZ501103"
+    },
+    {
+      "author_length": 166861,
+      "author_sequence_sha256": "7925de364f153d84077c845ee3517bfc96e3b406d5aac1895d9994d7dbdf5a48",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 166861,
+      "official_sequence_sha256": "7925de364f153d84077c845ee3517bfc96e3b406d5aac1895d9994d7dbdf5a48",
+      "official_versioned_accession": "PZ445433.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas35",
+      "requested_accession": "PZ445433"
+    },
+    {
+      "author_length": 167732,
+      "author_sequence_sha256": "f3ee25a79f31ef38cea4ae8321a6bbb57a72d85a2236d9012617b5a4f0dda61b",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 167732,
+      "official_sequence_sha256": "f3ee25a79f31ef38cea4ae8321a6bbb57a72d85a2236d9012617b5a4f0dda61b",
+      "official_versioned_accession": "PZ445434.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas36",
+      "requested_accession": "PZ445434"
+    },
+    {
+      "author_length": 167832,
+      "author_sequence_sha256": "82072cb7fda87ec335c6b905cfb7b969e54bfd042bf9df77271cbfa04b01652b",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 167832,
+      "official_sequence_sha256": "82072cb7fda87ec335c6b905cfb7b969e54bfd042bf9df77271cbfa04b01652b",
+      "official_versioned_accession": "MZ501089.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas37",
+      "requested_accession": "MZ501089"
+    },
+    {
+      "author_length": 169509,
+      "author_sequence_sha256": "8ee4b789008459ccf4ce143441ae19f8beb9c64fb0b37b9dc17b85755cdc307b",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 169509,
+      "official_sequence_sha256": "8ee4b789008459ccf4ce143441ae19f8beb9c64fb0b37b9dc17b85755cdc307b",
+      "official_versioned_accession": "MZ501066.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas39",
+      "requested_accession": "MZ501066"
+    },
+    {
+      "author_length": 165574,
+      "author_sequence_sha256": "3f07bcbb5c9e4ec448daf432c476982198ee0bfe05ff2f403a4002c6da7f1dc0",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 165574,
+      "official_sequence_sha256": "3f07bcbb5c9e4ec448daf432c476982198ee0bfe05ff2f403a4002c6da7f1dc0",
+      "official_versioned_accession": "MZ501067.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas41",
+      "requested_accession": "MZ501067"
+    },
+    {
+      "author_length": 168255,
+      "author_sequence_sha256": "f6ff74b01ae2f9ff997f8c260cc4e60c70eb6434f64e1db61ed0cf26412e06a3",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 168255,
+      "official_sequence_sha256": "f6ff74b01ae2f9ff997f8c260cc4e60c70eb6434f64e1db61ed0cf26412e06a3",
+      "official_versioned_accession": "PZ445436.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas42",
+      "requested_accession": "PZ445436"
+    },
+    {
+      "author_length": 166115,
+      "author_sequence_sha256": "6b31e89a8a5416bcf8006b10ee5dc318d8dcdabe36cd7742766c13615a5b2cf9",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 166115,
+      "official_sequence_sha256": "6b31e89a8a5416bcf8006b10ee5dc318d8dcdabe36cd7742766c13615a5b2cf9",
+      "official_versioned_accession": "PZ445437.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas43",
+      "requested_accession": "PZ445437"
+    },
+    {
+      "author_length": 170053,
+      "author_sequence_sha256": "5e6e72a7ad369b13f2bd42a3941919b90a6b7f0ea83d03c5b272b97f82205ff5",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 170053,
+      "official_sequence_sha256": "5e6e72a7ad369b13f2bd42a3941919b90a6b7f0ea83d03c5b272b97f82205ff5",
+      "official_versioned_accession": "PZ445439.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas45",
+      "requested_accession": "PZ445439"
+    },
+    {
+      "author_length": 168968,
+      "author_sequence_sha256": "752f5c71ef4672d34cb4ddc92d3b3789f7985cb6cbbcf57e3ea93d84751689bf",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 168968,
+      "official_sequence_sha256": "752f5c71ef4672d34cb4ddc92d3b3789f7985cb6cbbcf57e3ea93d84751689bf",
+      "official_versioned_accession": "MZ501047.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas47",
+      "requested_accession": "MZ501047"
+    },
+    {
+      "author_length": 140076,
+      "author_sequence_sha256": "2d8ce1822a4cb336d10c91d79396434126099c3d1187275cae3aef381ec662b5",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 140076,
+      "official_sequence_sha256": "2d8ce1822a4cb336d10c91d79396434126099c3d1187275cae3aef381ec662b5",
+      "official_versioned_accession": "PZ445442.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas49",
+      "requested_accession": "PZ445442"
+    },
+    {
+      "author_length": 140659,
+      "author_sequence_sha256": "d569dad393abb70fbc69caad6b339507b69ab3899814bb23ae0f42ea85157645",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 140659,
+      "official_sequence_sha256": "d569dad393abb70fbc69caad6b339507b69ab3899814bb23ae0f42ea85157645",
+      "official_versioned_accession": "PZ445444.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas51",
+      "requested_accession": "PZ445444"
+    },
+    {
+      "author_length": 137380,
+      "author_sequence_sha256": "b2d324739bf20719748b140e7533bdf6bb1adb704e4837219d699c29bdfcfd3a",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 137380,
+      "official_sequence_sha256": "b2d324739bf20719748b140e7533bdf6bb1adb704e4837219d699c29bdfcfd3a",
+      "official_versioned_accession": "PZ445445.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas52",
+      "requested_accession": "PZ445445"
+    },
+    {
+      "author_length": 136346,
+      "author_sequence_sha256": "ce42a33678bac596a95ea2e3f8373a0155a35efefe670c520a2c852c791aecec",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 136346,
+      "official_sequence_sha256": "ce42a33678bac596a95ea2e3f8373a0155a35efefe670c520a2c852c791aecec",
+      "official_versioned_accession": "PZ445447.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas54",
+      "requested_accession": "PZ445447"
+    },
+    {
+      "author_length": 135345,
+      "author_sequence_sha256": "8366e2228124915fdaff7944c282da0f8ea04e1c0b26f59b121eb2b62716cf52",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 135345,
+      "official_sequence_sha256": "8366e2228124915fdaff7944c282da0f8ea04e1c0b26f59b121eb2b62716cf52",
+      "official_versioned_accession": "PZ445448.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas56",
+      "requested_accession": "PZ445448"
+    },
+    {
+      "author_length": 135061,
+      "author_sequence_sha256": "87a0dc5bb3a12bf8842778cc210d3ebfccca8cb4943839de1c9b1f29d8db0df0",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 135061,
+      "official_sequence_sha256": "87a0dc5bb3a12bf8842778cc210d3ebfccca8cb4943839de1c9b1f29d8db0df0",
+      "official_versioned_accession": "MZ501094.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas57",
+      "requested_accession": "MZ501094"
+    },
+    {
+      "author_length": 136906,
+      "author_sequence_sha256": "f79460f82a5442734b2d72fe9ff50be2a079acdf919a84b76021730d62aa35cc",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 136906,
+      "official_sequence_sha256": "f79460f82a5442734b2d72fe9ff50be2a079acdf919a84b76021730d62aa35cc",
+      "official_versioned_accession": "PZ445449.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas58",
+      "requested_accession": "PZ445449"
+    },
+    {
+      "author_length": 131526,
+      "author_sequence_sha256": "d63f2fdc22e1cfffdc43874e9ab229b66c24eb70c204ca06eb3c92653ba06f7f",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 131526,
+      "official_sequence_sha256": "d63f2fdc22e1cfffdc43874e9ab229b66c24eb70c204ca06eb3c92653ba06f7f",
+      "official_versioned_accession": "PZ445450.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas59",
+      "requested_accession": "PZ445450"
+    },
+    {
+      "author_length": 150425,
+      "author_sequence_sha256": "8f7017aa1b407987ddf2d30e2e8bcd95ea5d7369efbd9aa98aa98ff8cae561c0",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 150425,
+      "official_sequence_sha256": "8f7017aa1b407987ddf2d30e2e8bcd95ea5d7369efbd9aa98aa98ff8cae561c0",
+      "official_versioned_accession": "PZ445451.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas60",
+      "requested_accession": "PZ445451"
+    },
+    {
+      "author_length": 146666,
+      "author_sequence_sha256": "61dca6cb4df1773585ff2a0eb52cca70182bd53ad7f38ba1dc14faefd45e2895",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 146666,
+      "official_sequence_sha256": "61dca6cb4df1773585ff2a0eb52cca70182bd53ad7f38ba1dc14faefd45e2895",
+      "official_versioned_accession": "PZ445452.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas61",
+      "requested_accession": "PZ445452"
+    },
+    {
+      "author_length": 87100,
+      "author_sequence_sha256": "d943c9ba17aad0398240c23274a7fe17743cbfd5a756905c8ee22bbc636989fa",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 87100,
+      "official_sequence_sha256": "d943c9ba17aad0398240c23274a7fe17743cbfd5a756905c8ee22bbc636989fa",
+      "official_versioned_accession": "PZ445454.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas63",
+      "requested_accession": "PZ445454"
+    },
+    {
+      "author_length": 39842,
+      "author_sequence_sha256": "f2ced350fe23ef7913aaac44912020da442f871404e372b1dfcfe2a3dab23b2c",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 39842,
+      "official_sequence_sha256": "f2ced350fe23ef7913aaac44912020da442f871404e372b1dfcfe2a3dab23b2c",
+      "official_versioned_accession": "MZ501081.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas64",
+      "requested_accession": "MZ501081"
+    },
+    {
+      "author_length": 39451,
+      "author_sequence_sha256": "dc194e3540c904cbe6a40f15ecb2e67560855433fbc7bc8908a71324153857f7",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 39451,
+      "official_sequence_sha256": "dc194e3540c904cbe6a40f15ecb2e67560855433fbc7bc8908a71324153857f7",
+      "official_versioned_accession": "PZ445455.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas65",
+      "requested_accession": "PZ445455"
+    },
+    {
+      "author_length": 39315,
+      "author_sequence_sha256": "c2f85081c240b664638b70d99827b8ab7914aca80ebb581522f355b538d41aa9",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 39315,
+      "official_sequence_sha256": "c2f85081c240b664638b70d99827b8ab7914aca80ebb581522f355b538d41aa9",
+      "official_versioned_accession": "PZ445456.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas67",
+      "requested_accession": "PZ445456"
+    },
+    {
+      "author_length": 39465,
+      "author_sequence_sha256": "9628d0030c7ecf95e32d6c6a32cd44e209c20df11fd8bf51c1c8c1bd7cabbaa0",
+      "exact_author_DNA_match": false,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 39466,
+      "official_sequence_sha256": "56dc4e3c18aadb45245af9bfb05bd61e2c14065665da6b5653fcf6eb05fd65f1",
+      "official_versioned_accession": "PZ445457.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": false,
+      "phage": "Bas68",
+      "requested_accession": "PZ445457"
+    },
+    {
+      "author_length": 70850,
+      "author_sequence_sha256": "603e835dab4886ce04c7f706e8212282762a36c41a04472ea3c8bae99c82d648",
+      "exact_author_DNA_match": true,
+      "official_ambiguous_bases": 0,
+      "official_formats_agree": true,
+      "official_length": 70850,
+      "official_sequence_sha256": "603e835dab4886ce04c7f706e8212282762a36c41a04472ea3c8bae99c82d648",
+      "official_versioned_accession": "PZ445458.1",
+      "old_author_sequence_groups_reusable_by_exact_DNA_correspondence_only": true,
+      "phage": "Bas69",
+      "requested_accession": "PZ445458"
+    }
+  ],
+  "official_record_format_pairs_verified": 52,
+  "official_sequence_version_counts": {
+    "1": 52
+  },
+  "parser": "Biopython 1.86",
+  "report": {
+    "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/processed/basel-phage-accession-authentication.json",
+    "sha256": "ab7c7fd77f8134d1d1868975dd889b203b24c74a2a996d95f2128d462df63c92"
+  },
+  "schema_version": 1,
+  "script_sha256": "e2fa75d228bcaed533d110800961f692fd9bedc309326014dd36c3942b179150",
+  "status": "complete_official_format_and_author_correspondence_replay",
+  "verified_artifact_count": 156
+}
