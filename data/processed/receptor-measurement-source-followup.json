@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-11-07",
+  "purpose": "Primary-source and literal supplementary-workbook follow-up; no new labels or prediction results",
+  "preprint": "https://www.biorxiv.org/content/10.64898/2026.04.02.716166v1.full",
+  "publication_status": "preprint_v1",
+  "methods_eop_definition": "Mean mutant-to-parental plaque-count ratio; BW25113-derived validation mutants",
+  "contexts": "Empty-vector KEIO deletion background versus ASKA-complemented background; complementation is not guaranteed restoration",
+  "replicate_description_discrepancy": {
+    "phenotypic_validation_methods": "technical duplicates",
+    "dataset_S4_legend": "biological duplicates"
+  },
+  "browser_generation": {
+    "commit": "ae2b5e0e59b24f84666a8ebed01f5d1c0ded7b04",
+    "path": "Ecoli_phages/DataAssembly/format_EOP.ipynb",
+    "git_blob_sha1": "56ae4fab1df17bf84f133d14dd8574eebe69ce79",
+    "source_input": "External Moriniere_2026_Metadata/KEIO_EOP.csv, not authenticated here",
+    "transform": "Copies upstream values without a numeric transform; separates source strain suffixes and inner-merges phage/genotype contexts",
+    "retention_limit": "Unpaired upstream contexts could be omitted; upstream denominator not established"
+  },
+  "supplement": {
+    "doi": "10.6084/m9.figshare.31930314.v1",
+    "file_id": 63415074,
+    "bytes": 3485764,
+    "published_md5": "7ec18ef39cf4f7e08ee3c72d98fcc813",
+    "md5_verified": true,
+    "sha256": "555b520f61f42455351123dc51dbdb20d30a41e5ca564921327789f04648309a",
+    "header_audit_plan_sha256": "9cfc7842b049f7d4e2dbd64e89f5be04738f843cdf6e3a6eb56a66ec0ec4bc42",
+    "literal_audit_plan_sha256": "3191aadfdaee88e0bd9fc24e2ee8a9ea0357f933953461e9f2e95d1a447a64b8",
+    "sheet": "Dataset S4",
+    "header": {
+      "A": "Phage",
+      "B": "Strain",
+      "C": "EOP"
+    },
+    "literal_rows": 1846,
+    "numeric_domains": {
+      "negative": 1404,
+      "zero": 17,
+      "positive": 425,
+      "uninterpreted_or_blank": 0
+    },
+    "literal_audit_sha256": "d24e60798e567899a818296ec709f350b82d739137d86d0f1c11208248fa8966",
+    "row_artifact_sha256": "ce8bad036758853dbadf5252f06b6c6eb04234e52a8789eff9cb7966223cb924"
+  },
+  "measurement_scale_verified": false,
+  "log_base_or_transformation_inferred": false,
+  "detection_limits_or_ND_meaning_inferred": false,
+  "rowwise_browser_supplement_correspondence_verified": false,
+  "admitted_rows": 0,
+  "training_or_scoring_executed": false,
+  "interpretation": "Negative literals occur in the official v1 supplementary table as well as the browser. Their transformation/scale remains undocumented in the inspected sources; numeric sign and zero cannot be assigned infection meanings. Global numeric-domain totals agree across two browser contexts and S4, but exact row correspondence is not yet established."
+}

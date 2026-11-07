@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "purpose": "Source and literal measurement audit before admitting an alternative receptor panel; no prediction or performance evaluation",
+  "repository": "mjohnson11/PhageDataSheets",
+  "commit": "ae2b5e0e59b24f84666a8ebed01f5d1c0ded7b04",
+  "files": [
+    {"name": "KEIO_EOP_reformatted.csv", "git_blob_sha1": "e23e55974c8193c5815ef48a8fc817049e6df864", "bytes": 35180, "delimiter": ","},
+    {"name": "Table_S1_updated.tsv", "git_blob_sha1": "ff279b44697edc9908841515ff0681e6e9254c03", "bytes": 66168, "delimiter": "\t"}
+  ],
+  "row_selection": "Audit every source row; no selection by favorable outcome, receptor annotation or model result",
+  "measurement_handling": "Preserve raw strings; distinguish nonnegative finite numeric values, explicit inequality bounds, missing fields and uninterpreted entries. Never replace missing/unknown/bounded values with zero or a binary infection label.",
+  "complementation": "Keep original and complemented EOP as distinct contexts; blank complemented fields are unmeasured/unspecified, not failed rescue",
+  "crosswalk": "Exact primary phage ID first; only unique exact complete-cell Alternative name or Full name matches may be reported as identifier correspondence; no guessed punctuation aliases or stock-identity inference",
+  "duplicate_handling": "Record repeated phage/genotype rows with original row numbers; do not average, deduplicate or call independent replicates",
+  "target_context": "Ando labels already known. Explicit T7/T3 name flags are overlap warnings, not sequence-homology clearance or predictions.",
+  "admission": "No rows admitted to training, calibration or evaluation in this audit. Exact materials, assay reference/conditions, source figures, relatedness and model-specific inputs remain required.",
+  "binding_entry_assembly_inference": false,
+  "predictions_or_performance_produced": false
+}

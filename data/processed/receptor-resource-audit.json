@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "purpose": "Source and literal measurement audit before admitting an alternative receptor panel; no prediction or performance evaluation",
+  "status": "source_literals_audited_not_admitted",
+  "policy_path": "software/tipcraft/benchmarks/receptor-resource/source-audit-policy.json",
+  "policy_sha256": "6c7204048fbb9457c0986dfb9678aef14babc0c10134eb7d661121dea624c39b",
+  "script_sha256": "50bc4f42021ee674f6efec0bed74da0313756d0b1c1a55cfe92ae0fe62cbbd80",
+  "source_repository": "mjohnson11/PhageDataSheets",
+  "source_commit": "ae2b5e0e59b24f84666a8ebed01f5d1c0ded7b04",
+  "source_files": [
+    {
+      "path": "data/raw/receptor-resource/KEIO_EOP_reformatted.csv",
+      "bytes": 35180,
+      "sha256": "0440f6288873b4ecbe2df910c59ea89ef5f44458a1064e752de8cd43c51bae10",
+      "git_blob_sha1": "e23e55974c8193c5815ef48a8fc817049e6df864",
+      "source_url": "https://github.com/mjohnson11/PhageDataSheets/blob/ae2b5e0e59b24f84666a8ebed01f5d1c0ded7b04/Ecoli_phages/data/KEIO_EOP_reformatted.csv"
+    },
+    {
+      "path": "data/raw/receptor-resource/Table_S1_updated.tsv",
+      "bytes": 66168,
+      "sha256": "c7c1eb51281d4c3121bf6918b6207e13cb7bae4482d2454e3d1975f9ec0ca79e",
+      "git_blob_sha1": "ff279b44697edc9908841515ff0681e6e9254c03",
+      "source_url": "https://github.com/mjohnson11/PhageDataSheets/blob/ae2b5e0e59b24f84666a8ebed01f5d1c0ded7b04/Ecoli_phages/data/Table_S1_updated.tsv"
+    }
+  ],
+  "measurement_rows": 923,
+  "distinct_literal_phage_ids": 140,
+  "distinct_literal_genotypes": 38,
+  "distinct_literal_phage_genotype_pairs": 923,
+  "contexts": {
+    "EOP": {
+      "rows": 923,
+      "numeric": 116,
+      "bounded": 0,
+      "blank": 0,
+      "unparsed": 807,
+      "unparsed_reasons": {
+        "negative_numeric": 807
+      }
+    },
+    "EOP (complemented)": {
+      "rows": 923,
+      "numeric": 326,
+      "bounded": 0,
+      "blank": 0,
+      "unparsed": 597,
+      "unparsed_reasons": {
+        "negative_numeric": 597
+      }
+    }
+  },
+  "duplicate_pair_groups": 0,
+  "rows_in_duplicate_groups": 0,
+  "duplicate_excess_rows": 0,
+  "linkage_status_counts": {
+    "linked": 909,
+    "unlinked": 14
+  },
+  "unlinked_or_ambiguous_source_rows": [
+    92,
+    127,
+    236,
+    343,
+    383,
+    400,
+    430,
+    447,
+    463,
+    475,
+    605,
+    615,
+    890,
+    901
+  ],
+  "linked_rows_with_nonblank_genome_accession_literal": 909,
+  "linked_rows_with_nonblank_source_reference_literal": 853,
+  "metadata_rows": 260,
+  "distinct_nonblank_metadata_primary_ids": 260,
+  "metadata_duplicate_primary_ids": {},
+  "metadata_field_completeness": {
+    "Phage": {
+      "nonblank_literal": 260,
+      "blank_or_absent": 0
+    },
+    "Genome accesion": {
+      "nonblank_literal": 260,
+      "blank_or_absent": 0
+    },
+    "Reference (doi)": {
+      "nonblank_literal": 219,
+      "blank_or_absent": 41
+    },
+    "Production host strain": {
+      "nonblank_literal": 260,
+      "blank_or_absent": 0
+    }
+  },
+  "measurement_schema_issue_rows": [],
+  "metadata_schema_issue_rows": [],
+  "target_name_normalization": "strip surrounding whitespace and casefold; complete cell must equal T7 or T3",
+  "target_name_overlap_warnings": [
+    {
+      "target_name": "T7",
+      "measurement_source_rows": [
+        151,
+        258,
+        365,
+        653,
+        821,
+        874
+      ],
+      "metadata_name_matches": [
+        {
+          "metadata_source_row": 239,
+          "field": "Phage",
+          "raw": "T7"
+        }
+      ],
+      "interpretation": "Name-overlap warning only; no stock identity, homology clearance or prediction"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "data/raw/receptor-resource/audit-v1/literal-measurements.json",
+      "sha256": "3f6b4da301b1e38e184054ec4c92877b7bb5d9fdb37c2c1a77c6c7a32665af68",
+      "bytes": 990836
+    },
+    {
+      "path": "data/raw/receptor-resource/audit-v1/metadata-and-duplicates.json",
+      "sha256": "86dfcb08ce60fcca9fe18f134cdd6df289a0b2128d77ae7357d26dbcd582bf39",
+      "bytes": 297387
+    }
+  ],
+  "stock_identity_verified": false,
+  "admitted": false,
+  "admitted_rows": 0,
+  "all_rows_admitted": false,
+  "measurement_scale_verified": false,
+  "accessions_or_source_references_externally_verified": false,
+  "measurement_scale_normalizer_conditions_or_genotype_background_inferred": false,
+  "binding_entry_or_assembly_inferred": false,
+  "training_or_scoring_executed": false,
+  "predictions_or_performance_produced": false,
+  "original_benchmark_modified": false,
+  "interpretation": "Literal source audit only. Negative numeric strings remain uninterpreted under the frozen nonnegative rule; no log-scale interpretation is assumed. Reference/accession completeness means nonblank text, not verification. Complementation blanks are unspecified, not failed rescue. Repeated rows are retained without averaging or claims of independent replication."
+}

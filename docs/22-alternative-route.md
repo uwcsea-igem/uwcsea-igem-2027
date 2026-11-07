@@ -26,6 +26,8 @@ Receptor-resource source: [author repository at inspected commit](https://github
 
 ## Next concrete work
 
+The [record-level source audit](23-receptor-resource-provenance.md) now authenticates the two tables and the official v1 supplementary workbook. It retains 923 browser records and identifies an unresolved measurement-scale issue also present in the supplement. Metadata linking and literal parsing are complete; quantitative training admission remains a separate gate.
+
 The [initial schema audit](../data/processed/receptor-resource-schema-audit.json) now confirms accessible files at the pinned author commit. The EOP table exposes `phage`, `Genotype`, `EOP` and `EOP (complemented)` fields; the metadata table provides genome accessions, separate BW25113/BL21 receptor and susceptibility fields, binding-protein annotations and source references. Only headers were inspected; full responses were retrieved, but outcome rows were not inspected or selected. These fields provide a concrete next source-audit path. Record-level provenance, experimental material identity, censoring rules and overlap remain to be established before admission.
 
 1. Authenticate accessible receptor-resource metadata and schemas without choosing cases from favorable outcomes. Establish whether an additional mechanism panel can complement the original benchmark.
