@@ -25,6 +25,10 @@ The [pinned decoder](https://github.com/YangSH-ac/PhageMind/blob/917b2ef3c62f8c7
 
 Receptor-resource source: [author repository at inspected commit](https://github.com/mjohnson11/PhageDataSheets/tree/ae2b5e0e59b24f84666a8ebed01f5d1c0ded7b04/Ecoli_phages), associated with [the 2026 preprint](https://doi.org/10.64898/2026.04.02.716166). The README names `KEIO_EOP_reformatted.csv`, phage metadata and genetic-dependence data. The resource is a preprint; its v1 Methods and supplementary figures have now been inspected. These resources have not been admitted as training data or added to the frozen benchmark.
 
+## Paired-host encoder sanity check
+
+The [two-reference host encoder test](26-host-encoder-capacity.md) now provides an executed negative applicability result before interaction-model fitting: all three original target-host proteomes map to the same nonzero vector under the proposed training-pattern-merged5-mer union projection. This candidate cannot act as the sole host representation in a sequence-feature paired ranker for this target panel. This does not reject the receptor-only endpoint or all GenoPHI implementations, and no new host-range accuracy is claimed.
+
 ## Additional strain-method applicability check
 
 [Camejo et al. 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12579225/) construct protein-domain interaction features and fit separate models for individual phages. Their endpoint is growth inhibition; it is not automatically a plaque label or direct receptor binding. The authors also discuss sensitivity to phage mutations and the possible need for phage-specific models. Applying this recipe by fitting on the Ando T7/T3 outcomes would violate this project's target-label exclusion. An independently justified unseen-phage adaptation and authenticated training/inference bundle would be needed before admission. The inspected availability statement lists deposited phage genomes; it does not authenticate a runnable T7/T3 predictor. This is a bounded applicability finding, not a conclusion about every external asset or the paper's performance.

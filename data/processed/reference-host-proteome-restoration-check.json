@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "script_sha256": "f41d9fa7c690f41b8d02a5ef33c5e2b778389ee44309205d573185c194487dd0",
+  "target_host_proteomes": [
+    {
+      "source_id": "BL21",
+      "protein_path": "data/raw/receptor-resource/reference-host-restoration-check-v2/h_t000/proteins.faa",
+      "sha256": "ca283d9fcab37135334a334b405221d4083ad547c10e31a9e4e802a52e135699",
+      "origin": "fresh_hash_matching_call"
+    },
+    {
+      "source_id": "BW25113",
+      "protein_path": "data/raw/receptor-resource/reference-host-restoration-check-v2/h_t001/proteins.faa",
+      "sha256": "62c2d853f6ea4c21a59433ec13ed9079937227834756c2a83ac8c60faa2c9c5d",
+      "origin": "fresh_hash_matching_call"
+    },
+    {
+      "source_id": "MG1655",
+      "protein_path": "data/raw/receptor-resource/reference-host-restoration-check-v2/h_t002/proteins.faa",
+      "sha256": "c253fff8298229a782b6bb81f1666d9d09cd2b80389ffc027aabdd2790a4fcc0",
+      "origin": "fresh_hash_matching_call"
+    }
+  ],
+  "public_receipt_sha256": "4618f08ac18ca4eb739f2b4b6ec5c23dd0798570f95e3f3182a8a6835a0459cf",
+  "source_manifest_sha256": "939af977b8c00763b957ad9640e58c68387a306f8bde69068cf4a78baac28528",
+  "fresh_call_commands": [
+    [
+      "data/raw/tools/prodigal-2.6.3/source/prodigal",
+      "-p",
+      "single",
+      "-g",
+      "11",
+      "-q",
+      "-f",
+      "gff",
+      "-i",
+      "data/raw/receptor-resource/reference-host-restoration-check-v2/h_t000/input.fna",
+      "-a",
+      "data/raw/receptor-resource/reference-host-restoration-check-v2/h_t000/proteins.faa",
+      "-o",
+      "data/raw/receptor-resource/reference-host-restoration-check-v2/h_t000/genes.gff"
+    ],
+    [
+      "data/raw/tools/prodigal-2.6.3/source/prodigal",
+      "-p",
+      "single",
+      "-g",
+      "11",
+      "-q",
+      "-f",
+      "gff",
+      "-i",
+      "data/raw/receptor-resource/reference-host-restoration-check-v2/h_t001/input.fna",
+      "-a",
+      "data/raw/receptor-resource/reference-host-restoration-check-v2/h_t001/proteins.faa",
+      "-o",
+      "data/raw/receptor-resource/reference-host-restoration-check-v2/h_t001/genes.gff"
+    ],
+    [
+      "data/raw/tools/prodigal-2.6.3/source/prodigal",
+      "-p",
+      "single",
+      "-g",
+      "11",
+      "-q",
+      "-f",
+      "gff",
+      "-i",
+      "data/raw/receptor-resource/reference-host-restoration-check-v2/h_t002/input.fna",
+      "-a",
+      "data/raw/receptor-resource/reference-host-restoration-check-v2/h_t002/proteins.faa",
+      "-o",
+      "data/raw/receptor-resource/reference-host-restoration-check-v2/h_t002/genes.gff"
+    ]
+  ],
+  "copied_report_is_historical_provenance_not_a_new_full_collection_run": true,
+  "picard_host_inputs_needed": false,
+  "phenotype_labels_loaded": false
+}

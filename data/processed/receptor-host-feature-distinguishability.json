@@ -1,0 +1,228 @@
+{
+  "schema_version": 1,
+  "policy_sha256": "df77d14cb8b6ae8d25d232cb91cb083fdbf0a44fef5c59fae6df0f0bdc89ac97",
+  "script_sha256": "f8203a33cc4f63c477e78442c4bbbc3defa4ca7c17a7512ba2473c15cf0276e5",
+  "inputs": [
+    {
+      "path": "data/raw/genophi-annotation/run-1/report.json",
+      "sha256": "4618f08ac18ca4eb739f2b4b6ec5c23dd0798570f95e3f3182a8a6835a0459cf"
+    },
+    {
+      "path": "data/processed/receptor-host-payload-audit.json",
+      "sha256": "c115296621c8514d5d8e3b200695709cebcc7c856761a19791968b436c65c81d"
+    },
+    {
+      "path": "software/tipcraft/src/tipcraft/kmer_features.py",
+      "sha256": "da81572e91ba8307c0771daed71fa2acb108796efb862f0a7e37f6aa35d4b825"
+    },
+    {
+      "path": "software/tipcraft/benchmarks/receptor-resource/direct-kmer-representation-policy.json",
+      "sha256": "0e66601d79aefccad0ce21fd39c29fea998aeca738120dcd6ab5194f1374c9fc"
+    },
+    {
+      "path": "scripts/audit-receptor-host-payloads.py",
+      "sha256": "9a6751417dbf02f2e00070e6d25f9285ec0d1a2bddbda297a31a1c65aa09aefd"
+    },
+    {
+      "path": "software/tipcraft/benchmarks/retro-t7-t3/wish-inputs.json",
+      "sha256": "939af977b8c00763b957ad9640e58c68387a306f8bde69068cf4a78baac28528"
+    }
+  ],
+  "files": [
+    {
+      "sample_id": "author:BL21",
+      "role": "vocabulary_fit_only",
+      "path": "data/raw/receptor-resource/host-payloads-v1/BL21/aaseq",
+      "sha256": "fa9d67099daf6812e57af39a8d996f694ffec4991b95b11d75690950a10ac78f",
+      "expected_proteins": 4195
+    },
+    {
+      "sample_id": "author:Keio",
+      "role": "vocabulary_fit_only",
+      "path": "data/raw/receptor-resource/host-payloads-v1/Keio/aaseq",
+      "sha256": "1e6cc21ffb80e347eb80b9ad3ed72ec8be0042de16fc954928faa2a934cfed5b",
+      "expected_proteins": 4146
+    },
+    {
+      "sample_id": "original:BL21",
+      "role": "projection_only",
+      "path": "data/raw/genophi-annotation/run-1/h_t000/proteins.faa",
+      "sha256": "ca283d9fcab37135334a334b405221d4083ad547c10e31a9e4e802a52e135699",
+      "expected_proteins": 4234,
+      "original_genome_sequence_sha256": "669a5120ac4305418137e69b37e85d8c5c099908b4f49f212d78effa6455fff9"
+    },
+    {
+      "sample_id": "original:BW25113",
+      "role": "projection_only",
+      "path": "data/raw/genophi-annotation/run-1/h_t001/proteins.faa",
+      "sha256": "62c2d853f6ea4c21a59433ec13ed9079937227834756c2a83ac8c60faa2c9c5d",
+      "expected_proteins": 4314,
+      "original_genome_sequence_sha256": "3761072f8884add5e9facdafc583de5d81a4cf5dbc7e51023ba966f3cf4887ce"
+    },
+    {
+      "sample_id": "original:MG1655",
+      "role": "projection_only",
+      "path": "data/raw/genophi-annotation/run-1/h_t002/proteins.faa",
+      "sha256": "c253fff8298229a782b6bb81f1666d9d09cd2b80389ffc027aabdd2790a4fcc0",
+      "expected_proteins": 4319,
+      "original_genome_sequence_sha256": "e999dceccb76562d40e49a10d9e6d4cf1c05d184f4f80b92bb32d4a2420c11d0"
+    }
+  ],
+  "fit_parameters": {
+    "k": 5,
+    "minimum_protein_occurrences": 2,
+    "sequence_policy": "deposited21_skip_X"
+  },
+  "proteome_inventory": [
+    {
+      "sample_id": "author:BL21",
+      "role": "vocabulary_fit_only",
+      "proteins": 4195,
+      "terminal_stop_markers_removed": 0,
+      "normalized_proteome_sha256": "7aefb3ddc996bd14ba32af6d8ad1f8254637e2b961d573f80127340acc6c9880"
+    },
+    {
+      "sample_id": "author:Keio",
+      "role": "vocabulary_fit_only",
+      "proteins": 4146,
+      "terminal_stop_markers_removed": 0,
+      "normalized_proteome_sha256": "b578aff6b537b0548fd83d9b197014a95745438588d4a7ec7fcfdaba9914eadc"
+    },
+    {
+      "sample_id": "original:BL21",
+      "role": "projection_only",
+      "proteins": 4234,
+      "terminal_stop_markers_removed": 4234,
+      "normalized_proteome_sha256": "20c2fdb8db01f6fdfb67a581d2b0e2f66bce874fbd55d9ed6173603988702364"
+    },
+    {
+      "sample_id": "original:BW25113",
+      "role": "projection_only",
+      "proteins": 4314,
+      "terminal_stop_markers_removed": 4314,
+      "normalized_proteome_sha256": "b05b9c1d46130c4cb181478ba4dfa69c60caadc3ede029dff6275f38dafd47e3"
+    },
+    {
+      "sample_id": "original:MG1655",
+      "role": "projection_only",
+      "proteins": 4319,
+      "terminal_stop_markers_removed": 4319,
+      "normalized_proteome_sha256": "b78c3b57300936fe7d2b0f1444cea1e946e12ee08a2a846dba93c580fe43463f"
+    }
+  ],
+  "status": "completed_label_free_host_representation_diagnostic",
+  "retained_kmer_count": 772195,
+  "merged_feature_count": 3,
+  "nonzero_pattern_upper_bound": 3,
+  "feature_member_counts": [
+    768395,
+    2194,
+    1606
+  ],
+  "training_projection": {
+    "sample_ids": [
+      "author:BL21",
+      "author:Keio"
+    ],
+    "matrix": [
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ]
+    ],
+    "zero_vector_sample_ids": [],
+    "sequence_policy": "deposited21_skip_X",
+    "window_counts": {
+      "author:BL21": {
+        "total_windows": 1296996,
+        "skipped_X_windows": 0,
+        "deposited_X_residues": 0,
+        "deposited_U_residues": 3
+      },
+      "author:Keio": {
+        "total_windows": 1296394,
+        "skipped_X_windows": 0,
+        "deposited_X_residues": 0,
+        "deposited_U_residues": 3
+      }
+    }
+  },
+  "target_projection": {
+    "sample_ids": [
+      "original:BL21",
+      "original:BW25113",
+      "original:MG1655"
+    ],
+    "matrix": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "zero_vector_sample_ids": [],
+    "sequence_policy": "deposited21_skip_X",
+    "window_counts": {
+      "original:BL21": {
+        "total_windows": 1304782,
+        "skipped_X_windows": 0,
+        "deposited_X_residues": 0,
+        "deposited_U_residues": 0
+      },
+      "original:BW25113": {
+        "total_windows": 1332580,
+        "skipped_X_windows": 0,
+        "deposited_X_residues": 0,
+        "deposited_U_residues": 0
+      },
+      "original:MG1655": {
+        "total_windows": 1335462,
+        "skipped_X_windows": 0,
+        "deposited_X_residues": 0,
+        "deposited_U_residues": 0
+      }
+    }
+  },
+  "target_collision_groups": [
+    {
+      "sample_ids": [
+        "original:BL21",
+        "original:BW25113",
+        "original:MG1655"
+      ],
+      "vector": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "all_original_target_host_vectors_identical": true,
+  "vocabulary": {
+    "path": "data/raw/receptor-resource/host-feature-distinguishability-v1/vocabulary.json",
+    "sha256": "3b44bb3f62e5cfa85e93d414bc7c125a99e0114784cffd907f83d2e590be4268"
+  },
+  "elapsed_seconds": 5.57463179086335,
+  "peak_process_rss_bytes": 422281216,
+  "phenotype_labels_loaded": false,
+  "interaction_model_trained_or_scored": false,
+  "source_stock_identity_verified": false,
+  "new_benchmark_rows_admitted": 0,
+  "interpretation": "A label-free capacity diagnostic of one declared encoder on these mixed-provenance annotated reference inputs. Identical host vectors cannot yield different host scores for a fixed phage in a predictor using only these sequence features. Collisions do not establish biological equivalence or measure infection prediction accuracy."
+}

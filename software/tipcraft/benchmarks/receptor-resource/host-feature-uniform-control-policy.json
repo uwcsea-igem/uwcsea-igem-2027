@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "purpose": "Uniform-caller sensitivity for the unchanged host-feature collision test; no interaction-model fit, label lookup or annotation correction",
+  "timing": "After observing the mixed-annotation collision; fixed before new gene calls or uniform feature projection. One control, not a parameter search.",
+  "inputs": [
+    {
+      "path": "software/tipcraft/benchmarks/receptor-resource/host-feature-distinguishability-policy.json",
+      "sha256": "df77d14cb8b6ae8d25d232cb91cb083fdbf0a44fef5c59fae6df0f0bdc89ac97"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/report.json",
+      "sha256": "4618f08ac18ca4eb739f2b4b6ec5c23dd0798570f95e3f3182a8a6835a0459cf"
+    },
+    {
+      "path": "data/processed/receptor-host-payload-audit.json",
+      "sha256": "c115296621c8514d5d8e3b200695709cebcc7c856761a19791968b436c65c81d"
+    },
+    {
+      "path": "data/processed/receptor-host-feature-distinguishability.json",
+      "sha256": "481af950fc8dc581fe21c00d955833c1dc91fe145e9aa3af70e2c3549b480349"
+    },
+    {
+      "path": "scripts/check-receptor-host-features.py",
+      "sha256": "f8203a33cc4f63c477e78442c4bbbc3defa4ca7c17a7512ba2473c15cf0276e5"
+    },
+    {
+      "path": "scripts/audit-receptor-host-payloads.py",
+      "sha256": "9a6751417dbf02f2e00070e6d25f9285ec0d1a2bddbda297a31a1c65aa09aefd"
+    }
+  ],
+  "source_genomes": [
+    {
+      "sample_id": "author:BL21",
+      "path": "data/raw/receptor-resource/host-payloads-v1/BL21/genome.fna",
+      "sha256": "520ffeade0c29f46765b9275d7473a63eee767388d111298295115bf1472e756"
+    },
+    {
+      "sample_id": "author:Keio",
+      "path": "data/raw/receptor-resource/host-payloads-v1/Keio/genome.fna",
+      "sha256": "a82899afe45debe75567d55dd7b0a7c6d77e5aae79fe6d45ba6f71bb87c91bb0"
+    }
+  ],
+  "caller": {
+    "path": "data/raw/tools/prodigal-2.6.3/source/prodigal",
+    "sha256": "4d797d04df4c259e5f46c512269a543d9d53f9614c27eef07a2e6f10ebdb898e",
+    "declared_version": "Prodigal2.6.3",
+    "parameters": [
+      "-p",
+      "single",
+      "-g",
+      "11",
+      "-q",
+      "-f",
+      "gff"
+    ]
+  },
+  "original_target_calls": "Reuse existing original3reference calls under the exact same caller/parameters, hash-bound by original annotation report; do not recall or alter them",
+  "feature_parameters": {
+    "k": 5,
+    "minimum_protein_occurrences": 2,
+    "sequence_policy": "deposited21_skip_X"
+  },
+  "gene_output": "Alternative uniform annotations of the two existing source reference genomes only; preserve original deposited annotations, sourceDNA and baseline collisionreport unchanged",
+  "decision": "Ifall3originalvectorsstillcoincide, caller uniformity doesnotremove this collision. Ifnot, originalmixed-inputresultremainsconditional and distinctinputs onlypassacapacitycheck, not infectionvalidation. Do notretuneencoderparameters or reportaccuracy.",
+  "phenotypes_or_interaction_models_used": false
+}
