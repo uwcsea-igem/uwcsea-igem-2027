@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "purpose": "Check consistency of all48083 existing deposited CDS translations against existing authenticated DNA; no new design, annotation filling or computed-protein export.",
+  "container_report": {
+    "path": "data/processed/receptor-cohort-container-audit.json",
+    "sha256": "fd0f8fc39223336660b9f84a1e7ac7f6a2b374dd8880cdb99095e5b2086f5ab1"
+  },
+  "sequence_manifest": {
+    "path": "data/raw/receptor-resource/cohort-containers-v1/sequence-manifest.json",
+    "sha256": "56430d0452804aca4c69fd63872105bdda328f98c9fa150e59a506787cda4cd3"
+  },
+  "container_inventory_sha256": "7ab7f0bd9766d57c80b7ffafb5b1789783d1eff9ce8f3f43ccd822f1b4e09422",
+  "expected_containers": 261,
+  "expected_translation_entries": 48083,
+  "parser": "Biopython1.86 SeqIO genbank; Bio.SeqFeature.extract; Bio.Seq.translate(cds=True)",
+  "checking_semantics": {
+    "each_translation_retained": true,
+    "one_declared_transl_table_required": true,
+    "missing_transl_table_default": null,
+    "codon_start": "Require a single declared1/2/3; when absent use1 explicitly identified as Biopython1.86 default. Extract location in source strand/join order, then apply codon_start-1 offset.",
+    "positions": "Exact bounded positions with uniform +/-strand; simple or nonoverlapping join only. Remote, fuzzy, partial, mixed-strand or overlapping joins unverified.",
+    "DNA": "Non-ACGT coding bases remain unverified; no ambiguity resolution.",
+    "unsupported_qualifier_keys": [
+      "artificial_location",
+      "exception",
+      "partial",
+      "pseudo",
+      "pseudogene",
+      "ribosomal_slippage",
+      "trans_splicing",
+      "transl_except"
+    ],
+    "multiple_translation_values": "Each entry preserved but unverified because the source feature has ambiguous deposited translation alternatives.",
+    "full_coding_check": "cds=True requires valid initiation, multiple-of-three length, terminal stop and no internal stop; alternate initiation maps to methionine using declared genetic code.",
+    "comparison": "Exact uppercase deposited string equality; no trimming, stop-removal, sequence correction or parameter search. Record computed hash/length/status only, never computed AA sequence.",
+    "statuses": [
+      "exact_match",
+      "mismatch",
+      "cds_validation_failed",
+      "unverified"
+    ],
+    "translation_or_parser_warnings": "unverified, not mismatch",
+    "mismatch_handling": "Preserve IDs and all detail entries without dropping or changing annotations."
+  },
+  "source_references": [
+    {
+      "url": "https://www.insdc.org/submitting-standards/feature-table/",
+      "locator": "Version11.4 April2026, CDS comment and /codon_start qualifier definition",
+      "supported": "codon_start offsets1/2/3; complete amino-termini require1; transl_table and transl_except meanings. This source does not explicitly establish absence-default1."
+    },
+    {
+      "url": "https://biopython.org/docs/1.86/api/Bio.SeqFeature.html",
+      "locator": "SeqFeature.translate and its linked1.86 source",
+      "supported": "Extracts source feature, applies codon_start offset; implementation defaults missingcodon_start to0-basedoffset0. Our policy still requires an explicitly declared transl_table."
+    }
+  ],
+  "no_model_training_or_host_outcome_reads": true,
+  "raw_manifest_mutation": false
+}

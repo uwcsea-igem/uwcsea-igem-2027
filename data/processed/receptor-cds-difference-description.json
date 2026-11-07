@@ -1,0 +1,78 @@
+{
+  "analysis_type": "post_hoc_descriptive_followup_not_reclassification",
+  "annotations_corrected": false,
+  "baseline_details": {
+    "path": "data/raw/receptor-resource/cds-translation-check-v1/translation-check-details.json",
+    "sha256": "e234c86d084164902fb2157971140081eda1791a49ea58b96c997661fa1a3788"
+  },
+  "baseline_report": {
+    "path": "data/processed/receptor-cds-translation-check.json",
+    "sha256": "8ae80d6a82e32a35fd053ee2efff986a3e32ac07fc919f27796ea11a88725efe"
+  },
+  "category_counts": {
+    "first_residue_only": 3666
+  },
+  "computed_AA_sequences_exported": false,
+  "existing_cds_validation_failure_counts": {
+    "final_codon_not_stop": 170,
+    "first_codon_not_start": 29
+  },
+  "first_residue_only_computed_first_letter_counts": {
+    "M": 3666
+  },
+  "first_residue_only_deposited_first_letter_counts": {
+    "I": 3,
+    "L": 1669,
+    "V": 1994
+  },
+  "helper_sha256": "a41779b0b05b99dbe1c231969da3986ac58b73bd74181e53c741245cb8d4a482",
+  "mismatch_entries": 3666,
+  "original_statuses_changed": false,
+  "plan_sha256": "c82c4ed2e09d431de5d813620eec0c2c188a1967f521a06a3c6d8833305738fd",
+  "representatives": {
+    "first_residue_only": [
+      {
+        "category": "first_residue_only",
+        "computed_length": 133,
+        "computed_sha256": "a0935d9343aea31fdecfd58b2d9af9cd8abcc05492007f3cebaba6c19461a0f2",
+        "deposited_length": 133,
+        "deposited_sha256": "e8438b406f5eb336cb3346cabc672d6093fbd891f230a3e876936ff82c10202b",
+        "primary_id": "Bas01",
+        "protein_id": "c000r000p00012v00",
+        "same_length_differing_positions": 1
+      },
+      {
+        "category": "first_residue_only",
+        "computed_length": 85,
+        "computed_sha256": "06f21e9aba02e26ff9e14b8aa3cd119acd780647b830dd71067d878701448cc5",
+        "deposited_length": 85,
+        "deposited_sha256": "3298f5d5247db0fdbf0989cc65a0c1ba59016aa7544191aa9ee7e75ed33cd0cc",
+        "primary_id": "Bas01",
+        "protein_id": "c000r000p00062v00",
+        "same_length_differing_positions": 1
+      },
+      {
+        "category": "first_residue_only",
+        "computed_length": 37,
+        "computed_sha256": "1549abd68a9b108ae808364ff9dfdc64bbb633352a39624cb121d2e566aa22b3",
+        "deposited_length": 37,
+        "deposited_sha256": "462268d567bf1f5804e87e4d79827450f4e3323c29d72d7fe6e016002dd04398",
+        "primary_id": "Bas01",
+        "protein_id": "c000r000p00064v00",
+        "same_length_differing_positions": 1
+      }
+    ]
+  },
+  "schema_version": 1,
+  "sequence_manifest": {
+    "path": "data/raw/receptor-resource/cohort-containers-v1/sequence-manifest.json",
+    "sha256": "56430d0452804aca4c69fd63872105bdda328f98c9fa150e59a506787cda4cd3"
+  },
+  "full_diagnostic": {
+    "path": "data/raw/receptor-resource/cds-translation-diagnostic-v1/diagnostic.json",
+    "sha256": "b0533014fc6a32cdd9c20fdb5a32213e2e9d560551e343a4bd9e5049f25e9b4c"
+  },
+  "versioned_replay_helper": "software/tipcraft/benchmarks/receptor-resource/cds-diagnostic-v1/describe.py",
+  "versioned_posthoc_plan": "software/tipcraft/benchmarks/receptor-resource/cds-diagnostic-v1/frozen-plan.json",
+  "interpretation": "All strict-check mismatches differ only at the first amino-acid residue, consistent with alternative-initiation representation conventions. This is a post hoc description, not proof of the annotation generator or a replacement for the original classifications. No source proteins were changed."
+}

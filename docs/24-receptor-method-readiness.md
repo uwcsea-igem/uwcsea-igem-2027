@@ -8,6 +8,8 @@ The [v1 study Methods](https://www.biorxiv.org/content/10.64898/2026.04.02.71616
 
 This method has a mechanism-relevant endpoint covering both protein and LPS dependencies. Its labels nevertheless derive from genetic-dependence experiments, rather than direct physical binding measurements. A receptor-class prediction alone supplies no validated mapping to the three target strains and no evidence of tail-fibre assembly compatibility.
 
+Target outcomes and source annotations were already visible during method development. Freezing a future run prevents result-driven changes to that run; it does not turn this work into a blinded study.
+
 ## Source-label version audit
 
 The official [v1 supplementary tables](https://doi.org/10.6084/m9.figshare.31930314.v1), file 63415071, were downloaded and authenticated: 72,821 bytes, MD5 `cf0b851dc65faf55cff6aa99e444560f`, SHA256 `10de34fd37a7ba1d355b56cdb8b214b690fc71f8991108669dee9d223ab298b7`.
@@ -47,10 +49,27 @@ The new [k-mer kernel](../software/tipcraft/src/tipcraft/kmer_features.py) provi
 
 This is a declared implementation adaptation. Its direct global projection has not been certified equivalent to the authors' novel-genome protein-family assignment workflow. It has not been applied to the real cohort or used for feature selection, fitting or scoring. Tests check protein boundaries, protein-level occurrence counting, held-out vocabulary exclusion, merged-member divergence, deterministic ordering and invalid-input rejection.
 
+## Executed annotation and near-homolog checks
+
+The [strict translation-consistency report](../data/processed/receptor-cds-translation-check.json) covers all 48,083 deposited translations under a policy fixed before checking:
+
+| Status under the declared full-CDS translation convention | Entries |
+| --- | ---: |
+| Exact deposited/computed string match | 44,212 |
+| String mismatch | 3,666 |
+| Full-CDS validation failed | 199 |
+| Unverified because coding DNA is ambiguous | 6 |
+
+A separate [post hoc descriptive follow-up](../data/processed/receptor-cds-difference-description.json) finds that **all 3,666 mismatches have the same length and differ only at the first residue**. The complete-CDS translation convention gives initial M; the corresponding deposited residues are V (1,994), L (1,669) or I (three). This pattern is consistent with alternative-initiation representation conventions, rather than broad internal protein/DNA disagreement; it does not independently establish how the annotations were generated. The original mismatch classifications and sequences remain unchanged. Of the 199 full-CDS validation failures, 170 lack the expected terminal stop codon and 29 lack a recognized start codon under this check. They are not infection or receptor failures. A future representation policy must address these annotation conventions and unresolved entries explicitly.
+
+The [executed DNA-based gp17 screen](../data/processed/receptor-gp17-overlap.json) preserves all 268 cohort/catalogue nucleotide records and appends two separate original target-reference controls. The database count of 270, both query-completion records and both reference self-controls passed. With the frozen single-alignment rule (at least 90% identity and 80% full-query coverage), **Bas66, T7 and the catalogue T3 candidate** meet direct near-hit exclusion; each has a 100%-identity, full-query-coverage hit. Bas66 and T7 are source training members. Bas64 additionally meets the 40%/80% broad diagnostic rule, which is not an automatic near-hit exclusion.
+
+The 257 candidates without a reported hit meeting either rule are **not** cleared of whole-genome relatedness, distant homology or group overlap. No final training roster is admitted by this direct screen. The annotation-consistency findings do not change the DNA screen or cause samples to disappear from it.
+
 ## Required evidence before scoring
 
-1. Authenticate all cohort containers and inventory deposited translations. Keep failed or incomplete records visible; do not generate missing proteins or conflate catalogue names with experimental stocks.
-2. Screen the original target gp17 sequences against cohort DNA with fixed thresholds and query-completion controls. Direct near-match exclusion is only one component: whole-genome/related-group analysis must still establish training and evaluation groups.
+1. Container authentication and translation inventory/checking are complete as reported above. Freeze how unresolved annotations, ambiguous residues and multiple records will be represented before feature construction; do not silently correct or remove them.
+2. The direct target-gp17 screen is complete. Whole-genome/related-group analysis must still establish training and evaluation groups, including parent/mutant and nonmodel bridge records.
 3. Resolve source-label version and negative/unknown semantics. Freeze task membership, preprocessing, feature selection, model parameters, grouped splits and matched baselines before a result run. Related parent/mutant phages stay together.
 4. Report the receptor endpoint separately. The ten Ando observations, WIsH negative result, four construct abstentions and original strain-ranking decision criterion remain unchanged.
 
@@ -61,3 +80,12 @@ uv run --project software/tipcraft python scripts/audit-receptor-label-sources.p
 ```
 
 The current disposition is **GO for authenticated input and method preparation; HOLD for fitting or claiming strain-specific predictive performance**.
+
+Reproduce the two input checks with fresh output locations:
+
+```bash
+uv run --project software/tipcraft --with biopython==1.86 python scripts/check-receptor-cds-translations.py --workdir data/raw/receptor-resource/cds-reproduction-1 --output /tmp/receptor-cds-translation-check.json
+uv run --project software/tipcraft python scripts/audit-receptor-gp17-overlap.py --workdir data/raw/receptor-resource/gp17-reproduction-1 --output /tmp/receptor-gp17-overlap.json
+```
+
+The dataset-bound descriptive replay uses the byte-identical [helper](../software/tipcraft/benchmarks/receptor-resource/cds-diagnostic-v1/describe.py) and adjacent [post hoc plan](../software/tipcraft/benchmarks/receptor-resource/cds-diagnostic-v1/frozen-plan.json). Copy both to a fresh raw working directory and run the helper there from the repository root, with Biopython 1.86 and the authenticated baseline caches available. It creates `diagnostic.json` beside itself and refuses an existing output; it never updates the baseline check.

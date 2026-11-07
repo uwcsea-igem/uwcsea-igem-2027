@@ -1,0 +1,33 @@
+{
+  "all_original_results_unchanged": true,
+  "baseline_details": {
+    "path": "data/raw/receptor-resource/cds-translation-check-v1/translation-check-details.json",
+    "sha256": "e234c86d084164902fb2157971140081eda1791a49ea58b96c997661fa1a3788"
+  },
+  "baseline_report": {
+    "path": "data/processed/receptor-cds-translation-check.json",
+    "sha256": "8ae80d6a82e32a35fd053ee2efff986a3e32ac07fc919f27796ea11a88725efe"
+  },
+  "category_priority": [
+    "terminal_stop_only",
+    "first_residue_only",
+    "other_same_length",
+    "length_difference_other"
+  ],
+  "definitions": {
+    "first_residue_only": "Equal nonzero length, all characters after position1 equal, first characters differ.",
+    "length_difference_other": "Different lengths, not terminal-stop-only.",
+    "other_same_length": "Equal lengths, not preceding categories.",
+    "terminal_stop_only": "Strings differ only by one terminal asterisk on either side."
+  },
+  "exports": "Counts and IDs/hash/length examples only. No computed or deposited full AA string, no sequence editing. Aggregate first-residue counts may be recorded.",
+  "fixed_computation": "Same Biopython1.86 feature.extract, same declared transl_table, same baseline codon_start offset, Seq.translate(cds=True); require recomputed SHA256 equal frozen baseline computed_sha256.",
+  "purpose": "Post hoc descriptive classification of the unchanged strict translation-check mismatches; not an alternative translation check or correction.",
+  "representatives": "First3 protein IDs in each category under lexical ordering, irrespective of phenotype.",
+  "selection": "All and only3666 entries whose frozen baseline status is mismatch; do not select examples by phenotype or outcome.",
+  "sequence_manifest": {
+    "path": "data/raw/receptor-resource/cohort-containers-v1/sequence-manifest.json",
+    "sha256": "56430d0452804aca4c69fd63872105bdda328f98c9fa150e59a506787cda4cd3"
+  },
+  "validation_error_classification": "Existing199 errors only: first_codon_not_start/final_codon_not_stop/length_not_multiple3/internal_stop/other; no retranslation."
+}

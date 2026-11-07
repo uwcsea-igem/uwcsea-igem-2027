@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "purpose": "Direct target-gp17 near-homolog screening on all receptor-cohort nucleotide records; no phenotype or model inference",
+  "recorded_before_first_search": true,
+  "wrapper_sha256": "40c361775d48979b2dfdf2427dc7e6a1653ba71a156a25cf4c19dcee7e99bea3",
+  "inputs": [
+    {
+      "path": "data/processed/receptor-cohort-container-audit.json",
+      "sha256": "fd0f8fc39223336660b9f84a1e7ac7f6a2b374dd8880cdb99095e5b2086f5ab1"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/sequence-manifest.json",
+      "sha256": "56430d0452804aca4c69fd63872105bdda328f98c9fa150e59a506787cda4cd3"
+    },
+    {
+      "path": "software/tipcraft/benchmarks/receptor-resource/cohort-container-policy.json",
+      "sha256": "f2b98bd4dfe4721bff8d0696f5de3f13c88b68693ee7f44e379036960fc8be77"
+    },
+    {
+      "path": "data/raw/genophi-phage-audit/normalized-v3/manifest.json",
+      "sha256": "d0f66b3bba527aa8cc32b327ed7f15107fbcd0943faefa6b1fda2496f528185c"
+    },
+    {
+      "path": "data/raw/genophi-phage-audit/normalized-v3/reference-gp17.faa",
+      "sha256": "04f19688217d4601d62c7b1b2c8650575a4cf34dfba813ab79780f2d7ee38965"
+    },
+    {
+      "path": "scripts/audit-genophi-phage-overlap.py",
+      "sha256": "8026b82db228b3cb7c5e673d1c927f53de598925e282e0a9b3b89c536c928464"
+    }
+  ],
+  "expected_source_candidates": 261,
+  "expected_source_nucleotide_records": 268,
+  "original_reference_controls": 2,
+  "logic_helper": "scripts/audit-genophi-phage-overlap.py",
+  "query_file": "data/raw/genophi-phage-audit/normalized-v3/reference-gp17.faa",
+  "executables": {
+    "makeblastdb": {
+      "path": "data/raw/tools/blast-2.17.0/ncbi-blast-2.17.0+/bin/makeblastdb",
+      "sha256": "b18159370061729a685e5714b5a1d349fd2951f4f3aeceb576b0e696b403fc72"
+    },
+    "tblastn": {
+      "path": "data/raw/tools/blast-2.17.0/ncbi-blast-2.17.0+/bin/tblastn",
+      "sha256": "8bcde4b235916c6ed7e2a99bdccecdb4c46afbe4877d9d3952af9ac12042b535"
+    }
+  },
+  "target_nucleotide_references": [
+    {
+      "source_id": "T7",
+      "path": "data/raw/wish/phages/T7.fna",
+      "sha256": "4411e203f3ffac4d85f42d6994714cb86d495440b678ebab9e5a075f5fdc7c7a"
+    },
+    {
+      "source_id": "T3",
+      "path": "data/raw/wish/phages/T3.fna",
+      "sha256": "1ac1012cd4b506b4bcf7ee13d3cccef1a21683cc40026feabec4ea0e8a3ef6a6"
+    }
+  ],
+  "tblastn_parameters": [
+    "-evalue",
+    "1e-5",
+    "-max_target_seqs",
+    "10000",
+    "-num_threads",
+    "4",
+    "-seg",
+    "yes"
+  ],
+  "tblastn_format": "7 qseqid sseqid pident qstart qend qlen sstart send sframe bitscore evalue",
+  "gp17_near_match": {
+    "identity_percent": 90.0,
+    "minimum_query_coverage_percent": 80.0,
+    "rule": "Any single local alignment meeting both thresholds excludes its complete source container via the explicit nucleotide-record-to-primary-ID map; no HSP coverage summation"
+  },
+  "broader_gp17_family_diagnostic": {
+    "identity_percent": 40.0,
+    "minimum_query_coverage_percent": 80.0,
+    "role": "Report only; no automatic broad-family exclusion or clearance"
+  },
+  "input_integrity": [
+    "Reverify every original container Git blob, normalized file hash and separate record sequence hash; preserve all multirecord boundaries and ambiguous DNA bases",
+    "Protein absence or annotation failure never removes available DNA",
+    "Require makeblastdb to report every one of the 270 source/control records, both outfmt7 query completions and both corresponding original-reference gp17 self controls",
+    "Reverify source, policy, helper, executable and target hashes before and after execution"
+  ],
+  "timeout_seconds_per_step": 600,
+  "missing_or_failed_inputs": "Retain all candidate failure rows; do not execute a partial cohort or treat unassessed/no-hit rows as independent",
+  "whole_genome_group_analysis_complete": false,
+  "admission": "Direct near-hit flags only; no whole-genome relatedness graph, homology-free training, stock identity, host-range, binding, assembly or model-run authorization",
+  "training_or_scoring_executed": false
+}
