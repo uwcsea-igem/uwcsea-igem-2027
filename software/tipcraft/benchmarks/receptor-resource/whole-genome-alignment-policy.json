@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "purpose": "All-query/all-subject nucleotide HSP audit on unchanged receptor-cohort records and original references; stop before aggregation or grouping",
+  "recorded_before_first_nucleotide_alignment": true,
+  "wrapper_sha256": "29a71b539b1baee466bed5924a8718e1b4bedf53c9ab59aee090ba58ab8856c7",
+  "inputs": [
+    {
+      "path": "scripts/audit-receptor-gp17-overlap.py",
+      "sha256": "40c361775d48979b2dfdf2427dc7e6a1653ba71a156a25cf4c19dcee7e99bea3"
+    },
+    {
+      "path": "software/tipcraft/benchmarks/receptor-resource/gp17-overlap-policy.json",
+      "sha256": "8e175847865c0b4fb7dc0c195d93111e162a680bf0dfcbd4075715039d316ed3"
+    },
+    {
+      "path": "data/processed/receptor-cohort-container-audit.json",
+      "sha256": "fd0f8fc39223336660b9f84a1e7ac7f6a2b374dd8880cdb99095e5b2086f5ab1"
+    },
+    {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/sequence-manifest.json",
+      "sha256": "56430d0452804aca4c69fd63872105bdda328f98c9fa150e59a506787cda4cd3"
+    }
+  ],
+  "preparation_helper": "scripts/audit-receptor-gp17-overlap.py",
+  "preparation_policy": "software/tipcraft/benchmarks/receptor-resource/gp17-overlap-policy.json",
+  "executables": {
+    "makeblastdb": {
+      "path": "data/raw/tools/blast-2.17.0/ncbi-blast-2.17.0+/bin/makeblastdb",
+      "sha256": "b18159370061729a685e5714b5a1d349fd2951f4f3aeceb576b0e696b403fc72",
+      "version": "makeblastdb: 2.17.0+"
+    },
+    "blastn": {
+      "path": "data/raw/tools/blast-2.17.0/ncbi-blast-2.17.0+/bin/blastn",
+      "sha256": "b13895ffdbc83a0a21025002bf33fb289c4be441536a1a88d7be80e8263c34a7",
+      "version": "blastn: 2.17.0+"
+    }
+  },
+  "source_containers": 261,
+  "source_nucleotide_records": 268,
+  "original_reference_controls": 2,
+  "nucleotide_queries_and_database_records": 270,
+  "role_qualified_container_nodes": 263,
+  "subjects_fasta_sha256": "7c6457883048f140eba6840fcf7131c00c6ed14523c84f6e2dc307848c6f10d5",
+  "record_policy": "Preserve every separate normalized DNA record, neutral ID, source accession, original record order and ambiguous base. Never concatenate records, trim or filter from annotation/phenotype. Targets use source_record_id equal to original frozen accession.",
+  "container_key_rule": "source:<primary_id> versus reference:<T7-or-T3>; published and original-reference T7/T3 remain distinct nodes",
+  "blastn_parameters": [
+    "-evalue",
+    "1",
+    "-max_target_seqs",
+    "10000",
+    "-num_threads",
+    "4",
+    "-word_size",
+    "7",
+    "-reward",
+    "2",
+    "-penalty",
+    "-3",
+    "-gapopen",
+    "5",
+    "-gapextend",
+    "2"
+  ],
+  "blastn_format": "7 qseqid sseqid evalue bitscore qlen slen qstart qend sstart send qseq sseq nident gaps",
+  "command_templates": [
+    [
+      "data/raw/tools/blast-2.17.0/ncbi-blast-2.17.0+/bin/makeblastdb",
+      "-in",
+      "{workdir}/subjects.fna",
+      "-dbtype",
+      "nucl",
+      "-parse_seqids",
+      "-out",
+      "{workdir}/db"
+    ],
+    [
+      "data/raw/tools/blast-2.17.0/ncbi-blast-2.17.0+/bin/blastn",
+      "-query",
+      "{workdir}/subjects.fna",
+      "-db",
+      "{workdir}/db",
+      "-evalue",
+      "1",
+      "-max_target_seqs",
+      "10000",
+      "-num_threads",
+      "4",
+      "-word_size",
+      "7",
+      "-reward",
+      "2",
+      "-penalty",
+      "-3",
+      "-gapopen",
+      "5",
+      "-gapextend",
+      "2",
+      "-outfmt",
+      "7 qseqid sseqid evalue bitscore qlen slen qstart qend sstart send qseq sseq nident gaps",
+      "-out",
+      "{workdir}/blastn.tsv"
+    ]
+  ],
+  "completion_policy": {
+    "database_records": 270,
+    "query_blocks": 270,
+    "terminal_query_total": 270,
+    "terminal_batches": 1,
+    "hit_rows": "Every declared per-query HSP count must equal parsed raw rows",
+    "self_controls": "Require at least one schema/coordinate-validated query=subject HSP for each of all270record IDs; do not impose or normalize self similarity to100%",
+    "streaming": "Preserve HSP order and all fourteen literal fields in headerless numeric TSV; validate IDs, declared lengths, finite scores, alignment spans and gap counts without recomputing ambiguous-base identities"
+  },
+  "monitoring": "Wait/poll the same process at30second intervals with no automatic timeout, killing, resubmission or restart",
+  "resource_scope": "Serial command CPU/time and cumulative direct-child peak RSS, not aggregate workflow memory",
+  "stops_after": "Validated HSP output only. Container offsets/aggregation, original-R comparison, symmetric similarities, whole-genome graph/group exclusions and admission require separate frozen audits.",
+  "phenotype_tables_loaded": false,
+  "training_or_scoring_executed": false
+}
