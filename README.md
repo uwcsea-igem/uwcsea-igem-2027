@@ -40,7 +40,7 @@ uv run --project software/tipcraft python -m unittest discover -s software/tipcr
 The [independent WIsH run](docs/07-december-gate-report.md) now provides six real sequence scores and four explicit abstentions. It fails the decisive T3 strain comparison; no structural/assembly or design-to-DNA pipeline is validated. Reproduce the external scorer with the [full benchmark commands](software/tipcraft/benchmarks/retro-t7-t3/README.md), or replay the recorded scores offline:
 
 ```bash
-uv run --project software/tipcraft tipcraft wish-report --cases software/tipcraft/benchmarks/retro-t7-t3/cases.csv --scores data/processed/wish/named/scores.json --anonymous-scores data/processed/wish/anonymous/scores.json --output /tmp/retro-t7-t3-wish.json
+uv run --project software/tipcraft tipcraft wish-report --manifest software/tipcraft/benchmarks/retro-t7-t3/wish-inputs.json --cases software/tipcraft/benchmarks/retro-t7-t3/cases.csv --scores data/processed/wish/named/scores.json --anonymous-scores data/processed/wish/anonymous/scores.json --output /tmp/retro-t7-t3-wish.json
 ```
 
 ## Repository map

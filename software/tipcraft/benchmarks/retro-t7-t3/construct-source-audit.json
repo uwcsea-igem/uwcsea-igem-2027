@@ -1,0 +1,44 @@
+{
+  "audit_date": "2026-11-07",
+  "scope": "Exact full-genome record mapping for two Ando 2015 whole-gp17 exchange constructs",
+  "status": "exact_full_genome_mapping_unverified",
+  "constructs": {
+    "T7_T3_gp17": {
+      "status": "exact_full_genome_mapping_unverified",
+      "eligible_for_genome_scoring": false,
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4785837/"
+    },
+    "T3_T7_gp17": {
+      "status": "exact_full_genome_mapping_unverified",
+      "eligible_for_genome_scoring": false,
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4785837/"
+    }
+  },
+  "observations": [
+    "Original article distinguishes whole-gp17 from C-terminal constructs; no accession mapping identified in main text",
+    "PubMed-to-nuccore link lookup returned no nucleotide links",
+    "Exact title/construct-index lookups did not establish a record mapping; names may differ in deposits",
+    "LC730324.1 (T3_AGU) and LC730325.1 (T7_AGU) are 2022 records, not demonstrated to be the 2015 exchange constructs"
+  ],
+  "access_limits": {
+    "pmc_supplements": "reCAPTCHA HTML returned instead of PDF/XLSX; actual attachments not read",
+    "europepmc_supplement_api": "reported not open access",
+    "publisher": "403 returned"
+  },
+  "sources": {
+    "paper": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4785837/",
+    "pubmed_nuccore_link": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&db=nuccore&id=26973885&retmode=json",
+    "title_query": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=nuccore&term=%22Engineering%20Modular%20Viral%20Scaffolds%22&retmode=json",
+    "supplement_pdf": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4785837/bin/NIHMS722794-supplement-1.pdf",
+    "supplement_xlsx": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4785837/bin/NIHMS722794-supplement-2.xlsx",
+    "europepmc_supplements": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4785837/supplementaryFiles"
+  },
+  "interpretation": "Failure to verify a mapping does not show that a public sequence does not exist. Four phenotype cases remain abstentions.",
+  "excluded_substitutes": [
+    "native T7/T3 reference genomes",
+    "2022 AGU isolates",
+    "Lin 2012 T3/7 recombinant",
+    "short patent fragments"
+  ],
+  "unblocking_evidence": "A public full-genome accession with explicit correspondence to the exact experimental construct and its provenance; no inferred genome reconstruction performed"
+}

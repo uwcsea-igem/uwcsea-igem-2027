@@ -1,11 +1,13 @@
 import copy
 import json
+import subprocess
+import sys
 from pathlib import Path
 import tempfile
 import unittest
 from unittest.mock import patch
 from tipcraft.benchmark import load_cases
-from tipcraft.retrospective import evaluate_scores, leakage_audit
+from tipcraft.retrospective import evaluate_scores, leakage_audit, validate_artifacts
 from tipcraft.wish import parse_matrix, run_scores, sequence
 
 ROOT = Path(__file__).resolve().parents[3]
@@ -52,6 +54,59 @@ class WishTests(unittest.TestCase):
         altered["alpha"] = 17
         with self.assertRaises(ValueError):
             leakage_audit(self.cases, self.scores, altered)
+
+    def test_excluded_construct_cannot_be_promoted_to_coverage(self):
+        altered = copy.deepcopy(self.scores)
+        altered["scores"]["T7_T3_gp17"] = dict(altered["scores"]["T3"])
+        with self.assertRaises(ValueError):
+            evaluate_scores(self.cases, altered)
+
+    def test_label_access_declaration_fails_closed(self):
+        altered = copy.deepcopy(self.scores)
+        altered["no_labels_loaded"] = False
+        with self.assertRaises(ValueError):
+            leakage_audit(self.cases, altered, json.loads(ANONYMOUS.read_text()))
+
+    def test_manifest_and_actual_matrix_binding(self):
+        anonymous = json.loads(ANONYMOUS.read_text())
+        named_matrix = NAMED.parent / "llikelihood.matrix"
+        anon_matrix = ANONYMOUS.parent / "llikelihood.matrix"
+        result = validate_artifacts(self.scores, anonymous, MANIFEST, named_matrix, anon_matrix)
+        self.assertEqual(result["status"], "verified")
+        altered = copy.deepcopy(self.scores)
+        altered["scores"]["T3"]["BL21"] += 0.01
+        with self.assertRaises(ValueError):
+            validate_artifacts(altered, anonymous, MANIFEST, named_matrix, anon_matrix)
+        altered = copy.deepcopy(self.scores)
+        altered["manifest_sha256"] = "0" * 64
+        with self.assertRaises(ValueError):
+            validate_artifacts(altered, anonymous, MANIFEST, named_matrix, anon_matrix)
+        altered = copy.deepcopy(self.scores)
+        del altered["scores"]["T3"]["BL21"]
+        with self.assertRaises(ValueError):
+            validate_artifacts(altered, anonymous, MANIFEST, named_matrix, anon_matrix)
+
+    def test_nonmatching_permutation_dataset_is_rejected(self):
+        altered = [dict(c, label="1") if c["phage"] == "T3" else dict(c) for c in self.cases]
+        with self.assertRaises(ValueError):
+            leakage_audit(altered, self.scores, json.loads(ANONYMOUS.read_text()))
+
+    def test_cli_without_manifest_keeps_failed_audit_failed(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            work = Path(tmp)
+            anonymous = json.loads(ANONYMOUS.read_text())
+            anonymous["scores"]["T3"]["BL21"] += 0.01
+            altered = work / "anonymous.json"
+            altered.write_text(json.dumps(anonymous))
+            output = work / "report.json"
+            done = subprocess.run([sys.executable, "-m", "tipcraft", "wish-report",
+                                   "--cases", str(CASES), "--scores", str(NAMED),
+                                   "--anonymous-scores", str(altered), "--output", str(output)],
+                                  capture_output=True, text=True)
+            self.assertEqual(done.returncode, 0, done.stderr)
+            report = json.loads(output.read_text())
+            self.assertEqual(report["leakage_audit"]["status"], "failed")
+            self.assertEqual(report["artifact_validation"]["status"], "not_verified")
 
     def test_ties_are_not_broken_by_host_name(self):
         scores = copy.deepcopy(self.scores)

@@ -5,10 +5,13 @@ import math
 from pathlib import Path
 from .benchmark import load_cases
 from .rank import classification_metrics
+from .wish import parse_matrix, sha256
 
 
 def evaluate_scores(cases: list[dict], inference: dict) -> dict:
     scores = inference["scores"]
+    if set(scores) & set(inference.get("excluded_constructs", {})):
+        raise ValueError("Excluded constructs cannot have scores")
     if not scores or any(not hosts for hosts in scores.values()):
         raise ValueError("Scores cannot be empty")
     if any(not isinstance(v, (float, int)) or not math.isfinite(v)
@@ -64,6 +67,10 @@ def evaluate_scores(cases: list[dict], inference: dict) -> dict:
 
 
 def leakage_audit(cases: list[dict], inference: dict, anonymous: dict) -> dict:
+    if inference.get("no_labels_loaded") is not True or anonymous.get("no_labels_loaded") is not True:
+        raise ValueError("Scoring runs must explicitly declare that no labels were loaded")
+    if set(anonymous["scores"]) & set(anonymous.get("excluded_constructs", {})):
+        raise ValueError("Excluded constructs cannot have anonymous scores")
     if inference.get("anonymized") is not False or anonymous.get("anonymized") is not True:
         raise ValueError("Leakage audit requires distinct named and anonymized scoring runs")
     for key in ("method", "order", "alpha", "upstream_commit", "executable_sha256", "manifest_sha256"):
@@ -75,6 +82,8 @@ def leakage_audit(cases: list[dict], inference: dict, anonymous: dict) -> dict:
     frozen_hash = hashlib.sha256(original_json.encode()).hexdigest()
     # Exhaustively permute the one positive among T3's three candidate hosts.
     t3 = [c for c in cases if c["phage"] == "T3"]
+    if len(t3) != 3 or sum(c["label"] == "1" for c in t3) != 1:
+        raise ValueError("This permutation audit requires three T3 cases with exactly one positive")
     placements = []
     for positive in t3:
         altered = [dict(c, label=str(int(c["case_id"] == positive["case_id"])))
@@ -95,7 +104,47 @@ def leakage_audit(cases: list[dict], inference: dict, anonymous: dict) -> dict:
         "t3_exact_permutation_upper_tail_fraction": sum(p["pair_concordance"] >= observed for p in placements) / len(placements),
         "selection_after_labels_visible": True,
         "prospective_blind_validation": False,
-        "training_uses_interaction_labels": False,
+        "training_uses_interaction_labels": not inference["no_labels_loaded"],
         "conclusion": ("No label/name input path found in scoring; post-hoc method selection and stock mismatch remain limitations"
                        if name_invariance else "FAILED name invariance: do not claim label/name independence"),
     }
+
+
+def validate_artifacts(inference: dict, anonymous: dict, manifest_path: Path,
+                       named_matrix: Path, anonymous_matrix: Path) -> dict:
+    """Bind JSON scores to the frozen manifest and upstream numeric matrices.
+
+    This establishes artifact consistency, not authenticity of experimental stocks.
+    """
+    manifest = json.loads(manifest_path.read_text())
+    expected_hash = sha256(manifest_path)
+    for run in (inference, anonymous):
+        if run.get("manifest_sha256") != expected_hash:
+            raise ValueError("Run does not match the supplied manifest hash")
+        for key in ("order", "alpha", "upstream_commit"):
+            if run.get(key) != manifest[key]:
+                raise ValueError(f"Run differs from frozen manifest: {key}")
+        if run.get("excluded_constructs") != manifest["excluded_constructs"]:
+            raise ValueError("Excluded construct declarations differ from manifest")
+        if set(run["scores"]) != set(manifest["phages"]):
+            raise ValueError("Scored phages differ from manifest")
+        for hosts in run["scores"].values():
+            if set(hosts) != set(manifest["hosts"]):
+                raise ValueError("Scored candidate hosts differ from manifest")
+    expected_named = parse_matrix(named_matrix)
+    raw_anonymous = parse_matrix(anonymous_matrix)
+    inverse_phages = {f"p{i}": name for i, name in enumerate(manifest["phages"])}
+    inverse_hosts = {f"h{i}": name for i, name in enumerate(manifest["hosts"])}
+    try:
+        expected_anonymous = {
+            inverse_phages[p]: {inverse_hosts[h]: v for h, v in hosts.items()}
+            for p, hosts in raw_anonymous.items()}
+    except KeyError as error:
+        raise ValueError("Anonymous matrix identifiers differ from manifest") from error
+    if inference["scores"] != expected_named or anonymous["scores"] != expected_anonymous:
+        raise ValueError("JSON scores differ from the upstream likelihood matrices")
+    return {"status": "verified", "manifest_sha256": expected_hash,
+            "named_matrix_sha256": sha256(named_matrix),
+            "anonymous_matrix_sha256": sha256(anonymous_matrix),
+            "candidate_sets_match": True, "exclusions_match": True,
+            "scope": "artifact consistency only; no stock identity or model validity claim"}

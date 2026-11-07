@@ -129,6 +129,15 @@
     "training_uses_interaction_labels": false,
     "conclusion": "No label/name input path found in scoring; post-hoc method selection and stock mismatch remain limitations"
   },
+  "artifact_validation": {
+    "status": "verified",
+    "manifest_sha256": "939af977b8c00763b957ad9640e58c68387a306f8bde69068cf4a78baac28528",
+    "named_matrix_sha256": "10967783ec13478c1bc6878c0c42f7c34331dbd18367063eece29fdaf62c33bb",
+    "anonymous_matrix_sha256": "eaf7e9040c5fef9aec62837908480db6a2237707b14c0b110ab04dff1fdd3057",
+    "candidate_sets_match": true,
+    "exclusions_match": true,
+    "scope": "artifact consistency only; no stock identity or model validity claim"
+  },
   "input_sha256": {
     "cases": "716b09e3636c1d3c4653cac245bec7d7407c9a6a06eac08dcb5e353b0b0769c3",
     "scores": "1f901cf3c8af386cb78ba3c9fcb7d8acdb3bad2195a0d1ba7b1258e627744699",

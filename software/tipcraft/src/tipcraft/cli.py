@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 from .benchmark import evaluate, load_cases, load_predictions
 from .wish import run_scores, sha256
-from .retrospective import evaluate_scores, leakage_audit
+from .retrospective import evaluate_scores, leakage_audit, validate_artifacts
 
 
 def main() -> int:
@@ -26,6 +26,7 @@ def main() -> int:
     report.add_argument("--scores", type=Path, required=True)
     report.add_argument("--anonymous-scores", type=Path, required=True)
     report.add_argument("--output", type=Path, required=True)
+    report.add_argument("--manifest", type=Path, help="Bind scores to manifest and adjacent upstream matrices")
     args = parser.parse_args()
     try:
         if args.command == "wish-score":
@@ -34,7 +35,10 @@ def main() -> int:
             print(json.dumps(result, indent=2, allow_nan=False))
             return 0
         if args.command == "wish-report":
-            inputs = (args.cases, args.scores, args.anonymous_scores)
+            inputs = [args.cases, args.scores, args.anonymous_scores]
+            if args.manifest:
+                inputs.extend([args.manifest, args.scores.parent / "llikelihood.matrix",
+                               args.anonymous_scores.parent / "llikelihood.matrix"])
             if args.output.resolve() in {p.resolve() for p in inputs}:
                 raise ValueError("Output cannot overwrite input data")
             cases = load_cases(args.cases)
@@ -42,6 +46,16 @@ def main() -> int:
             anonymous = json.loads(args.anonymous_scores.read_text())
             result = evaluate_scores(cases, inference)
             result["leakage_audit"] = leakage_audit(cases, inference, anonymous)
+            if args.manifest:
+                result["artifact_validation"] = validate_artifacts(
+                    inference, anonymous, args.manifest,
+                    args.scores.parent / "llikelihood.matrix",
+                    args.anonymous_scores.parent / "llikelihood.matrix")
+            else:
+                result["artifact_validation"] = {"status": "not_verified", "reason": "No manifest supplied"}
+                if result["leakage_audit"]["status"] != "failed":
+                    result["leakage_audit"]["status"] = "metadata_only"
+                result["leakage_audit"]["conclusion"] += "; manifest and raw matrices not independently checked"
             result["input_sha256"] = {"cases": sha256(args.cases), "scores": sha256(args.scores),
                                       "anonymous_scores": sha256(args.anonymous_scores)}
             args.output.parent.mkdir(parents=True, exist_ok=True)

@@ -15,5 +15,5 @@ jobs:
       - run: uv run --project software/tipcraft --no-sync python -m unittest discover -s software/tipcraft/tests -v
       - run: uv run --project software/tipcraft --no-sync tipcraft benchmark --cases software/tipcraft/benchmarks/retro-t7-t3/cases.csv --output /tmp/retro-t7-t3.json
       - run: diff -u data/processed/retro-t7-t3.json /tmp/retro-t7-t3.json
-      - run: uv run --project software/tipcraft --no-sync tipcraft wish-report --cases software/tipcraft/benchmarks/retro-t7-t3/cases.csv --scores data/processed/wish/named/scores.json --anonymous-scores data/processed/wish/anonymous/scores.json --output /tmp/retro-t7-t3-wish.json
+      - run: uv run --project software/tipcraft --no-sync tipcraft wish-report --manifest software/tipcraft/benchmarks/retro-t7-t3/wish-inputs.json --cases software/tipcraft/benchmarks/retro-t7-t3/cases.csv --scores data/processed/wish/named/scores.json --anonymous-scores data/processed/wish/anonymous/scores.json --output /tmp/retro-t7-t3-wish.json
       - run: diff -u data/processed/retro-t7-t3-wish.json /tmp/retro-t7-t3-wish.json
