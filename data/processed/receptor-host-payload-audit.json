@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "policy_sha256": "6bb1dafb7b3cdde5294109fde8ea44a16d3dfe26226393550a4ce9d8ae729455",
+  "script_sha256": "9a6751417dbf02f2e00070e6d25f9285ec0d1a2bddbda297a31a1c65aa09aefd",
+  "authenticated_sources": [
+    {
+      "source_path": "Ecoli_phages/barseq_browser/data/BL21/aaseq",
+      "path": "data/raw/receptor-resource/host-payloads-v1/BL21/aaseq",
+      "url": "https://raw.githubusercontent.com/mjohnson11/PhageDataSheets/ae2b5e0e59b24f84666a8ebed01f5d1c0ded7b04/Ecoli_phages/barseq_browser/data/BL21/aaseq",
+      "bytes": 1364116,
+      "git_blob_sha1": "34f17b6531d6125d30298f9ba6be2a9be9206f7b",
+      "sha256": "fa9d67099daf6812e57af39a8d996f694ffec4991b95b11d75690950a10ac78f",
+      "record_count": 4195,
+      "total_residues": 1313776,
+      "alphabet_counts": {
+        "A": 125424,
+        "C": 15282,
+        "D": 67293,
+        "E": 75644,
+        "F": 51055,
+        "G": 97000,
+        "H": 29752,
+        "I": 78797,
+        "K": 57873,
+        "L": 140190,
+        "M": 37370,
+        "N": 51383,
+        "P": 58313,
+        "Q": 58215,
+        "R": 72806,
+        "S": 76117,
+        "T": 70534,
+        "U": 3,
+        "V": 93160,
+        "W": 20183,
+        "Y": 37382
+      },
+      "records": null,
+      "parse_status": "inventoried"
+    },
+    {
+      "source_path": "Ecoli_phages/barseq_browser/data/BL21/genes.tab",
+      "path": "data/raw/receptor-resource/host-payloads-v1/BL21/genes.tab",
+      "url": "https://raw.githubusercontent.com/mjohnson11/PhageDataSheets/ae2b5e0e59b24f84666a8ebed01f5d1c0ded7b04/Ecoli_phages/barseq_browser/data/BL21/genes.tab",
+      "bytes": 391269,
+      "git_blob_sha1": "9bd74dbbc4604a353f51745a3cfdc6ecab0d84ec",
+      "sha256": "f30766ec63f5c1e5e01e836059d0e165b3dcadf4c208615e8a06acc97d38b423",
+      "header": [
+        "locusId",
+        "sysName",
+        "type",
+        "scaffoldId",
+        "begin",
+        "end",
+        "strand",
+        "name",
+        "desc"
+      ],
+      "data_rows": 4303,
+      "parse_status": "inventoried"
+    },
+    {
+      "source_path": "Ecoli_phages/barseq_browser/data/BL21/genome.fna",
+      "path": "data/raw/receptor-resource/host-payloads-v1/BL21/genome.fna",
+      "url": "https://raw.githubusercontent.com/mjohnson11/PhageDataSheets/ae2b5e0e59b24f84666a8ebed01f5d1c0ded7b04/Ecoli_phages/barseq_browser/data/BL21/genome.fna",
+      "bytes": 4634946,
+      "git_blob_sha1": "34d3d1bc1751af20f25d7db4f42c0c76cb5e420d",
+      "sha256": "520ffeade0c29f46765b9275d7473a63eee767388d111298295115bf1472e756",
+      "record_count": 1,
+      "total_residues": 4558953,
+      "alphabet_counts": {
+        "A": 1121882,
+        "C": 1159808,
+        "G": 1157627,
+        "T": 1119636
+      },
+      "records": [
+        {
+          "header": "CP001509",
+          "length": 4558953,
+          "sequence_sha256": "c2cf71da4e7dae3b54cda5a621bc1142724a3cd526763cfddc9f627416af78d9"
+        }
+      ],
+      "original_reference_comparison": {
+        "target_name": "BL21",
+        "original_accession": "CP010816.1",
+        "original_sequence_sha256": "669a5120ac4305418137e69b37e85d8c5c099908b4f49f212d78effa6455fff9",
+        "exact_single_record_sequence_match": false,
+        "comparison_does_not_establish_experimental_stock_identity": true
+      },
+      "parse_status": "inventoried"
+    },
+    {
+      "source_path": "Ecoli_phages/barseq_browser/data/Keio/aaseq",
+      "path": "data/raw/receptor-resource/host-payloads-v1/Keio/aaseq",
+      "url": "https://raw.githubusercontent.com/mjohnson11/PhageDataSheets/ae2b5e0e59b24f84666a8ebed01f5d1c0ded7b04/Ecoli_phages/barseq_browser/data/Keio/aaseq",
+      "bytes": 1366384,
+      "git_blob_sha1": "df41c9d472dd0adf86b2f8efe0aeee112303d419",
+      "sha256": "1e6cc21ffb80e347eb80b9ad3ed72ec8be0042de16fc954928faa2a934cfed5b",
+      "record_count": 4146,
+      "total_residues": 1312978,
+      "alphabet_counts": {
+        "A": 125400,
+        "C": 15194,
+        "D": 67394,
+        "E": 75840,
+        "F": 51179,
+        "G": 96772,
+        "H": 29784,
+        "I": 78935,
+        "K": 57674,
+        "L": 140675,
+        "M": 37111,
+        "N": 51112,
+        "P": 58330,
+        "Q": 58385,
+        "R": 72555,
+        "S": 75708,
+        "T": 70555,
+        "U": 3,
+        "V": 93138,
+        "W": 20072,
+        "Y": 37162
+      },
+      "records": null,
+      "parse_status": "inventoried"
+    },
+    {
+      "source_path": "Ecoli_phages/barseq_browser/data/Keio/genes.tab",
+      "path": "data/raw/receptor-resource/host-payloads-v1/Keio/genes.tab",
+      "url": "https://raw.githubusercontent.com/mjohnson11/PhageDataSheets/ae2b5e0e59b24f84666a8ebed01f5d1c0ded7b04/Ecoli_phages/barseq_browser/data/Keio/genes.tab",
+      "bytes": 382021,
+      "git_blob_sha1": "4be94894fd01bd949079966fef608d4f6fdfa4f0",
+      "sha256": "66d6d07b0ad16779239592c0f27f423dffa7c6f427676bfb1619216d8532cc20",
+      "header": [
+        "locusId",
+        "sysName",
+        "type",
+        "scaffoldId",
+        "begin",
+        "end",
+        "strand",
+        "name",
+        "desc"
+      ],
+      "data_rows": 4610,
+      "parse_status": "inventoried"
+    },
+    {
+      "source_path": "Ecoli_phages/barseq_browser/data/Keio/genome.fna",
+      "path": "data/raw/receptor-resource/host-payloads-v1/Keio/genome.fna",
+      "url": "https://raw.githubusercontent.com/mjohnson11/PhageDataSheets/ae2b5e0e59b24f84666a8ebed01f5d1c0ded7b04/Ecoli_phages/barseq_browser/data/Keio/genome.fna",
+      "bytes": 4717009,
+      "git_blob_sha1": "9100f89f1583bbfdcc4ffc02e05f8ef5fdc1e9bc",
+      "sha256": "a82899afe45debe75567d55dd7b0a7c6d77e5aae79fe6d45ba6f71bb87c91bb0",
+      "record_count": 1,
+      "total_residues": 4639675,
+      "alphabet_counts": {
+        "A": 1142228,
+        "C": 1179554,
+        "G": 1176923,
+        "T": 1140970
+      },
+      "records": [
+        {
+          "header": "7023",
+          "length": 4639675,
+          "sequence_sha256": "b1d61ce0fac63311a301966a65d052c8061b6747afc537f879192027f14308f1"
+        }
+      ],
+      "original_reference_comparison": {
+        "target_name": "BW25113",
+        "original_accession": "CP009273.1",
+        "original_sequence_sha256": "3761072f8884add5e9facdafc583de5d81a4cf5dbc7e51023ba966f3cf4887ce",
+        "exact_single_record_sequence_match": false,
+        "comparison_does_not_establish_experimental_stock_identity": true
+      },
+      "parse_status": "inventoried"
+    }
+  ],
+  "host_stock_correspondence_verified": false,
+  "host_reference_substitution_performed": false,
+  "phenotype_labels_created": false,
+  "models_trained_or_scored": false,
+  "new_benchmark_rows_admitted": 0,
+  "interpretation": "Byte-authenticated author host-reference assets and deposited sequence inventory. Browser names and file headers do not authenticate experimental stocks; source sequence differences remain explicit and are not repaired."
+}

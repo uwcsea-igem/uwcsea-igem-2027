@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "purpose": "Authenticate listed author host assets and inventory existing sequences/headers; no inferred stock aliases, phenotype assignment, model fit or sequence design",
+  "candidate_report": {
+    "path": "data/processed/receptor-host-asset-candidates.json",
+    "sha256": "f72d6b7161366ec0580286953da228c623b910a5759fccd386a7f1477609b7af"
+  },
+  "source_commit": "ae2b5e0e59b24f84666a8ebed01f5d1c0ded7b04",
+  "files": [
+    {
+      "source_path": "Ecoli_phages/barseq_browser/data/BL21/aaseq",
+      "bytes": 1364116,
+      "git_blob_sha1": "34f17b6531d6125d30298f9ba6be2a9be9206f7b",
+      "payload_downloaded_or_inspected": false
+    },
+    {
+      "source_path": "Ecoli_phages/barseq_browser/data/BL21/genes.tab",
+      "bytes": 391269,
+      "git_blob_sha1": "9bd74dbbc4604a353f51745a3cfdc6ecab0d84ec",
+      "payload_downloaded_or_inspected": false
+    },
+    {
+      "source_path": "Ecoli_phages/barseq_browser/data/BL21/genome.fna",
+      "bytes": 4634946,
+      "git_blob_sha1": "34d3d1bc1751af20f25d7db4f42c0c76cb5e420d",
+      "payload_downloaded_or_inspected": false
+    },
+    {
+      "source_path": "Ecoli_phages/barseq_browser/data/Keio/aaseq",
+      "bytes": 1366384,
+      "git_blob_sha1": "df41c9d472dd0adf86b2f8efe0aeee112303d419",
+      "payload_downloaded_or_inspected": false
+    },
+    {
+      "source_path": "Ecoli_phages/barseq_browser/data/Keio/genes.tab",
+      "bytes": 382021,
+      "git_blob_sha1": "4be94894fd01bd949079966fef608d4f6fdfa4f0",
+      "payload_downloaded_or_inspected": false
+    },
+    {
+      "source_path": "Ecoli_phages/barseq_browser/data/Keio/genome.fna",
+      "bytes": 4717009,
+      "git_blob_sha1": "9100f89f1583bbfdcc4ffc02e05f8ef5fdc1e9bc",
+      "payload_downloaded_or_inspected": false
+    }
+  ],
+  "parse_rules": {
+    "nucleotide_files": "Strict FASTA preserving records; existing DNA/IUPAC alphabet only, no concatenation or edits",
+    "aaseq": "If FASTA, inventory deposited proteins with alphabet counts and hashes; otherwise mark format unresolved",
+    "genes_tab": "Header and data-row count only; no biological or susceptibility labels inferred"
+  },
+  "comparison": "Exact single-record normalized sequence hash versus original public-reference manifest only; mismatch or multirecord never repaired",
+  "target_manifest": {
+    "path": "software/tipcraft/benchmarks/retro-t7-t3/wish-inputs.json",
+    "sha256": "939af977b8c00763b957ad9640e58c68387a306f8bde69068cf4a78baac28528"
+  },
+  "timing": "Written before payload retrieval or sequence comparison; source tree and two browser configurations already inspected"
+}

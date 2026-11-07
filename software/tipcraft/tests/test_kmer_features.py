@@ -54,6 +54,33 @@ class KmerFeatureTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             project_proteomes({}, {"A": {"p": "AAAAA"}})
 
+    def test_explicit_deposited_policy_retains_U_and_skips_only_X_windows(self):
+        proteins = {"A": {"p": "AAAAAU", "q": "AAAAAU", "r": "AAAAAXAAAAA"}}
+        model = fit_vocabulary(proteins, sequence_policy="deposited21_skip_X")
+        members = {mer for group in model.features for mer in group}
+        self.assertIn("AAAAU", members)
+        self.assertNotIn("AAAAX", members)
+        result = project_proteomes(model, proteins)
+        self.assertEqual(result["window_counts"]["A"], {
+            "total_windows": 11, "skipped_X_windows": 5,
+            "deposited_X_residues": 1, "deposited_U_residues": 2})
+        with self.assertRaises(ValueError):
+            fit_vocabulary(proteins)
+
+    def test_skipped_X_does_not_join_fragments_or_inflate_protein_frequency(self):
+        model = fit_vocabulary({"A": {"p": "ACDXEFG"}}, minimum_protein_occurrences=1,
+                               sequence_policy="deposited21_skip_X")
+        self.assertEqual(model.features, ())
+        repeated = fit_vocabulary({"A": {"p": "AAAAAXAAAAA"}}, sequence_policy="deposited21_skip_X")
+        self.assertEqual(repeated.features, ())
+
+    def test_sequence_policy_remains_fixed_during_heldout_projection(self):
+        model = fit_vocabulary({"A": {"p": "AAAAA", "q": "AAAAA"}})
+        with self.assertRaises(ValueError):
+            project_proteomes(model, {"B": {"p": "AAAAU"}})
+        with self.assertRaises(ValueError):
+            fit_vocabulary({"A": {"p": "AAAAA"}}, sequence_policy="guess_or_clean")
+
 
 if __name__ == "__main__":
     unittest.main()

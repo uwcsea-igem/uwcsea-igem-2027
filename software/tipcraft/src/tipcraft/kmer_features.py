@@ -8,9 +8,13 @@ from collections.abc import Mapping
 from dataclasses import dataclass
 
 AMINO_ACIDS = frozenset("ACDEFGHIKLMNPQRSTVWY")
+SEQUENCE_POLICIES = {"standard20", "deposited21_skip_X"}
 
 
-def _proteomes(values):
+def _proteomes(values, sequence_policy):
+    if sequence_policy not in SEQUENCE_POLICIES:
+        raise ValueError("Unknown deposited-sequence policy")
+    allowed = AMINO_ACIDS | {"U", "X"} if sequence_policy == "deposited21_skip_X" else AMINO_ACIDS
     if not isinstance(values, Mapping) or not values:
         raise ValueError("Expected a nonempty sample-to-protein mapping")
     for sample, proteins in values.items():
@@ -21,12 +25,20 @@ def _proteomes(values):
         for protein, sequence in proteins.items():
             if not isinstance(protein, str) or not protein or protein != protein.strip():
                 raise ValueError("Invalid protein identifier")
-            if not isinstance(sequence, str) or not sequence or not set(sequence) <= AMINO_ACIDS:
-                raise ValueError("Expected nonempty uppercase standard-amino-acid proteins")
+            if not isinstance(sequence, str) or not sequence or not set(sequence) <= allowed:
+                raise ValueError("Protein characters disagree with the declared sequence policy")
 
 
 def _kmers(sequence, k):
-    return {sequence[i:i + k] for i in range(len(sequence) - k + 1)}
+    # X means an unresolved residue. Never join the residues on its two sides.
+    return {sequence[i:i + k] for i in range(len(sequence) - k + 1) if "X" not in sequence[i:i + k]}
+
+
+def _window_counts(proteins, k):
+    return {"total_windows": sum(max(0, len(s) - k + 1) for s in proteins.values()),
+            "skipped_X_windows": sum("X" in s[i:i+k] for s in proteins.values() for i in range(len(s)-k+1)),
+            "deposited_X_residues": sum(s.count("X") for s in proteins.values()),
+            "deposited_U_residues": sum(s.count("U") for s in proteins.values())}
 
 
 @dataclass(frozen=True)
@@ -42,9 +54,11 @@ class KmerVocabulary:
     training_ids: tuple[str, ...]
     features: tuple[tuple[str, ...], ...]
     retained_kmer_count: int
+    sequence_policy: str
 
 
-def fit_vocabulary(training_proteomes, *, k=5, minimum_protein_occurrences=2):
+def fit_vocabulary(training_proteomes, *, k=5, minimum_protein_occurrences=2,
+                   sequence_policy="standard20"):
     """Fit exclusively on training proteins; count each k-mer once per protein.
 
     The rare filter uses distinct proteins, including multiple proteins within
@@ -53,7 +67,7 @@ def fit_vocabulary(training_proteomes, *, k=5, minimum_protein_occurrences=2):
     for value in (k, minimum_protein_occurrences):
         if isinstance(value, bool) or not isinstance(value, int) or value < 1:
             raise ValueError("k and protein-occurrence minimum must be positive integers")
-    _proteomes(training_proteomes)
+    _proteomes(training_proteomes, sequence_policy)
     ids = tuple(sorted(training_proteomes))
     protein_counts, patterns = Counter(), defaultdict(set)
     for sample in ids:
@@ -68,7 +82,7 @@ def fit_vocabulary(training_proteomes, *, k=5, minimum_protein_occurrences=2):
             grouped[tuple(sorted(patterns[mer]))].append(mer)
             retained += 1
     features = tuple(sorted(tuple(sorted(members)) for members in grouped.values()))
-    return KmerVocabulary(k, minimum_protein_occurrences, ids, features, retained)
+    return KmerVocabulary(k, minimum_protein_occurrences, ids, features, retained, sequence_policy)
 
 
 def project_proteomes(vocabulary, proteomes):
@@ -79,7 +93,7 @@ def project_proteomes(vocabulary, proteomes):
     """
     if not isinstance(vocabulary, KmerVocabulary):
         raise ValueError("Expected a fitted KmerVocabulary")
-    _proteomes(proteomes)
+    _proteomes(proteomes, vocabulary.sequence_policy)
     # The reverse index includes all equivalent training members, not just one.
     index = {mer: column for column, members in enumerate(vocabulary.features) for mer in members}
     ids, matrix, zeros = sorted(proteomes), [], []
@@ -90,4 +104,6 @@ def project_proteomes(vocabulary, proteomes):
         matrix.append([int(column in present) for column in range(len(vocabulary.features))])
         if not present:
             zeros.append(sample)
-    return {"sample_ids": ids, "matrix": matrix, "zero_vector_sample_ids": zeros}
+    return {"sample_ids": ids, "matrix": matrix, "zero_vector_sample_ids": zeros,
+            "sequence_policy": vocabulary.sequence_policy,
+            "window_counts": {sample: _window_counts(proteomes[sample], vocabulary.k) for sample in ids}}

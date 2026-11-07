@@ -34,7 +34,7 @@ The [bounded asset-path audit](../data/processed/receptor-model-asset-path-audit
 
 The [executed cohort inventory](../data/processed/receptor-cohort-container-audit.json) authenticates all 260 cohort GenBank files plus the separately marked catalogue T3 candidate against pinned sizes and Git blob hashes. It records **268 nucleotide records and 48,083 deposited protein translations**, with zero payload errors, parser warnings or CDS missing translation. This is annotation availability, not yet translation agreement or stock identity.
 
-Three containers have multiple records: K20 (three), Mnm1 (five) and TP9 (two). Every record remains separate in the raw FASTA and is mapped to its source container; they are not concatenated or trimmed. Four containers carry ambiguous sequence: JK36, JK42, T4 and TP15. Across them the inventory counts 205 ambiguous nucleotide characters and 71 `X` amino-acid characters in five proteins. The strict k-mer kernel currently rejects such nonstandard protein inputs. Any future ambiguity policy requires an explicit input rule and accounting; these records are not silently cleaned or removed.
+Three containers have multiple records: K20 (three), Mnm1 (five) and TP9 (two). Every record remains separate in the raw FASTA and is mapped to its source container; they are not concatenated or trimmed. Four containers carry ambiguous sequence: JK36, JK42, T4 and TP15. Across them the inventory counts 205 ambiguous nucleotide characters and 71 `X` amino-acid characters in five proteins. The default strict k-mer profile rejects nonstandard protein inputs. The separately frozen deposited-sequence profile below now gives an explicit window-level rule, without cleaning or removing those source samples.
 
 The full per-protein metadata remains in an immutable ignored manifest, hash-bound by the compact versioned report. The original full execution report is retained in raw storage; the compact report records this provenance-only refinement rather than claiming the smaller report was the original execution artifact.
 
@@ -45,7 +45,9 @@ The new [k-mer kernel](../software/tipcraft/src/tipcraft/kmer_features.py) provi
 - Generate contiguous 5-mers within each deposited protein; never join proteins.
 - Fit the vocabulary using training proteins only. The proposed rare filter requires occurrence in at least two distinct training proteins, which can belong to one genome. Repetition within one protein counts once.
 - Merge k-mers with identical training-sample occurrence patterns. Preserve every member of each merged feature and project by their union in new samples.
-- Keep vocabulary and feature order fixed during projection. Held-out-only k-mers and held-out occurrences cannot rescue training singletons. Preserve zero vectors and reject missing or nonstandard protein inputs rather than silently cleaning them.
+- Keep vocabulary and feature order fixed during projection. Held-out-only k-mers and held-out occurrences cannot rescue training singletons. Preserve zero vectors; reject missing proteins and characters outside the chosen profile rather than silently cleaning them.
+
+The [candidate representation policy](../software/tipcraft/benchmarks/receptor-resource/direct-kmer-representation-policy.json) now fixes an explicit `deposited21_skip_X` profile after source-character inspection and before any biological feature fit. Both host protein files contain three literal U residues. The profile retains U as distinct from unknown X, skips only 5-mer windows containing X, and counts repeated k-mers once per original protein even across X-separated regions. It never deletes X, joins its neighbors, creates independent fragment proteins or replaces deposited first residues. Projection reports skipped-window and X/U counts for every sample. The original `standard20` default remains strict. Synthetic tests cover these differences; no real-cohort feature vocabulary has yet been fitted.
 
 This is a declared implementation adaptation. Its direct global projection has not been certified equivalent to the authors' novel-genome protein-family assignment workflow. It has not been applied to the real cohort or used for feature selection, fitting or scoring. Tests check protein boundaries, protein-level occurrence counting, held-out vocabulary exclusion, merged-member divergence, deterministic ordering and invalid-input rejection.
 
@@ -74,9 +76,23 @@ Official v1 Table S2 lists `MG1655ΔRM` with a Maffei et al. 2021 reference. Tha
 
 The BL21 susceptibility column includes 96 `Not assayed` values and one literal `Resistant`, alongside `Yes` and `No`. The audit preserves all states without binary conversion. A future known-host diagnostic would require its own justified label semantics and would still not supply a validated score for the original third host. The existing six-native-observation criterion and ten-observation coverage denominator therefore remain unchanged.
 
-The [host-asset candidate audit](../data/processed/receptor-host-asset-candidates.json) identifies six pinned nucleotide/protein/annotation assets in the author browser, independently of Picard. Two small browser configurations are byte-authenticated: BW25113 loads `Keio`, while BL21 names `CP001509`. The [original genome publication](https://pubmed.ncbi.nlm.nih.gov/19786035/) identifies CP001509 as BL21(DE3). These configurations do not establish the identity of the as-yet uninspected genome payloads or experimental stocks, and do not replace the original BL21 TaKaRa reference.
+The [host-asset candidate audit](../data/processed/receptor-host-asset-candidates.json) identifies six pinned nucleotide/protein/annotation assets in the author browser, independently of Picard. Two small browser configurations are byte-authenticated: BW25113 loads `Keio`, while BL21 names `CP001509`. The [original genome publication](https://pubmed.ncbi.nlm.nih.gov/19786035/) identifies CP001509 as BL21(DE3). At the candidate-audit stage the payloads were uninspected. The subsequent authentication below establishes file identity and declared sequence headers, while experimental-stock correspondence remains unverified. The original BL21 TaKaRa reference is retained.
 
 This leaves a concrete paired host-feature route to investigate after payload authentication and source correspondence. Missing MG1655 training annotations do not mathematically prevent an explicitly specified unseen-host model from producing a score; they do prevent treating production metadata as its ground truth. Training on two source host backgrounds would require clear limits on unseen-host validation and comparison with host-only/prevalence baselines. No such paired model has been specified or fitted here.
+
+The [executed host-payload audit](../data/processed/receptor-host-payload-audit.json) subsequently authenticated all six listed files against pinned Git blob hashes and inventoried them without sequence editing:
+
+| Browser source directory | Existing nucleotide record | Length | Deposited protein records | Gene-table rows |
+| --- | --- | ---: | ---: | ---: |
+| BL21 | CP001509 | 4,558,953 | 4,195 | 4,303 |
+| Keio | 7023 | 4,639,675 | 4,146 | 4,610 |
+
+Both are single-record nucleotide files, and both sequence hashes differ from the corresponding original public Ando-case host references. The protein and gene-table counts describe different source objects and are not automatically a one-to-one CDS match. Each source protein file contains three U residues, retained explicitly by the candidate profile above. These author-browser reference representations are now available for a source-correspondence check, not automatically admitted experimental genomes. No source susceptibility label has been reassigned to another strain, and no original target reference has been replaced.
+
+```bash
+uv run --project software/tipcraft python scripts/audit-receptor-host-payloads.py --cache data/raw/receptor-resource/host-payloads-v1 --output /tmp/receptor-host-payload-audit.json
+```
+
 
 ## Required evidence before scoring
 

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "status": "candidate_representation_only_not_a_scoring_run_contract",
+  "purpose": "Freeze a source-aware direct global amino-acid5mer representation before any biological feature fit; no prediction or sequence generation",
+  "timing": "After deposited character/annotation inspection and synthetic tests; before first real5mer feature fit or model results. Target outcomes were previously visible.",
+  "kernel": {
+    "path": "software/tipcraft/src/tipcraft/kmer_features.py",
+    "sha256": "da81572e91ba8307c0771daed71fa2acb108796efb862f0a7e37f6aa35d4b825"
+  },
+  "parameters": {
+    "k": 5,
+    "minimum_protein_occurrences": 2,
+    "sequence_policy": "deposited21_skip_X"
+  },
+  "rules": [
+    "Fit kmer vocabulary, rare-protein filter and occurrence-pattern merging on training samples only",
+    "Count each kmer once per original protein, including when the same kmer occurs on both sides of X",
+    "Keep depositedU as its own residue symbol; do not conflate it with unknownX",
+    "Skip only existing windows containingX; do not deleteX, bridge its neighbors or split oneprotein into artificially independent proteins",
+    "Reject unsupportedcharacters, emptyproteins or missingproteomes; never silently clean or drop a sample",
+    "Preserve depositedNterminalannotationstrings; do not replace V/L/I withM",
+    "Project by union of all members sharing a trainingpattern; keep vocabulary fixed for heldouttarget samples",
+    "Preserve and report zerovectors, totalwindows, skippedXwindows and depositedX/Ucounts",
+    "No hostidentity/productionhost/donor/phenotype metadata as sequencefeatures",
+    "No equivalence claim to upstream novel-genome protein-family assignment"
+  ],
+  "source_inventory_bindings": [
+    {
+      "path": "data/processed/receptor-cohort-container-audit.json",
+      "sha256": "fd0f8fc39223336660b9f84a1e7ac7f6a2b374dd8880cdb99095e5b2086f5ab1"
+    },
+    {
+      "path": "data/processed/receptor-host-payload-audit.json",
+      "sha256": "c115296621c8514d5d8e3b200695709cebcc7c856761a19791968b436c65c81d"
+    },
+    {
+      "path": "data/processed/receptor-cds-difference-description.json",
+      "sha256": "74faf58eae9fd1ec476d5ae3fc345c77ac30e6873a648fe1253b595738356613"
+    }
+  ],
+  "model_fit_parameters_or_splits_frozen": false,
+  "training_or_scoring_authorized_by_this_file": false,
+  "interpretation": "A representation candidate, preserving all source samples and annotation uncertainty. Source correspondence, relatedness groups, labels, model specification and endpoint applicability still require a separate pre-score contract."
+}
