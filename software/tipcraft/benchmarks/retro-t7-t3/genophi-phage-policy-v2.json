@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-07",
+  "purpose": "Training-relatedness exclusion audit, not infection/assembly scoring",
+  "normalized_input_manifest_sha256": "d0f66b3bba527aa8cc32b327ed7f15107fbcd0943faefa6b1fda2496f528185c",
+  "input_genomes": {
+    "external_collection": 97,
+    "target_references": 2
+  },
+  "blast_version": "2.17.0+",
+  "blastn_parameters": [
+    "-evalue",
+    "1",
+    "-max_target_seqs",
+    "10000",
+    "-num_threads",
+    "4",
+    "-word_size",
+    "7",
+    "-reward",
+    "2",
+    "-penalty",
+    "-3",
+    "-gapopen",
+    "5",
+    "-gapextend",
+    "2"
+  ],
+  "blastn_format": "7 qseqid sseqid evalue bitscore qlen slen qstart qend sstart send qseq sseq nident gaps",
+  "intergenomic_calculator": {
+    "upstream_commit": "d7db8031a27bc6b06ff5cb1245e372caf3794b93",
+    "standalone_adapter_sha256": "e1d19de908f4f066ad79f88eb22bc021ea849b2b9b4c86baa501d371e9c872a4",
+    "license": "GPL-3.0-only",
+    "upstream_runtime_equivalence_verified": false,
+    "unsupported_cases": "fail closed; do not replace missing similarities with zero"
+  },
+  "whole_genome_exclusion": {
+    "similarity_percent": 70.0,
+    "graph": "undirected connected components across all 99 genomes; exclude every source in target-containing components",
+    "boundary_buffer_percentage_points": 0.01,
+    "comparison": "unrounded total-genome similarity; boundary cases excluded pending review",
+    "rationale": "70% has phage genus-grouping precedent; connected components and boundary handling are conservative project leakage policies, not phenotype/taxonomy conclusions"
+  },
+  "tblastn_parameters": [
+    "-evalue",
+    "1e-5",
+    "-max_target_seqs",
+    "10000",
+    "-num_threads",
+    "4",
+    "-seg",
+    "yes"
+  ],
+  "tblastn_format": "7 qseqid sseqid pident qstart qend qlen sstart send sframe bitscore evalue",
+  "gp17_near_match": {
+    "identity_percent": 90.0,
+    "minimum_query_coverage_percent": 80.0,
+    "rule": "exclude source genome with any single translated local alignment meeting both thresholds to either full-length target gp17",
+    "rationale": "Explicit project near-homolog policy, not calibrated host-phenotype boundary; query coverage is not reciprocal full-protein coverage"
+  },
+  "broader_gp17_family_diagnostic": {
+    "identity_percent": 40.0,
+    "minimum_query_coverage_percent": 80.0,
+    "role": "report broader remaining similarity for a separately frozen strict family-holdout sensitivity; do not silently treat retained genomes as homology-free"
+  },
+  "sources": [
+    "https://doi.org/10.3390/v12111268",
+    "https://github.com/CristinaMoraru/VIRIDIC/blob/d7db8031a27bc6b06ff5cb1245e372caf3794b93/VIRIDIC/stand_alone/viridic_scripts/01_VIRIDIC_sim_calc.R"
+  ],
+  "interpretation": "Provisional sequence-relatedness audit. External calibration, host exclusions and complete training specification still required before model fitting; no target host scores or designs produced.",
+  "supersedes_policy_sha256": "05b37194279dda77f59eb18f238c80124c75d6b5a3371740c2fccd9dfd7fe7a5",
+  "revision_reason": "CDS translation verification and per-query BLAST completion controls; no threshold or alignment-parameter change; v1 stopped before accepted results",
+  "recorded_before_first_completed_relatedness_evaluation": true,
+  "input_integrity_controls": [
+    "verify gp17 annotation against exact CDS translation",
+    "require every outfmt7 query block, hit-row count and terminal query count",
+    "require each reference gp17 to recover its corresponding target genome at the frozen near-match threshold with the exact query length"
+  ]
+}

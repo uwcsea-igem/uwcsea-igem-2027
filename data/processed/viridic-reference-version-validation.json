@@ -1,0 +1,365 @@
+{
+  "schema_version": 1,
+  "purpose": "Version diagnostic of the same frozen public numerical controls; retain BLAST2.17 discrepancy unchanged",
+  "primary_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7694805/",
+  "policy_sha256": "6bcd3e94f52c5d45de3f307fb49641221823e3f1f7af887538cc0ec6f8a7894c",
+  "validator_sha256": "03d86bf5d2264706d641bf6c2f0a2fbca96bfc0d5b84eb7d1305f710b4ed550f",
+  "adapter_sha256": "e1d19de908f4f066ad79f88eb22bc021ea849b2b9b4c86baa501d371e9c872a4",
+  "completion_helper_sha256": "8026b82db228b3cb7c5e673d1c927f53de598925e282e0a9b3b89c536c928464",
+  "normalizer_sha256": "1072672111e49852b55ae9104fcd35381322a35d8e6980c62ebdbd0660fef6e9",
+  "tool_install_provenance": {
+    "archive_url": "https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.9.0/ncbi-blast-2.9.0+-x64-macosx.tar.gz",
+    "md5_url": "https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.9.0/ncbi-blast-2.9.0+-x64-macosx.tar.gz.md5",
+    "official_md5": "ce48d218e495458d10353cf1dbc4df2e",
+    "md5_verified": true,
+    "archive_sha256": "ccb7df8be402473a42bbd34a235425ca383b1fdd15fff0310fd05efb120e86c9",
+    "archive_bytes": 135341566,
+    "official_md5_file_sha256": "5e2dff754b54981d182aec6d01216c330f0167f7111dd778446d041600c3fe5e",
+    "executables": {
+      "blastn": {
+        "path": "data/raw/tools/blast-2.9.0/ncbi-blast-2.9.0+/bin/blastn",
+        "sha256": "086032534a0dbed13a9b43b7b20e63995a87948aea27326c5fa64356f0e26871",
+        "returncode": 0,
+        "stdout": "blastn: 2.9.0+\n Package: blast 2.9.0, build Mar 11 2019 16:04:57\n",
+        "stderr": ""
+      },
+      "makeblastdb": {
+        "path": "data/raw/tools/blast-2.9.0/ncbi-blast-2.9.0+/bin/makeblastdb",
+        "sha256": "0fb5f8e0373b95194318a2b5343da9ddc9e70b3a053adf8bc821e9632cc394aa",
+        "returncode": 0,
+        "stdout": "makeblastdb: 2.9.0+\n Package: blast 2.9.0, build Mar 11 2019 16:04:57\n",
+        "stderr": ""
+      }
+    }
+  },
+  "wish_manifest_sha256": "939af977b8c00763b957ad9640e58c68387a306f8bde69068cf4a78baac28528",
+  "tools": {
+    "blastn": {
+      "version": "blastn: 2.9.0+",
+      "sha256": "086032534a0dbed13a9b43b7b20e63995a87948aea27326c5fa64356f0e26871",
+      "path": "data/raw/tools/blast-2.9.0/ncbi-blast-2.9.0+/bin/blastn"
+    },
+    "makeblastdb": {
+      "version": "makeblastdb: 2.9.0+",
+      "sha256": "0fb5f8e0373b95194318a2b5343da9ddc9e70b3a053adf8bc821e9632cc394aa",
+      "path": "data/raw/tools/blast-2.9.0/ncbi-blast-2.9.0+/bin/makeblastdb"
+    }
+  },
+  "input_manifest_sha256": "aec55b39a10d917940f6bcc891c61087e7953fec00b9f4b455908282147a55e4",
+  "sources": {
+    "MG969412.1": {
+      "accession": "MG969412.1",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/fasta/MG969412.1?download=false",
+      "header": ">ENA|MG969412|MG969412.1 UNVERIFIED: Salmonella phage GE_vB_N5, complete genome.",
+      "path": "data/raw/viridic-validation/version-2.9.0/references/MG969412.1.fna",
+      "file_sha256": "6a4379d86ae3530cfc6091d25dc62a94f1d503383a9a71d08e10f00254c28f8f",
+      "sequence_sha256": "0943f90c98904a91940b85769b119a6d5d40318e7b93ecb09ca13e455a9cbce5",
+      "length": 148669,
+      "attempts": [
+        {
+          "source": "data/raw/viridic-validation/run-1/references/MG969412.1.fna",
+          "operation": "copy previously frozen public reference"
+        }
+      ],
+      "source_records": 1,
+      "removed_empty_record_indices": [],
+      "retained_records": 1,
+      "retained_bases": 148669
+    },
+    "MG969413.1": {
+      "accession": "MG969413.1",
+      "url": "https://www.ebi.ac.uk/ena/browser/api/fasta/MG969413.1?download=false",
+      "header": ">ENA|MG969413|MG969413.1 UNVERIFIED: Salmonella phage GE_vB_N8, complete genome.",
+      "path": "data/raw/viridic-validation/version-2.9.0/references/MG969413.1.fna",
+      "file_sha256": "a1703bf70ea6ce8f9eea7290acfeddf15aa95e0939b896da5197c4d48b352fae",
+      "sequence_sha256": "38afbc5e7a94e55d4b21f3fa180128785e8221da80c7f15ec5075ad8881c1c23",
+      "length": 51134,
+      "attempts": [
+        {
+          "source": "data/raw/viridic-validation/run-1/references/MG969413.1.fna",
+          "operation": "copy previously frozen public reference"
+        }
+      ],
+      "source_records": 1,
+      "removed_empty_record_indices": [],
+      "retained_records": 1,
+      "retained_bases": 51134
+    },
+    "NC_001604.1": {
+      "accession": "NC_001604.1",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_001604.1&rettype=fasta&retmode=text",
+      "header": ">NC_001604.1 Enterobacteria phage T7, complete genome",
+      "path": "data/raw/viridic-validation/version-2.9.0/references/NC_001604.1.fna",
+      "file_sha256": "4411e203f3ffac4d85f42d6994714cb86d495440b678ebab9e5a075f5fdc7c7a",
+      "sequence_sha256": "00ce104454ea06f9b47d6fba8e62499bfbff7e84bc17141665b96a80588a81fd",
+      "length": 39937,
+      "attempts": [
+        {
+          "source": "data/raw/viridic-validation/run-1/references/NC_001604.1.fna",
+          "operation": "copy previously frozen public reference"
+        }
+      ],
+      "source_records": 1,
+      "removed_empty_record_indices": [],
+      "retained_records": 1,
+      "retained_bases": 39937,
+      "wish_manifest_sequence_verified": true
+    },
+    "NC_020483.1": {
+      "accession": "NC_020483.1",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_020483.1&rettype=fasta&retmode=text",
+      "header": ">NC_020483.1 Pelagibacter phage HTVC019P, complete genome",
+      "path": "data/raw/viridic-validation/version-2.9.0/references/NC_020483.1.fna",
+      "file_sha256": "5cfa83d6e99b89836a8c5bc14d6bc3c87c1b85f1def915982384b0506d73dee4",
+      "sequence_sha256": "08da848bebc94a6f068efe8132a02be21c5f422196722b8ddf5586b90069e7b8",
+      "length": 42084,
+      "attempts": [
+        {
+          "source": "data/raw/viridic-validation/run-1/references/NC_020483.1.fna",
+          "operation": "copy previously frozen public reference"
+        }
+      ],
+      "source_records": 1,
+      "removed_empty_record_indices": [],
+      "retained_records": 1,
+      "retained_bases": 42084
+    }
+  },
+  "source_failures": {},
+  "control_results": [
+    {
+      "id": "T7-HTVC011P",
+      "accessions": [
+        "NC_001604.1",
+        "NC_020483.1"
+      ],
+      "published_similarity_percent": "0.34",
+      "printed_decimal_places": 2,
+      "locator": "Results and Discussion paragraph describing Figure 3; Figure 3 specifies accession versions",
+      "status": "discrepancy",
+      "implied_rounding_interval_percent": {
+        "lower": "0.335",
+        "upper": "0.345",
+        "exact_endpoints": "ambiguous; paper rounding convention not established"
+      },
+      "calculated": {
+        "query": "r0",
+        "query_length": 39937,
+        "query_nident": 234,
+        "query_original_aligned_bases": 282,
+        "similarity_percent": 0.571,
+        "similarity_percent_unrounded": 0.5705855817412614,
+        "subject": "r1",
+        "subject_length": 42084,
+        "subject_nident": 234,
+        "subject_original_aligned_bases": 284
+      },
+      "query_completion": {
+        "completed_queries": 2,
+        "completed_batch_query_counts": [
+          2
+        ],
+        "reported_rows_by_query": {
+          "r0": 155,
+          "r1": 64
+        }
+      },
+      "raw_directory": "data/raw/viridic-validation/version-2.9.0/T7-HTVC011P",
+      "artifacts": {
+        "genomes.fna": "e721509df933e075f6ce6904f41e0b40881834cc59830226a44feab047ba86a8",
+        "lengths.json": "12334b530dacdfaa18689d34f54e8ee9b64e9f6acc16d55a48ad6cb6c4f8f724",
+        "blastn.tsv": "e6e2e08b7753c7dff400452261def2a95e79ea5e2b4c6b231c33e49bb460e1c9",
+        "blastn-data.tsv": "937a7d5f2d5b95687bab29af9b0b8ca82e89134eb265b0312e3023838e1de52a",
+        "similarities.json": "39eb01fc02fbf5c3069a454ff55edc84202ce0ac11174c647e437625f453b022"
+      }
+    },
+    {
+      "id": "MG969412-MG969413",
+      "accessions": [
+        "MG969412.1",
+        "MG969413.1"
+      ],
+      "published_similarity_percent": "62.4",
+      "printed_decimal_places": 1,
+      "locator": "Results and Discussion paragraph interpreting Figure 4",
+      "status": "published_precision_match",
+      "implied_rounding_interval_percent": {
+        "lower": "62.35",
+        "upper": "62.45",
+        "exact_endpoints": "ambiguous; paper rounding convention not established"
+      },
+      "calculated": {
+        "query": "r0",
+        "query_length": 148669,
+        "query_nident": 74737,
+        "query_original_aligned_bases": 77013,
+        "similarity_percent": 62.446,
+        "similarity_percent_unrounded": 62.4455088261938,
+        "subject": "r1",
+        "subject_length": 51134,
+        "subject_nident": 50031,
+        "subject_original_aligned_bases": 50711
+      },
+      "query_completion": {
+        "completed_queries": 2,
+        "completed_batch_query_counts": [
+          2
+        ],
+        "reported_rows_by_query": {
+          "r0": 416,
+          "r1": 252
+        }
+      },
+      "raw_directory": "data/raw/viridic-validation/version-2.9.0/MG969412-MG969413",
+      "artifacts": {
+        "genomes.fna": "ce3db78fa5288d30f4bad38465757f08d2b4610a7f2ee9c15ec8335d33ac00a7",
+        "lengths.json": "0fa542d71a546dbbc0c66677e304a7374d046cce0767c9b3570405e206ed5215",
+        "blastn.tsv": "67182d81ab91b40d6697ba53c4d2c3dd5a92a8de745812cb61270d6acae720b2",
+        "blastn-data.tsv": "587a44a03a1086af03ed81c1d4a062c832e6dd627c5150b01cb74ee4e0017497",
+        "similarities.json": "8d92bda2279c8706bbc406bff421e6b4821a345e06ee2d65effa7fd1093c9bdb"
+      }
+    }
+  ],
+  "completed_controls": 2,
+  "all_controls_match_published_precision": false,
+  "commands": [
+    [
+      "data/raw/tools/blast-2.9.0/ncbi-blast-2.9.0+/bin/makeblastdb",
+      "-in",
+      "data/raw/viridic-validation/version-2.9.0/T7-HTVC011P/genomes.fna",
+      "-dbtype",
+      "nucl",
+      "-parse_seqids",
+      "-out",
+      "data/raw/viridic-validation/version-2.9.0/T7-HTVC011P/db"
+    ],
+    [
+      "data/raw/tools/blast-2.9.0/ncbi-blast-2.9.0+/bin/blastn",
+      "-query",
+      "data/raw/viridic-validation/version-2.9.0/T7-HTVC011P/genomes.fna",
+      "-db",
+      "data/raw/viridic-validation/version-2.9.0/T7-HTVC011P/db",
+      "-evalue",
+      "1",
+      "-max_target_seqs",
+      "10000",
+      "-num_threads",
+      "1",
+      "-word_size",
+      "7",
+      "-reward",
+      "2",
+      "-penalty",
+      "-3",
+      "-gapopen",
+      "5",
+      "-gapextend",
+      "2",
+      "-outfmt",
+      "7 qseqid sseqid evalue bitscore qlen slen qstart qend sstart send qseq sseq nident gaps",
+      "-out",
+      "data/raw/viridic-validation/version-2.9.0/T7-HTVC011P/blastn.tsv"
+    ],
+    [
+      "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/software/tipcraft/.venv/bin/python",
+      "data/raw/viridic-validation/version-2.9.0/frozen-adapter.py",
+      "--blast-tsv",
+      "data/raw/viridic-validation/version-2.9.0/T7-HTVC011P/blastn-data.tsv",
+      "--genome-lengths",
+      "data/raw/viridic-validation/version-2.9.0/T7-HTVC011P/lengths.json",
+      "--output",
+      "data/raw/viridic-validation/version-2.9.0/T7-HTVC011P/similarities.json"
+    ],
+    [
+      "data/raw/tools/blast-2.9.0/ncbi-blast-2.9.0+/bin/makeblastdb",
+      "-in",
+      "data/raw/viridic-validation/version-2.9.0/MG969412-MG969413/genomes.fna",
+      "-dbtype",
+      "nucl",
+      "-parse_seqids",
+      "-out",
+      "data/raw/viridic-validation/version-2.9.0/MG969412-MG969413/db"
+    ],
+    [
+      "data/raw/tools/blast-2.9.0/ncbi-blast-2.9.0+/bin/blastn",
+      "-query",
+      "data/raw/viridic-validation/version-2.9.0/MG969412-MG969413/genomes.fna",
+      "-db",
+      "data/raw/viridic-validation/version-2.9.0/MG969412-MG969413/db",
+      "-evalue",
+      "1",
+      "-max_target_seqs",
+      "10000",
+      "-num_threads",
+      "1",
+      "-word_size",
+      "7",
+      "-reward",
+      "2",
+      "-penalty",
+      "-3",
+      "-gapopen",
+      "5",
+      "-gapextend",
+      "2",
+      "-outfmt",
+      "7 qseqid sseqid evalue bitscore qlen slen qstart qend sstart send qseq sseq nident gaps",
+      "-out",
+      "data/raw/viridic-validation/version-2.9.0/MG969412-MG969413/blastn.tsv"
+    ],
+    [
+      "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/software/tipcraft/.venv/bin/python",
+      "data/raw/viridic-validation/version-2.9.0/frozen-adapter.py",
+      "--blast-tsv",
+      "data/raw/viridic-validation/version-2.9.0/MG969412-MG969413/blastn-data.tsv",
+      "--genome-lengths",
+      "data/raw/viridic-validation/version-2.9.0/MG969412-MG969413/lengths.json",
+      "--output",
+      "data/raw/viridic-validation/version-2.9.0/MG969412-MG969413/similarities.json"
+    ]
+  ],
+  "commands_sha256": "82ad432afbbc31422863a86d8c880f839d393a5f7fdbe5d173b468ad9ee83e43",
+  "paper_blast_version": "2.9.0+",
+  "local_blast_version": "2.9.0+",
+  "previous_reference_report_sha256": "ce62cffbf422f4e747f48d057cf0c8387d03b569c83bf6a42918fd38d954dd1f",
+  "previous_2_17_results_retained": true,
+  "previous_control_results": [
+    {
+      "id": "T7-HTVC011P",
+      "status": "discrepancy",
+      "calculated": {
+        "query": "r0",
+        "query_length": 39937,
+        "query_nident": 234,
+        "query_original_aligned_bases": 282,
+        "similarity_percent": 0.571,
+        "similarity_percent_unrounded": 0.5705855817412614,
+        "subject": "r1",
+        "subject_length": 42084,
+        "subject_nident": 234,
+        "subject_original_aligned_bases": 284
+      }
+    },
+    {
+      "id": "MG969412-MG969413",
+      "status": "published_precision_match",
+      "calculated": {
+        "query": "r0",
+        "query_length": 148669,
+        "query_nident": 74737,
+        "query_original_aligned_bases": 77013,
+        "similarity_percent": 62.446,
+        "similarity_percent_unrounded": 62.4455088261938,
+        "subject": "r1",
+        "subject_length": 51134,
+        "subject_nident": 50031,
+        "subject_original_aligned_bases": 50711
+      }
+    }
+  ],
+  "parameters_retuned": false,
+  "upstream_equivalence_verified": false,
+  "phenotype_labels_loaded": false,
+  "infection_or_assembly_predictions_produced": false,
+  "interpretation": "Agreement or disagreement applies only to these published numerical controls. Retain the earlier2.17 discrepancy. No parameter tuning, upstream runtime-equivalence claim, host-specificity prediction or assembly claim."
+}

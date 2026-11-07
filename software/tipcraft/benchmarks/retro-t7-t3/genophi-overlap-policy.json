@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-07",
+  "recorded_before_first_host_similarity_run": true,
+  "stage": "host_sequence_triage_before_training; phage exclusion specification still pending",
+  "target_manifest": "wish-inputs.json",
+  "host_similarity_method": "skani 0.4.0, default dist estimator, c=125, m=1000, screen=80, min-af=15, threads=4",
+  "host_parameters": {"compression": 125, "marker_compression": 1000, "screen_percent": 80, "minimum_reported_af_percent": 15, "threads": 4},
+  "host_exclusion": {
+    "ani_percent": 99.5,
+    "minimum_af_in_each_genome_percent": 90.0,
+    "ani_boundary_buffer_percent": 0.05,
+    "af_boundary_buffer_percent": 0.5,
+    "named_target_identifiers": ["BL21", "BW25113", "MG1655"],
+    "unresolved_or_boundary_pairs": "exclude pending base-level alignment review; never silently retain a missing comparison"
+  },
+  "rationale": [
+    "99.5% ANI is a conservative within-species genomic-unit exclusion, not an E. coli strain identity definition",
+    "90% reciprocal alignment fraction and boundary buffers are explicit project policies, not calibrated confidence intervals",
+    "95% species ANI would exclude the species-wide training domain rather than just near-target backgrounds",
+    "ANI and core-genome patristic distances are different metrics; do not equate this with the original 1e-4 core-distance split",
+    "This rule is fixed without target model results; do not relax it to improve future performance"
+  ],
+  "sources": [
+    "https://doi.org/10.1038/s41592-023-02018-3",
+    "https://doi.org/10.1128/mbio.02696-23",
+    "https://github.com/bluenote-1577/skani/blob/v0.4.0/README.md"
+  ],
+  "training_label_policy": "Exclude all 156 original-source-empty pairs identified in genophi-label-audit.json, pending clarification",
+  "phage_policy_status": "unresolved before training: whole-genome grouping and gp17 similarity must be specified and audited separately",
+  "target_model_scoring_authorized_by_this_file": false,
+  "limits": "A passed host triage is not proof of no shared receptor determinants, authentic experimental stocks, strain-specific prediction or assembly compatibility"
+}

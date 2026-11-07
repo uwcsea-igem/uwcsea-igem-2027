@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "purpose": "Tools for input relatedness audit; no target host predictions or assembly scoring",
+  "skani": {
+    "version": "skani 0.4.0",
+    "binary_sha256": "1f1d08abe20d592522faf3f2454634e815269f61e37bb0adda4608599e6a4efb",
+    "crate_sha256": "ad3a759a71bdc340c4f87a280d639b68af8a6d65c57e07ac60da4a913586a848",
+    "source": "https://crates.io/api/v1/crates/skani/0.4.0/download",
+    "build_command": "cargo install skani --version 0.4.0 --locked --root <workdir>/skani-0.4.0 --jobs 4",
+    "rustc": "rustc 1.98.1 (48a229cea 2026-09-01) (Homebrew)"
+  },
+  "mmseqs2": {
+    "commit": "8cc5ce367b5638c4306c2d7cfc652dd099a4643f",
+    "binary_sha256": "837eaf6cc9be92ff320c42c4cf56ae0d75f2a53c6ff6b24a577e803e9e3951be",
+    "release": "18-8cc5c",
+    "archive_url": "https://github.com/soedinglab/MMseqs2/releases/download/18-8cc5c/mmseqs-osx-universal.tar.gz",
+    "archive_sha256": "158102d4c3e3ce721424f455106fac348cd01d424ed5e66cb03eac3de5064eb6"
+  },
+  "blast": {
+    "archive_url": "https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.17.0/ncbi-blast-2.17.0+-universal-macosx.tar.gz",
+    "official_archive_md5": "7f6e451e54b61da4145b346d58bc0c63",
+    "archive_sha256": "a9c89ba2abe752e111031729162c57f03e2695168ff49de29b7bd123959a4678",
+    "executables": {
+      "blastn": {
+        "version": "blastn: 2.17.0+",
+        "sha256": "b13895ffdbc83a0a21025002bf33fb289c4be441536a1a88d7be80e8263c34a7"
+      },
+      "tblastn": {
+        "version": "tblastn: 2.17.0+",
+        "sha256": "8bcde4b235916c6ed7e2a99bdccecdb4c46afbe4877d9d3952af9ac12042b535"
+      },
+      "makeblastdb": {
+        "version": "makeblastdb: 2.17.0+",
+        "sha256": "b18159370061729a685e5714b5a1d349fd2951f4f3aeceb576b0e696b403fc72"
+      }
+    }
+  }
+}

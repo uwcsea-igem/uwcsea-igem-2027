@@ -1,0 +1,3057 @@
+{
+  "schema_version": 1,
+  "source_commit": "99656d8c020fcd1dbbc30a02ee10274a07655562",
+  "source_url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/bacteria/isolation_strains/panacota/tree/370+host_distance_matrix_orignames.tsv",
+  "matrix_git_blob_sha1": "cccab7b1e343f33af8d0eaa759c89e6480980af0",
+  "matrix_sha256": "1e65a30083d33f8f67b1c009049b473ae38ab3f3d6c7d91fb8639c013af64eb8",
+  "model_table_sha256": "c4795d786a1e13ac998e263dbf4aaf95fc0f94c52b842d02b6f7fc6e99ccfef2",
+  "model_table_url": "https://raw.githubusercontent.com/Noonanav/GenoPHI/f7e30abc1b0bbba1ae76b8f58a3363bbbc5cd54f/data/interaction_matrices/ecoli_interaction_matrix.csv",
+  "threshold_reference": "https://github.com/mdmparis/coli_phage_interactions_2023/blob/99656d8c020fcd1dbbc30a02ee10274a07655562/README.md",
+  "method": "Connected components over every host in the published core-genome distance matrix",
+  "name_mapping": "Unique case-insensitive alphanumeric identifiers; no phenotype matching",
+  "source_hosts": 404,
+  "mapped_training_hosts": 402,
+  "threshold": 0.0001,
+  "edge_rule": "strictly distance < 1e-4",
+  "edges_below_threshold": 183,
+  "group_count": 301,
+  "groups": {
+    "host-group-0047a8801ebf7025": {
+      "source_members": [
+        "PDP110"
+      ],
+      "training_members": [
+        "PDP110"
+      ]
+    },
+    "host-group-045e3235b91910a0": {
+      "source_members": [
+        "IAI10"
+      ],
+      "training_members": [
+        "IAI10"
+      ]
+    },
+    "host-group-04bef133a22bfd40": {
+      "source_members": [
+        "IAI50"
+      ],
+      "training_members": [
+        "IAI50"
+      ]
+    },
+    "host-group-05788269d35abce0": {
+      "source_members": [
+        "IAI31"
+      ],
+      "training_members": [
+        "IAI31"
+      ]
+    },
+    "host-group-07531d64995b4a8c": {
+      "source_members": [
+        "H1-002-0011-M-G"
+      ],
+      "training_members": [
+        "H10020011MG"
+      ]
+    },
+    "host-group-07583119ac16407d": {
+      "source_members": [
+        "NILS50"
+      ],
+      "training_members": [
+        "NILS50"
+      ]
+    },
+    "host-group-078ab9ad3d91369b": {
+      "source_members": [
+        "NILS58"
+      ],
+      "training_members": [
+        "NILS58"
+      ]
+    },
+    "host-group-07e6aa508a49bc9c": {
+      "source_members": [
+        "ECOR-34"
+      ],
+      "training_members": [
+        "ECOR34"
+      ]
+    },
+    "host-group-0910fdb854b0a92a": {
+      "source_members": [
+        "ECOR-16"
+      ],
+      "training_members": [
+        "ECOR16"
+      ]
+    },
+    "host-group-0944402155221ebd": {
+      "source_members": [
+        "ECOR-50"
+      ],
+      "training_members": [
+        "ECOR50"
+      ]
+    },
+    "host-group-098358c2d14814be": {
+      "source_members": [
+        "ROAR043"
+      ],
+      "training_members": [
+        "ROAR043"
+      ]
+    },
+    "host-group-098a646e39352d19": {
+      "source_members": [
+        "H14"
+      ],
+      "training_members": [
+        "H14"
+      ]
+    },
+    "host-group-0e131b94cef8c4e9": {
+      "source_members": [
+        "IAI37"
+      ],
+      "training_members": [
+        "IAI37"
+      ]
+    },
+    "host-group-1025225e5e1ae1dc": {
+      "source_members": [
+        "NILS51"
+      ],
+      "training_members": [
+        "NILS51"
+      ]
+    },
+    "host-group-10896857c8a6234a": {
+      "source_members": [
+        "034-008"
+      ],
+      "training_members": [
+        "034008"
+      ]
+    },
+    "host-group-10ab65ce627892f3": {
+      "source_members": [
+        "C2-119"
+      ],
+      "training_members": [
+        "C2119"
+      ]
+    },
+    "host-group-112a5ec105acca59": {
+      "source_members": [
+        "ECOR-59",
+        "ECOR-60"
+      ],
+      "training_members": [
+        "ECOR59",
+        "ECOR60"
+      ]
+    },
+    "host-group-12abfd696e9c7e78": {
+      "source_members": [
+        "H1-001-0027-S-G",
+        "LM07"
+      ],
+      "training_members": [
+        "H10010027SG",
+        "LM07"
+      ]
+    },
+    "host-group-145e9bed9fdf24d1": {
+      "source_members": [
+        "PDP21"
+      ],
+      "training_members": [
+        "PDP21"
+      ]
+    },
+    "host-group-1497da401e5eae7d": {
+      "source_members": [
+        "NILS42"
+      ],
+      "training_members": [
+        "NILS42"
+      ]
+    },
+    "host-group-159f7f3630279666": {
+      "source_members": [
+        "B49"
+      ],
+      "training_members": [
+        "B49"
+      ]
+    },
+    "host-group-15c5f6a5568ec017": {
+      "source_members": [
+        "FN-B9"
+      ],
+      "training_members": [
+        "FNB9"
+      ]
+    },
+    "host-group-1629d64126ab738b": {
+      "source_members": [
+        "ECOR-22"
+      ],
+      "training_members": [
+        "ECOR22"
+      ]
+    },
+    "host-group-1844cb2bff473635": {
+      "source_members": [
+        "NILS69"
+      ],
+      "training_members": [
+        "NILS69"
+      ]
+    },
+    "host-group-1b83c58581ae8c59": {
+      "source_members": [
+        "S1-91"
+      ],
+      "training_members": [
+        "S191"
+      ]
+    },
+    "host-group-1c11bae2991a6b26": {
+      "source_members": [
+        "BL21"
+      ],
+      "training_members": [
+        "BL21"
+      ]
+    },
+    "host-group-1cf80f3ab349fe16": {
+      "source_members": [
+        "NILS10"
+      ],
+      "training_members": [
+        "NILS10"
+      ]
+    },
+    "host-group-1dc897784e846674": {
+      "source_members": [
+        "ROAR029"
+      ],
+      "training_members": [
+        "ROAR029"
+      ]
+    },
+    "host-group-1e40e558158d67fa": {
+      "source_members": [
+        "ROAR116"
+      ],
+      "training_members": [
+        "ROAR116"
+      ]
+    },
+    "host-group-1e9d35a36ba2daf7": {
+      "source_members": [
+        "IAI44"
+      ],
+      "training_members": [
+        "IAI44"
+      ]
+    },
+    "host-group-1f54f7a0394f4d5f": {
+      "source_members": [
+        "001-023"
+      ],
+      "training_members": [
+        "001023"
+      ]
+    },
+    "host-group-1fc1d2beec4ca7d9": {
+      "source_members": [
+        "ECOR-66"
+      ],
+      "training_members": [
+        "ECOR66"
+      ]
+    },
+    "host-group-200970fb8aad8354": {
+      "source_members": [
+        "H1-001-0003-S-J"
+      ],
+      "training_members": [
+        "H10010003SJ"
+      ]
+    },
+    "host-group-222c8d5621a60c73": {
+      "source_members": [
+        "034-026-c1",
+        "035-004",
+        "Ben4d",
+        "ED1a",
+        "IAI48",
+        "VDG427"
+      ],
+      "training_members": [
+        "034026C1",
+        "035004",
+        "BEN4D",
+        "ED1A",
+        "IAI48",
+        "VDG427"
+      ]
+    },
+    "host-group-226dd4af80dd3141": {
+      "source_members": [
+        "ECOR-15"
+      ],
+      "training_members": [
+        "ECOR15"
+      ]
+    },
+    "host-group-23b2b197e060f50f": {
+      "source_members": [
+        "ROAR129"
+      ],
+      "training_members": [
+        "ROAR129"
+      ]
+    },
+    "host-group-2457e87aee6bca06": {
+      "source_members": [
+        "H1-001-0154-T-K",
+        "PDP351"
+      ],
+      "training_members": [
+        "H10010154TK",
+        "PDP351"
+      ]
+    },
+    "host-group-24a93ce080fbeec5": {
+      "source_members": [
+        "ROAR036"
+      ],
+      "training_members": [
+        "ROAR036"
+      ]
+    },
+    "host-group-269e57e88effd112": {
+      "source_members": [
+        "ROAR274"
+      ],
+      "training_members": [
+        "ROAR274"
+      ]
+    },
+    "host-group-26be1fe0f4850315": {
+      "source_members": [
+        "NILS56"
+      ],
+      "training_members": [
+        "NILS56"
+      ]
+    },
+    "host-group-26df734871c65286": {
+      "source_members": [
+        "ATCC35469T"
+      ],
+      "training_members": [
+        "ATCC35469T"
+      ]
+    },
+    "host-group-27675d186a6fc7e5": {
+      "source_members": [
+        "NILS02"
+      ],
+      "training_members": [
+        "NILS02"
+      ]
+    },
+    "host-group-29272d9e91f2c950": {
+      "source_members": [
+        "ECOR-47"
+      ],
+      "training_members": [
+        "ECOR47"
+      ]
+    },
+    "host-group-2b25ab35450b1863": {
+      "source_members": [
+        "NILS24"
+      ],
+      "training_members": [
+        "NILS24"
+      ]
+    },
+    "host-group-2b3be0523bc50298": {
+      "source_members": [
+        "NILS26",
+        "NILS80"
+      ],
+      "training_members": [
+        "NILS26",
+        "NILS80"
+      ]
+    },
+    "host-group-2df7e0b929fa9f68": {
+      "source_members": [
+        "IAI29"
+      ],
+      "training_members": [
+        "IAI29"
+      ]
+    },
+    "host-group-2f67a153eb1a773f": {
+      "source_members": [
+        "IAI08"
+      ],
+      "training_members": [
+        "IAI08"
+      ]
+    },
+    "host-group-30311dd67976af52": {
+      "source_members": [
+        "IAI06"
+      ],
+      "training_members": [
+        "IAI06"
+      ]
+    },
+    "host-group-30ad644ad16a37aa": {
+      "source_members": [
+        "DIJ07",
+        "LM40"
+      ],
+      "training_members": [
+        "DIJ07",
+        "LM40"
+      ]
+    },
+    "host-group-30f671f6218b5037": {
+      "source_members": [
+        "NILS68"
+      ],
+      "training_members": [
+        "NILS68"
+      ]
+    },
+    "host-group-31a94b585f38ed55": {
+      "source_members": [
+        "LM02"
+      ],
+      "training_members": [
+        "LM02"
+      ]
+    },
+    "host-group-31cf95b9b3b30224": {
+      "source_members": [
+        "AL505",
+        "NILS57",
+        "NILS78",
+        "NILS82"
+      ],
+      "training_members": [
+        "AL505",
+        "NILS57",
+        "NILS78",
+        "NILS82"
+      ]
+    },
+    "host-group-32b06a443e019dec": {
+      "source_members": [
+        "H384"
+      ],
+      "training_members": [
+        "H384"
+      ]
+    },
+    "host-group-330c6957b0d94eda": {
+      "source_members": [
+        "NILS52"
+      ],
+      "training_members": [
+        "NILS52"
+      ]
+    },
+    "host-group-33b87a9b348bfe7d": {
+      "source_members": [
+        "ECOR-06"
+      ],
+      "training_members": [
+        "ECOR06"
+      ]
+    },
+    "host-group-34665a0c1307106f": {
+      "source_members": [
+        "NILS09"
+      ],
+      "training_members": [
+        "NILS09"
+      ]
+    },
+    "host-group-35b5eba8562dbabf": {
+      "source_members": [
+        "NILS61"
+      ],
+      "training_members": [
+        "NILS61"
+      ]
+    },
+    "host-group-3725b1a58c95f184": {
+      "source_members": [
+        "IAI01"
+      ],
+      "training_members": [
+        "IAI01"
+      ]
+    },
+    "host-group-3762d178ba80272a": {
+      "source_members": [
+        "NAN33"
+      ],
+      "training_members": [
+        "NAN33"
+      ]
+    },
+    "host-group-37d417a6924bb0be": {
+      "source_members": [
+        "DEC1a"
+      ],
+      "training_members": [
+        "DEC1A"
+      ]
+    },
+    "host-group-3adb2e14da90bd3d": {
+      "source_members": [
+        "IAI25"
+      ],
+      "training_members": [
+        "IAI25"
+      ]
+    },
+    "host-group-3b09e6b610e6354e": {
+      "source_members": [
+        "ROAR176",
+        "ROAR220"
+      ],
+      "training_members": [
+        "ROAR176",
+        "ROAR220"
+      ]
+    },
+    "host-group-3b4ef02ad115a11f": {
+      "source_members": [
+        "B691"
+      ],
+      "training_members": [
+        "B691"
+      ]
+    },
+    "host-group-3cc51158bee2285d": {
+      "source_members": [
+        "H1-002-0060-C-T"
+      ],
+      "training_members": [
+        "H10020060CT"
+      ]
+    },
+    "host-group-3d1dafca7fb445e7": {
+      "source_members": [
+        "AN03",
+        "BDX09"
+      ],
+      "training_members": [
+        "AN03",
+        "BDX09"
+      ]
+    },
+    "host-group-3d7e42422c97b7d7": {
+      "source_members": [
+        "S2-1"
+      ],
+      "training_members": [
+        "S21"
+      ]
+    },
+    "host-group-40768c11882ebb45": {
+      "source_members": [
+        "H4"
+      ],
+      "training_members": [
+        "H4"
+      ]
+    },
+    "host-group-40870dd43596e887": {
+      "source_members": [
+        "ECOR-35",
+        "ECOR-36",
+        "IAI58"
+      ],
+      "training_members": [
+        "ECOR35",
+        "ECOR36",
+        "IAI58"
+      ]
+    },
+    "host-group-412292feca0edc79": {
+      "source_members": [
+        "H1-001-0093-R-A"
+      ],
+      "training_members": [
+        "H10010093RA"
+      ]
+    },
+    "host-group-414931040ff29b2b": {
+      "source_members": [
+        "H1-004-0017-B-M",
+        "ROAR178",
+        "ROAR419"
+      ],
+      "training_members": [
+        "H10040017BM",
+        "ROAR178",
+        "ROAR419"
+      ]
+    },
+    "host-group-41bb5730d76affcb": {
+      "source_members": [
+        "ECOR-31"
+      ],
+      "training_members": [
+        "ECOR31"
+      ]
+    },
+    "host-group-425e8771a33d7c45": {
+      "source_members": [
+        "NIC06"
+      ],
+      "training_members": [
+        "NIC06"
+      ]
+    },
+    "host-group-42dd144706caf359": {
+      "source_members": [
+        "H1-003-0054-P-P"
+      ],
+      "training_members": [
+        "H10030054PP"
+      ]
+    },
+    "host-group-4359b9afae684b45": {
+      "source_members": [
+        "ECOR-69"
+      ],
+      "training_members": [
+        "ECOR69"
+      ]
+    },
+    "host-group-43b994ba055e7cf4": {
+      "source_members": [
+        "IAI36",
+        "IAI39"
+      ],
+      "training_members": [
+        "IAI36",
+        "IAI39"
+      ]
+    },
+    "host-group-4481bbb77be5ac99": {
+      "source_members": [
+        "ECOR-04"
+      ],
+      "training_members": [
+        "ECOR04"
+      ]
+    },
+    "host-group-44d59446a97dfa2e": {
+      "source_members": [
+        "ECOR-08"
+      ],
+      "training_members": [
+        "ECOR08"
+      ]
+    },
+    "host-group-44fb17a440ce7b2f": {
+      "source_members": [
+        "IAI60",
+        "IAI66",
+        "NILS67"
+      ],
+      "training_members": [
+        "IAI60",
+        "IAI66",
+        "NILS67"
+      ]
+    },
+    "host-group-45c9b8693f9381fc": {
+      "source_members": [
+        "IAI47"
+      ],
+      "training_members": [
+        "IAI47"
+      ]
+    },
+    "host-group-4616a484efb5aa21": {
+      "source_members": [
+        "EDL933"
+      ],
+      "training_members": [
+        "EDL933"
+      ]
+    },
+    "host-group-46afad387c575b0e": {
+      "source_members": [
+        "NILS71"
+      ],
+      "training_members": [
+        "NILS71"
+      ]
+    },
+    "host-group-47f96f01028b9556": {
+      "source_members": [
+        "ROAR131"
+      ],
+      "training_members": [
+        "ROAR131"
+      ]
+    },
+    "host-group-4a0b475c30670c9e": {
+      "source_members": [
+        "ECOR-52",
+        "ECOR-54"
+      ],
+      "training_members": [
+        "ECOR52",
+        "ECOR54"
+      ]
+    },
+    "host-group-4a1209e051bfe87c": {
+      "source_members": [
+        "ROAR434"
+      ],
+      "training_members": [
+        "ROAR434"
+      ]
+    },
+    "host-group-4aa8555c52f52b88": {
+      "source_members": [
+        "H1-003-0010-G-J",
+        "ROAR400"
+      ],
+      "training_members": [
+        "H10030010GJ",
+        "ROAR400"
+      ]
+    },
+    "host-group-4b08211aa2aa7c38": {
+      "source_members": [
+        "55989"
+      ],
+      "training_members": [
+        "55989"
+      ]
+    },
+    "host-group-4c162e28d5ee5858": {
+      "source_members": [
+        "Asp51g"
+      ],
+      "training_members": [
+        "ASP51G"
+      ]
+    },
+    "host-group-4c64b9e307248ec7": {
+      "source_members": [
+        "B1147"
+      ],
+      "training_members": [
+        "B1147"
+      ]
+    },
+    "host-group-4d0a46be9d777249": {
+      "source_members": [
+        "ECOR-58"
+      ],
+      "training_members": [
+        "ECOR58"
+      ]
+    },
+    "host-group-4f313572ecef82ce": {
+      "source_members": [
+        "IAI70"
+      ],
+      "training_members": [
+        "IAI70"
+      ]
+    },
+    "host-group-4ffe33b0b80d90ea": {
+      "source_members": [
+        "ECOR-64",
+        "IAI78",
+        "IAI79",
+        "IAI80",
+        "IAI81"
+      ],
+      "training_members": [
+        "ECOR64",
+        "IAI78",
+        "IAI79",
+        "IAI80",
+        "IAI81"
+      ]
+    },
+    "host-group-506704452baed762": {
+      "source_members": [
+        "IAI64",
+        "NILS81"
+      ],
+      "training_members": [
+        "IAI64",
+        "NILS81"
+      ]
+    },
+    "host-group-50785d24f57d0c05": {
+      "source_members": [
+        "NILS63"
+      ],
+      "training_members": [
+        "NILS63"
+      ]
+    },
+    "host-group-515e405f514b58b9": {
+      "source_members": [
+        "001-031-c1",
+        "013-008",
+        "381A"
+      ],
+      "training_members": [
+        "001031C1",
+        "013008",
+        "381A"
+      ]
+    },
+    "host-group-5207b1c861913fd9": {
+      "source_members": [
+        "IAI46",
+        "IAI56",
+        "IAI61",
+        "LF7074"
+      ],
+      "training_members": [
+        "IAI46",
+        "IAI56",
+        "IAI61",
+        "LF7074"
+      ]
+    },
+    "host-group-529402f77c4c5799": {
+      "source_members": [
+        "LF50"
+      ],
+      "training_members": [
+        "LF50"
+      ]
+    },
+    "host-group-534d2481e6f1454b": {
+      "source_members": [
+        "ECOR-05"
+      ],
+      "training_members": [
+        "ECOR05"
+      ]
+    },
+    "host-group-5431b3b9d0467dac": {
+      "source_members": [
+        "003-026"
+      ],
+      "training_members": [
+        "003026"
+      ]
+    },
+    "host-group-56311e63d9ca6c00": {
+      "source_members": [
+        "H1-001-0125-B-M"
+      ],
+      "training_members": [
+        "H10010125BM"
+      ]
+    },
+    "host-group-5648d93b1596d212": {
+      "source_members": [
+        "ECOR-26",
+        "ECOR-27"
+      ],
+      "training_members": [
+        "ECOR26",
+        "ECOR27"
+      ]
+    },
+    "host-group-565c7d5d2b1e3be1": {
+      "source_members": [
+        "H1-002-0069-V-G"
+      ],
+      "training_members": [
+        "H10020069VG"
+      ]
+    },
+    "host-group-566ad9d26aee5116": {
+      "source_members": [
+        "IAI18"
+      ],
+      "training_members": [
+        "IAI18"
+      ]
+    },
+    "host-group-56b1c7b01fa7fcae": {
+      "source_members": [
+        "IAI11"
+      ],
+      "training_members": [
+        "IAI11"
+      ]
+    },
+    "host-group-56f200e736d3c521": {
+      "source_members": [
+        "ECOR-10",
+        "ECOR-43_A"
+      ],
+      "training_members": [
+        "ECOR10",
+        "ECOR43A"
+      ]
+    },
+    "host-group-5819f4b13b59e3ac": {
+      "source_members": [
+        "NILS30"
+      ],
+      "training_members": [
+        "NILS30"
+      ]
+    },
+    "host-group-593be6f220f83248": {
+      "source_members": [
+        "NILS12"
+      ],
+      "training_members": [
+        "NILS12"
+      ]
+    },
+    "host-group-59666fdc5760280b": {
+      "source_members": [
+        "ECOR-19"
+      ],
+      "training_members": [
+        "ECOR19"
+      ]
+    },
+    "host-group-59cc48422caf8769": {
+      "source_members": [
+        "B253"
+      ],
+      "training_members": [
+        "B253"
+      ]
+    },
+    "host-group-5ab2f17079e4d626": {
+      "source_members": [
+        "H1-003-0079-G-R",
+        "H1-007-0037-H-D"
+      ],
+      "training_members": [
+        "H10030079GR",
+        "H10070037HD"
+      ]
+    },
+    "host-group-5ad1fc2204ba89cd": {
+      "source_members": [
+        "025-010"
+      ],
+      "training_members": [
+        "025010"
+      ]
+    },
+    "host-group-5bd5e3e1e65a8d35": {
+      "source_members": [
+        "NILS41"
+      ],
+      "training_members": [
+        "NILS41"
+      ]
+    },
+    "host-group-5c50644f574d46b9": {
+      "source_members": [
+        "ECOR-61",
+        "ECOR-62",
+        "IAI38",
+        "IAI59"
+      ],
+      "training_members": [
+        "ECOR61",
+        "ECOR62",
+        "IAI38",
+        "IAI59"
+      ]
+    },
+    "host-group-5cd32029b29e8ee0": {
+      "source_members": [
+        "H1-005-0058-M-A"
+      ],
+      "training_members": [
+        "H10050058MA"
+      ]
+    },
+    "host-group-5e29c8edb5b22d67": {
+      "source_members": [
+        "B156"
+      ],
+      "training_members": [
+        "B156"
+      ]
+    },
+    "host-group-5e4175704cfef9bd": {
+      "source_members": [
+        "ROAR145"
+      ],
+      "training_members": [
+        "ROAR145"
+      ]
+    },
+    "host-group-5f4b67029a40ffb5": {
+      "source_members": [
+        "NILS38"
+      ],
+      "training_members": [
+        "NILS38"
+      ]
+    },
+    "host-group-60b7b2c1320e4b8d": {
+      "source_members": [
+        "IAI21"
+      ],
+      "training_members": [
+        "IAI21"
+      ]
+    },
+    "host-group-60f528bc05fca0eb": {
+      "source_members": [
+        "ECOR-25"
+      ],
+      "training_members": [
+        "ECOR25"
+      ]
+    },
+    "host-group-6181f25163843008": {
+      "source_members": [
+        "NILS34",
+        "NILS40"
+      ],
+      "training_members": [
+        "NILS34",
+        "NILS40"
+      ]
+    },
+    "host-group-61822ffc3b536351": {
+      "source_members": [
+        "MT1B1"
+      ],
+      "training_members": [
+        "MT1B1"
+      ]
+    },
+    "host-group-6232992e6096f8e4": {
+      "source_members": [
+        "FN-B7"
+      ],
+      "training_members": [
+        "FNB7"
+      ]
+    },
+    "host-group-62b9d6ceddc98b7e": {
+      "source_members": [
+        "NILS66"
+      ],
+      "training_members": [
+        "NILS66"
+      ]
+    },
+    "host-group-63a78085ae89f50a": {
+      "source_members": [
+        "IAI16",
+        "IAI23"
+      ],
+      "training_members": [
+        "IAI16",
+        "IAI23"
+      ]
+    },
+    "host-group-63e18bbac3dfe2da": {
+      "source_members": [
+        "ECOR-44"
+      ],
+      "training_members": [
+        "ECOR44"
+      ]
+    },
+    "host-group-643c7cf8a8fc965d": {
+      "source_members": [
+        "ECOR-02"
+      ],
+      "training_members": [
+        "ECOR02"
+      ]
+    },
+    "host-group-6495bb98ef0ef80f": {
+      "source_members": [
+        "DIJ06"
+      ],
+      "training_members": [
+        "DIJ06"
+      ]
+    },
+    "host-group-64a5ecb83e39d845": {
+      "source_members": [
+        "H1-001-0131-C-A"
+      ],
+      "training_members": [
+        "H10010131CA"
+      ]
+    },
+    "host-group-65f2932bab81cba8": {
+      "source_members": [
+        "LI10",
+        "NILS25",
+        "NILS27",
+        "NILS55",
+        "NILS64",
+        "NILS73"
+      ],
+      "training_members": [
+        "LI10",
+        "NILS25",
+        "NILS27",
+        "NILS55",
+        "NILS64",
+        "NILS73"
+      ]
+    },
+    "host-group-66af2a49c74b48ae": {
+      "source_members": [
+        "E1492"
+      ],
+      "training_members": [
+        "E1492"
+      ]
+    },
+    "host-group-6764f8f1fde6a98f": {
+      "source_members": [
+        "ECOR-45"
+      ],
+      "training_members": [
+        "ECOR45"
+      ]
+    },
+    "host-group-67c74b3963f18c83": {
+      "source_members": [
+        "E2348_69"
+      ],
+      "training_members": [
+        "E234869"
+      ]
+    },
+    "host-group-67da567ec6660c20": {
+      "source_members": [
+        "E7519"
+      ],
+      "training_members": [
+        "E7519"
+      ]
+    },
+    "host-group-68bb157fd3f54129": {
+      "source_members": [
+        "H1-003-0071-C-J",
+        "NILS47"
+      ],
+      "training_members": [
+        "H10030071CJ",
+        "NILS47"
+      ]
+    },
+    "host-group-698610edfbf6a5c4": {
+      "source_members": [
+        "H1-003-0088-B-J"
+      ],
+      "training_members": [
+        "H10030088BJ"
+      ]
+    },
+    "host-group-6b1d824c682d95af": {
+      "source_members": [
+        "ECOR-38",
+        "ECOR-39",
+        "ECOR-40",
+        "ECOR-41"
+      ],
+      "training_members": [
+        "ECOR38",
+        "ECOR39",
+        "ECOR40",
+        "ECOR41"
+      ]
+    },
+    "host-group-6c898335c9043202": {
+      "source_members": [
+        "ECOR-57",
+        "IAI54",
+        "IAI72"
+      ],
+      "training_members": [
+        "ECOR57",
+        "IAI54",
+        "IAI72"
+      ]
+    },
+    "host-group-6cd781c3e9191cc3": {
+      "source_members": [
+        "NILS18"
+      ],
+      "training_members": [
+        "NILS18"
+      ]
+    },
+    "host-group-6d8147b5f1de8569": {
+      "source_members": [
+        "BDX03"
+      ],
+      "training_members": [
+        "BDX03"
+      ]
+    },
+    "host-group-6ecc56777250a1eb": {
+      "source_members": [
+        "IAI19"
+      ],
+      "training_members": [
+        "IAI19"
+      ]
+    },
+    "host-group-6f241651ecb59b35": {
+      "source_members": [
+        "AN17",
+        "T147"
+      ],
+      "training_members": [
+        "AN17",
+        "T147"
+      ]
+    },
+    "host-group-702a3a3756abaf57": {
+      "source_members": [
+        "IAI24"
+      ],
+      "training_members": [
+        "IAI24"
+      ]
+    },
+    "host-group-71162328d4bd0326": {
+      "source_members": [
+        "ROAR130"
+      ],
+      "training_members": [
+        "ROAR130"
+      ]
+    },
+    "host-group-7287fb13d8e4312e": {
+      "source_members": [
+        "ECOR-12"
+      ],
+      "training_members": [
+        "ECOR12"
+      ]
+    },
+    "host-group-72ecfd1d7f541a64": {
+      "source_members": [
+        "FN126"
+      ],
+      "training_members": [
+        "FN126"
+      ]
+    },
+    "host-group-735179e1606e754e": {
+      "source_members": [
+        "NILS75"
+      ],
+      "training_members": [
+        "NILS75"
+      ]
+    },
+    "host-group-75a94fbd685a504c": {
+      "source_members": [
+        "ECOR-09"
+      ],
+      "training_members": [
+        "ECOR09"
+      ]
+    },
+    "host-group-75ebe3eae9251fb3": {
+      "source_members": [
+        "T205"
+      ],
+      "training_members": [
+        "T205"
+      ]
+    },
+    "host-group-7631d7427bd4f001": {
+      "source_members": [
+        "IAI05"
+      ],
+      "training_members": [
+        "IAI05"
+      ]
+    },
+    "host-group-764aeee818391220": {
+      "source_members": [
+        "IAI43"
+      ],
+      "training_members": [
+        "IAI43"
+      ]
+    },
+    "host-group-768961434cb92659": {
+      "source_members": [
+        "ECOR-70"
+      ],
+      "training_members": [
+        "ECOR70"
+      ]
+    },
+    "host-group-773fc272effa88b1": {
+      "source_members": [
+        "ROAR334"
+      ],
+      "training_members": [
+        "ROAR334"
+      ]
+    },
+    "host-group-7789eb26922c8f98": {
+      "source_members": [
+        "BE"
+      ],
+      "training_members": [
+        "BE"
+      ]
+    },
+    "host-group-7885b968e90ded88": {
+      "source_members": [
+        "H1-005-0012-L-M"
+      ],
+      "training_members": [
+        "H10050012LM"
+      ]
+    },
+    "host-group-790cc88f32c4ec94": {
+      "source_members": [
+        "NILS45"
+      ],
+      "training_members": [
+        "NILS45"
+      ]
+    },
+    "host-group-7a89d3861b94a59a": {
+      "source_members": [
+        "ECOR-17"
+      ],
+      "training_members": [
+        "ECOR17"
+      ]
+    },
+    "host-group-7abc1332c3008827": {
+      "source_members": [
+        "ECOR-71"
+      ],
+      "training_members": [
+        "ECOR71"
+      ]
+    },
+    "host-group-7b7ff6a3bc3e8d48": {
+      "source_members": [
+        "NILS36"
+      ],
+      "training_members": [
+        "NILS36"
+      ]
+    },
+    "host-group-7d47b8e4cf7a8db3": {
+      "source_members": [
+        "NILS19"
+      ],
+      "training_members": [
+        "NILS19"
+      ]
+    },
+    "host-group-7e04587d8ad8001d": {
+      "source_members": [
+        "H70"
+      ],
+      "training_members": [
+        "H70"
+      ]
+    },
+    "host-group-7ea42d144088d709": {
+      "source_members": [
+        "B1747"
+      ],
+      "training_members": [
+        "B1747"
+      ]
+    },
+    "host-group-7f91c85352eb4713": {
+      "source_members": [
+        "ROAR344"
+      ],
+      "training_members": [
+        "ROAR344"
+      ]
+    },
+    "host-group-800a71bdb9811c26": {
+      "source_members": [
+        "BCH953",
+        "H1-002-0064-E-M"
+      ],
+      "training_members": [
+        "BCH953",
+        "H10020064EM"
+      ]
+    },
+    "host-group-806e82dafe4fe3f4": {
+      "source_members": [
+        "ECOR-42"
+      ],
+      "training_members": [
+        "ECOR42"
+      ]
+    },
+    "host-group-807b28a5932d9e1d": {
+      "source_members": [
+        "916A",
+        "921A"
+      ],
+      "training_members": [
+        "916A",
+        "921A"
+      ]
+    },
+    "host-group-80ff5fcfd420800a": {
+      "source_members": [
+        "B1932"
+      ],
+      "training_members": [
+        "B1932"
+      ]
+    },
+    "host-group-8123309d3d507d0b": {
+      "source_members": [
+        "NILS21"
+      ],
+      "training_members": [
+        "NILS21"
+      ]
+    },
+    "host-group-813c72b9d17823f1": {
+      "source_members": [
+        "ECOR-55"
+      ],
+      "training_members": [
+        "ECOR55"
+      ]
+    },
+    "host-group-8194f7e4545bdaca": {
+      "source_members": [
+        "NILS17"
+      ],
+      "training_members": [
+        "NILS17"
+      ]
+    },
+    "host-group-81caee1f4d4be948": {
+      "source_members": [
+        "IAI57"
+      ],
+      "training_members": [
+        "IAI57"
+      ]
+    },
+    "host-group-81fe184ea7262d37": {
+      "source_members": [
+        "IAI42"
+      ],
+      "training_members": [
+        "IAI42"
+      ]
+    },
+    "host-group-820f8074545ed5fc": {
+      "source_members": [
+        "IAI15",
+        "IAI17"
+      ],
+      "training_members": [
+        "IAI15",
+        "IAI17"
+      ]
+    },
+    "host-group-824216539157aa72": {
+      "source_members": [
+        "NILS33"
+      ],
+      "training_members": [
+        "NILS33"
+      ]
+    },
+    "host-group-824b400f50a600e0": {
+      "source_members": [
+        "NILS05"
+      ],
+      "training_members": [
+        "NILS05"
+      ]
+    },
+    "host-group-844297e9245a1730": {
+      "source_members": [
+        "H1-003-0116-V-R"
+      ],
+      "training_members": [
+        "H10030116VR"
+      ]
+    },
+    "host-group-85290a51d9044af0": {
+      "source_members": [
+        "NILS77"
+      ],
+      "training_members": [
+        "NILS77"
+      ]
+    },
+    "host-group-853f2f9c563fcd1a": {
+      "source_members": [
+        "E2052",
+        "H442"
+      ],
+      "training_members": [
+        "E2052",
+        "H442"
+      ]
+    },
+    "host-group-873bcd623ae2e9f8": {
+      "source_members": [
+        "NILS28"
+      ],
+      "training_members": [
+        "NILS28"
+      ]
+    },
+    "host-group-878c87c901ed7dd5": {
+      "source_members": [
+        "IAI77",
+        "NILS70"
+      ],
+      "training_members": [
+        "IAI77",
+        "NILS70"
+      ]
+    },
+    "host-group-885393cba8569cd4": {
+      "source_members": [
+        "B12I13"
+      ],
+      "training_members": [
+        "B12I13"
+      ]
+    },
+    "host-group-88af6a3c83afd624": {
+      "source_members": [
+        "IAI33"
+      ],
+      "training_members": [
+        "IAI33"
+      ]
+    },
+    "host-group-8a1e536019425743": {
+      "source_members": [
+        "H48"
+      ],
+      "training_members": [
+        "H48"
+      ]
+    },
+    "host-group-8af77fabd0e6bab0": {
+      "source_members": [
+        "370D"
+      ],
+      "training_members": [
+        "370D"
+      ]
+    },
+    "host-group-8b4869cd805e92ad": {
+      "source_members": [
+        "IAI62",
+        "IAI63",
+        "IAI75",
+        "IAI76",
+        "NILS29",
+        "NILS65",
+        "NILS72",
+        "NILS79"
+      ],
+      "training_members": [
+        "IAI62",
+        "IAI63",
+        "IAI75",
+        "IAI76",
+        "NILS29",
+        "NILS65",
+        "NILS72",
+        "NILS79"
+      ]
+    },
+    "host-group-8c335986a0a95f75": {
+      "source_members": [
+        "ECOR-28"
+      ],
+      "training_members": [
+        "ECOR28"
+      ]
+    },
+    "host-group-8c916615ec74b07d": {
+      "source_members": [
+        "FN116"
+      ],
+      "training_members": [
+        "FN116"
+      ]
+    },
+    "host-group-8cac5c4feea931ef": {
+      "source_members": [
+        "H1-001-0034-S-M"
+      ],
+      "training_members": [
+        "H10010034SM"
+      ]
+    },
+    "host-group-8d341df047421b1d": {
+      "source_members": [
+        "ECOR-18"
+      ],
+      "training_members": [
+        "ECOR18"
+      ]
+    },
+    "host-group-8fed1a4ca3e967d0": {
+      "source_members": [
+        "IAI65",
+        "IAI69"
+      ],
+      "training_members": [
+        "IAI65",
+        "IAI69"
+      ]
+    },
+    "host-group-9003507576ce3f76": {
+      "source_members": [
+        "ROAR292"
+      ],
+      "training_members": [
+        "ROAR292"
+      ]
+    },
+    "host-group-902e0514b86eec2c": {
+      "source_members": [
+        "ROAR291"
+      ],
+      "training_members": [
+        "ROAR291"
+      ]
+    },
+    "host-group-90412ef7fe756ed1": {
+      "source_members": [
+        "NILS31"
+      ],
+      "training_members": [
+        "NILS31"
+      ]
+    },
+    "host-group-90d14e4a1ace550c": {
+      "source_members": [
+        "NILS01"
+      ],
+      "training_members": [
+        "NILS01"
+      ]
+    },
+    "host-group-9117d5e4b55dcddc": {
+      "source_members": [
+        "DEC2a"
+      ],
+      "training_members": [
+        "DEC2A"
+      ]
+    },
+    "host-group-916655653d1b6e3d": {
+      "source_members": [
+        "ECOR-13"
+      ],
+      "training_members": [
+        "ECOR13"
+      ]
+    },
+    "host-group-926b5567bea028b4": {
+      "source_members": [
+        "NILS35"
+      ],
+      "training_members": [
+        "NILS35"
+      ]
+    },
+    "host-group-92ae6dae6333c7f1": {
+      "source_members": [
+        "ECOR-63"
+      ],
+      "training_members": [
+        "ECOR63"
+      ]
+    },
+    "host-group-92f7c43900d27733": {
+      "source_members": [
+        "H1-003-0120-P-R"
+      ],
+      "training_members": [
+        "H10030120PR"
+      ]
+    },
+    "host-group-9329eac11e3ea448": {
+      "source_members": [
+        "H95"
+      ],
+      "training_members": [
+        "H95"
+      ]
+    },
+    "host-group-94ed5d3437e4418a": {
+      "source_members": [
+        "ROAR012"
+      ],
+      "training_members": [
+        "ROAR012"
+      ]
+    },
+    "host-group-96dc2cff587708a0": {
+      "source_members": [
+        "B090"
+      ],
+      "training_members": [
+        "B090"
+      ]
+    },
+    "host-group-975bc671c3b15134": {
+      "source_members": [
+        "IAI68"
+      ],
+      "training_members": [
+        "IAI68"
+      ]
+    },
+    "host-group-9813608eeeddcc0a": {
+      "source_members": [
+        "NILS49"
+      ],
+      "training_members": [
+        "NILS49"
+      ]
+    },
+    "host-group-99533d794fa5ba06": {
+      "source_members": [
+        "E_albertiiCIP107988T"
+      ],
+      "training_members": [
+        "EALBERTIICIP107988T"
+      ]
+    },
+    "host-group-9c920a87be34d127": {
+      "source_members": [
+        "ECOR-29"
+      ],
+      "training_members": [
+        "ECOR29"
+      ]
+    },
+    "host-group-9cf228d8557aaf2e": {
+      "source_members": [
+        "NILS23"
+      ],
+      "training_members": [
+        "NILS23"
+      ]
+    },
+    "host-group-9eb19f0f68120c99": {
+      "source_members": [
+        "ECOR-01"
+      ],
+      "training_members": [
+        "ECOR01"
+      ]
+    },
+    "host-group-9f47d46be97ba9db": {
+      "source_members": [
+        "IAI13"
+      ],
+      "training_members": [
+        "IAI13"
+      ]
+    },
+    "host-group-9ff8b0af40ed522c": {
+      "source_members": [
+        "ECOR-24"
+      ],
+      "training_members": [
+        "ECOR24"
+      ]
+    },
+    "host-group-a090d45b4d2bdf75": {
+      "source_members": [
+        "ROAR205"
+      ],
+      "training_members": [
+        "ROAR205"
+      ]
+    },
+    "host-group-a10b2891acb876c0": {
+      "source_members": [
+        "H1-006-0003-S-L"
+      ],
+      "training_members": [
+        "H10060003SL"
+      ]
+    },
+    "host-group-a13021dcc88590d6": {
+      "source_members": [
+        "E1426"
+      ],
+      "training_members": [
+        "E1426"
+      ]
+    },
+    "host-group-a2db86c7d548724c": {
+      "source_members": [
+        "ECOR-30",
+        "ECOR-32",
+        "ECOR-33"
+      ],
+      "training_members": [
+        "ECOR30",
+        "ECOR32",
+        "ECOR33"
+      ]
+    },
+    "host-group-a30a00e7d4f31e7b": {
+      "source_members": [
+        "H1-006-0022-L-R"
+      ],
+      "training_members": [
+        "H10060022LR"
+      ]
+    },
+    "host-group-a7882cd39ffa57f0": {
+      "source_members": [
+        "IAI71"
+      ],
+      "training_members": [
+        "IAI71"
+      ]
+    },
+    "host-group-a8d5bd1fb0da8444": {
+      "source_members": [
+        "H47"
+      ],
+      "training_members": [
+        "H47"
+      ]
+    },
+    "host-group-a912605922c5cfd9": {
+      "source_members": [
+        "IAI67"
+      ],
+      "training_members": [
+        "IAI67"
+      ]
+    },
+    "host-group-a946aadfc732a005": {
+      "source_members": [
+        "LF73",
+        "LF82",
+        "NRG807C"
+      ],
+      "training_members": [
+        "LF73",
+        "LF82",
+        "NRG807C"
+      ]
+    },
+    "host-group-a9bf54d51b9e2831": {
+      "source_members": [
+        "S1-109"
+      ],
+      "training_members": [
+        "S1109"
+      ]
+    },
+    "host-group-aa6d4f69194387c9": {
+      "source_members": [
+        "NILS37"
+      ],
+      "training_members": [
+        "NILS37"
+      ]
+    },
+    "host-group-ab2e0122f965c889": {
+      "source_members": [
+        "H1-004-0021-W-I",
+        "H1-007-0015-D-G",
+        "IAI41",
+        "NILS48"
+      ],
+      "training_members": [
+        "H10040021WI",
+        "H10070015DG",
+        "IAI41",
+        "NILS48"
+      ]
+    },
+    "host-group-ab46d3cc10235d7c": {
+      "source_members": [
+        "LM33"
+      ],
+      "training_members": [
+        "LM33"
+      ]
+    },
+    "host-group-ab5d1c40c92ea8d2": {
+      "source_members": [
+        "IAI12"
+      ],
+      "training_members": [
+        "IAI12"
+      ]
+    },
+    "host-group-ac62e916fff1a6de": {
+      "source_members": [
+        "ECOR-07"
+      ],
+      "training_members": [
+        "ECOR07"
+      ]
+    },
+    "host-group-ad3a482acf88c807": {
+      "source_members": [
+        "LMR-3158"
+      ],
+      "training_members": [
+        "LMR3158"
+      ]
+    },
+    "host-group-b0102928fdbfe945": {
+      "source_members": [
+        "ECOR-14",
+        "IAI09"
+      ],
+      "training_members": [
+        "ECOR14",
+        "IAI09"
+      ]
+    },
+    "host-group-b1664d22f80866dd": {
+      "source_members": [
+        "NILS04"
+      ],
+      "training_members": [
+        "NILS04"
+      ]
+    },
+    "host-group-b1ab573987778ef0": {
+      "source_members": [
+        "NILS14"
+      ],
+      "training_members": [
+        "NILS14"
+      ]
+    },
+    "host-group-b1acd01b0755f17a": {
+      "source_members": [
+        "ECOR-51"
+      ],
+      "training_members": [
+        "ECOR51"
+      ]
+    },
+    "host-group-b1ffe3d22c4bd4e7": {
+      "source_members": [
+        "ROAR059"
+      ],
+      "training_members": [
+        "ROAR059"
+      ]
+    },
+    "host-group-b52867473249bc63": {
+      "source_members": [
+        "IAI03"
+      ],
+      "training_members": [
+        "IAI03"
+      ]
+    },
+    "host-group-b579dc2cee41002e": {
+      "source_members": [
+        "ECOR-72"
+      ],
+      "training_members": [
+        "ECOR72"
+      ]
+    },
+    "host-group-b5e256f926488d02": {
+      "source_members": [
+        "NILS16"
+      ],
+      "training_members": [
+        "NILS16"
+      ]
+    },
+    "host-group-b61ebb3f3f3afbdb": {
+      "source_members": [
+        "H1-002-0007-M-M"
+      ],
+      "training_members": [
+        "H10020007MM"
+      ]
+    },
+    "host-group-b6a4561efa96e98a": {
+      "source_members": [
+        "ECOR-46"
+      ],
+      "training_members": [
+        "ECOR46"
+      ]
+    },
+    "host-group-b95a8dc9cb3bb169": {
+      "source_members": [
+        "S1-84"
+      ],
+      "training_members": [
+        "S184"
+      ]
+    },
+    "host-group-bab84491e1c684e3": {
+      "source_members": [
+        "ECOR-03"
+      ],
+      "training_members": [
+        "ECOR03"
+      ]
+    },
+    "host-group-bb90b6792ef5dcc6": {
+      "source_members": [
+        "NILS11"
+      ],
+      "training_members": [
+        "NILS11"
+      ]
+    },
+    "host-group-bbe343e93ac56dfb": {
+      "source_members": [
+        "H1-003-0019-B-M"
+      ],
+      "training_members": [
+        "H10030019BM"
+      ]
+    },
+    "host-group-c1f412291599a108": {
+      "source_members": [
+        "IAI51",
+        "IAI74",
+        "NILS54",
+        "NILS62",
+        "T145"
+      ],
+      "training_members": [
+        "IAI51",
+        "IAI74",
+        "NILS54",
+        "NILS62",
+        "T145"
+      ]
+    },
+    "host-group-c2de736eccf099a5": {
+      "source_members": [
+        "NILS08"
+      ],
+      "training_members": [
+        "NILS08"
+      ]
+    },
+    "host-group-c394e5f45c5fae3b": {
+      "source_members": [
+        "ROAR047",
+        "ROAR061",
+        "ROAR072",
+        "ROAR082"
+      ],
+      "training_members": [
+        "ROAR047",
+        "ROAR061",
+        "ROAR072",
+        "ROAR082"
+      ]
+    },
+    "host-group-c4be4455a745332c": {
+      "source_members": [
+        "LM08"
+      ],
+      "training_members": [
+        "LM08"
+      ]
+    },
+    "host-group-c4f1371bdd5e4cdb": {
+      "source_members": [
+        "H1-003-0105-C-R",
+        "H1-003-0115-L-R"
+      ],
+      "training_members": [
+        "H10030105CR",
+        "H10030115LR"
+      ]
+    },
+    "host-group-c6641cee131b473d": {
+      "source_members": [
+        "536",
+        "IAI73",
+        "IAI82"
+      ],
+      "training_members": [
+        "536",
+        "IAI73",
+        "IAI82"
+      ]
+    },
+    "host-group-c6c673c6f160735c": {
+      "source_members": [
+        "NILS03"
+      ],
+      "training_members": [
+        "NILS03"
+      ]
+    },
+    "host-group-c8bccfa499269e30": {
+      "source_members": [
+        "B6A1"
+      ],
+      "training_members": [
+        "B6A1"
+      ]
+    },
+    "host-group-c8e44e20b899e096": {
+      "source_members": [
+        "IAI26"
+      ],
+      "training_members": [
+        "IAI26"
+      ]
+    },
+    "host-group-ca09977b44b49723": {
+      "source_members": [
+        "H1-003-0035-D-E"
+      ],
+      "training_members": [
+        "H10030035DE"
+      ]
+    },
+    "host-group-ca1d2a33a4eccdd5": {
+      "source_members": [
+        "ROAR387"
+      ],
+      "training_members": [
+        "ROAR387"
+      ]
+    },
+    "host-group-cf1690dc5bd1f193": {
+      "source_members": [
+        "ROAR438"
+      ],
+      "training_members": [
+        "ROAR438"
+      ]
+    },
+    "host-group-cf89e783639eb941": {
+      "source_members": [
+        "AN24",
+        "IAI04"
+      ],
+      "training_members": [
+        "AN24",
+        "IAI04"
+      ]
+    },
+    "host-group-cfc93d3785e771ce": {
+      "source_members": [
+        "IAI22",
+        "IAI28"
+      ],
+      "training_members": [
+        "IAI22",
+        "IAI28"
+      ]
+    },
+    "host-group-d10a725ff2e85c26": {
+      "source_members": [
+        "NILS20"
+      ],
+      "training_members": [
+        "NILS20"
+      ]
+    },
+    "host-group-d1e50bcf0df79844": {
+      "source_members": [
+        "IAI53"
+      ],
+      "training_members": [
+        "IAI53"
+      ]
+    },
+    "host-group-d1efcac2b604c3e5": {
+      "source_members": [
+        "colF12g"
+      ],
+      "training_members": [
+        "COLF12G"
+      ]
+    },
+    "host-group-d44e212ed9738881": {
+      "source_members": [
+        "E_fergusonii-IVAN"
+      ],
+      "training_members": [
+        "EFERGUSONIIIVAN"
+      ]
+    },
+    "host-group-d45482845195aff6": {
+      "source_members": [
+        "ECOR-65"
+      ],
+      "training_members": [
+        "ECOR65"
+      ]
+    },
+    "host-group-d51841cb362eedf6": {
+      "source_members": [
+        "H1-001-0155-M-I"
+      ],
+      "training_members": [
+        "H10010155MI"
+      ]
+    },
+    "host-group-d57ad2023940794e": {
+      "source_members": [
+        "ECOR-11"
+      ],
+      "training_members": [
+        "ECOR11"
+      ]
+    },
+    "host-group-d68f231e41840adc": {
+      "source_members": [
+        "NILS46"
+      ],
+      "training_members": [
+        "NILS46"
+      ]
+    },
+    "host-group-d843c29ddf696ac7": {
+      "source_members": [
+        "IAI20"
+      ],
+      "training_members": [
+        "IAI20"
+      ]
+    },
+    "host-group-d8658cb392d6e07e": {
+      "source_members": [
+        "NILS39"
+      ],
+      "training_members": [
+        "NILS39"
+      ]
+    },
+    "host-group-d8a3243875074c26": {
+      "source_members": [
+        "NILS44",
+        "NILS53",
+        "NILS76"
+      ],
+      "training_members": [
+        "NILS44",
+        "NILS53",
+        "NILS76"
+      ]
+    },
+    "host-group-d94f1ec0f1f99770": {
+      "source_members": [
+        "S1-76"
+      ],
+      "training_members": [
+        "S176"
+      ]
+    },
+    "host-group-da9f4e7fed16f742": {
+      "source_members": [
+        "IAI55"
+      ],
+      "training_members": [
+        "IAI55"
+      ]
+    },
+    "host-group-dc03d98b76cc9c9e": {
+      "source_members": [
+        "IAI07",
+        "NILS13"
+      ],
+      "training_members": [
+        "IAI07",
+        "NILS13"
+      ]
+    },
+    "host-group-dd7fe1ccb8ee105b": {
+      "source_members": [
+        "B992"
+      ],
+      "training_members": [
+        "B992"
+      ]
+    },
+    "host-group-de004c37397ca8b8": {
+      "source_members": [
+        "H27",
+        "IAI34",
+        "NILS06",
+        "NILS22"
+      ],
+      "training_members": [
+        "IAI34",
+        "NILS06",
+        "NILS22"
+      ]
+    },
+    "host-group-df0bb8774fa5d2c3": {
+      "source_members": [
+        "IAI02"
+      ],
+      "training_members": [
+        "IAI02"
+      ]
+    },
+    "host-group-df8b4ea101684a39": {
+      "source_members": [
+        "FN-B4"
+      ],
+      "training_members": [
+        "FNB4"
+      ]
+    },
+    "host-group-e20bafb2bb5642cb": {
+      "source_members": [
+        "IAI14"
+      ],
+      "training_members": [
+        "IAI14"
+      ]
+    },
+    "host-group-e23f111230d62e81": {
+      "source_members": [
+        "IAI40"
+      ],
+      "training_members": [
+        "IAI40"
+      ]
+    },
+    "host-group-e2b5b651c491af43": {
+      "source_members": [
+        "M863"
+      ],
+      "training_members": [
+        "M863"
+      ]
+    },
+    "host-group-e35aaba882dd984c": {
+      "source_members": [
+        "ECOR-23"
+      ],
+      "training_members": [
+        "ECOR23"
+      ]
+    },
+    "host-group-e369ed1b643fce18": {
+      "source_members": [
+        "ECOR-49"
+      ],
+      "training_members": [
+        "ECOR49"
+      ]
+    },
+    "host-group-e3f336d9d559eb32": {
+      "source_members": [
+        "H1-001-0121-Q-J"
+      ],
+      "training_members": [
+        "H10010121QJ"
+      ]
+    },
+    "host-group-e6a9dfe622d1707e": {
+      "source_members": [
+        "IAI32",
+        "IAI45",
+        "ROAR185"
+      ],
+      "training_members": [
+        "IAI32",
+        "IAI45",
+        "ROAR185"
+      ]
+    },
+    "host-group-e6c0236d1a17a634": {
+      "source_members": [
+        "NILS07"
+      ],
+      "training_members": [
+        "NILS07"
+      ]
+    },
+    "host-group-e77ef68ca689e76f": {
+      "source_members": [
+        "ECOR-67"
+      ],
+      "training_members": [
+        "ECOR67"
+      ]
+    },
+    "host-group-e7a59e0918c7ee38": {
+      "source_members": [
+        "H1-001-0053-K-C",
+        "NILS60"
+      ],
+      "training_members": [
+        "H10010053KC",
+        "NILS60"
+      ]
+    },
+    "host-group-e7ad935ce85db174": {
+      "source_members": [
+        "ECOR-20",
+        "ECOR-21"
+      ],
+      "training_members": [
+        "ECOR20",
+        "ECOR21"
+      ]
+    },
+    "host-group-eaea59d046aabcb7": {
+      "source_members": [
+        "IAI27",
+        "IAI30"
+      ],
+      "training_members": [
+        "IAI27",
+        "IAI30"
+      ]
+    },
+    "host-group-eb29163b7405d851": {
+      "source_members": [
+        "H1-004-0007-O-M"
+      ],
+      "training_members": [
+        "H10040007OM"
+      ]
+    },
+    "host-group-ece318099ae3fa16": {
+      "source_members": [
+        "H009"
+      ],
+      "training_members": [
+        "H009"
+      ]
+    },
+    "host-group-ece4d8d6e5ff1db4": {
+      "source_members": [
+        "NILS32"
+      ],
+      "training_members": [
+        "NILS32"
+      ]
+    },
+    "host-group-ee73ec7130c6a030": {
+      "source_members": [
+        "IAI35"
+      ],
+      "training_members": [
+        "IAI35"
+      ]
+    },
+    "host-group-ee8082c1d2d66eb5": {
+      "source_members": [
+        "ECOR-37"
+      ],
+      "training_members": [
+        "ECOR37"
+      ]
+    },
+    "host-group-eedb1c579f21c25a": {
+      "source_members": [
+        "EC6230"
+      ],
+      "training_members": [
+        "EC6230"
+      ]
+    },
+    "host-group-ef84a36c844cbdba": {
+      "source_members": [
+        "ECOR-48"
+      ],
+      "training_members": [
+        "ECOR48"
+      ]
+    },
+    "host-group-f08891cfd8c817e9": {
+      "source_members": [
+        "FN89"
+      ],
+      "training_members": [
+        "FN89"
+      ]
+    },
+    "host-group-f2e12d44ea18a73c": {
+      "source_members": [
+        "NILS43"
+      ],
+      "training_members": [
+        "NILS43"
+      ]
+    },
+    "host-group-f3997e1a4386ba43": {
+      "source_members": [
+        "ECOR-56",
+        "NILS74"
+      ],
+      "training_members": [
+        "ECOR56",
+        "NILS74"
+      ]
+    },
+    "host-group-f44b7bd968f25195": {
+      "source_members": [
+        "ECOR-53"
+      ],
+      "training_members": [
+        "ECOR53"
+      ]
+    },
+    "host-group-f58d3d014be42bfe": {
+      "source_members": [
+        "E4962"
+      ],
+      "training_members": [
+        "E4962"
+      ]
+    },
+    "host-group-f5ac3ae1bd365e95": {
+      "source_members": [
+        "H1-005-0065-L-P",
+        "NILS15"
+      ],
+      "training_members": [
+        "NILS15"
+      ]
+    },
+    "host-group-f65580dbfa128b80": {
+      "source_members": [
+        "ROAR019"
+      ],
+      "training_members": [
+        "ROAR019"
+      ]
+    },
+    "host-group-f74dff4eb4ef8afe": {
+      "source_members": [
+        "IAI49"
+      ],
+      "training_members": [
+        "IAI49"
+      ]
+    },
+    "host-group-f8b57f2ad8b421b8": {
+      "source_members": [
+        "LF31",
+        "NILS59"
+      ],
+      "training_members": [
+        "LF31",
+        "NILS59"
+      ]
+    },
+    "host-group-fd57f7742872b085": {
+      "source_members": [
+        "S1-11"
+      ],
+      "training_members": [
+        "S111"
+      ]
+    },
+    "host-group-fe352774c08f2ba1": {
+      "source_members": [
+        "H1-001-0013-L-J",
+        "H1-001-0020-M-O",
+        "H1-003-0090-V-J"
+      ],
+      "training_members": [
+        "H10010013LJ",
+        "H10010020MO",
+        "H10030090VJ"
+      ]
+    },
+    "host-group-ff9be377f7215a96": {
+      "source_members": [
+        "TW10509"
+      ],
+      "training_members": [
+        "TW10509"
+      ]
+    }
+  },
+  "training_host_groups": {
+    "001023": "host-group-1f54f7a0394f4d5f",
+    "001031C1": "host-group-515e405f514b58b9",
+    "003026": "host-group-5431b3b9d0467dac",
+    "013008": "host-group-515e405f514b58b9",
+    "025010": "host-group-5ad1fc2204ba89cd",
+    "034008": "host-group-10896857c8a6234a",
+    "034026C1": "host-group-222c8d5621a60c73",
+    "035004": "host-group-222c8d5621a60c73",
+    "370D": "host-group-8af77fabd0e6bab0",
+    "381A": "host-group-515e405f514b58b9",
+    "536": "host-group-c6641cee131b473d",
+    "55989": "host-group-4b08211aa2aa7c38",
+    "916A": "host-group-807b28a5932d9e1d",
+    "921A": "host-group-807b28a5932d9e1d",
+    "AL505": "host-group-31cf95b9b3b30224",
+    "AN03": "host-group-3d1dafca7fb445e7",
+    "AN17": "host-group-6f241651ecb59b35",
+    "AN24": "host-group-cf89e783639eb941",
+    "ASP51G": "host-group-4c162e28d5ee5858",
+    "ATCC35469T": "host-group-26df734871c65286",
+    "B090": "host-group-96dc2cff587708a0",
+    "B1147": "host-group-4c64b9e307248ec7",
+    "B12I13": "host-group-885393cba8569cd4",
+    "B156": "host-group-5e29c8edb5b22d67",
+    "B1747": "host-group-7ea42d144088d709",
+    "B1932": "host-group-80ff5fcfd420800a",
+    "B253": "host-group-59cc48422caf8769",
+    "B49": "host-group-159f7f3630279666",
+    "B691": "host-group-3b4ef02ad115a11f",
+    "B6A1": "host-group-c8bccfa499269e30",
+    "B992": "host-group-dd7fe1ccb8ee105b",
+    "BCH953": "host-group-800a71bdb9811c26",
+    "BDX03": "host-group-6d8147b5f1de8569",
+    "BDX09": "host-group-3d1dafca7fb445e7",
+    "BE": "host-group-7789eb26922c8f98",
+    "BEN4D": "host-group-222c8d5621a60c73",
+    "BL21": "host-group-1c11bae2991a6b26",
+    "C2119": "host-group-10ab65ce627892f3",
+    "COLF12G": "host-group-d1efcac2b604c3e5",
+    "DEC1A": "host-group-37d417a6924bb0be",
+    "DEC2A": "host-group-9117d5e4b55dcddc",
+    "DIJ06": "host-group-6495bb98ef0ef80f",
+    "DIJ07": "host-group-30ad644ad16a37aa",
+    "E1426": "host-group-a13021dcc88590d6",
+    "E1492": "host-group-66af2a49c74b48ae",
+    "E2052": "host-group-853f2f9c563fcd1a",
+    "E234869": "host-group-67c74b3963f18c83",
+    "E4962": "host-group-f58d3d014be42bfe",
+    "E7519": "host-group-67da567ec6660c20",
+    "EALBERTIICIP107988T": "host-group-99533d794fa5ba06",
+    "EC6230": "host-group-eedb1c579f21c25a",
+    "ECOR01": "host-group-9eb19f0f68120c99",
+    "ECOR02": "host-group-643c7cf8a8fc965d",
+    "ECOR03": "host-group-bab84491e1c684e3",
+    "ECOR04": "host-group-4481bbb77be5ac99",
+    "ECOR05": "host-group-534d2481e6f1454b",
+    "ECOR06": "host-group-33b87a9b348bfe7d",
+    "ECOR07": "host-group-ac62e916fff1a6de",
+    "ECOR08": "host-group-44d59446a97dfa2e",
+    "ECOR09": "host-group-75a94fbd685a504c",
+    "ECOR10": "host-group-56f200e736d3c521",
+    "ECOR11": "host-group-d57ad2023940794e",
+    "ECOR12": "host-group-7287fb13d8e4312e",
+    "ECOR13": "host-group-916655653d1b6e3d",
+    "ECOR14": "host-group-b0102928fdbfe945",
+    "ECOR15": "host-group-226dd4af80dd3141",
+    "ECOR16": "host-group-0910fdb854b0a92a",
+    "ECOR17": "host-group-7a89d3861b94a59a",
+    "ECOR18": "host-group-8d341df047421b1d",
+    "ECOR19": "host-group-59666fdc5760280b",
+    "ECOR20": "host-group-e7ad935ce85db174",
+    "ECOR21": "host-group-e7ad935ce85db174",
+    "ECOR22": "host-group-1629d64126ab738b",
+    "ECOR23": "host-group-e35aaba882dd984c",
+    "ECOR24": "host-group-9ff8b0af40ed522c",
+    "ECOR25": "host-group-60f528bc05fca0eb",
+    "ECOR26": "host-group-5648d93b1596d212",
+    "ECOR27": "host-group-5648d93b1596d212",
+    "ECOR28": "host-group-8c335986a0a95f75",
+    "ECOR29": "host-group-9c920a87be34d127",
+    "ECOR30": "host-group-a2db86c7d548724c",
+    "ECOR31": "host-group-41bb5730d76affcb",
+    "ECOR32": "host-group-a2db86c7d548724c",
+    "ECOR33": "host-group-a2db86c7d548724c",
+    "ECOR34": "host-group-07e6aa508a49bc9c",
+    "ECOR35": "host-group-40870dd43596e887",
+    "ECOR36": "host-group-40870dd43596e887",
+    "ECOR37": "host-group-ee8082c1d2d66eb5",
+    "ECOR38": "host-group-6b1d824c682d95af",
+    "ECOR39": "host-group-6b1d824c682d95af",
+    "ECOR40": "host-group-6b1d824c682d95af",
+    "ECOR41": "host-group-6b1d824c682d95af",
+    "ECOR42": "host-group-806e82dafe4fe3f4",
+    "ECOR43A": "host-group-56f200e736d3c521",
+    "ECOR44": "host-group-63e18bbac3dfe2da",
+    "ECOR45": "host-group-6764f8f1fde6a98f",
+    "ECOR46": "host-group-b6a4561efa96e98a",
+    "ECOR47": "host-group-29272d9e91f2c950",
+    "ECOR48": "host-group-ef84a36c844cbdba",
+    "ECOR49": "host-group-e369ed1b643fce18",
+    "ECOR50": "host-group-0944402155221ebd",
+    "ECOR51": "host-group-b1acd01b0755f17a",
+    "ECOR52": "host-group-4a0b475c30670c9e",
+    "ECOR53": "host-group-f44b7bd968f25195",
+    "ECOR54": "host-group-4a0b475c30670c9e",
+    "ECOR55": "host-group-813c72b9d17823f1",
+    "ECOR56": "host-group-f3997e1a4386ba43",
+    "ECOR57": "host-group-6c898335c9043202",
+    "ECOR58": "host-group-4d0a46be9d777249",
+    "ECOR59": "host-group-112a5ec105acca59",
+    "ECOR60": "host-group-112a5ec105acca59",
+    "ECOR61": "host-group-5c50644f574d46b9",
+    "ECOR62": "host-group-5c50644f574d46b9",
+    "ECOR63": "host-group-92ae6dae6333c7f1",
+    "ECOR64": "host-group-4ffe33b0b80d90ea",
+    "ECOR65": "host-group-d45482845195aff6",
+    "ECOR66": "host-group-1fc1d2beec4ca7d9",
+    "ECOR67": "host-group-e77ef68ca689e76f",
+    "ECOR69": "host-group-4359b9afae684b45",
+    "ECOR70": "host-group-768961434cb92659",
+    "ECOR71": "host-group-7abc1332c3008827",
+    "ECOR72": "host-group-b579dc2cee41002e",
+    "ED1A": "host-group-222c8d5621a60c73",
+    "EDL933": "host-group-4616a484efb5aa21",
+    "EFERGUSONIIIVAN": "host-group-d44e212ed9738881",
+    "FN116": "host-group-8c916615ec74b07d",
+    "FN126": "host-group-72ecfd1d7f541a64",
+    "FN89": "host-group-f08891cfd8c817e9",
+    "FNB4": "host-group-df8b4ea101684a39",
+    "FNB7": "host-group-6232992e6096f8e4",
+    "FNB9": "host-group-15c5f6a5568ec017",
+    "H009": "host-group-ece318099ae3fa16",
+    "H10010003SJ": "host-group-200970fb8aad8354",
+    "H10010013LJ": "host-group-fe352774c08f2ba1",
+    "H10010020MO": "host-group-fe352774c08f2ba1",
+    "H10010027SG": "host-group-12abfd696e9c7e78",
+    "H10010034SM": "host-group-8cac5c4feea931ef",
+    "H10010053KC": "host-group-e7a59e0918c7ee38",
+    "H10010093RA": "host-group-412292feca0edc79",
+    "H10010121QJ": "host-group-e3f336d9d559eb32",
+    "H10010125BM": "host-group-56311e63d9ca6c00",
+    "H10010131CA": "host-group-64a5ecb83e39d845",
+    "H10010154TK": "host-group-2457e87aee6bca06",
+    "H10010155MI": "host-group-d51841cb362eedf6",
+    "H10020007MM": "host-group-b61ebb3f3f3afbdb",
+    "H10020011MG": "host-group-07531d64995b4a8c",
+    "H10020060CT": "host-group-3cc51158bee2285d",
+    "H10020064EM": "host-group-800a71bdb9811c26",
+    "H10020069VG": "host-group-565c7d5d2b1e3be1",
+    "H10030010GJ": "host-group-4aa8555c52f52b88",
+    "H10030019BM": "host-group-bbe343e93ac56dfb",
+    "H10030035DE": "host-group-ca09977b44b49723",
+    "H10030054PP": "host-group-42dd144706caf359",
+    "H10030071CJ": "host-group-68bb157fd3f54129",
+    "H10030079GR": "host-group-5ab2f17079e4d626",
+    "H10030088BJ": "host-group-698610edfbf6a5c4",
+    "H10030090VJ": "host-group-fe352774c08f2ba1",
+    "H10030105CR": "host-group-c4f1371bdd5e4cdb",
+    "H10030115LR": "host-group-c4f1371bdd5e4cdb",
+    "H10030116VR": "host-group-844297e9245a1730",
+    "H10030120PR": "host-group-92f7c43900d27733",
+    "H10040007OM": "host-group-eb29163b7405d851",
+    "H10040017BM": "host-group-414931040ff29b2b",
+    "H10040021WI": "host-group-ab2e0122f965c889",
+    "H10050012LM": "host-group-7885b968e90ded88",
+    "H10050058MA": "host-group-5cd32029b29e8ee0",
+    "H10060003SL": "host-group-a10b2891acb876c0",
+    "H10060022LR": "host-group-a30a00e7d4f31e7b",
+    "H10070015DG": "host-group-ab2e0122f965c889",
+    "H10070037HD": "host-group-5ab2f17079e4d626",
+    "H14": "host-group-098a646e39352d19",
+    "H384": "host-group-32b06a443e019dec",
+    "H4": "host-group-40768c11882ebb45",
+    "H442": "host-group-853f2f9c563fcd1a",
+    "H47": "host-group-a8d5bd1fb0da8444",
+    "H48": "host-group-8a1e536019425743",
+    "H70": "host-group-7e04587d8ad8001d",
+    "H95": "host-group-9329eac11e3ea448",
+    "IAI01": "host-group-3725b1a58c95f184",
+    "IAI02": "host-group-df0bb8774fa5d2c3",
+    "IAI03": "host-group-b52867473249bc63",
+    "IAI04": "host-group-cf89e783639eb941",
+    "IAI05": "host-group-7631d7427bd4f001",
+    "IAI06": "host-group-30311dd67976af52",
+    "IAI07": "host-group-dc03d98b76cc9c9e",
+    "IAI08": "host-group-2f67a153eb1a773f",
+    "IAI09": "host-group-b0102928fdbfe945",
+    "IAI10": "host-group-045e3235b91910a0",
+    "IAI11": "host-group-56b1c7b01fa7fcae",
+    "IAI12": "host-group-ab5d1c40c92ea8d2",
+    "IAI13": "host-group-9f47d46be97ba9db",
+    "IAI14": "host-group-e20bafb2bb5642cb",
+    "IAI15": "host-group-820f8074545ed5fc",
+    "IAI16": "host-group-63a78085ae89f50a",
+    "IAI17": "host-group-820f8074545ed5fc",
+    "IAI18": "host-group-566ad9d26aee5116",
+    "IAI19": "host-group-6ecc56777250a1eb",
+    "IAI20": "host-group-d843c29ddf696ac7",
+    "IAI21": "host-group-60b7b2c1320e4b8d",
+    "IAI22": "host-group-cfc93d3785e771ce",
+    "IAI23": "host-group-63a78085ae89f50a",
+    "IAI24": "host-group-702a3a3756abaf57",
+    "IAI25": "host-group-3adb2e14da90bd3d",
+    "IAI26": "host-group-c8e44e20b899e096",
+    "IAI27": "host-group-eaea59d046aabcb7",
+    "IAI28": "host-group-cfc93d3785e771ce",
+    "IAI29": "host-group-2df7e0b929fa9f68",
+    "IAI30": "host-group-eaea59d046aabcb7",
+    "IAI31": "host-group-05788269d35abce0",
+    "IAI32": "host-group-e6a9dfe622d1707e",
+    "IAI33": "host-group-88af6a3c83afd624",
+    "IAI34": "host-group-de004c37397ca8b8",
+    "IAI35": "host-group-ee73ec7130c6a030",
+    "IAI36": "host-group-43b994ba055e7cf4",
+    "IAI37": "host-group-0e131b94cef8c4e9",
+    "IAI38": "host-group-5c50644f574d46b9",
+    "IAI39": "host-group-43b994ba055e7cf4",
+    "IAI40": "host-group-e23f111230d62e81",
+    "IAI41": "host-group-ab2e0122f965c889",
+    "IAI42": "host-group-81fe184ea7262d37",
+    "IAI43": "host-group-764aeee818391220",
+    "IAI44": "host-group-1e9d35a36ba2daf7",
+    "IAI45": "host-group-e6a9dfe622d1707e",
+    "IAI46": "host-group-5207b1c861913fd9",
+    "IAI47": "host-group-45c9b8693f9381fc",
+    "IAI48": "host-group-222c8d5621a60c73",
+    "IAI49": "host-group-f74dff4eb4ef8afe",
+    "IAI50": "host-group-04bef133a22bfd40",
+    "IAI51": "host-group-c1f412291599a108",
+    "IAI53": "host-group-d1e50bcf0df79844",
+    "IAI54": "host-group-6c898335c9043202",
+    "IAI55": "host-group-da9f4e7fed16f742",
+    "IAI56": "host-group-5207b1c861913fd9",
+    "IAI57": "host-group-81caee1f4d4be948",
+    "IAI58": "host-group-40870dd43596e887",
+    "IAI59": "host-group-5c50644f574d46b9",
+    "IAI60": "host-group-44fb17a440ce7b2f",
+    "IAI61": "host-group-5207b1c861913fd9",
+    "IAI62": "host-group-8b4869cd805e92ad",
+    "IAI63": "host-group-8b4869cd805e92ad",
+    "IAI64": "host-group-506704452baed762",
+    "IAI65": "host-group-8fed1a4ca3e967d0",
+    "IAI66": "host-group-44fb17a440ce7b2f",
+    "IAI67": "host-group-a912605922c5cfd9",
+    "IAI68": "host-group-975bc671c3b15134",
+    "IAI69": "host-group-8fed1a4ca3e967d0",
+    "IAI70": "host-group-4f313572ecef82ce",
+    "IAI71": "host-group-a7882cd39ffa57f0",
+    "IAI72": "host-group-6c898335c9043202",
+    "IAI73": "host-group-c6641cee131b473d",
+    "IAI74": "host-group-c1f412291599a108",
+    "IAI75": "host-group-8b4869cd805e92ad",
+    "IAI76": "host-group-8b4869cd805e92ad",
+    "IAI77": "host-group-878c87c901ed7dd5",
+    "IAI78": "host-group-4ffe33b0b80d90ea",
+    "IAI79": "host-group-4ffe33b0b80d90ea",
+    "IAI80": "host-group-4ffe33b0b80d90ea",
+    "IAI81": "host-group-4ffe33b0b80d90ea",
+    "IAI82": "host-group-c6641cee131b473d",
+    "LF31": "host-group-f8b57f2ad8b421b8",
+    "LF50": "host-group-529402f77c4c5799",
+    "LF7074": "host-group-5207b1c861913fd9",
+    "LF73": "host-group-a946aadfc732a005",
+    "LF82": "host-group-a946aadfc732a005",
+    "LI10": "host-group-65f2932bab81cba8",
+    "LM02": "host-group-31a94b585f38ed55",
+    "LM07": "host-group-12abfd696e9c7e78",
+    "LM08": "host-group-c4be4455a745332c",
+    "LM33": "host-group-ab46d3cc10235d7c",
+    "LM40": "host-group-30ad644ad16a37aa",
+    "LMR3158": "host-group-ad3a482acf88c807",
+    "M863": "host-group-e2b5b651c491af43",
+    "MT1B1": "host-group-61822ffc3b536351",
+    "NAN33": "host-group-3762d178ba80272a",
+    "NIC06": "host-group-425e8771a33d7c45",
+    "NILS01": "host-group-90d14e4a1ace550c",
+    "NILS02": "host-group-27675d186a6fc7e5",
+    "NILS03": "host-group-c6c673c6f160735c",
+    "NILS04": "host-group-b1664d22f80866dd",
+    "NILS05": "host-group-824b400f50a600e0",
+    "NILS06": "host-group-de004c37397ca8b8",
+    "NILS07": "host-group-e6c0236d1a17a634",
+    "NILS08": "host-group-c2de736eccf099a5",
+    "NILS09": "host-group-34665a0c1307106f",
+    "NILS10": "host-group-1cf80f3ab349fe16",
+    "NILS11": "host-group-bb90b6792ef5dcc6",
+    "NILS12": "host-group-593be6f220f83248",
+    "NILS13": "host-group-dc03d98b76cc9c9e",
+    "NILS14": "host-group-b1ab573987778ef0",
+    "NILS15": "host-group-f5ac3ae1bd365e95",
+    "NILS16": "host-group-b5e256f926488d02",
+    "NILS17": "host-group-8194f7e4545bdaca",
+    "NILS18": "host-group-6cd781c3e9191cc3",
+    "NILS19": "host-group-7d47b8e4cf7a8db3",
+    "NILS20": "host-group-d10a725ff2e85c26",
+    "NILS21": "host-group-8123309d3d507d0b",
+    "NILS22": "host-group-de004c37397ca8b8",
+    "NILS23": "host-group-9cf228d8557aaf2e",
+    "NILS24": "host-group-2b25ab35450b1863",
+    "NILS25": "host-group-65f2932bab81cba8",
+    "NILS26": "host-group-2b3be0523bc50298",
+    "NILS27": "host-group-65f2932bab81cba8",
+    "NILS28": "host-group-873bcd623ae2e9f8",
+    "NILS29": "host-group-8b4869cd805e92ad",
+    "NILS30": "host-group-5819f4b13b59e3ac",
+    "NILS31": "host-group-90412ef7fe756ed1",
+    "NILS32": "host-group-ece4d8d6e5ff1db4",
+    "NILS33": "host-group-824216539157aa72",
+    "NILS34": "host-group-6181f25163843008",
+    "NILS35": "host-group-926b5567bea028b4",
+    "NILS36": "host-group-7b7ff6a3bc3e8d48",
+    "NILS37": "host-group-aa6d4f69194387c9",
+    "NILS38": "host-group-5f4b67029a40ffb5",
+    "NILS39": "host-group-d8658cb392d6e07e",
+    "NILS40": "host-group-6181f25163843008",
+    "NILS41": "host-group-5bd5e3e1e65a8d35",
+    "NILS42": "host-group-1497da401e5eae7d",
+    "NILS43": "host-group-f2e12d44ea18a73c",
+    "NILS44": "host-group-d8a3243875074c26",
+    "NILS45": "host-group-790cc88f32c4ec94",
+    "NILS46": "host-group-d68f231e41840adc",
+    "NILS47": "host-group-68bb157fd3f54129",
+    "NILS48": "host-group-ab2e0122f965c889",
+    "NILS49": "host-group-9813608eeeddcc0a",
+    "NILS50": "host-group-07583119ac16407d",
+    "NILS51": "host-group-1025225e5e1ae1dc",
+    "NILS52": "host-group-330c6957b0d94eda",
+    "NILS53": "host-group-d8a3243875074c26",
+    "NILS54": "host-group-c1f412291599a108",
+    "NILS55": "host-group-65f2932bab81cba8",
+    "NILS56": "host-group-26be1fe0f4850315",
+    "NILS57": "host-group-31cf95b9b3b30224",
+    "NILS58": "host-group-078ab9ad3d91369b",
+    "NILS59": "host-group-f8b57f2ad8b421b8",
+    "NILS60": "host-group-e7a59e0918c7ee38",
+    "NILS61": "host-group-35b5eba8562dbabf",
+    "NILS62": "host-group-c1f412291599a108",
+    "NILS63": "host-group-50785d24f57d0c05",
+    "NILS64": "host-group-65f2932bab81cba8",
+    "NILS65": "host-group-8b4869cd805e92ad",
+    "NILS66": "host-group-62b9d6ceddc98b7e",
+    "NILS67": "host-group-44fb17a440ce7b2f",
+    "NILS68": "host-group-30f671f6218b5037",
+    "NILS69": "host-group-1844cb2bff473635",
+    "NILS70": "host-group-878c87c901ed7dd5",
+    "NILS71": "host-group-46afad387c575b0e",
+    "NILS72": "host-group-8b4869cd805e92ad",
+    "NILS73": "host-group-65f2932bab81cba8",
+    "NILS74": "host-group-f3997e1a4386ba43",
+    "NILS75": "host-group-735179e1606e754e",
+    "NILS76": "host-group-d8a3243875074c26",
+    "NILS77": "host-group-85290a51d9044af0",
+    "NILS78": "host-group-31cf95b9b3b30224",
+    "NILS79": "host-group-8b4869cd805e92ad",
+    "NILS80": "host-group-2b3be0523bc50298",
+    "NILS81": "host-group-506704452baed762",
+    "NILS82": "host-group-31cf95b9b3b30224",
+    "NRG807C": "host-group-a946aadfc732a005",
+    "PDP110": "host-group-0047a8801ebf7025",
+    "PDP21": "host-group-145e9bed9fdf24d1",
+    "PDP351": "host-group-2457e87aee6bca06",
+    "ROAR012": "host-group-94ed5d3437e4418a",
+    "ROAR019": "host-group-f65580dbfa128b80",
+    "ROAR029": "host-group-1dc897784e846674",
+    "ROAR036": "host-group-24a93ce080fbeec5",
+    "ROAR043": "host-group-098358c2d14814be",
+    "ROAR047": "host-group-c394e5f45c5fae3b",
+    "ROAR059": "host-group-b1ffe3d22c4bd4e7",
+    "ROAR061": "host-group-c394e5f45c5fae3b",
+    "ROAR072": "host-group-c394e5f45c5fae3b",
+    "ROAR082": "host-group-c394e5f45c5fae3b",
+    "ROAR116": "host-group-1e40e558158d67fa",
+    "ROAR129": "host-group-23b2b197e060f50f",
+    "ROAR130": "host-group-71162328d4bd0326",
+    "ROAR131": "host-group-47f96f01028b9556",
+    "ROAR145": "host-group-5e4175704cfef9bd",
+    "ROAR176": "host-group-3b09e6b610e6354e",
+    "ROAR178": "host-group-414931040ff29b2b",
+    "ROAR185": "host-group-e6a9dfe622d1707e",
+    "ROAR205": "host-group-a090d45b4d2bdf75",
+    "ROAR220": "host-group-3b09e6b610e6354e",
+    "ROAR274": "host-group-269e57e88effd112",
+    "ROAR291": "host-group-902e0514b86eec2c",
+    "ROAR292": "host-group-9003507576ce3f76",
+    "ROAR334": "host-group-773fc272effa88b1",
+    "ROAR344": "host-group-7f91c85352eb4713",
+    "ROAR387": "host-group-ca1d2a33a4eccdd5",
+    "ROAR400": "host-group-4aa8555c52f52b88",
+    "ROAR419": "host-group-414931040ff29b2b",
+    "ROAR434": "host-group-4a1209e051bfe87c",
+    "ROAR438": "host-group-cf1690dc5bd1f193",
+    "S1109": "host-group-a9bf54d51b9e2831",
+    "S111": "host-group-fd57f7742872b085",
+    "S176": "host-group-d94f1ec0f1f99770",
+    "S184": "host-group-b95a8dc9cb3bb169",
+    "S191": "host-group-1b83c58581ae8c59",
+    "S21": "host-group-3d7e42422c97b7d7",
+    "T145": "host-group-c1f412291599a108",
+    "T147": "host-group-6f241651ecb59b35",
+    "T205": "host-group-75ebe3eae9251fb3",
+    "TW10509": "host-group-ff9be377f7215a96",
+    "VDG427": "host-group-222c8d5621a60c73"
+  },
+  "named_target_groups": {
+    "BL21": {
+      "matched_source_id": "BL21",
+      "group_id": "host-group-1c11bae2991a6b26",
+      "status": "provisional_name_match"
+    },
+    "BW25113": {
+      "matched_source_id": null,
+      "group_id": null,
+      "status": "not_in_source_roster_by_name"
+    },
+    "MG1655": {
+      "matched_source_id": null,
+      "group_id": null,
+      "status": "not_in_source_roster_by_name"
+    }
+  },
+  "original_cv_folds_recovered": false,
+  "training_or_scoring_executed": false,
+  "phenotype_values_used_for_grouping": false,
+  "interpretation": "Reconstructed related-host groups, not original CV folds. All source hosts retained as possible bridges. Named target flags do not establish stock identity or replace target-reference genome/ANI exclusions; no automatic fold assignment."
+}

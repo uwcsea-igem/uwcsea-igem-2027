@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-07",
+  "purpose": "Fixed protein-calling feasibility and source-proteome correspondence check, before any new interaction scores; not a training run",
+  "scope": "All 97 authenticated deposited phage sequence representations and both frozen targets; all eight currently verified host assemblies and three frozen target hosts. Availability subset is not a training-data substitute.",
+  "source_length_caveat": "Collection FASTA lengths differ systematically from collection metadata by +60/+62bp; retain exact sequences, do not trim; source-length investigation is separate.",
+  "phage_manifest": {
+    "path": "data/processed/genophi-phage-inputs.json",
+    "sha256": "d0f66b3bba527aa8cc32b327ed7f15107fbcd0943faefa6b1fda2496f528185c",
+    "normalized_fasta": "data/raw/genophi-phage-audit/normalized-v3/genomes.fna"
+  },
+  "host_integrity_report": {
+    "path": "data/processed/genophi-genome-integrity.json",
+    "sha256": "f4eb1c60ab9005717ebf46555a21d9823d98cee8d747564f41f8180ce51769f3"
+  },
+  "available_hosts": [
+    {
+      "source_id": "B1747",
+      "path": "hosts/46741543.fasta",
+      "file_sha256": "3445b60570f03544ded03a503ce16028dd56e46ce90d3113cf70a079ff803247",
+      "sequence_sha256": "e6353b7bae527ad45e6a03fafec27bae17ece0615d592d1519dd5ad8935961a7",
+      "total_bases": 5586570,
+      "contigs": 476
+    },
+    {
+      "source_id": "ECOR-10",
+      "path": "hosts/46741642.fasta",
+      "file_sha256": "9700ca26147983b448f5a798c1d92cef7a13ea003fb50a28c085ba4baf3a5e3c",
+      "sequence_sha256": "f4e072f5f8699cff473fdb9697e64d1a94360fa94079893a0b1257f6e98bcd27",
+      "total_bases": 4761848,
+      "contigs": 132
+    },
+    {
+      "source_id": "ECOR-18",
+      "path": "hosts/46741666.fasta",
+      "file_sha256": "ebe0b677a82bacddb3a375434bb137800556ed6ccb3be3596f645a87d8f6fe8e",
+      "sequence_sha256": "18d86115c4c6c71c24425c902bf46359be4929c770b9e5682177fc7f01f4a126",
+      "total_bases": 4591733,
+      "contigs": 96
+    },
+    {
+      "source_id": "ECOR-32",
+      "path": "hosts/46741708.fasta",
+      "file_sha256": "82a6873cd6bf5429dac2996fb5964dd4ed7f264177ed79f62b45ce6ec4b62fa0",
+      "sequence_sha256": "b2e3605e72c9aa39bc022db002b9ddc95da10c6fd2a17bbc0d16407b770cc655",
+      "total_bases": 4814697,
+      "contigs": 118
+    },
+    {
+      "source_id": "ECOR-40",
+      "path": "hosts/46741732.fasta",
+      "file_sha256": "cd010fbaed4c264dd5a2a6290c0b49174899ec26001a182d0387395810311b59",
+      "sequence_sha256": "5dd4302e9029e4bd50bb985b4d1d53cbae7004b6e4746955a60d60096555d4dc",
+      "total_bases": 5201754,
+      "contigs": 210
+    },
+    {
+      "source_id": "ECOR-72",
+      "path": "hosts/46741831.fasta",
+      "file_sha256": "ab74592bebf3c490ac57cbdd9a8d8f7e59d57c6732faaa71eb80552e6ac07d2d",
+      "sequence_sha256": "ea3ad1e043aee69c37a6fe00df2e05f80e83965eecedb3413fdd096ab2de7a43",
+      "total_bases": 5036947,
+      "contigs": 137
+    },
+    {
+      "source_id": "FN116",
+      "path": "hosts/46741846.fasta",
+      "file_sha256": "82ea68775776f8c429ddef5d42975e613c302534ac811920781b843a89f5be0e",
+      "sequence_sha256": "6bc981644a67644587080fe88ccad72b52f180fc105cc801449a7795d63bda6a",
+      "total_bases": 4746520,
+      "contigs": 171
+    },
+    {
+      "source_id": "IAI38",
+      "path": "hosts/46742119.fasta",
+      "file_sha256": "c89ca3b7907afb0b9911b7f8bfb1af7b63e79bae401a80707d83575b6d2be1a5",
+      "sequence_sha256": "75bf8de6a000b5d411e5df5770cde3b562053a006d19b9d50ece0238f6d63052",
+      "total_bases": 5233971,
+      "contigs": 129
+    }
+  ],
+  "host_root": "data/raw/genophi-genomes",
+  "target_manifest": {
+    "path": "software/tipcraft/benchmarks/retro-t7-t3/wish-inputs.json",
+    "sha256": "939af977b8c00763b957ad9640e58c68387a306f8bde69068cf4a78baac28528",
+    "genomes_root": "data/raw/wish"
+  },
+  "upstream_repository": {
+    "url": "https://github.com/Noonanav/GenoPHI",
+    "commit": "f7e30abc1b0bbba1ae76b8f58a3363bbbc5cd54f",
+    "tree_cache": "data/raw/genophi-audit/tree.json",
+    "root_tree_sha1": "e42e64caaaea9efb8aca2af00d2dd84541bfe946"
+  },
+  "demo_comparison": {
+    "directory": "data/raw/genophi-annotation/demo",
+    "selector": "All 25 pinned data/test_data/phage_AAs/*.faa; compare exact amino-acid sequence multisets, ignoring headers and one terminal stop. Preserve internal stops as errors. No tool/parameter selection using comparison results.",
+    "expected_files": 25
+  },
+  "tools": {
+    "host": {
+      "provenance_path": "data/raw/tools/prodigal-2.6.3/provenance.json",
+      "provenance_sha256": "fca12f2b49e9835ec5ee842d865331ca2abe04532134b1d6b971b30f9647a40a",
+      "repository": "https://github.com/hyattpd/Prodigal",
+      "commit": "004218fbeb2cf54fe12d88ec2eede6a27d70ebf7",
+      "executable": "data/raw/tools/prodigal-2.6.3/source/prodigal",
+      "executable_sha256": "4d797d04df4c259e5f46c512269a543d9d53f9614c27eef07a2e6f10ebdb898e",
+      "version_stderr": "\nProdigal V2.6.3: February, 2016\n\n"
+    },
+    "phage": {
+      "provenance_path": "data/raw/tools/prodigal-gv-2.11.0/provenance.json",
+      "provenance_sha256": "ca1a66af44590ec22001c431e0edee0cb75c50fdc45aff4c671690629839905b",
+      "repository": "https://github.com/apcamargo/prodigal-gv",
+      "commit": "80e488b3cdd7123684f001759eaf50cdb879c81a",
+      "executable": "data/raw/tools/prodigal-gv-2.11.0/source/prodigal-gv",
+      "executable_sha256": "e91deecbdefaad79dfc7ce37610deab0c6eee3b47b30d91a1c1581d24269c900",
+      "version_stderr": "\nProdigal V2.11.0-gv: March, 2023\n\n"
+    }
+  },
+  "commands": {
+    "host": [
+      "-p",
+      "single",
+      "-g",
+      "11",
+      "-q",
+      "-f",
+      "gff"
+    ],
+    "phage": [
+      "-p",
+      "meta",
+      "-q",
+      "-f",
+      "gff"
+    ]
+  },
+  "execution": {
+    "workers": 1,
+    "timeout_seconds_per_genome": 180,
+    "stop_on_any_annotation_error": true
+  },
+  "outputs": "Raw .faa and .gff in ignored storage, file and protein-multiset hashes, per-genome counts, demo correspondence, gene-caller resource observations. No host labels, model fitting, feature clustering, receptor design or orderable DNA.",
+  "interpretation": "An exact demo multiset match would support this annotation stage for those genomes, not experimental stock identity or full GenoPHI replication. Target gp17 exact recovery is a diagnostic only. Do not change gene calls after inspecting target outcomes."
+}

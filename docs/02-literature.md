@@ -21,3 +21,7 @@ Keep an explicit distinction between binding, oligomer formation, incorporation 
 2. Does “T3 swap” mean the published full/C-terminal exchange or a new boundary? Which primary figure supports the intended scope?
 3. What observation will count as direct evidence for assembly, separately from binding and infection?
 4. Which claims, if any, have already been checked against original figures and supplementary data?
+
+## Independent strain-scoring follow-up
+
+The [next-method feasibility review](09-next-method-feasibility.md) adds a bounded primary-source comparison of GenoPHI, Escherichia per-phage classifiers, PhageHostLearn, PhageMind, CHERRY and iPHoP, with explicit receptor, endpoint and training-data limits. GenoPHI is a conditional lead; no second method has produced independent target scores. The original four claim checks above remain in force.

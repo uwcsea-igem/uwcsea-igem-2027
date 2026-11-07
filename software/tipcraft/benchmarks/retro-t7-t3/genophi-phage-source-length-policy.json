@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-07",
+  "purpose": "Source-only investigation of deposited phage length/terminal representation; no phenotype analysis or sequence alteration",
+  "recorded_before_expanded_terminal_diagnostic": true,
+  "known_prior_observations": "96 metadata-matched FASTAs exceed listed Genome_size (95 by 60 bases, LF110_P4 by 62); all 97 inspected FASTAs have identical first/last 60-base strings. This follow-up is not blind or prospectively independent of those observations.",
+  "source_commit": "99656d8c020fcd1dbbc30a02ee10274a07655562",
+  "source_tree_sha1": "550f10819c6d565214bc26d1e3fea59af17ec398",
+  "metadata_path": "data/genomics/phages/guelin_collection.csv",
+  "metadata_git_blob_sha1": "d76435a1bfd0cf493607fb9cf4e4e904ea1ad6a8",
+  "maximum_terminal_overlap_bases": 120,
+  "expected_source_files": 97,
+  "expected_metadata_rows": 96,
+  "source_scope": "Every pinned blob under data/genomics/phages/FNA/ ending .fna; expect 97 source files, 96 exact metadata-name matches and one source lacking a metadata row",
+  "terminal_comparison": "For each retained source sequence, enumerate every exact prefix/suffix match length from 1 through 120 bases, inclusive. Report lengths only; do not export nucleotide strings.",
+  "ambiguity_summary": "Count leading/trailing N runs and total N/non-ACGT bases; inspect whether ambiguity explains length differences without deleting bases.",
+  "empty_record_policy": "Only the pre-reviewed exact-hash-bound T4LD leading empty record can be skipped for sequence inspection; retain raw file and all sequence bases.",
+  "interpretation": "Terminal overlap and metadata agreement are representation diagnostics; they do not identify natural termini, authorize trimming, authenticate experimental stock identity, or establish circularization. Owning-source generation rationale must be documented separately.",
+  "no_sequence_changes": true,
+  "phenotype_table_input": false,
+  "training_or_prediction": false
+}

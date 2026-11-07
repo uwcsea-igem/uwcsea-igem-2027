@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-07",
+  "recorded_before_original_R_calculation": true,
+  "purpose": "Execute original pinned VIRIDIC directional function on existing BLAST HSPs and compare all results with the Python adaptation",
+  "upstream_commit": "d7db8031a27bc6b06ff5cb1245e372caf3794b93",
+  "upstream_url": "https://raw.githubusercontent.com/CristinaMoraru/VIRIDIC/d7db8031a27bc6b06ff5cb1245e372caf3794b93/VIRIDIC/stand_alone/viridic_scripts/01_VIRIDIC_sim_calc.R",
+  "inputs": {
+    "blast_tsv": {
+      "path": "data/raw/genophi-phage-audit/alignment-v2/blastn-data.tsv",
+      "sha256": "2dff2995aebb354f39d1a8b8b52bda10056e50f2caf1b2adaa7ceb8f0a19bcbb"
+    },
+    "adapter_output": {
+      "path": "data/raw/genophi-phage-audit/alignment-v2/similarities.json",
+      "sha256": "0ad1ed3246533df09c9687e4ce1be8b460335d921e010d9950d69416f44ee26c"
+    },
+    "genome_lengths": {
+      "path": "data/raw/genophi-phage-audit/normalized-v2/lengths.json",
+      "sha256": "e2ecc15d20cbdab5b1a99c93398c880cb4f1e7a9682a163a2698409bf8005da3"
+    },
+    "adapter_source": {
+      "path": "scripts/third_party/viridic_directional.py",
+      "sha256": "e1d19de908f4f066ad79f88eb22bc021ea849b2b9b4c86baa501d371e9c872a4"
+    },
+    "upstream_source": {
+      "path": "data/raw/tools/r-4.6.2/01_VIRIDIC_sim_calc.R",
+      "sha256": "2b74443ed33c761829211c29e463077b8878c1037c813f6cfd284b67d5d36e93"
+    }
+  },
+  "scope": {
+    "genomes": 99,
+    "distinct_unordered_pairs": 4851,
+    "ordered_nonself_pairs_including_absent_hits": 9702,
+    "self_controls": 99
+  },
+  "agreement_requirements": {
+    "directional_nident": "exact integer equality for all 9702 nonself directions; absent hits zero",
+    "original_aligned_query_bases": "exact integer equality for all 9702 nonself directions",
+    "unrounded_similarity_absolute_tolerance_percentage_points": 1e-12,
+    "three_decimal_similarity": "exact equality for all 4851 pairs",
+    "pair_count": "exact 4851; unique complete unordered pairs",
+    "self_controls": "original nident and original aligned span equal declared genome length for all 99 genomes"
+  },
+  "execution": "Parse the nident_fun expression from the pinned original R source unchanged; execute with actual dplyr/magrittr/IRanges/stringr/seqinr packages, using base R for iteration and input/output. Do not substitute compatibility shims. Do not source full script, repeat BLAST, fit models, change HSP row order or retune parameters.",
+  "runtime_limits": {
+    "new_runtime_disk_bytes": 500000000,
+    "installation_target_minutes": 15,
+    "system_installation": false
+  },
+  "interpretation": "A passing comparison supports only the original directional-function calculation and symmetric numeric outputs on this frozen HSP dataset, not full-pipeline or universal upstream equivalence.",
+  "runtime_manifest_sha256": "0cff0ce62cea22306adacb707c87abd75800036678b47ba0916778569ed930b1",
+  "comparison_helper_sha256": "ddb414bcba69ed8770bf08387644af6c8f33631958955308fda6db96a6284b38"
+}

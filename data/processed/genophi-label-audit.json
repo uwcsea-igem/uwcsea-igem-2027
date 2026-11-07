@@ -1,0 +1,1363 @@
+{
+  "schema_version": 1,
+  "reviewed_date": "2026-11-07",
+  "source_commit": "99656d8c020fcd1dbbc30a02ee10274a07655562",
+  "original_table_url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/interactions/interaction_matrix.csv",
+  "original_table_git_blob_sha1": "25a3f894c5a3832e81b42c8de60c12ffb9429569",
+  "original_table_sha256": "ec0aa5553a726e2161ea15d687a677ee2ed623873fb2a897432d0777582ad829",
+  "genophi_table_sha256": "c4795d786a1e13ac998e263dbf4aaf95fc0f94c52b842d02b6f7fc6e99ccfef2",
+  "name_matching_rule": "unique case-insensitive alphanumeric identifier; no phenotype-based matching",
+  "binary_rule": "original nonblank MLC value > 0; consistent with published method",
+  "source_blank_policy": "exclude from future fitting/calibration/evaluation pending source clarification; never infer negative from absence",
+  "model_rows": 37788,
+  "source_hosts": 402,
+  "crosschecked_host_correspondence": {
+    "001023": "001-023",
+    "001031C1": "001-031-c1",
+    "003026": "003-026",
+    "013008": "013-008",
+    "025010": "025-010",
+    "034008": "034-008",
+    "034026C1": "034-026-c1",
+    "035004": "035-004",
+    "370D": "370D",
+    "381A": "381A",
+    "536": "536",
+    "55989": "55989",
+    "916A": "916A",
+    "921A": "921A",
+    "AL505": "AL505",
+    "AN03": "AN03",
+    "AN17": "AN17",
+    "AN24": "AN24",
+    "ASP51G": "Asp51g",
+    "ATCC35469T": "ATCC35469T",
+    "B090": "B090",
+    "B1147": "B1147",
+    "B12I13": "B12I13",
+    "B156": "B156",
+    "B1747": "B1747",
+    "B1932": "B1932",
+    "B253": "B253",
+    "B49": "B49",
+    "B691": "B691",
+    "B6A1": "B6A1",
+    "B992": "B992",
+    "BCH953": "BCH953",
+    "BDX03": "BDX03",
+    "BDX09": "BDX09",
+    "BE": "BE",
+    "BEN4D": "Ben4d",
+    "BL21": "BL21",
+    "C2119": "C2-119",
+    "COLF12G": "colF12g",
+    "DEC1A": "DEC1a",
+    "DEC2A": "DEC2a",
+    "DIJ06": "DIJ06",
+    "DIJ07": "DIJ07",
+    "E1426": "E1426",
+    "E1492": "E1492",
+    "E2052": "E2052",
+    "E234869": "E2348_69",
+    "E4962": "E4962",
+    "E7519": "E7519",
+    "EALBERTIICIP107988T": "E_albertiiCIP107988T",
+    "EC6230": "EC6230",
+    "ECOR01": "ECOR-01",
+    "ECOR02": "ECOR-02",
+    "ECOR03": "ECOR-03",
+    "ECOR04": "ECOR-04",
+    "ECOR05": "ECOR-05",
+    "ECOR06": "ECOR-06",
+    "ECOR07": "ECOR-07",
+    "ECOR08": "ECOR-08",
+    "ECOR09": "ECOR-09",
+    "ECOR10": "ECOR-10",
+    "ECOR11": "ECOR-11",
+    "ECOR12": "ECOR-12",
+    "ECOR13": "ECOR-13",
+    "ECOR14": "ECOR-14",
+    "ECOR15": "ECOR-15",
+    "ECOR16": "ECOR-16",
+    "ECOR17": "ECOR-17",
+    "ECOR18": "ECOR-18",
+    "ECOR19": "ECOR-19",
+    "ECOR20": "ECOR-20",
+    "ECOR21": "ECOR-21",
+    "ECOR22": "ECOR-22",
+    "ECOR23": "ECOR-23",
+    "ECOR24": "ECOR-24",
+    "ECOR25": "ECOR-25",
+    "ECOR26": "ECOR-26",
+    "ECOR27": "ECOR-27",
+    "ECOR28": "ECOR-28",
+    "ECOR29": "ECOR-29",
+    "ECOR30": "ECOR-30",
+    "ECOR31": "ECOR-31",
+    "ECOR32": "ECOR-32",
+    "ECOR33": "ECOR-33",
+    "ECOR34": "ECOR-34",
+    "ECOR35": "ECOR-35",
+    "ECOR36": "ECOR-36",
+    "ECOR37": "ECOR-37",
+    "ECOR38": "ECOR-38",
+    "ECOR39": "ECOR-39",
+    "ECOR40": "ECOR-40",
+    "ECOR41": "ECOR-41",
+    "ECOR42": "ECOR-42",
+    "ECOR43A": "ECOR-43_A",
+    "ECOR44": "ECOR-44",
+    "ECOR45": "ECOR-45",
+    "ECOR46": "ECOR-46",
+    "ECOR47": "ECOR-47",
+    "ECOR48": "ECOR-48",
+    "ECOR49": "ECOR-49",
+    "ECOR50": "ECOR-50",
+    "ECOR51": "ECOR-51",
+    "ECOR52": "ECOR-52",
+    "ECOR53": "ECOR-53",
+    "ECOR54": "ECOR-54",
+    "ECOR55": "ECOR-55",
+    "ECOR56": "ECOR-56",
+    "ECOR57": "ECOR-57",
+    "ECOR58": "ECOR-58",
+    "ECOR59": "ECOR-59",
+    "ECOR60": "ECOR-60",
+    "ECOR61": "ECOR-61",
+    "ECOR62": "ECOR-62",
+    "ECOR63": "ECOR-63",
+    "ECOR64": "ECOR-64",
+    "ECOR65": "ECOR-65",
+    "ECOR66": "ECOR-66",
+    "ECOR67": "ECOR-67",
+    "ECOR69": "ECOR-69",
+    "ECOR70": "ECOR-70",
+    "ECOR71": "ECOR-71",
+    "ECOR72": "ECOR-72",
+    "ED1A": "ED1a",
+    "EDL933": "EDL933",
+    "EFERGUSONIIIVAN": "E_fergusonii-IVAN",
+    "FN116": "FN116",
+    "FN126": "FN126",
+    "FN89": "FN89",
+    "FNB4": "FN-B4",
+    "FNB7": "FN-B7",
+    "FNB9": "FN-B9",
+    "H009": "H009",
+    "H10010003SJ": "H1-001-0003-S-J",
+    "H10010013LJ": "H1-001-0013-L-J",
+    "H10010020MO": "H1-001-0020-M-O",
+    "H10010027SG": "H1-001-0027-S-G",
+    "H10010034SM": "H1-001-0034-S-M",
+    "H10010053KC": "H1-001-0053-K-C",
+    "H10010093RA": "H1-001-0093-R-A",
+    "H10010121QJ": "H1-001-0121-Q-J",
+    "H10010125BM": "H1-001-0125-B-M",
+    "H10010131CA": "H1-001-0131-C-A",
+    "H10010154TK": "H1-001-0154-T-K",
+    "H10010155MI": "H1-001-0155-M-I",
+    "H10020007MM": "H1-002-0007-M-M",
+    "H10020011MG": "H1-002-0011-M-G",
+    "H10020060CT": "H1-002-0060-C-T",
+    "H10020064EM": "H1-002-0064-E-M",
+    "H10020069VG": "H1-002-0069-V-G",
+    "H10030010GJ": "H1-003-0010-G-J",
+    "H10030019BM": "H1-003-0019-B-M",
+    "H10030035DE": "H1-003-0035-D-E",
+    "H10030054PP": "H1-003-0054-P-P",
+    "H10030071CJ": "H1-003-0071-C-J",
+    "H10030079GR": "H1-003-0079-G-R",
+    "H10030088BJ": "H1-003-0088-B-J",
+    "H10030090VJ": "H1-003-0090-V-J",
+    "H10030105CR": "H1-003-0105-C-R",
+    "H10030115LR": "H1-003-0115-L-R",
+    "H10030116VR": "H1-003-0116-V-R",
+    "H10030120PR": "H1-003-0120-P-R",
+    "H10040007OM": "H1-004-0007-O-M",
+    "H10040017BM": "H1-004-0017-B-M",
+    "H10040021WI": "H1-004-0021-W-I",
+    "H10050012LM": "H1-005-0012-L-M",
+    "H10050058MA": "H1-005-0058-M-A",
+    "H10060003SL": "H1-006-0003-S-L",
+    "H10060022LR": "H1-006-0022-L-R",
+    "H10070015DG": "H1-007-0015-D-G",
+    "H10070037HD": "H1-007-0037-H-D",
+    "H14": "H14",
+    "H384": "H384",
+    "H4": "H4",
+    "H442": "H442",
+    "H47": "H47",
+    "H48": "H48",
+    "H70": "H70",
+    "H95": "H95",
+    "IAI01": "IAI01",
+    "IAI02": "IAI02",
+    "IAI03": "IAI03",
+    "IAI04": "IAI04",
+    "IAI05": "IAI05",
+    "IAI06": "IAI06",
+    "IAI07": "IAI07",
+    "IAI08": "IAI08",
+    "IAI09": "IAI09",
+    "IAI10": "IAI10",
+    "IAI11": "IAI11",
+    "IAI12": "IAI12",
+    "IAI13": "IAI13",
+    "IAI14": "IAI14",
+    "IAI15": "IAI15",
+    "IAI16": "IAI16",
+    "IAI17": "IAI17",
+    "IAI18": "IAI18",
+    "IAI19": "IAI19",
+    "IAI20": "IAI20",
+    "IAI21": "IAI21",
+    "IAI22": "IAI22",
+    "IAI23": "IAI23",
+    "IAI24": "IAI24",
+    "IAI25": "IAI25",
+    "IAI26": "IAI26",
+    "IAI27": "IAI27",
+    "IAI28": "IAI28",
+    "IAI29": "IAI29",
+    "IAI30": "IAI30",
+    "IAI31": "IAI31",
+    "IAI32": "IAI32",
+    "IAI33": "IAI33",
+    "IAI34": "IAI34",
+    "IAI35": "IAI35",
+    "IAI36": "IAI36",
+    "IAI37": "IAI37",
+    "IAI38": "IAI38",
+    "IAI39": "IAI39",
+    "IAI40": "IAI40",
+    "IAI41": "IAI41",
+    "IAI42": "IAI42",
+    "IAI43": "IAI43",
+    "IAI44": "IAI44",
+    "IAI45": "IAI45",
+    "IAI46": "IAI46",
+    "IAI47": "IAI47",
+    "IAI48": "IAI48",
+    "IAI49": "IAI49",
+    "IAI50": "IAI50",
+    "IAI51": "IAI51",
+    "IAI53": "IAI53",
+    "IAI54": "IAI54",
+    "IAI55": "IAI55",
+    "IAI56": "IAI56",
+    "IAI57": "IAI57",
+    "IAI58": "IAI58",
+    "IAI59": "IAI59",
+    "IAI60": "IAI60",
+    "IAI61": "IAI61",
+    "IAI62": "IAI62",
+    "IAI63": "IAI63",
+    "IAI64": "IAI64",
+    "IAI65": "IAI65",
+    "IAI66": "IAI66",
+    "IAI67": "IAI67",
+    "IAI68": "IAI68",
+    "IAI69": "IAI69",
+    "IAI70": "IAI70",
+    "IAI71": "IAI71",
+    "IAI72": "IAI72",
+    "IAI73": "IAI73",
+    "IAI74": "IAI74",
+    "IAI75": "IAI75",
+    "IAI76": "IAI76",
+    "IAI77": "IAI77",
+    "IAI78": "IAI78",
+    "IAI79": "IAI79",
+    "IAI80": "IAI80",
+    "IAI81": "IAI81",
+    "IAI82": "IAI82",
+    "LF31": "LF31",
+    "LF50": "LF50",
+    "LF7074": "LF7074",
+    "LF73": "LF73",
+    "LF82": "LF82",
+    "LI10": "LI10",
+    "LM02": "LM02",
+    "LM07": "LM07",
+    "LM08": "LM08",
+    "LM33": "LM33",
+    "LM40": "LM40",
+    "LMR3158": "LMR-3158",
+    "M863": "M863",
+    "MT1B1": "MT1B1",
+    "NAN33": "NAN33",
+    "NIC06": "NIC06",
+    "NILS01": "NILS01",
+    "NILS02": "NILS02",
+    "NILS03": "NILS03",
+    "NILS04": "NILS04",
+    "NILS05": "NILS05",
+    "NILS06": "NILS06",
+    "NILS07": "NILS07",
+    "NILS08": "NILS08",
+    "NILS09": "NILS09",
+    "NILS10": "NILS10",
+    "NILS11": "NILS11",
+    "NILS12": "NILS12",
+    "NILS13": "NILS13",
+    "NILS14": "NILS14",
+    "NILS15": "NILS15",
+    "NILS16": "NILS16",
+    "NILS17": "NILS17",
+    "NILS18": "NILS18",
+    "NILS19": "NILS19",
+    "NILS20": "NILS20",
+    "NILS21": "NILS21",
+    "NILS22": "NILS22",
+    "NILS23": "NILS23",
+    "NILS24": "NILS24",
+    "NILS25": "NILS25",
+    "NILS26": "NILS26",
+    "NILS27": "NILS27",
+    "NILS28": "NILS28",
+    "NILS29": "NILS29",
+    "NILS30": "NILS30",
+    "NILS31": "NILS31",
+    "NILS32": "NILS32",
+    "NILS33": "NILS33",
+    "NILS34": "NILS34",
+    "NILS35": "NILS35",
+    "NILS36": "NILS36",
+    "NILS37": "NILS37",
+    "NILS38": "NILS38",
+    "NILS39": "NILS39",
+    "NILS40": "NILS40",
+    "NILS41": "NILS41",
+    "NILS42": "NILS42",
+    "NILS43": "NILS43",
+    "NILS44": "NILS44",
+    "NILS45": "NILS45",
+    "NILS46": "NILS46",
+    "NILS47": "NILS47",
+    "NILS48": "NILS48",
+    "NILS49": "NILS49",
+    "NILS50": "NILS50",
+    "NILS51": "NILS51",
+    "NILS52": "NILS52",
+    "NILS53": "NILS53",
+    "NILS54": "NILS54",
+    "NILS55": "NILS55",
+    "NILS56": "NILS56",
+    "NILS57": "NILS57",
+    "NILS58": "NILS58",
+    "NILS59": "NILS59",
+    "NILS60": "NILS60",
+    "NILS61": "NILS61",
+    "NILS62": "NILS62",
+    "NILS63": "NILS63",
+    "NILS64": "NILS64",
+    "NILS65": "NILS65",
+    "NILS66": "NILS66",
+    "NILS67": "NILS67",
+    "NILS68": "NILS68",
+    "NILS69": "NILS69",
+    "NILS70": "NILS70",
+    "NILS71": "NILS71",
+    "NILS72": "NILS72",
+    "NILS73": "NILS73",
+    "NILS74": "NILS74",
+    "NILS75": "NILS75",
+    "NILS76": "NILS76",
+    "NILS77": "NILS77",
+    "NILS78": "NILS78",
+    "NILS79": "NILS79",
+    "NILS80": "NILS80",
+    "NILS81": "NILS81",
+    "NILS82": "NILS82",
+    "NRG807C": "NRG807C",
+    "PDP110": "PDP110",
+    "PDP21": "PDP21",
+    "PDP351": "PDP351",
+    "ROAR012": "ROAR012",
+    "ROAR019": "ROAR019",
+    "ROAR029": "ROAR029",
+    "ROAR036": "ROAR036",
+    "ROAR043": "ROAR043",
+    "ROAR047": "ROAR047",
+    "ROAR059": "ROAR059",
+    "ROAR061": "ROAR061",
+    "ROAR072": "ROAR072",
+    "ROAR082": "ROAR082",
+    "ROAR116": "ROAR116",
+    "ROAR129": "ROAR129",
+    "ROAR130": "ROAR130",
+    "ROAR131": "ROAR131",
+    "ROAR145": "ROAR145",
+    "ROAR176": "ROAR176",
+    "ROAR178": "ROAR178",
+    "ROAR185": "ROAR185",
+    "ROAR205": "ROAR205",
+    "ROAR220": "ROAR220",
+    "ROAR274": "ROAR274",
+    "ROAR291": "ROAR291",
+    "ROAR292": "ROAR292",
+    "ROAR334": "ROAR334",
+    "ROAR344": "ROAR344",
+    "ROAR387": "ROAR387",
+    "ROAR400": "ROAR400",
+    "ROAR419": "ROAR419",
+    "ROAR434": "ROAR434",
+    "ROAR438": "ROAR438",
+    "S1109": "S1-109",
+    "S111": "S1-11",
+    "S176": "S1-76",
+    "S184": "S1-84",
+    "S191": "S1-91",
+    "S21": "S2-1",
+    "T145": "T145",
+    "T147": "T147",
+    "T205": "T205",
+    "TW10509": "TW10509",
+    "VDG427": "VDG427"
+  },
+  "concordant_nonblank_pairs": 37632,
+  "source_blank_pairs": [
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "409_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "409_P3",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "409_P5",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "409_P6",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "409_P8",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "411_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "411_P2",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "412_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "412_P2",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "412_P3",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "412_P4",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "412_P5",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "416_P4",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "416_P5",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "423_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "423_P10",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "423_P5",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "423_P7",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "423_P9",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "427_P2",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "427_P3",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "427_P4",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "536_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "536_P11",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "536_P12",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "536_P6",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "55989_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "AL505_Ev3",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "AL505_Sd2",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "AN17_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "AN17_P8",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "AN24_P2",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "AN24_P3",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "AN24_P4",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "BCH953_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "BCH953_P2",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "BCH953_P3",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "BCH953_P4",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "BCH953_P5",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "BDX03_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "BDX03_P2",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "BDX09_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "DIJ06_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "DIJ07_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "LF110_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "LF50_P3",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "LF7074_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "LF7074_P2",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "LF73_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "LM40_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "LM40_P2",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "LM40_P3",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "MT1B1_3A1",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "NAN33_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "NAN33_P2",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "NAN33_P4",
+      "imported_label": 0
+    },
+    {
+      "strain": "001023",
+      "source_strain": "001-023",
+      "phage": "NAN33_P6",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "AL505_Ev3",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "AL505_Sd2",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "AN17_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "AN17_P8",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "AN24_P2",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "LF110_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "LF110_P2",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "LF110_P3",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "LF110_P4",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "LF31_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "LF31_P3",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "LF7074_P3",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "LF73_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "LF73_P3",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "LF73_P4",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "LF82_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "LF82_P2",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "LF82_P3",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "LF82_P4",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "LF82_P5",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "LF82_P6",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "LF82_P8",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "LF82_P9",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "LI10_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "LI10_P2",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "LI10_P3",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "LI10_P4",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "LI10_P5",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "LI10_P6",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "LM02_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "LM07_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "LM08_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "LM08_P2",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "LM33_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "LM40_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "NAN33_P5",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "NAN33_P6",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "NIC06_P2",
+      "imported_label": 0
+    },
+    {
+      "strain": "370D",
+      "source_strain": "370D",
+      "phage": "NIC06_P3",
+      "imported_label": 0
+    },
+    {
+      "strain": "E2052",
+      "source_strain": "E2052",
+      "phage": "NAN33_P5",
+      "imported_label": 0
+    },
+    {
+      "strain": "E7519",
+      "source_strain": "E7519",
+      "phage": "AN24_P3",
+      "imported_label": 0
+    },
+    {
+      "strain": "E7519",
+      "source_strain": "E7519",
+      "phage": "BDX03_P2",
+      "imported_label": 0
+    },
+    {
+      "strain": "EC6230",
+      "source_strain": "EC6230",
+      "phage": "LM40_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "EC6230",
+      "source_strain": "EC6230",
+      "phage": "NAN33_P5",
+      "imported_label": 0
+    },
+    {
+      "strain": "EC6230",
+      "source_strain": "EC6230",
+      "phage": "NRG_11A2",
+      "imported_label": 0
+    },
+    {
+      "strain": "ECOR53",
+      "source_strain": "ECOR-53",
+      "phage": "LM40_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "ECOR53",
+      "source_strain": "ECOR-53",
+      "phage": "NAN33_P5",
+      "imported_label": 0
+    },
+    {
+      "strain": "FNB9",
+      "source_strain": "FN-B9",
+      "phage": "55989_P2",
+      "imported_label": 0
+    },
+    {
+      "strain": "FNB9",
+      "source_strain": "FN-B9",
+      "phage": "AN24_P3",
+      "imported_label": 0
+    },
+    {
+      "strain": "FNB9",
+      "source_strain": "FN-B9",
+      "phage": "BDX03_P2",
+      "imported_label": 0
+    },
+    {
+      "strain": "H009",
+      "source_strain": "H009",
+      "phage": "LM40_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "H009",
+      "source_strain": "H009",
+      "phage": "NAN33_P5",
+      "imported_label": 0
+    },
+    {
+      "strain": "H384",
+      "source_strain": "H384",
+      "phage": "AN24_P3",
+      "imported_label": 0
+    },
+    {
+      "strain": "H384",
+      "source_strain": "H384",
+      "phage": "BDX03_P2",
+      "imported_label": 0
+    },
+    {
+      "strain": "H384",
+      "source_strain": "H384",
+      "phage": "NAN33_P5",
+      "imported_label": 0
+    },
+    {
+      "strain": "H384",
+      "source_strain": "H384",
+      "phage": "NRG_11A2",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI12",
+      "source_strain": "IAI12",
+      "phage": "BDX03_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "409_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "409_P3",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "409_P5",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "409_P6",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "409_P8",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "411_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "411_P2",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "412_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "412_P2",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "412_P3",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "412_P4",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "412_P5",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "416_P4",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "416_P5",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "423_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "423_P10",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "423_P5",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "423_P7",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "423_P9",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "427_P2",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "427_P3",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "427_P4",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "LI10_P4",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "LI10_P5",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "LI10_P6",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "LM02_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "LM07_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "LM08_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "MT1B1_3A1",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "NAN33_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "NAN33_P2",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "NAN33_P4",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "NAN33_P5",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "NAN33_P6",
+      "imported_label": 0
+    },
+    {
+      "strain": "IAI64",
+      "source_strain": "IAI64",
+      "phage": "NIC06_P3",
+      "imported_label": 0
+    },
+    {
+      "strain": "PDP110",
+      "source_strain": "PDP110",
+      "phage": "LF73_P4",
+      "imported_label": 0
+    },
+    {
+      "strain": "ROAR185",
+      "source_strain": "ROAR185",
+      "phage": "AN24_P3",
+      "imported_label": 0
+    },
+    {
+      "strain": "ROAR185",
+      "source_strain": "ROAR185",
+      "phage": "BDX03_P2",
+      "imported_label": 0
+    },
+    {
+      "strain": "S184",
+      "source_strain": "S1-84",
+      "phage": "LM40_P1",
+      "imported_label": 0
+    },
+    {
+      "strain": "S184",
+      "source_strain": "S1-84",
+      "phage": "NAN33_P5",
+      "imported_label": 0
+    },
+    {
+      "strain": "S184",
+      "source_strain": "S1-84",
+      "phage": "NRG_11A2",
+      "imported_label": 0
+    },
+    {
+      "strain": "VDG427",
+      "source_strain": "VDG427",
+      "phage": "NRG_11A2",
+      "imported_label": 0
+    }
+  ],
+  "conflicting_nonblank_pairs": [],
+  "eligible_label_rows_before_sequence_exclusions": 37632,
+  "label_curation_status": "consistent_nonblank_subset",
+  "sequence_identity_verified": false,
+  "training_or_prediction_executed": false,
+  "interpretation": "Cross-source curation of external training data. Agreement corroborates naming correspondence, not stock identity or model performance. Blank-cell semantics remain unresolved."
+}

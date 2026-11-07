@@ -1,0 +1,4995 @@
+{
+  "schema_version": 1,
+  "reviewed_date": "2026-11-07",
+  "source_commit": "99656d8c020fcd1dbbc30a02ee10274a07655562",
+  "source_tree_sha1": "550f10819c6d565214bc26d1e3fea59af17ec398",
+  "genophi_table_sha256": "c4795d786a1e13ac998e263dbf4aaf95fc0f94c52b842d02b6f7fc6e99ccfef2",
+  "source_artifacts": [
+    {
+      "url": "https://api.github.com/repos/mdmparis/coli_phage_interactions_2023/git/trees/99656d8c020fcd1dbbc30a02ee10274a07655562?recursive=1",
+      "cache_file": "coli-tree.json",
+      "sha256": "953c05748a0381f2bc2f50f12deca890e96487953bf699ed07fb7883a8e4c545"
+    },
+    {
+      "url": "https://api.figshare.com/v2/articles/25941691/versions/1",
+      "cache_file": "figshare-v1.json",
+      "sha256": "36075755866c80309437013c6886160c1db250792c2a354f4707541f3c82a892"
+    }
+  ],
+  "host_deposit_doi": "10.6084/m9.figshare.25941691.v1",
+  "reviewed_host_file_inventory_sha256": "fc5019c8de4a88d2432b298624374f1b7006ae8102fddbbc997e4dea9d20c24e",
+  "available_file_metadata": {
+    "hosts": 403,
+    "phages": 97
+  },
+  "host_summary": {
+    "total": 402,
+    "exact_identifier_matches": 265,
+    "unresolved": [
+      "001023",
+      "001031C1",
+      "003026",
+      "013008",
+      "025010",
+      "034008",
+      "034026C1",
+      "035004",
+      "ASP51G",
+      "BEN4D",
+      "C2119",
+      "COLF12G",
+      "DEC1A",
+      "DEC2A",
+      "E234869",
+      "EALBERTIICIP107988T",
+      "ECOR01",
+      "ECOR02",
+      "ECOR03",
+      "ECOR04",
+      "ECOR05",
+      "ECOR06",
+      "ECOR07",
+      "ECOR08",
+      "ECOR09",
+      "ECOR10",
+      "ECOR11",
+      "ECOR12",
+      "ECOR13",
+      "ECOR14",
+      "ECOR15",
+      "ECOR16",
+      "ECOR17",
+      "ECOR18",
+      "ECOR19",
+      "ECOR20",
+      "ECOR21",
+      "ECOR22",
+      "ECOR23",
+      "ECOR24",
+      "ECOR25",
+      "ECOR26",
+      "ECOR27",
+      "ECOR28",
+      "ECOR29",
+      "ECOR30",
+      "ECOR31",
+      "ECOR32",
+      "ECOR33",
+      "ECOR34",
+      "ECOR35",
+      "ECOR36",
+      "ECOR37",
+      "ECOR38",
+      "ECOR39",
+      "ECOR40",
+      "ECOR41",
+      "ECOR42",
+      "ECOR43A",
+      "ECOR44",
+      "ECOR45",
+      "ECOR46",
+      "ECOR47",
+      "ECOR48",
+      "ECOR49",
+      "ECOR50",
+      "ECOR51",
+      "ECOR52",
+      "ECOR53",
+      "ECOR54",
+      "ECOR55",
+      "ECOR56",
+      "ECOR57",
+      "ECOR58",
+      "ECOR59",
+      "ECOR60",
+      "ECOR61",
+      "ECOR62",
+      "ECOR63",
+      "ECOR64",
+      "ECOR65",
+      "ECOR66",
+      "ECOR67",
+      "ECOR69",
+      "ECOR70",
+      "ECOR71",
+      "ECOR72",
+      "ED1A",
+      "EFERGUSONIIIVAN",
+      "FNB4",
+      "FNB7",
+      "FNB9",
+      "H10010003SJ",
+      "H10010013LJ",
+      "H10010020MO",
+      "H10010027SG",
+      "H10010034SM",
+      "H10010053KC",
+      "H10010093RA",
+      "H10010121QJ",
+      "H10010125BM",
+      "H10010131CA",
+      "H10010154TK",
+      "H10010155MI",
+      "H10020007MM",
+      "H10020011MG",
+      "H10020060CT",
+      "H10020064EM",
+      "H10020069VG",
+      "H10030010GJ",
+      "H10030019BM",
+      "H10030035DE",
+      "H10030054PP",
+      "H10030071CJ",
+      "H10030079GR",
+      "H10030088BJ",
+      "H10030090VJ",
+      "H10030105CR",
+      "H10030115LR",
+      "H10030116VR",
+      "H10030120PR",
+      "H10040007OM",
+      "H10040017BM",
+      "H10040021WI",
+      "H10050012LM",
+      "H10050058MA",
+      "H10060003SL",
+      "H10060022LR",
+      "H10070015DG",
+      "H10070037HD",
+      "LMR3158",
+      "S1109",
+      "S111",
+      "S176",
+      "S184",
+      "S191",
+      "S21"
+    ]
+  },
+  "phage_summary": {
+    "total": 94,
+    "exact_identifier_matches": 94,
+    "unresolved": []
+  },
+  "hosts": {
+    "001023": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "001-023"
+      ]
+    },
+    "001031C1": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "001-031-c1"
+      ]
+    },
+    "003026": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "003-026"
+      ]
+    },
+    "013008": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "013-008"
+      ]
+    },
+    "025010": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "025-010"
+      ]
+    },
+    "034008": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "034-008"
+      ]
+    },
+    "034026C1": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "034-026-c1"
+      ]
+    },
+    "035004": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "035-004"
+      ]
+    },
+    "370D": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "370D",
+        "file_id": 46741477,
+        "url": "https://ndownloader.figshare.com/files/46741477",
+        "bytes": 5366840,
+        "deposited_md5": "ac66db7bea180c41e8895eb481acff03"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "381A": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "381A",
+        "file_id": 46741480,
+        "url": "https://ndownloader.figshare.com/files/46741480",
+        "bytes": 5234473,
+        "deposited_md5": "da3bfcc345c452dfc07d2448af7d5c53"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "536": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "536",
+        "file_id": 46741483,
+        "url": "https://ndownloader.figshare.com/files/46741483",
+        "bytes": 4953825,
+        "deposited_md5": "185f1b45d517eeeef2d040c750c0d8c3"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "55989": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "55989",
+        "file_id": 46741492,
+        "url": "https://ndownloader.figshare.com/files/46741492",
+        "bytes": 5197767,
+        "deposited_md5": "73a42bc3eb21cb2cd057c83c6137d2df"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "916A": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "916A",
+        "file_id": 46741486,
+        "url": "https://ndownloader.figshare.com/files/46741486",
+        "bytes": 5372307,
+        "deposited_md5": "c5026519d8b30f2ab583204910a5af31"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "921A": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "921A",
+        "file_id": 46741489,
+        "url": "https://ndownloader.figshare.com/files/46741489",
+        "bytes": 5221444,
+        "deposited_md5": "394a53f0cc89d5c8bfdfcb1f4b06e6f2"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "AL505": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "AL505",
+        "file_id": 46741495,
+        "url": "https://ndownloader.figshare.com/files/46741495",
+        "bytes": 5455540,
+        "deposited_md5": "35d6fab77823183b4f22cfb8acfba25e"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "AN03": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "AN03",
+        "file_id": 46741498,
+        "url": "https://ndownloader.figshare.com/files/46741498",
+        "bytes": 5449827,
+        "deposited_md5": "20868d534ca2611b0418b26e3a6c32e1"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "AN17": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "AN17",
+        "file_id": 46741501,
+        "url": "https://ndownloader.figshare.com/files/46741501",
+        "bytes": 5209870,
+        "deposited_md5": "748e6b758c553992b5e30aea44fa012d"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "AN24": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "AN24",
+        "file_id": 46741504,
+        "url": "https://ndownloader.figshare.com/files/46741504",
+        "bytes": 5230885,
+        "deposited_md5": "202275ae816c94e2b0487b225366d428"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ASP51G": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "Asp51g"
+      ]
+    },
+    "ATCC35469T": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ATCC35469T",
+        "file_id": 46741510,
+        "url": "https://ndownloader.figshare.com/files/46741510",
+        "bytes": 4702061,
+        "deposited_md5": "8b619251587a0ab3e5a70f69c2c827fa"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "B090": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "B090",
+        "file_id": 46741519,
+        "url": "https://ndownloader.figshare.com/files/46741519",
+        "bytes": 4895799,
+        "deposited_md5": "1b3cedd427996bf0408edb813ddab280"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "B1147": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "B1147",
+        "file_id": 46741540,
+        "url": "https://ndownloader.figshare.com/files/46741540",
+        "bytes": 4569167,
+        "deposited_md5": "d61a8f36a39049eae07300e9082534af"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "B12I13": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "B12I13",
+        "file_id": 46741528,
+        "url": "https://ndownloader.figshare.com/files/46741528",
+        "bytes": 6008502,
+        "deposited_md5": "01f316d2d4dc6dc27b868a32f9f54a81"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "B156": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "B156",
+        "file_id": 46741525,
+        "url": "https://ndownloader.figshare.com/files/46741525",
+        "bytes": 5110642,
+        "deposited_md5": "1a6a2aa7facd9a45dd761f5b408b792c"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "B1747": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "B1747",
+        "file_id": 46741543,
+        "url": "https://ndownloader.figshare.com/files/46741543",
+        "bytes": 5696632,
+        "deposited_md5": "24e3a5191934a14c52ee1d3986da79a7"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "B1932": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "B1932",
+        "file_id": 46741546,
+        "url": "https://ndownloader.figshare.com/files/46741546",
+        "bytes": 5332516,
+        "deposited_md5": "7dd7a865dc49fc9642e0691f7eee6e4a"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "B253": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "B253",
+        "file_id": 46741531,
+        "url": "https://ndownloader.figshare.com/files/46741531",
+        "bytes": 4852200,
+        "deposited_md5": "b2a5e66746333f4d5dcc9e2a42666f52"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "B49": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "B49",
+        "file_id": 46741516,
+        "url": "https://ndownloader.figshare.com/files/46741516",
+        "bytes": 4853280,
+        "deposited_md5": "be4c4aa7daa9cd458d1fb5493101c429"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "B691": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "B691",
+        "file_id": 46741534,
+        "url": "https://ndownloader.figshare.com/files/46741534",
+        "bytes": 4970810,
+        "deposited_md5": "e22678eeaadf5bfc6eddd0ed2ec917d7"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "B6A1": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "B6A1",
+        "file_id": 46741513,
+        "url": "https://ndownloader.figshare.com/files/46741513",
+        "bytes": 5330547,
+        "deposited_md5": "abf6182ebdc3a760b967a18f2df6578e"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "B992": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "B992",
+        "file_id": 46741537,
+        "url": "https://ndownloader.figshare.com/files/46741537",
+        "bytes": 4585011,
+        "deposited_md5": "647703afde603419d7e0f7209464dee2"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "BCH953": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "BCH953",
+        "file_id": 46741552,
+        "url": "https://ndownloader.figshare.com/files/46741552",
+        "bytes": 5201060,
+        "deposited_md5": "94ac5656dfa2f5d73599bf70ad7f5ce8"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "BDX03": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "BDX03",
+        "file_id": 46741555,
+        "url": "https://ndownloader.figshare.com/files/46741555",
+        "bytes": 5232505,
+        "deposited_md5": "7f5f3b4210bd8993bbf41c1ac76a348d"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "BDX09": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "BDX09",
+        "file_id": 46741558,
+        "url": "https://ndownloader.figshare.com/files/46741558",
+        "bytes": 5067525,
+        "deposited_md5": "aabb5a91250dcead67a91d1c9836f7ff"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "BE": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "BE",
+        "file_id": 46741561,
+        "url": "https://ndownloader.figshare.com/files/46741561",
+        "bytes": 4615109,
+        "deposited_md5": "871e147bad7136b2aef845ddb16961b7"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "BEN4D": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "Ben4d"
+      ]
+    },
+    "BL21": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "BL21",
+        "file_id": 46741567,
+        "url": "https://ndownloader.figshare.com/files/46741567",
+        "bytes": 4572339,
+        "deposited_md5": "a2a7327b47e1e52c7aff678bb8d04889"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "C2119": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "C2-119"
+      ]
+    },
+    "COLF12G": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "colF12g"
+      ]
+    },
+    "DEC1A": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "DEC1a"
+      ]
+    },
+    "DEC2A": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "DEC2a"
+      ]
+    },
+    "DIJ06": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "DIJ06",
+        "file_id": 46741582,
+        "url": "https://ndownloader.figshare.com/files/46741582",
+        "bytes": 5590594,
+        "deposited_md5": "76659e44a6eff1590299b7d8abfe6ffd"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "DIJ07": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "DIJ07",
+        "file_id": 46741585,
+        "url": "https://ndownloader.figshare.com/files/46741585",
+        "bytes": 5208001,
+        "deposited_md5": "4d5cfc0e6a5857b6abab6849d6da2854"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "E1426": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "E1426",
+        "file_id": 46741594,
+        "url": "https://ndownloader.figshare.com/files/46741594",
+        "bytes": 5255330,
+        "deposited_md5": "17acffd50eec3e487e4422cc8694d325"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "E1492": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "E1492",
+        "file_id": 46741597,
+        "url": "https://ndownloader.figshare.com/files/46741597",
+        "bytes": 5659879,
+        "deposited_md5": "14ac7396521b09b849007b6707dddbb7"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "E2052": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "E2052",
+        "file_id": 46741600,
+        "url": "https://ndownloader.figshare.com/files/46741600",
+        "bytes": 5315633,
+        "deposited_md5": "9fea3cf92dec72d52e1550aec22410ee"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "E234869": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "E2348_69"
+      ]
+    },
+    "E4962": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "E4962",
+        "file_id": 46741606,
+        "url": "https://ndownloader.figshare.com/files/46741606",
+        "bytes": 4877004,
+        "deposited_md5": "339fa9085538748b14541051b445f008"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "E7519": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "E7519",
+        "file_id": 46741609,
+        "url": "https://ndownloader.figshare.com/files/46741609",
+        "bytes": 5422011,
+        "deposited_md5": "ee9025ec8535799fce04a2a36cbd6c1f"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "EALBERTIICIP107988T": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "E_albertiiCIP107988T"
+      ]
+    },
+    "EC6230": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "EC6230",
+        "file_id": 46741612,
+        "url": "https://ndownloader.figshare.com/files/46741612",
+        "bytes": 5191238,
+        "deposited_md5": "404ed54faf1dee71f1f7f15b370f200e"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ECOR01": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-01"
+      ]
+    },
+    "ECOR02": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-02"
+      ]
+    },
+    "ECOR03": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-03"
+      ]
+    },
+    "ECOR04": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-04"
+      ]
+    },
+    "ECOR05": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-05"
+      ]
+    },
+    "ECOR06": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-06"
+      ]
+    },
+    "ECOR07": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-07"
+      ]
+    },
+    "ECOR08": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-08"
+      ]
+    },
+    "ECOR09": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-09"
+      ]
+    },
+    "ECOR10": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-10"
+      ]
+    },
+    "ECOR11": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-11"
+      ]
+    },
+    "ECOR12": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-12"
+      ]
+    },
+    "ECOR13": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-13"
+      ]
+    },
+    "ECOR14": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-14"
+      ]
+    },
+    "ECOR15": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-15"
+      ]
+    },
+    "ECOR16": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-16"
+      ]
+    },
+    "ECOR17": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-17"
+      ]
+    },
+    "ECOR18": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-18"
+      ]
+    },
+    "ECOR19": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-19"
+      ]
+    },
+    "ECOR20": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-20"
+      ]
+    },
+    "ECOR21": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-21"
+      ]
+    },
+    "ECOR22": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-22"
+      ]
+    },
+    "ECOR23": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-23"
+      ]
+    },
+    "ECOR24": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-24"
+      ]
+    },
+    "ECOR25": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-25"
+      ]
+    },
+    "ECOR26": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-26"
+      ]
+    },
+    "ECOR27": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-27"
+      ]
+    },
+    "ECOR28": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-28"
+      ]
+    },
+    "ECOR29": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-29"
+      ]
+    },
+    "ECOR30": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-30"
+      ]
+    },
+    "ECOR31": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-31"
+      ]
+    },
+    "ECOR32": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-32"
+      ]
+    },
+    "ECOR33": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-33"
+      ]
+    },
+    "ECOR34": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-34"
+      ]
+    },
+    "ECOR35": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-35"
+      ]
+    },
+    "ECOR36": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-36"
+      ]
+    },
+    "ECOR37": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-37"
+      ]
+    },
+    "ECOR38": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-38"
+      ]
+    },
+    "ECOR39": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-39"
+      ]
+    },
+    "ECOR40": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-40"
+      ]
+    },
+    "ECOR41": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-41"
+      ]
+    },
+    "ECOR42": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-42"
+      ]
+    },
+    "ECOR43A": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-43_A"
+      ]
+    },
+    "ECOR44": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-44"
+      ]
+    },
+    "ECOR45": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-45"
+      ]
+    },
+    "ECOR46": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-46"
+      ]
+    },
+    "ECOR47": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-47"
+      ]
+    },
+    "ECOR48": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-48"
+      ]
+    },
+    "ECOR49": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-49"
+      ]
+    },
+    "ECOR50": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-50"
+      ]
+    },
+    "ECOR51": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-51"
+      ]
+    },
+    "ECOR52": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-52"
+      ]
+    },
+    "ECOR53": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-53"
+      ]
+    },
+    "ECOR54": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-54"
+      ]
+    },
+    "ECOR55": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-55"
+      ]
+    },
+    "ECOR56": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-56"
+      ]
+    },
+    "ECOR57": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-57"
+      ]
+    },
+    "ECOR58": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-58"
+      ]
+    },
+    "ECOR59": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-59"
+      ]
+    },
+    "ECOR60": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-60"
+      ]
+    },
+    "ECOR61": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-61"
+      ]
+    },
+    "ECOR62": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-62"
+      ]
+    },
+    "ECOR63": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-63"
+      ]
+    },
+    "ECOR64": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-64"
+      ]
+    },
+    "ECOR65": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-65"
+      ]
+    },
+    "ECOR66": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-66"
+      ]
+    },
+    "ECOR67": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-67"
+      ]
+    },
+    "ECOR69": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-69"
+      ]
+    },
+    "ECOR70": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-70"
+      ]
+    },
+    "ECOR71": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-71"
+      ]
+    },
+    "ECOR72": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ECOR-72"
+      ]
+    },
+    "ED1A": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "ED1a"
+      ]
+    },
+    "EDL933": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "EDL933",
+        "file_id": 46741837,
+        "url": "https://ndownloader.figshare.com/files/46741837",
+        "bytes": 5620671,
+        "deposited_md5": "5e6d9caf8ae0a3b09079a6aa7d36bcdd"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "EFERGUSONIIIVAN": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "E_fergusonii-IVAN"
+      ]
+    },
+    "FN116": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "FN116",
+        "file_id": 46741846,
+        "url": "https://ndownloader.figshare.com/files/46741846",
+        "bytes": 4831271,
+        "deposited_md5": "f76e2b870c2e87d32092f90c33772a7f"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "FN126": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "FN126",
+        "file_id": 46741849,
+        "url": "https://ndownloader.figshare.com/files/46741849",
+        "bytes": 4697946,
+        "deposited_md5": "98145862f5e47443fe678732840b980c"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "FN89": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "FN89",
+        "file_id": 46741843,
+        "url": "https://ndownloader.figshare.com/files/46741843",
+        "bytes": 4831944,
+        "deposited_md5": "e455a46166cb07e4852320043fb2f22c"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "FNB4": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "FN-B4"
+      ]
+    },
+    "FNB7": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "FN-B7"
+      ]
+    },
+    "FNB9": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "FN-B9"
+      ]
+    },
+    "H009": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "H009",
+        "file_id": 46741981,
+        "url": "https://ndownloader.figshare.com/files/46741981",
+        "bytes": 5333102,
+        "deposited_md5": "4da88d66fe8061c24b2e3c9b09baa7a3"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "H10010003SJ": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-001-0003-S-J"
+      ]
+    },
+    "H10010013LJ": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-001-0013-L-J"
+      ]
+    },
+    "H10010020MO": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-001-0020-M-O"
+      ]
+    },
+    "H10010027SG": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-001-0027-S-G"
+      ]
+    },
+    "H10010034SM": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-001-0034-S-M"
+      ]
+    },
+    "H10010053KC": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-001-0053-K-C"
+      ]
+    },
+    "H10010093RA": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-001-0093-R-A"
+      ]
+    },
+    "H10010121QJ": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-001-0121-Q-J"
+      ]
+    },
+    "H10010125BM": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-001-0125-B-M"
+      ]
+    },
+    "H10010131CA": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-001-0131-C-A"
+      ]
+    },
+    "H10010154TK": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-001-0154-T-K"
+      ]
+    },
+    "H10010155MI": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-001-0155-M-I"
+      ]
+    },
+    "H10020007MM": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-002-0007-M-M"
+      ]
+    },
+    "H10020011MG": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-002-0011-M-G"
+      ]
+    },
+    "H10020060CT": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-002-0060-C-T"
+      ]
+    },
+    "H10020064EM": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-002-0064-E-M"
+      ]
+    },
+    "H10020069VG": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-002-0069-V-G"
+      ]
+    },
+    "H10030010GJ": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-003-0010-G-J"
+      ]
+    },
+    "H10030019BM": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-003-0019-B-M"
+      ]
+    },
+    "H10030035DE": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-003-0035-D-E"
+      ]
+    },
+    "H10030054PP": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-003-0054-P-P"
+      ]
+    },
+    "H10030071CJ": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-003-0071-C-J"
+      ]
+    },
+    "H10030079GR": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-003-0079-G-R"
+      ]
+    },
+    "H10030088BJ": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-003-0088-B-J"
+      ]
+    },
+    "H10030090VJ": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-003-0090-V-J"
+      ]
+    },
+    "H10030105CR": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-003-0105-C-R"
+      ]
+    },
+    "H10030115LR": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-003-0115-L-R"
+      ]
+    },
+    "H10030116VR": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-003-0116-V-R"
+      ]
+    },
+    "H10030120PR": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-003-0120-P-R"
+      ]
+    },
+    "H10040007OM": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-004-0007-O-M"
+      ]
+    },
+    "H10040017BM": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-004-0017-B-M"
+      ]
+    },
+    "H10040021WI": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-004-0021-W-I"
+      ]
+    },
+    "H10050012LM": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-005-0012-L-M"
+      ]
+    },
+    "H10050058MA": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-005-0058-M-A"
+      ]
+    },
+    "H10060003SL": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-006-0003-S-L"
+      ]
+    },
+    "H10060022LR": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-006-0022-L-R"
+      ]
+    },
+    "H10070015DG": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-007-0015-D-G"
+      ]
+    },
+    "H10070037HD": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "H1-007-0037-H-D"
+      ]
+    },
+    "H14": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "H14",
+        "file_id": 46741984,
+        "url": "https://ndownloader.figshare.com/files/46741984",
+        "bytes": 5179095,
+        "deposited_md5": "14e0328bd1130591ad6661f521a99da8"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "H384": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "H384",
+        "file_id": 46742002,
+        "url": "https://ndownloader.figshare.com/files/46742002",
+        "bytes": 5197473,
+        "deposited_md5": "170cbc3f3004026ebc620b628c246c80"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "H4": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "H4",
+        "file_id": 46741978,
+        "url": "https://ndownloader.figshare.com/files/46741978",
+        "bytes": 4736662,
+        "deposited_md5": "28daf5f0b83570bb7596b601befd4fe0"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "H442": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "H442",
+        "file_id": 46742005,
+        "url": "https://ndownloader.figshare.com/files/46742005",
+        "bytes": 5032976,
+        "deposited_md5": "2594aed064381484281ffd7603e70d18"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "H47": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "H47",
+        "file_id": 46741990,
+        "url": "https://ndownloader.figshare.com/files/46741990",
+        "bytes": 5362221,
+        "deposited_md5": "57afba87131252f81b4e95b05eae2f80"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "H48": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "H48",
+        "file_id": 46741993,
+        "url": "https://ndownloader.figshare.com/files/46741993",
+        "bytes": 4730175,
+        "deposited_md5": "ccd81761dba489f65be5b8eb4232d85d"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "H70": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "H70",
+        "file_id": 46741996,
+        "url": "https://ndownloader.figshare.com/files/46741996",
+        "bytes": 4943561,
+        "deposited_md5": "11adf54b5630d37f8bdc8b834ff971db"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "H95": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "H95",
+        "file_id": 46741999,
+        "url": "https://ndownloader.figshare.com/files/46741999",
+        "bytes": 4860476,
+        "deposited_md5": "f2c47dc849ad4b84c21e9974fee11053"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI01": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI01",
+        "file_id": 46742008,
+        "url": "https://ndownloader.figshare.com/files/46742008",
+        "bytes": 4778967,
+        "deposited_md5": "915c4a1e02bc2f3f8bc9c8894feac6f7"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI02": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI02",
+        "file_id": 46742011,
+        "url": "https://ndownloader.figshare.com/files/46742011",
+        "bytes": 4942417,
+        "deposited_md5": "bab23987045d7ac72b46ee5fc65c919f"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI03": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI03",
+        "file_id": 46742014,
+        "url": "https://ndownloader.figshare.com/files/46742014",
+        "bytes": 4955225,
+        "deposited_md5": "412edf88b127097142ff6c1e947866e7"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI04": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI04",
+        "file_id": 46742017,
+        "url": "https://ndownloader.figshare.com/files/46742017",
+        "bytes": 4556541,
+        "deposited_md5": "9e8a3d026862c0a8f537e1066401fc6d"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI05": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI05",
+        "file_id": 46742020,
+        "url": "https://ndownloader.figshare.com/files/46742020",
+        "bytes": 5258103,
+        "deposited_md5": "0c86de1f44fa5b4f79cad5a884ea83ac"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI06": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI06",
+        "file_id": 46742023,
+        "url": "https://ndownloader.figshare.com/files/46742023",
+        "bytes": 4998756,
+        "deposited_md5": "7adc097010dd09e72429345fca7b80fa"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI07": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI07",
+        "file_id": 46742026,
+        "url": "https://ndownloader.figshare.com/files/46742026",
+        "bytes": 5040319,
+        "deposited_md5": "8d1e6074d79b0509927cd7ad200507a2"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI08": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI08",
+        "file_id": 46742029,
+        "url": "https://ndownloader.figshare.com/files/46742029",
+        "bytes": 4881516,
+        "deposited_md5": "201867cb4b9785bd1f6643525368d783"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI09": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI09",
+        "file_id": 46742032,
+        "url": "https://ndownloader.figshare.com/files/46742032",
+        "bytes": 4942057,
+        "deposited_md5": "ea9455e2419975861dc95a0c24189a9e"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI10": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI10",
+        "file_id": 46742035,
+        "url": "https://ndownloader.figshare.com/files/46742035",
+        "bytes": 4683536,
+        "deposited_md5": "7d2e6fa8ce7e7decf9f2e567ae8617aa"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI11": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI11",
+        "file_id": 46742038,
+        "url": "https://ndownloader.figshare.com/files/46742038",
+        "bytes": 5237242,
+        "deposited_md5": "0e93d15e12edb4d3764778a207744fa1"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI12": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI12",
+        "file_id": 46742041,
+        "url": "https://ndownloader.figshare.com/files/46742041",
+        "bytes": 4785146,
+        "deposited_md5": "13818e741c831e9ab2483d02742f2e44"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI13": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI13",
+        "file_id": 46742044,
+        "url": "https://ndownloader.figshare.com/files/46742044",
+        "bytes": 4766174,
+        "deposited_md5": "7bc1aa4b017a950aef145a7664264abd"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI14": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI14",
+        "file_id": 46742047,
+        "url": "https://ndownloader.figshare.com/files/46742047",
+        "bytes": 4794999,
+        "deposited_md5": "fe61ec7d105d4a9c119fbbfe76cf513f"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI15": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI15",
+        "file_id": 46742050,
+        "url": "https://ndownloader.figshare.com/files/46742050",
+        "bytes": 5030399,
+        "deposited_md5": "3ad811bc194a2900f2a9e50cbd29df42"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI16": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI16",
+        "file_id": 46742053,
+        "url": "https://ndownloader.figshare.com/files/46742053",
+        "bytes": 4796919,
+        "deposited_md5": "cc8e204be3df7bea5fe64c1543ac4c00"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI17": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI17",
+        "file_id": 46742056,
+        "url": "https://ndownloader.figshare.com/files/46742056",
+        "bytes": 5152025,
+        "deposited_md5": "e3328b80382bf7c84a7719ca0532e358"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI18": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI18",
+        "file_id": 46742059,
+        "url": "https://ndownloader.figshare.com/files/46742059",
+        "bytes": 5096975,
+        "deposited_md5": "0ac578fad12a0bb6922aee69522d3030"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI19": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI19",
+        "file_id": 46742062,
+        "url": "https://ndownloader.figshare.com/files/46742062",
+        "bytes": 4740266,
+        "deposited_md5": "6a479a4be01584e5ffc4ac58943d2b48"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI20": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI20",
+        "file_id": 46742065,
+        "url": "https://ndownloader.figshare.com/files/46742065",
+        "bytes": 4795134,
+        "deposited_md5": "d53d337f5ddf2d9d931b33b6f9d22f1a"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI21": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI21",
+        "file_id": 46742068,
+        "url": "https://ndownloader.figshare.com/files/46742068",
+        "bytes": 5050297,
+        "deposited_md5": "782636171d70313e1f093a50546d5e32"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI22": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI22",
+        "file_id": 46742071,
+        "url": "https://ndownloader.figshare.com/files/46742071",
+        "bytes": 4871714,
+        "deposited_md5": "18585a502c641fc58b6287d9923418ab"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI23": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI23",
+        "file_id": 46742074,
+        "url": "https://ndownloader.figshare.com/files/46742074",
+        "bytes": 4848707,
+        "deposited_md5": "37e30c946526c2d7333aa14a35be1fe7"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI24": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI24",
+        "file_id": 46742077,
+        "url": "https://ndownloader.figshare.com/files/46742077",
+        "bytes": 5031006,
+        "deposited_md5": "dcc1772afcca1dfd327cbafb087ac14f"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI25": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI25",
+        "file_id": 46742080,
+        "url": "https://ndownloader.figshare.com/files/46742080",
+        "bytes": 5040534,
+        "deposited_md5": "f5b1d8c4016e1a4cd08bcb305c6ae9b2"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI26": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI26",
+        "file_id": 46742083,
+        "url": "https://ndownloader.figshare.com/files/46742083",
+        "bytes": 4722961,
+        "deposited_md5": "c8c12090c9ecf3fff70f38617f1a2909"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI27": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI27",
+        "file_id": 46742086,
+        "url": "https://ndownloader.figshare.com/files/46742086",
+        "bytes": 5161912,
+        "deposited_md5": "1eed67bdcc56ea0faacc2c2279c6b33c"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI28": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI28",
+        "file_id": 46742089,
+        "url": "https://ndownloader.figshare.com/files/46742089",
+        "bytes": 4806274,
+        "deposited_md5": "314c8b7edf7a78dda8ea88cfcb7d5fff"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI29": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI29",
+        "file_id": 46742092,
+        "url": "https://ndownloader.figshare.com/files/46742092",
+        "bytes": 4865612,
+        "deposited_md5": "39ef60c82b74a35d34ccdda107f544c0"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI30": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI30",
+        "file_id": 46742095,
+        "url": "https://ndownloader.figshare.com/files/46742095",
+        "bytes": 5163583,
+        "deposited_md5": "2a9ddf8812cd3f1508016ee9ccd639af"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI31": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI31",
+        "file_id": 46742098,
+        "url": "https://ndownloader.figshare.com/files/46742098",
+        "bytes": 5230481,
+        "deposited_md5": "f894bc21098d67fa7ef5f65363c76fd0"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI32": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI32",
+        "file_id": 46742101,
+        "url": "https://ndownloader.figshare.com/files/46742101",
+        "bytes": 5180669,
+        "deposited_md5": "09ac6314e40682924ce5dc96a2768d35"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI33": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI33",
+        "file_id": 46742104,
+        "url": "https://ndownloader.figshare.com/files/46742104",
+        "bytes": 5038609,
+        "deposited_md5": "e91910f9a3d164c5cb4b7e03cb0eb246"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI34": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI34",
+        "file_id": 46742107,
+        "url": "https://ndownloader.figshare.com/files/46742107",
+        "bytes": 4985655,
+        "deposited_md5": "d95bb044edb82bb92dc1a7a98ab62a9a"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI35": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI35",
+        "file_id": 46742110,
+        "url": "https://ndownloader.figshare.com/files/46742110",
+        "bytes": 5260459,
+        "deposited_md5": "28164428007ca5b8d7836d371dee1496"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI36": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI36",
+        "file_id": 46742113,
+        "url": "https://ndownloader.figshare.com/files/46742113",
+        "bytes": 5178197,
+        "deposited_md5": "35d86ea5dfc538084f27185fd9b2f602"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI37": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI37",
+        "file_id": 46742116,
+        "url": "https://ndownloader.figshare.com/files/46742116",
+        "bytes": 5073792,
+        "deposited_md5": "d5e3069b1e94ab457e9d70c6ffd90db1"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI38": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI38",
+        "file_id": 46742119,
+        "url": "https://ndownloader.figshare.com/files/46742119",
+        "bytes": 5327846,
+        "deposited_md5": "0b6f087ca9fef49dde4151d3de4987ba"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI39": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI39",
+        "file_id": 46742122,
+        "url": "https://ndownloader.figshare.com/files/46742122",
+        "bytes": 5217668,
+        "deposited_md5": "bceeb0e404575761dfd0402c94827e86"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI40": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI40",
+        "file_id": 46742125,
+        "url": "https://ndownloader.figshare.com/files/46742125",
+        "bytes": 5122689,
+        "deposited_md5": "7c4433fb97ab40c01769d9c035d8c5ac"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI41": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI41",
+        "file_id": 46742299,
+        "url": "https://ndownloader.figshare.com/files/46742299",
+        "bytes": 4669905,
+        "deposited_md5": "64ed79f59f834e786ed26d0ff114a3f5"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI42": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI42",
+        "file_id": 46742302,
+        "url": "https://ndownloader.figshare.com/files/46742302",
+        "bytes": 4866570,
+        "deposited_md5": "b4e9a8add714ea80586dfd6c64b7c6e7"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI43": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI43",
+        "file_id": 46742305,
+        "url": "https://ndownloader.figshare.com/files/46742305",
+        "bytes": 5494874,
+        "deposited_md5": "a58f1f1667d356c2c89a9897aa873892"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI44": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI44",
+        "file_id": 46742308,
+        "url": "https://ndownloader.figshare.com/files/46742308",
+        "bytes": 4837514,
+        "deposited_md5": "f3006c91d8450acb32babd76d698dd76"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI45": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI45",
+        "file_id": 46742311,
+        "url": "https://ndownloader.figshare.com/files/46742311",
+        "bytes": 5256400,
+        "deposited_md5": "4d067d03ebf83c349d494f303d581f9c"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI46": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI46",
+        "file_id": 46742314,
+        "url": "https://ndownloader.figshare.com/files/46742314",
+        "bytes": 5304395,
+        "deposited_md5": "c75c9eeffdeb022dde2e8f3ae8084a5d"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI47": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI47",
+        "file_id": 46742317,
+        "url": "https://ndownloader.figshare.com/files/46742317",
+        "bytes": 5123516,
+        "deposited_md5": "3497aca6ef973a03d563acb19d46d4a5"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI48": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI48",
+        "file_id": 46742323,
+        "url": "https://ndownloader.figshare.com/files/46742323",
+        "bytes": 5199822,
+        "deposited_md5": "a13862c82d26c3a23e9f613ed090b75f"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI49": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI49",
+        "file_id": 46742320,
+        "url": "https://ndownloader.figshare.com/files/46742320",
+        "bytes": 4992682,
+        "deposited_md5": "5293a10af37e5490694589c07f410bc5"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI50": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI50",
+        "file_id": 46742326,
+        "url": "https://ndownloader.figshare.com/files/46742326",
+        "bytes": 5198467,
+        "deposited_md5": "a73c37f7c28426b9cb9ebd4a69530112"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI51": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI51",
+        "file_id": 46742329,
+        "url": "https://ndownloader.figshare.com/files/46742329",
+        "bytes": 4980726,
+        "deposited_md5": "85801f39368dacb99c68f94d216c99cd"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI53": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI53",
+        "file_id": 46742335,
+        "url": "https://ndownloader.figshare.com/files/46742335",
+        "bytes": 4977936,
+        "deposited_md5": "1d685edc1602e28c61591d16f7e8a337"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI54": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI54",
+        "file_id": 46742332,
+        "url": "https://ndownloader.figshare.com/files/46742332",
+        "bytes": 5176067,
+        "deposited_md5": "e040f7df73b1e18c166be5cf5cbd37c4"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI55": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI55",
+        "file_id": 46742344,
+        "url": "https://ndownloader.figshare.com/files/46742344",
+        "bytes": 4967389,
+        "deposited_md5": "7405d7903e48bfb08bcf21436a42e9d9"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI56": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI56",
+        "file_id": 46742338,
+        "url": "https://ndownloader.figshare.com/files/46742338",
+        "bytes": 5186888,
+        "deposited_md5": "de3aa38b5134ee2c49c0c118cba58cee"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI57": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI57",
+        "file_id": 46742341,
+        "url": "https://ndownloader.figshare.com/files/46742341",
+        "bytes": 5059194,
+        "deposited_md5": "b67c6974b9d8dd5c9d9545e6f3213dc0"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI58": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI58",
+        "file_id": 46742347,
+        "url": "https://ndownloader.figshare.com/files/46742347",
+        "bytes": 5202563,
+        "deposited_md5": "8ffbafbe4eaab64fed71044d3779a503"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI59": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI59",
+        "file_id": 46742350,
+        "url": "https://ndownloader.figshare.com/files/46742350",
+        "bytes": 5022078,
+        "deposited_md5": "804bb5ddd491658002f2562a113eb650"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI60": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI60",
+        "file_id": 46742353,
+        "url": "https://ndownloader.figshare.com/files/46742353",
+        "bytes": 5133482,
+        "deposited_md5": "8265080ea76209f2adcb546470bb0ee4"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI61": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI61",
+        "file_id": 46742356,
+        "url": "https://ndownloader.figshare.com/files/46742356",
+        "bytes": 5028709,
+        "deposited_md5": "63ba85d71dabc3c32d91caa0173a2a0e"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI62": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI62",
+        "file_id": 46742359,
+        "url": "https://ndownloader.figshare.com/files/46742359",
+        "bytes": 5089082,
+        "deposited_md5": "27bd64f9f82bc5c0cb1a94329454fedc"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI63": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI63",
+        "file_id": 46742365,
+        "url": "https://ndownloader.figshare.com/files/46742365",
+        "bytes": 5221777,
+        "deposited_md5": "9f940cbc97facf3d54c42eef0594f869"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI64": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI64",
+        "file_id": 46742362,
+        "url": "https://ndownloader.figshare.com/files/46742362",
+        "bytes": 4983921,
+        "deposited_md5": "5497bd1167dfad676806573dc904479f"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI65": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI65",
+        "file_id": 46742368,
+        "url": "https://ndownloader.figshare.com/files/46742368",
+        "bytes": 4954869,
+        "deposited_md5": "82c297c0a1e4fc17ff4a3fb30c4de01d"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI66": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI66",
+        "file_id": 46742371,
+        "url": "https://ndownloader.figshare.com/files/46742371",
+        "bytes": 4982553,
+        "deposited_md5": "b415d48685626c0b54bdf1be0f17fde4"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI67": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI67",
+        "file_id": 46742374,
+        "url": "https://ndownloader.figshare.com/files/46742374",
+        "bytes": 5355157,
+        "deposited_md5": "659ef5036ec023c4e29a89685295a8e5"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI68": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI68",
+        "file_id": 46742377,
+        "url": "https://ndownloader.figshare.com/files/46742377",
+        "bytes": 5097083,
+        "deposited_md5": "76a36d60ee378ee6347afef3d328cfc9"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI69": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI69",
+        "file_id": 46742380,
+        "url": "https://ndownloader.figshare.com/files/46742380",
+        "bytes": 5138249,
+        "deposited_md5": "cb4d0b228112edf113166387d47232f9"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI70": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI70",
+        "file_id": 46742383,
+        "url": "https://ndownloader.figshare.com/files/46742383",
+        "bytes": 5261941,
+        "deposited_md5": "280eeb0755e58a20d1d0ff17b226065a"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI71": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI71",
+        "file_id": 46742386,
+        "url": "https://ndownloader.figshare.com/files/46742386",
+        "bytes": 5194280,
+        "deposited_md5": "2761a6a9fe7045ef75d892bd7f50c340"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI72": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI72",
+        "file_id": 46742389,
+        "url": "https://ndownloader.figshare.com/files/46742389",
+        "bytes": 5170863,
+        "deposited_md5": "c7bdfccbed615ded1dbe9382d7d08563"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI73": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI73",
+        "file_id": 46742392,
+        "url": "https://ndownloader.figshare.com/files/46742392",
+        "bytes": 5222139,
+        "deposited_md5": "c69447f3f917eff00aef17fbd8df6c5b"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI74": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI74",
+        "file_id": 46742395,
+        "url": "https://ndownloader.figshare.com/files/46742395",
+        "bytes": 5173260,
+        "deposited_md5": "0712edaf94e1412787b95d31eb24c60f"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI75": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI75",
+        "file_id": 46742398,
+        "url": "https://ndownloader.figshare.com/files/46742398",
+        "bytes": 5019223,
+        "deposited_md5": "2ffea413285453517f91caf4642693ab"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI76": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI76",
+        "file_id": 46742401,
+        "url": "https://ndownloader.figshare.com/files/46742401",
+        "bytes": 5002279,
+        "deposited_md5": "382421fec1e3a0533e1656a248ab2cf4"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI77": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI77",
+        "file_id": 46742404,
+        "url": "https://ndownloader.figshare.com/files/46742404",
+        "bytes": 5135930,
+        "deposited_md5": "b787cea037d12737561230fb88b1f1d9"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI78": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI78",
+        "file_id": 46742407,
+        "url": "https://ndownloader.figshare.com/files/46742407",
+        "bytes": 5253018,
+        "deposited_md5": "ad5e1714d09f91d33bbfc868cf5d9466"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI79": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI79",
+        "file_id": 46742410,
+        "url": "https://ndownloader.figshare.com/files/46742410",
+        "bytes": 5307975,
+        "deposited_md5": "16a7067686d1ead6179d0a8cd6d471c6"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI80": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI80",
+        "file_id": 46742413,
+        "url": "https://ndownloader.figshare.com/files/46742413",
+        "bytes": 5388508,
+        "deposited_md5": "ba56e48c5f2290e369f6e56bb15561d5"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI81": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI81",
+        "file_id": 46742416,
+        "url": "https://ndownloader.figshare.com/files/46742416",
+        "bytes": 5290773,
+        "deposited_md5": "d83a7fabbc504c0f16d31cab03337f1a"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "IAI82": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "IAI82",
+        "file_id": 46742419,
+        "url": "https://ndownloader.figshare.com/files/46742419",
+        "bytes": 4961554,
+        "deposited_md5": "712c214cf715f09d4121f6f7baa055f7"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LF31": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LF31",
+        "file_id": 46742431,
+        "url": "https://ndownloader.figshare.com/files/46742431",
+        "bytes": 5152232,
+        "deposited_md5": "51ccdd627ed0cfbccf91681ffb169c80"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LF50": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LF50",
+        "file_id": 46742434,
+        "url": "https://ndownloader.figshare.com/files/46742434",
+        "bytes": 4885507,
+        "deposited_md5": "775e7f64b6e9a31d1b3bc96805f51087"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LF7074": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LF7074",
+        "file_id": 46742443,
+        "url": "https://ndownloader.figshare.com/files/46742443",
+        "bytes": 5265268,
+        "deposited_md5": "6bd605add722a876f165b3a4a1fddf7b"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LF73": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LF73",
+        "file_id": 46742437,
+        "url": "https://ndownloader.figshare.com/files/46742437",
+        "bytes": 4912203,
+        "deposited_md5": "c46ceabc19543bf83a310bfc3815c18d"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LF82": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LF82",
+        "file_id": 46742440,
+        "url": "https://ndownloader.figshare.com/files/46742440",
+        "bytes": 4930302,
+        "deposited_md5": "b592e89e6ff00c076b39928fc7d8e527"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LI10": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LI10",
+        "file_id": 46742446,
+        "url": "https://ndownloader.figshare.com/files/46742446",
+        "bytes": 5313940,
+        "deposited_md5": "a1586c8c502248aa58bb6cd5ae2d62da"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LM02": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LM02",
+        "file_id": 46742449,
+        "url": "https://ndownloader.figshare.com/files/46742449",
+        "bytes": 5179497,
+        "deposited_md5": "fa77b49de45d6b57f44fa98ed1cc8d1d"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LM07": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LM07",
+        "file_id": 46742452,
+        "url": "https://ndownloader.figshare.com/files/46742452",
+        "bytes": 5162163,
+        "deposited_md5": "77fd43784bcf59a9648b8238ec7788a9"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LM08": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LM08",
+        "file_id": 46742455,
+        "url": "https://ndownloader.figshare.com/files/46742455",
+        "bytes": 5380640,
+        "deposited_md5": "6d70934decfaaebd7bc56e8586bae6ff"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LM33": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LM33",
+        "file_id": 46742458,
+        "url": "https://ndownloader.figshare.com/files/46742458",
+        "bytes": 5437367,
+        "deposited_md5": "6f23f78fdd08877822f9b1c116da3609"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LM40": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LM40",
+        "file_id": 46742461,
+        "url": "https://ndownloader.figshare.com/files/46742461",
+        "bytes": 5352285,
+        "deposited_md5": "23eea0f47b6da9af21446f41a17bef02"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LMR3158": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "LMR-3158"
+      ]
+    },
+    "M863": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "M863",
+        "file_id": 46742467,
+        "url": "https://ndownloader.figshare.com/files/46742467",
+        "bytes": 5412809,
+        "deposited_md5": "46f6f8bd416c29efbdd1a2a30c4fd1ea"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "MT1B1": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "MT1B1",
+        "file_id": 46742470,
+        "url": "https://ndownloader.figshare.com/files/46742470",
+        "bytes": 5202179,
+        "deposited_md5": "2cce8edc3e7c0be261d1b1cab514dbb6"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NAN33": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NAN33",
+        "file_id": 46742473,
+        "url": "https://ndownloader.figshare.com/files/46742473",
+        "bytes": 5114959,
+        "deposited_md5": "d80d68efc6762058ea15e43c6df4905d"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NIC06": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NIC06",
+        "file_id": 46742476,
+        "url": "https://ndownloader.figshare.com/files/46742476",
+        "bytes": 5157447,
+        "deposited_md5": "ef2f8af0bed3d1cd250e7bc6b51522c8"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS01": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS01",
+        "file_id": 46742479,
+        "url": "https://ndownloader.figshare.com/files/46742479",
+        "bytes": 5588130,
+        "deposited_md5": "125e150040b726b3fc89d175dbe6b062"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS02": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS02",
+        "file_id": 46742482,
+        "url": "https://ndownloader.figshare.com/files/46742482",
+        "bytes": 4835883,
+        "deposited_md5": "2a993674cf14a8ead2c5e8722bee109d"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS03": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS03",
+        "file_id": 46742485,
+        "url": "https://ndownloader.figshare.com/files/46742485",
+        "bytes": 5148501,
+        "deposited_md5": "37c51a7c62b31a5f48e4290249263b49"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS04": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS04",
+        "file_id": 46742488,
+        "url": "https://ndownloader.figshare.com/files/46742488",
+        "bytes": 4896002,
+        "deposited_md5": "b1fd9ea289ea311ca39059d91d6e53cc"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS05": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS05",
+        "file_id": 46742491,
+        "url": "https://ndownloader.figshare.com/files/46742491",
+        "bytes": 5420623,
+        "deposited_md5": "b6ff725b330ca923bb1609d4511f10c2"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS06": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS06",
+        "file_id": 46742494,
+        "url": "https://ndownloader.figshare.com/files/46742494",
+        "bytes": 4712005,
+        "deposited_md5": "5949f742b634f873057164f9d59ec0e6"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS07": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS07",
+        "file_id": 46742497,
+        "url": "https://ndownloader.figshare.com/files/46742497",
+        "bytes": 5252763,
+        "deposited_md5": "ee0cab6bbe71ad1bbcb57765998adca6"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS08": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS08",
+        "file_id": 46742500,
+        "url": "https://ndownloader.figshare.com/files/46742500",
+        "bytes": 5038104,
+        "deposited_md5": "d79f8348816960b7e6b44c3575a781dd"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS09": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS09",
+        "file_id": 46742503,
+        "url": "https://ndownloader.figshare.com/files/46742503",
+        "bytes": 5088449,
+        "deposited_md5": "cf956823229f9dde095e5f53c6056168"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS10": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS10",
+        "file_id": 46742506,
+        "url": "https://ndownloader.figshare.com/files/46742506",
+        "bytes": 4642506,
+        "deposited_md5": "879518a7977318eca6ed7b17a1b74783"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS11": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS11",
+        "file_id": 46742509,
+        "url": "https://ndownloader.figshare.com/files/46742509",
+        "bytes": 5193311,
+        "deposited_md5": "06b193546a09f1a4c6cb161aa65216ae"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS12": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS12",
+        "file_id": 46742512,
+        "url": "https://ndownloader.figshare.com/files/46742512",
+        "bytes": 5358572,
+        "deposited_md5": "1ea85575e32cbf70cb35db88b23a3999"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS13": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS13",
+        "file_id": 46742515,
+        "url": "https://ndownloader.figshare.com/files/46742515",
+        "bytes": 5117628,
+        "deposited_md5": "f4189d2a58b8328c894a70c1c1613064"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS14": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS14",
+        "file_id": 46742518,
+        "url": "https://ndownloader.figshare.com/files/46742518",
+        "bytes": 4930873,
+        "deposited_md5": "fa530f2e7ac1ffe5b8711505761d420d"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS15": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS15",
+        "file_id": 46742521,
+        "url": "https://ndownloader.figshare.com/files/46742521",
+        "bytes": 5184305,
+        "deposited_md5": "0f9b7aa0731b8231e8d155b7cd6a9eec"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS16": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS16",
+        "file_id": 46742524,
+        "url": "https://ndownloader.figshare.com/files/46742524",
+        "bytes": 5084715,
+        "deposited_md5": "570ed5fd50e0ad111be445c5d3ea8b3d"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS17": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS17",
+        "file_id": 46742527,
+        "url": "https://ndownloader.figshare.com/files/46742527",
+        "bytes": 4895438,
+        "deposited_md5": "c0ce60559ade91f212fe9fcbb6666c73"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS18": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS18",
+        "file_id": 46742530,
+        "url": "https://ndownloader.figshare.com/files/46742530",
+        "bytes": 5451123,
+        "deposited_md5": "08471c6304cc23d9317d7556b77f890e"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS19": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS19",
+        "file_id": 46742533,
+        "url": "https://ndownloader.figshare.com/files/46742533",
+        "bytes": 5363135,
+        "deposited_md5": "572eba8e22f82cb35ade6443a6ff8192"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS20": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS20",
+        "file_id": 46742536,
+        "url": "https://ndownloader.figshare.com/files/46742536",
+        "bytes": 5539024,
+        "deposited_md5": "7337bc2a4228f4b5a4652ec493b838dd"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS21": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS21",
+        "file_id": 46742617,
+        "url": "https://ndownloader.figshare.com/files/46742617",
+        "bytes": 5639927,
+        "deposited_md5": "2d0e4279d1ee5952020bdec883f48874"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS22": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS22",
+        "file_id": 46742620,
+        "url": "https://ndownloader.figshare.com/files/46742620",
+        "bytes": 5009973,
+        "deposited_md5": "4cec7b42060b7b258e7fb7fa13fcb87c"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS23": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS23",
+        "file_id": 46742623,
+        "url": "https://ndownloader.figshare.com/files/46742623",
+        "bytes": 5183799,
+        "deposited_md5": "d647761ba7378f9a1aebc29628004767"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS24": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS24",
+        "file_id": 46742626,
+        "url": "https://ndownloader.figshare.com/files/46742626",
+        "bytes": 4972579,
+        "deposited_md5": "387abfbd7d0813d6ed7afeb55d4b4dc2"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS25": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS25",
+        "file_id": 46742629,
+        "url": "https://ndownloader.figshare.com/files/46742629",
+        "bytes": 5423858,
+        "deposited_md5": "2649aa1e2ff832fbebb5c43be08037e8"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS26": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS26",
+        "file_id": 46742632,
+        "url": "https://ndownloader.figshare.com/files/46742632",
+        "bytes": 5170903,
+        "deposited_md5": "80ceefd4eb990bed6008ae8c8feb3e05"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS27": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS27",
+        "file_id": 46742635,
+        "url": "https://ndownloader.figshare.com/files/46742635",
+        "bytes": 5153324,
+        "deposited_md5": "80ade17a08cd329d8043a8d4bbc44cf9"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS28": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS28",
+        "file_id": 46742641,
+        "url": "https://ndownloader.figshare.com/files/46742641",
+        "bytes": 5144476,
+        "deposited_md5": "cef9d004ce12e98ed3d1496f12bf2abe"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS29": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS29",
+        "file_id": 46742638,
+        "url": "https://ndownloader.figshare.com/files/46742638",
+        "bytes": 5174797,
+        "deposited_md5": "a447d9ce9827d275a87dce52675bc062"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS30": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS30",
+        "file_id": 46742644,
+        "url": "https://ndownloader.figshare.com/files/46742644",
+        "bytes": 5135563,
+        "deposited_md5": "7dda492d35c6d1c1df9fe3e14b1477c0"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS31": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS31",
+        "file_id": 46742647,
+        "url": "https://ndownloader.figshare.com/files/46742647",
+        "bytes": 5308584,
+        "deposited_md5": "88c4d56abc7abe65b888c2d22a50b3c2"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS32": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS32",
+        "file_id": 46742650,
+        "url": "https://ndownloader.figshare.com/files/46742650",
+        "bytes": 5201927,
+        "deposited_md5": "68bd51655089481c632dd647ade41d18"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS33": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS33",
+        "file_id": 46742653,
+        "url": "https://ndownloader.figshare.com/files/46742653",
+        "bytes": 5217820,
+        "deposited_md5": "836f0670bd4aadba5ca7765df546b4b2"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS34": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS34",
+        "file_id": 46742665,
+        "url": "https://ndownloader.figshare.com/files/46742665",
+        "bytes": 5137187,
+        "deposited_md5": "01bb644c0c240381526c3f992c46ade4"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS35": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS35",
+        "file_id": 46742656,
+        "url": "https://ndownloader.figshare.com/files/46742656",
+        "bytes": 5030856,
+        "deposited_md5": "87064ddc04ebfa1eb66f1d8aee2f2b5e"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS36": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS36",
+        "file_id": 46742659,
+        "url": "https://ndownloader.figshare.com/files/46742659",
+        "bytes": 5295276,
+        "deposited_md5": "63e068af64468485ce4ecd25a72f6d20"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS37": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS37",
+        "file_id": 46742662,
+        "url": "https://ndownloader.figshare.com/files/46742662",
+        "bytes": 5324053,
+        "deposited_md5": "0a1aa7688aed644835f0595e690a8eff"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS38": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS38",
+        "file_id": 46742668,
+        "url": "https://ndownloader.figshare.com/files/46742668",
+        "bytes": 5140767,
+        "deposited_md5": "50683e7822e833d21d1a2e2f4e91dd2f"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS39": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS39",
+        "file_id": 46742671,
+        "url": "https://ndownloader.figshare.com/files/46742671",
+        "bytes": 5470291,
+        "deposited_md5": "6813750489631a5745974e1cbda9136c"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS40": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS40",
+        "file_id": 46742674,
+        "url": "https://ndownloader.figshare.com/files/46742674",
+        "bytes": 5162405,
+        "deposited_md5": "1819459bac4210efd8f3a9f07df25664"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS41": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS41",
+        "file_id": 46742677,
+        "url": "https://ndownloader.figshare.com/files/46742677",
+        "bytes": 4989368,
+        "deposited_md5": "6c03bd3b5856feee21b9ff6cae27a996"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS42": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS42",
+        "file_id": 46742680,
+        "url": "https://ndownloader.figshare.com/files/46742680",
+        "bytes": 5450652,
+        "deposited_md5": "a43e5c6bbaa8d0518d323626f2e4b18c"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS43": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS43",
+        "file_id": 46742683,
+        "url": "https://ndownloader.figshare.com/files/46742683",
+        "bytes": 4648327,
+        "deposited_md5": "bc1354cf61a2cd917ace0e35e5823ea6"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS44": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS44",
+        "file_id": 46742686,
+        "url": "https://ndownloader.figshare.com/files/46742686",
+        "bytes": 5123234,
+        "deposited_md5": "09fb6d35e2a6cbfc1f7c28a215d39443"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS45": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS45",
+        "file_id": 46742689,
+        "url": "https://ndownloader.figshare.com/files/46742689",
+        "bytes": 4972667,
+        "deposited_md5": "8bf6b112840662391874e0d48a6c3126"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS46": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS46",
+        "file_id": 46742692,
+        "url": "https://ndownloader.figshare.com/files/46742692",
+        "bytes": 5417424,
+        "deposited_md5": "378220bc34c5b41e9ce7f6dca86c6242"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS47": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS47",
+        "file_id": 46742695,
+        "url": "https://ndownloader.figshare.com/files/46742695",
+        "bytes": 5174322,
+        "deposited_md5": "4d9a2864330331616ad3159ce805c2a2"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS48": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS48",
+        "file_id": 46742698,
+        "url": "https://ndownloader.figshare.com/files/46742698",
+        "bytes": 5084436,
+        "deposited_md5": "430d02efe8a9695c7689f514e5c6b693"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS49": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS49",
+        "file_id": 46742701,
+        "url": "https://ndownloader.figshare.com/files/46742701",
+        "bytes": 5366139,
+        "deposited_md5": "b4b9fc52018347884b7aa2e82058a1ad"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS50": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS50",
+        "file_id": 46742704,
+        "url": "https://ndownloader.figshare.com/files/46742704",
+        "bytes": 5420707,
+        "deposited_md5": "f8cedeca0b9947d3b738896da9831126"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS51": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS51",
+        "file_id": 46742707,
+        "url": "https://ndownloader.figshare.com/files/46742707",
+        "bytes": 5038943,
+        "deposited_md5": "d4cabe994223212ab3b24f48df2e2494"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS52": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS52",
+        "file_id": 46742710,
+        "url": "https://ndownloader.figshare.com/files/46742710",
+        "bytes": 5215560,
+        "deposited_md5": "21136f0729159369671bbac2dbf369c6"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS53": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS53",
+        "file_id": 46742713,
+        "url": "https://ndownloader.figshare.com/files/46742713",
+        "bytes": 5038715,
+        "deposited_md5": "68fdd0d8d5362fd3079b53d500c3be97"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS54": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS54",
+        "file_id": 46742716,
+        "url": "https://ndownloader.figshare.com/files/46742716",
+        "bytes": 5298152,
+        "deposited_md5": "49eeff305d04c741d9d210828048d82a"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS55": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS55",
+        "file_id": 46742719,
+        "url": "https://ndownloader.figshare.com/files/46742719",
+        "bytes": 5308261,
+        "deposited_md5": "d55c71231eb25541419c71c1ef163d2d"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS56": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS56",
+        "file_id": 46742722,
+        "url": "https://ndownloader.figshare.com/files/46742722",
+        "bytes": 5242163,
+        "deposited_md5": "5cd4cc6edf0c7cae9a74c8db72c7aa9e"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS57": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS57",
+        "file_id": 46742725,
+        "url": "https://ndownloader.figshare.com/files/46742725",
+        "bytes": 5403075,
+        "deposited_md5": "0aa0785676e26043f867914a6650244f"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS58": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS58",
+        "file_id": 46742728,
+        "url": "https://ndownloader.figshare.com/files/46742728",
+        "bytes": 5368943,
+        "deposited_md5": "d02f82ebf94a6b3f54fca76441fbc36a"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS59": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS59",
+        "file_id": 46742731,
+        "url": "https://ndownloader.figshare.com/files/46742731",
+        "bytes": 5347186,
+        "deposited_md5": "af2ba949ff9feb6608666b8c2a2df9c0"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS60": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS60",
+        "file_id": 46742734,
+        "url": "https://ndownloader.figshare.com/files/46742734",
+        "bytes": 5173597,
+        "deposited_md5": "d321a795158227b01d576179d3e35420"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS61": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS61",
+        "file_id": 46742737,
+        "url": "https://ndownloader.figshare.com/files/46742737",
+        "bytes": 5147495,
+        "deposited_md5": "687e400a4a1ccdbced780406494e44cb"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS62": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS62",
+        "file_id": 46742740,
+        "url": "https://ndownloader.figshare.com/files/46742740",
+        "bytes": 5131770,
+        "deposited_md5": "c9ad7cf3b133af01e49666fbf4b1b456"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS63": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS63",
+        "file_id": 46742743,
+        "url": "https://ndownloader.figshare.com/files/46742743",
+        "bytes": 5051658,
+        "deposited_md5": "d42d6d494b070375d5716410427b610f"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS64": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS64",
+        "file_id": 46742746,
+        "url": "https://ndownloader.figshare.com/files/46742746",
+        "bytes": 5485478,
+        "deposited_md5": "2bcb1fdc4bfeffbc5adcb8b3e81e64e1"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS65": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS65",
+        "file_id": 46742749,
+        "url": "https://ndownloader.figshare.com/files/46742749",
+        "bytes": 5325699,
+        "deposited_md5": "31aad7a92cf1ea9844c03a091ed22cb2"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS66": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS66",
+        "file_id": 46742752,
+        "url": "https://ndownloader.figshare.com/files/46742752",
+        "bytes": 5387659,
+        "deposited_md5": "efccf70055b1ec54e570ddccde1f9e17"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS67": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS67",
+        "file_id": 46742755,
+        "url": "https://ndownloader.figshare.com/files/46742755",
+        "bytes": 5192694,
+        "deposited_md5": "735e5b14b7cb575076a32c1749a65416"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS68": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS68",
+        "file_id": 46742758,
+        "url": "https://ndownloader.figshare.com/files/46742758",
+        "bytes": 5487105,
+        "deposited_md5": "29f705938acea3609acdd5c0da00360f"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS69": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS69",
+        "file_id": 46742761,
+        "url": "https://ndownloader.figshare.com/files/46742761",
+        "bytes": 5076128,
+        "deposited_md5": "2c4df51cd91623d6fb8b8860d098216e"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS70": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS70",
+        "file_id": 46742764,
+        "url": "https://ndownloader.figshare.com/files/46742764",
+        "bytes": 5526407,
+        "deposited_md5": "4a22621dbd5aa0c151d6e64260e38500"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS71": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS71",
+        "file_id": 46742767,
+        "url": "https://ndownloader.figshare.com/files/46742767",
+        "bytes": 5284337,
+        "deposited_md5": "021e10c65d0d1381ec44eec215e21884"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS72": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS72",
+        "file_id": 46742770,
+        "url": "https://ndownloader.figshare.com/files/46742770",
+        "bytes": 5583274,
+        "deposited_md5": "6704c68aaca625a8a5d80b851619e9c9"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS73": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS73",
+        "file_id": 46742773,
+        "url": "https://ndownloader.figshare.com/files/46742773",
+        "bytes": 5484751,
+        "deposited_md5": "ba9d7e41990015733febdfbed3976e9c"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS74": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS74",
+        "file_id": 46742776,
+        "url": "https://ndownloader.figshare.com/files/46742776",
+        "bytes": 5254416,
+        "deposited_md5": "5879ddf83fbd8db84cd5e7c3b5d17e46"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS75": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS75",
+        "file_id": 46742779,
+        "url": "https://ndownloader.figshare.com/files/46742779",
+        "bytes": 5508685,
+        "deposited_md5": "36be9e08938c07b3579876574f58a906"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS76": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS76",
+        "file_id": 46742782,
+        "url": "https://ndownloader.figshare.com/files/46742782",
+        "bytes": 5145840,
+        "deposited_md5": "3182b24fac8cdba4cb83c274e01a432d"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS77": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS77",
+        "file_id": 46742785,
+        "url": "https://ndownloader.figshare.com/files/46742785",
+        "bytes": 5190557,
+        "deposited_md5": "15807370188af9d6ecc0b2172289d160"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS78": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS78",
+        "file_id": 46742788,
+        "url": "https://ndownloader.figshare.com/files/46742788",
+        "bytes": 5322007,
+        "deposited_md5": "6e06da0b31f3f4d5586d2055215d9c70"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS79": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS79",
+        "file_id": 46742791,
+        "url": "https://ndownloader.figshare.com/files/46742791",
+        "bytes": 5157725,
+        "deposited_md5": "f3a149f517c263415e1213029e70deda"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS80": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS80",
+        "file_id": 46742794,
+        "url": "https://ndownloader.figshare.com/files/46742794",
+        "bytes": 5118957,
+        "deposited_md5": "97ca75aaf0cf84c8fffcdaf9cee1c40f"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS81": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS81",
+        "file_id": 46742797,
+        "url": "https://ndownloader.figshare.com/files/46742797",
+        "bytes": 5585132,
+        "deposited_md5": "8e23326d194ca52cbfe9d952890f0d5d"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NILS82": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NILS82",
+        "file_id": 46742800,
+        "url": "https://ndownloader.figshare.com/files/46742800",
+        "bytes": 5193674,
+        "deposited_md5": "cbb8896633d70f64822a4145df46ccd3"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NRG807C": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NRG807C",
+        "file_id": 46742812,
+        "url": "https://ndownloader.figshare.com/files/46742812",
+        "bytes": 4964800,
+        "deposited_md5": "cb90907489556b796c2289fc3217d242"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "PDP110": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "PDP110",
+        "file_id": 46742818,
+        "url": "https://ndownloader.figshare.com/files/46742818",
+        "bytes": 5413928,
+        "deposited_md5": "5f2392964b3dc42271a793eb5fd608a2"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "PDP21": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "PDP21",
+        "file_id": 46742815,
+        "url": "https://ndownloader.figshare.com/files/46742815",
+        "bytes": 5351200,
+        "deposited_md5": "7eb421e047cdda955db2a65b240e1949"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "PDP351": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "PDP351",
+        "file_id": 46742821,
+        "url": "https://ndownloader.figshare.com/files/46742821",
+        "bytes": 5009502,
+        "deposited_md5": "e5e9b63a54320ce9a299c7ceb9d05815"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ROAR012": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ROAR012",
+        "file_id": 46742824,
+        "url": "https://ndownloader.figshare.com/files/46742824",
+        "bytes": 5300606,
+        "deposited_md5": "725f8197e55de3a9fdfb997ebfd23418"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ROAR019": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ROAR019",
+        "file_id": 46742827,
+        "url": "https://ndownloader.figshare.com/files/46742827",
+        "bytes": 4727436,
+        "deposited_md5": "f6c21645e5671cc70c9add7d7c65a4aa"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ROAR029": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ROAR029",
+        "file_id": 46742830,
+        "url": "https://ndownloader.figshare.com/files/46742830",
+        "bytes": 5393536,
+        "deposited_md5": "888b78170e254e3ece5435ad20263c90"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ROAR036": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ROAR036",
+        "file_id": 46742833,
+        "url": "https://ndownloader.figshare.com/files/46742833",
+        "bytes": 5573053,
+        "deposited_md5": "27a3e62fc8483d01fc1c2bc51510c7b5"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ROAR043": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ROAR043",
+        "file_id": 46742836,
+        "url": "https://ndownloader.figshare.com/files/46742836",
+        "bytes": 4934569,
+        "deposited_md5": "3e3b560c80f39b4fa568e45c0b52187b"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ROAR047": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ROAR047",
+        "file_id": 46742839,
+        "url": "https://ndownloader.figshare.com/files/46742839",
+        "bytes": 5045561,
+        "deposited_md5": "de76a6fdce385057fb962e78495ccf38"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ROAR059": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ROAR059",
+        "file_id": 46742842,
+        "url": "https://ndownloader.figshare.com/files/46742842",
+        "bytes": 5694916,
+        "deposited_md5": "15dcd5167ca7981ffe08bf034475ef36"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ROAR061": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ROAR061",
+        "file_id": 46742845,
+        "url": "https://ndownloader.figshare.com/files/46742845",
+        "bytes": 5045961,
+        "deposited_md5": "4321ef9c45985a9e04b2c05ad537d74a"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ROAR072": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ROAR072",
+        "file_id": 46742848,
+        "url": "https://ndownloader.figshare.com/files/46742848",
+        "bytes": 5049550,
+        "deposited_md5": "4f5e8f37bb6fccbab2cd1c60fb0f0453"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ROAR082": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ROAR082",
+        "file_id": 46742851,
+        "url": "https://ndownloader.figshare.com/files/46742851",
+        "bytes": 4904109,
+        "deposited_md5": "d22ed97dd025c0e2558e515c0018bbf6"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ROAR116": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ROAR116",
+        "file_id": 46742854,
+        "url": "https://ndownloader.figshare.com/files/46742854",
+        "bytes": 4763679,
+        "deposited_md5": "0115cb73c0b7db98732f2e81f0c3ad02"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ROAR129": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ROAR129",
+        "file_id": 46742857,
+        "url": "https://ndownloader.figshare.com/files/46742857",
+        "bytes": 5134284,
+        "deposited_md5": "7aeebaee319b34b13c548e28648ff043"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ROAR130": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ROAR130",
+        "file_id": 46742860,
+        "url": "https://ndownloader.figshare.com/files/46742860",
+        "bytes": 4786999,
+        "deposited_md5": "da5dece98213d5fa0aa0a7bbfef210e9"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ROAR131": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ROAR131",
+        "file_id": 46742863,
+        "url": "https://ndownloader.figshare.com/files/46742863",
+        "bytes": 5635704,
+        "deposited_md5": "9b130d2cb42a036e755662d61b087a06"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ROAR145": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ROAR145",
+        "file_id": 46742866,
+        "url": "https://ndownloader.figshare.com/files/46742866",
+        "bytes": 4929352,
+        "deposited_md5": "2d9531c7443a5b7542ff2dfd3815c8ee"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ROAR176": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ROAR176",
+        "file_id": 46742869,
+        "url": "https://ndownloader.figshare.com/files/46742869",
+        "bytes": 4717162,
+        "deposited_md5": "d2671eb2569762d892e63613e6b818c2"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ROAR178": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ROAR178",
+        "file_id": 46742872,
+        "url": "https://ndownloader.figshare.com/files/46742872",
+        "bytes": 5052847,
+        "deposited_md5": "178ae4f1721d6937f9ac1f1b799d334a"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ROAR185": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ROAR185",
+        "file_id": 46742875,
+        "url": "https://ndownloader.figshare.com/files/46742875",
+        "bytes": 5399738,
+        "deposited_md5": "551743cf7289302de3fd9932f3ade780"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ROAR205": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ROAR205",
+        "file_id": 46742878,
+        "url": "https://ndownloader.figshare.com/files/46742878",
+        "bytes": 5189402,
+        "deposited_md5": "c55c977b8a3baa72df63354b82d4dd05"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ROAR220": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ROAR220",
+        "file_id": 46742881,
+        "url": "https://ndownloader.figshare.com/files/46742881",
+        "bytes": 4672046,
+        "deposited_md5": "ac37b0fd835a01feb90ea0cb452e1874"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ROAR274": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ROAR274",
+        "file_id": 46742884,
+        "url": "https://ndownloader.figshare.com/files/46742884",
+        "bytes": 5352384,
+        "deposited_md5": "f6404c1ddfc1287aaaec815fdfcc0921"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ROAR291": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ROAR291",
+        "file_id": 46742887,
+        "url": "https://ndownloader.figshare.com/files/46742887",
+        "bytes": 4604575,
+        "deposited_md5": "d5683da2867a2ee2e06a64674dc5b97a"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ROAR292": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ROAR292",
+        "file_id": 46742890,
+        "url": "https://ndownloader.figshare.com/files/46742890",
+        "bytes": 5084855,
+        "deposited_md5": "35eaf45815b5fa1a9fbd6421dc998513"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ROAR334": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ROAR334",
+        "file_id": 46742893,
+        "url": "https://ndownloader.figshare.com/files/46742893",
+        "bytes": 5048304,
+        "deposited_md5": "22d846c1c9f4438987683947ca80e396"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ROAR344": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ROAR344",
+        "file_id": 46742896,
+        "url": "https://ndownloader.figshare.com/files/46742896",
+        "bytes": 4764809,
+        "deposited_md5": "df143e06953f4a646adcb7d27b32cc11"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ROAR387": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ROAR387",
+        "file_id": 46742899,
+        "url": "https://ndownloader.figshare.com/files/46742899",
+        "bytes": 5397704,
+        "deposited_md5": "5c910f733a930468134cc5b9a1cefbb9"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ROAR400": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ROAR400",
+        "file_id": 46742902,
+        "url": "https://ndownloader.figshare.com/files/46742902",
+        "bytes": 5120977,
+        "deposited_md5": "0bd478291aaaa3f5cfa85055994f75ee"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ROAR419": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ROAR419",
+        "file_id": 46742905,
+        "url": "https://ndownloader.figshare.com/files/46742905",
+        "bytes": 5054454,
+        "deposited_md5": "e3615d5da8e1faf4068fab0708611361"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ROAR434": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ROAR434",
+        "file_id": 46742908,
+        "url": "https://ndownloader.figshare.com/files/46742908",
+        "bytes": 5248728,
+        "deposited_md5": "3275c41dd043073baff8b5bce3b7cae6"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "ROAR438": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "ROAR438",
+        "file_id": 46742911,
+        "url": "https://ndownloader.figshare.com/files/46742911",
+        "bytes": 4644082,
+        "deposited_md5": "a56ed614ecf0d41c4f9e06b324180112"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "S1109": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "S1-109"
+      ]
+    },
+    "S111": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "S1-11"
+      ]
+    },
+    "S176": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "S1-76"
+      ]
+    },
+    "S184": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "S1-84"
+      ]
+    },
+    "S191": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "S1-91"
+      ]
+    },
+    "S21": {
+      "status": "unresolved",
+      "file": null,
+      "unaccepted_alias_candidates": [
+        "S2-1"
+      ]
+    },
+    "T145": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "T145",
+        "file_id": 46742932,
+        "url": "https://ndownloader.figshare.com/files/46742932",
+        "bytes": 5394973,
+        "deposited_md5": "d15f5e2d5a314a1401f7f7b3613431d4"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "T147": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "T147",
+        "file_id": 46742938,
+        "url": "https://ndownloader.figshare.com/files/46742938",
+        "bytes": 5358349,
+        "deposited_md5": "68710b55923c19024e69e1b04cc8a100"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "T205": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "T205",
+        "file_id": 46742944,
+        "url": "https://ndownloader.figshare.com/files/46742944",
+        "bytes": 5226739,
+        "deposited_md5": "85b90029dc9cd6513157825fe5538c3e"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "TW10509": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "TW10509",
+        "file_id": 46742941,
+        "url": "https://ndownloader.figshare.com/files/46742941",
+        "bytes": 5492317,
+        "deposited_md5": "adccca8a97ab22a41674e263b3fcb742"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "VDG427": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "VDG427",
+        "file_id": 46742947,
+        "url": "https://ndownloader.figshare.com/files/46742947",
+        "bytes": 5178216,
+        "deposited_md5": "b70f433fa8e21c30e8ead2f7603c5bb4"
+      },
+      "unaccepted_alias_candidates": []
+    }
+  },
+  "phages": {
+    "409_P1": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "409_P1",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/409_P1.fna",
+        "bytes": 40816,
+        "git_blob_sha1": "c5116127819ccd157860a593507b55244b31d6b7"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "409_P3": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "409_P3",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/409_P3.fna",
+        "bytes": 46417,
+        "git_blob_sha1": "0ea4e6d7557f7fec7df36d11f2b1f4b3031c1a66"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "409_P5": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "409_P5",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/409_P5.fna",
+        "bytes": 46417,
+        "git_blob_sha1": "47f4de6c0ff45c481ff82c9da4ad98aeba5bc047"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "409_P6": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "409_P6",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/409_P6.fna",
+        "bytes": 45605,
+        "git_blob_sha1": "1e1510a38a7b108ad5e4c103aa2ee4be385e8ef0"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "409_P8": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "409_P8",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/409_P8.fna",
+        "bytes": 44390,
+        "git_blob_sha1": "98a8e68b4adcc1ddb05be8fdba4651101a7d2b1e"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "411_P1": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "411_P1",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/411_P1.fna",
+        "bytes": 49368,
+        "git_blob_sha1": "34732ebe2d9edb7f602f54555ae383269f118379"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "411_P2": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "411_P2",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/411_P2.fna",
+        "bytes": 44939,
+        "git_blob_sha1": "30474b92051de65a1cd58b4ac74c9a710b4fb540"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "412_P1": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "412_P1",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/412_P1.fna",
+        "bytes": 45632,
+        "git_blob_sha1": "65bf3acb10e1f5168f2fa532562a9e511cfc1450"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "412_P2": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "412_P2",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/412_P2.fna",
+        "bytes": 45871,
+        "git_blob_sha1": "46c79ebf9ccd637c7c279f1d5e131063f9896938"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "412_P3": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "412_P3",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/412_P3.fna",
+        "bytes": 46337,
+        "git_blob_sha1": "04b06167271e9ae416cb0804ec50c9d6a216583f"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "412_P4": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "412_P4",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/412_P4.fna",
+        "bytes": 45883,
+        "git_blob_sha1": "9e96ba5a8ff598ce49af491dad86a04fe52dd520"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "412_P5": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "412_P5",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/412_P5.fna",
+        "bytes": 46137,
+        "git_blob_sha1": "dba257a3766d4270696ed0f6a5cf8eecdca72523"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "416_P4": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "416_P4",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/416_P4.fna",
+        "bytes": 44808,
+        "git_blob_sha1": "5966366515b770e02a4a5a1ded838e118916a494"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "416_P5": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "416_P5",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/416_P5.fna",
+        "bytes": 44460,
+        "git_blob_sha1": "06cdd99bf54925c3d5a607b2e8765af7b0072953"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "423_P1": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "423_P1",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/423_P1.fna",
+        "bytes": 44503,
+        "git_blob_sha1": "37c68e85b0d5812d96708eee6a664f2a2a552187"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "423_P10": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "423_P10",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/423_P10.fna",
+        "bytes": 45464,
+        "git_blob_sha1": "40a374781c538ebae7a20dee05c5b28fd4948729"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "423_P5": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "423_P5",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/423_P5.fna",
+        "bytes": 40949,
+        "git_blob_sha1": "70cd063fb41050d20c206efcdec35e6e41e4e793"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "423_P7": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "423_P7",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/423_P7.fna",
+        "bytes": 44507,
+        "git_blob_sha1": "64af2c4af1e3bb85a8aaff4dcfd7425f88c53daa"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "423_P9": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "423_P9",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/423_P9.fna",
+        "bytes": 45463,
+        "git_blob_sha1": "0cad5ba8e45be7acca969e8abd6fc68d1a69539a"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "427_P2": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "427_P2",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/427_P2.fna",
+        "bytes": 41069,
+        "git_blob_sha1": "2af913447ae3d7f268cfdc8a12040ec62b2ff6ff"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "427_P3": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "427_P3",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/427_P3.fna",
+        "bytes": 39770,
+        "git_blob_sha1": "204fa8a8715bc29f344715b4911134249360dfde"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "427_P4": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "427_P4",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/427_P4.fna",
+        "bytes": 39885,
+        "git_blob_sha1": "f985f78a5e551ac0054aece491cec53368909044"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "536_P1": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "536_P1",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/536_P1.fna",
+        "bytes": 152032,
+        "git_blob_sha1": "d047a94c9bdfaf75f6d5984d3065a44930f99d76"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "536_P11": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "536_P11",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/536_P11.fna",
+        "bytes": 45233,
+        "git_blob_sha1": "983d4b85bc86e0529bfd5103e0a4f4029a55cc6c"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "536_P12": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "536_P12",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/536_P12.fna",
+        "bytes": 56930,
+        "git_blob_sha1": "51a0c7c54dbb9aa193f3a69649483b6ffa067ed1"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "536_P6": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "536_P6",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/536_P6.fna",
+        "bytes": 150986,
+        "git_blob_sha1": "8988a0c7446a2a7af561f4a42b2822eddfabbc25"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "536_P7": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "536_P7",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/536_P7.fna",
+        "bytes": 150986,
+        "git_blob_sha1": "759ed2bfdf0f25897bfdbf0557722b2248707591"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "536_P9": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "536_P9",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/536_P9.fna",
+        "bytes": 151436,
+        "git_blob_sha1": "33c1c554861c8d4eb56855aaa69137e399fcf834"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "55989_P1": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "55989_P1",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/55989_P1.fna",
+        "bytes": 40958,
+        "git_blob_sha1": "57d9293ca9aa137f429cf03d91db922d55e603ac"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "55989_P2": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "55989_P2",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/55989_P2.fna",
+        "bytes": 174722,
+        "git_blob_sha1": "f97d2b4c0d0e3e118d46fd043962771193a30946"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "AL505_Ev3": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "AL505_Ev3",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/AL505_Ev3.fna",
+        "bytes": 164879,
+        "git_blob_sha1": "93aa2e90cd96a77b38764bc25aee2d3ee4894628"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "AL505_Sd2": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "AL505_Sd2",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/AL505_Sd2.fna",
+        "bytes": 45479,
+        "git_blob_sha1": "74e2f2e231899a1ce04a97cff75e3751ea46b891"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "AN17_P1": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "AN17_P1",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/AN17_P1.fna",
+        "bytes": 40387,
+        "git_blob_sha1": "e1111e975d61d73a1ae588ba32b7cb6c7f844488"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "AN17_P8": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "AN17_P8",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/AN17_P8.fna",
+        "bytes": 87072,
+        "git_blob_sha1": "44cda608901d67dcaac38fabbe3bbfff005a5441"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "AN24_P2": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "AN24_P2",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/AN24_P2.fna",
+        "bytes": 72483,
+        "git_blob_sha1": "8c652ba32d5e93b4c82fcf75f30de3efc6b03bc7"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "AN24_P3": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "AN24_P3",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/AN24_P3.fna",
+        "bytes": 72483,
+        "git_blob_sha1": "5a752e3622b7a6151c4a5a0713e8ac0d9687569b"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "AN24_P4": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "AN24_P4",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/AN24_P4.fna",
+        "bytes": 40570,
+        "git_blob_sha1": "d70172f2a78917ed71ac3786c3dadf090ed562af"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "BCH953_P1": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "BCH953_P1",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/BCH953_P1.fna",
+        "bytes": 44909,
+        "git_blob_sha1": "de46aa648d74746da9c959b3d7537678cf5c3011"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "BCH953_P2": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "BCH953_P2",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/BCH953_P2.fna",
+        "bytes": 170907,
+        "git_blob_sha1": "9e2f7f2bca0936cad3725d5008a764a429385433"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "BCH953_P3": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "BCH953_P3",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/BCH953_P3.fna",
+        "bytes": 45438,
+        "git_blob_sha1": "663e46b2baa49f9c0600253232114d3c3839a96a"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "BCH953_P4": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "BCH953_P4",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/BCH953_P4.fna",
+        "bytes": 172140,
+        "git_blob_sha1": "e84ac1ca585770b476323d63d68809afdfe63ede"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "BCH953_P5": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "BCH953_P5",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/BCH953_P5.fna",
+        "bytes": 172140,
+        "git_blob_sha1": "cdebc6231fdf7df4e012887e7d053b47e56cdddb"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "BDX03_P1": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "BDX03_P1",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/BDX03_P1.fna",
+        "bytes": 40488,
+        "git_blob_sha1": "54d4f1c91074a50e07ecb8db2a94158c91cd3ee2"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "BDX03_P2": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "BDX03_P2",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/BDX03_P2.fna",
+        "bytes": 40488,
+        "git_blob_sha1": "7c8823ba3de57420de0c9b4bee65c9784326d626"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "BDX09_P1": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "BDX09_P1",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/BDX09_P1.fna",
+        "bytes": 59415,
+        "git_blob_sha1": "ff606353b0e785c12109e305fa0117c740fa7e8c"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "DIJ06_P1": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "DIJ06_P1",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/DIJ06_P1.fna",
+        "bytes": 45584,
+        "git_blob_sha1": "4db8f0b8ba6a0292e4393f4b957515224a748319"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "DIJ07_P1": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "DIJ07_P1",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/DIJ07_P1.fna",
+        "bytes": 145334,
+        "git_blob_sha1": "99f3a4fe2f1f423599141d22dec2107857c98e7b"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "DIJ07_P2": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "DIJ07_P2",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/DIJ07_P2.fna",
+        "bytes": 147296,
+        "git_blob_sha1": "690d0ac876acbddcb2fa58d5ce48c6e794e46c9a"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LF110_P1": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LF110_P1",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LF110_P1.fna",
+        "bytes": 87698,
+        "git_blob_sha1": "100c197a7d1b9f0eed6994361b2e1cb3375b13a5"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LF110_P2": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LF110_P2",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LF110_P2.fna",
+        "bytes": 88014,
+        "git_blob_sha1": "6e3c06d15c697afe73efbe14dba040d0ada7e216"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LF110_P3": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LF110_P3",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LF110_P3.fna",
+        "bytes": 88668,
+        "git_blob_sha1": "3b9eceb91234cb09bc10322d66cfbebdc47c81a0"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LF110_P4": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LF110_P4",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LF110_P4.fna",
+        "bytes": 87578,
+        "git_blob_sha1": "1db35eec85caf5a2e2c9410de12043efb323a0b0"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LF31_P1": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LF31_P1",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LF31_P1.fna",
+        "bytes": 69528,
+        "git_blob_sha1": "460bf72a3689fc2c367ebf5002d4bb47b1558ec8"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LF31_P3": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LF31_P3",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LF31_P3.fna",
+        "bytes": 45164,
+        "git_blob_sha1": "19c05341229505e9b650e43fd9623b1c2d7e97ef"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LF50_P3": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LF50_P3",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LF50_P3.fna",
+        "bytes": 45921,
+        "git_blob_sha1": "1daca4178c07fa01a0946122aae565db40c3e694"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LF7074_P1": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LF7074_P1",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LF7074_P1.fna",
+        "bytes": 41829,
+        "git_blob_sha1": "01696209d3a23b79057804670684192aebd4fed2"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LF7074_P2": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LF7074_P2",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LF7074_P2.fna",
+        "bytes": 41828,
+        "git_blob_sha1": "422a2e204ccc037f386e541c6c0482e34495e9dc"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LF7074_P3": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LF7074_P3",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LF7074_P3.fna",
+        "bytes": 41518,
+        "git_blob_sha1": "4a1b6da9e0aff62a7259fa4afff9fe544d3f4882"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LF73_P1": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LF73_P1",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LF73_P1.fna",
+        "bytes": 171883,
+        "git_blob_sha1": "9b1b4d9c05b273ef2a4426f18e4d8b3255fdc096"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LF73_P3": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LF73_P3",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LF73_P3.fna",
+        "bytes": 169498,
+        "git_blob_sha1": "691d9a7297d4049a8216523da2f1cafa123be01c"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LF73_P4": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LF73_P4",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LF73_P4.fna",
+        "bytes": 165877,
+        "git_blob_sha1": "e436586af02069611b96dc84e36fa833d3588fb6"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LF82_P1": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LF82_P1",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LF82_P1.fna",
+        "bytes": 90379,
+        "git_blob_sha1": "9b20c81083e7ca2a85763cde0f7bb78e0462daad"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LF82_P2": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LF82_P2",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LF82_P2.fna",
+        "bytes": 87069,
+        "git_blob_sha1": "33d59d8b073c1055e7f620b1d8a767b459e50f4f"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LF82_P3": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LF82_P3",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LF82_P3.fna",
+        "bytes": 86638,
+        "git_blob_sha1": "f3f47b6dd564513c533c4b43d3e23ab78a7c7332"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LF82_P4": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LF82_P4",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LF82_P4.fna",
+        "bytes": 84659,
+        "git_blob_sha1": "85e6908bd80d7206a6900c59253fec2b212ee408"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LF82_P5": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LF82_P5",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LF82_P5.fna",
+        "bytes": 87400,
+        "git_blob_sha1": "dcd2e773a49cef46d66ec804c3c44e6d87aad130"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LF82_P6": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LF82_P6",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LF82_P6.fna",
+        "bytes": 85978,
+        "git_blob_sha1": "a844b2759b0cc1672996d418484d13ac3c120414"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LF82_P8": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LF82_P8",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LF82_P8.fna",
+        "bytes": 171849,
+        "git_blob_sha1": "5706cdeff095b6d16df2ab37074c74d6bd9207b0"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LF82_P9": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LF82_P9",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LF82_P9.fna",
+        "bytes": 87959,
+        "git_blob_sha1": "75c43780d1a315e33c460bae7c1b10e0192766b5"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LI10_P1": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LI10_P1",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LI10_P1.fna",
+        "bytes": 40589,
+        "git_blob_sha1": "b838969b13314b87c3c8fad62955c6652b3765ff"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LI10_P2": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LI10_P2",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LI10_P2.fna",
+        "bytes": 40589,
+        "git_blob_sha1": "201f30179cca1ffc81e4289bd45edb209babb2b3"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LI10_P3": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LI10_P3",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LI10_P3.fna",
+        "bytes": 45737,
+        "git_blob_sha1": "45f5fcbd061e4e4c12a3f0c7c7422b625f6e3f92"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LI10_P4": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LI10_P4",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LI10_P4.fna",
+        "bytes": 45347,
+        "git_blob_sha1": "c242edca5f85ccb6b2e86f9142b4c28d67ac4c7c"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LI10_P5": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LI10_P5",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LI10_P5.fna",
+        "bytes": 45119,
+        "git_blob_sha1": "b5bf6a936ba1cac3011e2ae74a9706f18b4261f4"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LI10_P6": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LI10_P6",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LI10_P6.fna",
+        "bytes": 45568,
+        "git_blob_sha1": "f49a7920880f045a9ac338f3cb0c3904001dc93a"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LM02_P1": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LM02_P1",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LM02_P1.fna",
+        "bytes": 44214,
+        "git_blob_sha1": "1cb3520e0fe62587d50fc9c486d7199822da7bdc"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LM07_P1": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LM07_P1",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LM07_P1.fna",
+        "bytes": 40908,
+        "git_blob_sha1": "cb032f3af9314689529b2deb72280327e47399de"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LM08_P1": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LM08_P1",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LM08_P1.fna",
+        "bytes": 43760,
+        "git_blob_sha1": "fd087bcc8741f120dfbc55702db17619f7ce51ce"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LM08_P2": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LM08_P2",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LM08_P2.fna",
+        "bytes": 43786,
+        "git_blob_sha1": "ba519e581b9e2cda3607725c0cc5ba24180ddb4f"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LM33_P1": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LM33_P1",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LM33_P1.fna",
+        "bytes": 39699,
+        "git_blob_sha1": "d26fa47bce15ca3d1c7b225777864c06d6b5cef4"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LM40_P1": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LM40_P1",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LM40_P1.fna",
+        "bytes": 45834,
+        "git_blob_sha1": "09bfd9f4f6458d67451b5a34bb66d5ddafe51b93"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LM40_P2": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LM40_P2",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LM40_P2.fna",
+        "bytes": 45941,
+        "git_blob_sha1": "77c3e467bd389c4d12dda94db66389305ff43edb"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "LM40_P3": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "LM40_P3",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/LM40_P3.fna",
+        "bytes": 45862,
+        "git_blob_sha1": "7177a6991d880d34b152c4b230e0435aee16c8c7"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "MT1B1_3A1": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "MT1B1_3A1",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/MT1B1_3A1.fna",
+        "bytes": 40901,
+        "git_blob_sha1": "5fe1da629a674b018fee265974cd1acca20042ac"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NAN33_P1": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NAN33_P1",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/NAN33_P1.fna",
+        "bytes": 41405,
+        "git_blob_sha1": "1cb3dd08412484cc678b497b48dbcdee847d0182"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NAN33_P2": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NAN33_P2",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/NAN33_P2.fna",
+        "bytes": 41458,
+        "git_blob_sha1": "dc60fa4c73c37c2d3178b851d41db56d446ae70f"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NAN33_P4": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NAN33_P4",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/NAN33_P4.fna",
+        "bytes": 41458,
+        "git_blob_sha1": "485aa51dd53e52e5c5774825a6397a56124a266f"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NAN33_P5": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NAN33_P5",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/NAN33_P5.fna",
+        "bytes": 75750,
+        "git_blob_sha1": "3d00864d1948a6d2a79b5a0d4e4fc0c49546106e"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NAN33_P6": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NAN33_P6",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/NAN33_P6.fna",
+        "bytes": 41272,
+        "git_blob_sha1": "637ef934ec87bf51a947c960fb9e660e7c8a7d24"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NIC06_P2": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NIC06_P2",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/NIC06_P2.fna",
+        "bytes": 169169,
+        "git_blob_sha1": "6a01d945315a382311da55dd271ac5d095b79262"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NIC06_P3": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NIC06_P3",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/NIC06_P3.fna",
+        "bytes": 46784,
+        "git_blob_sha1": "fe0b86aaef7bdc4af15d7cdbb3f088ec8355fd0d"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NRG_11A2": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NRG_11A2",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/NRG_11A2.fna",
+        "bytes": 85900,
+        "git_blob_sha1": "8f102a34ba833f33ff56a8e033fa38a3a940a445"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NRG_11B1": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NRG_11B1",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/NRG_11B1.fna",
+        "bytes": 88607,
+        "git_blob_sha1": "b357658d1224ff04384f324c5bbc7675c8bb3976"
+      },
+      "unaccepted_alias_candidates": []
+    },
+    "NRG_12A1B": {
+      "status": "exact_identifier_match",
+      "file": {
+        "id": "NRG_12A1B",
+        "url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/FNA/NRG_12A1B.fna",
+        "bytes": 45044,
+        "git_blob_sha1": "3899d8c0cfa0a8f92f080aaab2c24ba9f37c8f3b"
+      },
+      "unaccepted_alias_candidates": []
+    }
+  },
+  "phenotype_values_used_for_prediction": false,
+  "training_or_scoring_executed": false,
+  "sequence_overlap_audit": "pending; exact identifiers are not sequence/stock authentication",
+  "disposition": "Metadata mapping advances input preparation; HOLD target inference until aliases, sequence exclusions and training specification are resolved"
+}

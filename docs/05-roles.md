@@ -13,3 +13,5 @@ For every actual contribution add date, contributor, task, artifact/commit or no
 ## Assistance disclosure
 
 The initial repository, literature summaries, evaluator and tests were prepared with Codex assistance on 2026-11-07 using the user's specification and a supplied chat export. Primary-source claims and code still need human review before being represented as team results. The original attachment remains outside version control.
+
+On the same date, Codex implemented and ran the external training-source reconciliation, genome normalization, relatedness calculations and reference controls documented in [the input-preparation record](13-genome-input-preparation.md) and [relatedness audit](15-relatedness-audit.md). Parallel AI review checked source correspondence and input-integrity failures. These are AI-assisted contributions with retained code, inputs and outputs; student understanding, scientific review and the eventual competition attribution remain to be recorded by the team. No new laboratory result or designed recognition sequence is attributed to this work.

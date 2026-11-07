@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-07",
+  "status": "HOLD_before_training_or_scoring",
+  "candidate": "GenoPHI protein-family / CatBoost genome-pair workflow",
+  "primary_paper": "https://doi.org/10.1038/s41564-026-02482-5",
+  "inspected_upstream_commit": "f7e30abc1b0bbba1ae76b8f58a3363bbbc5cd54f",
+  "method_selection_context": "Ando labels and historical WIsH results already visible; exploratory retrospective study, not blind validation",
+  "purpose": "Determine whether independent strain-level scores add a diagnostic signal beyond simple baselines; do not design recognition heads",
+  "target_reference_manifest": "wish-inputs.json",
+  "hosts": {"BL21": "CP010816.1", "BW25113": "CP009273.1", "MG1655": "U00096.3"},
+  "phages": {"T7": "NC_001604.1", "T3": "NC_003298.1"},
+  "input_identity": "Public references; correspondence to experimental stocks not demonstrated",
+  "excluded_constructs": {
+    "T7_T3_gp17": "Exact experimental complete-genome mapping unverified; retain abstention",
+    "T3_T7_gp17": "Exact experimental complete-genome mapping unverified; retain abstention"
+  },
+  "score_interpretation": "Model interaction score, not calibrated infection probability, binding energy or assembly likelihood",
+  "training_rules": [
+    "Do not fit or calibrate on cases.csv, Ando target-publication labels, donor identity or a target/homolog phenotype lookup",
+    "Map external phenotype IDs to authenticated accessions/proteomes; record assay meaning and provenance",
+    "Audit target stocks, duplicates and near-related phage/host groups by sequences, not filename matching; BL21 already occurs by name in source tables",
+    "Exclude target-related groups from supervised training/calibration; define and freeze numerical homology/group rules before training, without optimizing on target labels",
+    "Group external validation by publication/construct and phage/host relatedness rather than random interaction rows",
+    "Fit feature selection, calibration and hyperparameter choice only within external training partitions; disclose any unsupervised pretraining overlap separately",
+    "Freeze retained/excluded IDs, exact dependencies, annotation, clustering, feature selection, model parameters and seeds in a completed run manifest before fitting",
+    "Hash trained weights, reference databases and feature mappings before target scoring; neutralize scoring identifiers and keep labels out of inference"
+  ],
+  "literature_starting_representation_not_a_complete_run_spec": {
+    "protein_family_identity": 0.4,
+    "protein_family_coverage": 0.8,
+    "mmseqs_sensitivity": 7.5,
+    "classifier_family": "CatBoost",
+    "feature_selection_family": "RFE"
+  },
+  "unresolved_before_fitting": [
+    "external training/validation genome and phenotype manifests with hashes",
+    "sequence overlap and grouped exclusion report with fixed thresholds",
+    "annotation/tool/dependency versions and all train/feature-selection/model parameters",
+    "seeds and group split assignments"
+  ],
+  "unresolved_after_fitting_before_target_inference": [
+    "reference-cluster, feature-map and trained-model hashes bound to the frozen training specification"
+  ],
+  "executable_preregistration_complete": false,
+  "inference_controls": [
+    "Record feature collisions and zero-assignment cases before evaluating target labels; do not retune after target results",
+    "Require finite scores for all three candidate hosts per covered phage; missing scores remain abstentions",
+    "Actually rerun with neutral filenames/headers and test label permutations only after score freezing",
+    "Preserve raw per-model scores, aggregate by the frozen rule and save hashes before evaluation"
+  ],
+  "primary_endpoint": "Within-phage positive-negative concordance, ties worth 0.5; macro-average only across queries having both labels",
+  "primary_screening_condition": "Complete six-case native coverage and concordance strictly above 0.5 and WIsH on the identical subset; otherwise no positive screening signal",
+  "comparators": [
+    "Always-tied/random ranking: expected pair concordance 0.5",
+    "Uniform random top host: expected documented-positive fraction computed per actual candidate set",
+    "Historical WIsH restricted to exactly the same evaluated query-host pairs",
+    "Always-positive binary baseline on the identical subset, only for a separately declared binary sensitivity analysis"
+  ],
+  "secondary_endpoint": "Per-query top-ranked host documented positive, averaging tied winners; do not count unselected hosts as negative",
+  "no_target_threshold_tuning": true,
+  "source_label_curation_followup": {
+    "audit": "data/processed/genophi-label-audit.json",
+    "retain_nonblank_crosschecked_rows_before_sequence_exclusions": 37632,
+    "exclude_source_empty_rows_pending_clarification": 156,
+    "host_name_correspondence": "unique name-based rule corroborated against original source table; not sequence-stock authentication",
+    "host_relatedness_policy": "genophi-overlap-policy.json; fixed before first host-similarity run; not yet executed"
+  },
+  "interpretation_limits": [
+    "T7 has no negative in this panel; T3 is the only informative native query",
+    "Two correlated phages and three hosts do not establish generalization, even with perfect ordering",
+    "For T3's three single-positive placements, best possible exact permutation upper-tail fraction is 1/3",
+    "Native-only diagnostic success does not pass the existing ten-case complete-coverage gate",
+    "No structural binding, gp17 grafting, oligomerization, assembly or functional infection validation inferred"
+  ],
+  "current_new_method_scores": null,
+  "current_new_method_covered_cases": 0,
+  "decision": "HOLD until mandatory inputs and pre-score run specification are complete; preserve WIsH NO-GO and all source abstentions"
+}

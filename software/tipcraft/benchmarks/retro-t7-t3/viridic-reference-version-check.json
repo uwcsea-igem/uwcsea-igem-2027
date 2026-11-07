@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-07",
+  "recorded_before_reference_alignments": true,
+  "purpose": "Version diagnostic of the same frozen public numerical controls; retain BLAST2.17 discrepancy unchanged",
+  "primary_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7694805/",
+  "paper_blast_version": "2.9.0+",
+  "local_blast_version": "2.9.0+",
+  "blastn_parameters": [
+    "-evalue",
+    "1",
+    "-max_target_seqs",
+    "10000",
+    "-num_threads",
+    "1",
+    "-word_size",
+    "7",
+    "-reward",
+    "2",
+    "-penalty",
+    "-3",
+    "-gapopen",
+    "5",
+    "-gapextend",
+    "2"
+  ],
+  "blastn_format": "7 qseqid sseqid evalue bitscore qlen slen qstart qend sstart send qseq sseq nident gaps",
+  "adapter_sha256": "e1d19de908f4f066ad79f88eb22bc021ea849b2b9b4c86baa501d371e9c872a4",
+  "adapter_upstream_commit": "d7db8031a27bc6b06ff5cb1245e372caf3794b93",
+  "control_pairs": [
+    {
+      "id": "T7-HTVC011P",
+      "accessions": [
+        "NC_001604.1",
+        "NC_020483.1"
+      ],
+      "published_similarity_percent": "0.34",
+      "printed_decimal_places": 2,
+      "locator": "Results and Discussion paragraph describing Figure 3; Figure 3 specifies accession versions",
+      "quote": "VIRIDIC reported a 0.34% similarity for this genome pair."
+    },
+    {
+      "id": "MG969412-MG969413",
+      "accessions": [
+        "MG969412.1",
+        "MG969413.1"
+      ],
+      "published_similarity_percent": "62.4",
+      "printed_decimal_places": 1,
+      "locator": "Results and Discussion paragraph interpreting Figure 4",
+      "quote": "have a 62.4% similarity"
+    }
+  ],
+  "comparison": "Compare the adapter's unrounded value with the decimal interval implied by the printed precision: expected +/- one half of the final printed unit; strict interior is a match, exact endpoints are rounding-convention-ambiguous, outside is a discrepancy",
+  "parameter_tuning_permitted": false,
+  "interpretation": "Agreement or disagreement applies only to these published numerical controls. Retain the earlier2.17 discrepancy. No parameter tuning, upstream runtime-equivalence claim, host-specificity prediction or assembly claim.",
+  "previous_reference_report_sha256": "ce62cffbf422f4e747f48d057cf0c8387d03b569c83bf6a42918fd38d954dd1f",
+  "previous_policy_sha256": "0bdec065eb1d60900769e15e7d04a0e05b2b1bda5bc2223084b0dca987f4d7d1",
+  "previous_validator_source_snapshot": "data/raw/viridic-validation/run-1/retained-validator.py",
+  "previous_validator_sha256": "7a0704b78b4a2775dc2fc6eec484170e1e3522c1609e5b3d37ce626ec070bc04",
+  "validator_sha256": "03d86bf5d2264706d641bf6c2f0a2fbca96bfc0d5b84eb7d1305f710b4ed550f",
+  "normalizer_sha256": "1072672111e49852b55ae9104fcd35381322a35d8e6980c62ebdbd0660fef6e9",
+  "completion_helper_sha256": "8026b82db228b3cb7c5e673d1c927f53de598925e282e0a9b3b89c536c928464",
+  "tool_install_provenance": {
+    "path": "data/raw/tools/blast-2.9.0/download-provenance.json",
+    "sha256": "af729ea5d8744190053f83c5c2109f53bb8bd096a1df86ad04aa265cba7993b6"
+  },
+  "executable_sha256": {
+    "blastn": "086032534a0dbed13a9b43b7b20e63995a87948aea27326c5fa64356f0e26871",
+    "makeblastdb": "0fb5f8e0373b95194318a2b5343da9ddc9e70b3a053adf8bc821e9632cc394aa"
+  },
+  "sequence_inputs": "Reuse the exact four authenticated FASTA files from the first control report; no sequence refetch, trimming or normalization-policy change",
+  "diagnostic_scope": "Only these two controls; same expectations and paper alignment parameters, threads1; compare official macOS x86_64 BLAST2.9 binary running successfully on this host with the previous native2.17 run. No full97 rerun or threshold changes."
+}

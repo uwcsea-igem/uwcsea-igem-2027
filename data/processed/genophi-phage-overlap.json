@@ -1,0 +1,2181 @@
+{
+  "schema_version": 1,
+  "purpose": "Sequence-relatedness audit; not a host-range predictor",
+  "policy_sha256": "d023b97b870b9b585eeeae7fc726ab23c6b90c9c1c6079b8c641fbf7defc79b0",
+  "normalized_manifest_sha256": "d0f66b3bba527aa8cc32b327ed7f15107fbcd0943faefa6b1fda2496f528185c",
+  "adapter_sha256": "e1d19de908f4f066ad79f88eb22bc021ea849b2b9b4c86baa501d371e9c872a4",
+  "tool_versions": {
+    "blastn": "blastn: 2.17.0+",
+    "makeblastdb": "makeblastdb: 2.17.0+",
+    "tblastn": "tblastn: 2.17.0+"
+  },
+  "executable_sha256": {
+    "blastn": "b13895ffdbc83a0a21025002bf33fb289c4be441536a1a88d7be80e8263c34a7",
+    "makeblastdb": "b18159370061729a685e5714b5a1d349fd2951f4f3aeceb576b0e696b403fc72",
+    "tblastn": "8bcde4b235916c6ed7e2a99bdccecdb4c46afbe4877d9d3952af9ac12042b535"
+  },
+  "blastn_sha256": "59a95d7aff281bc2e23ca7d218b8ca84051851b7f3a1c94751993df3f776c4db",
+  "tblastn_sha256": "069cc5399cfcd5e4b382e978fd9110560e8efd0355a1e4542c32bfa6dec7cade",
+  "query_completion": {
+    "blastn": {
+      "completed_queries": 99,
+      "completed_batch_query_counts": [
+        67,
+        32
+      ],
+      "reported_rows_by_query": {
+        "s000": 906,
+        "s001": 1075,
+        "s002": 1075,
+        "s003": 1068,
+        "s004": 580,
+        "s005": 83,
+        "s006": 61,
+        "s007": 61,
+        "s008": 229,
+        "s009": 1058,
+        "s010": 250,
+        "s011": 222,
+        "s012": 238,
+        "s013": 1002,
+        "s014": 936,
+        "s015": 888,
+        "s016": 971,
+        "s017": 927,
+        "s018": 955,
+        "s019": 971,
+        "s020": 1046,
+        "s021": 941,
+        "s022": 894,
+        "s023": 933,
+        "s024": 564,
+        "s025": 262,
+        "s026": 952,
+        "s027": 952,
+        "s028": 978,
+        "s029": 957,
+        "s030": 2270,
+        "s031": 1647,
+        "s032": 1057,
+        "s033": 908,
+        "s034": 1375,
+        "s035": 57,
+        "s036": 57,
+        "s037": 916,
+        "s038": 588,
+        "s039": 1838,
+        "s040": 572,
+        "s041": 1889,
+        "s042": 1889,
+        "s043": 971,
+        "s044": 971,
+        "s045": 295,
+        "s046": 940,
+        "s047": 840,
+        "s048": 978,
+        "s049": 1716,
+        "s050": 1627,
+        "s051": 1704,
+        "s052": 1346,
+        "s053": 53,
+        "s054": 1043,
+        "s055": 259,
+        "s056": 538,
+        "s057": 532,
+        "s058": 503,
+        "s059": 1902,
+        "s060": 1892,
+        "s061": 1647,
+        "s062": 1735,
+        "s063": 1385,
+        "s064": 1433,
+        "s065": 1308,
+        "s066": 1502,
+        "s067": 1446,
+        "s068": 1915,
+        "s069": 1570,
+        "s070": 934,
+        "s071": 934,
+        "s072": 969,
+        "s073": 948,
+        "s074": 919,
+        "s075": 962,
+        "s076": 634,
+        "s077": 836,
+        "s078": 633,
+        "s079": 619,
+        "s080": 897,
+        "s081": 297,
+        "s082": 292,
+        "s083": 285,
+        "s084": 931,
+        "s085": 1067,
+        "s086": 966,
+        "s087": 966,
+        "s088": 126,
+        "s089": 1056,
+        "s090": 1830,
+        "s091": 1047,
+        "s092": 1412,
+        "s093": 1761,
+        "s094": 631,
+        "s095": 2109,
+        "s096": 1035,
+        "t000": 1029,
+        "t001": 1023
+      }
+    },
+    "tblastn": {
+      "completed_queries": 2,
+      "completed_batch_query_counts": [
+        2
+      ],
+      "reported_rows_by_query": {
+        "t000_gp17": 26,
+        "t001_gp17": 26
+      }
+    }
+  },
+  "wrapper_sha256": "8026b82db228b3cb7c5e673d1c927f53de598925e282e0a9b3b89c536c928464",
+  "replayed_existing_alignments": true,
+  "calculator_output_sha256": "0ad1ed3246533df09c9687e4ce1be8b460335d921e010d9950d69416f44ee26c",
+  "source_genomes": 97,
+  "target_genomes": 2,
+  "pair_count": 4851,
+  "whole_genome": {
+    "excluded_source_ids": [
+      "427_P2",
+      "T7_Portugal"
+    ],
+    "edges_at_or_above_buffered_threshold": [
+      {
+        "query": "s000",
+        "subject": "s017",
+        "similarity_percent_unrounded": 78.26211322256492
+      },
+      {
+        "query": "s000",
+        "subject": "s021",
+        "similarity_percent_unrounded": 80.4805107950889
+      },
+      {
+        "query": "s000",
+        "subject": "s022",
+        "similarity_percent_unrounded": 80.48184269549658
+      },
+      {
+        "query": "s000",
+        "subject": "s029",
+        "similarity_percent_unrounded": 79.79978859665485
+      },
+      {
+        "query": "s000",
+        "subject": "s033",
+        "similarity_percent_unrounded": 85.39352576544988
+      },
+      {
+        "query": "s000",
+        "subject": "s037",
+        "similarity_percent_unrounded": 85.39139126632098
+      },
+      {
+        "query": "s000",
+        "subject": "s043",
+        "similarity_percent_unrounded": 78.30600477780696
+      },
+      {
+        "query": "s000",
+        "subject": "s044",
+        "similarity_percent_unrounded": 78.30600477780696
+      },
+      {
+        "query": "s000",
+        "subject": "s070",
+        "similarity_percent_unrounded": 78.72784280414226
+      },
+      {
+        "query": "s000",
+        "subject": "s071",
+        "similarity_percent_unrounded": 78.72784280414226
+      },
+      {
+        "query": "s000",
+        "subject": "s080",
+        "similarity_percent_unrounded": 80.5615196140342
+      },
+      {
+        "query": "s000",
+        "subject": "s084",
+        "similarity_percent_unrounded": 80.72998332462231
+      },
+      {
+        "query": "s001",
+        "subject": "s002",
+        "similarity_percent_unrounded": 99.9978093235191
+      },
+      {
+        "query": "s001",
+        "subject": "s003",
+        "similarity_percent_unrounded": 87.51008320717814
+      },
+      {
+        "query": "s001",
+        "subject": "s009",
+        "similarity_percent_unrounded": 76.58414041582652
+      },
+      {
+        "query": "s001",
+        "subject": "s013",
+        "similarity_percent_unrounded": 80.49112168804967
+      },
+      {
+        "query": "s001",
+        "subject": "s014",
+        "similarity_percent_unrounded": 82.54355439684014
+      },
+      {
+        "query": "s001",
+        "subject": "s015",
+        "similarity_percent_unrounded": 77.6956370997506
+      },
+      {
+        "query": "s001",
+        "subject": "s016",
+        "similarity_percent_unrounded": 78.76644864260655
+      },
+      {
+        "query": "s001",
+        "subject": "s018",
+        "similarity_percent_unrounded": 77.29179015176085
+      },
+      {
+        "query": "s001",
+        "subject": "s019",
+        "similarity_percent_unrounded": 78.76644864260655
+      },
+      {
+        "query": "s001",
+        "subject": "s032",
+        "similarity_percent_unrounded": 76.79097045479695
+      },
+      {
+        "query": "s001",
+        "subject": "s046",
+        "similarity_percent_unrounded": 80.68505869089462
+      },
+      {
+        "query": "s001",
+        "subject": "s054",
+        "similarity_percent_unrounded": 76.38182585330107
+      },
+      {
+        "query": "s001",
+        "subject": "s072",
+        "similarity_percent_unrounded": 79.28409065830998
+      },
+      {
+        "query": "s001",
+        "subject": "s073",
+        "similarity_percent_unrounded": 80.18328494492587
+      },
+      {
+        "query": "s001",
+        "subject": "s074",
+        "similarity_percent_unrounded": 81.37594703281566
+      },
+      {
+        "query": "s001",
+        "subject": "s075",
+        "similarity_percent_unrounded": 80.13486623922175
+      },
+      {
+        "query": "s001",
+        "subject": "s091",
+        "similarity_percent_unrounded": 73.4864437292019
+      },
+      {
+        "query": "s002",
+        "subject": "s003",
+        "similarity_percent_unrounded": 87.51229322518978
+      },
+      {
+        "query": "s002",
+        "subject": "s009",
+        "similarity_percent_unrounded": 76.58414041582652
+      },
+      {
+        "query": "s002",
+        "subject": "s013",
+        "similarity_percent_unrounded": 80.49335101936174
+      },
+      {
+        "query": "s002",
+        "subject": "s014",
+        "similarity_percent_unrounded": 82.54579225923398
+      },
+      {
+        "query": "s002",
+        "subject": "s015",
+        "similarity_percent_unrounded": 77.6956370997506
+      },
+      {
+        "query": "s002",
+        "subject": "s016",
+        "similarity_percent_unrounded": 78.76644864260655
+      },
+      {
+        "query": "s002",
+        "subject": "s018",
+        "similarity_percent_unrounded": 77.29179015176085
+      },
+      {
+        "query": "s002",
+        "subject": "s019",
+        "similarity_percent_unrounded": 78.76644864260655
+      },
+      {
+        "query": "s002",
+        "subject": "s032",
+        "similarity_percent_unrounded": 76.79097045479695
+      },
+      {
+        "query": "s002",
+        "subject": "s046",
+        "similarity_percent_unrounded": 80.68726927072971
+      },
+      {
+        "query": "s002",
+        "subject": "s054",
+        "similarity_percent_unrounded": 76.38182585330107
+      },
+      {
+        "query": "s002",
+        "subject": "s072",
+        "similarity_percent_unrounded": 79.28629753051001
+      },
+      {
+        "query": "s002",
+        "subject": "s073",
+        "similarity_percent_unrounded": 80.1855012078633
+      },
+      {
+        "query": "s002",
+        "subject": "s074",
+        "similarity_percent_unrounded": 81.37816881068231
+      },
+      {
+        "query": "s002",
+        "subject": "s075",
+        "similarity_percent_unrounded": 80.13707716117621
+      },
+      {
+        "query": "s002",
+        "subject": "s091",
+        "similarity_percent_unrounded": 73.4864437292019
+      },
+      {
+        "query": "s003",
+        "subject": "s009",
+        "similarity_percent_unrounded": 78.1980880391285
+      },
+      {
+        "query": "s003",
+        "subject": "s013",
+        "similarity_percent_unrounded": 82.17828463459072
+      },
+      {
+        "query": "s003",
+        "subject": "s014",
+        "similarity_percent_unrounded": 81.42979722711466
+      },
+      {
+        "query": "s003",
+        "subject": "s015",
+        "similarity_percent_unrounded": 78.78890468774685
+      },
+      {
+        "query": "s003",
+        "subject": "s016",
+        "similarity_percent_unrounded": 79.54174948078341
+      },
+      {
+        "query": "s003",
+        "subject": "s018",
+        "similarity_percent_unrounded": 78.57997246609041
+      },
+      {
+        "query": "s003",
+        "subject": "s019",
+        "similarity_percent_unrounded": 79.54174948078341
+      },
+      {
+        "query": "s003",
+        "subject": "s032",
+        "similarity_percent_unrounded": 77.62668720902971
+      },
+      {
+        "query": "s003",
+        "subject": "s046",
+        "similarity_percent_unrounded": 83.24616671313075
+      },
+      {
+        "query": "s003",
+        "subject": "s054",
+        "similarity_percent_unrounded": 78.25190728521336
+      },
+      {
+        "query": "s003",
+        "subject": "s072",
+        "similarity_percent_unrounded": 81.8673672726463
+      },
+      {
+        "query": "s003",
+        "subject": "s073",
+        "similarity_percent_unrounded": 81.82306049662914
+      },
+      {
+        "query": "s003",
+        "subject": "s074",
+        "similarity_percent_unrounded": 83.11122070411011
+      },
+      {
+        "query": "s003",
+        "subject": "s075",
+        "similarity_percent_unrounded": 82.42602692363458
+      },
+      {
+        "query": "s003",
+        "subject": "s091",
+        "similarity_percent_unrounded": 72.32103548472308
+      },
+      {
+        "query": "s004",
+        "subject": "s078",
+        "similarity_percent_unrounded": 80.92332183603078
+      },
+      {
+        "query": "s004",
+        "subject": "s079",
+        "similarity_percent_unrounded": 81.5990681904674
+      },
+      {
+        "query": "s006",
+        "subject": "s007",
+        "similarity_percent_unrounded": 99.90043897361633
+      },
+      {
+        "query": "s008",
+        "subject": "s010",
+        "similarity_percent_unrounded": 96.11255459118802
+      },
+      {
+        "query": "s008",
+        "subject": "s011",
+        "similarity_percent_unrounded": 96.92659836885264
+      },
+      {
+        "query": "s008",
+        "subject": "s012",
+        "similarity_percent_unrounded": 97.41711727683716
+      },
+      {
+        "query": "s009",
+        "subject": "s013",
+        "similarity_percent_unrounded": 81.33129990131874
+      },
+      {
+        "query": "s009",
+        "subject": "s014",
+        "similarity_percent_unrounded": 82.05641983925074
+      },
+      {
+        "query": "s009",
+        "subject": "s015",
+        "similarity_percent_unrounded": 81.58445474593816
+      },
+      {
+        "query": "s009",
+        "subject": "s016",
+        "similarity_percent_unrounded": 79.26742373636161
+      },
+      {
+        "query": "s009",
+        "subject": "s018",
+        "similarity_percent_unrounded": 81.8530603060306
+      },
+      {
+        "query": "s009",
+        "subject": "s019",
+        "similarity_percent_unrounded": 79.26742373636161
+      },
+      {
+        "query": "s009",
+        "subject": "s032",
+        "similarity_percent_unrounded": 96.24748143777899
+      },
+      {
+        "query": "s009",
+        "subject": "s046",
+        "similarity_percent_unrounded": 82.56668556878704
+      },
+      {
+        "query": "s009",
+        "subject": "s054",
+        "similarity_percent_unrounded": 80.92153029879921
+      },
+      {
+        "query": "s009",
+        "subject": "s072",
+        "similarity_percent_unrounded": 80.79898766775078
+      },
+      {
+        "query": "s009",
+        "subject": "s073",
+        "similarity_percent_unrounded": 81.48709659439274
+      },
+      {
+        "query": "s009",
+        "subject": "s074",
+        "similarity_percent_unrounded": 82.2375699869246
+      },
+      {
+        "query": "s009",
+        "subject": "s075",
+        "similarity_percent_unrounded": 82.0101642516375
+      },
+      {
+        "query": "s009",
+        "subject": "s091",
+        "similarity_percent_unrounded": 74.21365701617682
+      },
+      {
+        "query": "s010",
+        "subject": "s011",
+        "similarity_percent_unrounded": 97.92482164713147
+      },
+      {
+        "query": "s010",
+        "subject": "s012",
+        "similarity_percent_unrounded": 98.33628396432852
+      },
+      {
+        "query": "s011",
+        "subject": "s012",
+        "similarity_percent_unrounded": 98.40320905253387
+      },
+      {
+        "query": "s013",
+        "subject": "s014",
+        "similarity_percent_unrounded": 91.25848635348795
+      },
+      {
+        "query": "s013",
+        "subject": "s015",
+        "similarity_percent_unrounded": 84.51667994990322
+      },
+      {
+        "query": "s013",
+        "subject": "s016",
+        "similarity_percent_unrounded": 81.5238696014599
+      },
+      {
+        "query": "s013",
+        "subject": "s018",
+        "similarity_percent_unrounded": 83.95723751622378
+      },
+      {
+        "query": "s013",
+        "subject": "s019",
+        "similarity_percent_unrounded": 81.5238696014599
+      },
+      {
+        "query": "s013",
+        "subject": "s032",
+        "similarity_percent_unrounded": 82.34538840145517
+      },
+      {
+        "query": "s013",
+        "subject": "s046",
+        "similarity_percent_unrounded": 88.25190401727959
+      },
+      {
+        "query": "s013",
+        "subject": "s054",
+        "similarity_percent_unrounded": 83.27512743136789
+      },
+      {
+        "query": "s013",
+        "subject": "s072",
+        "similarity_percent_unrounded": 86.97820154307469
+      },
+      {
+        "query": "s013",
+        "subject": "s073",
+        "similarity_percent_unrounded": 86.5507167913015
+      },
+      {
+        "query": "s013",
+        "subject": "s074",
+        "similarity_percent_unrounded": 86.65460507717533
+      },
+      {
+        "query": "s013",
+        "subject": "s075",
+        "similarity_percent_unrounded": 86.90099800848364
+      },
+      {
+        "query": "s013",
+        "subject": "s091",
+        "similarity_percent_unrounded": 74.5858868460787
+      },
+      {
+        "query": "s014",
+        "subject": "s015",
+        "similarity_percent_unrounded": 85.61174103877103
+      },
+      {
+        "query": "s014",
+        "subject": "s016",
+        "similarity_percent_unrounded": 81.377781798444
+      },
+      {
+        "query": "s014",
+        "subject": "s018",
+        "similarity_percent_unrounded": 86.22159740319115
+      },
+      {
+        "query": "s014",
+        "subject": "s019",
+        "similarity_percent_unrounded": 81.377781798444
+      },
+      {
+        "query": "s014",
+        "subject": "s032",
+        "similarity_percent_unrounded": 83.45073209339137
+      },
+      {
+        "query": "s014",
+        "subject": "s046",
+        "similarity_percent_unrounded": 90.87962596980204
+      },
+      {
+        "query": "s014",
+        "subject": "s054",
+        "similarity_percent_unrounded": 85.38979089372228
+      },
+      {
+        "query": "s014",
+        "subject": "s072",
+        "similarity_percent_unrounded": 88.45334325430379
+      },
+      {
+        "query": "s014",
+        "subject": "s073",
+        "similarity_percent_unrounded": 89.58864091850945
+      },
+      {
+        "query": "s014",
+        "subject": "s074",
+        "similarity_percent_unrounded": 91.08782763670212
+      },
+      {
+        "query": "s014",
+        "subject": "s075",
+        "similarity_percent_unrounded": 88.85751397752301
+      },
+      {
+        "query": "s014",
+        "subject": "s091",
+        "similarity_percent_unrounded": 75.01393068093168
+      },
+      {
+        "query": "s015",
+        "subject": "s016",
+        "similarity_percent_unrounded": 93.25790627755046
+      },
+      {
+        "query": "s015",
+        "subject": "s018",
+        "similarity_percent_unrounded": 95.44862567687984
+      },
+      {
+        "query": "s015",
+        "subject": "s019",
+        "similarity_percent_unrounded": 93.25790627755046
+      },
+      {
+        "query": "s015",
+        "subject": "s032",
+        "similarity_percent_unrounded": 82.55110920248173
+      },
+      {
+        "query": "s015",
+        "subject": "s046",
+        "similarity_percent_unrounded": 85.32356559921436
+      },
+      {
+        "query": "s015",
+        "subject": "s054",
+        "similarity_percent_unrounded": 89.57801744179453
+      },
+      {
+        "query": "s015",
+        "subject": "s072",
+        "similarity_percent_unrounded": 87.07841745264415
+      },
+      {
+        "query": "s015",
+        "subject": "s073",
+        "similarity_percent_unrounded": 88.10760646906371
+      },
+      {
+        "query": "s015",
+        "subject": "s074",
+        "similarity_percent_unrounded": 88.24530549724854
+      },
+      {
+        "query": "s015",
+        "subject": "s075",
+        "similarity_percent_unrounded": 87.27096198787495
+      },
+      {
+        "query": "s015",
+        "subject": "s091",
+        "similarity_percent_unrounded": 75.62157465579467
+      },
+      {
+        "query": "s016",
+        "subject": "s018",
+        "similarity_percent_unrounded": 91.46680530753407
+      },
+      {
+        "query": "s016",
+        "subject": "s019",
+        "similarity_percent_unrounded": 100.0
+      },
+      {
+        "query": "s016",
+        "subject": "s032",
+        "similarity_percent_unrounded": 78.94354306672183
+      },
+      {
+        "query": "s016",
+        "subject": "s046",
+        "similarity_percent_unrounded": 81.92550399285196
+      },
+      {
+        "query": "s016",
+        "subject": "s054",
+        "similarity_percent_unrounded": 85.75900721474815
+      },
+      {
+        "query": "s016",
+        "subject": "s072",
+        "similarity_percent_unrounded": 84.02332556557806
+      },
+      {
+        "query": "s016",
+        "subject": "s073",
+        "similarity_percent_unrounded": 85.14943506937057
+      },
+      {
+        "query": "s016",
+        "subject": "s074",
+        "similarity_percent_unrounded": 87.18440934451442
+      },
+      {
+        "query": "s016",
+        "subject": "s075",
+        "similarity_percent_unrounded": 84.09423487226461
+      },
+      {
+        "query": "s016",
+        "subject": "s091",
+        "similarity_percent_unrounded": 73.02680894219321
+      },
+      {
+        "query": "s017",
+        "subject": "s021",
+        "similarity_percent_unrounded": 81.35527028559191
+      },
+      {
+        "query": "s017",
+        "subject": "s022",
+        "similarity_percent_unrounded": 80.30242036934534
+      },
+      {
+        "query": "s017",
+        "subject": "s029",
+        "similarity_percent_unrounded": 79.72065305108946
+      },
+      {
+        "query": "s017",
+        "subject": "s033",
+        "similarity_percent_unrounded": 85.54103894480215
+      },
+      {
+        "query": "s017",
+        "subject": "s037",
+        "similarity_percent_unrounded": 84.67660450321212
+      },
+      {
+        "query": "s017",
+        "subject": "s043",
+        "similarity_percent_unrounded": 79.47004982330832
+      },
+      {
+        "query": "s017",
+        "subject": "s044",
+        "similarity_percent_unrounded": 79.47004982330832
+      },
+      {
+        "query": "s017",
+        "subject": "s070",
+        "similarity_percent_unrounded": 79.51061945798985
+      },
+      {
+        "query": "s017",
+        "subject": "s071",
+        "similarity_percent_unrounded": 79.51061945798985
+      },
+      {
+        "query": "s017",
+        "subject": "s080",
+        "similarity_percent_unrounded": 83.2072426489131
+      },
+      {
+        "query": "s017",
+        "subject": "s084",
+        "similarity_percent_unrounded": 78.88008150283272
+      },
+      {
+        "query": "s018",
+        "subject": "s019",
+        "similarity_percent_unrounded": 91.46680530753407
+      },
+      {
+        "query": "s018",
+        "subject": "s032",
+        "similarity_percent_unrounded": 83.17569018318247
+      },
+      {
+        "query": "s018",
+        "subject": "s046",
+        "similarity_percent_unrounded": 85.68203623229302
+      },
+      {
+        "query": "s018",
+        "subject": "s054",
+        "similarity_percent_unrounded": 91.52897950852206
+      },
+      {
+        "query": "s018",
+        "subject": "s072",
+        "similarity_percent_unrounded": 87.28633080554836
+      },
+      {
+        "query": "s018",
+        "subject": "s073",
+        "similarity_percent_unrounded": 88.00176544481288
+      },
+      {
+        "query": "s018",
+        "subject": "s074",
+        "similarity_percent_unrounded": 88.11082494695879
+      },
+      {
+        "query": "s018",
+        "subject": "s075",
+        "similarity_percent_unrounded": 87.66439755703819
+      },
+      {
+        "query": "s018",
+        "subject": "s091",
+        "similarity_percent_unrounded": 75.19492960256639
+      },
+      {
+        "query": "s019",
+        "subject": "s032",
+        "similarity_percent_unrounded": 78.94354306672183
+      },
+      {
+        "query": "s019",
+        "subject": "s046",
+        "similarity_percent_unrounded": 81.92550399285196
+      },
+      {
+        "query": "s019",
+        "subject": "s054",
+        "similarity_percent_unrounded": 85.75900721474815
+      },
+      {
+        "query": "s019",
+        "subject": "s072",
+        "similarity_percent_unrounded": 84.02332556557806
+      },
+      {
+        "query": "s019",
+        "subject": "s073",
+        "similarity_percent_unrounded": 85.14943506937057
+      },
+      {
+        "query": "s019",
+        "subject": "s074",
+        "similarity_percent_unrounded": 87.18440934451442
+      },
+      {
+        "query": "s019",
+        "subject": "s075",
+        "similarity_percent_unrounded": 84.09423487226461
+      },
+      {
+        "query": "s019",
+        "subject": "s091",
+        "similarity_percent_unrounded": 73.02680894219321
+      },
+      {
+        "query": "s020",
+        "subject": "s096",
+        "similarity_percent_unrounded": 83.77438454347148
+      },
+      {
+        "query": "s020",
+        "subject": "t000",
+        "similarity_percent_unrounded": 83.78442308649967
+      },
+      {
+        "query": "s021",
+        "subject": "s022",
+        "similarity_percent_unrounded": 88.94718700930642
+      },
+      {
+        "query": "s021",
+        "subject": "s029",
+        "similarity_percent_unrounded": 82.06106870229007
+      },
+      {
+        "query": "s021",
+        "subject": "s033",
+        "similarity_percent_unrounded": 80.85403293329612
+      },
+      {
+        "query": "s021",
+        "subject": "s037",
+        "similarity_percent_unrounded": 83.77338429992659
+      },
+      {
+        "query": "s021",
+        "subject": "s043",
+        "similarity_percent_unrounded": 82.67193756018447
+      },
+      {
+        "query": "s021",
+        "subject": "s044",
+        "similarity_percent_unrounded": 82.67193756018447
+      },
+      {
+        "query": "s021",
+        "subject": "s070",
+        "similarity_percent_unrounded": 81.78781129783357
+      },
+      {
+        "query": "s021",
+        "subject": "s071",
+        "similarity_percent_unrounded": 81.78781129783357
+      },
+      {
+        "query": "s021",
+        "subject": "s080",
+        "similarity_percent_unrounded": 82.91724782146925
+      },
+      {
+        "query": "s021",
+        "subject": "s084",
+        "similarity_percent_unrounded": 82.5574506170505
+      },
+      {
+        "query": "s022",
+        "subject": "s029",
+        "similarity_percent_unrounded": 81.99096843985458
+      },
+      {
+        "query": "s022",
+        "subject": "s033",
+        "similarity_percent_unrounded": 82.62709180506467
+      },
+      {
+        "query": "s022",
+        "subject": "s037",
+        "similarity_percent_unrounded": 81.98409990015041
+      },
+      {
+        "query": "s022",
+        "subject": "s043",
+        "similarity_percent_unrounded": 82.46897022913319
+      },
+      {
+        "query": "s022",
+        "subject": "s044",
+        "similarity_percent_unrounded": 82.46897022913319
+      },
+      {
+        "query": "s022",
+        "subject": "s070",
+        "similarity_percent_unrounded": 80.95075628340726
+      },
+      {
+        "query": "s022",
+        "subject": "s071",
+        "similarity_percent_unrounded": 80.95075628340726
+      },
+      {
+        "query": "s022",
+        "subject": "s080",
+        "similarity_percent_unrounded": 83.03263397306483
+      },
+      {
+        "query": "s022",
+        "subject": "s084",
+        "similarity_percent_unrounded": 82.57093225246092
+      },
+      {
+        "query": "s023",
+        "subject": "s047",
+        "similarity_percent_unrounded": 88.81704915342323
+      },
+      {
+        "query": "s023",
+        "subject": "s048",
+        "similarity_percent_unrounded": 88.40157335887663
+      },
+      {
+        "query": "s024",
+        "subject": "s094",
+        "similarity_percent_unrounded": 73.17292962061819
+      },
+      {
+        "query": "s025",
+        "subject": "s045",
+        "similarity_percent_unrounded": 75.3526543026447
+      },
+      {
+        "query": "s026",
+        "subject": "s027",
+        "similarity_percent_unrounded": 99.99932660839585
+      },
+      {
+        "query": "s026",
+        "subject": "s028",
+        "similarity_percent_unrounded": 95.44086845723776
+      },
+      {
+        "query": "s027",
+        "subject": "s028",
+        "similarity_percent_unrounded": 95.4401960685433
+      },
+      {
+        "query": "s029",
+        "subject": "s033",
+        "similarity_percent_unrounded": 80.21302130213022
+      },
+      {
+        "query": "s029",
+        "subject": "s037",
+        "similarity_percent_unrounded": 81.40996856757971
+      },
+      {
+        "query": "s029",
+        "subject": "s043",
+        "similarity_percent_unrounded": 80.82532151329754
+      },
+      {
+        "query": "s029",
+        "subject": "s044",
+        "similarity_percent_unrounded": 80.82532151329754
+      },
+      {
+        "query": "s029",
+        "subject": "s070",
+        "similarity_percent_unrounded": 79.57475994513031
+      },
+      {
+        "query": "s029",
+        "subject": "s071",
+        "similarity_percent_unrounded": 79.57475994513031
+      },
+      {
+        "query": "s029",
+        "subject": "s080",
+        "similarity_percent_unrounded": 81.16119271260165
+      },
+      {
+        "query": "s029",
+        "subject": "s084",
+        "similarity_percent_unrounded": 79.75153736256911
+      },
+      {
+        "query": "s031",
+        "subject": "s061",
+        "similarity_percent_unrounded": 92.79647600925878
+      },
+      {
+        "query": "s032",
+        "subject": "s046",
+        "similarity_percent_unrounded": 82.81480323401975
+      },
+      {
+        "query": "s032",
+        "subject": "s054",
+        "similarity_percent_unrounded": 82.14638305510681
+      },
+      {
+        "query": "s032",
+        "subject": "s072",
+        "similarity_percent_unrounded": 81.35674470457079
+      },
+      {
+        "query": "s032",
+        "subject": "s073",
+        "similarity_percent_unrounded": 82.00322450624748
+      },
+      {
+        "query": "s032",
+        "subject": "s074",
+        "similarity_percent_unrounded": 82.25093162124546
+      },
+      {
+        "query": "s032",
+        "subject": "s075",
+        "similarity_percent_unrounded": 82.46364509571782
+      },
+      {
+        "query": "s032",
+        "subject": "s091",
+        "similarity_percent_unrounded": 75.59435241212843
+      },
+      {
+        "query": "s033",
+        "subject": "s037",
+        "similarity_percent_unrounded": 94.70180374817866
+      },
+      {
+        "query": "s033",
+        "subject": "s043",
+        "similarity_percent_unrounded": 79.79378850748145
+      },
+      {
+        "query": "s033",
+        "subject": "s044",
+        "similarity_percent_unrounded": 79.79378850748145
+      },
+      {
+        "query": "s033",
+        "subject": "s070",
+        "similarity_percent_unrounded": 81.12771568504333
+      },
+      {
+        "query": "s033",
+        "subject": "s071",
+        "similarity_percent_unrounded": 81.12771568504333
+      },
+      {
+        "query": "s033",
+        "subject": "s080",
+        "similarity_percent_unrounded": 85.1438003936258
+      },
+      {
+        "query": "s033",
+        "subject": "s084",
+        "similarity_percent_unrounded": 81.5787827609933
+      },
+      {
+        "query": "s034",
+        "subject": "s049",
+        "similarity_percent_unrounded": 89.29109579079035
+      },
+      {
+        "query": "s034",
+        "subject": "s050",
+        "similarity_percent_unrounded": 89.11182605867732
+      },
+      {
+        "query": "s034",
+        "subject": "s051",
+        "similarity_percent_unrounded": 89.40864041101834
+      },
+      {
+        "query": "s034",
+        "subject": "s052",
+        "similarity_percent_unrounded": 90.16050813019963
+      },
+      {
+        "query": "s034",
+        "subject": "s062",
+        "similarity_percent_unrounded": 90.02538347381147
+      },
+      {
+        "query": "s034",
+        "subject": "s063",
+        "similarity_percent_unrounded": 87.64093491449024
+      },
+      {
+        "query": "s034",
+        "subject": "s064",
+        "similarity_percent_unrounded": 91.21591168499734
+      },
+      {
+        "query": "s034",
+        "subject": "s065",
+        "similarity_percent_unrounded": 90.16382765827694
+      },
+      {
+        "query": "s034",
+        "subject": "s066",
+        "similarity_percent_unrounded": 90.07651827288991
+      },
+      {
+        "query": "s034",
+        "subject": "s067",
+        "similarity_percent_unrounded": 89.32629822437924
+      },
+      {
+        "query": "s034",
+        "subject": "s069",
+        "similarity_percent_unrounded": 90.39287104326054
+      },
+      {
+        "query": "s034",
+        "subject": "s092",
+        "similarity_percent_unrounded": 88.59484116720355
+      },
+      {
+        "query": "s034",
+        "subject": "s093",
+        "similarity_percent_unrounded": 88.72085149236887
+      },
+      {
+        "query": "s035",
+        "subject": "s036",
+        "similarity_percent_unrounded": 99.99859718033247
+      },
+      {
+        "query": "s035",
+        "subject": "s088",
+        "similarity_percent_unrounded": 78.20116200105636
+      },
+      {
+        "query": "s036",
+        "subject": "s088",
+        "similarity_percent_unrounded": 78.20253390312999
+      },
+      {
+        "query": "s037",
+        "subject": "s043",
+        "similarity_percent_unrounded": 79.76539957345376
+      },
+      {
+        "query": "s037",
+        "subject": "s044",
+        "similarity_percent_unrounded": 79.76539957345376
+      },
+      {
+        "query": "s037",
+        "subject": "s070",
+        "similarity_percent_unrounded": 80.46234807668212
+      },
+      {
+        "query": "s037",
+        "subject": "s071",
+        "similarity_percent_unrounded": 80.46234807668212
+      },
+      {
+        "query": "s037",
+        "subject": "s080",
+        "similarity_percent_unrounded": 84.62152403876607
+      },
+      {
+        "query": "s037",
+        "subject": "s084",
+        "similarity_percent_unrounded": 81.6750920551707
+      },
+      {
+        "query": "s038",
+        "subject": "s040",
+        "similarity_percent_unrounded": 96.53433585088302
+      },
+      {
+        "query": "s039",
+        "subject": "s041",
+        "similarity_percent_unrounded": 92.48994519873978
+      },
+      {
+        "query": "s039",
+        "subject": "s042",
+        "similarity_percent_unrounded": 92.48994519873978
+      },
+      {
+        "query": "s039",
+        "subject": "s059",
+        "similarity_percent_unrounded": 87.63428740916505
+      },
+      {
+        "query": "s039",
+        "subject": "s060",
+        "similarity_percent_unrounded": 86.32841901530448
+      },
+      {
+        "query": "s039",
+        "subject": "s090",
+        "similarity_percent_unrounded": 90.73604022973042
+      },
+      {
+        "query": "s039",
+        "subject": "s095",
+        "similarity_percent_unrounded": 86.68130238077579
+      },
+      {
+        "query": "s041",
+        "subject": "s042",
+        "similarity_percent_unrounded": 100.0
+      },
+      {
+        "query": "s041",
+        "subject": "s059",
+        "similarity_percent_unrounded": 88.31107420137545
+      },
+      {
+        "query": "s041",
+        "subject": "s060",
+        "similarity_percent_unrounded": 85.41829728853004
+      },
+      {
+        "query": "s041",
+        "subject": "s090",
+        "similarity_percent_unrounded": 90.22526601765904
+      },
+      {
+        "query": "s041",
+        "subject": "s095",
+        "similarity_percent_unrounded": 87.45654590171688
+      },
+      {
+        "query": "s042",
+        "subject": "s059",
+        "similarity_percent_unrounded": 88.31107420137545
+      },
+      {
+        "query": "s042",
+        "subject": "s060",
+        "similarity_percent_unrounded": 85.41829728853004
+      },
+      {
+        "query": "s042",
+        "subject": "s090",
+        "similarity_percent_unrounded": 90.22526601765904
+      },
+      {
+        "query": "s042",
+        "subject": "s095",
+        "similarity_percent_unrounded": 87.45654590171688
+      },
+      {
+        "query": "s043",
+        "subject": "s044",
+        "similarity_percent_unrounded": 100.0
+      },
+      {
+        "query": "s043",
+        "subject": "s070",
+        "similarity_percent_unrounded": 79.78752759381898
+      },
+      {
+        "query": "s043",
+        "subject": "s071",
+        "similarity_percent_unrounded": 79.78752759381898
+      },
+      {
+        "query": "s043",
+        "subject": "s080",
+        "similarity_percent_unrounded": 81.1395888552116
+      },
+      {
+        "query": "s043",
+        "subject": "s084",
+        "similarity_percent_unrounded": 81.94994564742044
+      },
+      {
+        "query": "s044",
+        "subject": "s070",
+        "similarity_percent_unrounded": 79.78752759381898
+      },
+      {
+        "query": "s044",
+        "subject": "s071",
+        "similarity_percent_unrounded": 79.78752759381898
+      },
+      {
+        "query": "s044",
+        "subject": "s080",
+        "similarity_percent_unrounded": 81.1395888552116
+      },
+      {
+        "query": "s044",
+        "subject": "s084",
+        "similarity_percent_unrounded": 81.94994564742044
+      },
+      {
+        "query": "s046",
+        "subject": "s054",
+        "similarity_percent_unrounded": 85.51882563872702
+      },
+      {
+        "query": "s046",
+        "subject": "s072",
+        "similarity_percent_unrounded": 89.37686517304351
+      },
+      {
+        "query": "s046",
+        "subject": "s073",
+        "similarity_percent_unrounded": 89.79982106911206
+      },
+      {
+        "query": "s046",
+        "subject": "s074",
+        "similarity_percent_unrounded": 89.93452621193775
+      },
+      {
+        "query": "s046",
+        "subject": "s075",
+        "similarity_percent_unrounded": 89.75546085365582
+      },
+      {
+        "query": "s046",
+        "subject": "s091",
+        "similarity_percent_unrounded": 74.86926557528652
+      },
+      {
+        "query": "s047",
+        "subject": "s048",
+        "similarity_percent_unrounded": 88.21279168346004
+      },
+      {
+        "query": "s049",
+        "subject": "s050",
+        "similarity_percent_unrounded": 91.61222375890424
+      },
+      {
+        "query": "s049",
+        "subject": "s051",
+        "similarity_percent_unrounded": 91.93792014021008
+      },
+      {
+        "query": "s049",
+        "subject": "s052",
+        "similarity_percent_unrounded": 89.00813309974359
+      },
+      {
+        "query": "s049",
+        "subject": "s062",
+        "similarity_percent_unrounded": 92.14904817915016
+      },
+      {
+        "query": "s049",
+        "subject": "s063",
+        "similarity_percent_unrounded": 90.03153326119082
+      },
+      {
+        "query": "s049",
+        "subject": "s064",
+        "similarity_percent_unrounded": 91.24158686092221
+      },
+      {
+        "query": "s049",
+        "subject": "s065",
+        "similarity_percent_unrounded": 91.66017745056398
+      },
+      {
+        "query": "s049",
+        "subject": "s066",
+        "similarity_percent_unrounded": 90.53121806187866
+      },
+      {
+        "query": "s049",
+        "subject": "s067",
+        "similarity_percent_unrounded": 91.1298584969176
+      },
+      {
+        "query": "s049",
+        "subject": "s069",
+        "similarity_percent_unrounded": 90.75469732226583
+      },
+      {
+        "query": "s049",
+        "subject": "s092",
+        "similarity_percent_unrounded": 91.25466376932133
+      },
+      {
+        "query": "s049",
+        "subject": "s093",
+        "similarity_percent_unrounded": 91.84054811585176
+      },
+      {
+        "query": "s050",
+        "subject": "s051",
+        "similarity_percent_unrounded": 99.69499036054441
+      },
+      {
+        "query": "s050",
+        "subject": "s052",
+        "similarity_percent_unrounded": 90.90235272998906
+      },
+      {
+        "query": "s050",
+        "subject": "s062",
+        "similarity_percent_unrounded": 91.16210408722763
+      },
+      {
+        "query": "s050",
+        "subject": "s063",
+        "similarity_percent_unrounded": 90.81669986584821
+      },
+      {
+        "query": "s050",
+        "subject": "s064",
+        "similarity_percent_unrounded": 91.1765219568141
+      },
+      {
+        "query": "s050",
+        "subject": "s065",
+        "similarity_percent_unrounded": 92.30375155308762
+      },
+      {
+        "query": "s050",
+        "subject": "s066",
+        "similarity_percent_unrounded": 90.85665926651558
+      },
+      {
+        "query": "s050",
+        "subject": "s067",
+        "similarity_percent_unrounded": 91.49135109864423
+      },
+      {
+        "query": "s050",
+        "subject": "s069",
+        "similarity_percent_unrounded": 91.5496131600691
+      },
+      {
+        "query": "s050",
+        "subject": "s092",
+        "similarity_percent_unrounded": 91.7219162544872
+      },
+      {
+        "query": "s050",
+        "subject": "s093",
+        "similarity_percent_unrounded": 92.04743674620765
+      },
+      {
+        "query": "s051",
+        "subject": "s052",
+        "similarity_percent_unrounded": 91.23205796833895
+      },
+      {
+        "query": "s051",
+        "subject": "s062",
+        "similarity_percent_unrounded": 91.45730640801399
+      },
+      {
+        "query": "s051",
+        "subject": "s063",
+        "similarity_percent_unrounded": 90.72241894049851
+      },
+      {
+        "query": "s051",
+        "subject": "s064",
+        "similarity_percent_unrounded": 91.466371250261
+      },
+      {
+        "query": "s051",
+        "subject": "s065",
+        "similarity_percent_unrounded": 92.22308260884869
+      },
+      {
+        "query": "s051",
+        "subject": "s066",
+        "similarity_percent_unrounded": 90.78146475554684
+      },
+      {
+        "query": "s051",
+        "subject": "s067",
+        "similarity_percent_unrounded": 91.41433253960399
+      },
+      {
+        "query": "s051",
+        "subject": "s069",
+        "similarity_percent_unrounded": 91.8295799944736
+      },
+      {
+        "query": "s051",
+        "subject": "s092",
+        "similarity_percent_unrounded": 92.01036782479541
+      },
+      {
+        "query": "s051",
+        "subject": "s093",
+        "similarity_percent_unrounded": 92.3256934407048
+      },
+      {
+        "query": "s052",
+        "subject": "s062",
+        "similarity_percent_unrounded": 90.61935778768141
+      },
+      {
+        "query": "s052",
+        "subject": "s063",
+        "similarity_percent_unrounded": 91.07263454507347
+      },
+      {
+        "query": "s052",
+        "subject": "s064",
+        "similarity_percent_unrounded": 91.9598459203922
+      },
+      {
+        "query": "s052",
+        "subject": "s065",
+        "similarity_percent_unrounded": 90.92825011511624
+      },
+      {
+        "query": "s052",
+        "subject": "s066",
+        "similarity_percent_unrounded": 91.76709861119181
+      },
+      {
+        "query": "s052",
+        "subject": "s067",
+        "similarity_percent_unrounded": 91.07392891247927
+      },
+      {
+        "query": "s052",
+        "subject": "s069",
+        "similarity_percent_unrounded": 91.52398053753475
+      },
+      {
+        "query": "s052",
+        "subject": "s092",
+        "similarity_percent_unrounded": 89.94332202118244
+      },
+      {
+        "query": "s052",
+        "subject": "s093",
+        "similarity_percent_unrounded": 89.73949075463422
+      },
+      {
+        "query": "s054",
+        "subject": "s072",
+        "similarity_percent_unrounded": 83.44594594594595
+      },
+      {
+        "query": "s054",
+        "subject": "s073",
+        "similarity_percent_unrounded": 84.00480855653424
+      },
+      {
+        "query": "s054",
+        "subject": "s074",
+        "similarity_percent_unrounded": 83.67611281311949
+      },
+      {
+        "query": "s054",
+        "subject": "s075",
+        "similarity_percent_unrounded": 83.72671642794701
+      },
+      {
+        "query": "s054",
+        "subject": "s091",
+        "similarity_percent_unrounded": 75.08432775572047
+      },
+      {
+        "query": "s055",
+        "subject": "s081",
+        "similarity_percent_unrounded": 73.68006915506695
+      },
+      {
+        "query": "s055",
+        "subject": "s082",
+        "similarity_percent_unrounded": 73.84600057561602
+      },
+      {
+        "query": "s055",
+        "subject": "s083",
+        "similarity_percent_unrounded": 73.87657877243518
+      },
+      {
+        "query": "s056",
+        "subject": "s057",
+        "similarity_percent_unrounded": 99.26212270401031
+      },
+      {
+        "query": "s056",
+        "subject": "s058",
+        "similarity_percent_unrounded": 87.67295444007907
+      },
+      {
+        "query": "s057",
+        "subject": "s058",
+        "similarity_percent_unrounded": 88.39391388166966
+      },
+      {
+        "query": "s059",
+        "subject": "s060",
+        "similarity_percent_unrounded": 89.86020025851337
+      },
+      {
+        "query": "s059",
+        "subject": "s090",
+        "similarity_percent_unrounded": 89.21449673713111
+      },
+      {
+        "query": "s059",
+        "subject": "s095",
+        "similarity_percent_unrounded": 84.156763904543
+      },
+      {
+        "query": "s060",
+        "subject": "s090",
+        "similarity_percent_unrounded": 86.84789624581576
+      },
+      {
+        "query": "s060",
+        "subject": "s095",
+        "similarity_percent_unrounded": 82.88247227360877
+      },
+      {
+        "query": "s062",
+        "subject": "s063",
+        "similarity_percent_unrounded": 92.92459316983727
+      },
+      {
+        "query": "s062",
+        "subject": "s064",
+        "similarity_percent_unrounded": 93.88842937230034
+      },
+      {
+        "query": "s062",
+        "subject": "s065",
+        "similarity_percent_unrounded": 93.05837932036015
+      },
+      {
+        "query": "s062",
+        "subject": "s066",
+        "similarity_percent_unrounded": 92.99669423378288
+      },
+      {
+        "query": "s062",
+        "subject": "s067",
+        "similarity_percent_unrounded": 92.28294522245989
+      },
+      {
+        "query": "s062",
+        "subject": "s069",
+        "similarity_percent_unrounded": 92.96791260918151
+      },
+      {
+        "query": "s062",
+        "subject": "s092",
+        "similarity_percent_unrounded": 90.9805097797184
+      },
+      {
+        "query": "s062",
+        "subject": "s093",
+        "similarity_percent_unrounded": 91.57994001090711
+      },
+      {
+        "query": "s063",
+        "subject": "s064",
+        "similarity_percent_unrounded": 91.11976118005151
+      },
+      {
+        "query": "s063",
+        "subject": "s065",
+        "similarity_percent_unrounded": 92.01451798169266
+      },
+      {
+        "query": "s063",
+        "subject": "s066",
+        "similarity_percent_unrounded": 91.15449618276124
+      },
+      {
+        "query": "s063",
+        "subject": "s067",
+        "similarity_percent_unrounded": 91.7574959897997
+      },
+      {
+        "query": "s063",
+        "subject": "s069",
+        "similarity_percent_unrounded": 89.47368421052632
+      },
+      {
+        "query": "s063",
+        "subject": "s092",
+        "similarity_percent_unrounded": 91.57324837020099
+      },
+      {
+        "query": "s063",
+        "subject": "s093",
+        "similarity_percent_unrounded": 91.76911145066444
+      },
+      {
+        "query": "s064",
+        "subject": "s065",
+        "similarity_percent_unrounded": 97.15676381551611
+      },
+      {
+        "query": "s064",
+        "subject": "s066",
+        "similarity_percent_unrounded": 94.50066017783905
+      },
+      {
+        "query": "s064",
+        "subject": "s067",
+        "similarity_percent_unrounded": 93.80975101168072
+      },
+      {
+        "query": "s064",
+        "subject": "s069",
+        "similarity_percent_unrounded": 93.72102774348343
+      },
+      {
+        "query": "s064",
+        "subject": "s092",
+        "similarity_percent_unrounded": 90.72126065920595
+      },
+      {
+        "query": "s064",
+        "subject": "s093",
+        "similarity_percent_unrounded": 91.04739138507242
+      },
+      {
+        "query": "s065",
+        "subject": "s066",
+        "similarity_percent_unrounded": 94.19158491904031
+      },
+      {
+        "query": "s065",
+        "subject": "s067",
+        "similarity_percent_unrounded": 94.8635748803785
+      },
+      {
+        "query": "s065",
+        "subject": "s069",
+        "similarity_percent_unrounded": 93.23378688814279
+      },
+      {
+        "query": "s065",
+        "subject": "s092",
+        "similarity_percent_unrounded": 91.22169032388832
+      },
+      {
+        "query": "s065",
+        "subject": "s093",
+        "similarity_percent_unrounded": 91.59360585894864
+      },
+      {
+        "query": "s066",
+        "subject": "s067",
+        "similarity_percent_unrounded": 98.97840098054739
+      },
+      {
+        "query": "s066",
+        "subject": "s069",
+        "similarity_percent_unrounded": 92.42169471084156
+      },
+      {
+        "query": "s066",
+        "subject": "s092",
+        "similarity_percent_unrounded": 89.38212498313179
+      },
+      {
+        "query": "s066",
+        "subject": "s093",
+        "similarity_percent_unrounded": 89.76268327344572
+      },
+      {
+        "query": "s067",
+        "subject": "s069",
+        "similarity_percent_unrounded": 91.4951451770359
+      },
+      {
+        "query": "s067",
+        "subject": "s092",
+        "similarity_percent_unrounded": 89.95149077141505
+      },
+      {
+        "query": "s067",
+        "subject": "s093",
+        "similarity_percent_unrounded": 90.32748408589251
+      },
+      {
+        "query": "s069",
+        "subject": "s092",
+        "similarity_percent_unrounded": 91.1368567568674
+      },
+      {
+        "query": "s069",
+        "subject": "s093",
+        "similarity_percent_unrounded": 90.0456084582959
+      },
+      {
+        "query": "s070",
+        "subject": "s071",
+        "similarity_percent_unrounded": 100.0
+      },
+      {
+        "query": "s070",
+        "subject": "s080",
+        "similarity_percent_unrounded": 86.37290539941485
+      },
+      {
+        "query": "s070",
+        "subject": "s084",
+        "similarity_percent_unrounded": 83.59602161406661
+      },
+      {
+        "query": "s071",
+        "subject": "s080",
+        "similarity_percent_unrounded": 86.37290539941485
+      },
+      {
+        "query": "s071",
+        "subject": "s084",
+        "similarity_percent_unrounded": 83.59602161406661
+      },
+      {
+        "query": "s072",
+        "subject": "s073",
+        "similarity_percent_unrounded": 96.47769392220783
+      },
+      {
+        "query": "s072",
+        "subject": "s074",
+        "similarity_percent_unrounded": 92.30760621390517
+      },
+      {
+        "query": "s072",
+        "subject": "s075",
+        "similarity_percent_unrounded": 96.9250473326651
+      },
+      {
+        "query": "s072",
+        "subject": "s091",
+        "similarity_percent_unrounded": 74.6002088256306
+      },
+      {
+        "query": "s073",
+        "subject": "s074",
+        "similarity_percent_unrounded": 93.6940785036644
+      },
+      {
+        "query": "s073",
+        "subject": "s075",
+        "similarity_percent_unrounded": 95.4298369236964
+      },
+      {
+        "query": "s073",
+        "subject": "s091",
+        "similarity_percent_unrounded": 74.89983554265406
+      },
+      {
+        "query": "s074",
+        "subject": "s075",
+        "similarity_percent_unrounded": 93.48971765602924
+      },
+      {
+        "query": "s074",
+        "subject": "s091",
+        "similarity_percent_unrounded": 74.66390785266162
+      },
+      {
+        "query": "s075",
+        "subject": "s091",
+        "similarity_percent_unrounded": 75.37850009359275
+      },
+      {
+        "query": "s077",
+        "subject": "s085",
+        "similarity_percent_unrounded": 81.87759438624234
+      },
+      {
+        "query": "s077",
+        "subject": "s086",
+        "similarity_percent_unrounded": 82.58309052298878
+      },
+      {
+        "query": "s077",
+        "subject": "s087",
+        "similarity_percent_unrounded": 82.58309052298878
+      },
+      {
+        "query": "s077",
+        "subject": "s089",
+        "similarity_percent_unrounded": 83.49522972789032
+      },
+      {
+        "query": "s078",
+        "subject": "s079",
+        "similarity_percent_unrounded": 92.51382242252474
+      },
+      {
+        "query": "s080",
+        "subject": "s084",
+        "similarity_percent_unrounded": 83.97007242171138
+      },
+      {
+        "query": "s081",
+        "subject": "s082",
+        "similarity_percent_unrounded": 97.15241767495458
+      },
+      {
+        "query": "s081",
+        "subject": "s083",
+        "similarity_percent_unrounded": 97.6212655532637
+      },
+      {
+        "query": "s082",
+        "subject": "s083",
+        "similarity_percent_unrounded": 98.59326539654408
+      },
+      {
+        "query": "s085",
+        "subject": "s086",
+        "similarity_percent_unrounded": 88.36704138235727
+      },
+      {
+        "query": "s085",
+        "subject": "s087",
+        "similarity_percent_unrounded": 88.36704138235727
+      },
+      {
+        "query": "s085",
+        "subject": "s089",
+        "similarity_percent_unrounded": 89.4884441765784
+      },
+      {
+        "query": "s086",
+        "subject": "s087",
+        "similarity_percent_unrounded": 100.0
+      },
+      {
+        "query": "s086",
+        "subject": "s089",
+        "similarity_percent_unrounded": 93.23688124592825
+      },
+      {
+        "query": "s087",
+        "subject": "s089",
+        "similarity_percent_unrounded": 93.23688124592825
+      },
+      {
+        "query": "s090",
+        "subject": "s095",
+        "similarity_percent_unrounded": 85.36524274971225
+      },
+      {
+        "query": "s092",
+        "subject": "s093",
+        "similarity_percent_unrounded": 98.65928623452294
+      },
+      {
+        "query": "s096",
+        "subject": "t000",
+        "similarity_percent_unrounded": 99.98370416797242
+      }
+    ],
+    "boundary_edges": [],
+    "target_components": {
+      "t000": [
+        "427_P2",
+        "T7",
+        "T7_Portugal"
+      ],
+      "t001": [
+        "T3"
+      ]
+    }
+  },
+  "gp17": {
+    "near_matches": [
+      {
+        "query": "t000_gp17",
+        "source_id": "T7_Portugal",
+        "identity_percent": 99.458,
+        "query_coverage_percent": 100.0,
+        "subject_start": 37879,
+        "subject_end": 39537,
+        "subject_frame": 1
+      },
+      {
+        "query": "t001_gp17",
+        "source_id": "427_P2",
+        "identity_percent": 91.935,
+        "query_coverage_percent": 100.0,
+        "subject_start": 38413,
+        "subject_end": 40086,
+        "subject_frame": 1
+      }
+    ],
+    "broader_family_matches": [
+      {
+        "query": "t000_gp17",
+        "source_id": "T7_Portugal",
+        "identity_percent": 99.458,
+        "query_coverage_percent": 100.0,
+        "subject_start": 37879,
+        "subject_end": 39537,
+        "subject_frame": 1
+      },
+      {
+        "query": "t000_gp17",
+        "source_id": "427_P2",
+        "identity_percent": 87.612,
+        "query_coverage_percent": 99.81916817359856,
+        "subject_start": 38413,
+        "subject_end": 40083,
+        "subject_frame": 1
+      },
+      {
+        "query": "t001_gp17",
+        "source_id": "427_P2",
+        "identity_percent": 91.935,
+        "query_coverage_percent": 100.0,
+        "subject_start": 38413,
+        "subject_end": 40086,
+        "subject_frame": 1
+      },
+      {
+        "query": "t001_gp17",
+        "source_id": "T7_Portugal",
+        "identity_percent": 85.817,
+        "query_coverage_percent": 99.82078853046595,
+        "subject_start": 37879,
+        "subject_end": 39534,
+        "subject_frame": 1
+      }
+    ],
+    "target_self_controls_passed": [
+      "t000_gp17",
+      "t001_gp17"
+    ],
+    "near_match_excluded_source_ids": [
+      "427_P2",
+      "T7_Portugal"
+    ]
+  },
+  "provisional_excluded_source_ids": [
+    "427_P2",
+    "T7_Portugal"
+  ],
+  "broader_family_retained_source_ids": [],
+  "upstream_calculator_equivalence_verified": false,
+  "phenotype_labels_loaded": false,
+  "infection_or_assembly_predictions_produced": false,
+  "decision": "Provisional phage exclusions; calculator validation, host exclusions and a final training specification remain required"
+}

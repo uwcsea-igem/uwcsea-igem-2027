@@ -1,0 +1,39 @@
+{
+  "repository": "https://github.com/apcamargo/prodigal-gv",
+  "commit": "80e488b3cdd7123684f001759eaf50cdb879c81a",
+  "tree": "91a6e3270edd867ea586835f2c71c13cf456662c",
+  "commands": [
+    [
+      "git",
+      "clone",
+      "--quiet",
+      "--filter=blob:none",
+      "--no-checkout",
+      "https://github.com/apcamargo/prodigal-gv.git",
+      "data/raw/tools/prodigal-gv-2.11.0/source"
+    ],
+    [
+      "git",
+      "-C",
+      "data/raw/tools/prodigal-gv-2.11.0/source",
+      "checkout",
+      "--quiet",
+      "--detach",
+      "80e488b3cdd7123684f001759eaf50cdb879c81a"
+    ],
+    [
+      "make",
+      "-C",
+      "data/raw/tools/prodigal-gv-2.11.0/source",
+      "-j",
+      "2"
+    ]
+  ],
+  "compiler": "Apple clang version 21.0.0 (clang-2100.3.34.2)\nTarget: arm64-apple-darwin27.0.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n",
+  "architecture": "arm64",
+  "build_wall_seconds": 5.429961916059256,
+  "executable": "data/raw/tools/prodigal-gv-2.11.0/source/prodigal-gv",
+  "executable_sha256": "e91deecbdefaad79dfc7ce37610deab0c6eee3b47b30d91a1c1581d24269c900",
+  "version_stdout": "",
+  "version_stderr": "\nProdigal V2.11.0-gv: March, 2023\n\n"
+}

@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "reviewed_date": "2026-11-07",
+  "purpose": "Correct interpretation of the published numerical control without changing historical inputs, expectations, outputs or parameters",
+  "status": "source_correspondence_unresolved",
+  "primary_article": "https://doi.org/10.3390/v12111268",
+  "primary_figure_review": {
+    "locator": "Primary published PDF page 6, Figure 3 caption and panelB labels",
+    "inspection": "Actual rendered image visually inspected; not inferred from extracted text or OCR",
+    "image_path": "data/raw/viridic-validation/figure3-page.png",
+    "image_sha256": "0dca48d4d796f84cac6117d84aa75b4083e3f1c7d8e286ed747f22198850f414",
+    "caption_phage_name": "HTVC011P",
+    "caption_accessions": [
+      "NC_001604.1",
+      "NC_020483.1"
+    ],
+    "panel_B_subject_accession": "NC_020483.1"
+  },
+  "accession_metadata": {
+    "NC_020482.1": {
+      "record_url": "https://www.ncbi.nlm.nih.gov/nuccore/NC_020482.1",
+      "record_title": "Pelagibacter phage HTVC011P, complete genome",
+      "review": "NCBI owning record read independently; no alignment or sequence substitution performed"
+    },
+    "NC_020483.1": {
+      "record_url": "https://www.ncbi.nlm.nih.gov/nuccore/NC_020483.1",
+      "retained_fasta_header": ">NC_020483.1 Pelagibacter phage HTVC019P, complete genome",
+      "length": 42084,
+      "file_sha256": "5cfa83d6e99b89836a8c5bc14d6bc3c87c1b85f1def915982384b0506d73dee4",
+      "sequence_sha256": "08da848bebc94a6f068efe8132a02be21c5f422196722b8ddf5586b90069e7b8",
+      "path": "data/raw/viridic-validation/run-1/references/NC_020483.1.fna"
+    }
+  },
+  "finding": "The paper associates HTVC011P with NC_020483.1, whereas NCBI associates HTVC011P with NC_020482.1 and the retained NC_020483.1 FASTA with HTVC019P. The paper figure itself supports the accession used; the original benchmark-input identity remains unresolved.",
+  "historical_runs_preserved": [
+    {
+      "historical_report": "data/processed/viridic-reference-validation.json",
+      "historical_report_sha256": "ce62cffbf422f4e747f48d057cf0c8387d03b569c83bf6a42918fd38d954dd1f",
+      "blast_version": "2.17.0+",
+      "literal_accession_pair": [
+        "NC_001604.1",
+        "NC_020483.1"
+      ],
+      "historical_control_id": "T7-HTVC011P",
+      "observed_similarity_percent": 0.5705855817412614,
+      "historical_printed_comparison_status": "discrepancy",
+      "current_comparison_status": "source_correspondence_unresolved",
+      "current_interpretation": "The literal Figure 3 accessions yield this value, but the publication phage name conflicts with accession metadata. This is not a clean implementation-failure control.",
+      "MG9694_control": {
+        "accessions": [
+          "MG969412.1",
+          "MG969413.1"
+        ],
+        "observed_similarity_percent": 62.4455088261938,
+        "published_similarity_percent": "62.4",
+        "status": "published_precision_match"
+      }
+    },
+    {
+      "historical_report": "data/processed/viridic-reference-version-validation.json",
+      "historical_report_sha256": "ef4f154e93537d88f6fdbd46b1486ff8f8e58b4ee7abab282b8c0b7ead9d4b74",
+      "blast_version": "2.9.0+",
+      "literal_accession_pair": [
+        "NC_001604.1",
+        "NC_020483.1"
+      ],
+      "historical_control_id": "T7-HTVC011P",
+      "observed_similarity_percent": 0.5705855817412614,
+      "historical_printed_comparison_status": "discrepancy",
+      "current_comparison_status": "source_correspondence_unresolved",
+      "current_interpretation": "The literal Figure 3 accessions yield this value, but the publication phage name conflicts with accession metadata. This is not a clean implementation-failure control.",
+      "MG9694_control": {
+        "accessions": [
+          "MG969412.1",
+          "MG969413.1"
+        ],
+        "observed_similarity_percent": 62.4455088261938,
+        "published_similarity_percent": "62.4",
+        "status": "published_precision_match"
+      }
+    }
+  ],
+  "scientific_consequence": "Preserve the accession-anchored numerical difference from printed 0.34, while withdrawing its interpretation as a definitive implementation discrepancy. The two BLAST versions gave identical results on those exact inputs. MG969412/MG969413 agreement remains a separate numerical control at printed precision.",
+  "needed_to_resolve": "Authenticate the original benchmark FASTA/input manifest or Table S1 correspondence and the provenance of the reported 0.34 value. Name and accession evidence must be reconciled before declaring a corrected reproduction.",
+  "name_based_NC_020482_hypothesis_run": false,
+  "further_alignments_run_after_conflict_detection": false,
+  "replacement_of_historical_inputs_or_results": false,
+  "parameters_retuned": false,
+  "upstream_equivalence_verified": false,
+  "infection_or_assembly_predictions_produced": false
+}

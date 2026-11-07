@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "source_commit": "99656d8c020fcd1dbbc30a02ee10274a07655562",
+  "source_path": "data/genomics/phages/FNA/T4LD.fna",
+  "git_blob_sha1": "3ad420386ca0859de054911302dffea91a3cdd79",
+  "file_sha256": "3cbcc8a322d3d80a17df4c24a90fd948936005b7bb9ff7effa640fde2ecceab5",
+  "bytes": 171810,
+  "source_fasta_records": [
+    {
+      "header": "T4LD",
+      "bases": 0
+    },
+    {
+      "header": "T4LD",
+      "bases": 168981
+    }
+  ],
+  "finding": "Pinned public FASTA has a leading empty record and repeated header; raw bytes authenticated, strict preparation rejects the empty record",
+  "status": "source_format_review_before_analysis",
+  "sequence_modified": false,
+  "training_or_scoring_executed": false,
+  "resolution": {
+    "status": "normalized_for_sequence_relatedness_audit_only",
+    "manifest_sha256": "d0f66b3bba527aa8cc32b327ed7f15107fbcd0943faefa6b1fda2496f528185c",
+    "removed_empty_record_indices": [
+      0
+    ],
+    "retained_bases": 168981,
+    "retained_sequence_sha256": "17a3446d40ff1f949f75bab016f3fdb68876a082fe11effcd20361efc0f105d6",
+    "raw_source_bytes_preserved": true,
+    "actual_bases_changed": false
+  }
+}

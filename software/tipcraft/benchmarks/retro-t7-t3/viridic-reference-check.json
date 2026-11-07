@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-07",
+  "recorded_before_reference_alignments": true,
+  "purpose": "Independent published numerical controls for a Python VIRIDIC adaptation; not a host-range prediction test",
+  "primary_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7694805/",
+  "paper_blast_version": "2.9.0+",
+  "local_blast_version": "2.17.0+",
+  "blastn_parameters": ["-evalue", "1", "-max_target_seqs", "10000", "-num_threads", "1", "-word_size", "7", "-reward", "2", "-penalty", "-3", "-gapopen", "5", "-gapextend", "2"],
+  "blastn_format": "7 qseqid sseqid evalue bitscore qlen slen qstart qend sstart send qseq sseq nident gaps",
+  "adapter_sha256": "e1d19de908f4f066ad79f88eb22bc021ea849b2b9b4c86baa501d371e9c872a4",
+  "adapter_upstream_commit": "d7db8031a27bc6b06ff5cb1245e372caf3794b93",
+  "control_pairs": [
+    {
+      "id": "T7-HTVC011P",
+      "accessions": ["NC_001604.1", "NC_020483.1"],
+      "published_similarity_percent": "0.34",
+      "printed_decimal_places": 2,
+      "locator": "Results and Discussion paragraph describing Figure 3; Figure 3 specifies accession versions",
+      "quote": "VIRIDIC reported a 0.34% similarity for this genome pair."
+    },
+    {
+      "id": "MG969412-MG969413",
+      "accessions": ["MG969412.1", "MG969413.1"],
+      "published_similarity_percent": "62.4",
+      "printed_decimal_places": 1,
+      "locator": "Results and Discussion paragraph interpreting Figure 4",
+      "quote": "have a 62.4% similarity"
+    }
+  ],
+  "comparison": "Compare the adapter's unrounded value with the decimal interval implied by the printed precision: expected +/- one half of the final printed unit; strict interior is a match, exact endpoints are rounding-convention-ambiguous, outside is a discrepancy",
+  "parameter_tuning_permitted": false,
+  "interpretation": "Agreement only supports these public sequence pairs at published precision; it does not establish full upstream runtime equivalence, host specificity or assembly prediction. Retain discrepancies."
+}

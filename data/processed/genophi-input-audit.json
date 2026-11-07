@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "reviewed_date": "2026-11-07",
+  "upstream_commit": "f7e30abc1b0bbba1ae76b8f58a3363bbbc5cd54f",
+  "repository_tree_sha1": "e42e64caaaea9efb8aca2af00d2dd84541bfe946",
+  "source_artifacts": [
+    {
+      "cache_file": "tree.json",
+      "url": "https://api.github.com/repos/Noonanav/GenoPHI/git/trees/f7e30abc1b0bbba1ae76b8f58a3363bbbc5cd54f?recursive=1",
+      "bytes": 31963,
+      "sha256": "0214df1ad4d12577cc53f641eab1be9a2800ba54df5f8ddfbbee071ff589756d"
+    },
+    {
+      "cache_file": "data/interaction_matrices/ecoli_interaction_matrix.csv",
+      "url": "https://raw.githubusercontent.com/Noonanav/GenoPHI/f7e30abc1b0bbba1ae76b8f58a3363bbbc5cd54f/data/interaction_matrices/ecoli_interaction_matrix.csv",
+      "bytes": 654033,
+      "sha256": "c4795d786a1e13ac998e263dbf4aaf95fc0f94c52b842d02b6f7fc6e99ccfef2"
+    },
+    {
+      "cache_file": "data/interaction_matrices/ecoli_interaction_matrix_subset.csv",
+      "url": "https://raw.githubusercontent.com/Noonanav/GenoPHI/f7e30abc1b0bbba1ae76b8f58a3363bbbc5cd54f/data/interaction_matrices/ecoli_interaction_matrix_subset.csv",
+      "bytes": 283309,
+      "sha256": "9a7caa8c48d475a2d0fa153ae61dab3b3484be8c266b0ef965f171218606a6e6"
+    },
+    {
+      "cache_file": "data/test_data/ecoli_test_interaction_matrix.csv",
+      "url": "https://raw.githubusercontent.com/Noonanav/GenoPHI/f7e30abc1b0bbba1ae76b8f58a3363bbbc5cd54f/data/test_data/ecoli_test_interaction_matrix.csv",
+      "bytes": 10825,
+      "sha256": "846444b3bf380ab7e24ef3d8b9ae86a29232651df8bac8fcdb5a6677fd1774db"
+    },
+    {
+      "cache_file": "GenoPHI_processed_data.zip",
+      "url": "https://zenodo.org/api/records/21696332/files/GenoPHI_processed_data.zip/content",
+      "bytes": 656165,
+      "sha256": "1d98c77fc4068315246a4eb56aa185fc769c06bf70fd20e5090856b25f94a00d"
+    }
+  ],
+  "interaction_tables": {
+    "data/interaction_matrices/ecoli_interaction_matrix.csv": {
+      "rows": 37788,
+      "strains": 402,
+      "phages": 94,
+      "target_name_candidates_only": {
+        "T7": [],
+        "T3": [],
+        "BL21": [
+          "BL21"
+        ],
+        "BW25113": [],
+        "MG1655": []
+      },
+      "sequence_overlap_audit": "not_performed; names cannot establish absence of homologs or stock identity"
+    },
+    "data/interaction_matrices/ecoli_interaction_matrix_subset.csv": {
+      "rows": 16638,
+      "strains": 177,
+      "phages": 94,
+      "target_name_candidates_only": {
+        "T7": [],
+        "T3": [],
+        "BL21": [
+          "BL21"
+        ],
+        "BW25113": [],
+        "MG1655": []
+      },
+      "sequence_overlap_audit": "not_performed; names cannot establish absence of homologs or stock identity"
+    },
+    "data/test_data/ecoli_test_interaction_matrix.csv": {
+      "rows": 625,
+      "strains": 25,
+      "phages": 25,
+      "target_name_candidates_only": {
+        "T7": [],
+        "T3": [],
+        "BL21": [],
+        "BW25113": [],
+        "MG1655": []
+      },
+      "sequence_overlap_audit": "not_performed; names cannot establish absence of homologs or stock identity"
+    }
+  },
+  "bundled_demo_proteomes": {
+    "strain": 25,
+    "phage": 25
+  },
+  "repository_model_filename_matches": [],
+  "zenodo_model_filename_matches": [],
+  "zenodo_archive_paths": [
+    "GenoPHI_processed_data/BASEL_validation_experiment_vs_prediction.csv",
+    "GenoPHI_processed_data/ECOR27_TnSeq_high_fitness_genes.csv",
+    "GenoPHI_processed_data/ECOR_validation_strain_assemblies.csv",
+    "GenoPHI_processed_data/EOP_results.csv",
+    "GenoPHI_processed_data/algorithm_performance_auroc.csv",
+    "GenoPHI_processed_data/algorithm_performance_mcc.csv",
+    "GenoPHI_processed_data/annotation_curated/ecoli_annotations_combined_output_mod.csv",
+    "GenoPHI_processed_data/annotation_curated/kleb_Dimi1_annotations_combined_output_mod.csv",
+    "GenoPHI_processed_data/annotation_curated/kleb_Dimi2_annotations_combined_output_mod.csv",
+    "GenoPHI_processed_data/cocktail_performance.csv",
+    "GenoPHI_processed_data/cv_perfold_full.csv",
+    "GenoPHI_processed_data/cv_perfold_phage.csv",
+    "GenoPHI_processed_data/cv_perfold_strain.csv",
+    "GenoPHI_processed_data/dataset_overview.csv",
+    "GenoPHI_processed_data/feature_counts_by_type.csv",
+    "GenoPHI_processed_data/feature_selection_performance_aupr.csv",
+    "GenoPHI_processed_data/feature_selection_performance_auroc.csv",
+    "GenoPHI_processed_data/feature_selection_performance_mcc.csv",
+    "GenoPHI_processed_data/interaction_matrices_all_datasets.csv",
+    "GenoPHI_processed_data/overall_performance_config1.csv",
+    "GenoPHI_processed_data/overall_performance_config2.csv",
+    "GenoPHI_processed_data/overall_performance_config3.csv",
+    "GenoPHI_processed_data/paper_supplementary_tables/SuppTable1_feature_filtering.csv",
+    "GenoPHI_processed_data/paper_supplementary_tables/SuppTable2_modeling_parameters.csv",
+    "GenoPHI_processed_data/paper_supplementary_tables/SuppTable3_filter_performance.csv",
+    "GenoPHI_processed_data/paper_supplementary_tables/SuppTable4_config2_performance.csv",
+    "GenoPHI_processed_data/paper_supplementary_tables/SuppTable5_config3_performance.csv",
+    "GenoPHI_processed_data/paper_supplementary_tables/SuppTable6_kmer_feature_counts.csv",
+    "GenoPHI_processed_data/paper_supplementary_tables/SuppTable7_kmer_gene_specificity.csv",
+    "GenoPHI_processed_data/paper_supplementary_tables/SuppTable8_phage_validation_list.csv",
+    "GenoPHI_processed_data/per_phage_performance_ecoli.csv",
+    "GenoPHI_processed_data/per_phage_performance_klebsiella.csv",
+    "GenoPHI_processed_data/per_strain_performance.csv",
+    "GenoPHI_processed_data/predictive_features_shap.csv",
+    "GenoPHI_processed_data/shared_predictive_features.csv"
+  ],
+  "scope": "Pinned repository tree and one processed-data archive; external deposits and unusual model formats not excluded",
+  "training_or_scoring_executed": false,
+  "new_method_covered_cases": 0,
+  "disposition": "HOLD: no audited model/feature-reference bundle and no completed target/homology exclusion audit",
+  "interpretation": "A reproducible input inventory, not a failed GenoPHI prediction or proof that required public data do not exist"
+}

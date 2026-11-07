@@ -1,0 +1,39 @@
+{
+  "repository": "https://github.com/hyattpd/Prodigal",
+  "commit": "004218fbeb2cf54fe12d88ec2eede6a27d70ebf7",
+  "tree": "6d757af9c70ec78f3e8c1261923c26fcd982b712",
+  "commands": [
+    [
+      "git",
+      "clone",
+      "--quiet",
+      "--filter=blob:none",
+      "--no-checkout",
+      "https://github.com/hyattpd/Prodigal.git",
+      "data/raw/tools/prodigal-2.6.3/source"
+    ],
+    [
+      "git",
+      "-C",
+      "data/raw/tools/prodigal-2.6.3/source",
+      "checkout",
+      "--quiet",
+      "--detach",
+      "004218fbeb2cf54fe12d88ec2eede6a27d70ebf7"
+    ],
+    [
+      "make",
+      "-C",
+      "data/raw/tools/prodigal-2.6.3/source",
+      "-j",
+      "2"
+    ]
+  ],
+  "compiler": "Apple clang version 21.0.0 (clang-2100.3.34.2)\nTarget: arm64-apple-darwin27.0.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n",
+  "architecture": "arm64",
+  "build_wall_seconds": 4.878865875070915,
+  "executable": "data/raw/tools/prodigal-2.6.3/source/prodigal",
+  "executable_sha256": "4d797d04df4c259e5f46c512269a543d9d53f9614c27eef07a2e6f10ebdb898e",
+  "version_stdout": "",
+  "version_stderr": "\nProdigal V2.6.3: February, 2016\n\n"
+}

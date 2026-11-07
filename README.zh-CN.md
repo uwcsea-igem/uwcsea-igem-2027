@@ -4,6 +4,9 @@ UWCSEA iGEM 2027 赛季仓库。软件包名为 **TipCraft**；项目名称仍�
 
 ## 当前交付物
 
+- [长期平台路线](docs/10-platform-roadmap.md)：以可复用识别接口标准、公开数据与 TipCraft 为产物，分阶段验证宿主预测、结合和组装能力。
+- [官方规则与评审证据](docs/11-igem-rule-evidence.md)、[前沿先例与创新假设](docs/12-prior-art-and-innovation.md)：按现行规则准备 2027 项目，以可验证贡献支撑奖项目标。
+
 - [英文角色申报稿](docs/role-answer.md)：软件管线、建模、传感器算法与硬件、wiki 与数据基础设施；等待本人核对后提交。
 - [一页计划](docs/00-project-plan.md)：目标、预算假设、分级变化和拟议决策门；英文首页同时展示全文。
 - [四项文献核验](docs/02-literature.md)：有出处、有限定条件，不把群聊陈述当成事实。
@@ -21,6 +24,8 @@ uv run --project software/tipcraft python -m unittest discover -s software/tipcr
 ```
 
 当前版本是证据与评估工具。已实际运行独立 WIsH 基因组评分：覆盖六条天然噬菌体观测、四条交换案例明确弃权；T3 的已知阳性排在两个阴性之后。详见 [12 月决策门报告](docs/07-december-gate-report.md)。匿名重跑结果一致，但方法选择时已见过标签，不能宣称盲测验证。结构预测、设计和 DNA 订单接口仍未实现。没有伪造模型得分、实验记录或订单。
+
+下一方法 GenoPHI 的训练来源已进一步映射：94 个噬菌体 ID 和 265 个宿主 ID 直接对应公开基因组文件元数据，另有 137 个宿主名称候选待核验。计算评分前继续核查序列身份、同源排除和训练配置，详见[输入准备记录](docs/09-next-method-feasibility.md#training-source-mapping-follow-up)。
 
 ## 决策与协作
 

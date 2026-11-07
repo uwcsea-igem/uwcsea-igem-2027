@@ -1,0 +1,1901 @@
+{
+  "schema_version": 1,
+  "purpose": "Source-only investigation of deposited phage length/terminal representation; no phenotype analysis or sequence alteration",
+  "policy_sha256": "b45708c6ab6dc66d2db87f33d9dec19a4c4ece7cccaf74c07f22a36852d4c925",
+  "helper_sha256": "7aa3c7a181ea219a59786ac2d618743c6f7e934dbddae5eee3299fd61e766cd5",
+  "source_commit": "99656d8c020fcd1dbbc30a02ee10274a07655562",
+  "source_tree_sha1": "550f10819c6d565214bc26d1e3fea59af17ec398",
+  "metadata_git_blob_sha1": "d76435a1bfd0cf493607fb9cf4e4e904ea1ad6a8",
+  "metadata_sha256": "c21c2672452609f749b9a6eba3135d1bb814abd8e69e9293971f759711b4f276",
+  "readme_git_blob_sha1": "778aa247d1f56cbc152b35dd4a41903ba21765e1",
+  "metadata_url": "https://raw.githubusercontent.com/mdmparis/coli_phage_interactions_2023/99656d8c020fcd1dbbc30a02ee10274a07655562/data/genomics/phages/guelin_collection.csv",
+  "source_files": 97,
+  "metadata_matched_files": 96,
+  "files_without_metadata_row": [
+    "411_P3"
+  ],
+  "length_minus_metadata_counts": {
+    "60": 95,
+    "62": 1
+  },
+  "source_files_with_identical_terminal_60_bases": 97,
+  "sources_with_terminal_ns": [],
+  "files": [
+    {
+      "source_id": "409_P1",
+      "source_path": "data/genomics/phages/FNA/409_P1.fna",
+      "git_blob_sha1": "c5116127819ccd157860a593507b55244b31d6b7",
+      "source_file_sha256": "f740dd382d30657b5daa373297d2ae4bb023eb8929556a25f40a2f2b15e7c5b5",
+      "metadata_genome_size": 40079,
+      "length_minus_metadata": 60,
+      "retained_bases": 40139,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "ed09546705cd4eb571381f98354ecddd6fe0a285379a4e3214f4e9cb297e2468",
+      "exact_prefix_suffix_match_lengths": [
+        1,
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "409_P3",
+      "source_path": "data/genomics/phages/FNA/409_P3.fna",
+      "git_blob_sha1": "0ea4e6d7557f7fec7df36d11f2b1f4b3031c1a66",
+      "source_file_sha256": "69ec48c74ab61e367221aba8d33da7091f13f0e6166c8ce8fe12cee9335a5553",
+      "metadata_genome_size": 45588,
+      "length_minus_metadata": 60,
+      "retained_bases": 45648,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "b2bd9e836729de91650042ac3b4846ad7006a7f5c8112e8ed7ed072cacebdd05",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "409_P5",
+      "source_path": "data/genomics/phages/FNA/409_P5.fna",
+      "git_blob_sha1": "47f4de6c0ff45c481ff82c9da4ad98aeba5bc047",
+      "source_file_sha256": "c332579df1b32ab3bb8e84b84211888737ce34690277fab067a0b8e8a4d17fe4",
+      "metadata_genome_size": 45588,
+      "length_minus_metadata": 60,
+      "retained_bases": 45648,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "1a1daf5391c003044ce56ffb2f8159591ddc1a67866599e48c1797f3de428e31",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "409_P6",
+      "source_path": "data/genomics/phages/FNA/409_P6.fna",
+      "git_blob_sha1": "1e1510a38a7b108ad5e4c103aa2ee4be385e8ef0",
+      "source_file_sha256": "7d683d5bb6729da34a7d203387e17f2a372cc2358be727e27db5f0ba4f66a285",
+      "metadata_genome_size": 44789,
+      "length_minus_metadata": 60,
+      "retained_bases": 44849,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "a1fa438ae93925fd369a6e196c576b3fd8b8032ef347d2f7b4b9c3d2f0e959f3",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "409_P8",
+      "source_path": "data/genomics/phages/FNA/409_P8.fna",
+      "git_blob_sha1": "98a8e68b4adcc1ddb05be8fdba4651101a7d2b1e",
+      "source_file_sha256": "5e9dbe90a43fd870094476e072e3af80975b30d16daf9d8df399dc67aab22e2d",
+      "metadata_genome_size": 43594,
+      "length_minus_metadata": 60,
+      "retained_bases": 43654,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "dc3757cf64e1bcabaa937e89347e93526c51735271628a806572ccb6347f19fa",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "411_P1",
+      "source_path": "data/genomics/phages/FNA/411_P1.fna",
+      "git_blob_sha1": "34732ebe2d9edb7f602f54555ae383269f118379",
+      "source_file_sha256": "fb7bbbed3be65c6a8402da07d7ceb8d44c8aa043305b8db1cafdb6a9a831521d",
+      "metadata_genome_size": 48490,
+      "length_minus_metadata": 60,
+      "retained_bases": 48550,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "9f075c211538436f7772e1eafde4b05f04a272665dc0c0d8fc404e14e6f570b7",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "411_P2",
+      "source_path": "data/genomics/phages/FNA/411_P2.fna",
+      "git_blob_sha1": "30474b92051de65a1cd58b4ac74c9a710b4fb540",
+      "source_file_sha256": "92b583e9c46e3c63678c1149200ae0d9babc50c032f32eb498eb6b7005277e2d",
+      "metadata_genome_size": 44134,
+      "length_minus_metadata": 60,
+      "retained_bases": 44194,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "7c3d781e0fbcce4d8f743305d2f831882c4b60d24288a3e3474aefbf95b1cc45",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "411_P3",
+      "source_path": "data/genomics/phages/FNA/411_P3.fna",
+      "git_blob_sha1": "73beed8ae4810515aa72df34b9470e8c059cc81b",
+      "source_file_sha256": "35921009e39ec1dac470b8ff011258e28a298eca023fcb8aa4db7e1180ba4cf0",
+      "metadata_genome_size": null,
+      "length_minus_metadata": null,
+      "retained_bases": 44194,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "74b711075bb21d58b8cbb2a0276c469cdf2217fe4eb03bde37a774a7d1567b6d",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "412_P1",
+      "source_path": "data/genomics/phages/FNA/412_P1.fna",
+      "git_blob_sha1": "65bf3acb10e1f5168f2fa532562a9e511cfc1450",
+      "source_file_sha256": "648a2c25aa67fc0a93f707b1585d85448ef4d8cc18cc940155bb5bbe1d51979d",
+      "metadata_genome_size": 44816,
+      "length_minus_metadata": 60,
+      "retained_bases": 44876,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "740eb4956935ecfca69c928d82e8d01d1e609c4ffb6980c862fe9c912a726604",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "412_P2",
+      "source_path": "data/genomics/phages/FNA/412_P2.fna",
+      "git_blob_sha1": "46c79ebf9ccd637c7c279f1d5e131063f9896938",
+      "source_file_sha256": "acdffb33b1083f98abcc06c609c5d5933039e8098f259d402d2a8fd22f89c732",
+      "metadata_genome_size": 45051,
+      "length_minus_metadata": 60,
+      "retained_bases": 45111,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "b29af13bb4e4c74aa880677b50e431f479dcd288363a1cf9432908d93a4e2adb",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "412_P3",
+      "source_path": "data/genomics/phages/FNA/412_P3.fna",
+      "git_blob_sha1": "04b06167271e9ae416cb0804ec50c9d6a216583f",
+      "source_file_sha256": "c40b9bb23379e6de84600ba302b50f8728f40b162ca0c3377303be26b5000701",
+      "metadata_genome_size": 45509,
+      "length_minus_metadata": 60,
+      "retained_bases": 45569,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "950ba2ac8a09a4d5f08bc6c24f5fe0df2082e2c748341db5bfa6db635fbcc3e4",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "412_P4",
+      "source_path": "data/genomics/phages/FNA/412_P4.fna",
+      "git_blob_sha1": "9e96ba5a8ff598ce49af491dad86a04fe52dd520",
+      "source_file_sha256": "7613ac2bc2e0e1aee663244b0defadd66f2ff8b016eb4129a2cf80b9dc51413a",
+      "metadata_genome_size": 45062,
+      "length_minus_metadata": 60,
+      "retained_bases": 45122,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "9d5d3e38661dbc28553fb0b5862cbdcd3892650e24180e041f8698d0430a904c",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "412_P5",
+      "source_path": "data/genomics/phages/FNA/412_P5.fna",
+      "git_blob_sha1": "dba257a3766d4270696ed0f6a5cf8eecdca72523",
+      "source_file_sha256": "524e24ff157d851bd1735a8a90f89a3355f0617eae6d1719bc59f27f8ba9149c",
+      "metadata_genome_size": 45312,
+      "length_minus_metadata": 60,
+      "retained_bases": 45372,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "530665e6779f620a34a9703f30bfc236d393aab23a66aea8760414ded6dcf713",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "416_P4",
+      "source_path": "data/genomics/phages/FNA/416_P4.fna",
+      "git_blob_sha1": "5966366515b770e02a4a5a1ded838e118916a494",
+      "source_file_sha256": "2c34fa2dccd5734e667d3698a6ec615b8c0e80755a4bfa996942c4a67b49437f",
+      "metadata_genome_size": 44005,
+      "length_minus_metadata": 60,
+      "retained_bases": 44065,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "bd56edf687720f6cdfa6667845c7a055cfc4a0e4ef8c736fb465e3ea1f34f0ff",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "416_P5",
+      "source_path": "data/genomics/phages/FNA/416_P5.fna",
+      "git_blob_sha1": "06cdd99bf54925c3d5a607b2e8765af7b0072953",
+      "source_file_sha256": "48453a46c73ddf59c44e5cc4c5dd84eabc3161746d977346cfdd87dc7767fc08",
+      "metadata_genome_size": 43663,
+      "length_minus_metadata": 60,
+      "retained_bases": 43723,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "3fdeb4286533dd98951a68433aa9ad4ddedd442d860b2a95cdd37f783b4f944c",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "423_P1",
+      "source_path": "data/genomics/phages/FNA/423_P1.fna",
+      "git_blob_sha1": "37c68e85b0d5812d96708eee6a664f2a2a552187",
+      "source_file_sha256": "1091767f1f3d0a6a10984f124dc77f19a09465ea260962a9158cdec13ab3dcba",
+      "metadata_genome_size": 43705,
+      "length_minus_metadata": 60,
+      "retained_bases": 43765,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "19410973fd823acc2b8d72dfb6b59143331f39ed8c721c1bcca015f1862bb68a",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "423_P10",
+      "source_path": "data/genomics/phages/FNA/423_P10.fna",
+      "git_blob_sha1": "40a374781c538ebae7a20dee05c5b28fd4948729",
+      "source_file_sha256": "1c6a806e44339a564fa33278bb4488a18cf84678197ab348b8c87d694fd5b6ef",
+      "metadata_genome_size": 44649,
+      "length_minus_metadata": 60,
+      "retained_bases": 44709,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "0f19cc578d56be01b3cc1a38d09b5862b0b27724318b1148a689f0c278096270",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "423_P5",
+      "source_path": "data/genomics/phages/FNA/423_P5.fna",
+      "git_blob_sha1": "70cd063fb41050d20c206efcdec35e6e41e4e793",
+      "source_file_sha256": "37b630991d21b697873cadb304b6e1d3417c383116a4036c3dfb8ed0fbffb6f0",
+      "metadata_genome_size": 40209,
+      "length_minus_metadata": 60,
+      "retained_bases": 40269,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "5b9acf3fcd0d987a6d5f3f0bfb448c6bd3aa5a9ce3bcebd498fd8d8b6e95c461",
+      "exact_prefix_suffix_match_lengths": [
+        1,
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "423_P7",
+      "source_path": "data/genomics/phages/FNA/423_P7.fna",
+      "git_blob_sha1": "64af2c4af1e3bb85a8aaff4dcfd7425f88c53daa",
+      "source_file_sha256": "86c5ca7105df4793dbf0d6d6952b97a78299bd0878fb24012b5b648af1f4af82",
+      "metadata_genome_size": 43709,
+      "length_minus_metadata": 60,
+      "retained_bases": 43769,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "397376ca397777e5299677b48962b4be3b3273a242303f804481a3c21ea76186",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "423_P9",
+      "source_path": "data/genomics/phages/FNA/423_P9.fna",
+      "git_blob_sha1": "0cad5ba8e45be7acca969e8abd6fc68d1a69539a",
+      "source_file_sha256": "2207e56e936ee31d6ae47a9ab98761e45bb71a0500ed2d6c830362bce3c0fa46",
+      "metadata_genome_size": 44649,
+      "length_minus_metadata": 60,
+      "retained_bases": 44709,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "0f19cc578d56be01b3cc1a38d09b5862b0b27724318b1148a689f0c278096270",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "427_P2",
+      "source_path": "data/genomics/phages/FNA/427_P2.fna",
+      "git_blob_sha1": "2af913447ae3d7f268cfdc8a12040ec62b2ff6ff",
+      "source_file_sha256": "126a02c663fde5ec780969fac785dca97f4df226c46f2cd9d36774579ee621b2",
+      "metadata_genome_size": 40327,
+      "length_minus_metadata": 60,
+      "retained_bases": 40387,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "1a9f43754b2e46ca743cdcebedf99325d0e092cdcb407c637905f8a419bae918",
+      "exact_prefix_suffix_match_lengths": [
+        1,
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "427_P3",
+      "source_path": "data/genomics/phages/FNA/427_P3.fna",
+      "git_blob_sha1": "204fa8a8715bc29f344715b4911134249360dfde",
+      "source_file_sha256": "eafe6b0fc45bb52dba1e0deddf53f63d0499af60e623d5596c4d661ca425cda2",
+      "metadata_genome_size": 39050,
+      "length_minus_metadata": 60,
+      "retained_bases": 39110,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "12767c236356a5a5c97931cc61c9bb66fef8634b1c921e931970e5b1a1ba2157",
+      "exact_prefix_suffix_match_lengths": [
+        1,
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "427_P4",
+      "source_path": "data/genomics/phages/FNA/427_P4.fna",
+      "git_blob_sha1": "f985f78a5e551ac0054aece491cec53368909044",
+      "source_file_sha256": "3036177bc60fa87943e7e14d73987ebf2bcd480077e494382fbce8cb84d660bb",
+      "metadata_genome_size": 39163,
+      "length_minus_metadata": 60,
+      "retained_bases": 39223,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "41631d6db6189f28cc0706c55c448baa39c75dba6898ddee0313467127389e7e",
+      "exact_prefix_suffix_match_lengths": [
+        1,
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "536_P1",
+      "source_path": "data/genomics/phages/FNA/536_P1.fna",
+      "git_blob_sha1": "d047a94c9bdfaf75f6d5984d3065a44930f99d76",
+      "source_file_sha256": "a12f89494723bfdfe5d83a0d79afd8c5f3d8402b0d239021e8dc6fef956b520c",
+      "metadata_genome_size": 149471,
+      "length_minus_metadata": 60,
+      "retained_bases": 149531,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "6a12a534733460f7b9944e389fe26a5ba269ba128bdcc95a55bece5fe5f08d4c",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "536_P11",
+      "source_path": "data/genomics/phages/FNA/536_P11.fna",
+      "git_blob_sha1": "983d4b85bc86e0529bfd5103e0a4f4029a55cc6c",
+      "source_file_sha256": "0c5d977b4258243b54c32323863b24caede9ed94ca6c8159a1e6146171dde27d",
+      "metadata_genome_size": 44422,
+      "length_minus_metadata": 60,
+      "retained_bases": 44482,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "a537bed03aa5f620cc4107c848e640d3e4ca959a623e667fcb222012dcc47b49",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "536_P12",
+      "source_path": "data/genomics/phages/FNA/536_P12.fna",
+      "git_blob_sha1": "51a0c7c54dbb9aa193f3a69649483b6ffa067ed1",
+      "source_file_sha256": "5882a230eb36efc184f9ae83fb2321bc474660d0759d7bbd5b64b8bc820e43d0",
+      "metadata_genome_size": 55927,
+      "length_minus_metadata": 60,
+      "retained_bases": 55987,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "4aae724b0cbea432171ece32763249f9accb62983193594e58c88575f94dd0f8",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "536_P6",
+      "source_path": "data/genomics/phages/FNA/536_P6.fna",
+      "git_blob_sha1": "8988a0c7446a2a7af561f4a42b2822eddfabbc25",
+      "source_file_sha256": "ab2cb00559aec0cfb229f471bfe8aeb2cb1953defee367f666c0c81093c62ad0",
+      "metadata_genome_size": 148442,
+      "length_minus_metadata": 60,
+      "retained_bases": 148502,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "32e32d75e515c4cec485200ec1925302ef06374d462257ccde551fcc31993179",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "536_P7",
+      "source_path": "data/genomics/phages/FNA/536_P7.fna",
+      "git_blob_sha1": "759ed2bfdf0f25897bfdbf0557722b2248707591",
+      "source_file_sha256": "f0a38d22c38520e6cfc5907258dce6e5d37d207e76c0f5af57f9784ecd94ac9b",
+      "metadata_genome_size": 148442,
+      "length_minus_metadata": 60,
+      "retained_bases": 148502,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "2825e93eeb0dee4450eb34768c98d6fd90398e7848fb9e6114e09d774bb98656",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "536_P9",
+      "source_path": "data/genomics/phages/FNA/536_P9.fna",
+      "git_blob_sha1": "33c1c554861c8d4eb56855aaa69137e399fcf834",
+      "source_file_sha256": "6684608854515fee2ec111c9c0e5c78da2234eed7051c2cd56131ef9957043b2",
+      "metadata_genome_size": 148885,
+      "length_minus_metadata": 60,
+      "retained_bases": 148945,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "68372cbfbc7e24cec42b36d837271de117cdc9d4d60aa44367afa9091b61cb75",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "55989_P1",
+      "source_path": "data/genomics/phages/FNA/55989_P1.fna",
+      "git_blob_sha1": "57d9293ca9aa137f429cf03d91db922d55e603ac",
+      "source_file_sha256": "b8b87690b4b96b77c6ade7279e706218f657eea781220701b03403de324117a0",
+      "metadata_genome_size": 40216,
+      "length_minus_metadata": 60,
+      "retained_bases": 40276,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "02a2165ada66b2e39cbb3554fdd2cbbcfc8fdb9f0b65912c5ddda70268b008c8",
+      "exact_prefix_suffix_match_lengths": [
+        1,
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "55989_P2",
+      "source_path": "data/genomics/phages/FNA/55989_P2.fna",
+      "git_blob_sha1": "f97d2b4c0d0e3e118d46fd043962771193a30946",
+      "source_file_sha256": "3ed46ff6a5f017c70a2fe03a39c285aef26c7c80f932a0f95b1edd3f08bc1e77",
+      "metadata_genome_size": 171787,
+      "length_minus_metadata": 60,
+      "retained_bases": 171847,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "932350ab7d2a11a8bf62db42bec24242988a86845b03789e2577562d04515ca5",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "AL505_Ev3",
+      "source_path": "data/genomics/phages/FNA/AL505_Ev3.fna",
+      "git_blob_sha1": "93aa2e90cd96a77b38764bc25aee2d3ee4894628",
+      "source_file_sha256": "267a50a819c83463c9bc11b9770e1658dca270dde54e5725e4101d6f9b129206",
+      "metadata_genome_size": 162105,
+      "length_minus_metadata": 60,
+      "retained_bases": 162165,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "dc0043939832cdc70eb3c9c440e0f41ceebbd92565ae9eba835c3599d4ee204d",
+      "exact_prefix_suffix_match_lengths": [
+        1,
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "AL505_Sd2",
+      "source_path": "data/genomics/phages/FNA/AL505_Sd2.fna",
+      "git_blob_sha1": "74e2f2e231899a1ce04a97cff75e3751ea46b891",
+      "source_file_sha256": "73ce7af9bf5ba1a11234e8a747e4168cfde700b96f086d5cc484f34a22a64267",
+      "metadata_genome_size": 44662,
+      "length_minus_metadata": 60,
+      "retained_bases": 44722,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "2e5c33bb8647126fb852097ceac0133b492ee8fc691622697df7de43c072b5a5",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "AN17_P1",
+      "source_path": "data/genomics/phages/FNA/AN17_P1.fna",
+      "git_blob_sha1": "e1111e975d61d73a1ae588ba32b7cb6c7f844488",
+      "source_file_sha256": "90fe4a04e1219603a2307973ae314c2e3b42189a242517498367b96512019f65",
+      "metadata_genome_size": 39656,
+      "length_minus_metadata": 60,
+      "retained_bases": 39716,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "4b285836ea4bc0dc6a0f736949522a8e190986b9f674f98cc31d70cf9be80180",
+      "exact_prefix_suffix_match_lengths": [
+        1,
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "AN17_P8",
+      "source_path": "data/genomics/phages/FNA/AN17_P8.fna",
+      "git_blob_sha1": "44cda608901d67dcaac38fabbe3bbfff005a5441",
+      "source_file_sha256": "591e76571e2a33aea16a0dfe4850f95d50d1dee6f29c35e848a88c780942569b",
+      "metadata_genome_size": 85575,
+      "length_minus_metadata": 60,
+      "retained_bases": 85635,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "8b5cdbf4a0888f8a79ee4ce6e4ecfea8c2ea65b92e28b3a9867ad8d7eefbf149",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "AN24_P2",
+      "source_path": "data/genomics/phages/FNA/AN24_P2.fna",
+      "git_blob_sha1": "8c652ba32d5e93b4c82fcf75f30de3efc6b03bc7",
+      "source_file_sha256": "639752aefed614b7a6e8256a95c7a0f61d12f164a6dce191c976d6d1f51c9940",
+      "metadata_genome_size": 71225,
+      "length_minus_metadata": 60,
+      "retained_bases": 71285,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "21affa19ca5d1530ab032c5be0e805baa26d97c7df5025b9fa923c76c4b02a77",
+      "exact_prefix_suffix_match_lengths": [
+        1,
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "AN24_P3",
+      "source_path": "data/genomics/phages/FNA/AN24_P3.fna",
+      "git_blob_sha1": "5a752e3622b7a6151c4a5a0713e8ac0d9687569b",
+      "source_file_sha256": "9e2e37808e74eb00aa9ad2f49d5026d8c026e828dba86bc21d9d78e48bba18ba",
+      "metadata_genome_size": 71225,
+      "length_minus_metadata": 60,
+      "retained_bases": 71285,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "68a88b19de98475cdb1921742105122a8b1b0524ca27a50a77049870349c5c46",
+      "exact_prefix_suffix_match_lengths": [
+        1,
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "AN24_P4",
+      "source_path": "data/genomics/phages/FNA/AN24_P4.fna",
+      "git_blob_sha1": "d70172f2a78917ed71ac3786c3dadf090ed562af",
+      "source_file_sha256": "c5a3c161e8474764aba273bd9f731f1daba46cb7b402094f5de886754e71cbda",
+      "metadata_genome_size": 39836,
+      "length_minus_metadata": 60,
+      "retained_bases": 39896,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "d1c178d1173c3a3a1f98f6f91f2a4b9f15cb7ada6709e5188254254f1dabaea2",
+      "exact_prefix_suffix_match_lengths": [
+        1,
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "BCH953_P1",
+      "source_path": "data/genomics/phages/FNA/BCH953_P1.fna",
+      "git_blob_sha1": "de46aa648d74746da9c959b3d7537678cf5c3011",
+      "source_file_sha256": "88484b4ab03b89b583172b4e45be25d18011dac7f9e87c907f6314308b21575b",
+      "metadata_genome_size": 44101,
+      "length_minus_metadata": 60,
+      "retained_bases": 44161,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "b246dc9e122e28d460140e356af3bd7511ffe541f204f7503a7739639f2f5a4a",
+      "exact_prefix_suffix_match_lengths": [
+        1,
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "BCH953_P2",
+      "source_path": "data/genomics/phages/FNA/BCH953_P2.fna",
+      "git_blob_sha1": "9e2f7f2bca0936cad3725d5008a764a429385433",
+      "source_file_sha256": "8e344a72819fa28e900706d46d93284737ddb3966121f0c515d35a0e2684af64",
+      "metadata_genome_size": 168034,
+      "length_minus_metadata": 60,
+      "retained_bases": 168094,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "a8cab6fb663ef08306bfcc5ef7a143750772116be53bf6e57fdf26e2c72a574b",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "BCH953_P3",
+      "source_path": "data/genomics/phages/FNA/BCH953_P3.fna",
+      "git_blob_sha1": "663e46b2baa49f9c0600253232114d3c3839a96a",
+      "source_file_sha256": "4b0397cb9d475f3b6cc1236e1a0f6992e98628cc96391a867c74003fc9b617ba",
+      "metadata_genome_size": 44622,
+      "length_minus_metadata": 60,
+      "retained_bases": 44682,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "2c81fb80c1538957ebded85d3e943b28b56ddde8aea3d138d8536d309eadd47d",
+      "exact_prefix_suffix_match_lengths": [
+        1,
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "BCH953_P4",
+      "source_path": "data/genomics/phages/FNA/BCH953_P4.fna",
+      "git_blob_sha1": "e84ac1ca585770b476323d63d68809afdfe63ede",
+      "source_file_sha256": "1170183e530252b79b0932e011f742a1bca6c8ddedf98c8333e149075031da31",
+      "metadata_genome_size": 169247,
+      "length_minus_metadata": 60,
+      "retained_bases": 169307,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "1e183754fb39adb705499f7c2974c8c12105f8af81641bfac6239dcec71c27ab",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "BCH953_P5",
+      "source_path": "data/genomics/phages/FNA/BCH953_P5.fna",
+      "git_blob_sha1": "cdebc6231fdf7df4e012887e7d053b47e56cdddb",
+      "source_file_sha256": "aef769800298916e610bb68b60ad096dde7da5037bb14a17fd308f4d2f3374c5",
+      "metadata_genome_size": 169247,
+      "length_minus_metadata": 60,
+      "retained_bases": 169307,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "1e183754fb39adb705499f7c2974c8c12105f8af81641bfac6239dcec71c27ab",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "BDX03_P1",
+      "source_path": "data/genomics/phages/FNA/BDX03_P1.fna",
+      "git_blob_sha1": "54d4f1c91074a50e07ecb8db2a94158c91cd3ee2",
+      "source_file_sha256": "e0a964f3b47f5db831adde033fd8553667204cd303d7dcc9f64da3f9e9b9c63e",
+      "metadata_genome_size": 39754,
+      "length_minus_metadata": 60,
+      "retained_bases": 39814,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "ee21418f244e0ca756e71d445ddeda804ca2e46941fb36aaf4f67b8ddf34f548",
+      "exact_prefix_suffix_match_lengths": [
+        1,
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "BDX03_P2",
+      "source_path": "data/genomics/phages/FNA/BDX03_P2.fna",
+      "git_blob_sha1": "7c8823ba3de57420de0c9b4bee65c9784326d626",
+      "source_file_sha256": "3ce294df73f343a305f85005722c9ef36ae96f118e682c33c4732e83eb9ae66f",
+      "metadata_genome_size": 39754,
+      "length_minus_metadata": 60,
+      "retained_bases": 39814,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "ee21418f244e0ca756e71d445ddeda804ca2e46941fb36aaf4f67b8ddf34f548",
+      "exact_prefix_suffix_match_lengths": [
+        1,
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "BDX09_P1",
+      "source_path": "data/genomics/phages/FNA/BDX09_P1.fna",
+      "git_blob_sha1": "ff606353b0e785c12109e305fa0117c740fa7e8c",
+      "source_file_sha256": "bafcedcb1f6410a10b3965bd5c0d9d2aa65505ce4ef7ed82a8a1f68f806f87ba",
+      "metadata_genome_size": 58371,
+      "length_minus_metadata": 60,
+      "retained_bases": 58431,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "c79cdec480cda16b58cf227217afb2d24b40625d7351b0588348a9cc65208825",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "DIJ06_P1",
+      "source_path": "data/genomics/phages/FNA/DIJ06_P1.fna",
+      "git_blob_sha1": "4db8f0b8ba6a0292e4393f4b957515224a748319",
+      "source_file_sha256": "c81553a2624e9c335ca5d5eea15b6cc190f994918ca825534df911b58e4f7943",
+      "metadata_genome_size": 44766,
+      "length_minus_metadata": 60,
+      "retained_bases": 44826,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "2b17561a06a07f2012034e3da8d7e8bbf160e633eb8fb2f1936807fa5b241c91",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "DIJ07_P1",
+      "source_path": "data/genomics/phages/FNA/DIJ07_P1.fna",
+      "git_blob_sha1": "99f3a4fe2f1f423599141d22dec2107857c98e7b",
+      "source_file_sha256": "ea42cce7e6a2a42f8714996f6d2dc059d3f17d865cd223cbe6eadbb4e0c7cafd",
+      "metadata_genome_size": 142881,
+      "length_minus_metadata": 60,
+      "retained_bases": 142941,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "98ad48b1a037aa24fde4f68af5ecb484841e197c611df93b792ce13fe8f06575",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "DIJ07_P2",
+      "source_path": "data/genomics/phages/FNA/DIJ07_P2.fna",
+      "git_blob_sha1": "690d0ac876acbddcb2fa58d5ce48c6e794e46c9a",
+      "source_file_sha256": "e10dbcc92555c3410e3421a80a15b589511b2f220e9896ce50763ddb33a31976",
+      "metadata_genome_size": 144811,
+      "length_minus_metadata": 60,
+      "retained_bases": 144871,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "f7d15a98ef307d25ea28a539d4d57b850df8abb35ef88d1c58bd249f3330c925",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LF110_P1",
+      "source_path": "data/genomics/phages/FNA/LF110_P1.fna",
+      "git_blob_sha1": "100c197a7d1b9f0eed6994361b2e1cb3375b13a5",
+      "source_file_sha256": "4ccae02e7a9dbcd181a21f713f922b1f7c013b3edcafe427aa73ea8ae7ae274b",
+      "metadata_genome_size": 86190,
+      "length_minus_metadata": 60,
+      "retained_bases": 86250,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "af89723bc881cd474ef328e50c603e581328461dcd7f8aa1a7e6bbd920f4b91e",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LF110_P2",
+      "source_path": "data/genomics/phages/FNA/LF110_P2.fna",
+      "git_blob_sha1": "6e3c06d15c697afe73efbe14dba040d0ada7e216",
+      "source_file_sha256": "dfb860a20343748946666e3226f1630af0be9aeebd3a3349861cd8248cf5f43e",
+      "metadata_genome_size": 86501,
+      "length_minus_metadata": 60,
+      "retained_bases": 86561,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "cea1ddfb4b0b18083adfcd7b79091ff5e0f7230011a43a2649ad0d8bc9252bae",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LF110_P3",
+      "source_path": "data/genomics/phages/FNA/LF110_P3.fna",
+      "git_blob_sha1": "3b9eceb91234cb09bc10322d66cfbebdc47c81a0",
+      "source_file_sha256": "b5947d205aa5380867d2e8cb756569e1870add3289fb5f6d23ff931448b70cb4",
+      "metadata_genome_size": 87144,
+      "length_minus_metadata": 60,
+      "retained_bases": 87204,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "4f9aa4435f5764971f9540f48c47f1906c3eaea71093a4b80fa78873ba62d877",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LF110_P4",
+      "source_path": "data/genomics/phages/FNA/LF110_P4.fna",
+      "git_blob_sha1": "1db35eec85caf5a2e2c9410de12043efb323a0b0",
+      "source_file_sha256": "1de7494c883c02b437472599ccd1bd826f3abb3f5d9af7cbdf14b8d5b83c5aa4",
+      "metadata_genome_size": 86070,
+      "length_minus_metadata": 62,
+      "retained_bases": 86132,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "38b18c25fd94f9313ed25fb59a145db1f0837876ca22c4b71f7ca622a4baecc3",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LF31_P1",
+      "source_path": "data/genomics/phages/FNA/LF31_P1.fna",
+      "git_blob_sha1": "460bf72a3689fc2c367ebf5002d4bb47b1558ec8",
+      "source_file_sha256": "aac36d584b4d75f6b21e79c97d2868770340ea0dae891c27c0cbf0b4cce44ddc",
+      "metadata_genome_size": 68319,
+      "length_minus_metadata": 60,
+      "retained_bases": 68379,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "1fced5b8a5a5fe01bed33f0c4291554009b22da70c077d6bf79919d56c43fd2a",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LF31_P3",
+      "source_path": "data/genomics/phages/FNA/LF31_P3.fna",
+      "git_blob_sha1": "19c05341229505e9b650e43fd9623b1c2d7e97ef",
+      "source_file_sha256": "194a6822a245bfbeb893ec8f1f9ce5c7538877c19500c32ebf3498555475cf0b",
+      "metadata_genome_size": 44354,
+      "length_minus_metadata": 60,
+      "retained_bases": 44414,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "c89420e3e8c6932fdaaed11dd408226c57e4d17d3fb3ebe22d463adcaa332f32",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LF50_P3",
+      "source_path": "data/genomics/phages/FNA/LF50_P3.fna",
+      "git_blob_sha1": "1daca4178c07fa01a0946122aae565db40c3e694",
+      "source_file_sha256": "b3b97324a201396dcb6c6377e341b1191fa99b6da745f8b75c044ec45363a9be",
+      "metadata_genome_size": 45099,
+      "length_minus_metadata": 60,
+      "retained_bases": 45159,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "e5e6fc66a919f8859705599294270e15ee126714160439e4938553c532690279",
+      "exact_prefix_suffix_match_lengths": [
+        2,
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LF7074_P1",
+      "source_path": "data/genomics/phages/FNA/LF7074_P1.fna",
+      "git_blob_sha1": "01696209d3a23b79057804670684192aebd4fed2",
+      "source_file_sha256": "0d726baa918100fed76520932e36504e4e89456a0da94774dc309be92909c175",
+      "metadata_genome_size": 41072,
+      "length_minus_metadata": 60,
+      "retained_bases": 41132,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "9a8053e7c6fc6d23c0bd2d013ed4b0a7d13ebf450db735c1c37445291a8e2af9",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LF7074_P2",
+      "source_path": "data/genomics/phages/FNA/LF7074_P2.fna",
+      "git_blob_sha1": "422a2e204ccc037f386e541c6c0482e34495e9dc",
+      "source_file_sha256": "99a3940c199ea3732140955ce5b1bcd50e1d79af41635d5d1a90a9b6c197bcf0",
+      "metadata_genome_size": 41071,
+      "length_minus_metadata": 60,
+      "retained_bases": 41131,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "bef9d042c5ffb7ba5b2de8280cd3d98633b7d38c45b5e0849314fd3ed1d318ce",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LF7074_P3",
+      "source_path": "data/genomics/phages/FNA/LF7074_P3.fna",
+      "git_blob_sha1": "4a1b6da9e0aff62a7259fa4afff9fe544d3f4882",
+      "source_file_sha256": "b72447cb58c8ffd09fa0138c9cb99c7c2e1a7d314556cb947826d6bdc87cd687",
+      "metadata_genome_size": 40766,
+      "length_minus_metadata": 60,
+      "retained_bases": 40826,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "97802b71ead65165bdfe359f057910c1e18c9b2d57b4eb81879a84a44e1591f0",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LF73_P1",
+      "source_path": "data/genomics/phages/FNA/LF73_P1.fna",
+      "git_blob_sha1": "9b1b4d9c05b273ef2a4426f18e4d8b3255fdc096",
+      "source_file_sha256": "13e1da7427f65b16903ea81acb8701a3386200d33fa72fe8453a14ac1786764d",
+      "metadata_genome_size": 168996,
+      "length_minus_metadata": 60,
+      "retained_bases": 169056,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "61f669899f02da5687ffabef30d0000449c18978aa1cdb4adeb4961fb88a18da",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LF73_P3",
+      "source_path": "data/genomics/phages/FNA/LF73_P3.fna",
+      "git_blob_sha1": "691d9a7297d4049a8216523da2f1cafa123be01c",
+      "source_file_sha256": "a47208579983ad46eacf45348febe955a3fbe833be76ed6267185e7c53a73359",
+      "metadata_genome_size": 166650,
+      "length_minus_metadata": 60,
+      "retained_bases": 166710,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "0c8928673ca4155729b6e1051418d1aa3df67c80148350ce915cf7b32e6103ae",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LF73_P4",
+      "source_path": "data/genomics/phages/FNA/LF73_P4.fna",
+      "git_blob_sha1": "e436586af02069611b96dc84e36fa833d3588fb6",
+      "source_file_sha256": "de9526e8403d2ddc6d2bbab57a2487930c2a82ef6e97752eb543a992845c8c95",
+      "metadata_genome_size": 163088,
+      "length_minus_metadata": 60,
+      "retained_bases": 163148,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "4c731546a7f31a418fe4e2e5f734cd4a9bdd781a26286ef677660e2f8bb45cc9",
+      "exact_prefix_suffix_match_lengths": [
+        1,
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LF82_P1",
+      "source_path": "data/genomics/phages/FNA/LF82_P1.fna",
+      "git_blob_sha1": "9b20c81083e7ca2a85763cde0f7bb78e0462daad",
+      "source_file_sha256": "3facc68c14d821265ff7a6b07c7aca3bbe40c835ea85e9c806f57625df260657",
+      "metadata_genome_size": 88828,
+      "length_minus_metadata": 60,
+      "retained_bases": 88888,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "1b482fa1c00e2ae772a9b6a2421874733aa9dfda4b7098f85472fd2d7700286f",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LF82_P2",
+      "source_path": "data/genomics/phages/FNA/LF82_P2.fna",
+      "git_blob_sha1": "33d59d8b073c1055e7f620b1d8a767b459e50f4f",
+      "source_file_sha256": "25d48712aeaa44cd10971e051f70c4d3c4a8b43391efb9d5a9a189519f6aac33",
+      "metadata_genome_size": 85572,
+      "length_minus_metadata": 60,
+      "retained_bases": 85632,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "c8309be2b355e3461aa027633fec1772b1a6d1277b54151b8bfc6458d6dc4309",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LF82_P3",
+      "source_path": "data/genomics/phages/FNA/LF82_P3.fna",
+      "git_blob_sha1": "f3f47b6dd564513c533c4b43d3e23ab78a7c7332",
+      "source_file_sha256": "545cc183f3079494eb8d2d1712cfe7bac2c999e40a48854740560924c4996f42",
+      "metadata_genome_size": 85148,
+      "length_minus_metadata": 60,
+      "retained_bases": 85208,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "e5962fea9b5d64f71b69bc54415cc525ac7b57acf552b4b85cfe520b2b1feebb",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LF82_P4",
+      "source_path": "data/genomics/phages/FNA/LF82_P4.fna",
+      "git_blob_sha1": "85e6908bd80d7206a6900c59253fec2b212ee408",
+      "source_file_sha256": "f5f5815466e23cd8033fe97b259c3771ee3105232aabd551d342fd85e3e3629c",
+      "metadata_genome_size": 83202,
+      "length_minus_metadata": 60,
+      "retained_bases": 83262,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "8fb7d12e73b2def6ba5cf248ebc9853ef3269bd3917d6a66d01838776ff6feed",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LF82_P5",
+      "source_path": "data/genomics/phages/FNA/LF82_P5.fna",
+      "git_blob_sha1": "dcd2e773a49cef46d66ec804c3c44e6d87aad130",
+      "source_file_sha256": "b7a14162a018779fc995227ba77d1bf9bc0358ca43247af3f13b9aaeef62179f",
+      "metadata_genome_size": 85898,
+      "length_minus_metadata": 60,
+      "retained_bases": 85958,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "455202bf8eb5579045a987b090979f872d1a32b93afe83e003cdd5700b3fd0d4",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LF82_P6",
+      "source_path": "data/genomics/phages/FNA/LF82_P6.fna",
+      "git_blob_sha1": "a844b2759b0cc1672996d418484d13ac3c120414",
+      "source_file_sha256": "5c411107d7aa1aedb13aa900cc5689870278a32d94bc851d85080c476d725184",
+      "metadata_genome_size": 84499,
+      "length_minus_metadata": 60,
+      "retained_bases": 84559,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "f084cb2db7fd943bc634338d6ff95e6f70861eaeb279f2307768cd4d6203529a",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LF82_P8",
+      "source_path": "data/genomics/phages/FNA/LF82_P8.fna",
+      "git_blob_sha1": "5706cdeff095b6d16df2ab37074c74d6bd9207b0",
+      "source_file_sha256": "1c2d5e7b1b942e657a7ca8ddbfcec1c476c8601f291f53f2aa6d3fec8982c1e0",
+      "metadata_genome_size": 168962,
+      "length_minus_metadata": 60,
+      "retained_bases": 169022,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "2c5a6148f50d25692881107bfdfd95d46e774afa45fd1b78901a699a943ae7b6",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LF82_P9",
+      "source_path": "data/genomics/phages/FNA/LF82_P9.fna",
+      "git_blob_sha1": "75c43780d1a315e33c460bae7c1b10e0192766b5",
+      "source_file_sha256": "bc5773b70157ee02b2ba7efc5c5e123ee57510b5a80fd013f28fc4dcab05f17d",
+      "metadata_genome_size": 86448,
+      "length_minus_metadata": 60,
+      "retained_bases": 86508,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "5f3d14a12ee1fa2f97c9a99d5cbf470b9b6f616a026fb54eb57db351439c5d2d",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LI10_P1",
+      "source_path": "data/genomics/phages/FNA/LI10_P1.fna",
+      "git_blob_sha1": "b838969b13314b87c3c8fad62955c6652b3765ff",
+      "source_file_sha256": "829f854dd80a17844e0c8c0f7920fc1e62de248888a32006c2e204f520bfeef9",
+      "metadata_genome_size": 39854,
+      "length_minus_metadata": 60,
+      "retained_bases": 39914,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "349f823cefcfb91b6a7a16f383d2df61b6356a830602ae4ac5ae5339956d9410",
+      "exact_prefix_suffix_match_lengths": [
+        1,
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LI10_P2",
+      "source_path": "data/genomics/phages/FNA/LI10_P2.fna",
+      "git_blob_sha1": "201f30179cca1ffc81e4289bd45edb209babb2b3",
+      "source_file_sha256": "c141349a23953413591f7358803f98470bec3dafe607ff9d169ad87cd7ab56d4",
+      "metadata_genome_size": 39854,
+      "length_minus_metadata": 60,
+      "retained_bases": 39914,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "349f823cefcfb91b6a7a16f383d2df61b6356a830602ae4ac5ae5339956d9410",
+      "exact_prefix_suffix_match_lengths": [
+        1,
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LI10_P3",
+      "source_path": "data/genomics/phages/FNA/LI10_P3.fna",
+      "git_blob_sha1": "45f5fcbd061e4e4c12a3f0c7c7422b625f6e3f92",
+      "source_file_sha256": "9c2a81215eb10c4efa599e241e59d7941b347ceee14be81c6d70ca6945645755",
+      "metadata_genome_size": 44918,
+      "length_minus_metadata": 60,
+      "retained_bases": 44978,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "0b672fdf83b6b710322312873c4554202eb19bd474ce6cc03b07abac46f101d2",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LI10_P4",
+      "source_path": "data/genomics/phages/FNA/LI10_P4.fna",
+      "git_blob_sha1": "c242edca5f85ccb6b2e86f9142b4c28d67ac4c7c",
+      "source_file_sha256": "5827284af3781176e75840b43b1ab0488d4e3bc25d97e4ea6ab6dd2c79c9752b",
+      "metadata_genome_size": 44534,
+      "length_minus_metadata": 60,
+      "retained_bases": 44594,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "ebef7bd5649317ca154494a9a3ed61d95e65d109e70d72bb66a2303098c135b9",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LI10_P5",
+      "source_path": "data/genomics/phages/FNA/LI10_P5.fna",
+      "git_blob_sha1": "b5bf6a936ba1cac3011e2ae74a9706f18b4261f4",
+      "source_file_sha256": "bcb9e454b5b78ea11e9b0f4c8dfa619a68effd89f94f74e8546e2212526517a7",
+      "metadata_genome_size": 44310,
+      "length_minus_metadata": 60,
+      "retained_bases": 44370,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "c23671ac4f0bc82c6ef8e7c5877c8788639048e27abf8b813e6a279ea5170e23",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LI10_P6",
+      "source_path": "data/genomics/phages/FNA/LI10_P6.fna",
+      "git_blob_sha1": "f49a7920880f045a9ac338f3cb0c3904001dc93a",
+      "source_file_sha256": "271cd5f3d839acfd1c4f4464e33a12778c85fb3caef8dbf7802b199c436c067d",
+      "metadata_genome_size": 44752,
+      "length_minus_metadata": 60,
+      "retained_bases": 44812,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "dd825fd48fef20ecf1ab7a56fa378255c82136770bafb1eb1e0d9ec2b76516be",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LM02_P1",
+      "source_path": "data/genomics/phages/FNA/LM02_P1.fna",
+      "git_blob_sha1": "1cb3520e0fe62587d50fc9c486d7199822da7bdc",
+      "source_file_sha256": "ca1713cd9719d7649d81d667ae7d45e1993ffbcf93a5efc2fe9101b0ed242339",
+      "metadata_genome_size": 43420,
+      "length_minus_metadata": 60,
+      "retained_bases": 43480,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "b5284fd6cfdaa4b4a7bf85cd2f0eaa2f9ad1e5d0fcb92100daff576e578d3f9e",
+      "exact_prefix_suffix_match_lengths": [
+        1,
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LM07_P1",
+      "source_path": "data/genomics/phages/FNA/LM07_P1.fna",
+      "git_blob_sha1": "cb032f3af9314689529b2deb72280327e47399de",
+      "source_file_sha256": "9a349084cd24460bf088dc578e89ad22a6cad9f66d403d0db938bca903b8cc2a",
+      "metadata_genome_size": 40168,
+      "length_minus_metadata": 60,
+      "retained_bases": 40228,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "c4cac8f8bf3c91628c0c67fbde8da406c96b929a255a1b402290abfa0ae742d2",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LM08_P1",
+      "source_path": "data/genomics/phages/FNA/LM08_P1.fna",
+      "git_blob_sha1": "fd087bcc8741f120dfbc55702db17619f7ce51ce",
+      "source_file_sha256": "5879286da44681aac105e68b300830aae608c65271436aac877adc0b162a9c97",
+      "metadata_genome_size": 42973,
+      "length_minus_metadata": 60,
+      "retained_bases": 43033,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "21f2af241a8a18c7a05ad858d6d0d8340a8bee8776adc3abecdc361740ce4472",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LM08_P2",
+      "source_path": "data/genomics/phages/FNA/LM08_P2.fna",
+      "git_blob_sha1": "ba519e581b9e2cda3607725c0cc5ba24180ddb4f",
+      "source_file_sha256": "5ae8d9738b38c709f69e1746045c915a0a027e326bc078b8e5c2793f74da7142",
+      "metadata_genome_size": 42999,
+      "length_minus_metadata": 60,
+      "retained_bases": 43059,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "4e34e78b44d1956f48e22173013b6b10db4f501ef020c50c94d76a53206d5dfd",
+      "exact_prefix_suffix_match_lengths": [
+        2,
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LM33_P1",
+      "source_path": "data/genomics/phages/FNA/LM33_P1.fna",
+      "git_blob_sha1": "d26fa47bce15ca3d1c7b225777864c06d6b5cef4",
+      "source_file_sha256": "1f8ef7a5bc8c00362bdeaf17063f89edf6d151f3e89c177411263cc63c0cb3be",
+      "metadata_genome_size": 38979,
+      "length_minus_metadata": 60,
+      "retained_bases": 39039,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "2ae833844c882749f58f46841dbd0b081c9796ad80797f924bbb796a192ab0de",
+      "exact_prefix_suffix_match_lengths": [
+        1,
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LM40_P1",
+      "source_path": "data/genomics/phages/FNA/LM40_P1.fna",
+      "git_blob_sha1": "09bfd9f4f6458d67451b5a34bb66d5ddafe51b93",
+      "source_file_sha256": "b0bf054e10ad462a2174843d867df641f621a1fd388c8af6d3aef6de2972d7a6",
+      "metadata_genome_size": 45013,
+      "length_minus_metadata": 60,
+      "retained_bases": 45073,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "3a75f3a2074f0d3926c10d17e6d9e0a3ea215fe172c349ad7cfa3dcc835144bd",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LM40_P2",
+      "source_path": "data/genomics/phages/FNA/LM40_P2.fna",
+      "git_blob_sha1": "77c3e467bd389c4d12dda94db66389305ff43edb",
+      "source_file_sha256": "73f9276d98f9a3a2a09b457f6f83bd7a80757452ee8d60bd2eee57841bc357ca",
+      "metadata_genome_size": 45119,
+      "length_minus_metadata": 60,
+      "retained_bases": 45179,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "3a45cb623fc36dfebcfb67c07aec5717913f7c6b930f2e4c2e5a4acd13727759",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "LM40_P3",
+      "source_path": "data/genomics/phages/FNA/LM40_P3.fna",
+      "git_blob_sha1": "7177a6991d880d34b152c4b230e0435aee16c8c7",
+      "source_file_sha256": "27eb0b2422f873b0d10a924e5bb0347533603f0ed3048fc4257b451c398b5933",
+      "metadata_genome_size": 45041,
+      "length_minus_metadata": 60,
+      "retained_bases": 45101,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "f4ceca4113d89dad90e2c59f86501ee964440c47a8b5999f51703ca2e9adbf12",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "MT1B1_3A1",
+      "source_path": "data/genomics/phages/FNA/MT1B1_3A1.fna",
+      "git_blob_sha1": "5fe1da629a674b018fee265974cd1acca20042ac",
+      "source_file_sha256": "06d5c6006b8186a74754eb7d5011ad8faf4510f1d5315bc6a8237a6f9bf96203",
+      "metadata_genome_size": 40159,
+      "length_minus_metadata": 60,
+      "retained_bases": 40219,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "45ab1ef0595944111ff63a8e09afecf676f311a1a10c54f4e27ac4394a62b951",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "NAN33_P1",
+      "source_path": "data/genomics/phages/FNA/NAN33_P1.fna",
+      "git_blob_sha1": "1cb3dd08412484cc678b497b48dbcdee847d0182",
+      "source_file_sha256": "f9e8a64bac02b300545661ac923f2238e686231b30e34afec6b6965ae6722fc8",
+      "metadata_genome_size": 40656,
+      "length_minus_metadata": 60,
+      "retained_bases": 40716,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "90f95e7a86aae915b47e256e37203f9fe13b852660ec6bf198ce5a9e28bef40b",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "NAN33_P2",
+      "source_path": "data/genomics/phages/FNA/NAN33_P2.fna",
+      "git_blob_sha1": "dc60fa4c73c37c2d3178b851d41db56d446ae70f",
+      "source_file_sha256": "df3d2568015fac77d3aee8f31b42fa4660a390ef706cb9ebd4dc155fa36f8942",
+      "metadata_genome_size": 40708,
+      "length_minus_metadata": 60,
+      "retained_bases": 40768,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "871e41ef9acea48473b35e1a6452d12b0ba8bc0e7b70f065f2afc21039bf6204",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "NAN33_P4",
+      "source_path": "data/genomics/phages/FNA/NAN33_P4.fna",
+      "git_blob_sha1": "485aa51dd53e52e5c5774825a6397a56124a266f",
+      "source_file_sha256": "6af2bb841d641f20c53aa54b4a863c92e74aa377b291d1ab0348ad942d4e6774",
+      "metadata_genome_size": 40708,
+      "length_minus_metadata": 60,
+      "retained_bases": 40768,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "871e41ef9acea48473b35e1a6452d12b0ba8bc0e7b70f065f2afc21039bf6204",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "NAN33_P5",
+      "source_path": "data/genomics/phages/FNA/NAN33_P5.fna",
+      "git_blob_sha1": "3d00864d1948a6d2a79b5a0d4e4fc0c49546106e",
+      "source_file_sha256": "f8a12177712a2d313bfe655eac0235418e8532e630dedef2db75b28e1daabc9b",
+      "metadata_genome_size": 74438,
+      "length_minus_metadata": 60,
+      "retained_bases": 74498,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "bf9b965148da60d515fc3ee6d03156d81465f8e542fb1f610542770350fa2be1",
+      "exact_prefix_suffix_match_lengths": [
+        1,
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "NAN33_P6",
+      "source_path": "data/genomics/phages/FNA/NAN33_P6.fna",
+      "git_blob_sha1": "637ef934ec87bf51a947c960fb9e660e7c8a7d24",
+      "source_file_sha256": "cc3e3094307b798fbe17b9d4b59a1a551300610efc7c8810774407dde1f0683e",
+      "metadata_genome_size": 40525,
+      "length_minus_metadata": 60,
+      "retained_bases": 40585,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "0da7831bb84c44130785511d9965de6cfcfb385fade63ed45f61ce13dd222ddb",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "NIC06_P2",
+      "source_path": "data/genomics/phages/FNA/NIC06_P2.fna",
+      "git_blob_sha1": "6a01d945315a382311da55dd271ac5d095b79262",
+      "source_file_sha256": "c30ac7f95b9756e22c50537dbc99d3fce5266081766794dba62ae12a222f52a8",
+      "metadata_genome_size": 166325,
+      "length_minus_metadata": 60,
+      "retained_bases": 166385,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "f1342908816af4583ff7448409bd7069382e887e8207cd9bab563d0bcdb5ee62",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "NIC06_P3",
+      "source_path": "data/genomics/phages/FNA/NIC06_P3.fna",
+      "git_blob_sha1": "fe0b86aaef7bdc4af15d7cdbb3f088ec8355fd0d",
+      "source_file_sha256": "894002c062f10f26245035389f9ff731c1656b95ccfb18189f33a6eb64f1ff6d",
+      "metadata_genome_size": 45947,
+      "length_minus_metadata": 60,
+      "retained_bases": 46007,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "efd6da173565a98333f08999296be9f72f83f917f440f96cd54472a94c6a33c4",
+      "exact_prefix_suffix_match_lengths": [
+        1,
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "NRG_11A2",
+      "source_path": "data/genomics/phages/FNA/NRG_11A2.fna",
+      "git_blob_sha1": "8f102a34ba833f33ff56a8e033fa38a3a940a445",
+      "source_file_sha256": "deed511091d225edeb0084e6398320092e48759b76fc8d935084dce7edf9a20d",
+      "metadata_genome_size": 84421,
+      "length_minus_metadata": 60,
+      "retained_bases": 84481,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "886f7e9c27c0da8e45af649c4db7bf25373912645280e307d22341a4919f823e",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "NRG_11B1",
+      "source_path": "data/genomics/phages/FNA/NRG_11B1.fna",
+      "git_blob_sha1": "b357658d1224ff04384f324c5bbc7675c8bb3976",
+      "source_file_sha256": "01f738573f453e887fa529d34c2118db4af858715704a10494947a85b91991a6",
+      "metadata_genome_size": 87084,
+      "length_minus_metadata": 60,
+      "retained_bases": 87144,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "87fbf1109a2f3b2fe87aa7bbdffd7a0afb2ec1de3c6cf6908d4d7e0aa9832fa2",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "NRG_12A1B",
+      "source_path": "data/genomics/phages/FNA/NRG_12A1B.fna",
+      "git_blob_sha1": "3899d8c0cfa0a8f92f080aaab2c24ba9f37c8f3b",
+      "source_file_sha256": "152e77c0db3860ec304180bb34fb02d83054666f95be51931c678d620c539563",
+      "metadata_genome_size": 44234,
+      "length_minus_metadata": 60,
+      "retained_bases": 44294,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "a55bd390eb0818c45d326880f4c21bea07a9856c58c7268e7eef452d3c3c1264",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "T4LD",
+      "source_path": "data/genomics/phages/FNA/T4LD.fna",
+      "git_blob_sha1": "3ad420386ca0859de054911302dffea91a3cdd79",
+      "source_file_sha256": "3cbcc8a322d3d80a17df4c24a90fd948936005b7bb9ff7effa640fde2ecceab5",
+      "metadata_genome_size": 168921,
+      "length_minus_metadata": 60,
+      "retained_bases": 168981,
+      "source_records": 2,
+      "skipped_empty_record_indices_for_inspection": [
+        0
+      ],
+      "sequence_sha256": "17a3446d40ff1f949f75bab016f3fdb68876a082fe11effcd20361efc0f105d6",
+      "exact_prefix_suffix_match_lengths": [
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    },
+    {
+      "source_id": "T7_Portugal",
+      "source_path": "data/genomics/phages/FNA/T7_Portugal.fna",
+      "git_blob_sha1": "c5d3e28343c57530892c44f6361bdac097d9ed82",
+      "source_file_sha256": "002623ca634bae13f757f140df35c01c78e9240b1d4c851d244691bf59a54289",
+      "metadata_genome_size": 39778,
+      "length_minus_metadata": 60,
+      "retained_bases": 39838,
+      "source_records": 1,
+      "skipped_empty_record_indices_for_inspection": [],
+      "sequence_sha256": "877b562a8178a80723e4b4922311ede4b7140454e0828044e522585bc709024e",
+      "exact_prefix_suffix_match_lengths": [
+        1,
+        60
+      ],
+      "leading_n_bases": 0,
+      "trailing_n_bases": 0,
+      "total_n_bases": 0,
+      "total_non_acgt_bases": 0
+    }
+  ],
+  "source_generation_script_paths_under_phage_directory": [],
+  "generation_rationale_status": "Not established: pinned README describes FASTA genome inputs without a terminal-extension explanation; no generation-code file under the phage data directory. This bounded inspection does not establish that no rationale exists elsewhere.",
+  "sequence_changes_performed": false,
+  "phenotype_table_loaded": false,
+  "training_or_prediction_executed": false,
+  "interpretation": "Preserved source representations have terminal overlap and length differences from metadata; do not infer natural termini, circularity, padding provenance, stock identity or trim sequences. Normalization and relatedness results remain source-representation-specific and provisional."
+}
