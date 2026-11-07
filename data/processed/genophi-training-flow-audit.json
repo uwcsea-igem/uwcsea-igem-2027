@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "reviewed_date": "2026-11-07",
+  "scope": "Pinned source-call/data-flow inspection; no training, model-output inspection or manuscript-run reproduction",
+  "upstream_commit": "f7e30abc1b0bbba1ae76b8f58a3363bbbc5cd54f",
+  "repository_root_tree_sha1": "e42e64caaaea9efb8aca2af00d2dd84541bfe946",
+  "artifacts": [
+    {
+      "path": "genophi/workflows/protein_family_workflow.py",
+      "git_blob_sha1": "3ffa004b61ee5cb5b1c4fdb027edea66d7dd2ad8",
+      "sha256": "6931aa4abba7245a6387baea917d0c4a09012452b570ce45f552c6a5ad35492b",
+      "bytes": 35622,
+      "url": "https://github.com/Noonanav/GenoPHI/blob/f7e30abc1b0bbba1ae76b8f58a3363bbbc5cd54f/genophi/workflows/protein_family_workflow.py"
+    },
+    {
+      "path": "genophi/feature_selection.py",
+      "git_blob_sha1": "f64c169682f753252b04222a611cd5f988df76c7",
+      "sha256": "492f6afa281af32ce06aaa1f051fb8f6a56bdf366d2df5caf12254795a49153c",
+      "bytes": 73165,
+      "url": "https://github.com/Noonanav/GenoPHI/blob/f7e30abc1b0bbba1ae76b8f58a3363bbbc5cd54f/genophi/feature_selection.py"
+    },
+    {
+      "path": "genophi/select_feature_modeling.py",
+      "git_blob_sha1": "c3b2abfedbf4663ebca53f6e4d56bba4b94b3271",
+      "sha256": "fa685a486fe291789857b4139100be89776dc05d2dbcdf925032d07ed2bed12c",
+      "bytes": 31843,
+      "url": "https://github.com/Noonanav/GenoPHI/blob/f7e30abc1b0bbba1ae76b8f58a3363bbbc5cd54f/genophi/select_feature_modeling.py"
+    },
+    {
+      "path": "genophi/cli.py",
+      "git_blob_sha1": "b9da74abb0633fac36bdb9e14d484354713b27b5",
+      "sha256": "f702b891d42324febb832c39e50ef6c062a983df0fdeaa51502eb08919266e69",
+      "bytes": 70676,
+      "url": "https://github.com/Noonanav/GenoPHI/blob/f7e30abc1b0bbba1ae76b8f58a3363bbbc5cd54f/genophi/cli.py"
+    }
+  ],
+  "findings": [
+    {
+      "id": "provided_genome_vocabulary",
+      "source": "genophi/workflows/protein_family_workflow.py",
+      "lines": [
+        239,
+        354
+      ],
+      "observation": "Family construction and occurrence consolidation precede repeated selection on the supplied input genomes.",
+      "adaptation": "Fit vocabulary and consolidation separately within each outer training partition."
+    },
+    {
+      "id": "pooled_selection_then_new_splits",
+      "source": "genophi/feature_selection.py",
+      "lines": [
+        1489,
+        1571
+      ],
+      "observation": "Each RFE fits its training rows; selected-feature occurrences are then pooled and reduced tables retain all rows. Later modelling resplits them.",
+      "additional_source": "genophi/select_feature_modeling.py",
+      "additional_lines": [
+        510,
+        570
+      ],
+      "consequence": "Later held-out rows can have influenced earlier pooled selection; these splits alone are not an untouched final test."
+    },
+    {
+      "id": "grouping_fallback",
+      "source": "genophi/feature_selection.py",
+      "lines": [
+        133,
+        360
+      ],
+      "observation": "Disabled clustering or filter_type none uses row-random splitting; missing features or invalid grouped splits can fall back to it.",
+      "adaptation": "Use explicit frozen relatedness partitions and reject invalid splits."
+    },
+    {
+      "id": "validation_used_for_tuning",
+      "source": "genophi/feature_selection.py",
+      "lines": [
+        939,
+        1100
+      ],
+      "observation": "Candidate fitting uses the supplied test rows for early stopping and candidate selection by MCC.",
+      "adaptation": "Treat them as tuning rows; reserve outer evaluation. The minimal component instead uses fixed iterations without an eval_set."
+    },
+    {
+      "id": "weight_and_seed_propagation",
+      "source": "genophi/feature_selection.py",
+      "lines": [
+        529,
+        606,
+        1489
+      ],
+      "observation": "RFE defaults to log10 weights when weights_method is omitted; a grid-search call can retain default random_state42.",
+      "adaptation": "Record and pass weights and seed explicitly for each training-only fit."
+    },
+    {
+      "id": "defaults_not_manuscript_execution",
+      "source": "genophi/cli.py",
+      "lines": [
+        565,
+        750
+      ],
+      "observation": "CLI and lower-level Python defaults differ. Inspected notebook code did not establish the manuscript training invocation.",
+      "consequence": "Do not attribute a generic wrapper path or its potential validation optimism to the published runs without that execution evidence."
+    }
+  ],
+  "target_ando_leakage_established": false,
+  "manuscript_execution_parameters_established": false,
+  "decision": "Reuse the representation and selected fitting primitives with explicit train-only orchestration; do not use the default wrapper resplits as this project untouched external evaluation.",
+  "production_training_ready": false,
+  "new_target_scores_generated": false
+}

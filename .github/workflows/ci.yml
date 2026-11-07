@@ -5,6 +5,14 @@ on:
 permissions:
   contents: read
 jobs:
+  learning-component:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv python install 3.12.5
+      - run: uv sync --project software/tipcraft/experiments/learning --locked --python 3.12.5
+      - run: uv run --project software/tipcraft/experiments/learning --no-sync python -m unittest discover -s software/tipcraft/experiments/learning/tests -v
   tipcraft:
     runs-on: ubuntu-latest
     steps:

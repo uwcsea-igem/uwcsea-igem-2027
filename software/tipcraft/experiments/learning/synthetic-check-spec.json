@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "purpose": "Synthetic fitting-engine integrity checks, not biological model evaluation",
+  "fixture_settings_context": "Fixed synthetic fixture and small engineering-fit settings; integrity controls were refined during implementation. No biological result was used.",
+  "rows": 32,
+  "features": ["host:0", "host:1", "host:2", "phage:0", "phage:1", "phage:2"],
+  "fixture": "For i=0..31, b_j=(i>>j)&1; X=[b0,b1,b0^b1,b2,b3,b4], y=b0&b1&b2. Metadata uses four synthetic hosts (i%4) and eight synthetic phages (i//4), with consistent feature vectors per genome. No real genomes or phenotype sources.",
+  "settings": {
+    "rfe_iterations": 30,
+    "final_iterations": 40,
+    "depth": 3,
+    "learning_rate": 0.1,
+    "l2_leaf_reg": 3.0,
+    "n_selected_features": 3,
+    "rfe_step": 1,
+    "seed": 2027,
+    "threads": 1,
+    "weight_method": "per_phage_log10"
+  },
+  "checks": [
+    "Actual CatBoost/RFE fit, frozen bundle save/load and finite nonconstant scores",
+    "Renaming synthetic row/host/phage identifiers bijectively leaves scores unchanged at fixed tolerance",
+    "Host-only fitting and scoring are invariant to all phage-column perturbations",
+    "Relatedness-group leakage is rejected even when IDs differ; unsupported split regimes do not fall back to random rows",
+    "Reordered feature schema and modified manifest/model/spec/selection artifacts are rejected against manifest hashes frozen before scoring"
+  ],
+  "absolute_score_comparison_tolerance": 1e-12,
+  "production_parameters_selected": false,
+  "biological_training_executed": false,
+  "target_method_coverage": 0
+}

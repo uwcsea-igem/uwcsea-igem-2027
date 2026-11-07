@@ -28,6 +28,14 @@ Add `--offline` to authenticate the existing cache without network requests. Eac
 
 ## Portable retrieval and compute
 
+The official [versioned Figshare page](https://figshare.com/articles/dataset/Genome_assembly_of_the_Escherichia_Picard_collection/25941691/1) also allows downloading the host collection as an archive. Its 403 original files total about 2.06 GB before ZIP compression. Bring the downloaded ZIP back unchanged; the [archive importer](../scripts/import-genophi-hosts.py) maps original deposited filenames to the file-ID cache names automatically, verifies size/MD5/FASTA, and preserves existing verified files. It reads ZIP members without extracting their paths. Partial or unexpected contents remain explicit in its report.
+
+```bash
+uv run --project software/tipcraft python scripts/import-genophi-hosts.py --metadata-cache data/raw/genophi-training-map --archive /actual/path/to/downloaded-hosts.zip --genomes data/raw/genophi-genomes --output data/processed/genophi-host-import.json
+```
+
+Replace the archive path with the actual returned ZIP and choose a fresh report name for each import. No real archive has been imported yet; the importer has been exercised on synthetic archives and its inventory interface checked against all 403 actual metadata records. After import, replay the standard preparation audit offline, then run the frozen host-relatedness audit. Do not rename or edit the FASTA contents manually.
+
 The [kit builder](../scripts/build-genophi-download-kit.py) packages the original downloader and authenticated public metadata. Its allowlist includes three helper scripts, their license, public source metadata, a file manifest and standalone verification instructions. It includes no private chat or target design files. Building twice produced byte-identical ZIPs, and the extracted kit's verifier and 500-file inventory were actually checked.
 
 ```bash

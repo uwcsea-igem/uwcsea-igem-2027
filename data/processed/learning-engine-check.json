@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "purpose": "Synthetic fitting-engine integrity checks, not biological model evaluation",
+  "status": "passed",
+  "checks": {
+    "scores_finite_and_nonconstant": true,
+    "saved_bundle_reload_scores_match": true,
+    "bijective_metadata_renaming_invariant": true,
+    "host_only_ignores_phage_columns": true,
+    "fit_api_has_no_evaluation_labels_or_early_stopping_input": true,
+    "shared_host_group_rejected": true,
+    "shared_phage_group_rejected": true,
+    "reordered_feature_schema_rejected": true,
+    "manifest.json_tampering_rejected": true,
+    "model.cbm_tampering_rejected": true,
+    "fit-spec.json_tampering_rejected": true,
+    "selected-features.json_tampering_rejected": true
+  },
+  "spec_sha256": "c0b16a228f3dc5ef62700da98665a00191a9af382c255f965d355e56c0cbbb44",
+  "runtime_lock_sha256": "fbeda0630d21b8bc27631be9bd826564f498ca27907cb83355ecd0966e59ae0e",
+  "component_sha256": "698024df5a680e24b87ca8d35ebca7c97c0106eefaf9a6c629b78ea895f093f3",
+  "runner_sha256": "400e3c09e7202b692a5c4251150b443eedb212e5de6aa2ef2fdfb055ab184e34",
+  "fixture_sha256": "9dfe6feeb80914e6b75341e8b08b03a8d38db82c5e98c6d3e786ba76c880800f",
+  "samples": 32,
+  "input_features": 6,
+  "settings": {
+    "rfe_iterations": 30,
+    "final_iterations": 40,
+    "depth": 3,
+    "learning_rate": 0.1,
+    "l2_leaf_reg": 3.0,
+    "n_selected_features": 3,
+    "rfe_step": 1,
+    "seed": 2027,
+    "threads": 1,
+    "weight_method": "per_phage_log10"
+  },
+  "absolute_score_comparison_tolerance": 1e-12,
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "architecture": "arm64",
+  "python": "3.12.5",
+  "wall_seconds": 0.7506191672291607,
+  "pre_scoring_boundary": {
+    "path": "data/raw/learning-engine-check/run-1/bundles-before-scoring.json",
+    "sha256": "267febb4d4b254e9efce866b2178887dccc88a0cbbec28ec8194af734f17b55f"
+  },
+  "bundle_manifests": [
+    {
+      "path": "data/raw/learning-engine-check/run-1/paired/manifest.json",
+      "sha256": "809a383a0605b0fca438f29968335d09681ea07258f5522bfefc670536ff53c5"
+    },
+    {
+      "path": "data/raw/learning-engine-check/run-1/renamed/manifest.json",
+      "sha256": "618b478f85449b0d0a684ee30093f22896b63067cdf7748364777e4a1ef48539"
+    },
+    {
+      "path": "data/raw/learning-engine-check/run-1/host-only/manifest.json",
+      "sha256": "2b9415109b47015944badac7d773fe45921de6aff6d60cd9dfefcee6e9164ab7"
+    }
+  ],
+  "biological_training_executed": false,
+  "biological_validation_executed": false,
+  "target_infection_scores_generated": false,
+  "new_method_covered_cases": 0,
+  "interpretation": "Actual fitting-engine integrity checks on synthetic binary data; no biological accuracy or full-run readiness established"
+}
