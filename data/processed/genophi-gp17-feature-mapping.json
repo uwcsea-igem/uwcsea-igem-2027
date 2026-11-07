@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "purpose": "Exact reference gp17 mapping audit of completed whole-proteome features",
+  "analysis_status": "post_hoc_after_feature_outputs; not a preregistered endpoint",
+  "script_sha256": "5d12282d88331b3408de75ff62b1d803c75cbfc7ac5724dfa9a76e8f1867929f",
+  "inputs": [
+    {
+      "path": "data/processed/genophi-phage-inputs.json",
+      "sha256": "d0f66b3bba527aa8cc32b327ed7f15107fbcd0943faefa6b1fda2496f528185c"
+    },
+    {
+      "path": "data/processed/genophi-phage-feature-pilot-verified.json",
+      "sha256": "b8a4ea98682d64fe1bc6cb84bf5976fc578170d41745be7a6859cacf9e0bd7e8"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/protein-map.json",
+      "sha256": "da35148dab94af2796bcdbc541fe14f55e6b97893a81d203ed82da57a9144550"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/best-query.json",
+      "sha256": "40dab443f71552abde36495cdc028090598142d8dc4da7ad0e6ed105a1774a15"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/feature-map.json",
+      "sha256": "6a9b7b056c6448cc09d355cd0823b8643458808788f98e1cebef8ed9ce5236fe"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/vocabulary-freeze.json",
+      "sha256": "6579ede1b7e6eee180bccfc59f0f38d9a654b5cfc7771ab341418438d2775353"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/query.tsv",
+      "sha256": "5118aa5c0d89e9b735a5ddd8a04ecee2f77a5b80f7508d0ae041e93456370f3a"
+    }
+  ],
+  "new_searches_executed": false,
+  "parameters_or_vocabulary_changed": false,
+  "phenotype_labels_loaded": false,
+  "results": [
+    {
+      "target": "T7",
+      "reference_protein_accession": "NP_042005.1",
+      "reference_sequence_sha256": "206bdf5f0dcb633cb3c9ca8f571fe695d9cad18ced6f3a626659c1d67b9071a5",
+      "exact_reference_copies_in_target_proteome": 1,
+      "copies": [
+        {
+          "query_id": "g093p000044",
+          "length": 553,
+          "raw_hit_records": 0,
+          "best_hit": null,
+          "assigned_family": null,
+          "retained_feature": null
+        }
+      ],
+      "any_hit_returned_under_frozen_settings": false,
+      "any_retained_feature": false,
+      "status": "no_hit_returned"
+    },
+    {
+      "target": "T3",
+      "reference_protein_accession": "NP_523342.1",
+      "reference_sequence_sha256": "e32de36356ac05d3900f50b90a7157671333b02c38ed729c7e07c63e1fa04e90",
+      "exact_reference_copies_in_target_proteome": 1,
+      "copies": [
+        {
+          "query_id": "g094p000038",
+          "length": 558,
+          "raw_hit_records": 0,
+          "best_hit": null,
+          "assigned_family": null,
+          "retained_feature": null
+        }
+      ],
+      "any_hit_returned_under_frozen_settings": false,
+      "any_retained_feature": false,
+      "status": "no_hit_returned"
+    }
+  ],
+  "interpretation": "Whole-genome feature differences do not establish recognition-head representation. No returned gp17 hit under these frozen settings is a feature-mapping observation, not a conclusion about binding or infection."
+}

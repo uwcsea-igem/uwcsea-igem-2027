@@ -343,12 +343,25 @@ def postprocess(policy, workdir, train, target, train_genome, target_genome, gen
                                 "interpretation": "Mapping control only; not specificity validation"}}
 
 
-def execute(policy_path, workdir, replay=False):
+def contexts(external_resources=None):
+    current = {"platform": platform.platform(), "architecture": platform.machine(),
+               "python_version": sys.version.split()[0]}
+    external = dict(external_resources) if external_resources is not None else dict(current)
+    external["context_scope"] = "Launcher process platform/architecture for the original MMseqs commands"
+    return {"external_execution_context": external, "postprocessing_context": current}
+
+
+def execute(policy_path, workdir, replay=False, execution_report_sha256=None):
     helper_sha = digest(Path(__file__).read_bytes())
     policy_bytes = policy_path.read_bytes()
     policy = json.loads(policy_bytes)
     aa, verified = prepare(policy)  # Authenticate every actual annotation FASTA before commands.
+    initial_bytes, initial_report = None, None
     if replay:
+        if not execution_report_sha256:
+            raise ValueError("Replay requires --execution-report-sha256 to authenticate original execution context")
+        initial_bytes = checked(workdir / "initial-report.json", execution_report_sha256)
+        initial_report = json.loads(initial_bytes)
         prior = json.loads((workdir / "run-inputs.json").read_text())
         if prior["policy_sha256"] != digest(policy_bytes):
             raise ValueError("Replay policy differs")
@@ -427,16 +440,16 @@ def execute(policy_path, workdir, replay=False):
               "vocabulary_frozen_after_command": 5,
               "unoverridden_defaults": policy["unoverridden_defaults"],
               "effective_parameter_logs": [c["log"] for c in ledger],
-              "resources": {"platform": platform.platform(), "architecture": platform.machine(),
-                            "rss_scope": "Cumulative maximum RSS of serial direct child processes, not aggregate workflow memory"},
+              "resources": dict(initial_report["resources"]) if replay else {
+                  "platform": platform.platform(), "architecture": platform.machine(),
+                  "rss_scope": "Cumulative maximum RSS of serial direct child processes, not aggregate workflow memory"},
               "verified_annotation_files": verified,
               "interpretation": policy["interpretation"], "full_training_ready": False}
+    report.update(contexts(report["resources"]))
     report.update(postprocess(policy, workdir, train, target, train_genome, target_genome, genomes))
     if digest(Path(__file__).read_bytes()) != helper_sha:
         raise ValueError("Helper changed during execution; preserve raw output and replay with a stable helper")
-    if replay and (workdir / "initial-report.json").exists():
-        initial_bytes = (workdir / "initial-report.json").read_bytes()
-        initial_report = json.loads(initial_bytes)
+    if replay:
         checked(workdir / "executed-helper.py", initial_report["script_sha256"])
         if initial_report["policy_sha256"] != digest(policy_bytes):
             raise ValueError("Retained execution report refers to a different policy")
@@ -446,6 +459,7 @@ def execute(policy_path, workdir, replay=False):
             "original_execution_helper_sha256": initial_report["script_sha256"],
             "original_report": str(workdir / "initial-report.json"),
             "original_report_sha256": digest(initial_bytes),
+            "execution_context_source": "Authenticated original execution report; replay platform is recorded separately",
             "refinement": "Reject internal/double-terminal stops; strengthen source/command/raw replay authentication; no parameter or numeric retuning"}
     artifact_names = ["run-inputs.json", "command-ledger.json", "protein-map.json", "proteome-map.json", "vocabulary-freeze.json",
                       "training.faa", "queries.faa", "clusters.tsv", "self.tsv", "query.tsv",
@@ -462,6 +476,7 @@ def main():
     parser.add_argument("--output", type=Path, default=Path("data/processed/genophi-phage-feature-pilot.json"))
     parser.add_argument("--matrix-output", type=Path, default=Path("data/processed/genophi-phage-feature-matrix.tsv"))
     parser.add_argument("--replay", action="store_true")
+    parser.add_argument("--execution-report-sha256", help="Required for replay: expected SHA256 of retained initial-report.json")
     args = parser.parse_args()
     if args.output.exists() or args.matrix_output.exists():
         parser.error("Preserve existing processed outputs; choose new paths")
@@ -476,7 +491,7 @@ def main():
         if any(out.resolve() == p or p in out.resolve().parents for p in forbidden):
             parser.error("Output overlaps protected input/raw path")
     try:
-        report = execute(args.policy, args.workdir, args.replay)
+        report = execute(args.policy, args.workdir, args.replay, args.execution_report_sha256)
     except (ValueError, OSError, RuntimeError) as exc:
         print(f"Pilot incomplete: {exc}", file=sys.stderr)
         return 1
