@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "purpose": "Reusable train-only feature-kernel verification on authenticated existing phage alignments",
+  "wrapper_sha256": "cc7cd05c795fc1e3395d27b2e17b2d9e0ccf166e89155b98de861d7579a780bb",
+  "kernel_sha256": "a6ae6d3253507846c5a44075b9c159c2ec752cec5d52d78cace668c7b9076cbc",
+  "source_report": {
+    "path": "data/processed/genophi-phage-feature-pilot-verified.json",
+    "sha256": "b8a4ea98682d64fe1bc6cb84bf5976fc578170d41745be7a6859cacf9e0bd7e8"
+  },
+  "authenticated_inputs": [
+    {
+      "path": "data/processed/genophi-phage-feature-pilot-verified.json",
+      "sha256": "b8a4ea98682d64fe1bc6cb84bf5976fc578170d41745be7a6859cacf9e0bd7e8"
+    },
+    {
+      "path": "scripts/check-genophi-phage-features.py",
+      "sha256": "c2c091b811ef6d9aaf590abe27cb71d19521354bfb0cac7baf9226f817b99875"
+    },
+    {
+      "path": "software/tipcraft/benchmarks/retro-t7-t3/genophi-phage-feature-pilot.json",
+      "sha256": "bf97695296231cfe440d905dda515dec8430d5353983c7c7945413dadfbf55a2"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/run-inputs.json",
+      "sha256": "2bf3394be04f36b06b527f8441daed1695f8370f4fd84a1b00ba66211fc503a3"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/command-ledger.json",
+      "sha256": "990555900e7416e088af74304d61196ac16f40c981228508729583713cd3b7dd"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/protein-map.json",
+      "sha256": "da35148dab94af2796bcdbc541fe14f55e6b97893a81d203ed82da57a9144550"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/proteome-map.json",
+      "sha256": "ec589ae63ef29050994176520ff370add1141c7fb5ce15d9a898aa8194581692"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/vocabulary-freeze.json",
+      "sha256": "6579ede1b7e6eee180bccfc59f0f38d9a654b5cfc7771ab341418438d2775353"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/training.faa",
+      "sha256": "b9231092b106227efb96902e7177617e19ab13bda22193dfa811add1e8aea8a2"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/queries.faa",
+      "sha256": "192ee35dcee7a2e08474028335385ef09e7e15b1815113cae38de6074a5e2c7e"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/clusters.tsv",
+      "sha256": "b2014230e00e4f515eca2b79e712b5344cd1c4e14ba45ce2785709cfdee8c583"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/self.tsv",
+      "sha256": "0038bcd2ad74e5b30956219e211e2e96dd08c6722039b93ae1f1cb1f7a14c6e1"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/query.tsv",
+      "sha256": "5118aa5c0d89e9b735a5ddd8a04ecee2f77a5b80f7508d0ae041e93456370f3a"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/feature-map.json",
+      "sha256": "6a9b7b056c6448cc09d355cd0823b8643458808788f98e1cebef8ed9ce5236fe"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/member-family-map.json",
+      "sha256": "52a072b298d4d4207382aea8ca8bc8dddc6e80242226139a496fcac2353f8195"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/best-self.json",
+      "sha256": "5c9648c7947e9c7d25bd93807a98d183532d15f214318e36e48a81c43838a947"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/best-query.json",
+      "sha256": "40dab443f71552abde36495cdc028090598142d8dc4da7ad0e6ed105a1774a15"
+    },
+    {
+      "path": "data/raw/genophi-phage-features/pilot-v1/feature-matrix.tsv",
+      "sha256": "70a5c64be0e3fb7e777778cc4c86bbb7b85b4a8859759578254f36ec496225e4"
+    }
+  ],
+  "training_genomes": 93,
+  "training_proteins": 9677,
+  "query_genomes": 3,
+  "query_proteins": 140,
+  "families": 2123,
+  "retained_families": 1527,
+  "features": 297,
+  "training_assignments_match": true,
+  "query_assignments_match": true,
+  "pre_query_vocabulary_freeze_sha256": "4a42db5444af5e3ed701d89d3a115ffd7f7e1154544a9b713c39a41f01801e58",
+  "vocabulary_sha256": "cc3a6b0196bfaf8f6534125f7688e07c57dd1ab68396f18df23ac18a38f535be",
+  "vocabulary_unchanged_after_query_projection": true,
+  "matrix_sha256": "70a5c64be0e3fb7e777778cc4c86bbb7b85b4a8859759578254f36ec496225e4",
+  "original_matrix_byte_identical": true,
+  "mapping_control_nonzero_equal": true,
+  "self_alignment_diagnostics": {
+    "raw_rows": 83418,
+    "queries_with_hits": 9677,
+    "queries_without_hits": 0,
+    "cross_family_best_hit_ties": [],
+    "raw_schema": [
+      "Query",
+      "Target",
+      "Score",
+      "SeqIdentity",
+      "E-value",
+      "qStartPos",
+      "qEndPos",
+      "qLen",
+      "tStartPos",
+      "tEndPos",
+      "tLen"
+    ]
+  },
+  "query_alignment_diagnostics": {
+    "raw_rows": 1441,
+    "queries_with_hits": 113,
+    "queries_without_hits": 27,
+    "cross_family_best_hit_ties": [],
+    "raw_schema": [
+      "Query",
+      "Target",
+      "Score",
+      "SeqIdentity",
+      "E-value",
+      "qStartPos",
+      "qEndPos",
+      "qLen",
+      "tStartPos",
+      "tEndPos",
+      "tLen"
+    ]
+  },
+  "raw_workdir": "data/raw/genophi-feature-kernel-check/run-1",
+  "resources": {
+    "wall_seconds": 0.6733121660072356,
+    "peak_replay_process_rss_bytes": 60751872
+  },
+  "mmseqs_executed": false,
+  "phenotype_tables_loaded": false,
+  "interaction_model_fitted": false,
+  "outer_fold_feature_preparation_executed": false,
+  "host_feature_preparation_executed": false,
+  "new_method_case_coverage": 0,
+  "production_run_spec_complete": false,
+  "interpretation": "Component replay; no new biological prediction or grouped validation. Complete sources, per-fold external-tool execution and full training settings remain required."
+}

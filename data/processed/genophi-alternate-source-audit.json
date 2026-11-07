@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-11-07",
+  "purpose": "Bounded official-source recovery audit after Figshare HTTP403; no model fitting or phenotype inspection",
+  "status": "HOLD_host_inputs_unresolved",
+  "figshare": {
+    "doi": "10.6084/m9.figshare.25941691.v1",
+    "test_file_id": 46741453,
+    "file_endpoint_http_status": 403,
+    "version_download_endpoint_http_status": 403,
+    "response_server": "awselb/2.0",
+    "response_kind": "Direct HTML Forbidden response; no redirect or expired-signature message observed",
+    "response_body_sha256": "58bf2215b395dcac74c009aa98701854e43cbe54a1cd3a95fee6a647ca9910d4",
+    "second_computer_access": "Requester initially reported success, subsequently reported HTTP403; requester report, not an independently observed browser run"
+  },
+  "zenodo": {
+    "doi": "10.5281/zenodo.13831957",
+    "url": "https://zenodo.org/records/13831957",
+    "archive_filename": "coli_phage_interactions_2023.tar.gz",
+    "archive_bytes": 146786594,
+    "published_md5": "380d288b8cd7629660603447b9856fc9",
+    "observed_md5_matches": true,
+    "observed_sha256": "653707c41e41a32e9e2d01a59cfbb525c1b1573aa628aad40f9430f2ddb5db1c",
+    "metadata_sha256": "83682d2829307f12c79d9f4f06571488d63b528987c27057213d509c86dcb200",
+    "members": 862,
+    "direct_sequence_members": 97,
+    "direct_host_sequence_members": 0,
+    "archive_member_list_sha256": "918c84a4a4cec937e28c7db7b7ed6780473b16d18df1a9154b3423abd508ac23"
+  },
+  "archived_history": {
+    "git_objects_examined": 771,
+    "commit_ids_examined": [
+      "463eee8817a4f9fa26943ccfca07138128131658",
+      "4e0c8c395d88818e991b4ef9690acab384766844",
+      "534012596e93be750fccf25e5d74d625c0dd82c2",
+      "7968189e0ba1e33a2fcbe6a3aeb9cdc47029dbbc",
+      "79a691462d406d4386dd316e7ab00a6dabebd2ca",
+      "a84b393793ca09ac4e5f34d95e06f8e5b1f65573",
+      "bbc44ef8cdc05e2345894960f4bea1d1e2a9576f",
+      "c2458506508a525920a45cf97b5cc2dbf55f5b92",
+      "e141fd3208fe5a38e2b71528441f7a683fbbb342"
+    ],
+    "commits_examined": 9,
+    "sequence_paths_across_these_commits": 97,
+    "host_sequence_paths_across_these_commits": [],
+    "compressed_archive_paths_across_these_commits": [],
+    "raw_blobs_matching_any_expected_host_file_size": [],
+    "object_inventory_sha256": "a05f6782da24b9317063739fc77fc61915ea901e3bd9448999539027cfc79f73",
+    "history_check_sha256": "4678e2df217a011e3f9c992d45c3847b4d5a64e12153a31c0d85b8709043e776",
+    "copied_object_file_hashes": [
+      {
+        "path": "objects/pack/pack-0b7de32981918c2b0228b5973fa879be15de1529.idx",
+        "bytes": 22660,
+        "sha256": "d6e57f67048c8c617a88112c85707cbaac97d44933be3b45332af37d353fab31"
+      },
+      {
+        "path": "objects/pack/pack-0b7de32981918c2b0228b5973fa879be15de1529.pack",
+        "bytes": 73322792,
+        "sha256": "8972a1d327b5c13af10122bf93cd1e3650e98239dea034b3749abc86fe57b32f"
+      }
+    ],
+    "method": "Copy only regular loose Git objects and pack/index files into a fresh bare object store; enumerate cat-file --batch-all-objects --batch-check, then ls-tree -r --name-only for every stored commit. Original config, hooks, refs and alternates were not copied. No archived script was executed."
+  },
+  "authenticated_host_files_recovered": 0,
+  "current_host_files_verified": 8,
+  "host_files_required": 403,
+  "missing_host_files": 395,
+  "phenotype_tables_loaded": false,
+  "interaction_model_fitted": false,
+  "new_method_case_coverage": 0,
+  "interpretation": "This official publication archive and its nine stored commits do not supply an authenticated replacement for the missing host files. The bounded audit does not establish absence from other sources or failure of the prediction method."
+}

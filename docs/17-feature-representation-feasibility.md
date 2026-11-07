@@ -56,6 +56,20 @@ uv run --project software/tipcraft python scripts/check-genophi-gp17-feature-map
 
 Use new output paths. A fresh search instead requires a new `--workdir` and omits `--replay` and its execution-report hash; the unchanged policy and executable are checked before starting. Do not treat a different platform's timings as the original measurement. Source sequences, protein strings, databases and alignments remain in ignored raw storage.
 
+## Reusable training-only feature kernel
+
+The [reusable protein-feature kernel](../software/tipcraft/src/tipcraft/protein_features.py) now reproduces the authenticated pilot's complete feature matrix **byte-for-byte**, including all 297 columns and 96 genome rows. The [executed component check](../data/processed/genophi-feature-kernel-check.json) verifies every cluster membership, training/query best-hit assignment, retained family and occurrence consolidation against the frozen artifacts. Its matrix SHA-256 remains `70a5c64be0e3fb7e777778cc4c86bbb7b85b4a8859759578254f36ec496225e4`.
+
+The kernel streams alignment rows, enforces training-member targets, preserves float32 identity/E-value ordering and reports cross-family ties. It learns singleton filtering and co-occurrence merging from the supplied training genomes, then projects queries without changing the vocabulary. No-hit genomes retain explicit zero rows. Eight focused tests include cases where held-out occurrences would otherwise rescue a singleton family or change a training-only merge. These controls exercise the preprocessing boundary needed by grouped evaluation.
+
+The replay saves and hashes its vocabulary before parsing query alignments. It takes 0.67 seconds with 60,751,872 bytes peak process RSS on this machine. This measurement covers kernel replay; the original MMseqs commands were not rerun. Source artifacts and the historical helper remain unchanged.
+
+```bash
+uv run --project software/tipcraft python scripts/check-protein-feature-kernel.py --workdir data/raw/genophi-feature-kernel-check/reproduction-1 --output /tmp/genophi-feature-kernel-check.json
+```
+
+Use fresh output locations. The kernel is reusable for host and phage partitions, but callers must still execute clustering/search on each fold's own training genomes and authenticate the resulting input bundle. A filtered global cluster table cannot establish that boundary. Full host features, outer-fold feature execution and biological fitting remain unrun; this component verification adds no observation coverage or head-scoring evidence.
+
 ## Next decision evidence
 
 Complete the full host transfer and ANI exclusions, then freeze retained labels/groups, feature preparation, model parameters, seeds and validation splits before fitting. Any external validation fold must rebuild its reference vocabulary and occurrence consolidation from that fold's training genomes only; this 93-phage vocabulary is not a reusable CV shortcut. New-method observation coverage remains **0/10** until actual host scores exist. WIsH's six scores and four exact-construct abstentions remain unchanged, and assembly remains a separate gate.
