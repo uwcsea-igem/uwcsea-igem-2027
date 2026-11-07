@@ -1,6 +1,6 @@
 # Classroom project update
 
-Prepared for the iGEM class stream on 2026-11-07.
+Posted to the iGEM class stream on 2026-11-07; the website confirmed “Post created”.
 
 I have put the one-page project plan, literature audit and TipCraft code in the season repository:
 https://github.com/TypeThe0ry/uwcsea-igem-2027

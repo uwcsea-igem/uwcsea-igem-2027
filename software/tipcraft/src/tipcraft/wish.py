@@ -101,7 +101,7 @@ def run_scores(manifest_path: Path, genome_dir: Path, executable: Path,
         (output_dir / "llikelihood.matrix").write_bytes(matrix_file.read_bytes())
         (output_dir / "prediction.list").write_bytes((work / "results/prediction.list").read_bytes())
         # Replace temporary directory names to make logs inspectable and stable.
-        (output_dir / "run.log").write_text("\n".join(logs).replace(str(work), "<workdir>"))
+        (output_dir / "run.log").write_text("\n".join(line.rstrip() for line in "\n".join(logs).replace(str(work), "<workdir>").splitlines()) + "\n")
     result = {
         "method": "WIsH upstream 1.1", "order": manifest["order"], "alpha": manifest["alpha"],
         "upstream_commit": manifest["upstream_commit"],

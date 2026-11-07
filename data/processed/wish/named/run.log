@@ -32,7 +32,7 @@ Processing MG1655 (approx. 3/3)
 WARNING: BL21,BW25113,MG1655, do(es) not have null-model parameters, and their p-value calculation will be missing in the prediction.list file.
 
 Here is the procedure to fit those parameters:
-        
+
 
 The parameters for their null-distribution can be computed this way:
 - build models with WIsH for each of the listed genomes that miss the null-parameters,

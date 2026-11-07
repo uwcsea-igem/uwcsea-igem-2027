@@ -15,4 +15,4 @@ December evidence report: https://github.com/TypeThe0ry/uwcsea-igem-2027/blob/ma
 
 ## Submission status
 
-Prepared for submission to the iGEM Classroom role question. This file records proposed responsibility; it does not assert team approval. Submission status will be updated after the website confirms completion.
+Submitted on 2026-11-07 to the iGEM Classroom role question. The page visibly confirmed “Answer submitted” and “Turned in”. [Question](https://classroom.google.com/c/ODk3NTQyODI5MDM1/sa/ODk3NTQzNzgyNDQ1/details). This is a self-nomination, not team approval. The repository and December report links were also posted to the class stream; the website confirmed “Post created”.

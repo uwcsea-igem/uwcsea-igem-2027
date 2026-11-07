@@ -20,3 +20,5 @@ For each new entry record date, decision-maker, status, reason, evidence link an
 | 2026-11-07 | Measured / AI-assisted run | Pinned WIsH scores fail native T3 ranking; anonymous rerun invariant | [December report](07-december-gate-report.md); no label-fitted parameters |
 | 2026-11-07 | Self-nomination prepared / repository owner | Role 9 with role 2 contributions; collaborate with Kyungmin's role 1 | Actual Classroom question and existing role comments read |
 | 2026-11-07 | Explicit authorization / repository owner | Commit and push these changes | User message: git push; supersedes local default prohibition for this task |
+
+| 2026-11-07 | Submitted / repository owner account via authorized automation | Role answer (9, with proposed 2 contribution) and project/report links submitted in Classroom | Website confirmed Answer submitted / Turned in and Post created; team role approval remains separate |
