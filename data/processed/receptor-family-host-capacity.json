@@ -1,0 +1,432 @@
+{
+  "all_three_targets_distinguishable": false,
+  "commands": [
+    {
+      "argv": [
+        "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "createdb",
+        "stdin",
+        "data/raw/receptor-resource/family-host-capacity-v1/train_db",
+        "-v",
+        "3"
+      ],
+      "log": "data/raw/receptor-resource/family-host-capacity-v1/step-01.log",
+      "log_sha256": "3c27e151a454b7aea0d76bdb03c6a29f9adace83930f58be39d79b0cd6a721fa",
+      "returncode": 0,
+      "seconds": 0.06197045790031552
+    },
+    {
+      "argv": [
+        "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "cluster",
+        "data/raw/receptor-resource/family-host-capacity-v1/train_db",
+        "data/raw/receptor-resource/family-host-capacity-v1/clusters",
+        "data/raw/receptor-resource/family-host-capacity-v1/tmp_cluster",
+        "-c",
+        "0.8",
+        "--min-seq-id",
+        "0.4",
+        "-s",
+        "7.5",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "log": "data/raw/receptor-resource/family-host-capacity-v1/step-02.log",
+      "log_sha256": "c8ba897276483d607150eb991103d2058ecc38a025c5a77d7ea67a9975e6e91a",
+      "returncode": 0,
+      "seconds": 10.29075412498787
+    },
+    {
+      "argv": [
+        "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "createtsv",
+        "data/raw/receptor-resource/family-host-capacity-v1/train_db",
+        "data/raw/receptor-resource/family-host-capacity-v1/train_db",
+        "data/raw/receptor-resource/family-host-capacity-v1/clusters",
+        "data/raw/receptor-resource/family-host-capacity-v1/clusters.tsv",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "log": "data/raw/receptor-resource/family-host-capacity-v1/step-03.log",
+      "log_sha256": "035b2da99e23e419830b6746be91f4722e4cf08cbeb764e99d0a993fe04c44e4",
+      "returncode": 0,
+      "seconds": 0.011174042010679841
+    },
+    {
+      "argv": [
+        "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "search",
+        "data/raw/receptor-resource/family-host-capacity-v1/train_db",
+        "data/raw/receptor-resource/family-host-capacity-v1/train_db",
+        "data/raw/receptor-resource/family-host-capacity-v1/self_hits",
+        "data/raw/receptor-resource/family-host-capacity-v1/tmp_self",
+        "-c",
+        "0.8",
+        "--min-seq-id",
+        "0.4",
+        "-s",
+        "7.5",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "log": "data/raw/receptor-resource/family-host-capacity-v1/step-04.log",
+      "log_sha256": "4313df7940e3c83459cbc6904a16a9a58910e606ee09c303144f7819e997c3d8",
+      "returncode": 0,
+      "seconds": 21.169511708896607
+    },
+    {
+      "argv": [
+        "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "createtsv",
+        "data/raw/receptor-resource/family-host-capacity-v1/train_db",
+        "data/raw/receptor-resource/family-host-capacity-v1/train_db",
+        "data/raw/receptor-resource/family-host-capacity-v1/self_hits",
+        "data/raw/receptor-resource/family-host-capacity-v1/self.tsv",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "log": "data/raw/receptor-resource/family-host-capacity-v1/step-05.log",
+      "log_sha256": "97b042e735b288a1b5d5a747d762bd6e894f2cc0632f1795dfbbe308ac2cd8b0",
+      "returncode": 0,
+      "seconds": 0.021117041120305657
+    },
+    {
+      "argv": [
+        "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "createdb",
+        "stdin",
+        "data/raw/receptor-resource/family-host-capacity-v1/query_db",
+        "-v",
+        "3"
+      ],
+      "log": "data/raw/receptor-resource/family-host-capacity-v1/step-06.log",
+      "log_sha256": "ee8e46a2b94e39647dd08d24aa8831760c0f467c0978a90be9ba2f36332fa901",
+      "returncode": 0,
+      "seconds": 0.10709012509323657
+    },
+    {
+      "argv": [
+        "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "search",
+        "data/raw/receptor-resource/family-host-capacity-v1/query_db",
+        "data/raw/receptor-resource/family-host-capacity-v1/train_db",
+        "data/raw/receptor-resource/family-host-capacity-v1/query_hits",
+        "data/raw/receptor-resource/family-host-capacity-v1/tmp_query",
+        "-c",
+        "0.8",
+        "--min-seq-id",
+        "0.4",
+        "-s",
+        "7.5",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "log": "data/raw/receptor-resource/family-host-capacity-v1/step-07.log",
+      "log_sha256": "5c12d1131435249b27397b3b0cf4fdc5ab7cf8a5c2245c504466a6b371cc6a02",
+      "returncode": 0,
+      "seconds": 34.97321824985556
+    },
+    {
+      "argv": [
+        "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "createtsv",
+        "data/raw/receptor-resource/family-host-capacity-v1/query_db",
+        "data/raw/receptor-resource/family-host-capacity-v1/train_db",
+        "data/raw/receptor-resource/family-host-capacity-v1/query_hits",
+        "data/raw/receptor-resource/family-host-capacity-v1/query.tsv",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "log": "data/raw/receptor-resource/family-host-capacity-v1/step-08.log",
+      "log_sha256": "e5614718c463fea30b995d0cf431d88993425ef3f035cf6a43ad94cee087eb0c",
+      "returncode": 0,
+      "seconds": 0.02210774994455278
+    }
+  ],
+  "elapsed_seconds": 77.21396066714078,
+  "family_count": 4249,
+  "inputs": [
+    {
+      "path": "data/processed/receptor-host-feature-uniform-control.json",
+      "sha256": "9a96574b463d855469140a6e7dc01f115cc4e73dc867ecb072a93f4484cbf72a"
+    },
+    {
+      "path": "scripts/check-genophi-phage-features.py",
+      "sha256": "c2c091b811ef6d9aaf590abe27cb71d19521354bfb0cac7baf9226f817b99875"
+    },
+    {
+      "path": "software/tipcraft/src/tipcraft/protein_features.py",
+      "sha256": "a6ae6d3253507846c5a44075b9c159c2ec752cec5d52d78cace668c7b9076cbc"
+    },
+    {
+      "path": "data/processed/genophi-family-assignment-probe.json",
+      "sha256": "ebce6c77245580043266605937d0753a3d4297c2fb92c4a0c9cb1f5113f3ca3c"
+    },
+    {
+      "expected_proteins": 4273,
+      "path": "data/raw/receptor-resource/host-feature-uniform-control-v1/author-0/proteins.faa",
+      "role": "vocabulary_fit_only",
+      "sample_id": "author:BL21",
+      "sha256": "df535f0743aa349cd10c9b33d215f37f560f214ff3f405ad96f65ccb71aae3fc"
+    },
+    {
+      "expected_proteins": 4314,
+      "path": "data/raw/receptor-resource/host-feature-uniform-control-v1/author-1/proteins.faa",
+      "role": "vocabulary_fit_only",
+      "sample_id": "author:Keio",
+      "sha256": "927df5b65ede14144c7f407b68f0efb0139b6c512f6908c794d2a473391ff51c"
+    },
+    {
+      "expected_proteins": 4234,
+      "original_genome_sequence_sha256": "669a5120ac4305418137e69b37e85d8c5c099908b4f49f212d78effa6455fff9",
+      "path": "data/raw/genophi-annotation/run-1/h_t000/proteins.faa",
+      "role": "projection_only",
+      "sample_id": "original:BL21",
+      "sha256": "ca283d9fcab37135334a334b405221d4083ad547c10e31a9e4e802a52e135699"
+    },
+    {
+      "expected_proteins": 4314,
+      "original_genome_sequence_sha256": "3761072f8884add5e9facdafc583de5d81a4cf5dbc7e51023ba966f3cf4887ce",
+      "path": "data/raw/genophi-annotation/run-1/h_t001/proteins.faa",
+      "role": "projection_only",
+      "sample_id": "original:BW25113",
+      "sha256": "62c2d853f6ea4c21a59433ec13ed9079937227834756c2a83ac8c60faa2c9c5d"
+    },
+    {
+      "expected_proteins": 4319,
+      "original_genome_sequence_sha256": "e999dceccb76562d40e49a10d9e6d4cf1c05d184f4f80b92bb32d4a2420c11d0",
+      "path": "data/raw/genophi-annotation/run-1/h_t002/proteins.faa",
+      "role": "projection_only",
+      "sample_id": "original:MG1655",
+      "sha256": "c253fff8298229a782b6bb81f1666d9d09cd2b80389ffc027aabdd2790a4fcc0"
+    },
+    {
+      "path": "software/tipcraft/benchmarks/receptor-resource/family-host-capacity-policy.json",
+      "sha256": "1d1d457f1589ac015359ebb01674dd0fb55bae1074aaf6bcf985040b628f4163"
+    },
+    {
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/scripts/check-receptor-family-host-capacity.py",
+      "sha256": "3a7410aae8448f2d702d6a1970f0bbb7a0ade83335465bf13db2771cddda481a"
+    },
+    {
+      "path": "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+      "sha256": "837eaf6cc9be92ff320c42c4cf56ae0d75f2a53c6ff6b24a577e803e9e3951be"
+    }
+  ],
+  "merged_feature_count": 3,
+  "model_fitted": false,
+  "original_benchmark_rows_admitted": 0,
+  "phenotypes_loaded": false,
+  "policy_sha256": "1d1d457f1589ac015359ebb01674dd0fb55bae1074aaf6bcf985040b628f4163",
+  "query_search_diagnostics": {
+    "cross_family_best_hit_ties": [],
+    "queries_with_hits": 12834,
+    "queries_without_hits": 33,
+    "raw_rows": 33404,
+    "raw_schema": [
+      "Query",
+      "Target",
+      "Score",
+      "SeqIdentity",
+      "E-value",
+      "qStartPos",
+      "qEndPos",
+      "qLen",
+      "tStartPos",
+      "tEndPos",
+      "tLen"
+    ]
+  },
+  "retained_family_kmer_members": 1167642,
+  "schema_version": 1,
+  "script_sha256": "3a7410aae8448f2d702d6a1970f0bbb7a0ade83335465bf13db2771cddda481a",
+  "self_projection_pass": true,
+  "self_search_diagnostics": {
+    "cross_family_best_hit_ties": [],
+    "queries_with_hits": 8587,
+    "queries_without_hits": 0,
+    "raw_rows": 22736,
+    "raw_schema": [
+      "Query",
+      "Target",
+      "Score",
+      "SeqIdentity",
+      "E-value",
+      "qStartPos",
+      "qEndPos",
+      "qLen",
+      "tStartPos",
+      "tEndPos",
+      "tLen"
+    ]
+  },
+  "status": "capacity_pilot_completed",
+  "target_collision_groups": [
+    [
+      "original:BW25113",
+      "original:MG1655"
+    ]
+  ],
+  "target_projection": {
+    "features": [
+      "f0",
+      "f1",
+      "f2"
+    ],
+    "matrix": {
+      "original:BL21": [
+        1,
+        1,
+        0
+      ],
+      "original:BW25113": [
+        1,
+        0,
+        1
+      ],
+      "original:MG1655": [
+        1,
+        0,
+        1
+      ]
+    },
+    "member_match_counts": {
+      "original:BL21": {
+        "f0": {
+          "fraction": 0.9998669407972393,
+          "matched_members": 1164740,
+          "reached_members": 1164895
+        },
+        "f1": {
+          "fraction": 1.0,
+          "matched_members": 608,
+          "reached_members": 608
+        },
+        "f2": {
+          "fraction": 0.0,
+          "matched_members": 0,
+          "reached_members": 170
+        }
+      },
+      "original:BW25113": {
+        "f0": {
+          "fraction": 0.9999517307957523,
+          "matched_members": 1160104,
+          "reached_members": 1160160
+        },
+        "f1": {
+          "fraction": 0.08421052631578947,
+          "matched_members": 8,
+          "reached_members": 95
+        },
+        "f2": {
+          "fraction": 1.0,
+          "matched_members": 2021,
+          "reached_members": 2021
+        }
+      },
+      "original:MG1655": {
+        "f0": {
+          "fraction": 0.9994059193441075,
+          "matched_members": 1164133,
+          "reached_members": 1164825
+        },
+        "f1": {
+          "fraction": 0.08421052631578947,
+          "matched_members": 8,
+          "reached_members": 95
+        },
+        "f2": {
+          "fraction": 1.0,
+          "matched_members": 2021,
+          "reached_members": 2021
+        }
+      }
+    },
+    "zero_vector_genomes": []
+  },
+  "training_expected_vectors": {
+    "author:BL21": [
+      1,
+      1,
+      0
+    ],
+    "author:Keio": [
+      1,
+      0,
+      1
+    ]
+  },
+  "training_projection": {
+    "features": [
+      "f0",
+      "f1",
+      "f2"
+    ],
+    "matrix": {
+      "author:BL21": [
+        1,
+        1,
+        0
+      ],
+      "author:Keio": [
+        1,
+        0,
+        1
+      ]
+    },
+    "member_match_counts": {
+      "author:BL21": {
+        "f0": {
+          "fraction": 1.0,
+          "matched_members": 1165013,
+          "reached_members": 1165013
+        },
+        "f1": {
+          "fraction": 1.0,
+          "matched_members": 608,
+          "reached_members": 608
+        },
+        "f2": {
+          "fraction": 0.0,
+          "matched_members": 0,
+          "reached_members": 170
+        }
+      },
+      "author:Keio": {
+        "f0": {
+          "fraction": 1.0,
+          "matched_members": 1165013,
+          "reached_members": 1165013
+        },
+        "f1": {
+          "fraction": 0.0,
+          "matched_members": 0,
+          "reached_members": 95
+        },
+        "f2": {
+          "fraction": 1.0,
+          "matched_members": 2021,
+          "reached_members": 2021
+        }
+      }
+    },
+    "zero_vector_genomes": []
+  },
+  "vocabulary_freeze": {
+    "path": "data/raw/receptor-resource/family-host-capacity-v1/vocabulary-freeze.json",
+    "sha256": "9b4324bf6d5a009f1cc4eb02fdc882fd5ca2e593c363e4c9d664451102828780"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "all_source_and_target_rows_and_match_fractions_equal": true,
+  "artifacts": [
+    {
+      "path": "data/raw/receptor-resource/family-host-capacity-v1/training.faa",
+      "sha256": "b5639805253da749bc926b1d48af3a344362e6cabad2c158160ef38dc74cb9f3"
+    },
+    {
+      "path": "data/raw/receptor-resource/family-host-capacity-v1/queries.faa",
+      "sha256": "c3abba61eae31dd54701680ffa7d24fa830aa1cfbd324e853cb29677371f8656"
+    },
+    {
+      "path": "data/raw/receptor-resource/family-host-capacity-v1/clusters.tsv",
+      "sha256": "279b51bca902c42d470e30406dbb808479508e86f015ff30fd09d7d66fdc639f"
+    },
+    {
+      "path": "data/raw/receptor-resource/family-host-capacity-v1/self.tsv",
+      "sha256": "6d6c30b3191a4a473c71464a255799ff8ccd380ebdd05f379411bc5691df6543"
+    },
+    {
+      "path": "data/raw/receptor-resource/family-host-capacity-v1/query.tsv",
+      "sha256": "ebd06a2684155f18a5b674d61efa1b70b15bd45fc29bf286d543690d4a2fe1b6"
+    },
+    {
+      "path": "data/raw/receptor-resource/family-host-capacity-v1/vocabulary.json",
+      "sha256": "f002b62ec52fe9d737d203dae95e4b55ddec4841a8292e77b041f2b58af5ddc1"
+    },
+    {
+      "path": "data/raw/receptor-resource/family-host-capacity-v1/vocabulary-freeze.json",
+      "sha256": "9b4324bf6d5a009f1cc4eb02fdc882fd5ca2e593c363e4c9d664451102828780"
+    }
+  ],
+  "bound_input_count": 17,
+  "report": {
+    "path": "data/processed/receptor-family-host-capacity.json",
+    "sha256": "4ff1a2a0255e66321e02c1376dc7a0aca983f199a570d3de0a740221b11956a2"
+  },
+  "schema_version": 1,
+  "script_sha256": "6bec89c0e0a6aed2b5b5ba4f148923ea2b4274c18d1208b90cf43e8c831785b3",
+  "sequence_searches_or_models_executed": false,
+  "status": "exact_training_vocabulary_and_both_projection_replay"
+}

@@ -21,7 +21,7 @@ The fixed-denominator column illustrates a different rule; it is not a correctio
 
 ## Consequence for the next candidate
 
-The existing [global-union collision](26-host-encoder-capacity.md) remains a measured NO-GO for that particular encoder. The family-aware workflow cannot be declared equivalent to it: family assignment and the matching threshold can change projections. Conversely, no family-aware capacity or host-ranking result has yet been measured here.
+The existing [global-union collision](26-host-encoder-capacity.md) remains a measured NO-GO for that particular encoder. The family-aware workflow cannot be declared equivalent to it: family assignment and the matching threshold can change projections. The synthetic probe alone supplies neither a biological capacity result nor a host-ranking result; the subsequent biological execution is linked below.
 
 A subsequent biological test must freeze these choices before generating its feature results:
 
@@ -32,6 +32,8 @@ A subsequent biological test must freeze these choices before generating its fea
 5. Whether self-projection reproduces training vectors before any target projection. A representation with failed controls cannot proceed to model fitting.
 
 The first candidate should preserve upstream reached-family arithmetic and explicitly add all-zero rows for unassigned genomes as a declared adaptation, rather than silently switching denominators. A separate fixed-denominator method would need its own rationale and protocol. Neither should be fitted to Ando labels or selected because it produces the desired host order.
+
+The subsequent [frozen biological capacity pilot](29-family-host-capacity.md) has now executed that first candidate. Its source self-controls pass; BL21 separates, while BW25113 and MG1655 retain identical binary vectors. This result preserves the separate status of the synthetic source probe and the biological representation check.
 
 With only the two available source host backgrounds, genome-pattern consolidation still has at most three nonzero training patterns, even if k-mers have family context. That bound does not by itself prove a query collision. A new capacity test is necessary. Distinguishable vectors, if obtained, would establish representational capacity rather than infection accuracy; source-stock correspondence, endpoint labels and independent model evaluation remain separate gates. The [candidate 84/49 phage partition](27-phage-groups-and-source-split.md) does not supply those missing host labels or prove generalization to unseen host groups.
 

@@ -53,6 +53,8 @@ This is a declared implementation adaptation. Its direct global projection has n
 
 The subsequent [family-assignment source probe](28-family-assignment-semantics.md) executes the pinned upstream mapping function on synthetic inputs. Its denominator includes reached family mappings; entirely unassigned genomes are omitted by that function. These observed semantics constrain a future family-aware capacity test. They do not establish biological performance or reverse the direct global encoder's measured collision.
 
+The [family-conditioned biological pilot](29-family-host-capacity.md) now passes source self-projection and separates BL21 from the K-12 references, but BW25113 and MG1655 remain identical under its frozen binary representation. This supplies a representation boundary, not infection scores or training admission.
+
 ## Executed annotation and near-homolog checks
 
 The [strict translation-consistency report](../data/processed/receptor-cds-translation-check.json) covers all 48,083 deposited translations under a policy fixed before checking:

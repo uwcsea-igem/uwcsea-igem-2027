@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "scope": "Label-free representation-capacity test only; no infection/receptor labels or model fitting",
+  "upstream_commit": "f7e30abc1b0bbba1ae76b8f58a3363bbbc5cd54f",
+  "inputs": [
+    {
+      "path": "data/processed/receptor-host-feature-uniform-control.json",
+      "sha256": "9a96574b463d855469140a6e7dc01f115cc4e73dc867ecb072a93f4484cbf72a"
+    },
+    {
+      "path": "scripts/check-genophi-phage-features.py",
+      "sha256": "c2c091b811ef6d9aaf590abe27cb71d19521354bfb0cac7baf9226f817b99875"
+    },
+    {
+      "path": "software/tipcraft/src/tipcraft/protein_features.py",
+      "sha256": "a6ae6d3253507846c5a44075b9c159c2ec752cec5d52d78cace668c7b9076cbc"
+    },
+    {
+      "path": "data/processed/genophi-family-assignment-probe.json",
+      "sha256": "ebce6c77245580043266605937d0753a3d4297c2fb92c4a0c9cb1f5113f3ca3c"
+    }
+  ],
+  "files": [
+    {
+      "sample_id": "author:BL21",
+      "path": "data/raw/receptor-resource/host-feature-uniform-control-v1/author-0/proteins.faa",
+      "sha256": "df535f0743aa349cd10c9b33d215f37f560f214ff3f405ad96f65ccb71aae3fc",
+      "expected_proteins": 4273,
+      "role": "vocabulary_fit_only"
+    },
+    {
+      "sample_id": "author:Keio",
+      "path": "data/raw/receptor-resource/host-feature-uniform-control-v1/author-1/proteins.faa",
+      "sha256": "927df5b65ede14144c7f407b68f0efb0139b6c512f6908c794d2a473391ff51c",
+      "expected_proteins": 4314,
+      "role": "vocabulary_fit_only"
+    },
+    {
+      "sample_id": "original:BL21",
+      "role": "projection_only",
+      "path": "data/raw/genophi-annotation/run-1/h_t000/proteins.faa",
+      "sha256": "ca283d9fcab37135334a334b405221d4083ad547c10e31a9e4e802a52e135699",
+      "expected_proteins": 4234,
+      "original_genome_sequence_sha256": "669a5120ac4305418137e69b37e85d8c5c099908b4f49f212d78effa6455fff9"
+    },
+    {
+      "sample_id": "original:BW25113",
+      "role": "projection_only",
+      "path": "data/raw/genophi-annotation/run-1/h_t001/proteins.faa",
+      "sha256": "62c2d853f6ea4c21a59433ec13ed9079937227834756c2a83ac8c60faa2c9c5d",
+      "expected_proteins": 4314,
+      "original_genome_sequence_sha256": "3761072f8884add5e9facdafc583de5d81a4cf5dbc7e51023ba966f3cf4887ce"
+    },
+    {
+      "sample_id": "original:MG1655",
+      "role": "projection_only",
+      "path": "data/raw/genophi-annotation/run-1/h_t002/proteins.faa",
+      "sha256": "c253fff8298229a782b6bb81f1666d9d09cd2b80389ffc027aabdd2790a4fcc0",
+      "expected_proteins": 4319,
+      "original_genome_sequence_sha256": "e999dceccb76562d40e49a10d9e6d4cf1c05d184f4f80b92bb32d4a2420c11d0"
+    }
+  ],
+  "binary": "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+  "binary_sha256": "837eaf6cc9be92ff320c42c4cf56ae0d75f2a53c6ff6b24a577e803e9e3951be",
+  "command_timeout_seconds": 600,
+  "clustering_and_search": {
+    "coverage": 0.8,
+    "minimum_sequence_identity_parameter": 0.4,
+    "sensitivity": 7.5,
+    "threads": 4,
+    "verbosity": 3,
+    "other_defaults": "Effective MMseqs18 defaults retained in logs; not paper-listed15.6f452"
+  },
+  "protein_normalization": "Remove exactly one terminal stop; reject non-standard20 or empty sequences; reject duplicate IDs within a proteome; neutral IDs preserve source order",
+  "family_assignment": "Frozen protein_features best-hit parser: float32 identity descending, E-value ascending, raw-first ties; search all training proteins; record cross-family ties",
+  "vocabulary": "Within-protein 5-mers conditioned on self-search assigned family, count each member once per protein; retain >=2 distinct training proteins; merge exact training-genome occurrence tuples across all retained family/k-mer members",
+  "threshold": 0.5,
+  "threshold_rationale": "Pinned upstream assignment CLI default, not chosen using biological feature results",
+  "projection": "Reached-family denominator, union of matched family/k-mer members per feature, matching fraction >=0.5; explicit all-zero rows when no members reached",
+  "controls": "Reproject both source hosts with self-search assignments; require exact training occurrence vectors and nonempty vocabulary before creating target query DB",
+  "freeze": "Hash training proteins, clusters, self-search, vocabulary and implementation before target query DB/search",
+  "interpretation": "All-three target distinction is a necessary capacity diagnostic, not a host-range score. Any collision constrains this particular encoder. No stock equivalence or unseen-host-group claim.",
+  "adaptations": [
+    "MMseqs18 instead of15.6f452",
+    "Exact tuple merging rather than unchecked hash merging",
+    "Strict standard20 inputs on uniform existing calls",
+    "Preserve all-zero unmatched-genome rows",
+    "This declared family-aware training variant is not the prior global ignore_families workflow or a certified full upstream replication"
+  ],
+  "failure_rule": "Preserve failed controls/collisions; no threshold or assignment retuning in this run; no interaction model or original benchmark admission"
+}
