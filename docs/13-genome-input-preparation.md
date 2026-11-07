@@ -65,3 +65,5 @@ The wrapper verifies actual inputs before running, then records the executable, 
 Whole-genome phage grouping and gp17 similarity require their own pre-training specification. Relatedness exclusions, source ambiguity masks and grouped external validation must all be reflected in the final training membership. The [next-method contract](../software/tipcraft/benchmarks/retro-t7-t3/next-method-contract.json) remains the governing evaluation contract; host triage does not authorize target model inference by itself.
 
 The [relatedness follow-up](15-relatedness-audit.md) now records actual 97-phage/two-reference searches, the exact-hash-reviewed T4LD normalization, provisional near-target exclusions and reconstructed host groups. The full target-host ANI audit still awaits the remaining host genomes.
+
+The [source-admission follow-up](20-source-admission-and-partitions.md) verifies all 402 original-source IDs against deposit IDs, propagates exclusions through full groups and defines crossed outer blocks. Its current actual check writes HOLD only; it does not turn the eight-file host cache into an admitted training set.

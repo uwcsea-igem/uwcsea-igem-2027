@@ -26,13 +26,13 @@ Draft for team review · 2026-11-07 · project name and gate dates unapproved.
 
 **Budget.** Kyungmin's 5 November informal estimates were approximately S$13,000 all-new, S$7,500 realistic and S$5,000 with existing equipment/resources; these are not vendor quotes. Registration/travel and any equipment purchases need separate totals. Kevin suggested a 20% gap and approximately 15% backup allocation; treatment of those amounts remains to be agreed. See [budget](docs/03-budget.md).
 
-**Open decisions.** Confirm whether the proposed knockout panel tests native LPS dependence or future protein-receptor targeting; obtain exact strain identifiers; confirm assembly assay definition; choose a predictor and leakage-free evaluation split; approve gate dates, owners, budget and project name. Suggested names only: Plug-n-Phage, TailorMade, SOCKET.
+**Open decisions.** Assign exact stock IDs and endpoint-specific roles to the now-distinguished native-LPS and future protein-targeting questions; review the control assumptions in the [receptor-source check](docs/21-receptor-dependence-and-source-check.md); confirm assembly assay definition; complete the predictor's training and exclusion specification; approve gate dates, owners, budget and project name. Suggested names only: Plug-n-Phage, TailorMade, SOCKET.
 
 **Current evidence (7 November).** A real WIsH genome-composition run covers six native observations and abstains on four exchange cases. It ranks the documented T3 positive below both negatives. [December evidence report](docs/07-december-gate-report.md) records raw scores, actual anonymous reruns and label checks. NO-GO for this method as the strain-ranking engine; GO for evidence/evaluation infrastructure. Assembly prediction, orderable DNA and wet-lab readiness remain unvalidated. [Literature audit](docs/02-literature.md) · [decisions](docs/01-decision-log.md) · [roles](docs/05-roles.md).
 
 ## Run the retrospective evaluation
 
-The next-method input preparation now maps all 94 GenoPHI training phage IDs and 265 host IDs directly to deposited file metadata; 137 host-name candidates await identity review. [Source mapping and reproduction](docs/09-next-method-feasibility.md#training-source-mapping-follow-up) advances the independent scoring work without treating metadata matches as predictions.
+The next-method preparation now maps all 94 GenoPHI phage IDs and all 402 model host IDs through the original source records to deposited file metadata. [Source admission and partitions](docs/20-source-admission-and-partitions.md) records the completed identifier crosswalk and current HOLD for missing host files/ANI exclusions. Stock identity and predictive performance remain separate checks.
 
 Python 3.11+ and uv, from this repository:
 

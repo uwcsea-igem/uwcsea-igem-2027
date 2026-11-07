@@ -1,0 +1,3463 @@
+{
+  "schema_version": 1,
+  "status": "HOLD",
+  "policy_sha256": "78c8c464f9754c70635219a2c5480abda69b7904c0e5f532c8d405940d6c3b47",
+  "builder_sha256": "a70501621396ca46d35c542282db557015890d512ea6cdf4a1db8214ec5816e1",
+  "production_run_spec_complete": false,
+  "partition_source_sha256": "c13020085c54e375bda4dc6542f647f5e32039b762eac704958db31907366be4",
+  "training_or_scoring_executed": false,
+  "target_scores_generated": false,
+  "final_roster_written": false,
+  "hold_reasons": [
+    "Missing authenticated host genome files",
+    "Complete target-host audit has not been supplied"
+  ],
+  "interpretation": "Source ID correspondence does not establish stock identity. Admission is separate from feature preparation and fitting.",
+  "authenticated_policy_inputs": [
+    {
+      "path": "data/processed/genophi-label-audit.json",
+      "sha256": "ed231b66715d4a25adc032420ff801db1d335620be6556f5683164efd929fe88"
+    },
+    {
+      "path": "data/processed/genophi-training-source-map.json",
+      "sha256": "39aaf9067132ea492622f13ee98f7acd1e12758366f521609f58b538df73e60d"
+    },
+    {
+      "path": "data/processed/genophi-host-core-groups.json",
+      "sha256": "8c1dab67755fed183daa2d12b15d64eb69d5bcec452177e068fe3b3898a36568"
+    },
+    {
+      "path": "data/processed/genophi-phage-inputs.json",
+      "sha256": "d0f66b3bba527aa8cc32b327ed7f15107fbcd0943faefa6b1fda2496f528185c"
+    },
+    {
+      "path": "data/processed/genophi-phage-overlap.json",
+      "sha256": "dc6a514fc081e9320edeeccabfe7aa61fd1f23d2b5232ec11957ea1fc230be90"
+    },
+    {
+      "path": "data/processed/genophi-phage-similarities.tsv",
+      "sha256": "4fffd628591f3fc8c4cb81aa24130f1aa4eee71b75be6e5ed09e26e31532caee"
+    },
+    {
+      "path": "data/processed/viridic-original-r-comparison-v2.json",
+      "sha256": "fae6206bb55734868eb2879215648e318600afe2a20f394d12fb321cf9400ee9"
+    },
+    {
+      "path": "software/tipcraft/benchmarks/retro-t7-t3/genophi-overlap-policy.json",
+      "sha256": "2d9fd98d19dc3b75f8f016a2ca87965d86ff305a8921e6b075d0a878df1da47e"
+    },
+    {
+      "path": "software/tipcraft/benchmarks/retro-t7-t3/genophi-phage-policy-v2.json",
+      "sha256": "d023b97b870b9b585eeeae7fc726ab23c6b90c9c1c6079b8c641fbf7defc79b0"
+    }
+  ],
+  "source_provenance": {
+    "source_commit": "99656d8c020fcd1dbbc30a02ee10274a07655562",
+    "source_tree_sha1": "550f10819c6d565214bc26d1e3fea59af17ec398",
+    "host_deposit_doi": "10.6084/m9.figshare.25941691.v1",
+    "reviewed_host_file_inventory_sha256": "fc5019c8de4a88d2432b298624374f1b7006ae8102fddbbc997e4dea9d20c24e",
+    "metadata_files": [
+      {
+        "path": "coli-tree.json",
+        "sha256": "953c05748a0381f2bc2f50f12deca890e96487953bf699ed07fb7883a8e4c545"
+      },
+      {
+        "path": "figshare-v1.json",
+        "sha256": "36075755866c80309437013c6886160c1db250792c2a354f4707541f3c82a892"
+      }
+    ]
+  },
+  "model_table_sha256": "c4795d786a1e13ac998e263dbf4aaf95fc0f94c52b842d02b6f7fc6e99ccfef2",
+  "name_crosswalk": {
+    "001023": {
+      "original_source_id": "001-023",
+      "deposit_file_id": 46741453,
+      "path": "hosts/46741453.fasta",
+      "stock_identity_verified": false
+    },
+    "001031C1": {
+      "original_source_id": "001-031-c1",
+      "deposit_file_id": 46741456,
+      "path": "hosts/46741456.fasta",
+      "stock_identity_verified": false
+    },
+    "003026": {
+      "original_source_id": "003-026",
+      "deposit_file_id": 46741468,
+      "path": "hosts/46741468.fasta",
+      "stock_identity_verified": false
+    },
+    "013008": {
+      "original_source_id": "013-008",
+      "deposit_file_id": 46741465,
+      "path": "hosts/46741465.fasta",
+      "stock_identity_verified": false
+    },
+    "025010": {
+      "original_source_id": "025-010",
+      "deposit_file_id": 46741459,
+      "path": "hosts/46741459.fasta",
+      "stock_identity_verified": false
+    },
+    "034008": {
+      "original_source_id": "034-008",
+      "deposit_file_id": 46741471,
+      "path": "hosts/46741471.fasta",
+      "stock_identity_verified": false
+    },
+    "034026C1": {
+      "original_source_id": "034-026-c1",
+      "deposit_file_id": 46741474,
+      "path": "hosts/46741474.fasta",
+      "stock_identity_verified": false
+    },
+    "035004": {
+      "original_source_id": "035-004",
+      "deposit_file_id": 46741462,
+      "path": "hosts/46741462.fasta",
+      "stock_identity_verified": false
+    },
+    "370D": {
+      "original_source_id": "370D",
+      "deposit_file_id": 46741477,
+      "path": "hosts/46741477.fasta",
+      "stock_identity_verified": false
+    },
+    "381A": {
+      "original_source_id": "381A",
+      "deposit_file_id": 46741480,
+      "path": "hosts/46741480.fasta",
+      "stock_identity_verified": false
+    },
+    "536": {
+      "original_source_id": "536",
+      "deposit_file_id": 46741483,
+      "path": "hosts/46741483.fasta",
+      "stock_identity_verified": false
+    },
+    "55989": {
+      "original_source_id": "55989",
+      "deposit_file_id": 46741492,
+      "path": "hosts/46741492.fasta",
+      "stock_identity_verified": false
+    },
+    "916A": {
+      "original_source_id": "916A",
+      "deposit_file_id": 46741486,
+      "path": "hosts/46741486.fasta",
+      "stock_identity_verified": false
+    },
+    "921A": {
+      "original_source_id": "921A",
+      "deposit_file_id": 46741489,
+      "path": "hosts/46741489.fasta",
+      "stock_identity_verified": false
+    },
+    "AL505": {
+      "original_source_id": "AL505",
+      "deposit_file_id": 46741495,
+      "path": "hosts/46741495.fasta",
+      "stock_identity_verified": false
+    },
+    "AN03": {
+      "original_source_id": "AN03",
+      "deposit_file_id": 46741498,
+      "path": "hosts/46741498.fasta",
+      "stock_identity_verified": false
+    },
+    "AN17": {
+      "original_source_id": "AN17",
+      "deposit_file_id": 46741501,
+      "path": "hosts/46741501.fasta",
+      "stock_identity_verified": false
+    },
+    "AN24": {
+      "original_source_id": "AN24",
+      "deposit_file_id": 46741504,
+      "path": "hosts/46741504.fasta",
+      "stock_identity_verified": false
+    },
+    "ASP51G": {
+      "original_source_id": "Asp51g",
+      "deposit_file_id": 46741507,
+      "path": "hosts/46741507.fasta",
+      "stock_identity_verified": false
+    },
+    "ATCC35469T": {
+      "original_source_id": "ATCC35469T",
+      "deposit_file_id": 46741510,
+      "path": "hosts/46741510.fasta",
+      "stock_identity_verified": false
+    },
+    "B090": {
+      "original_source_id": "B090",
+      "deposit_file_id": 46741519,
+      "path": "hosts/46741519.fasta",
+      "stock_identity_verified": false
+    },
+    "B1147": {
+      "original_source_id": "B1147",
+      "deposit_file_id": 46741540,
+      "path": "hosts/46741540.fasta",
+      "stock_identity_verified": false
+    },
+    "B12I13": {
+      "original_source_id": "B12I13",
+      "deposit_file_id": 46741528,
+      "path": "hosts/46741528.fasta",
+      "stock_identity_verified": false
+    },
+    "B156": {
+      "original_source_id": "B156",
+      "deposit_file_id": 46741525,
+      "path": "hosts/46741525.fasta",
+      "stock_identity_verified": false
+    },
+    "B1747": {
+      "original_source_id": "B1747",
+      "deposit_file_id": 46741543,
+      "path": "hosts/46741543.fasta",
+      "stock_identity_verified": false
+    },
+    "B1932": {
+      "original_source_id": "B1932",
+      "deposit_file_id": 46741546,
+      "path": "hosts/46741546.fasta",
+      "stock_identity_verified": false
+    },
+    "B253": {
+      "original_source_id": "B253",
+      "deposit_file_id": 46741531,
+      "path": "hosts/46741531.fasta",
+      "stock_identity_verified": false
+    },
+    "B49": {
+      "original_source_id": "B49",
+      "deposit_file_id": 46741516,
+      "path": "hosts/46741516.fasta",
+      "stock_identity_verified": false
+    },
+    "B691": {
+      "original_source_id": "B691",
+      "deposit_file_id": 46741534,
+      "path": "hosts/46741534.fasta",
+      "stock_identity_verified": false
+    },
+    "B6A1": {
+      "original_source_id": "B6A1",
+      "deposit_file_id": 46741513,
+      "path": "hosts/46741513.fasta",
+      "stock_identity_verified": false
+    },
+    "B992": {
+      "original_source_id": "B992",
+      "deposit_file_id": 46741537,
+      "path": "hosts/46741537.fasta",
+      "stock_identity_verified": false
+    },
+    "BCH953": {
+      "original_source_id": "BCH953",
+      "deposit_file_id": 46741552,
+      "path": "hosts/46741552.fasta",
+      "stock_identity_verified": false
+    },
+    "BDX03": {
+      "original_source_id": "BDX03",
+      "deposit_file_id": 46741555,
+      "path": "hosts/46741555.fasta",
+      "stock_identity_verified": false
+    },
+    "BDX09": {
+      "original_source_id": "BDX09",
+      "deposit_file_id": 46741558,
+      "path": "hosts/46741558.fasta",
+      "stock_identity_verified": false
+    },
+    "BE": {
+      "original_source_id": "BE",
+      "deposit_file_id": 46741561,
+      "path": "hosts/46741561.fasta",
+      "stock_identity_verified": false
+    },
+    "BEN4D": {
+      "original_source_id": "Ben4d",
+      "deposit_file_id": 46741564,
+      "path": "hosts/46741564.fasta",
+      "stock_identity_verified": false
+    },
+    "BL21": {
+      "original_source_id": "BL21",
+      "deposit_file_id": 46741567,
+      "path": "hosts/46741567.fasta",
+      "stock_identity_verified": false
+    },
+    "C2119": {
+      "original_source_id": "C2-119",
+      "deposit_file_id": 46741570,
+      "path": "hosts/46741570.fasta",
+      "stock_identity_verified": false
+    },
+    "COLF12G": {
+      "original_source_id": "colF12g",
+      "deposit_file_id": 46741573,
+      "path": "hosts/46741573.fasta",
+      "stock_identity_verified": false
+    },
+    "DEC1A": {
+      "original_source_id": "DEC1a",
+      "deposit_file_id": 46741576,
+      "path": "hosts/46741576.fasta",
+      "stock_identity_verified": false
+    },
+    "DEC2A": {
+      "original_source_id": "DEC2a",
+      "deposit_file_id": 46741579,
+      "path": "hosts/46741579.fasta",
+      "stock_identity_verified": false
+    },
+    "DIJ06": {
+      "original_source_id": "DIJ06",
+      "deposit_file_id": 46741582,
+      "path": "hosts/46741582.fasta",
+      "stock_identity_verified": false
+    },
+    "DIJ07": {
+      "original_source_id": "DIJ07",
+      "deposit_file_id": 46741585,
+      "path": "hosts/46741585.fasta",
+      "stock_identity_verified": false
+    },
+    "E1426": {
+      "original_source_id": "E1426",
+      "deposit_file_id": 46741594,
+      "path": "hosts/46741594.fasta",
+      "stock_identity_verified": false
+    },
+    "E1492": {
+      "original_source_id": "E1492",
+      "deposit_file_id": 46741597,
+      "path": "hosts/46741597.fasta",
+      "stock_identity_verified": false
+    },
+    "E2052": {
+      "original_source_id": "E2052",
+      "deposit_file_id": 46741600,
+      "path": "hosts/46741600.fasta",
+      "stock_identity_verified": false
+    },
+    "E234869": {
+      "original_source_id": "E2348_69",
+      "deposit_file_id": 46741603,
+      "path": "hosts/46741603.fasta",
+      "stock_identity_verified": false
+    },
+    "E4962": {
+      "original_source_id": "E4962",
+      "deposit_file_id": 46741606,
+      "path": "hosts/46741606.fasta",
+      "stock_identity_verified": false
+    },
+    "E7519": {
+      "original_source_id": "E7519",
+      "deposit_file_id": 46741609,
+      "path": "hosts/46741609.fasta",
+      "stock_identity_verified": false
+    },
+    "EALBERTIICIP107988T": {
+      "original_source_id": "E_albertiiCIP107988T",
+      "deposit_file_id": 46741588,
+      "path": "hosts/46741588.fasta",
+      "stock_identity_verified": false
+    },
+    "EC6230": {
+      "original_source_id": "EC6230",
+      "deposit_file_id": 46741612,
+      "path": "hosts/46741612.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR01": {
+      "original_source_id": "ECOR-01",
+      "deposit_file_id": 46741615,
+      "path": "hosts/46741615.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR02": {
+      "original_source_id": "ECOR-02",
+      "deposit_file_id": 46741618,
+      "path": "hosts/46741618.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR03": {
+      "original_source_id": "ECOR-03",
+      "deposit_file_id": 46741621,
+      "path": "hosts/46741621.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR04": {
+      "original_source_id": "ECOR-04",
+      "deposit_file_id": 46741624,
+      "path": "hosts/46741624.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR05": {
+      "original_source_id": "ECOR-05",
+      "deposit_file_id": 46741627,
+      "path": "hosts/46741627.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR06": {
+      "original_source_id": "ECOR-06",
+      "deposit_file_id": 46741630,
+      "path": "hosts/46741630.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR07": {
+      "original_source_id": "ECOR-07",
+      "deposit_file_id": 46741633,
+      "path": "hosts/46741633.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR08": {
+      "original_source_id": "ECOR-08",
+      "deposit_file_id": 46741636,
+      "path": "hosts/46741636.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR09": {
+      "original_source_id": "ECOR-09",
+      "deposit_file_id": 46741639,
+      "path": "hosts/46741639.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR10": {
+      "original_source_id": "ECOR-10",
+      "deposit_file_id": 46741642,
+      "path": "hosts/46741642.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR11": {
+      "original_source_id": "ECOR-11",
+      "deposit_file_id": 46741645,
+      "path": "hosts/46741645.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR12": {
+      "original_source_id": "ECOR-12",
+      "deposit_file_id": 46741648,
+      "path": "hosts/46741648.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR13": {
+      "original_source_id": "ECOR-13",
+      "deposit_file_id": 46741651,
+      "path": "hosts/46741651.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR14": {
+      "original_source_id": "ECOR-14",
+      "deposit_file_id": 46741654,
+      "path": "hosts/46741654.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR15": {
+      "original_source_id": "ECOR-15",
+      "deposit_file_id": 46741657,
+      "path": "hosts/46741657.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR16": {
+      "original_source_id": "ECOR-16",
+      "deposit_file_id": 46741660,
+      "path": "hosts/46741660.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR17": {
+      "original_source_id": "ECOR-17",
+      "deposit_file_id": 46741663,
+      "path": "hosts/46741663.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR18": {
+      "original_source_id": "ECOR-18",
+      "deposit_file_id": 46741666,
+      "path": "hosts/46741666.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR19": {
+      "original_source_id": "ECOR-19",
+      "deposit_file_id": 46741669,
+      "path": "hosts/46741669.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR20": {
+      "original_source_id": "ECOR-20",
+      "deposit_file_id": 46741672,
+      "path": "hosts/46741672.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR21": {
+      "original_source_id": "ECOR-21",
+      "deposit_file_id": 46741675,
+      "path": "hosts/46741675.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR22": {
+      "original_source_id": "ECOR-22",
+      "deposit_file_id": 46741678,
+      "path": "hosts/46741678.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR23": {
+      "original_source_id": "ECOR-23",
+      "deposit_file_id": 46741681,
+      "path": "hosts/46741681.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR24": {
+      "original_source_id": "ECOR-24",
+      "deposit_file_id": 46741684,
+      "path": "hosts/46741684.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR25": {
+      "original_source_id": "ECOR-25",
+      "deposit_file_id": 46741687,
+      "path": "hosts/46741687.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR26": {
+      "original_source_id": "ECOR-26",
+      "deposit_file_id": 46741690,
+      "path": "hosts/46741690.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR27": {
+      "original_source_id": "ECOR-27",
+      "deposit_file_id": 46741693,
+      "path": "hosts/46741693.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR28": {
+      "original_source_id": "ECOR-28",
+      "deposit_file_id": 46741696,
+      "path": "hosts/46741696.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR29": {
+      "original_source_id": "ECOR-29",
+      "deposit_file_id": 46741699,
+      "path": "hosts/46741699.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR30": {
+      "original_source_id": "ECOR-30",
+      "deposit_file_id": 46741702,
+      "path": "hosts/46741702.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR31": {
+      "original_source_id": "ECOR-31",
+      "deposit_file_id": 46741705,
+      "path": "hosts/46741705.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR32": {
+      "original_source_id": "ECOR-32",
+      "deposit_file_id": 46741708,
+      "path": "hosts/46741708.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR33": {
+      "original_source_id": "ECOR-33",
+      "deposit_file_id": 46741711,
+      "path": "hosts/46741711.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR34": {
+      "original_source_id": "ECOR-34",
+      "deposit_file_id": 46741714,
+      "path": "hosts/46741714.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR35": {
+      "original_source_id": "ECOR-35",
+      "deposit_file_id": 46741717,
+      "path": "hosts/46741717.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR36": {
+      "original_source_id": "ECOR-36",
+      "deposit_file_id": 46741720,
+      "path": "hosts/46741720.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR37": {
+      "original_source_id": "ECOR-37",
+      "deposit_file_id": 46741723,
+      "path": "hosts/46741723.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR38": {
+      "original_source_id": "ECOR-38",
+      "deposit_file_id": 46741726,
+      "path": "hosts/46741726.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR39": {
+      "original_source_id": "ECOR-39",
+      "deposit_file_id": 46741729,
+      "path": "hosts/46741729.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR40": {
+      "original_source_id": "ECOR-40",
+      "deposit_file_id": 46741732,
+      "path": "hosts/46741732.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR41": {
+      "original_source_id": "ECOR-41",
+      "deposit_file_id": 46741735,
+      "path": "hosts/46741735.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR42": {
+      "original_source_id": "ECOR-42",
+      "deposit_file_id": 46741738,
+      "path": "hosts/46741738.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR43A": {
+      "original_source_id": "ECOR-43_A",
+      "deposit_file_id": 46741741,
+      "path": "hosts/46741741.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR44": {
+      "original_source_id": "ECOR-44",
+      "deposit_file_id": 46741744,
+      "path": "hosts/46741744.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR45": {
+      "original_source_id": "ECOR-45",
+      "deposit_file_id": 46741747,
+      "path": "hosts/46741747.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR46": {
+      "original_source_id": "ECOR-46",
+      "deposit_file_id": 46741750,
+      "path": "hosts/46741750.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR47": {
+      "original_source_id": "ECOR-47",
+      "deposit_file_id": 46741753,
+      "path": "hosts/46741753.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR48": {
+      "original_source_id": "ECOR-48",
+      "deposit_file_id": 46741756,
+      "path": "hosts/46741756.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR49": {
+      "original_source_id": "ECOR-49",
+      "deposit_file_id": 46741765,
+      "path": "hosts/46741765.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR50": {
+      "original_source_id": "ECOR-50",
+      "deposit_file_id": 46741768,
+      "path": "hosts/46741768.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR51": {
+      "original_source_id": "ECOR-51",
+      "deposit_file_id": 46741771,
+      "path": "hosts/46741771.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR52": {
+      "original_source_id": "ECOR-52",
+      "deposit_file_id": 46741774,
+      "path": "hosts/46741774.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR53": {
+      "original_source_id": "ECOR-53",
+      "deposit_file_id": 46741777,
+      "path": "hosts/46741777.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR54": {
+      "original_source_id": "ECOR-54",
+      "deposit_file_id": 46741780,
+      "path": "hosts/46741780.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR55": {
+      "original_source_id": "ECOR-55",
+      "deposit_file_id": 46741783,
+      "path": "hosts/46741783.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR56": {
+      "original_source_id": "ECOR-56",
+      "deposit_file_id": 46741786,
+      "path": "hosts/46741786.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR57": {
+      "original_source_id": "ECOR-57",
+      "deposit_file_id": 46741789,
+      "path": "hosts/46741789.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR58": {
+      "original_source_id": "ECOR-58",
+      "deposit_file_id": 46741792,
+      "path": "hosts/46741792.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR59": {
+      "original_source_id": "ECOR-59",
+      "deposit_file_id": 46741795,
+      "path": "hosts/46741795.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR60": {
+      "original_source_id": "ECOR-60",
+      "deposit_file_id": 46741798,
+      "path": "hosts/46741798.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR61": {
+      "original_source_id": "ECOR-61",
+      "deposit_file_id": 46741801,
+      "path": "hosts/46741801.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR62": {
+      "original_source_id": "ECOR-62",
+      "deposit_file_id": 46741804,
+      "path": "hosts/46741804.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR63": {
+      "original_source_id": "ECOR-63",
+      "deposit_file_id": 46741807,
+      "path": "hosts/46741807.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR64": {
+      "original_source_id": "ECOR-64",
+      "deposit_file_id": 46741810,
+      "path": "hosts/46741810.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR65": {
+      "original_source_id": "ECOR-65",
+      "deposit_file_id": 46741813,
+      "path": "hosts/46741813.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR66": {
+      "original_source_id": "ECOR-66",
+      "deposit_file_id": 46741816,
+      "path": "hosts/46741816.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR67": {
+      "original_source_id": "ECOR-67",
+      "deposit_file_id": 46741819,
+      "path": "hosts/46741819.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR69": {
+      "original_source_id": "ECOR-69",
+      "deposit_file_id": 46741822,
+      "path": "hosts/46741822.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR70": {
+      "original_source_id": "ECOR-70",
+      "deposit_file_id": 46741825,
+      "path": "hosts/46741825.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR71": {
+      "original_source_id": "ECOR-71",
+      "deposit_file_id": 46741828,
+      "path": "hosts/46741828.fasta",
+      "stock_identity_verified": false
+    },
+    "ECOR72": {
+      "original_source_id": "ECOR-72",
+      "deposit_file_id": 46741831,
+      "path": "hosts/46741831.fasta",
+      "stock_identity_verified": false
+    },
+    "ED1A": {
+      "original_source_id": "ED1a",
+      "deposit_file_id": 46741834,
+      "path": "hosts/46741834.fasta",
+      "stock_identity_verified": false
+    },
+    "EDL933": {
+      "original_source_id": "EDL933",
+      "deposit_file_id": 46741837,
+      "path": "hosts/46741837.fasta",
+      "stock_identity_verified": false
+    },
+    "EFERGUSONIIIVAN": {
+      "original_source_id": "E_fergusonii-IVAN",
+      "deposit_file_id": 46741591,
+      "path": "hosts/46741591.fasta",
+      "stock_identity_verified": false
+    },
+    "FN116": {
+      "original_source_id": "FN116",
+      "deposit_file_id": 46741846,
+      "path": "hosts/46741846.fasta",
+      "stock_identity_verified": false
+    },
+    "FN126": {
+      "original_source_id": "FN126",
+      "deposit_file_id": 46741849,
+      "path": "hosts/46741849.fasta",
+      "stock_identity_verified": false
+    },
+    "FN89": {
+      "original_source_id": "FN89",
+      "deposit_file_id": 46741843,
+      "path": "hosts/46741843.fasta",
+      "stock_identity_verified": false
+    },
+    "FNB4": {
+      "original_source_id": "FN-B4",
+      "deposit_file_id": 46741852,
+      "path": "hosts/46741852.fasta",
+      "stock_identity_verified": false
+    },
+    "FNB7": {
+      "original_source_id": "FN-B7",
+      "deposit_file_id": 46741855,
+      "path": "hosts/46741855.fasta",
+      "stock_identity_verified": false
+    },
+    "FNB9": {
+      "original_source_id": "FN-B9",
+      "deposit_file_id": 46741858,
+      "path": "hosts/46741858.fasta",
+      "stock_identity_verified": false
+    },
+    "H009": {
+      "original_source_id": "H009",
+      "deposit_file_id": 46741981,
+      "path": "hosts/46741981.fasta",
+      "stock_identity_verified": false
+    },
+    "H10010003SJ": {
+      "original_source_id": "H1-001-0003-S-J",
+      "deposit_file_id": 46741861,
+      "path": "hosts/46741861.fasta",
+      "stock_identity_verified": false
+    },
+    "H10010013LJ": {
+      "original_source_id": "H1-001-0013-L-J",
+      "deposit_file_id": 46741864,
+      "path": "hosts/46741864.fasta",
+      "stock_identity_verified": false
+    },
+    "H10010020MO": {
+      "original_source_id": "H1-001-0020-M-O",
+      "deposit_file_id": 46741867,
+      "path": "hosts/46741867.fasta",
+      "stock_identity_verified": false
+    },
+    "H10010027SG": {
+      "original_source_id": "H1-001-0027-S-G",
+      "deposit_file_id": 46741870,
+      "path": "hosts/46741870.fasta",
+      "stock_identity_verified": false
+    },
+    "H10010034SM": {
+      "original_source_id": "H1-001-0034-S-M",
+      "deposit_file_id": 46741873,
+      "path": "hosts/46741873.fasta",
+      "stock_identity_verified": false
+    },
+    "H10010053KC": {
+      "original_source_id": "H1-001-0053-K-C",
+      "deposit_file_id": 46741876,
+      "path": "hosts/46741876.fasta",
+      "stock_identity_verified": false
+    },
+    "H10010093RA": {
+      "original_source_id": "H1-001-0093-R-A",
+      "deposit_file_id": 46741879,
+      "path": "hosts/46741879.fasta",
+      "stock_identity_verified": false
+    },
+    "H10010121QJ": {
+      "original_source_id": "H1-001-0121-Q-J",
+      "deposit_file_id": 46741882,
+      "path": "hosts/46741882.fasta",
+      "stock_identity_verified": false
+    },
+    "H10010125BM": {
+      "original_source_id": "H1-001-0125-B-M",
+      "deposit_file_id": 46741885,
+      "path": "hosts/46741885.fasta",
+      "stock_identity_verified": false
+    },
+    "H10010131CA": {
+      "original_source_id": "H1-001-0131-C-A",
+      "deposit_file_id": 46741888,
+      "path": "hosts/46741888.fasta",
+      "stock_identity_verified": false
+    },
+    "H10010154TK": {
+      "original_source_id": "H1-001-0154-T-K",
+      "deposit_file_id": 46741891,
+      "path": "hosts/46741891.fasta",
+      "stock_identity_verified": false
+    },
+    "H10010155MI": {
+      "original_source_id": "H1-001-0155-M-I",
+      "deposit_file_id": 46741894,
+      "path": "hosts/46741894.fasta",
+      "stock_identity_verified": false
+    },
+    "H10020007MM": {
+      "original_source_id": "H1-002-0007-M-M",
+      "deposit_file_id": 46741897,
+      "path": "hosts/46741897.fasta",
+      "stock_identity_verified": false
+    },
+    "H10020011MG": {
+      "original_source_id": "H1-002-0011-M-G",
+      "deposit_file_id": 46741900,
+      "path": "hosts/46741900.fasta",
+      "stock_identity_verified": false
+    },
+    "H10020060CT": {
+      "original_source_id": "H1-002-0060-C-T",
+      "deposit_file_id": 46741903,
+      "path": "hosts/46741903.fasta",
+      "stock_identity_verified": false
+    },
+    "H10020064EM": {
+      "original_source_id": "H1-002-0064-E-M",
+      "deposit_file_id": 46741906,
+      "path": "hosts/46741906.fasta",
+      "stock_identity_verified": false
+    },
+    "H10020069VG": {
+      "original_source_id": "H1-002-0069-V-G",
+      "deposit_file_id": 46741909,
+      "path": "hosts/46741909.fasta",
+      "stock_identity_verified": false
+    },
+    "H10030010GJ": {
+      "original_source_id": "H1-003-0010-G-J",
+      "deposit_file_id": 46741912,
+      "path": "hosts/46741912.fasta",
+      "stock_identity_verified": false
+    },
+    "H10030019BM": {
+      "original_source_id": "H1-003-0019-B-M",
+      "deposit_file_id": 46741915,
+      "path": "hosts/46741915.fasta",
+      "stock_identity_verified": false
+    },
+    "H10030035DE": {
+      "original_source_id": "H1-003-0035-D-E",
+      "deposit_file_id": 46741918,
+      "path": "hosts/46741918.fasta",
+      "stock_identity_verified": false
+    },
+    "H10030054PP": {
+      "original_source_id": "H1-003-0054-P-P",
+      "deposit_file_id": 46741921,
+      "path": "hosts/46741921.fasta",
+      "stock_identity_verified": false
+    },
+    "H10030071CJ": {
+      "original_source_id": "H1-003-0071-C-J",
+      "deposit_file_id": 46741924,
+      "path": "hosts/46741924.fasta",
+      "stock_identity_verified": false
+    },
+    "H10030079GR": {
+      "original_source_id": "H1-003-0079-G-R",
+      "deposit_file_id": 46741927,
+      "path": "hosts/46741927.fasta",
+      "stock_identity_verified": false
+    },
+    "H10030088BJ": {
+      "original_source_id": "H1-003-0088-B-J",
+      "deposit_file_id": 46741930,
+      "path": "hosts/46741930.fasta",
+      "stock_identity_verified": false
+    },
+    "H10030090VJ": {
+      "original_source_id": "H1-003-0090-V-J",
+      "deposit_file_id": 46741933,
+      "path": "hosts/46741933.fasta",
+      "stock_identity_verified": false
+    },
+    "H10030105CR": {
+      "original_source_id": "H1-003-0105-C-R",
+      "deposit_file_id": 46741936,
+      "path": "hosts/46741936.fasta",
+      "stock_identity_verified": false
+    },
+    "H10030115LR": {
+      "original_source_id": "H1-003-0115-L-R",
+      "deposit_file_id": 46741939,
+      "path": "hosts/46741939.fasta",
+      "stock_identity_verified": false
+    },
+    "H10030116VR": {
+      "original_source_id": "H1-003-0116-V-R",
+      "deposit_file_id": 46741942,
+      "path": "hosts/46741942.fasta",
+      "stock_identity_verified": false
+    },
+    "H10030120PR": {
+      "original_source_id": "H1-003-0120-P-R",
+      "deposit_file_id": 46741945,
+      "path": "hosts/46741945.fasta",
+      "stock_identity_verified": false
+    },
+    "H10040007OM": {
+      "original_source_id": "H1-004-0007-O-M",
+      "deposit_file_id": 46741948,
+      "path": "hosts/46741948.fasta",
+      "stock_identity_verified": false
+    },
+    "H10040017BM": {
+      "original_source_id": "H1-004-0017-B-M",
+      "deposit_file_id": 46741951,
+      "path": "hosts/46741951.fasta",
+      "stock_identity_verified": false
+    },
+    "H10040021WI": {
+      "original_source_id": "H1-004-0021-W-I",
+      "deposit_file_id": 46741954,
+      "path": "hosts/46741954.fasta",
+      "stock_identity_verified": false
+    },
+    "H10050012LM": {
+      "original_source_id": "H1-005-0012-L-M",
+      "deposit_file_id": 46741957,
+      "path": "hosts/46741957.fasta",
+      "stock_identity_verified": false
+    },
+    "H10050058MA": {
+      "original_source_id": "H1-005-0058-M-A",
+      "deposit_file_id": 46741960,
+      "path": "hosts/46741960.fasta",
+      "stock_identity_verified": false
+    },
+    "H10060003SL": {
+      "original_source_id": "H1-006-0003-S-L",
+      "deposit_file_id": 46741966,
+      "path": "hosts/46741966.fasta",
+      "stock_identity_verified": false
+    },
+    "H10060022LR": {
+      "original_source_id": "H1-006-0022-L-R",
+      "deposit_file_id": 46741969,
+      "path": "hosts/46741969.fasta",
+      "stock_identity_verified": false
+    },
+    "H10070015DG": {
+      "original_source_id": "H1-007-0015-D-G",
+      "deposit_file_id": 46741972,
+      "path": "hosts/46741972.fasta",
+      "stock_identity_verified": false
+    },
+    "H10070037HD": {
+      "original_source_id": "H1-007-0037-H-D",
+      "deposit_file_id": 46741975,
+      "path": "hosts/46741975.fasta",
+      "stock_identity_verified": false
+    },
+    "H14": {
+      "original_source_id": "H14",
+      "deposit_file_id": 46741984,
+      "path": "hosts/46741984.fasta",
+      "stock_identity_verified": false
+    },
+    "H384": {
+      "original_source_id": "H384",
+      "deposit_file_id": 46742002,
+      "path": "hosts/46742002.fasta",
+      "stock_identity_verified": false
+    },
+    "H4": {
+      "original_source_id": "H4",
+      "deposit_file_id": 46741978,
+      "path": "hosts/46741978.fasta",
+      "stock_identity_verified": false
+    },
+    "H442": {
+      "original_source_id": "H442",
+      "deposit_file_id": 46742005,
+      "path": "hosts/46742005.fasta",
+      "stock_identity_verified": false
+    },
+    "H47": {
+      "original_source_id": "H47",
+      "deposit_file_id": 46741990,
+      "path": "hosts/46741990.fasta",
+      "stock_identity_verified": false
+    },
+    "H48": {
+      "original_source_id": "H48",
+      "deposit_file_id": 46741993,
+      "path": "hosts/46741993.fasta",
+      "stock_identity_verified": false
+    },
+    "H70": {
+      "original_source_id": "H70",
+      "deposit_file_id": 46741996,
+      "path": "hosts/46741996.fasta",
+      "stock_identity_verified": false
+    },
+    "H95": {
+      "original_source_id": "H95",
+      "deposit_file_id": 46741999,
+      "path": "hosts/46741999.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI01": {
+      "original_source_id": "IAI01",
+      "deposit_file_id": 46742008,
+      "path": "hosts/46742008.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI02": {
+      "original_source_id": "IAI02",
+      "deposit_file_id": 46742011,
+      "path": "hosts/46742011.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI03": {
+      "original_source_id": "IAI03",
+      "deposit_file_id": 46742014,
+      "path": "hosts/46742014.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI04": {
+      "original_source_id": "IAI04",
+      "deposit_file_id": 46742017,
+      "path": "hosts/46742017.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI05": {
+      "original_source_id": "IAI05",
+      "deposit_file_id": 46742020,
+      "path": "hosts/46742020.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI06": {
+      "original_source_id": "IAI06",
+      "deposit_file_id": 46742023,
+      "path": "hosts/46742023.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI07": {
+      "original_source_id": "IAI07",
+      "deposit_file_id": 46742026,
+      "path": "hosts/46742026.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI08": {
+      "original_source_id": "IAI08",
+      "deposit_file_id": 46742029,
+      "path": "hosts/46742029.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI09": {
+      "original_source_id": "IAI09",
+      "deposit_file_id": 46742032,
+      "path": "hosts/46742032.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI10": {
+      "original_source_id": "IAI10",
+      "deposit_file_id": 46742035,
+      "path": "hosts/46742035.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI11": {
+      "original_source_id": "IAI11",
+      "deposit_file_id": 46742038,
+      "path": "hosts/46742038.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI12": {
+      "original_source_id": "IAI12",
+      "deposit_file_id": 46742041,
+      "path": "hosts/46742041.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI13": {
+      "original_source_id": "IAI13",
+      "deposit_file_id": 46742044,
+      "path": "hosts/46742044.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI14": {
+      "original_source_id": "IAI14",
+      "deposit_file_id": 46742047,
+      "path": "hosts/46742047.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI15": {
+      "original_source_id": "IAI15",
+      "deposit_file_id": 46742050,
+      "path": "hosts/46742050.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI16": {
+      "original_source_id": "IAI16",
+      "deposit_file_id": 46742053,
+      "path": "hosts/46742053.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI17": {
+      "original_source_id": "IAI17",
+      "deposit_file_id": 46742056,
+      "path": "hosts/46742056.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI18": {
+      "original_source_id": "IAI18",
+      "deposit_file_id": 46742059,
+      "path": "hosts/46742059.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI19": {
+      "original_source_id": "IAI19",
+      "deposit_file_id": 46742062,
+      "path": "hosts/46742062.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI20": {
+      "original_source_id": "IAI20",
+      "deposit_file_id": 46742065,
+      "path": "hosts/46742065.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI21": {
+      "original_source_id": "IAI21",
+      "deposit_file_id": 46742068,
+      "path": "hosts/46742068.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI22": {
+      "original_source_id": "IAI22",
+      "deposit_file_id": 46742071,
+      "path": "hosts/46742071.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI23": {
+      "original_source_id": "IAI23",
+      "deposit_file_id": 46742074,
+      "path": "hosts/46742074.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI24": {
+      "original_source_id": "IAI24",
+      "deposit_file_id": 46742077,
+      "path": "hosts/46742077.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI25": {
+      "original_source_id": "IAI25",
+      "deposit_file_id": 46742080,
+      "path": "hosts/46742080.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI26": {
+      "original_source_id": "IAI26",
+      "deposit_file_id": 46742083,
+      "path": "hosts/46742083.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI27": {
+      "original_source_id": "IAI27",
+      "deposit_file_id": 46742086,
+      "path": "hosts/46742086.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI28": {
+      "original_source_id": "IAI28",
+      "deposit_file_id": 46742089,
+      "path": "hosts/46742089.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI29": {
+      "original_source_id": "IAI29",
+      "deposit_file_id": 46742092,
+      "path": "hosts/46742092.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI30": {
+      "original_source_id": "IAI30",
+      "deposit_file_id": 46742095,
+      "path": "hosts/46742095.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI31": {
+      "original_source_id": "IAI31",
+      "deposit_file_id": 46742098,
+      "path": "hosts/46742098.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI32": {
+      "original_source_id": "IAI32",
+      "deposit_file_id": 46742101,
+      "path": "hosts/46742101.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI33": {
+      "original_source_id": "IAI33",
+      "deposit_file_id": 46742104,
+      "path": "hosts/46742104.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI34": {
+      "original_source_id": "IAI34",
+      "deposit_file_id": 46742107,
+      "path": "hosts/46742107.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI35": {
+      "original_source_id": "IAI35",
+      "deposit_file_id": 46742110,
+      "path": "hosts/46742110.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI36": {
+      "original_source_id": "IAI36",
+      "deposit_file_id": 46742113,
+      "path": "hosts/46742113.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI37": {
+      "original_source_id": "IAI37",
+      "deposit_file_id": 46742116,
+      "path": "hosts/46742116.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI38": {
+      "original_source_id": "IAI38",
+      "deposit_file_id": 46742119,
+      "path": "hosts/46742119.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI39": {
+      "original_source_id": "IAI39",
+      "deposit_file_id": 46742122,
+      "path": "hosts/46742122.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI40": {
+      "original_source_id": "IAI40",
+      "deposit_file_id": 46742125,
+      "path": "hosts/46742125.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI41": {
+      "original_source_id": "IAI41",
+      "deposit_file_id": 46742299,
+      "path": "hosts/46742299.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI42": {
+      "original_source_id": "IAI42",
+      "deposit_file_id": 46742302,
+      "path": "hosts/46742302.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI43": {
+      "original_source_id": "IAI43",
+      "deposit_file_id": 46742305,
+      "path": "hosts/46742305.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI44": {
+      "original_source_id": "IAI44",
+      "deposit_file_id": 46742308,
+      "path": "hosts/46742308.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI45": {
+      "original_source_id": "IAI45",
+      "deposit_file_id": 46742311,
+      "path": "hosts/46742311.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI46": {
+      "original_source_id": "IAI46",
+      "deposit_file_id": 46742314,
+      "path": "hosts/46742314.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI47": {
+      "original_source_id": "IAI47",
+      "deposit_file_id": 46742317,
+      "path": "hosts/46742317.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI48": {
+      "original_source_id": "IAI48",
+      "deposit_file_id": 46742323,
+      "path": "hosts/46742323.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI49": {
+      "original_source_id": "IAI49",
+      "deposit_file_id": 46742320,
+      "path": "hosts/46742320.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI50": {
+      "original_source_id": "IAI50",
+      "deposit_file_id": 46742326,
+      "path": "hosts/46742326.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI51": {
+      "original_source_id": "IAI51",
+      "deposit_file_id": 46742329,
+      "path": "hosts/46742329.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI53": {
+      "original_source_id": "IAI53",
+      "deposit_file_id": 46742335,
+      "path": "hosts/46742335.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI54": {
+      "original_source_id": "IAI54",
+      "deposit_file_id": 46742332,
+      "path": "hosts/46742332.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI55": {
+      "original_source_id": "IAI55",
+      "deposit_file_id": 46742344,
+      "path": "hosts/46742344.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI56": {
+      "original_source_id": "IAI56",
+      "deposit_file_id": 46742338,
+      "path": "hosts/46742338.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI57": {
+      "original_source_id": "IAI57",
+      "deposit_file_id": 46742341,
+      "path": "hosts/46742341.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI58": {
+      "original_source_id": "IAI58",
+      "deposit_file_id": 46742347,
+      "path": "hosts/46742347.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI59": {
+      "original_source_id": "IAI59",
+      "deposit_file_id": 46742350,
+      "path": "hosts/46742350.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI60": {
+      "original_source_id": "IAI60",
+      "deposit_file_id": 46742353,
+      "path": "hosts/46742353.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI61": {
+      "original_source_id": "IAI61",
+      "deposit_file_id": 46742356,
+      "path": "hosts/46742356.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI62": {
+      "original_source_id": "IAI62",
+      "deposit_file_id": 46742359,
+      "path": "hosts/46742359.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI63": {
+      "original_source_id": "IAI63",
+      "deposit_file_id": 46742365,
+      "path": "hosts/46742365.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI64": {
+      "original_source_id": "IAI64",
+      "deposit_file_id": 46742362,
+      "path": "hosts/46742362.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI65": {
+      "original_source_id": "IAI65",
+      "deposit_file_id": 46742368,
+      "path": "hosts/46742368.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI66": {
+      "original_source_id": "IAI66",
+      "deposit_file_id": 46742371,
+      "path": "hosts/46742371.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI67": {
+      "original_source_id": "IAI67",
+      "deposit_file_id": 46742374,
+      "path": "hosts/46742374.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI68": {
+      "original_source_id": "IAI68",
+      "deposit_file_id": 46742377,
+      "path": "hosts/46742377.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI69": {
+      "original_source_id": "IAI69",
+      "deposit_file_id": 46742380,
+      "path": "hosts/46742380.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI70": {
+      "original_source_id": "IAI70",
+      "deposit_file_id": 46742383,
+      "path": "hosts/46742383.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI71": {
+      "original_source_id": "IAI71",
+      "deposit_file_id": 46742386,
+      "path": "hosts/46742386.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI72": {
+      "original_source_id": "IAI72",
+      "deposit_file_id": 46742389,
+      "path": "hosts/46742389.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI73": {
+      "original_source_id": "IAI73",
+      "deposit_file_id": 46742392,
+      "path": "hosts/46742392.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI74": {
+      "original_source_id": "IAI74",
+      "deposit_file_id": 46742395,
+      "path": "hosts/46742395.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI75": {
+      "original_source_id": "IAI75",
+      "deposit_file_id": 46742398,
+      "path": "hosts/46742398.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI76": {
+      "original_source_id": "IAI76",
+      "deposit_file_id": 46742401,
+      "path": "hosts/46742401.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI77": {
+      "original_source_id": "IAI77",
+      "deposit_file_id": 46742404,
+      "path": "hosts/46742404.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI78": {
+      "original_source_id": "IAI78",
+      "deposit_file_id": 46742407,
+      "path": "hosts/46742407.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI79": {
+      "original_source_id": "IAI79",
+      "deposit_file_id": 46742410,
+      "path": "hosts/46742410.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI80": {
+      "original_source_id": "IAI80",
+      "deposit_file_id": 46742413,
+      "path": "hosts/46742413.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI81": {
+      "original_source_id": "IAI81",
+      "deposit_file_id": 46742416,
+      "path": "hosts/46742416.fasta",
+      "stock_identity_verified": false
+    },
+    "IAI82": {
+      "original_source_id": "IAI82",
+      "deposit_file_id": 46742419,
+      "path": "hosts/46742419.fasta",
+      "stock_identity_verified": false
+    },
+    "LF31": {
+      "original_source_id": "LF31",
+      "deposit_file_id": 46742431,
+      "path": "hosts/46742431.fasta",
+      "stock_identity_verified": false
+    },
+    "LF50": {
+      "original_source_id": "LF50",
+      "deposit_file_id": 46742434,
+      "path": "hosts/46742434.fasta",
+      "stock_identity_verified": false
+    },
+    "LF7074": {
+      "original_source_id": "LF7074",
+      "deposit_file_id": 46742443,
+      "path": "hosts/46742443.fasta",
+      "stock_identity_verified": false
+    },
+    "LF73": {
+      "original_source_id": "LF73",
+      "deposit_file_id": 46742437,
+      "path": "hosts/46742437.fasta",
+      "stock_identity_verified": false
+    },
+    "LF82": {
+      "original_source_id": "LF82",
+      "deposit_file_id": 46742440,
+      "path": "hosts/46742440.fasta",
+      "stock_identity_verified": false
+    },
+    "LI10": {
+      "original_source_id": "LI10",
+      "deposit_file_id": 46742446,
+      "path": "hosts/46742446.fasta",
+      "stock_identity_verified": false
+    },
+    "LM02": {
+      "original_source_id": "LM02",
+      "deposit_file_id": 46742449,
+      "path": "hosts/46742449.fasta",
+      "stock_identity_verified": false
+    },
+    "LM07": {
+      "original_source_id": "LM07",
+      "deposit_file_id": 46742452,
+      "path": "hosts/46742452.fasta",
+      "stock_identity_verified": false
+    },
+    "LM08": {
+      "original_source_id": "LM08",
+      "deposit_file_id": 46742455,
+      "path": "hosts/46742455.fasta",
+      "stock_identity_verified": false
+    },
+    "LM33": {
+      "original_source_id": "LM33",
+      "deposit_file_id": 46742458,
+      "path": "hosts/46742458.fasta",
+      "stock_identity_verified": false
+    },
+    "LM40": {
+      "original_source_id": "LM40",
+      "deposit_file_id": 46742461,
+      "path": "hosts/46742461.fasta",
+      "stock_identity_verified": false
+    },
+    "LMR3158": {
+      "original_source_id": "LMR-3158",
+      "deposit_file_id": 46742464,
+      "path": "hosts/46742464.fasta",
+      "stock_identity_verified": false
+    },
+    "M863": {
+      "original_source_id": "M863",
+      "deposit_file_id": 46742467,
+      "path": "hosts/46742467.fasta",
+      "stock_identity_verified": false
+    },
+    "MT1B1": {
+      "original_source_id": "MT1B1",
+      "deposit_file_id": 46742470,
+      "path": "hosts/46742470.fasta",
+      "stock_identity_verified": false
+    },
+    "NAN33": {
+      "original_source_id": "NAN33",
+      "deposit_file_id": 46742473,
+      "path": "hosts/46742473.fasta",
+      "stock_identity_verified": false
+    },
+    "NIC06": {
+      "original_source_id": "NIC06",
+      "deposit_file_id": 46742476,
+      "path": "hosts/46742476.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS01": {
+      "original_source_id": "NILS01",
+      "deposit_file_id": 46742479,
+      "path": "hosts/46742479.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS02": {
+      "original_source_id": "NILS02",
+      "deposit_file_id": 46742482,
+      "path": "hosts/46742482.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS03": {
+      "original_source_id": "NILS03",
+      "deposit_file_id": 46742485,
+      "path": "hosts/46742485.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS04": {
+      "original_source_id": "NILS04",
+      "deposit_file_id": 46742488,
+      "path": "hosts/46742488.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS05": {
+      "original_source_id": "NILS05",
+      "deposit_file_id": 46742491,
+      "path": "hosts/46742491.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS06": {
+      "original_source_id": "NILS06",
+      "deposit_file_id": 46742494,
+      "path": "hosts/46742494.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS07": {
+      "original_source_id": "NILS07",
+      "deposit_file_id": 46742497,
+      "path": "hosts/46742497.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS08": {
+      "original_source_id": "NILS08",
+      "deposit_file_id": 46742500,
+      "path": "hosts/46742500.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS09": {
+      "original_source_id": "NILS09",
+      "deposit_file_id": 46742503,
+      "path": "hosts/46742503.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS10": {
+      "original_source_id": "NILS10",
+      "deposit_file_id": 46742506,
+      "path": "hosts/46742506.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS11": {
+      "original_source_id": "NILS11",
+      "deposit_file_id": 46742509,
+      "path": "hosts/46742509.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS12": {
+      "original_source_id": "NILS12",
+      "deposit_file_id": 46742512,
+      "path": "hosts/46742512.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS13": {
+      "original_source_id": "NILS13",
+      "deposit_file_id": 46742515,
+      "path": "hosts/46742515.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS14": {
+      "original_source_id": "NILS14",
+      "deposit_file_id": 46742518,
+      "path": "hosts/46742518.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS15": {
+      "original_source_id": "NILS15",
+      "deposit_file_id": 46742521,
+      "path": "hosts/46742521.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS16": {
+      "original_source_id": "NILS16",
+      "deposit_file_id": 46742524,
+      "path": "hosts/46742524.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS17": {
+      "original_source_id": "NILS17",
+      "deposit_file_id": 46742527,
+      "path": "hosts/46742527.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS18": {
+      "original_source_id": "NILS18",
+      "deposit_file_id": 46742530,
+      "path": "hosts/46742530.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS19": {
+      "original_source_id": "NILS19",
+      "deposit_file_id": 46742533,
+      "path": "hosts/46742533.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS20": {
+      "original_source_id": "NILS20",
+      "deposit_file_id": 46742536,
+      "path": "hosts/46742536.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS21": {
+      "original_source_id": "NILS21",
+      "deposit_file_id": 46742617,
+      "path": "hosts/46742617.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS22": {
+      "original_source_id": "NILS22",
+      "deposit_file_id": 46742620,
+      "path": "hosts/46742620.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS23": {
+      "original_source_id": "NILS23",
+      "deposit_file_id": 46742623,
+      "path": "hosts/46742623.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS24": {
+      "original_source_id": "NILS24",
+      "deposit_file_id": 46742626,
+      "path": "hosts/46742626.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS25": {
+      "original_source_id": "NILS25",
+      "deposit_file_id": 46742629,
+      "path": "hosts/46742629.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS26": {
+      "original_source_id": "NILS26",
+      "deposit_file_id": 46742632,
+      "path": "hosts/46742632.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS27": {
+      "original_source_id": "NILS27",
+      "deposit_file_id": 46742635,
+      "path": "hosts/46742635.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS28": {
+      "original_source_id": "NILS28",
+      "deposit_file_id": 46742641,
+      "path": "hosts/46742641.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS29": {
+      "original_source_id": "NILS29",
+      "deposit_file_id": 46742638,
+      "path": "hosts/46742638.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS30": {
+      "original_source_id": "NILS30",
+      "deposit_file_id": 46742644,
+      "path": "hosts/46742644.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS31": {
+      "original_source_id": "NILS31",
+      "deposit_file_id": 46742647,
+      "path": "hosts/46742647.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS32": {
+      "original_source_id": "NILS32",
+      "deposit_file_id": 46742650,
+      "path": "hosts/46742650.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS33": {
+      "original_source_id": "NILS33",
+      "deposit_file_id": 46742653,
+      "path": "hosts/46742653.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS34": {
+      "original_source_id": "NILS34",
+      "deposit_file_id": 46742665,
+      "path": "hosts/46742665.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS35": {
+      "original_source_id": "NILS35",
+      "deposit_file_id": 46742656,
+      "path": "hosts/46742656.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS36": {
+      "original_source_id": "NILS36",
+      "deposit_file_id": 46742659,
+      "path": "hosts/46742659.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS37": {
+      "original_source_id": "NILS37",
+      "deposit_file_id": 46742662,
+      "path": "hosts/46742662.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS38": {
+      "original_source_id": "NILS38",
+      "deposit_file_id": 46742668,
+      "path": "hosts/46742668.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS39": {
+      "original_source_id": "NILS39",
+      "deposit_file_id": 46742671,
+      "path": "hosts/46742671.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS40": {
+      "original_source_id": "NILS40",
+      "deposit_file_id": 46742674,
+      "path": "hosts/46742674.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS41": {
+      "original_source_id": "NILS41",
+      "deposit_file_id": 46742677,
+      "path": "hosts/46742677.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS42": {
+      "original_source_id": "NILS42",
+      "deposit_file_id": 46742680,
+      "path": "hosts/46742680.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS43": {
+      "original_source_id": "NILS43",
+      "deposit_file_id": 46742683,
+      "path": "hosts/46742683.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS44": {
+      "original_source_id": "NILS44",
+      "deposit_file_id": 46742686,
+      "path": "hosts/46742686.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS45": {
+      "original_source_id": "NILS45",
+      "deposit_file_id": 46742689,
+      "path": "hosts/46742689.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS46": {
+      "original_source_id": "NILS46",
+      "deposit_file_id": 46742692,
+      "path": "hosts/46742692.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS47": {
+      "original_source_id": "NILS47",
+      "deposit_file_id": 46742695,
+      "path": "hosts/46742695.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS48": {
+      "original_source_id": "NILS48",
+      "deposit_file_id": 46742698,
+      "path": "hosts/46742698.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS49": {
+      "original_source_id": "NILS49",
+      "deposit_file_id": 46742701,
+      "path": "hosts/46742701.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS50": {
+      "original_source_id": "NILS50",
+      "deposit_file_id": 46742704,
+      "path": "hosts/46742704.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS51": {
+      "original_source_id": "NILS51",
+      "deposit_file_id": 46742707,
+      "path": "hosts/46742707.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS52": {
+      "original_source_id": "NILS52",
+      "deposit_file_id": 46742710,
+      "path": "hosts/46742710.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS53": {
+      "original_source_id": "NILS53",
+      "deposit_file_id": 46742713,
+      "path": "hosts/46742713.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS54": {
+      "original_source_id": "NILS54",
+      "deposit_file_id": 46742716,
+      "path": "hosts/46742716.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS55": {
+      "original_source_id": "NILS55",
+      "deposit_file_id": 46742719,
+      "path": "hosts/46742719.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS56": {
+      "original_source_id": "NILS56",
+      "deposit_file_id": 46742722,
+      "path": "hosts/46742722.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS57": {
+      "original_source_id": "NILS57",
+      "deposit_file_id": 46742725,
+      "path": "hosts/46742725.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS58": {
+      "original_source_id": "NILS58",
+      "deposit_file_id": 46742728,
+      "path": "hosts/46742728.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS59": {
+      "original_source_id": "NILS59",
+      "deposit_file_id": 46742731,
+      "path": "hosts/46742731.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS60": {
+      "original_source_id": "NILS60",
+      "deposit_file_id": 46742734,
+      "path": "hosts/46742734.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS61": {
+      "original_source_id": "NILS61",
+      "deposit_file_id": 46742737,
+      "path": "hosts/46742737.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS62": {
+      "original_source_id": "NILS62",
+      "deposit_file_id": 46742740,
+      "path": "hosts/46742740.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS63": {
+      "original_source_id": "NILS63",
+      "deposit_file_id": 46742743,
+      "path": "hosts/46742743.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS64": {
+      "original_source_id": "NILS64",
+      "deposit_file_id": 46742746,
+      "path": "hosts/46742746.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS65": {
+      "original_source_id": "NILS65",
+      "deposit_file_id": 46742749,
+      "path": "hosts/46742749.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS66": {
+      "original_source_id": "NILS66",
+      "deposit_file_id": 46742752,
+      "path": "hosts/46742752.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS67": {
+      "original_source_id": "NILS67",
+      "deposit_file_id": 46742755,
+      "path": "hosts/46742755.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS68": {
+      "original_source_id": "NILS68",
+      "deposit_file_id": 46742758,
+      "path": "hosts/46742758.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS69": {
+      "original_source_id": "NILS69",
+      "deposit_file_id": 46742761,
+      "path": "hosts/46742761.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS70": {
+      "original_source_id": "NILS70",
+      "deposit_file_id": 46742764,
+      "path": "hosts/46742764.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS71": {
+      "original_source_id": "NILS71",
+      "deposit_file_id": 46742767,
+      "path": "hosts/46742767.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS72": {
+      "original_source_id": "NILS72",
+      "deposit_file_id": 46742770,
+      "path": "hosts/46742770.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS73": {
+      "original_source_id": "NILS73",
+      "deposit_file_id": 46742773,
+      "path": "hosts/46742773.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS74": {
+      "original_source_id": "NILS74",
+      "deposit_file_id": 46742776,
+      "path": "hosts/46742776.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS75": {
+      "original_source_id": "NILS75",
+      "deposit_file_id": 46742779,
+      "path": "hosts/46742779.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS76": {
+      "original_source_id": "NILS76",
+      "deposit_file_id": 46742782,
+      "path": "hosts/46742782.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS77": {
+      "original_source_id": "NILS77",
+      "deposit_file_id": 46742785,
+      "path": "hosts/46742785.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS78": {
+      "original_source_id": "NILS78",
+      "deposit_file_id": 46742788,
+      "path": "hosts/46742788.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS79": {
+      "original_source_id": "NILS79",
+      "deposit_file_id": 46742791,
+      "path": "hosts/46742791.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS80": {
+      "original_source_id": "NILS80",
+      "deposit_file_id": 46742794,
+      "path": "hosts/46742794.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS81": {
+      "original_source_id": "NILS81",
+      "deposit_file_id": 46742797,
+      "path": "hosts/46742797.fasta",
+      "stock_identity_verified": false
+    },
+    "NILS82": {
+      "original_source_id": "NILS82",
+      "deposit_file_id": 46742800,
+      "path": "hosts/46742800.fasta",
+      "stock_identity_verified": false
+    },
+    "NRG807C": {
+      "original_source_id": "NRG807C",
+      "deposit_file_id": 46742812,
+      "path": "hosts/46742812.fasta",
+      "stock_identity_verified": false
+    },
+    "PDP110": {
+      "original_source_id": "PDP110",
+      "deposit_file_id": 46742818,
+      "path": "hosts/46742818.fasta",
+      "stock_identity_verified": false
+    },
+    "PDP21": {
+      "original_source_id": "PDP21",
+      "deposit_file_id": 46742815,
+      "path": "hosts/46742815.fasta",
+      "stock_identity_verified": false
+    },
+    "PDP351": {
+      "original_source_id": "PDP351",
+      "deposit_file_id": 46742821,
+      "path": "hosts/46742821.fasta",
+      "stock_identity_verified": false
+    },
+    "ROAR012": {
+      "original_source_id": "ROAR012",
+      "deposit_file_id": 46742824,
+      "path": "hosts/46742824.fasta",
+      "stock_identity_verified": false
+    },
+    "ROAR019": {
+      "original_source_id": "ROAR019",
+      "deposit_file_id": 46742827,
+      "path": "hosts/46742827.fasta",
+      "stock_identity_verified": false
+    },
+    "ROAR029": {
+      "original_source_id": "ROAR029",
+      "deposit_file_id": 46742830,
+      "path": "hosts/46742830.fasta",
+      "stock_identity_verified": false
+    },
+    "ROAR036": {
+      "original_source_id": "ROAR036",
+      "deposit_file_id": 46742833,
+      "path": "hosts/46742833.fasta",
+      "stock_identity_verified": false
+    },
+    "ROAR043": {
+      "original_source_id": "ROAR043",
+      "deposit_file_id": 46742836,
+      "path": "hosts/46742836.fasta",
+      "stock_identity_verified": false
+    },
+    "ROAR047": {
+      "original_source_id": "ROAR047",
+      "deposit_file_id": 46742839,
+      "path": "hosts/46742839.fasta",
+      "stock_identity_verified": false
+    },
+    "ROAR059": {
+      "original_source_id": "ROAR059",
+      "deposit_file_id": 46742842,
+      "path": "hosts/46742842.fasta",
+      "stock_identity_verified": false
+    },
+    "ROAR061": {
+      "original_source_id": "ROAR061",
+      "deposit_file_id": 46742845,
+      "path": "hosts/46742845.fasta",
+      "stock_identity_verified": false
+    },
+    "ROAR072": {
+      "original_source_id": "ROAR072",
+      "deposit_file_id": 46742848,
+      "path": "hosts/46742848.fasta",
+      "stock_identity_verified": false
+    },
+    "ROAR082": {
+      "original_source_id": "ROAR082",
+      "deposit_file_id": 46742851,
+      "path": "hosts/46742851.fasta",
+      "stock_identity_verified": false
+    },
+    "ROAR116": {
+      "original_source_id": "ROAR116",
+      "deposit_file_id": 46742854,
+      "path": "hosts/46742854.fasta",
+      "stock_identity_verified": false
+    },
+    "ROAR129": {
+      "original_source_id": "ROAR129",
+      "deposit_file_id": 46742857,
+      "path": "hosts/46742857.fasta",
+      "stock_identity_verified": false
+    },
+    "ROAR130": {
+      "original_source_id": "ROAR130",
+      "deposit_file_id": 46742860,
+      "path": "hosts/46742860.fasta",
+      "stock_identity_verified": false
+    },
+    "ROAR131": {
+      "original_source_id": "ROAR131",
+      "deposit_file_id": 46742863,
+      "path": "hosts/46742863.fasta",
+      "stock_identity_verified": false
+    },
+    "ROAR145": {
+      "original_source_id": "ROAR145",
+      "deposit_file_id": 46742866,
+      "path": "hosts/46742866.fasta",
+      "stock_identity_verified": false
+    },
+    "ROAR176": {
+      "original_source_id": "ROAR176",
+      "deposit_file_id": 46742869,
+      "path": "hosts/46742869.fasta",
+      "stock_identity_verified": false
+    },
+    "ROAR178": {
+      "original_source_id": "ROAR178",
+      "deposit_file_id": 46742872,
+      "path": "hosts/46742872.fasta",
+      "stock_identity_verified": false
+    },
+    "ROAR185": {
+      "original_source_id": "ROAR185",
+      "deposit_file_id": 46742875,
+      "path": "hosts/46742875.fasta",
+      "stock_identity_verified": false
+    },
+    "ROAR205": {
+      "original_source_id": "ROAR205",
+      "deposit_file_id": 46742878,
+      "path": "hosts/46742878.fasta",
+      "stock_identity_verified": false
+    },
+    "ROAR220": {
+      "original_source_id": "ROAR220",
+      "deposit_file_id": 46742881,
+      "path": "hosts/46742881.fasta",
+      "stock_identity_verified": false
+    },
+    "ROAR274": {
+      "original_source_id": "ROAR274",
+      "deposit_file_id": 46742884,
+      "path": "hosts/46742884.fasta",
+      "stock_identity_verified": false
+    },
+    "ROAR291": {
+      "original_source_id": "ROAR291",
+      "deposit_file_id": 46742887,
+      "path": "hosts/46742887.fasta",
+      "stock_identity_verified": false
+    },
+    "ROAR292": {
+      "original_source_id": "ROAR292",
+      "deposit_file_id": 46742890,
+      "path": "hosts/46742890.fasta",
+      "stock_identity_verified": false
+    },
+    "ROAR334": {
+      "original_source_id": "ROAR334",
+      "deposit_file_id": 46742893,
+      "path": "hosts/46742893.fasta",
+      "stock_identity_verified": false
+    },
+    "ROAR344": {
+      "original_source_id": "ROAR344",
+      "deposit_file_id": 46742896,
+      "path": "hosts/46742896.fasta",
+      "stock_identity_verified": false
+    },
+    "ROAR387": {
+      "original_source_id": "ROAR387",
+      "deposit_file_id": 46742899,
+      "path": "hosts/46742899.fasta",
+      "stock_identity_verified": false
+    },
+    "ROAR400": {
+      "original_source_id": "ROAR400",
+      "deposit_file_id": 46742902,
+      "path": "hosts/46742902.fasta",
+      "stock_identity_verified": false
+    },
+    "ROAR419": {
+      "original_source_id": "ROAR419",
+      "deposit_file_id": 46742905,
+      "path": "hosts/46742905.fasta",
+      "stock_identity_verified": false
+    },
+    "ROAR434": {
+      "original_source_id": "ROAR434",
+      "deposit_file_id": 46742908,
+      "path": "hosts/46742908.fasta",
+      "stock_identity_verified": false
+    },
+    "ROAR438": {
+      "original_source_id": "ROAR438",
+      "deposit_file_id": 46742911,
+      "path": "hosts/46742911.fasta",
+      "stock_identity_verified": false
+    },
+    "S1109": {
+      "original_source_id": "S1-109",
+      "deposit_file_id": 46742926,
+      "path": "hosts/46742926.fasta",
+      "stock_identity_verified": false
+    },
+    "S111": {
+      "original_source_id": "S1-11",
+      "deposit_file_id": 46742914,
+      "path": "hosts/46742914.fasta",
+      "stock_identity_verified": false
+    },
+    "S176": {
+      "original_source_id": "S1-76",
+      "deposit_file_id": 46742917,
+      "path": "hosts/46742917.fasta",
+      "stock_identity_verified": false
+    },
+    "S184": {
+      "original_source_id": "S1-84",
+      "deposit_file_id": 46742920,
+      "path": "hosts/46742920.fasta",
+      "stock_identity_verified": false
+    },
+    "S191": {
+      "original_source_id": "S1-91",
+      "deposit_file_id": 46742923,
+      "path": "hosts/46742923.fasta",
+      "stock_identity_verified": false
+    },
+    "S21": {
+      "original_source_id": "S2-1",
+      "deposit_file_id": 46742929,
+      "path": "hosts/46742929.fasta",
+      "stock_identity_verified": false
+    },
+    "T145": {
+      "original_source_id": "T145",
+      "deposit_file_id": 46742932,
+      "path": "hosts/46742932.fasta",
+      "stock_identity_verified": false
+    },
+    "T147": {
+      "original_source_id": "T147",
+      "deposit_file_id": 46742938,
+      "path": "hosts/46742938.fasta",
+      "stock_identity_verified": false
+    },
+    "T205": {
+      "original_source_id": "T205",
+      "deposit_file_id": 46742944,
+      "path": "hosts/46742944.fasta",
+      "stock_identity_verified": false
+    },
+    "TW10509": {
+      "original_source_id": "TW10509",
+      "deposit_file_id": 46742941,
+      "path": "hosts/46742941.fasta",
+      "stock_identity_verified": false
+    },
+    "VDG427": {
+      "original_source_id": "VDG427",
+      "deposit_file_id": 46742947,
+      "path": "hosts/46742947.fasta",
+      "stock_identity_verified": false
+    }
+  },
+  "exact_original_source_id_matches": 402,
+  "host_inputs": {
+    "expected": 403,
+    "verified": 8,
+    "missing_paths": [
+      "hosts/46741453.fasta",
+      "hosts/46741456.fasta",
+      "hosts/46741459.fasta",
+      "hosts/46741462.fasta",
+      "hosts/46741465.fasta",
+      "hosts/46741468.fasta",
+      "hosts/46741471.fasta",
+      "hosts/46741474.fasta",
+      "hosts/46741477.fasta",
+      "hosts/46741480.fasta",
+      "hosts/46741483.fasta",
+      "hosts/46741486.fasta",
+      "hosts/46741489.fasta",
+      "hosts/46741492.fasta",
+      "hosts/46741495.fasta",
+      "hosts/46741498.fasta",
+      "hosts/46741501.fasta",
+      "hosts/46741504.fasta",
+      "hosts/46741507.fasta",
+      "hosts/46741510.fasta",
+      "hosts/46741513.fasta",
+      "hosts/46741516.fasta",
+      "hosts/46741519.fasta",
+      "hosts/46741525.fasta",
+      "hosts/46741528.fasta",
+      "hosts/46741531.fasta",
+      "hosts/46741534.fasta",
+      "hosts/46741537.fasta",
+      "hosts/46741540.fasta",
+      "hosts/46741546.fasta",
+      "hosts/46741552.fasta",
+      "hosts/46741555.fasta",
+      "hosts/46741558.fasta",
+      "hosts/46741561.fasta",
+      "hosts/46741564.fasta",
+      "hosts/46741567.fasta",
+      "hosts/46741570.fasta",
+      "hosts/46741573.fasta",
+      "hosts/46741576.fasta",
+      "hosts/46741579.fasta",
+      "hosts/46741582.fasta",
+      "hosts/46741585.fasta",
+      "hosts/46741588.fasta",
+      "hosts/46741591.fasta",
+      "hosts/46741594.fasta",
+      "hosts/46741597.fasta",
+      "hosts/46741600.fasta",
+      "hosts/46741603.fasta",
+      "hosts/46741606.fasta",
+      "hosts/46741609.fasta",
+      "hosts/46741612.fasta",
+      "hosts/46741615.fasta",
+      "hosts/46741618.fasta",
+      "hosts/46741621.fasta",
+      "hosts/46741624.fasta",
+      "hosts/46741627.fasta",
+      "hosts/46741630.fasta",
+      "hosts/46741633.fasta",
+      "hosts/46741636.fasta",
+      "hosts/46741639.fasta",
+      "hosts/46741645.fasta",
+      "hosts/46741648.fasta",
+      "hosts/46741651.fasta",
+      "hosts/46741654.fasta",
+      "hosts/46741657.fasta",
+      "hosts/46741660.fasta",
+      "hosts/46741663.fasta",
+      "hosts/46741669.fasta",
+      "hosts/46741672.fasta",
+      "hosts/46741675.fasta",
+      "hosts/46741678.fasta",
+      "hosts/46741681.fasta",
+      "hosts/46741684.fasta",
+      "hosts/46741687.fasta",
+      "hosts/46741690.fasta",
+      "hosts/46741693.fasta",
+      "hosts/46741696.fasta",
+      "hosts/46741699.fasta",
+      "hosts/46741702.fasta",
+      "hosts/46741705.fasta",
+      "hosts/46741711.fasta",
+      "hosts/46741714.fasta",
+      "hosts/46741717.fasta",
+      "hosts/46741720.fasta",
+      "hosts/46741723.fasta",
+      "hosts/46741726.fasta",
+      "hosts/46741729.fasta",
+      "hosts/46741735.fasta",
+      "hosts/46741738.fasta",
+      "hosts/46741741.fasta",
+      "hosts/46741744.fasta",
+      "hosts/46741747.fasta",
+      "hosts/46741750.fasta",
+      "hosts/46741753.fasta",
+      "hosts/46741756.fasta",
+      "hosts/46741765.fasta",
+      "hosts/46741768.fasta",
+      "hosts/46741771.fasta",
+      "hosts/46741774.fasta",
+      "hosts/46741777.fasta",
+      "hosts/46741780.fasta",
+      "hosts/46741783.fasta",
+      "hosts/46741786.fasta",
+      "hosts/46741789.fasta",
+      "hosts/46741792.fasta",
+      "hosts/46741795.fasta",
+      "hosts/46741798.fasta",
+      "hosts/46741801.fasta",
+      "hosts/46741804.fasta",
+      "hosts/46741807.fasta",
+      "hosts/46741810.fasta",
+      "hosts/46741813.fasta",
+      "hosts/46741816.fasta",
+      "hosts/46741819.fasta",
+      "hosts/46741822.fasta",
+      "hosts/46741825.fasta",
+      "hosts/46741828.fasta",
+      "hosts/46741834.fasta",
+      "hosts/46741837.fasta",
+      "hosts/46741843.fasta",
+      "hosts/46741849.fasta",
+      "hosts/46741852.fasta",
+      "hosts/46741855.fasta",
+      "hosts/46741858.fasta",
+      "hosts/46741861.fasta",
+      "hosts/46741864.fasta",
+      "hosts/46741867.fasta",
+      "hosts/46741870.fasta",
+      "hosts/46741873.fasta",
+      "hosts/46741876.fasta",
+      "hosts/46741879.fasta",
+      "hosts/46741882.fasta",
+      "hosts/46741885.fasta",
+      "hosts/46741888.fasta",
+      "hosts/46741891.fasta",
+      "hosts/46741894.fasta",
+      "hosts/46741897.fasta",
+      "hosts/46741900.fasta",
+      "hosts/46741903.fasta",
+      "hosts/46741906.fasta",
+      "hosts/46741909.fasta",
+      "hosts/46741912.fasta",
+      "hosts/46741915.fasta",
+      "hosts/46741918.fasta",
+      "hosts/46741921.fasta",
+      "hosts/46741924.fasta",
+      "hosts/46741927.fasta",
+      "hosts/46741930.fasta",
+      "hosts/46741933.fasta",
+      "hosts/46741936.fasta",
+      "hosts/46741939.fasta",
+      "hosts/46741942.fasta",
+      "hosts/46741945.fasta",
+      "hosts/46741948.fasta",
+      "hosts/46741951.fasta",
+      "hosts/46741954.fasta",
+      "hosts/46741957.fasta",
+      "hosts/46741960.fasta",
+      "hosts/46741966.fasta",
+      "hosts/46741969.fasta",
+      "hosts/46741972.fasta",
+      "hosts/46741975.fasta",
+      "hosts/46741978.fasta",
+      "hosts/46741981.fasta",
+      "hosts/46741984.fasta",
+      "hosts/46741987.fasta",
+      "hosts/46741990.fasta",
+      "hosts/46741993.fasta",
+      "hosts/46741996.fasta",
+      "hosts/46741999.fasta",
+      "hosts/46742002.fasta",
+      "hosts/46742005.fasta",
+      "hosts/46742008.fasta",
+      "hosts/46742011.fasta",
+      "hosts/46742014.fasta",
+      "hosts/46742017.fasta",
+      "hosts/46742020.fasta",
+      "hosts/46742023.fasta",
+      "hosts/46742026.fasta",
+      "hosts/46742029.fasta",
+      "hosts/46742032.fasta",
+      "hosts/46742035.fasta",
+      "hosts/46742038.fasta",
+      "hosts/46742041.fasta",
+      "hosts/46742044.fasta",
+      "hosts/46742047.fasta",
+      "hosts/46742050.fasta",
+      "hosts/46742053.fasta",
+      "hosts/46742056.fasta",
+      "hosts/46742059.fasta",
+      "hosts/46742062.fasta",
+      "hosts/46742065.fasta",
+      "hosts/46742068.fasta",
+      "hosts/46742071.fasta",
+      "hosts/46742074.fasta",
+      "hosts/46742077.fasta",
+      "hosts/46742080.fasta",
+      "hosts/46742083.fasta",
+      "hosts/46742086.fasta",
+      "hosts/46742089.fasta",
+      "hosts/46742092.fasta",
+      "hosts/46742095.fasta",
+      "hosts/46742098.fasta",
+      "hosts/46742101.fasta",
+      "hosts/46742104.fasta",
+      "hosts/46742107.fasta",
+      "hosts/46742110.fasta",
+      "hosts/46742113.fasta",
+      "hosts/46742116.fasta",
+      "hosts/46742122.fasta",
+      "hosts/46742125.fasta",
+      "hosts/46742299.fasta",
+      "hosts/46742302.fasta",
+      "hosts/46742305.fasta",
+      "hosts/46742308.fasta",
+      "hosts/46742311.fasta",
+      "hosts/46742314.fasta",
+      "hosts/46742317.fasta",
+      "hosts/46742320.fasta",
+      "hosts/46742323.fasta",
+      "hosts/46742326.fasta",
+      "hosts/46742329.fasta",
+      "hosts/46742332.fasta",
+      "hosts/46742335.fasta",
+      "hosts/46742338.fasta",
+      "hosts/46742341.fasta",
+      "hosts/46742344.fasta",
+      "hosts/46742347.fasta",
+      "hosts/46742350.fasta",
+      "hosts/46742353.fasta",
+      "hosts/46742356.fasta",
+      "hosts/46742359.fasta",
+      "hosts/46742362.fasta",
+      "hosts/46742365.fasta",
+      "hosts/46742368.fasta",
+      "hosts/46742371.fasta",
+      "hosts/46742374.fasta",
+      "hosts/46742377.fasta",
+      "hosts/46742380.fasta",
+      "hosts/46742383.fasta",
+      "hosts/46742386.fasta",
+      "hosts/46742389.fasta",
+      "hosts/46742392.fasta",
+      "hosts/46742395.fasta",
+      "hosts/46742398.fasta",
+      "hosts/46742401.fasta",
+      "hosts/46742404.fasta",
+      "hosts/46742407.fasta",
+      "hosts/46742410.fasta",
+      "hosts/46742413.fasta",
+      "hosts/46742416.fasta",
+      "hosts/46742419.fasta",
+      "hosts/46742431.fasta",
+      "hosts/46742434.fasta",
+      "hosts/46742437.fasta",
+      "hosts/46742440.fasta",
+      "hosts/46742443.fasta",
+      "hosts/46742446.fasta",
+      "hosts/46742449.fasta",
+      "hosts/46742452.fasta",
+      "hosts/46742455.fasta",
+      "hosts/46742458.fasta",
+      "hosts/46742461.fasta",
+      "hosts/46742464.fasta",
+      "hosts/46742467.fasta",
+      "hosts/46742470.fasta",
+      "hosts/46742473.fasta",
+      "hosts/46742476.fasta",
+      "hosts/46742479.fasta",
+      "hosts/46742482.fasta",
+      "hosts/46742485.fasta",
+      "hosts/46742488.fasta",
+      "hosts/46742491.fasta",
+      "hosts/46742494.fasta",
+      "hosts/46742497.fasta",
+      "hosts/46742500.fasta",
+      "hosts/46742503.fasta",
+      "hosts/46742506.fasta",
+      "hosts/46742509.fasta",
+      "hosts/46742512.fasta",
+      "hosts/46742515.fasta",
+      "hosts/46742518.fasta",
+      "hosts/46742521.fasta",
+      "hosts/46742524.fasta",
+      "hosts/46742527.fasta",
+      "hosts/46742530.fasta",
+      "hosts/46742533.fasta",
+      "hosts/46742536.fasta",
+      "hosts/46742617.fasta",
+      "hosts/46742620.fasta",
+      "hosts/46742623.fasta",
+      "hosts/46742626.fasta",
+      "hosts/46742629.fasta",
+      "hosts/46742632.fasta",
+      "hosts/46742635.fasta",
+      "hosts/46742638.fasta",
+      "hosts/46742641.fasta",
+      "hosts/46742644.fasta",
+      "hosts/46742647.fasta",
+      "hosts/46742650.fasta",
+      "hosts/46742653.fasta",
+      "hosts/46742656.fasta",
+      "hosts/46742659.fasta",
+      "hosts/46742662.fasta",
+      "hosts/46742665.fasta",
+      "hosts/46742668.fasta",
+      "hosts/46742671.fasta",
+      "hosts/46742674.fasta",
+      "hosts/46742677.fasta",
+      "hosts/46742680.fasta",
+      "hosts/46742683.fasta",
+      "hosts/46742686.fasta",
+      "hosts/46742689.fasta",
+      "hosts/46742692.fasta",
+      "hosts/46742695.fasta",
+      "hosts/46742698.fasta",
+      "hosts/46742701.fasta",
+      "hosts/46742704.fasta",
+      "hosts/46742707.fasta",
+      "hosts/46742710.fasta",
+      "hosts/46742713.fasta",
+      "hosts/46742716.fasta",
+      "hosts/46742719.fasta",
+      "hosts/46742722.fasta",
+      "hosts/46742725.fasta",
+      "hosts/46742728.fasta",
+      "hosts/46742731.fasta",
+      "hosts/46742734.fasta",
+      "hosts/46742737.fasta",
+      "hosts/46742740.fasta",
+      "hosts/46742743.fasta",
+      "hosts/46742746.fasta",
+      "hosts/46742749.fasta",
+      "hosts/46742752.fasta",
+      "hosts/46742755.fasta",
+      "hosts/46742758.fasta",
+      "hosts/46742761.fasta",
+      "hosts/46742764.fasta",
+      "hosts/46742767.fasta",
+      "hosts/46742770.fasta",
+      "hosts/46742773.fasta",
+      "hosts/46742776.fasta",
+      "hosts/46742779.fasta",
+      "hosts/46742782.fasta",
+      "hosts/46742785.fasta",
+      "hosts/46742788.fasta",
+      "hosts/46742791.fasta",
+      "hosts/46742794.fasta",
+      "hosts/46742797.fasta",
+      "hosts/46742800.fasta",
+      "hosts/46742812.fasta",
+      "hosts/46742815.fasta",
+      "hosts/46742818.fasta",
+      "hosts/46742821.fasta",
+      "hosts/46742824.fasta",
+      "hosts/46742827.fasta",
+      "hosts/46742830.fasta",
+      "hosts/46742833.fasta",
+      "hosts/46742836.fasta",
+      "hosts/46742839.fasta",
+      "hosts/46742842.fasta",
+      "hosts/46742845.fasta",
+      "hosts/46742848.fasta",
+      "hosts/46742851.fasta",
+      "hosts/46742854.fasta",
+      "hosts/46742857.fasta",
+      "hosts/46742860.fasta",
+      "hosts/46742863.fasta",
+      "hosts/46742866.fasta",
+      "hosts/46742869.fasta",
+      "hosts/46742872.fasta",
+      "hosts/46742875.fasta",
+      "hosts/46742878.fasta",
+      "hosts/46742881.fasta",
+      "hosts/46742884.fasta",
+      "hosts/46742887.fasta",
+      "hosts/46742890.fasta",
+      "hosts/46742893.fasta",
+      "hosts/46742896.fasta",
+      "hosts/46742899.fasta",
+      "hosts/46742902.fasta",
+      "hosts/46742905.fasta",
+      "hosts/46742908.fasta",
+      "hosts/46742911.fasta",
+      "hosts/46742914.fasta",
+      "hosts/46742917.fasta",
+      "hosts/46742920.fasta",
+      "hosts/46742923.fasta",
+      "hosts/46742926.fasta",
+      "hosts/46742929.fasta",
+      "hosts/46742932.fasta",
+      "hosts/46742938.fasta",
+      "hosts/46742941.fasta",
+      "hosts/46742944.fasta",
+      "hosts/46742947.fasta"
+    ],
+    "verified_file_sha256": {
+      "B1747": "3445b60570f03544ded03a503ce16028dd56e46ce90d3113cf70a079ff803247",
+      "ECOR-10": "9700ca26147983b448f5a798c1d92cef7a13ea003fb50a28c085ba4baf3a5e3c",
+      "ECOR-18": "ebe0b677a82bacddb3a375434bb137800556ed6ccb3be3596f645a87d8f6fe8e",
+      "ECOR-32": "82a6873cd6bf5429dac2996fb5964dd4ed7f264177ed79f62b45ce6ec4b62fa0",
+      "ECOR-40": "cd010fbaed4c264dd5a2a6290c0b49174899ec26001a182d0387395810311b59",
+      "ECOR-72": "ab74592bebf3c490ac57cbdd9a8d8f7e59d57c6732faaa71eb80552e6ac07d2d",
+      "FN116": "82ea68775776f8c429ddef5d42975e613c302534ac811920781b843a89f5be0e",
+      "IAI38": "c89ca3b7907afb0b9911b7f8bfb1af7b63e79bae401a80707d83575b6d2be1a5"
+    }
+  },
+  "candidate_source_label_counts": {
+    "all_rows": 37788,
+    "source_empty_excluded": 156,
+    "nonblank_conflicts": 0,
+    "consistent_nonblank_rows": 37632
+  },
+  "phage_groups_sha256": "e81fb71e633ccc40159a2f40339aead059e06f60f24a49fbd00319bcdf819574",
+  "phage_group_builder_sha256": "3938320ad118f26b4610d2205e91a9da5e9d9f414fc5601c7dd9fbe5eedab790",
+  "phage_inputs": {
+    "verified_source_files": 97,
+    "missing_paths": [],
+    "verified_source_file_sha256": {
+      "409_P1": "f740dd382d30657b5daa373297d2ae4bb023eb8929556a25f40a2f2b15e7c5b5",
+      "409_P3": "69ec48c74ab61e367221aba8d33da7091f13f0e6166c8ce8fe12cee9335a5553",
+      "409_P5": "c332579df1b32ab3bb8e84b84211888737ce34690277fab067a0b8e8a4d17fe4",
+      "409_P6": "7d683d5bb6729da34a7d203387e17f2a372cc2358be727e27db5f0ba4f66a285",
+      "409_P8": "5e9dbe90a43fd870094476e072e3af80975b30d16daf9d8df399dc67aab22e2d",
+      "411_P1": "fb7bbbed3be65c6a8402da07d7ceb8d44c8aa043305b8db1cafdb6a9a831521d",
+      "411_P2": "92b583e9c46e3c63678c1149200ae0d9babc50c032f32eb498eb6b7005277e2d",
+      "411_P3": "35921009e39ec1dac470b8ff011258e28a298eca023fcb8aa4db7e1180ba4cf0",
+      "412_P1": "648a2c25aa67fc0a93f707b1585d85448ef4d8cc18cc940155bb5bbe1d51979d",
+      "412_P2": "acdffb33b1083f98abcc06c609c5d5933039e8098f259d402d2a8fd22f89c732",
+      "412_P3": "c40b9bb23379e6de84600ba302b50f8728f40b162ca0c3377303be26b5000701",
+      "412_P4": "7613ac2bc2e0e1aee663244b0defadd66f2ff8b016eb4129a2cf80b9dc51413a",
+      "412_P5": "524e24ff157d851bd1735a8a90f89a3355f0617eae6d1719bc59f27f8ba9149c",
+      "416_P4": "2c34fa2dccd5734e667d3698a6ec615b8c0e80755a4bfa996942c4a67b49437f",
+      "416_P5": "48453a46c73ddf59c44e5cc4c5dd84eabc3161746d977346cfdd87dc7767fc08",
+      "423_P1": "1091767f1f3d0a6a10984f124dc77f19a09465ea260962a9158cdec13ab3dcba",
+      "423_P10": "1c6a806e44339a564fa33278bb4488a18cf84678197ab348b8c87d694fd5b6ef",
+      "423_P5": "37b630991d21b697873cadb304b6e1d3417c383116a4036c3dfb8ed0fbffb6f0",
+      "423_P7": "86c5ca7105df4793dbf0d6d6952b97a78299bd0878fb24012b5b648af1f4af82",
+      "423_P9": "2207e56e936ee31d6ae47a9ab98761e45bb71a0500ed2d6c830362bce3c0fa46",
+      "427_P2": "126a02c663fde5ec780969fac785dca97f4df226c46f2cd9d36774579ee621b2",
+      "427_P3": "eafe6b0fc45bb52dba1e0deddf53f63d0499af60e623d5596c4d661ca425cda2",
+      "427_P4": "3036177bc60fa87943e7e14d73987ebf2bcd480077e494382fbce8cb84d660bb",
+      "536_P1": "a12f89494723bfdfe5d83a0d79afd8c5f3d8402b0d239021e8dc6fef956b520c",
+      "536_P11": "0c5d977b4258243b54c32323863b24caede9ed94ca6c8159a1e6146171dde27d",
+      "536_P12": "5882a230eb36efc184f9ae83fb2321bc474660d0759d7bbd5b64b8bc820e43d0",
+      "536_P6": "ab2cb00559aec0cfb229f471bfe8aeb2cb1953defee367f666c0c81093c62ad0",
+      "536_P7": "f0a38d22c38520e6cfc5907258dce6e5d37d207e76c0f5af57f9784ecd94ac9b",
+      "536_P9": "6684608854515fee2ec111c9c0e5c78da2234eed7051c2cd56131ef9957043b2",
+      "55989_P1": "b8b87690b4b96b77c6ade7279e706218f657eea781220701b03403de324117a0",
+      "55989_P2": "3ed46ff6a5f017c70a2fe03a39c285aef26c7c80f932a0f95b1edd3f08bc1e77",
+      "AL505_Ev3": "267a50a819c83463c9bc11b9770e1658dca270dde54e5725e4101d6f9b129206",
+      "AL505_Sd2": "73ce7af9bf5ba1a11234e8a747e4168cfde700b96f086d5cc484f34a22a64267",
+      "AN17_P1": "90fe4a04e1219603a2307973ae314c2e3b42189a242517498367b96512019f65",
+      "AN17_P8": "591e76571e2a33aea16a0dfe4850f95d50d1dee6f29c35e848a88c780942569b",
+      "AN24_P2": "639752aefed614b7a6e8256a95c7a0f61d12f164a6dce191c976d6d1f51c9940",
+      "AN24_P3": "9e2e37808e74eb00aa9ad2f49d5026d8c026e828dba86bc21d9d78e48bba18ba",
+      "AN24_P4": "c5a3c161e8474764aba273bd9f731f1daba46cb7b402094f5de886754e71cbda",
+      "BCH953_P1": "88484b4ab03b89b583172b4e45be25d18011dac7f9e87c907f6314308b21575b",
+      "BCH953_P2": "8e344a72819fa28e900706d46d93284737ddb3966121f0c515d35a0e2684af64",
+      "BCH953_P3": "4b0397cb9d475f3b6cc1236e1a0f6992e98628cc96391a867c74003fc9b617ba",
+      "BCH953_P4": "1170183e530252b79b0932e011f742a1bca6c8ddedf98c8333e149075031da31",
+      "BCH953_P5": "aef769800298916e610bb68b60ad096dde7da5037bb14a17fd308f4d2f3374c5",
+      "BDX03_P1": "e0a964f3b47f5db831adde033fd8553667204cd303d7dcc9f64da3f9e9b9c63e",
+      "BDX03_P2": "3ce294df73f343a305f85005722c9ef36ae96f118e682c33c4732e83eb9ae66f",
+      "BDX09_P1": "bafcedcb1f6410a10b3965bd5c0d9d2aa65505ce4ef7ed82a8a1f68f806f87ba",
+      "DIJ06_P1": "c81553a2624e9c335ca5d5eea15b6cc190f994918ca825534df911b58e4f7943",
+      "DIJ07_P1": "ea42cce7e6a2a42f8714996f6d2dc059d3f17d865cd223cbe6eadbb4e0c7cafd",
+      "DIJ07_P2": "e10dbcc92555c3410e3421a80a15b589511b2f220e9896ce50763ddb33a31976",
+      "LF110_P1": "4ccae02e7a9dbcd181a21f713f922b1f7c013b3edcafe427aa73ea8ae7ae274b",
+      "LF110_P2": "dfb860a20343748946666e3226f1630af0be9aeebd3a3349861cd8248cf5f43e",
+      "LF110_P3": "b5947d205aa5380867d2e8cb756569e1870add3289fb5f6d23ff931448b70cb4",
+      "LF110_P4": "1de7494c883c02b437472599ccd1bd826f3abb3f5d9af7cbdf14b8d5b83c5aa4",
+      "LF31_P1": "aac36d584b4d75f6b21e79c97d2868770340ea0dae891c27c0cbf0b4cce44ddc",
+      "LF31_P3": "194a6822a245bfbeb893ec8f1f9ce5c7538877c19500c32ebf3498555475cf0b",
+      "LF50_P3": "b3b97324a201396dcb6c6377e341b1191fa99b6da745f8b75c044ec45363a9be",
+      "LF7074_P1": "0d726baa918100fed76520932e36504e4e89456a0da94774dc309be92909c175",
+      "LF7074_P2": "99a3940c199ea3732140955ce5b1bcd50e1d79af41635d5d1a90a9b6c197bcf0",
+      "LF7074_P3": "b72447cb58c8ffd09fa0138c9cb99c7c2e1a7d314556cb947826d6bdc87cd687",
+      "LF73_P1": "13e1da7427f65b16903ea81acb8701a3386200d33fa72fe8453a14ac1786764d",
+      "LF73_P3": "a47208579983ad46eacf45348febe955a3fbe833be76ed6267185e7c53a73359",
+      "LF73_P4": "de9526e8403d2ddc6d2bbab57a2487930c2a82ef6e97752eb543a992845c8c95",
+      "LF82_P1": "3facc68c14d821265ff7a6b07c7aca3bbe40c835ea85e9c806f57625df260657",
+      "LF82_P2": "25d48712aeaa44cd10971e051f70c4d3c4a8b43391efb9d5a9a189519f6aac33",
+      "LF82_P3": "545cc183f3079494eb8d2d1712cfe7bac2c999e40a48854740560924c4996f42",
+      "LF82_P4": "f5f5815466e23cd8033fe97b259c3771ee3105232aabd551d342fd85e3e3629c",
+      "LF82_P5": "b7a14162a018779fc995227ba77d1bf9bc0358ca43247af3f13b9aaeef62179f",
+      "LF82_P6": "5c411107d7aa1aedb13aa900cc5689870278a32d94bc851d85080c476d725184",
+      "LF82_P8": "1c2d5e7b1b942e657a7ca8ddbfcec1c476c8601f291f53f2aa6d3fec8982c1e0",
+      "LF82_P9": "bc5773b70157ee02b2ba7efc5c5e123ee57510b5a80fd013f28fc4dcab05f17d",
+      "LI10_P1": "829f854dd80a17844e0c8c0f7920fc1e62de248888a32006c2e204f520bfeef9",
+      "LI10_P2": "c141349a23953413591f7358803f98470bec3dafe607ff9d169ad87cd7ab56d4",
+      "LI10_P3": "9c2a81215eb10c4efa599e241e59d7941b347ceee14be81c6d70ca6945645755",
+      "LI10_P4": "5827284af3781176e75840b43b1ab0488d4e3bc25d97e4ea6ab6dd2c79c9752b",
+      "LI10_P5": "bcb9e454b5b78ea11e9b0f4c8dfa619a68effd89f94f74e8546e2212526517a7",
+      "LI10_P6": "271cd5f3d839acfd1c4f4464e33a12778c85fb3caef8dbf7802b199c436c067d",
+      "LM02_P1": "ca1713cd9719d7649d81d667ae7d45e1993ffbcf93a5efc2fe9101b0ed242339",
+      "LM07_P1": "9a349084cd24460bf088dc578e89ad22a6cad9f66d403d0db938bca903b8cc2a",
+      "LM08_P1": "5879286da44681aac105e68b300830aae608c65271436aac877adc0b162a9c97",
+      "LM08_P2": "5ae8d9738b38c709f69e1746045c915a0a027e326bc078b8e5c2793f74da7142",
+      "LM33_P1": "1f8ef7a5bc8c00362bdeaf17063f89edf6d151f3e89c177411263cc63c0cb3be",
+      "LM40_P1": "b0bf054e10ad462a2174843d867df641f621a1fd388c8af6d3aef6de2972d7a6",
+      "LM40_P2": "73f9276d98f9a3a2a09b457f6f83bd7a80757452ee8d60bd2eee57841bc357ca",
+      "LM40_P3": "27eb0b2422f873b0d10a924e5bb0347533603f0ed3048fc4257b451c398b5933",
+      "MT1B1_3A1": "06d5c6006b8186a74754eb7d5011ad8faf4510f1d5315bc6a8237a6f9bf96203",
+      "NAN33_P1": "f9e8a64bac02b300545661ac923f2238e686231b30e34afec6b6965ae6722fc8",
+      "NAN33_P2": "df3d2568015fac77d3aee8f31b42fa4660a390ef706cb9ebd4dc155fa36f8942",
+      "NAN33_P4": "6af2bb841d641f20c53aa54b4a863c92e74aa377b291d1ab0348ad942d4e6774",
+      "NAN33_P5": "f8a12177712a2d313bfe655eac0235418e8532e630dedef2db75b28e1daabc9b",
+      "NAN33_P6": "cc3e3094307b798fbe17b9d4b59a1a551300610efc7c8810774407dde1f0683e",
+      "NIC06_P2": "c30ac7f95b9756e22c50537dbc99d3fce5266081766794dba62ae12a222f52a8",
+      "NIC06_P3": "894002c062f10f26245035389f9ff731c1656b95ccfb18189f33a6eb64f1ff6d",
+      "NRG_11A2": "deed511091d225edeb0084e6398320092e48759b76fc8d935084dce7edf9a20d",
+      "NRG_11B1": "01f738573f453e887fa529d34c2118db4af858715704a10494947a85b91991a6",
+      "NRG_12A1B": "152e77c0db3860ec304180bb34fb02d83054666f95be51931c678d620c539563",
+      "T4LD": "3cbcc8a322d3d80a17df4c24a90fd948936005b7bb9ff7effa640fde2ecceab5",
+      "T7_Portugal": "002623ca634bae13f757f140df35c01c78e9240b1d4c851d244691bf59a54289"
+    }
+  },
+  "candidate_row_summary": {
+    "provisional": true,
+    "candidate_rows": 37788,
+    "retained_candidate_rows": 37139,
+    "excluded_candidate_rows": 649,
+    "reason_counts_nonexclusive": {
+      "excluded_host_core_group": 94,
+      "excluded_phage_component": 402,
+      "original_source_empty": 156
+    },
+    "retained_candidate_label_counts": {
+      "0": 29415,
+      "1": 7724
+    }
+  },
+  "host_group_exclusions": {
+    "excluded_groups": {
+      "host-group-1c11bae2991a6b26": {
+        "BL21": [
+          "named_target_identifier"
+        ]
+      }
+    },
+    "excluded_source_ids": [
+      "BL21"
+    ],
+    "source_groups": {
+      "PDP110": "host-group-0047a8801ebf7025",
+      "IAI10": "host-group-045e3235b91910a0",
+      "IAI50": "host-group-04bef133a22bfd40",
+      "IAI31": "host-group-05788269d35abce0",
+      "H1-002-0011-M-G": "host-group-07531d64995b4a8c",
+      "NILS50": "host-group-07583119ac16407d",
+      "NILS58": "host-group-078ab9ad3d91369b",
+      "ECOR-34": "host-group-07e6aa508a49bc9c",
+      "ECOR-16": "host-group-0910fdb854b0a92a",
+      "ECOR-50": "host-group-0944402155221ebd",
+      "ROAR043": "host-group-098358c2d14814be",
+      "H14": "host-group-098a646e39352d19",
+      "IAI37": "host-group-0e131b94cef8c4e9",
+      "NILS51": "host-group-1025225e5e1ae1dc",
+      "034-008": "host-group-10896857c8a6234a",
+      "C2-119": "host-group-10ab65ce627892f3",
+      "ECOR-59": "host-group-112a5ec105acca59",
+      "ECOR-60": "host-group-112a5ec105acca59",
+      "H1-001-0027-S-G": "host-group-12abfd696e9c7e78",
+      "LM07": "host-group-12abfd696e9c7e78",
+      "PDP21": "host-group-145e9bed9fdf24d1",
+      "NILS42": "host-group-1497da401e5eae7d",
+      "B49": "host-group-159f7f3630279666",
+      "FN-B9": "host-group-15c5f6a5568ec017",
+      "ECOR-22": "host-group-1629d64126ab738b",
+      "NILS69": "host-group-1844cb2bff473635",
+      "S1-91": "host-group-1b83c58581ae8c59",
+      "BL21": "host-group-1c11bae2991a6b26",
+      "NILS10": "host-group-1cf80f3ab349fe16",
+      "ROAR029": "host-group-1dc897784e846674",
+      "ROAR116": "host-group-1e40e558158d67fa",
+      "IAI44": "host-group-1e9d35a36ba2daf7",
+      "001-023": "host-group-1f54f7a0394f4d5f",
+      "ECOR-66": "host-group-1fc1d2beec4ca7d9",
+      "H1-001-0003-S-J": "host-group-200970fb8aad8354",
+      "034-026-c1": "host-group-222c8d5621a60c73",
+      "035-004": "host-group-222c8d5621a60c73",
+      "Ben4d": "host-group-222c8d5621a60c73",
+      "ED1a": "host-group-222c8d5621a60c73",
+      "IAI48": "host-group-222c8d5621a60c73",
+      "VDG427": "host-group-222c8d5621a60c73",
+      "ECOR-15": "host-group-226dd4af80dd3141",
+      "ROAR129": "host-group-23b2b197e060f50f",
+      "H1-001-0154-T-K": "host-group-2457e87aee6bca06",
+      "PDP351": "host-group-2457e87aee6bca06",
+      "ROAR036": "host-group-24a93ce080fbeec5",
+      "ROAR274": "host-group-269e57e88effd112",
+      "NILS56": "host-group-26be1fe0f4850315",
+      "ATCC35469T": "host-group-26df734871c65286",
+      "NILS02": "host-group-27675d186a6fc7e5",
+      "ECOR-47": "host-group-29272d9e91f2c950",
+      "NILS24": "host-group-2b25ab35450b1863",
+      "NILS26": "host-group-2b3be0523bc50298",
+      "NILS80": "host-group-2b3be0523bc50298",
+      "IAI29": "host-group-2df7e0b929fa9f68",
+      "IAI08": "host-group-2f67a153eb1a773f",
+      "IAI06": "host-group-30311dd67976af52",
+      "DIJ07": "host-group-30ad644ad16a37aa",
+      "LM40": "host-group-30ad644ad16a37aa",
+      "NILS68": "host-group-30f671f6218b5037",
+      "LM02": "host-group-31a94b585f38ed55",
+      "AL505": "host-group-31cf95b9b3b30224",
+      "NILS57": "host-group-31cf95b9b3b30224",
+      "NILS78": "host-group-31cf95b9b3b30224",
+      "NILS82": "host-group-31cf95b9b3b30224",
+      "H384": "host-group-32b06a443e019dec",
+      "NILS52": "host-group-330c6957b0d94eda",
+      "ECOR-06": "host-group-33b87a9b348bfe7d",
+      "NILS09": "host-group-34665a0c1307106f",
+      "NILS61": "host-group-35b5eba8562dbabf",
+      "IAI01": "host-group-3725b1a58c95f184",
+      "NAN33": "host-group-3762d178ba80272a",
+      "DEC1a": "host-group-37d417a6924bb0be",
+      "IAI25": "host-group-3adb2e14da90bd3d",
+      "ROAR176": "host-group-3b09e6b610e6354e",
+      "ROAR220": "host-group-3b09e6b610e6354e",
+      "B691": "host-group-3b4ef02ad115a11f",
+      "H1-002-0060-C-T": "host-group-3cc51158bee2285d",
+      "AN03": "host-group-3d1dafca7fb445e7",
+      "BDX09": "host-group-3d1dafca7fb445e7",
+      "S2-1": "host-group-3d7e42422c97b7d7",
+      "H4": "host-group-40768c11882ebb45",
+      "ECOR-35": "host-group-40870dd43596e887",
+      "ECOR-36": "host-group-40870dd43596e887",
+      "IAI58": "host-group-40870dd43596e887",
+      "H1-001-0093-R-A": "host-group-412292feca0edc79",
+      "H1-004-0017-B-M": "host-group-414931040ff29b2b",
+      "ROAR178": "host-group-414931040ff29b2b",
+      "ROAR419": "host-group-414931040ff29b2b",
+      "ECOR-31": "host-group-41bb5730d76affcb",
+      "NIC06": "host-group-425e8771a33d7c45",
+      "H1-003-0054-P-P": "host-group-42dd144706caf359",
+      "ECOR-69": "host-group-4359b9afae684b45",
+      "IAI36": "host-group-43b994ba055e7cf4",
+      "IAI39": "host-group-43b994ba055e7cf4",
+      "ECOR-04": "host-group-4481bbb77be5ac99",
+      "ECOR-08": "host-group-44d59446a97dfa2e",
+      "IAI60": "host-group-44fb17a440ce7b2f",
+      "IAI66": "host-group-44fb17a440ce7b2f",
+      "NILS67": "host-group-44fb17a440ce7b2f",
+      "IAI47": "host-group-45c9b8693f9381fc",
+      "EDL933": "host-group-4616a484efb5aa21",
+      "NILS71": "host-group-46afad387c575b0e",
+      "ROAR131": "host-group-47f96f01028b9556",
+      "ECOR-52": "host-group-4a0b475c30670c9e",
+      "ECOR-54": "host-group-4a0b475c30670c9e",
+      "ROAR434": "host-group-4a1209e051bfe87c",
+      "H1-003-0010-G-J": "host-group-4aa8555c52f52b88",
+      "ROAR400": "host-group-4aa8555c52f52b88",
+      "55989": "host-group-4b08211aa2aa7c38",
+      "Asp51g": "host-group-4c162e28d5ee5858",
+      "B1147": "host-group-4c64b9e307248ec7",
+      "ECOR-58": "host-group-4d0a46be9d777249",
+      "IAI70": "host-group-4f313572ecef82ce",
+      "ECOR-64": "host-group-4ffe33b0b80d90ea",
+      "IAI78": "host-group-4ffe33b0b80d90ea",
+      "IAI79": "host-group-4ffe33b0b80d90ea",
+      "IAI80": "host-group-4ffe33b0b80d90ea",
+      "IAI81": "host-group-4ffe33b0b80d90ea",
+      "IAI64": "host-group-506704452baed762",
+      "NILS81": "host-group-506704452baed762",
+      "NILS63": "host-group-50785d24f57d0c05",
+      "001-031-c1": "host-group-515e405f514b58b9",
+      "013-008": "host-group-515e405f514b58b9",
+      "381A": "host-group-515e405f514b58b9",
+      "IAI46": "host-group-5207b1c861913fd9",
+      "IAI56": "host-group-5207b1c861913fd9",
+      "IAI61": "host-group-5207b1c861913fd9",
+      "LF7074": "host-group-5207b1c861913fd9",
+      "LF50": "host-group-529402f77c4c5799",
+      "ECOR-05": "host-group-534d2481e6f1454b",
+      "003-026": "host-group-5431b3b9d0467dac",
+      "H1-001-0125-B-M": "host-group-56311e63d9ca6c00",
+      "ECOR-26": "host-group-5648d93b1596d212",
+      "ECOR-27": "host-group-5648d93b1596d212",
+      "H1-002-0069-V-G": "host-group-565c7d5d2b1e3be1",
+      "IAI18": "host-group-566ad9d26aee5116",
+      "IAI11": "host-group-56b1c7b01fa7fcae",
+      "ECOR-10": "host-group-56f200e736d3c521",
+      "ECOR-43_A": "host-group-56f200e736d3c521",
+      "NILS30": "host-group-5819f4b13b59e3ac",
+      "NILS12": "host-group-593be6f220f83248",
+      "ECOR-19": "host-group-59666fdc5760280b",
+      "B253": "host-group-59cc48422caf8769",
+      "H1-003-0079-G-R": "host-group-5ab2f17079e4d626",
+      "H1-007-0037-H-D": "host-group-5ab2f17079e4d626",
+      "025-010": "host-group-5ad1fc2204ba89cd",
+      "NILS41": "host-group-5bd5e3e1e65a8d35",
+      "ECOR-61": "host-group-5c50644f574d46b9",
+      "ECOR-62": "host-group-5c50644f574d46b9",
+      "IAI38": "host-group-5c50644f574d46b9",
+      "IAI59": "host-group-5c50644f574d46b9",
+      "H1-005-0058-M-A": "host-group-5cd32029b29e8ee0",
+      "B156": "host-group-5e29c8edb5b22d67",
+      "ROAR145": "host-group-5e4175704cfef9bd",
+      "NILS38": "host-group-5f4b67029a40ffb5",
+      "IAI21": "host-group-60b7b2c1320e4b8d",
+      "ECOR-25": "host-group-60f528bc05fca0eb",
+      "NILS34": "host-group-6181f25163843008",
+      "NILS40": "host-group-6181f25163843008",
+      "MT1B1": "host-group-61822ffc3b536351",
+      "FN-B7": "host-group-6232992e6096f8e4",
+      "NILS66": "host-group-62b9d6ceddc98b7e",
+      "IAI16": "host-group-63a78085ae89f50a",
+      "IAI23": "host-group-63a78085ae89f50a",
+      "ECOR-44": "host-group-63e18bbac3dfe2da",
+      "ECOR-02": "host-group-643c7cf8a8fc965d",
+      "DIJ06": "host-group-6495bb98ef0ef80f",
+      "H1-001-0131-C-A": "host-group-64a5ecb83e39d845",
+      "LI10": "host-group-65f2932bab81cba8",
+      "NILS25": "host-group-65f2932bab81cba8",
+      "NILS27": "host-group-65f2932bab81cba8",
+      "NILS55": "host-group-65f2932bab81cba8",
+      "NILS64": "host-group-65f2932bab81cba8",
+      "NILS73": "host-group-65f2932bab81cba8",
+      "E1492": "host-group-66af2a49c74b48ae",
+      "ECOR-45": "host-group-6764f8f1fde6a98f",
+      "E2348_69": "host-group-67c74b3963f18c83",
+      "E7519": "host-group-67da567ec6660c20",
+      "H1-003-0071-C-J": "host-group-68bb157fd3f54129",
+      "NILS47": "host-group-68bb157fd3f54129",
+      "H1-003-0088-B-J": "host-group-698610edfbf6a5c4",
+      "ECOR-38": "host-group-6b1d824c682d95af",
+      "ECOR-39": "host-group-6b1d824c682d95af",
+      "ECOR-40": "host-group-6b1d824c682d95af",
+      "ECOR-41": "host-group-6b1d824c682d95af",
+      "ECOR-57": "host-group-6c898335c9043202",
+      "IAI54": "host-group-6c898335c9043202",
+      "IAI72": "host-group-6c898335c9043202",
+      "NILS18": "host-group-6cd781c3e9191cc3",
+      "BDX03": "host-group-6d8147b5f1de8569",
+      "IAI19": "host-group-6ecc56777250a1eb",
+      "AN17": "host-group-6f241651ecb59b35",
+      "T147": "host-group-6f241651ecb59b35",
+      "IAI24": "host-group-702a3a3756abaf57",
+      "ROAR130": "host-group-71162328d4bd0326",
+      "ECOR-12": "host-group-7287fb13d8e4312e",
+      "FN126": "host-group-72ecfd1d7f541a64",
+      "NILS75": "host-group-735179e1606e754e",
+      "ECOR-09": "host-group-75a94fbd685a504c",
+      "T205": "host-group-75ebe3eae9251fb3",
+      "IAI05": "host-group-7631d7427bd4f001",
+      "IAI43": "host-group-764aeee818391220",
+      "ECOR-70": "host-group-768961434cb92659",
+      "ROAR334": "host-group-773fc272effa88b1",
+      "BE": "host-group-7789eb26922c8f98",
+      "H1-005-0012-L-M": "host-group-7885b968e90ded88",
+      "NILS45": "host-group-790cc88f32c4ec94",
+      "ECOR-17": "host-group-7a89d3861b94a59a",
+      "ECOR-71": "host-group-7abc1332c3008827",
+      "NILS36": "host-group-7b7ff6a3bc3e8d48",
+      "NILS19": "host-group-7d47b8e4cf7a8db3",
+      "H70": "host-group-7e04587d8ad8001d",
+      "B1747": "host-group-7ea42d144088d709",
+      "ROAR344": "host-group-7f91c85352eb4713",
+      "BCH953": "host-group-800a71bdb9811c26",
+      "H1-002-0064-E-M": "host-group-800a71bdb9811c26",
+      "ECOR-42": "host-group-806e82dafe4fe3f4",
+      "916A": "host-group-807b28a5932d9e1d",
+      "921A": "host-group-807b28a5932d9e1d",
+      "B1932": "host-group-80ff5fcfd420800a",
+      "NILS21": "host-group-8123309d3d507d0b",
+      "ECOR-55": "host-group-813c72b9d17823f1",
+      "NILS17": "host-group-8194f7e4545bdaca",
+      "IAI57": "host-group-81caee1f4d4be948",
+      "IAI42": "host-group-81fe184ea7262d37",
+      "IAI15": "host-group-820f8074545ed5fc",
+      "IAI17": "host-group-820f8074545ed5fc",
+      "NILS33": "host-group-824216539157aa72",
+      "NILS05": "host-group-824b400f50a600e0",
+      "H1-003-0116-V-R": "host-group-844297e9245a1730",
+      "NILS77": "host-group-85290a51d9044af0",
+      "E2052": "host-group-853f2f9c563fcd1a",
+      "H442": "host-group-853f2f9c563fcd1a",
+      "NILS28": "host-group-873bcd623ae2e9f8",
+      "IAI77": "host-group-878c87c901ed7dd5",
+      "NILS70": "host-group-878c87c901ed7dd5",
+      "B12I13": "host-group-885393cba8569cd4",
+      "IAI33": "host-group-88af6a3c83afd624",
+      "H48": "host-group-8a1e536019425743",
+      "370D": "host-group-8af77fabd0e6bab0",
+      "IAI62": "host-group-8b4869cd805e92ad",
+      "IAI63": "host-group-8b4869cd805e92ad",
+      "IAI75": "host-group-8b4869cd805e92ad",
+      "IAI76": "host-group-8b4869cd805e92ad",
+      "NILS29": "host-group-8b4869cd805e92ad",
+      "NILS65": "host-group-8b4869cd805e92ad",
+      "NILS72": "host-group-8b4869cd805e92ad",
+      "NILS79": "host-group-8b4869cd805e92ad",
+      "ECOR-28": "host-group-8c335986a0a95f75",
+      "FN116": "host-group-8c916615ec74b07d",
+      "H1-001-0034-S-M": "host-group-8cac5c4feea931ef",
+      "ECOR-18": "host-group-8d341df047421b1d",
+      "IAI65": "host-group-8fed1a4ca3e967d0",
+      "IAI69": "host-group-8fed1a4ca3e967d0",
+      "ROAR292": "host-group-9003507576ce3f76",
+      "ROAR291": "host-group-902e0514b86eec2c",
+      "NILS31": "host-group-90412ef7fe756ed1",
+      "NILS01": "host-group-90d14e4a1ace550c",
+      "DEC2a": "host-group-9117d5e4b55dcddc",
+      "ECOR-13": "host-group-916655653d1b6e3d",
+      "NILS35": "host-group-926b5567bea028b4",
+      "ECOR-63": "host-group-92ae6dae6333c7f1",
+      "H1-003-0120-P-R": "host-group-92f7c43900d27733",
+      "H95": "host-group-9329eac11e3ea448",
+      "ROAR012": "host-group-94ed5d3437e4418a",
+      "B090": "host-group-96dc2cff587708a0",
+      "IAI68": "host-group-975bc671c3b15134",
+      "NILS49": "host-group-9813608eeeddcc0a",
+      "E_albertiiCIP107988T": "host-group-99533d794fa5ba06",
+      "ECOR-29": "host-group-9c920a87be34d127",
+      "NILS23": "host-group-9cf228d8557aaf2e",
+      "ECOR-01": "host-group-9eb19f0f68120c99",
+      "IAI13": "host-group-9f47d46be97ba9db",
+      "ECOR-24": "host-group-9ff8b0af40ed522c",
+      "ROAR205": "host-group-a090d45b4d2bdf75",
+      "H1-006-0003-S-L": "host-group-a10b2891acb876c0",
+      "E1426": "host-group-a13021dcc88590d6",
+      "ECOR-30": "host-group-a2db86c7d548724c",
+      "ECOR-32": "host-group-a2db86c7d548724c",
+      "ECOR-33": "host-group-a2db86c7d548724c",
+      "H1-006-0022-L-R": "host-group-a30a00e7d4f31e7b",
+      "IAI71": "host-group-a7882cd39ffa57f0",
+      "H47": "host-group-a8d5bd1fb0da8444",
+      "IAI67": "host-group-a912605922c5cfd9",
+      "LF73": "host-group-a946aadfc732a005",
+      "LF82": "host-group-a946aadfc732a005",
+      "NRG807C": "host-group-a946aadfc732a005",
+      "S1-109": "host-group-a9bf54d51b9e2831",
+      "NILS37": "host-group-aa6d4f69194387c9",
+      "H1-004-0021-W-I": "host-group-ab2e0122f965c889",
+      "H1-007-0015-D-G": "host-group-ab2e0122f965c889",
+      "IAI41": "host-group-ab2e0122f965c889",
+      "NILS48": "host-group-ab2e0122f965c889",
+      "LM33": "host-group-ab46d3cc10235d7c",
+      "IAI12": "host-group-ab5d1c40c92ea8d2",
+      "ECOR-07": "host-group-ac62e916fff1a6de",
+      "LMR-3158": "host-group-ad3a482acf88c807",
+      "ECOR-14": "host-group-b0102928fdbfe945",
+      "IAI09": "host-group-b0102928fdbfe945",
+      "NILS04": "host-group-b1664d22f80866dd",
+      "NILS14": "host-group-b1ab573987778ef0",
+      "ECOR-51": "host-group-b1acd01b0755f17a",
+      "ROAR059": "host-group-b1ffe3d22c4bd4e7",
+      "IAI03": "host-group-b52867473249bc63",
+      "ECOR-72": "host-group-b579dc2cee41002e",
+      "NILS16": "host-group-b5e256f926488d02",
+      "H1-002-0007-M-M": "host-group-b61ebb3f3f3afbdb",
+      "ECOR-46": "host-group-b6a4561efa96e98a",
+      "S1-84": "host-group-b95a8dc9cb3bb169",
+      "ECOR-03": "host-group-bab84491e1c684e3",
+      "NILS11": "host-group-bb90b6792ef5dcc6",
+      "H1-003-0019-B-M": "host-group-bbe343e93ac56dfb",
+      "IAI51": "host-group-c1f412291599a108",
+      "IAI74": "host-group-c1f412291599a108",
+      "NILS54": "host-group-c1f412291599a108",
+      "NILS62": "host-group-c1f412291599a108",
+      "T145": "host-group-c1f412291599a108",
+      "NILS08": "host-group-c2de736eccf099a5",
+      "ROAR047": "host-group-c394e5f45c5fae3b",
+      "ROAR061": "host-group-c394e5f45c5fae3b",
+      "ROAR072": "host-group-c394e5f45c5fae3b",
+      "ROAR082": "host-group-c394e5f45c5fae3b",
+      "LM08": "host-group-c4be4455a745332c",
+      "H1-003-0105-C-R": "host-group-c4f1371bdd5e4cdb",
+      "H1-003-0115-L-R": "host-group-c4f1371bdd5e4cdb",
+      "536": "host-group-c6641cee131b473d",
+      "IAI73": "host-group-c6641cee131b473d",
+      "IAI82": "host-group-c6641cee131b473d",
+      "NILS03": "host-group-c6c673c6f160735c",
+      "B6A1": "host-group-c8bccfa499269e30",
+      "IAI26": "host-group-c8e44e20b899e096",
+      "H1-003-0035-D-E": "host-group-ca09977b44b49723",
+      "ROAR387": "host-group-ca1d2a33a4eccdd5",
+      "ROAR438": "host-group-cf1690dc5bd1f193",
+      "AN24": "host-group-cf89e783639eb941",
+      "IAI04": "host-group-cf89e783639eb941",
+      "IAI22": "host-group-cfc93d3785e771ce",
+      "IAI28": "host-group-cfc93d3785e771ce",
+      "NILS20": "host-group-d10a725ff2e85c26",
+      "IAI53": "host-group-d1e50bcf0df79844",
+      "colF12g": "host-group-d1efcac2b604c3e5",
+      "E_fergusonii-IVAN": "host-group-d44e212ed9738881",
+      "ECOR-65": "host-group-d45482845195aff6",
+      "H1-001-0155-M-I": "host-group-d51841cb362eedf6",
+      "ECOR-11": "host-group-d57ad2023940794e",
+      "NILS46": "host-group-d68f231e41840adc",
+      "IAI20": "host-group-d843c29ddf696ac7",
+      "NILS39": "host-group-d8658cb392d6e07e",
+      "NILS44": "host-group-d8a3243875074c26",
+      "NILS53": "host-group-d8a3243875074c26",
+      "NILS76": "host-group-d8a3243875074c26",
+      "S1-76": "host-group-d94f1ec0f1f99770",
+      "IAI55": "host-group-da9f4e7fed16f742",
+      "IAI07": "host-group-dc03d98b76cc9c9e",
+      "NILS13": "host-group-dc03d98b76cc9c9e",
+      "B992": "host-group-dd7fe1ccb8ee105b",
+      "H27": "host-group-de004c37397ca8b8",
+      "IAI34": "host-group-de004c37397ca8b8",
+      "NILS06": "host-group-de004c37397ca8b8",
+      "NILS22": "host-group-de004c37397ca8b8",
+      "IAI02": "host-group-df0bb8774fa5d2c3",
+      "FN-B4": "host-group-df8b4ea101684a39",
+      "IAI14": "host-group-e20bafb2bb5642cb",
+      "IAI40": "host-group-e23f111230d62e81",
+      "M863": "host-group-e2b5b651c491af43",
+      "ECOR-23": "host-group-e35aaba882dd984c",
+      "ECOR-49": "host-group-e369ed1b643fce18",
+      "H1-001-0121-Q-J": "host-group-e3f336d9d559eb32",
+      "IAI32": "host-group-e6a9dfe622d1707e",
+      "IAI45": "host-group-e6a9dfe622d1707e",
+      "ROAR185": "host-group-e6a9dfe622d1707e",
+      "NILS07": "host-group-e6c0236d1a17a634",
+      "ECOR-67": "host-group-e77ef68ca689e76f",
+      "H1-001-0053-K-C": "host-group-e7a59e0918c7ee38",
+      "NILS60": "host-group-e7a59e0918c7ee38",
+      "ECOR-20": "host-group-e7ad935ce85db174",
+      "ECOR-21": "host-group-e7ad935ce85db174",
+      "IAI27": "host-group-eaea59d046aabcb7",
+      "IAI30": "host-group-eaea59d046aabcb7",
+      "H1-004-0007-O-M": "host-group-eb29163b7405d851",
+      "H009": "host-group-ece318099ae3fa16",
+      "NILS32": "host-group-ece4d8d6e5ff1db4",
+      "IAI35": "host-group-ee73ec7130c6a030",
+      "ECOR-37": "host-group-ee8082c1d2d66eb5",
+      "EC6230": "host-group-eedb1c579f21c25a",
+      "ECOR-48": "host-group-ef84a36c844cbdba",
+      "FN89": "host-group-f08891cfd8c817e9",
+      "NILS43": "host-group-f2e12d44ea18a73c",
+      "ECOR-56": "host-group-f3997e1a4386ba43",
+      "NILS74": "host-group-f3997e1a4386ba43",
+      "ECOR-53": "host-group-f44b7bd968f25195",
+      "E4962": "host-group-f58d3d014be42bfe",
+      "H1-005-0065-L-P": "host-group-f5ac3ae1bd365e95",
+      "NILS15": "host-group-f5ac3ae1bd365e95",
+      "ROAR019": "host-group-f65580dbfa128b80",
+      "IAI49": "host-group-f74dff4eb4ef8afe",
+      "LF31": "host-group-f8b57f2ad8b421b8",
+      "NILS59": "host-group-f8b57f2ad8b421b8",
+      "S1-11": "host-group-fd57f7742872b085",
+      "H1-001-0013-L-J": "host-group-fe352774c08f2ba1",
+      "H1-001-0020-M-O": "host-group-fe352774c08f2ba1",
+      "H1-003-0090-V-J": "host-group-fe352774c08f2ba1",
+      "TW10509": "host-group-ff9be377f7215a96"
+    }
+  },
+  "phage_group_exclusions": {
+    "phage-group-d5762717e36ab5c5": [
+      {
+        "kind": "target_containing_component",
+        "seed_source_id": "T7"
+      },
+      {
+        "kind": "near_gp17_seed_component",
+        "seed_source_id": "427_P2"
+      },
+      {
+        "kind": "near_gp17_seed_component",
+        "seed_source_id": "T7_Portugal"
+      }
+    ],
+    "phage-group-e483bfd412c482ef": [
+      {
+        "kind": "target_containing_component",
+        "seed_source_id": "T3"
+      }
+    ]
+  }
+}

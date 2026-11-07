@@ -1,0 +1,3092 @@
+{
+  "schema_version": 1,
+  "purpose": "Complete source phage relatedness groups for frozen source-roster admission",
+  "policy_path": "software/tipcraft/benchmarks/retro-t7-t3/genophi-roster-policy.json",
+  "policy_sha256": "78c8c464f9754c70635219a2c5480abda69b7904c0e5f532c8d405940d6c3b47",
+  "script_sha256": "3938320ad118f26b4610d2205e91a9da5e9d9f414fc5601c7dd9fbe5eedab790",
+  "inputs": [
+    {
+      "path": "data/processed/genophi-label-audit.json",
+      "sha256": "ed231b66715d4a25adc032420ff801db1d335620be6556f5683164efd929fe88"
+    },
+    {
+      "path": "data/processed/genophi-training-source-map.json",
+      "sha256": "39aaf9067132ea492622f13ee98f7acd1e12758366f521609f58b538df73e60d"
+    },
+    {
+      "path": "data/processed/genophi-host-core-groups.json",
+      "sha256": "8c1dab67755fed183daa2d12b15d64eb69d5bcec452177e068fe3b3898a36568"
+    },
+    {
+      "path": "data/processed/genophi-phage-inputs.json",
+      "sha256": "d0f66b3bba527aa8cc32b327ed7f15107fbcd0943faefa6b1fda2496f528185c"
+    },
+    {
+      "path": "data/processed/genophi-phage-overlap.json",
+      "sha256": "dc6a514fc081e9320edeeccabfe7aa61fd1f23d2b5232ec11957ea1fc230be90"
+    },
+    {
+      "path": "data/processed/genophi-phage-similarities.tsv",
+      "sha256": "4fffd628591f3fc8c4cb81aa24130f1aa4eee71b75be6e5ed09e26e31532caee"
+    },
+    {
+      "path": "data/processed/viridic-original-r-comparison-v2.json",
+      "sha256": "fae6206bb55734868eb2879215648e318600afe2a20f394d12fb321cf9400ee9"
+    },
+    {
+      "path": "software/tipcraft/benchmarks/retro-t7-t3/genophi-overlap-policy.json",
+      "sha256": "2d9fd98d19dc3b75f8f016a2ca87965d86ff305a8921e6b075d0a878df1da47e"
+    },
+    {
+      "path": "software/tipcraft/benchmarks/retro-t7-t3/genophi-phage-policy-v2.json",
+      "sha256": "d023b97b870b9b585eeeae7fc726ab23c6b90c9c1c6079b8c641fbf7defc79b0"
+    }
+  ],
+  "validated_calculator_artifact": {
+    "path": "data/raw/genophi-phage-audit/alignment-v2/similarities.json",
+    "sha256": "0ad1ed3246533df09c9687e4ce1be8b460335d921e010d9950d69416f44ee26c"
+  },
+  "original_R_validation_scope": "Directional calculator agrees on this frozen HSP dataset; not universal pipeline equivalence",
+  "original_R_validation_sha256": "fae6206bb55734868eb2879215648e318600afe2a20f394d12fb321cf9400ee9",
+  "matrix_matches_original_R_validated_calculator": true,
+  "group_id_rule": "phage-group- plus first16 SHA256 hex of compact JSON sorted complete source_members (targets included)",
+  "source_genomes": 97,
+  "target_genomes": 2,
+  "all_nodes": 99,
+  "pair_count": 4851,
+  "group_count": 24,
+  "model_table_phages": 94,
+  "model_table_group_count": 23,
+  "retained_model_table_group_count": 22,
+  "excluded_group_count": 2,
+  "similarity_percent": 70.0,
+  "boundary_buffer_percentage_points": 0.01,
+  "edge_rule": "similarity >= 69.99; unrounded undirected connected components",
+  "all_nodes_retained_as_bridges": true,
+  "edges_at_or_above_buffered_threshold": [
+    {
+      "source_a": "409_P1",
+      "source_b": "423_P5",
+      "similarity_percent_unrounded": 78.26211322256492
+    },
+    {
+      "source_a": "409_P1",
+      "source_b": "427_P3",
+      "similarity_percent_unrounded": 80.4805107950889
+    },
+    {
+      "source_a": "409_P1",
+      "source_b": "427_P4",
+      "similarity_percent_unrounded": 80.48184269549658
+    },
+    {
+      "source_a": "409_P1",
+      "source_b": "55989_P1",
+      "similarity_percent_unrounded": 79.79978859665485
+    },
+    {
+      "source_a": "409_P1",
+      "source_b": "AN17_P1",
+      "similarity_percent_unrounded": 85.39352576544988
+    },
+    {
+      "source_a": "409_P1",
+      "source_b": "AN24_P4",
+      "similarity_percent_unrounded": 85.39139126632098
+    },
+    {
+      "source_a": "409_P1",
+      "source_b": "BDX03_P1",
+      "similarity_percent_unrounded": 78.30600477780696
+    },
+    {
+      "source_a": "409_P1",
+      "source_b": "BDX03_P2",
+      "similarity_percent_unrounded": 78.30600477780696
+    },
+    {
+      "source_a": "409_P1",
+      "source_b": "LI10_P1",
+      "similarity_percent_unrounded": 78.72784280414226
+    },
+    {
+      "source_a": "409_P1",
+      "source_b": "LI10_P2",
+      "similarity_percent_unrounded": 78.72784280414226
+    },
+    {
+      "source_a": "409_P1",
+      "source_b": "LM33_P1",
+      "similarity_percent_unrounded": 80.5615196140342
+    },
+    {
+      "source_a": "409_P1",
+      "source_b": "MT1B1_3A1",
+      "similarity_percent_unrounded": 80.72998332462231
+    },
+    {
+      "source_a": "409_P3",
+      "source_b": "409_P5",
+      "similarity_percent_unrounded": 99.9978093235191
+    },
+    {
+      "source_a": "409_P3",
+      "source_b": "409_P6",
+      "similarity_percent_unrounded": 87.51008320717814
+    },
+    {
+      "source_a": "409_P3",
+      "source_b": "412_P2",
+      "similarity_percent_unrounded": 76.58414041582652
+    },
+    {
+      "source_a": "409_P3",
+      "source_b": "416_P4",
+      "similarity_percent_unrounded": 80.49112168804967
+    },
+    {
+      "source_a": "409_P3",
+      "source_b": "416_P5",
+      "similarity_percent_unrounded": 82.54355439684014
+    },
+    {
+      "source_a": "409_P3",
+      "source_b": "423_P1",
+      "similarity_percent_unrounded": 77.6956370997506
+    },
+    {
+      "source_a": "409_P3",
+      "source_b": "423_P10",
+      "similarity_percent_unrounded": 78.76644864260655
+    },
+    {
+      "source_a": "409_P3",
+      "source_b": "423_P7",
+      "similarity_percent_unrounded": 77.29179015176085
+    },
+    {
+      "source_a": "409_P3",
+      "source_b": "423_P9",
+      "similarity_percent_unrounded": 78.76644864260655
+    },
+    {
+      "source_a": "409_P3",
+      "source_b": "AL505_Sd2",
+      "similarity_percent_unrounded": 76.79097045479695
+    },
+    {
+      "source_a": "409_P3",
+      "source_b": "DIJ06_P1",
+      "similarity_percent_unrounded": 80.68505869089462
+    },
+    {
+      "source_a": "409_P3",
+      "source_b": "LF31_P3",
+      "similarity_percent_unrounded": 76.38182585330107
+    },
+    {
+      "source_a": "409_P3",
+      "source_b": "LI10_P3",
+      "similarity_percent_unrounded": 79.28409065830998
+    },
+    {
+      "source_a": "409_P3",
+      "source_b": "LI10_P4",
+      "similarity_percent_unrounded": 80.18328494492587
+    },
+    {
+      "source_a": "409_P3",
+      "source_b": "LI10_P5",
+      "similarity_percent_unrounded": 81.37594703281566
+    },
+    {
+      "source_a": "409_P3",
+      "source_b": "LI10_P6",
+      "similarity_percent_unrounded": 80.13486623922175
+    },
+    {
+      "source_a": "409_P3",
+      "source_b": "NIC06_P3",
+      "similarity_percent_unrounded": 73.4864437292019
+    },
+    {
+      "source_a": "409_P5",
+      "source_b": "409_P6",
+      "similarity_percent_unrounded": 87.51229322518978
+    },
+    {
+      "source_a": "409_P5",
+      "source_b": "412_P2",
+      "similarity_percent_unrounded": 76.58414041582652
+    },
+    {
+      "source_a": "409_P5",
+      "source_b": "416_P4",
+      "similarity_percent_unrounded": 80.49335101936174
+    },
+    {
+      "source_a": "409_P5",
+      "source_b": "416_P5",
+      "similarity_percent_unrounded": 82.54579225923398
+    },
+    {
+      "source_a": "409_P5",
+      "source_b": "423_P1",
+      "similarity_percent_unrounded": 77.6956370997506
+    },
+    {
+      "source_a": "409_P5",
+      "source_b": "423_P10",
+      "similarity_percent_unrounded": 78.76644864260655
+    },
+    {
+      "source_a": "409_P5",
+      "source_b": "423_P7",
+      "similarity_percent_unrounded": 77.29179015176085
+    },
+    {
+      "source_a": "409_P5",
+      "source_b": "423_P9",
+      "similarity_percent_unrounded": 78.76644864260655
+    },
+    {
+      "source_a": "409_P5",
+      "source_b": "AL505_Sd2",
+      "similarity_percent_unrounded": 76.79097045479695
+    },
+    {
+      "source_a": "409_P5",
+      "source_b": "DIJ06_P1",
+      "similarity_percent_unrounded": 80.68726927072971
+    },
+    {
+      "source_a": "409_P5",
+      "source_b": "LF31_P3",
+      "similarity_percent_unrounded": 76.38182585330107
+    },
+    {
+      "source_a": "409_P5",
+      "source_b": "LI10_P3",
+      "similarity_percent_unrounded": 79.28629753051001
+    },
+    {
+      "source_a": "409_P5",
+      "source_b": "LI10_P4",
+      "similarity_percent_unrounded": 80.1855012078633
+    },
+    {
+      "source_a": "409_P5",
+      "source_b": "LI10_P5",
+      "similarity_percent_unrounded": 81.37816881068231
+    },
+    {
+      "source_a": "409_P5",
+      "source_b": "LI10_P6",
+      "similarity_percent_unrounded": 80.13707716117621
+    },
+    {
+      "source_a": "409_P5",
+      "source_b": "NIC06_P3",
+      "similarity_percent_unrounded": 73.4864437292019
+    },
+    {
+      "source_a": "409_P6",
+      "source_b": "412_P2",
+      "similarity_percent_unrounded": 78.1980880391285
+    },
+    {
+      "source_a": "409_P6",
+      "source_b": "416_P4",
+      "similarity_percent_unrounded": 82.17828463459072
+    },
+    {
+      "source_a": "409_P6",
+      "source_b": "416_P5",
+      "similarity_percent_unrounded": 81.42979722711466
+    },
+    {
+      "source_a": "409_P6",
+      "source_b": "423_P1",
+      "similarity_percent_unrounded": 78.78890468774685
+    },
+    {
+      "source_a": "409_P6",
+      "source_b": "423_P10",
+      "similarity_percent_unrounded": 79.54174948078341
+    },
+    {
+      "source_a": "409_P6",
+      "source_b": "423_P7",
+      "similarity_percent_unrounded": 78.57997246609041
+    },
+    {
+      "source_a": "409_P6",
+      "source_b": "423_P9",
+      "similarity_percent_unrounded": 79.54174948078341
+    },
+    {
+      "source_a": "409_P6",
+      "source_b": "AL505_Sd2",
+      "similarity_percent_unrounded": 77.62668720902971
+    },
+    {
+      "source_a": "409_P6",
+      "source_b": "DIJ06_P1",
+      "similarity_percent_unrounded": 83.24616671313075
+    },
+    {
+      "source_a": "409_P6",
+      "source_b": "LF31_P3",
+      "similarity_percent_unrounded": 78.25190728521336
+    },
+    {
+      "source_a": "409_P6",
+      "source_b": "LI10_P3",
+      "similarity_percent_unrounded": 81.8673672726463
+    },
+    {
+      "source_a": "409_P6",
+      "source_b": "LI10_P4",
+      "similarity_percent_unrounded": 81.82306049662914
+    },
+    {
+      "source_a": "409_P6",
+      "source_b": "LI10_P5",
+      "similarity_percent_unrounded": 83.11122070411011
+    },
+    {
+      "source_a": "409_P6",
+      "source_b": "LI10_P6",
+      "similarity_percent_unrounded": 82.42602692363458
+    },
+    {
+      "source_a": "409_P6",
+      "source_b": "NIC06_P3",
+      "similarity_percent_unrounded": 72.32103548472308
+    },
+    {
+      "source_a": "409_P8",
+      "source_b": "LM08_P1",
+      "similarity_percent_unrounded": 80.92332183603078
+    },
+    {
+      "source_a": "409_P8",
+      "source_b": "LM08_P2",
+      "similarity_percent_unrounded": 81.5990681904674
+    },
+    {
+      "source_a": "411_P2",
+      "source_b": "411_P3",
+      "similarity_percent_unrounded": 99.90043897361633
+    },
+    {
+      "source_a": "412_P1",
+      "source_b": "412_P3",
+      "similarity_percent_unrounded": 96.11255459118802
+    },
+    {
+      "source_a": "412_P1",
+      "source_b": "412_P4",
+      "similarity_percent_unrounded": 96.92659836885264
+    },
+    {
+      "source_a": "412_P1",
+      "source_b": "412_P5",
+      "similarity_percent_unrounded": 97.41711727683716
+    },
+    {
+      "source_a": "412_P2",
+      "source_b": "416_P4",
+      "similarity_percent_unrounded": 81.33129990131874
+    },
+    {
+      "source_a": "412_P2",
+      "source_b": "416_P5",
+      "similarity_percent_unrounded": 82.05641983925074
+    },
+    {
+      "source_a": "412_P2",
+      "source_b": "423_P1",
+      "similarity_percent_unrounded": 81.58445474593816
+    },
+    {
+      "source_a": "412_P2",
+      "source_b": "423_P10",
+      "similarity_percent_unrounded": 79.26742373636161
+    },
+    {
+      "source_a": "412_P2",
+      "source_b": "423_P7",
+      "similarity_percent_unrounded": 81.8530603060306
+    },
+    {
+      "source_a": "412_P2",
+      "source_b": "423_P9",
+      "similarity_percent_unrounded": 79.26742373636161
+    },
+    {
+      "source_a": "412_P2",
+      "source_b": "AL505_Sd2",
+      "similarity_percent_unrounded": 96.24748143777899
+    },
+    {
+      "source_a": "412_P2",
+      "source_b": "DIJ06_P1",
+      "similarity_percent_unrounded": 82.56668556878704
+    },
+    {
+      "source_a": "412_P2",
+      "source_b": "LF31_P3",
+      "similarity_percent_unrounded": 80.92153029879921
+    },
+    {
+      "source_a": "412_P2",
+      "source_b": "LI10_P3",
+      "similarity_percent_unrounded": 80.79898766775078
+    },
+    {
+      "source_a": "412_P2",
+      "source_b": "LI10_P4",
+      "similarity_percent_unrounded": 81.48709659439274
+    },
+    {
+      "source_a": "412_P2",
+      "source_b": "LI10_P5",
+      "similarity_percent_unrounded": 82.2375699869246
+    },
+    {
+      "source_a": "412_P2",
+      "source_b": "LI10_P6",
+      "similarity_percent_unrounded": 82.0101642516375
+    },
+    {
+      "source_a": "412_P2",
+      "source_b": "NIC06_P3",
+      "similarity_percent_unrounded": 74.21365701617682
+    },
+    {
+      "source_a": "412_P3",
+      "source_b": "412_P4",
+      "similarity_percent_unrounded": 97.92482164713147
+    },
+    {
+      "source_a": "412_P3",
+      "source_b": "412_P5",
+      "similarity_percent_unrounded": 98.33628396432852
+    },
+    {
+      "source_a": "412_P4",
+      "source_b": "412_P5",
+      "similarity_percent_unrounded": 98.40320905253387
+    },
+    {
+      "source_a": "416_P4",
+      "source_b": "416_P5",
+      "similarity_percent_unrounded": 91.25848635348795
+    },
+    {
+      "source_a": "416_P4",
+      "source_b": "423_P1",
+      "similarity_percent_unrounded": 84.51667994990322
+    },
+    {
+      "source_a": "416_P4",
+      "source_b": "423_P10",
+      "similarity_percent_unrounded": 81.5238696014599
+    },
+    {
+      "source_a": "416_P4",
+      "source_b": "423_P7",
+      "similarity_percent_unrounded": 83.95723751622378
+    },
+    {
+      "source_a": "416_P4",
+      "source_b": "423_P9",
+      "similarity_percent_unrounded": 81.5238696014599
+    },
+    {
+      "source_a": "416_P4",
+      "source_b": "AL505_Sd2",
+      "similarity_percent_unrounded": 82.34538840145517
+    },
+    {
+      "source_a": "416_P4",
+      "source_b": "DIJ06_P1",
+      "similarity_percent_unrounded": 88.25190401727959
+    },
+    {
+      "source_a": "416_P4",
+      "source_b": "LF31_P3",
+      "similarity_percent_unrounded": 83.27512743136789
+    },
+    {
+      "source_a": "416_P4",
+      "source_b": "LI10_P3",
+      "similarity_percent_unrounded": 86.97820154307469
+    },
+    {
+      "source_a": "416_P4",
+      "source_b": "LI10_P4",
+      "similarity_percent_unrounded": 86.5507167913015
+    },
+    {
+      "source_a": "416_P4",
+      "source_b": "LI10_P5",
+      "similarity_percent_unrounded": 86.65460507717533
+    },
+    {
+      "source_a": "416_P4",
+      "source_b": "LI10_P6",
+      "similarity_percent_unrounded": 86.90099800848364
+    },
+    {
+      "source_a": "416_P4",
+      "source_b": "NIC06_P3",
+      "similarity_percent_unrounded": 74.5858868460787
+    },
+    {
+      "source_a": "416_P5",
+      "source_b": "423_P1",
+      "similarity_percent_unrounded": 85.61174103877103
+    },
+    {
+      "source_a": "416_P5",
+      "source_b": "423_P10",
+      "similarity_percent_unrounded": 81.377781798444
+    },
+    {
+      "source_a": "416_P5",
+      "source_b": "423_P7",
+      "similarity_percent_unrounded": 86.22159740319115
+    },
+    {
+      "source_a": "416_P5",
+      "source_b": "423_P9",
+      "similarity_percent_unrounded": 81.377781798444
+    },
+    {
+      "source_a": "416_P5",
+      "source_b": "AL505_Sd2",
+      "similarity_percent_unrounded": 83.45073209339137
+    },
+    {
+      "source_a": "416_P5",
+      "source_b": "DIJ06_P1",
+      "similarity_percent_unrounded": 90.87962596980204
+    },
+    {
+      "source_a": "416_P5",
+      "source_b": "LF31_P3",
+      "similarity_percent_unrounded": 85.38979089372228
+    },
+    {
+      "source_a": "416_P5",
+      "source_b": "LI10_P3",
+      "similarity_percent_unrounded": 88.45334325430379
+    },
+    {
+      "source_a": "416_P5",
+      "source_b": "LI10_P4",
+      "similarity_percent_unrounded": 89.58864091850945
+    },
+    {
+      "source_a": "416_P5",
+      "source_b": "LI10_P5",
+      "similarity_percent_unrounded": 91.08782763670212
+    },
+    {
+      "source_a": "416_P5",
+      "source_b": "LI10_P6",
+      "similarity_percent_unrounded": 88.85751397752301
+    },
+    {
+      "source_a": "416_P5",
+      "source_b": "NIC06_P3",
+      "similarity_percent_unrounded": 75.01393068093168
+    },
+    {
+      "source_a": "423_P1",
+      "source_b": "423_P10",
+      "similarity_percent_unrounded": 93.25790627755046
+    },
+    {
+      "source_a": "423_P1",
+      "source_b": "423_P7",
+      "similarity_percent_unrounded": 95.44862567687984
+    },
+    {
+      "source_a": "423_P1",
+      "source_b": "423_P9",
+      "similarity_percent_unrounded": 93.25790627755046
+    },
+    {
+      "source_a": "423_P1",
+      "source_b": "AL505_Sd2",
+      "similarity_percent_unrounded": 82.55110920248173
+    },
+    {
+      "source_a": "423_P1",
+      "source_b": "DIJ06_P1",
+      "similarity_percent_unrounded": 85.32356559921436
+    },
+    {
+      "source_a": "423_P1",
+      "source_b": "LF31_P3",
+      "similarity_percent_unrounded": 89.57801744179453
+    },
+    {
+      "source_a": "423_P1",
+      "source_b": "LI10_P3",
+      "similarity_percent_unrounded": 87.07841745264415
+    },
+    {
+      "source_a": "423_P1",
+      "source_b": "LI10_P4",
+      "similarity_percent_unrounded": 88.10760646906371
+    },
+    {
+      "source_a": "423_P1",
+      "source_b": "LI10_P5",
+      "similarity_percent_unrounded": 88.24530549724854
+    },
+    {
+      "source_a": "423_P1",
+      "source_b": "LI10_P6",
+      "similarity_percent_unrounded": 87.27096198787495
+    },
+    {
+      "source_a": "423_P1",
+      "source_b": "NIC06_P3",
+      "similarity_percent_unrounded": 75.62157465579467
+    },
+    {
+      "source_a": "423_P10",
+      "source_b": "423_P7",
+      "similarity_percent_unrounded": 91.46680530753407
+    },
+    {
+      "source_a": "423_P10",
+      "source_b": "423_P9",
+      "similarity_percent_unrounded": 100.0
+    },
+    {
+      "source_a": "423_P10",
+      "source_b": "AL505_Sd2",
+      "similarity_percent_unrounded": 78.94354306672183
+    },
+    {
+      "source_a": "423_P10",
+      "source_b": "DIJ06_P1",
+      "similarity_percent_unrounded": 81.92550399285196
+    },
+    {
+      "source_a": "423_P10",
+      "source_b": "LF31_P3",
+      "similarity_percent_unrounded": 85.75900721474815
+    },
+    {
+      "source_a": "423_P10",
+      "source_b": "LI10_P3",
+      "similarity_percent_unrounded": 84.02332556557806
+    },
+    {
+      "source_a": "423_P10",
+      "source_b": "LI10_P4",
+      "similarity_percent_unrounded": 85.14943506937057
+    },
+    {
+      "source_a": "423_P10",
+      "source_b": "LI10_P5",
+      "similarity_percent_unrounded": 87.18440934451442
+    },
+    {
+      "source_a": "423_P10",
+      "source_b": "LI10_P6",
+      "similarity_percent_unrounded": 84.09423487226461
+    },
+    {
+      "source_a": "423_P10",
+      "source_b": "NIC06_P3",
+      "similarity_percent_unrounded": 73.02680894219321
+    },
+    {
+      "source_a": "423_P5",
+      "source_b": "427_P3",
+      "similarity_percent_unrounded": 81.35527028559191
+    },
+    {
+      "source_a": "423_P5",
+      "source_b": "427_P4",
+      "similarity_percent_unrounded": 80.30242036934534
+    },
+    {
+      "source_a": "423_P5",
+      "source_b": "55989_P1",
+      "similarity_percent_unrounded": 79.72065305108946
+    },
+    {
+      "source_a": "423_P5",
+      "source_b": "AN17_P1",
+      "similarity_percent_unrounded": 85.54103894480215
+    },
+    {
+      "source_a": "423_P5",
+      "source_b": "AN24_P4",
+      "similarity_percent_unrounded": 84.67660450321212
+    },
+    {
+      "source_a": "423_P5",
+      "source_b": "BDX03_P1",
+      "similarity_percent_unrounded": 79.47004982330832
+    },
+    {
+      "source_a": "423_P5",
+      "source_b": "BDX03_P2",
+      "similarity_percent_unrounded": 79.47004982330832
+    },
+    {
+      "source_a": "423_P5",
+      "source_b": "LI10_P1",
+      "similarity_percent_unrounded": 79.51061945798985
+    },
+    {
+      "source_a": "423_P5",
+      "source_b": "LI10_P2",
+      "similarity_percent_unrounded": 79.51061945798985
+    },
+    {
+      "source_a": "423_P5",
+      "source_b": "LM33_P1",
+      "similarity_percent_unrounded": 83.2072426489131
+    },
+    {
+      "source_a": "423_P5",
+      "source_b": "MT1B1_3A1",
+      "similarity_percent_unrounded": 78.88008150283272
+    },
+    {
+      "source_a": "423_P7",
+      "source_b": "423_P9",
+      "similarity_percent_unrounded": 91.46680530753407
+    },
+    {
+      "source_a": "423_P7",
+      "source_b": "AL505_Sd2",
+      "similarity_percent_unrounded": 83.17569018318247
+    },
+    {
+      "source_a": "423_P7",
+      "source_b": "DIJ06_P1",
+      "similarity_percent_unrounded": 85.68203623229302
+    },
+    {
+      "source_a": "423_P7",
+      "source_b": "LF31_P3",
+      "similarity_percent_unrounded": 91.52897950852206
+    },
+    {
+      "source_a": "423_P7",
+      "source_b": "LI10_P3",
+      "similarity_percent_unrounded": 87.28633080554836
+    },
+    {
+      "source_a": "423_P7",
+      "source_b": "LI10_P4",
+      "similarity_percent_unrounded": 88.00176544481288
+    },
+    {
+      "source_a": "423_P7",
+      "source_b": "LI10_P5",
+      "similarity_percent_unrounded": 88.11082494695879
+    },
+    {
+      "source_a": "423_P7",
+      "source_b": "LI10_P6",
+      "similarity_percent_unrounded": 87.66439755703819
+    },
+    {
+      "source_a": "423_P7",
+      "source_b": "NIC06_P3",
+      "similarity_percent_unrounded": 75.19492960256639
+    },
+    {
+      "source_a": "423_P9",
+      "source_b": "AL505_Sd2",
+      "similarity_percent_unrounded": 78.94354306672183
+    },
+    {
+      "source_a": "423_P9",
+      "source_b": "DIJ06_P1",
+      "similarity_percent_unrounded": 81.92550399285196
+    },
+    {
+      "source_a": "423_P9",
+      "source_b": "LF31_P3",
+      "similarity_percent_unrounded": 85.75900721474815
+    },
+    {
+      "source_a": "423_P9",
+      "source_b": "LI10_P3",
+      "similarity_percent_unrounded": 84.02332556557806
+    },
+    {
+      "source_a": "423_P9",
+      "source_b": "LI10_P4",
+      "similarity_percent_unrounded": 85.14943506937057
+    },
+    {
+      "source_a": "423_P9",
+      "source_b": "LI10_P5",
+      "similarity_percent_unrounded": 87.18440934451442
+    },
+    {
+      "source_a": "423_P9",
+      "source_b": "LI10_P6",
+      "similarity_percent_unrounded": 84.09423487226461
+    },
+    {
+      "source_a": "423_P9",
+      "source_b": "NIC06_P3",
+      "similarity_percent_unrounded": 73.02680894219321
+    },
+    {
+      "source_a": "427_P2",
+      "source_b": "T7",
+      "similarity_percent_unrounded": 83.78442308649967
+    },
+    {
+      "source_a": "427_P2",
+      "source_b": "T7_Portugal",
+      "similarity_percent_unrounded": 83.77438454347148
+    },
+    {
+      "source_a": "427_P3",
+      "source_b": "427_P4",
+      "similarity_percent_unrounded": 88.94718700930642
+    },
+    {
+      "source_a": "427_P3",
+      "source_b": "55989_P1",
+      "similarity_percent_unrounded": 82.06106870229007
+    },
+    {
+      "source_a": "427_P3",
+      "source_b": "AN17_P1",
+      "similarity_percent_unrounded": 80.85403293329612
+    },
+    {
+      "source_a": "427_P3",
+      "source_b": "AN24_P4",
+      "similarity_percent_unrounded": 83.77338429992659
+    },
+    {
+      "source_a": "427_P3",
+      "source_b": "BDX03_P1",
+      "similarity_percent_unrounded": 82.67193756018447
+    },
+    {
+      "source_a": "427_P3",
+      "source_b": "BDX03_P2",
+      "similarity_percent_unrounded": 82.67193756018447
+    },
+    {
+      "source_a": "427_P3",
+      "source_b": "LI10_P1",
+      "similarity_percent_unrounded": 81.78781129783357
+    },
+    {
+      "source_a": "427_P3",
+      "source_b": "LI10_P2",
+      "similarity_percent_unrounded": 81.78781129783357
+    },
+    {
+      "source_a": "427_P3",
+      "source_b": "LM33_P1",
+      "similarity_percent_unrounded": 82.91724782146925
+    },
+    {
+      "source_a": "427_P3",
+      "source_b": "MT1B1_3A1",
+      "similarity_percent_unrounded": 82.5574506170505
+    },
+    {
+      "source_a": "427_P4",
+      "source_b": "55989_P1",
+      "similarity_percent_unrounded": 81.99096843985458
+    },
+    {
+      "source_a": "427_P4",
+      "source_b": "AN17_P1",
+      "similarity_percent_unrounded": 82.62709180506467
+    },
+    {
+      "source_a": "427_P4",
+      "source_b": "AN24_P4",
+      "similarity_percent_unrounded": 81.98409990015041
+    },
+    {
+      "source_a": "427_P4",
+      "source_b": "BDX03_P1",
+      "similarity_percent_unrounded": 82.46897022913319
+    },
+    {
+      "source_a": "427_P4",
+      "source_b": "BDX03_P2",
+      "similarity_percent_unrounded": 82.46897022913319
+    },
+    {
+      "source_a": "427_P4",
+      "source_b": "LI10_P1",
+      "similarity_percent_unrounded": 80.95075628340726
+    },
+    {
+      "source_a": "427_P4",
+      "source_b": "LI10_P2",
+      "similarity_percent_unrounded": 80.95075628340726
+    },
+    {
+      "source_a": "427_P4",
+      "source_b": "LM33_P1",
+      "similarity_percent_unrounded": 83.03263397306483
+    },
+    {
+      "source_a": "427_P4",
+      "source_b": "MT1B1_3A1",
+      "similarity_percent_unrounded": 82.57093225246092
+    },
+    {
+      "source_a": "536_P1",
+      "source_b": "DIJ07_P1",
+      "similarity_percent_unrounded": 88.81704915342323
+    },
+    {
+      "source_a": "536_P1",
+      "source_b": "DIJ07_P2",
+      "similarity_percent_unrounded": 88.40157335887663
+    },
+    {
+      "source_a": "536_P11",
+      "source_b": "NRG_12A1B",
+      "similarity_percent_unrounded": 73.17292962061819
+    },
+    {
+      "source_a": "536_P12",
+      "source_b": "BDX09_P1",
+      "similarity_percent_unrounded": 75.3526543026447
+    },
+    {
+      "source_a": "536_P6",
+      "source_b": "536_P7",
+      "similarity_percent_unrounded": 99.99932660839585
+    },
+    {
+      "source_a": "536_P6",
+      "source_b": "536_P9",
+      "similarity_percent_unrounded": 95.44086845723776
+    },
+    {
+      "source_a": "536_P7",
+      "source_b": "536_P9",
+      "similarity_percent_unrounded": 95.4401960685433
+    },
+    {
+      "source_a": "55989_P1",
+      "source_b": "AN17_P1",
+      "similarity_percent_unrounded": 80.21302130213022
+    },
+    {
+      "source_a": "55989_P1",
+      "source_b": "AN24_P4",
+      "similarity_percent_unrounded": 81.40996856757971
+    },
+    {
+      "source_a": "55989_P1",
+      "source_b": "BDX03_P1",
+      "similarity_percent_unrounded": 80.82532151329754
+    },
+    {
+      "source_a": "55989_P1",
+      "source_b": "BDX03_P2",
+      "similarity_percent_unrounded": 80.82532151329754
+    },
+    {
+      "source_a": "55989_P1",
+      "source_b": "LI10_P1",
+      "similarity_percent_unrounded": 79.57475994513031
+    },
+    {
+      "source_a": "55989_P1",
+      "source_b": "LI10_P2",
+      "similarity_percent_unrounded": 79.57475994513031
+    },
+    {
+      "source_a": "55989_P1",
+      "source_b": "LM33_P1",
+      "similarity_percent_unrounded": 81.16119271260165
+    },
+    {
+      "source_a": "55989_P1",
+      "source_b": "MT1B1_3A1",
+      "similarity_percent_unrounded": 79.75153736256911
+    },
+    {
+      "source_a": "AL505_Ev3",
+      "source_b": "LF73_P4",
+      "similarity_percent_unrounded": 92.79647600925878
+    },
+    {
+      "source_a": "AL505_Sd2",
+      "source_b": "DIJ06_P1",
+      "similarity_percent_unrounded": 82.81480323401975
+    },
+    {
+      "source_a": "AL505_Sd2",
+      "source_b": "LF31_P3",
+      "similarity_percent_unrounded": 82.14638305510681
+    },
+    {
+      "source_a": "AL505_Sd2",
+      "source_b": "LI10_P3",
+      "similarity_percent_unrounded": 81.35674470457079
+    },
+    {
+      "source_a": "AL505_Sd2",
+      "source_b": "LI10_P4",
+      "similarity_percent_unrounded": 82.00322450624748
+    },
+    {
+      "source_a": "AL505_Sd2",
+      "source_b": "LI10_P5",
+      "similarity_percent_unrounded": 82.25093162124546
+    },
+    {
+      "source_a": "AL505_Sd2",
+      "source_b": "LI10_P6",
+      "similarity_percent_unrounded": 82.46364509571782
+    },
+    {
+      "source_a": "AL505_Sd2",
+      "source_b": "NIC06_P3",
+      "similarity_percent_unrounded": 75.59435241212843
+    },
+    {
+      "source_a": "AN17_P1",
+      "source_b": "AN24_P4",
+      "similarity_percent_unrounded": 94.70180374817866
+    },
+    {
+      "source_a": "AN17_P1",
+      "source_b": "BDX03_P1",
+      "similarity_percent_unrounded": 79.79378850748145
+    },
+    {
+      "source_a": "AN17_P1",
+      "source_b": "BDX03_P2",
+      "similarity_percent_unrounded": 79.79378850748145
+    },
+    {
+      "source_a": "AN17_P1",
+      "source_b": "LI10_P1",
+      "similarity_percent_unrounded": 81.12771568504333
+    },
+    {
+      "source_a": "AN17_P1",
+      "source_b": "LI10_P2",
+      "similarity_percent_unrounded": 81.12771568504333
+    },
+    {
+      "source_a": "AN17_P1",
+      "source_b": "LM33_P1",
+      "similarity_percent_unrounded": 85.1438003936258
+    },
+    {
+      "source_a": "AN17_P1",
+      "source_b": "MT1B1_3A1",
+      "similarity_percent_unrounded": 81.5787827609933
+    },
+    {
+      "source_a": "AN17_P8",
+      "source_b": "LF110_P1",
+      "similarity_percent_unrounded": 89.29109579079035
+    },
+    {
+      "source_a": "AN17_P8",
+      "source_b": "LF110_P2",
+      "similarity_percent_unrounded": 89.11182605867732
+    },
+    {
+      "source_a": "AN17_P8",
+      "source_b": "LF110_P3",
+      "similarity_percent_unrounded": 89.40864041101834
+    },
+    {
+      "source_a": "AN17_P8",
+      "source_b": "LF110_P4",
+      "similarity_percent_unrounded": 90.16050813019963
+    },
+    {
+      "source_a": "AN17_P8",
+      "source_b": "LF82_P1",
+      "similarity_percent_unrounded": 90.02538347381147
+    },
+    {
+      "source_a": "AN17_P8",
+      "source_b": "LF82_P2",
+      "similarity_percent_unrounded": 87.64093491449024
+    },
+    {
+      "source_a": "AN17_P8",
+      "source_b": "LF82_P3",
+      "similarity_percent_unrounded": 91.21591168499734
+    },
+    {
+      "source_a": "AN17_P8",
+      "source_b": "LF82_P4",
+      "similarity_percent_unrounded": 90.16382765827694
+    },
+    {
+      "source_a": "AN17_P8",
+      "source_b": "LF82_P5",
+      "similarity_percent_unrounded": 90.07651827288991
+    },
+    {
+      "source_a": "AN17_P8",
+      "source_b": "LF82_P6",
+      "similarity_percent_unrounded": 89.32629822437924
+    },
+    {
+      "source_a": "AN17_P8",
+      "source_b": "LF82_P9",
+      "similarity_percent_unrounded": 90.39287104326054
+    },
+    {
+      "source_a": "AN17_P8",
+      "source_b": "NRG_11A2",
+      "similarity_percent_unrounded": 88.59484116720355
+    },
+    {
+      "source_a": "AN17_P8",
+      "source_b": "NRG_11B1",
+      "similarity_percent_unrounded": 88.72085149236887
+    },
+    {
+      "source_a": "AN24_P2",
+      "source_b": "AN24_P3",
+      "similarity_percent_unrounded": 99.99859718033247
+    },
+    {
+      "source_a": "AN24_P2",
+      "source_b": "NAN33_P5",
+      "similarity_percent_unrounded": 78.20116200105636
+    },
+    {
+      "source_a": "AN24_P3",
+      "source_b": "NAN33_P5",
+      "similarity_percent_unrounded": 78.20253390312999
+    },
+    {
+      "source_a": "AN24_P4",
+      "source_b": "BDX03_P1",
+      "similarity_percent_unrounded": 79.76539957345376
+    },
+    {
+      "source_a": "AN24_P4",
+      "source_b": "BDX03_P2",
+      "similarity_percent_unrounded": 79.76539957345376
+    },
+    {
+      "source_a": "AN24_P4",
+      "source_b": "LI10_P1",
+      "similarity_percent_unrounded": 80.46234807668212
+    },
+    {
+      "source_a": "AN24_P4",
+      "source_b": "LI10_P2",
+      "similarity_percent_unrounded": 80.46234807668212
+    },
+    {
+      "source_a": "AN24_P4",
+      "source_b": "LM33_P1",
+      "similarity_percent_unrounded": 84.62152403876607
+    },
+    {
+      "source_a": "AN24_P4",
+      "source_b": "MT1B1_3A1",
+      "similarity_percent_unrounded": 81.6750920551707
+    },
+    {
+      "source_a": "BCH953_P1",
+      "source_b": "BCH953_P3",
+      "similarity_percent_unrounded": 96.53433585088302
+    },
+    {
+      "source_a": "BCH953_P2",
+      "source_b": "BCH953_P4",
+      "similarity_percent_unrounded": 92.48994519873978
+    },
+    {
+      "source_a": "BCH953_P2",
+      "source_b": "BCH953_P5",
+      "similarity_percent_unrounded": 92.48994519873978
+    },
+    {
+      "source_a": "BCH953_P2",
+      "source_b": "LF73_P1",
+      "similarity_percent_unrounded": 87.63428740916505
+    },
+    {
+      "source_a": "BCH953_P2",
+      "source_b": "LF73_P3",
+      "similarity_percent_unrounded": 86.32841901530448
+    },
+    {
+      "source_a": "BCH953_P2",
+      "source_b": "NIC06_P2",
+      "similarity_percent_unrounded": 90.73604022973042
+    },
+    {
+      "source_a": "BCH953_P2",
+      "source_b": "T4LD",
+      "similarity_percent_unrounded": 86.68130238077579
+    },
+    {
+      "source_a": "BCH953_P4",
+      "source_b": "BCH953_P5",
+      "similarity_percent_unrounded": 100.0
+    },
+    {
+      "source_a": "BCH953_P4",
+      "source_b": "LF73_P1",
+      "similarity_percent_unrounded": 88.31107420137545
+    },
+    {
+      "source_a": "BCH953_P4",
+      "source_b": "LF73_P3",
+      "similarity_percent_unrounded": 85.41829728853004
+    },
+    {
+      "source_a": "BCH953_P4",
+      "source_b": "NIC06_P2",
+      "similarity_percent_unrounded": 90.22526601765904
+    },
+    {
+      "source_a": "BCH953_P4",
+      "source_b": "T4LD",
+      "similarity_percent_unrounded": 87.45654590171688
+    },
+    {
+      "source_a": "BCH953_P5",
+      "source_b": "LF73_P1",
+      "similarity_percent_unrounded": 88.31107420137545
+    },
+    {
+      "source_a": "BCH953_P5",
+      "source_b": "LF73_P3",
+      "similarity_percent_unrounded": 85.41829728853004
+    },
+    {
+      "source_a": "BCH953_P5",
+      "source_b": "NIC06_P2",
+      "similarity_percent_unrounded": 90.22526601765904
+    },
+    {
+      "source_a": "BCH953_P5",
+      "source_b": "T4LD",
+      "similarity_percent_unrounded": 87.45654590171688
+    },
+    {
+      "source_a": "BDX03_P1",
+      "source_b": "BDX03_P2",
+      "similarity_percent_unrounded": 100.0
+    },
+    {
+      "source_a": "BDX03_P1",
+      "source_b": "LI10_P1",
+      "similarity_percent_unrounded": 79.78752759381898
+    },
+    {
+      "source_a": "BDX03_P1",
+      "source_b": "LI10_P2",
+      "similarity_percent_unrounded": 79.78752759381898
+    },
+    {
+      "source_a": "BDX03_P1",
+      "source_b": "LM33_P1",
+      "similarity_percent_unrounded": 81.1395888552116
+    },
+    {
+      "source_a": "BDX03_P1",
+      "source_b": "MT1B1_3A1",
+      "similarity_percent_unrounded": 81.94994564742044
+    },
+    {
+      "source_a": "BDX03_P2",
+      "source_b": "LI10_P1",
+      "similarity_percent_unrounded": 79.78752759381898
+    },
+    {
+      "source_a": "BDX03_P2",
+      "source_b": "LI10_P2",
+      "similarity_percent_unrounded": 79.78752759381898
+    },
+    {
+      "source_a": "BDX03_P2",
+      "source_b": "LM33_P1",
+      "similarity_percent_unrounded": 81.1395888552116
+    },
+    {
+      "source_a": "BDX03_P2",
+      "source_b": "MT1B1_3A1",
+      "similarity_percent_unrounded": 81.94994564742044
+    },
+    {
+      "source_a": "DIJ06_P1",
+      "source_b": "LF31_P3",
+      "similarity_percent_unrounded": 85.51882563872702
+    },
+    {
+      "source_a": "DIJ06_P1",
+      "source_b": "LI10_P3",
+      "similarity_percent_unrounded": 89.37686517304351
+    },
+    {
+      "source_a": "DIJ06_P1",
+      "source_b": "LI10_P4",
+      "similarity_percent_unrounded": 89.79982106911206
+    },
+    {
+      "source_a": "DIJ06_P1",
+      "source_b": "LI10_P5",
+      "similarity_percent_unrounded": 89.93452621193775
+    },
+    {
+      "source_a": "DIJ06_P1",
+      "source_b": "LI10_P6",
+      "similarity_percent_unrounded": 89.75546085365582
+    },
+    {
+      "source_a": "DIJ06_P1",
+      "source_b": "NIC06_P3",
+      "similarity_percent_unrounded": 74.86926557528652
+    },
+    {
+      "source_a": "DIJ07_P1",
+      "source_b": "DIJ07_P2",
+      "similarity_percent_unrounded": 88.21279168346004
+    },
+    {
+      "source_a": "LF110_P1",
+      "source_b": "LF110_P2",
+      "similarity_percent_unrounded": 91.61222375890424
+    },
+    {
+      "source_a": "LF110_P1",
+      "source_b": "LF110_P3",
+      "similarity_percent_unrounded": 91.93792014021008
+    },
+    {
+      "source_a": "LF110_P1",
+      "source_b": "LF110_P4",
+      "similarity_percent_unrounded": 89.00813309974359
+    },
+    {
+      "source_a": "LF110_P1",
+      "source_b": "LF82_P1",
+      "similarity_percent_unrounded": 92.14904817915016
+    },
+    {
+      "source_a": "LF110_P1",
+      "source_b": "LF82_P2",
+      "similarity_percent_unrounded": 90.03153326119082
+    },
+    {
+      "source_a": "LF110_P1",
+      "source_b": "LF82_P3",
+      "similarity_percent_unrounded": 91.24158686092221
+    },
+    {
+      "source_a": "LF110_P1",
+      "source_b": "LF82_P4",
+      "similarity_percent_unrounded": 91.66017745056398
+    },
+    {
+      "source_a": "LF110_P1",
+      "source_b": "LF82_P5",
+      "similarity_percent_unrounded": 90.53121806187866
+    },
+    {
+      "source_a": "LF110_P1",
+      "source_b": "LF82_P6",
+      "similarity_percent_unrounded": 91.1298584969176
+    },
+    {
+      "source_a": "LF110_P1",
+      "source_b": "LF82_P9",
+      "similarity_percent_unrounded": 90.75469732226583
+    },
+    {
+      "source_a": "LF110_P1",
+      "source_b": "NRG_11A2",
+      "similarity_percent_unrounded": 91.25466376932133
+    },
+    {
+      "source_a": "LF110_P1",
+      "source_b": "NRG_11B1",
+      "similarity_percent_unrounded": 91.84054811585176
+    },
+    {
+      "source_a": "LF110_P2",
+      "source_b": "LF110_P3",
+      "similarity_percent_unrounded": 99.69499036054441
+    },
+    {
+      "source_a": "LF110_P2",
+      "source_b": "LF110_P4",
+      "similarity_percent_unrounded": 90.90235272998906
+    },
+    {
+      "source_a": "LF110_P2",
+      "source_b": "LF82_P1",
+      "similarity_percent_unrounded": 91.16210408722763
+    },
+    {
+      "source_a": "LF110_P2",
+      "source_b": "LF82_P2",
+      "similarity_percent_unrounded": 90.81669986584821
+    },
+    {
+      "source_a": "LF110_P2",
+      "source_b": "LF82_P3",
+      "similarity_percent_unrounded": 91.1765219568141
+    },
+    {
+      "source_a": "LF110_P2",
+      "source_b": "LF82_P4",
+      "similarity_percent_unrounded": 92.30375155308762
+    },
+    {
+      "source_a": "LF110_P2",
+      "source_b": "LF82_P5",
+      "similarity_percent_unrounded": 90.85665926651558
+    },
+    {
+      "source_a": "LF110_P2",
+      "source_b": "LF82_P6",
+      "similarity_percent_unrounded": 91.49135109864423
+    },
+    {
+      "source_a": "LF110_P2",
+      "source_b": "LF82_P9",
+      "similarity_percent_unrounded": 91.5496131600691
+    },
+    {
+      "source_a": "LF110_P2",
+      "source_b": "NRG_11A2",
+      "similarity_percent_unrounded": 91.7219162544872
+    },
+    {
+      "source_a": "LF110_P2",
+      "source_b": "NRG_11B1",
+      "similarity_percent_unrounded": 92.04743674620765
+    },
+    {
+      "source_a": "LF110_P3",
+      "source_b": "LF110_P4",
+      "similarity_percent_unrounded": 91.23205796833895
+    },
+    {
+      "source_a": "LF110_P3",
+      "source_b": "LF82_P1",
+      "similarity_percent_unrounded": 91.45730640801399
+    },
+    {
+      "source_a": "LF110_P3",
+      "source_b": "LF82_P2",
+      "similarity_percent_unrounded": 90.72241894049851
+    },
+    {
+      "source_a": "LF110_P3",
+      "source_b": "LF82_P3",
+      "similarity_percent_unrounded": 91.466371250261
+    },
+    {
+      "source_a": "LF110_P3",
+      "source_b": "LF82_P4",
+      "similarity_percent_unrounded": 92.22308260884869
+    },
+    {
+      "source_a": "LF110_P3",
+      "source_b": "LF82_P5",
+      "similarity_percent_unrounded": 90.78146475554684
+    },
+    {
+      "source_a": "LF110_P3",
+      "source_b": "LF82_P6",
+      "similarity_percent_unrounded": 91.41433253960399
+    },
+    {
+      "source_a": "LF110_P3",
+      "source_b": "LF82_P9",
+      "similarity_percent_unrounded": 91.8295799944736
+    },
+    {
+      "source_a": "LF110_P3",
+      "source_b": "NRG_11A2",
+      "similarity_percent_unrounded": 92.01036782479541
+    },
+    {
+      "source_a": "LF110_P3",
+      "source_b": "NRG_11B1",
+      "similarity_percent_unrounded": 92.3256934407048
+    },
+    {
+      "source_a": "LF110_P4",
+      "source_b": "LF82_P1",
+      "similarity_percent_unrounded": 90.61935778768141
+    },
+    {
+      "source_a": "LF110_P4",
+      "source_b": "LF82_P2",
+      "similarity_percent_unrounded": 91.07263454507347
+    },
+    {
+      "source_a": "LF110_P4",
+      "source_b": "LF82_P3",
+      "similarity_percent_unrounded": 91.9598459203922
+    },
+    {
+      "source_a": "LF110_P4",
+      "source_b": "LF82_P4",
+      "similarity_percent_unrounded": 90.92825011511624
+    },
+    {
+      "source_a": "LF110_P4",
+      "source_b": "LF82_P5",
+      "similarity_percent_unrounded": 91.76709861119181
+    },
+    {
+      "source_a": "LF110_P4",
+      "source_b": "LF82_P6",
+      "similarity_percent_unrounded": 91.07392891247927
+    },
+    {
+      "source_a": "LF110_P4",
+      "source_b": "LF82_P9",
+      "similarity_percent_unrounded": 91.52398053753475
+    },
+    {
+      "source_a": "LF110_P4",
+      "source_b": "NRG_11A2",
+      "similarity_percent_unrounded": 89.94332202118244
+    },
+    {
+      "source_a": "LF110_P4",
+      "source_b": "NRG_11B1",
+      "similarity_percent_unrounded": 89.73949075463422
+    },
+    {
+      "source_a": "LF31_P3",
+      "source_b": "LI10_P3",
+      "similarity_percent_unrounded": 83.44594594594595
+    },
+    {
+      "source_a": "LF31_P3",
+      "source_b": "LI10_P4",
+      "similarity_percent_unrounded": 84.00480855653424
+    },
+    {
+      "source_a": "LF31_P3",
+      "source_b": "LI10_P5",
+      "similarity_percent_unrounded": 83.67611281311949
+    },
+    {
+      "source_a": "LF31_P3",
+      "source_b": "LI10_P6",
+      "similarity_percent_unrounded": 83.72671642794701
+    },
+    {
+      "source_a": "LF31_P3",
+      "source_b": "NIC06_P3",
+      "similarity_percent_unrounded": 75.08432775572047
+    },
+    {
+      "source_a": "LF50_P3",
+      "source_b": "LM40_P1",
+      "similarity_percent_unrounded": 73.68006915506695
+    },
+    {
+      "source_a": "LF50_P3",
+      "source_b": "LM40_P2",
+      "similarity_percent_unrounded": 73.84600057561602
+    },
+    {
+      "source_a": "LF50_P3",
+      "source_b": "LM40_P3",
+      "similarity_percent_unrounded": 73.87657877243518
+    },
+    {
+      "source_a": "LF7074_P1",
+      "source_b": "LF7074_P2",
+      "similarity_percent_unrounded": 99.26212270401031
+    },
+    {
+      "source_a": "LF7074_P1",
+      "source_b": "LF7074_P3",
+      "similarity_percent_unrounded": 87.67295444007907
+    },
+    {
+      "source_a": "LF7074_P2",
+      "source_b": "LF7074_P3",
+      "similarity_percent_unrounded": 88.39391388166966
+    },
+    {
+      "source_a": "LF73_P1",
+      "source_b": "LF73_P3",
+      "similarity_percent_unrounded": 89.86020025851337
+    },
+    {
+      "source_a": "LF73_P1",
+      "source_b": "NIC06_P2",
+      "similarity_percent_unrounded": 89.21449673713111
+    },
+    {
+      "source_a": "LF73_P1",
+      "source_b": "T4LD",
+      "similarity_percent_unrounded": 84.156763904543
+    },
+    {
+      "source_a": "LF73_P3",
+      "source_b": "NIC06_P2",
+      "similarity_percent_unrounded": 86.84789624581576
+    },
+    {
+      "source_a": "LF73_P3",
+      "source_b": "T4LD",
+      "similarity_percent_unrounded": 82.88247227360877
+    },
+    {
+      "source_a": "LF82_P1",
+      "source_b": "LF82_P2",
+      "similarity_percent_unrounded": 92.92459316983727
+    },
+    {
+      "source_a": "LF82_P1",
+      "source_b": "LF82_P3",
+      "similarity_percent_unrounded": 93.88842937230034
+    },
+    {
+      "source_a": "LF82_P1",
+      "source_b": "LF82_P4",
+      "similarity_percent_unrounded": 93.05837932036015
+    },
+    {
+      "source_a": "LF82_P1",
+      "source_b": "LF82_P5",
+      "similarity_percent_unrounded": 92.99669423378288
+    },
+    {
+      "source_a": "LF82_P1",
+      "source_b": "LF82_P6",
+      "similarity_percent_unrounded": 92.28294522245989
+    },
+    {
+      "source_a": "LF82_P1",
+      "source_b": "LF82_P9",
+      "similarity_percent_unrounded": 92.96791260918151
+    },
+    {
+      "source_a": "LF82_P1",
+      "source_b": "NRG_11A2",
+      "similarity_percent_unrounded": 90.9805097797184
+    },
+    {
+      "source_a": "LF82_P1",
+      "source_b": "NRG_11B1",
+      "similarity_percent_unrounded": 91.57994001090711
+    },
+    {
+      "source_a": "LF82_P2",
+      "source_b": "LF82_P3",
+      "similarity_percent_unrounded": 91.11976118005151
+    },
+    {
+      "source_a": "LF82_P2",
+      "source_b": "LF82_P4",
+      "similarity_percent_unrounded": 92.01451798169266
+    },
+    {
+      "source_a": "LF82_P2",
+      "source_b": "LF82_P5",
+      "similarity_percent_unrounded": 91.15449618276124
+    },
+    {
+      "source_a": "LF82_P2",
+      "source_b": "LF82_P6",
+      "similarity_percent_unrounded": 91.7574959897997
+    },
+    {
+      "source_a": "LF82_P2",
+      "source_b": "LF82_P9",
+      "similarity_percent_unrounded": 89.47368421052632
+    },
+    {
+      "source_a": "LF82_P2",
+      "source_b": "NRG_11A2",
+      "similarity_percent_unrounded": 91.57324837020099
+    },
+    {
+      "source_a": "LF82_P2",
+      "source_b": "NRG_11B1",
+      "similarity_percent_unrounded": 91.76911145066444
+    },
+    {
+      "source_a": "LF82_P3",
+      "source_b": "LF82_P4",
+      "similarity_percent_unrounded": 97.15676381551611
+    },
+    {
+      "source_a": "LF82_P3",
+      "source_b": "LF82_P5",
+      "similarity_percent_unrounded": 94.50066017783905
+    },
+    {
+      "source_a": "LF82_P3",
+      "source_b": "LF82_P6",
+      "similarity_percent_unrounded": 93.80975101168072
+    },
+    {
+      "source_a": "LF82_P3",
+      "source_b": "LF82_P9",
+      "similarity_percent_unrounded": 93.72102774348343
+    },
+    {
+      "source_a": "LF82_P3",
+      "source_b": "NRG_11A2",
+      "similarity_percent_unrounded": 90.72126065920595
+    },
+    {
+      "source_a": "LF82_P3",
+      "source_b": "NRG_11B1",
+      "similarity_percent_unrounded": 91.04739138507242
+    },
+    {
+      "source_a": "LF82_P4",
+      "source_b": "LF82_P5",
+      "similarity_percent_unrounded": 94.19158491904031
+    },
+    {
+      "source_a": "LF82_P4",
+      "source_b": "LF82_P6",
+      "similarity_percent_unrounded": 94.8635748803785
+    },
+    {
+      "source_a": "LF82_P4",
+      "source_b": "LF82_P9",
+      "similarity_percent_unrounded": 93.23378688814279
+    },
+    {
+      "source_a": "LF82_P4",
+      "source_b": "NRG_11A2",
+      "similarity_percent_unrounded": 91.22169032388832
+    },
+    {
+      "source_a": "LF82_P4",
+      "source_b": "NRG_11B1",
+      "similarity_percent_unrounded": 91.59360585894864
+    },
+    {
+      "source_a": "LF82_P5",
+      "source_b": "LF82_P6",
+      "similarity_percent_unrounded": 98.97840098054739
+    },
+    {
+      "source_a": "LF82_P5",
+      "source_b": "LF82_P9",
+      "similarity_percent_unrounded": 92.42169471084156
+    },
+    {
+      "source_a": "LF82_P5",
+      "source_b": "NRG_11A2",
+      "similarity_percent_unrounded": 89.38212498313179
+    },
+    {
+      "source_a": "LF82_P5",
+      "source_b": "NRG_11B1",
+      "similarity_percent_unrounded": 89.76268327344572
+    },
+    {
+      "source_a": "LF82_P6",
+      "source_b": "LF82_P9",
+      "similarity_percent_unrounded": 91.4951451770359
+    },
+    {
+      "source_a": "LF82_P6",
+      "source_b": "NRG_11A2",
+      "similarity_percent_unrounded": 89.95149077141505
+    },
+    {
+      "source_a": "LF82_P6",
+      "source_b": "NRG_11B1",
+      "similarity_percent_unrounded": 90.32748408589251
+    },
+    {
+      "source_a": "LF82_P9",
+      "source_b": "NRG_11A2",
+      "similarity_percent_unrounded": 91.1368567568674
+    },
+    {
+      "source_a": "LF82_P9",
+      "source_b": "NRG_11B1",
+      "similarity_percent_unrounded": 90.0456084582959
+    },
+    {
+      "source_a": "LI10_P1",
+      "source_b": "LI10_P2",
+      "similarity_percent_unrounded": 100.0
+    },
+    {
+      "source_a": "LI10_P1",
+      "source_b": "LM33_P1",
+      "similarity_percent_unrounded": 86.37290539941485
+    },
+    {
+      "source_a": "LI10_P1",
+      "source_b": "MT1B1_3A1",
+      "similarity_percent_unrounded": 83.59602161406661
+    },
+    {
+      "source_a": "LI10_P2",
+      "source_b": "LM33_P1",
+      "similarity_percent_unrounded": 86.37290539941485
+    },
+    {
+      "source_a": "LI10_P2",
+      "source_b": "MT1B1_3A1",
+      "similarity_percent_unrounded": 83.59602161406661
+    },
+    {
+      "source_a": "LI10_P3",
+      "source_b": "LI10_P4",
+      "similarity_percent_unrounded": 96.47769392220783
+    },
+    {
+      "source_a": "LI10_P3",
+      "source_b": "LI10_P5",
+      "similarity_percent_unrounded": 92.30760621390517
+    },
+    {
+      "source_a": "LI10_P3",
+      "source_b": "LI10_P6",
+      "similarity_percent_unrounded": 96.9250473326651
+    },
+    {
+      "source_a": "LI10_P3",
+      "source_b": "NIC06_P3",
+      "similarity_percent_unrounded": 74.6002088256306
+    },
+    {
+      "source_a": "LI10_P4",
+      "source_b": "LI10_P5",
+      "similarity_percent_unrounded": 93.6940785036644
+    },
+    {
+      "source_a": "LI10_P4",
+      "source_b": "LI10_P6",
+      "similarity_percent_unrounded": 95.4298369236964
+    },
+    {
+      "source_a": "LI10_P4",
+      "source_b": "NIC06_P3",
+      "similarity_percent_unrounded": 74.89983554265406
+    },
+    {
+      "source_a": "LI10_P5",
+      "source_b": "LI10_P6",
+      "similarity_percent_unrounded": 93.48971765602924
+    },
+    {
+      "source_a": "LI10_P5",
+      "source_b": "NIC06_P3",
+      "similarity_percent_unrounded": 74.66390785266162
+    },
+    {
+      "source_a": "LI10_P6",
+      "source_b": "NIC06_P3",
+      "similarity_percent_unrounded": 75.37850009359275
+    },
+    {
+      "source_a": "LM07_P1",
+      "source_b": "NAN33_P1",
+      "similarity_percent_unrounded": 81.87759438624234
+    },
+    {
+      "source_a": "LM07_P1",
+      "source_b": "NAN33_P2",
+      "similarity_percent_unrounded": 82.58309052298878
+    },
+    {
+      "source_a": "LM07_P1",
+      "source_b": "NAN33_P4",
+      "similarity_percent_unrounded": 82.58309052298878
+    },
+    {
+      "source_a": "LM07_P1",
+      "source_b": "NAN33_P6",
+      "similarity_percent_unrounded": 83.49522972789032
+    },
+    {
+      "source_a": "LM08_P1",
+      "source_b": "LM08_P2",
+      "similarity_percent_unrounded": 92.51382242252474
+    },
+    {
+      "source_a": "LM33_P1",
+      "source_b": "MT1B1_3A1",
+      "similarity_percent_unrounded": 83.97007242171138
+    },
+    {
+      "source_a": "LM40_P1",
+      "source_b": "LM40_P2",
+      "similarity_percent_unrounded": 97.15241767495458
+    },
+    {
+      "source_a": "LM40_P1",
+      "source_b": "LM40_P3",
+      "similarity_percent_unrounded": 97.6212655532637
+    },
+    {
+      "source_a": "LM40_P2",
+      "source_b": "LM40_P3",
+      "similarity_percent_unrounded": 98.59326539654408
+    },
+    {
+      "source_a": "NAN33_P1",
+      "source_b": "NAN33_P2",
+      "similarity_percent_unrounded": 88.36704138235727
+    },
+    {
+      "source_a": "NAN33_P1",
+      "source_b": "NAN33_P4",
+      "similarity_percent_unrounded": 88.36704138235727
+    },
+    {
+      "source_a": "NAN33_P1",
+      "source_b": "NAN33_P6",
+      "similarity_percent_unrounded": 89.4884441765784
+    },
+    {
+      "source_a": "NAN33_P2",
+      "source_b": "NAN33_P4",
+      "similarity_percent_unrounded": 100.0
+    },
+    {
+      "source_a": "NAN33_P2",
+      "source_b": "NAN33_P6",
+      "similarity_percent_unrounded": 93.23688124592825
+    },
+    {
+      "source_a": "NAN33_P4",
+      "source_b": "NAN33_P6",
+      "similarity_percent_unrounded": 93.23688124592825
+    },
+    {
+      "source_a": "NIC06_P2",
+      "source_b": "T4LD",
+      "similarity_percent_unrounded": 85.36524274971225
+    },
+    {
+      "source_a": "NRG_11A2",
+      "source_b": "NRG_11B1",
+      "similarity_percent_unrounded": 98.65928623452294
+    },
+    {
+      "source_a": "T7",
+      "source_b": "T7_Portugal",
+      "similarity_percent_unrounded": 99.98370416797242
+    }
+  ],
+  "boundary_edges": [],
+  "groups": {
+    "phage-group-07a006c20878bb53": {
+      "source_members": [
+        "536_P12",
+        "BDX09_P1"
+      ],
+      "membership_sha256": "07a006c20878bb5365cde9293fa4f4f372c733254bc37f3c6cb71def2d591d3c",
+      "member_genome_ids": [
+        "s025",
+        "s045"
+      ],
+      "external_source_members": [
+        "536_P12",
+        "BDX09_P1"
+      ],
+      "target_members": [],
+      "model_table_members": [
+        "536_P12",
+        "BDX09_P1"
+      ],
+      "near_gp17_seed_members": [],
+      "excluded": false,
+      "exclusion_reasons": []
+    },
+    "phage-group-1d51aa7bd0245354": {
+      "source_members": [
+        "411_P1"
+      ],
+      "membership_sha256": "1d51aa7bd0245354681e0afb7b4fd4da02d3eed9e75e5423764cada2611979b1",
+      "member_genome_ids": [
+        "s005"
+      ],
+      "external_source_members": [
+        "411_P1"
+      ],
+      "target_members": [],
+      "model_table_members": [
+        "411_P1"
+      ],
+      "near_gp17_seed_members": [],
+      "excluded": false,
+      "exclusion_reasons": []
+    },
+    "phage-group-2ee9dc5ff520c5b1": {
+      "source_members": [
+        "AN17_P8",
+        "LF110_P1",
+        "LF110_P2",
+        "LF110_P3",
+        "LF110_P4",
+        "LF82_P1",
+        "LF82_P2",
+        "LF82_P3",
+        "LF82_P4",
+        "LF82_P5",
+        "LF82_P6",
+        "LF82_P9",
+        "NRG_11A2",
+        "NRG_11B1"
+      ],
+      "membership_sha256": "2ee9dc5ff520c5b11858b017aa0d3c8221dddf48e327c3f52e9d8e5d3aaf58cb",
+      "member_genome_ids": [
+        "s034",
+        "s049",
+        "s050",
+        "s051",
+        "s052",
+        "s062",
+        "s063",
+        "s064",
+        "s065",
+        "s066",
+        "s067",
+        "s069",
+        "s092",
+        "s093"
+      ],
+      "external_source_members": [
+        "AN17_P8",
+        "LF110_P1",
+        "LF110_P2",
+        "LF110_P3",
+        "LF110_P4",
+        "LF82_P1",
+        "LF82_P2",
+        "LF82_P3",
+        "LF82_P4",
+        "LF82_P5",
+        "LF82_P6",
+        "LF82_P9",
+        "NRG_11A2",
+        "NRG_11B1"
+      ],
+      "target_members": [],
+      "model_table_members": [
+        "AN17_P8",
+        "LF110_P1",
+        "LF110_P2",
+        "LF110_P3",
+        "LF110_P4",
+        "LF82_P1",
+        "LF82_P2",
+        "LF82_P3",
+        "LF82_P4",
+        "LF82_P5",
+        "LF82_P6",
+        "LF82_P9",
+        "NRG_11A2",
+        "NRG_11B1"
+      ],
+      "near_gp17_seed_members": [],
+      "excluded": false,
+      "exclusion_reasons": []
+    },
+    "phage-group-319c3cc68406f4e8": {
+      "source_members": [
+        "536_P1",
+        "DIJ07_P1",
+        "DIJ07_P2"
+      ],
+      "membership_sha256": "319c3cc68406f4e8cc751a8bb57d0926b319c88e5c9279c4321f0f1cb2043289",
+      "member_genome_ids": [
+        "s023",
+        "s047",
+        "s048"
+      ],
+      "external_source_members": [
+        "536_P1",
+        "DIJ07_P1",
+        "DIJ07_P2"
+      ],
+      "target_members": [],
+      "model_table_members": [
+        "536_P1",
+        "DIJ07_P1",
+        "DIJ07_P2"
+      ],
+      "near_gp17_seed_members": [],
+      "excluded": false,
+      "exclusion_reasons": []
+    },
+    "phage-group-4081e960f67ef5dc": {
+      "source_members": [
+        "LF50_P3",
+        "LM40_P1",
+        "LM40_P2",
+        "LM40_P3"
+      ],
+      "membership_sha256": "4081e960f67ef5dcc2df80e6a5386d166ef3b10e32a9d1d4caab2f1d87962256",
+      "member_genome_ids": [
+        "s055",
+        "s081",
+        "s082",
+        "s083"
+      ],
+      "external_source_members": [
+        "LF50_P3",
+        "LM40_P1",
+        "LM40_P2",
+        "LM40_P3"
+      ],
+      "target_members": [],
+      "model_table_members": [
+        "LF50_P3",
+        "LM40_P1",
+        "LM40_P2",
+        "LM40_P3"
+      ],
+      "near_gp17_seed_members": [],
+      "excluded": false,
+      "exclusion_reasons": []
+    },
+    "phage-group-4743421896b610b5": {
+      "source_members": [
+        "409_P8",
+        "LM08_P1",
+        "LM08_P2"
+      ],
+      "membership_sha256": "4743421896b610b540c379bb41deee8ce5c0cff624eb4b6efe042538b40b731c",
+      "member_genome_ids": [
+        "s004",
+        "s078",
+        "s079"
+      ],
+      "external_source_members": [
+        "409_P8",
+        "LM08_P1",
+        "LM08_P2"
+      ],
+      "target_members": [],
+      "model_table_members": [
+        "409_P8",
+        "LM08_P1",
+        "LM08_P2"
+      ],
+      "near_gp17_seed_members": [],
+      "excluded": false,
+      "exclusion_reasons": []
+    },
+    "phage-group-5a297af0e02aa97d": {
+      "source_members": [
+        "LF82_P8"
+      ],
+      "membership_sha256": "5a297af0e02aa97dc03e00a7083d5b4f9eaf01682afaa4babe1b7f398775db89",
+      "member_genome_ids": [
+        "s068"
+      ],
+      "external_source_members": [
+        "LF82_P8"
+      ],
+      "target_members": [],
+      "model_table_members": [
+        "LF82_P8"
+      ],
+      "near_gp17_seed_members": [],
+      "excluded": false,
+      "exclusion_reasons": []
+    },
+    "phage-group-60160659d777e6d1": {
+      "source_members": [
+        "55989_P2"
+      ],
+      "membership_sha256": "60160659d777e6d11169ad67886b09ad6c91a6e71145abb0a25695412d009c14",
+      "member_genome_ids": [
+        "s030"
+      ],
+      "external_source_members": [
+        "55989_P2"
+      ],
+      "target_members": [],
+      "model_table_members": [
+        "55989_P2"
+      ],
+      "near_gp17_seed_members": [],
+      "excluded": false,
+      "exclusion_reasons": []
+    },
+    "phage-group-73d63e84ada8487a": {
+      "source_members": [
+        "LM07_P1",
+        "NAN33_P1",
+        "NAN33_P2",
+        "NAN33_P4",
+        "NAN33_P6"
+      ],
+      "membership_sha256": "73d63e84ada8487ab0bf77f99619df10cd9b69dc573bc9f48bbe686f7f96581e",
+      "member_genome_ids": [
+        "s077",
+        "s085",
+        "s086",
+        "s087",
+        "s089"
+      ],
+      "external_source_members": [
+        "LM07_P1",
+        "NAN33_P1",
+        "NAN33_P2",
+        "NAN33_P4",
+        "NAN33_P6"
+      ],
+      "target_members": [],
+      "model_table_members": [
+        "LM07_P1",
+        "NAN33_P1",
+        "NAN33_P2",
+        "NAN33_P4",
+        "NAN33_P6"
+      ],
+      "near_gp17_seed_members": [],
+      "excluded": false,
+      "exclusion_reasons": []
+    },
+    "phage-group-77f34fd3dfb3d441": {
+      "source_members": [
+        "LF7074_P1",
+        "LF7074_P2",
+        "LF7074_P3"
+      ],
+      "membership_sha256": "77f34fd3dfb3d441d8f1f9c0ea1d931ac6881c57935c92cbe2abb5e1d75aaa52",
+      "member_genome_ids": [
+        "s056",
+        "s057",
+        "s058"
+      ],
+      "external_source_members": [
+        "LF7074_P1",
+        "LF7074_P2",
+        "LF7074_P3"
+      ],
+      "target_members": [],
+      "model_table_members": [
+        "LF7074_P1",
+        "LF7074_P2",
+        "LF7074_P3"
+      ],
+      "near_gp17_seed_members": [],
+      "excluded": false,
+      "exclusion_reasons": []
+    },
+    "phage-group-87adaa526dd71408": {
+      "source_members": [
+        "409_P3",
+        "409_P5",
+        "409_P6",
+        "412_P2",
+        "416_P4",
+        "416_P5",
+        "423_P1",
+        "423_P10",
+        "423_P7",
+        "423_P9",
+        "AL505_Sd2",
+        "DIJ06_P1",
+        "LF31_P3",
+        "LI10_P3",
+        "LI10_P4",
+        "LI10_P5",
+        "LI10_P6",
+        "NIC06_P3"
+      ],
+      "membership_sha256": "87adaa526dd71408e598df274fb9b5c67fa957e52c5a27703e4e7cfdc0c87ed9",
+      "member_genome_ids": [
+        "s001",
+        "s002",
+        "s003",
+        "s009",
+        "s013",
+        "s014",
+        "s015",
+        "s016",
+        "s018",
+        "s019",
+        "s032",
+        "s046",
+        "s054",
+        "s072",
+        "s073",
+        "s074",
+        "s075",
+        "s091"
+      ],
+      "external_source_members": [
+        "409_P3",
+        "409_P5",
+        "409_P6",
+        "412_P2",
+        "416_P4",
+        "416_P5",
+        "423_P1",
+        "423_P10",
+        "423_P7",
+        "423_P9",
+        "AL505_Sd2",
+        "DIJ06_P1",
+        "LF31_P3",
+        "LI10_P3",
+        "LI10_P4",
+        "LI10_P5",
+        "LI10_P6",
+        "NIC06_P3"
+      ],
+      "target_members": [],
+      "model_table_members": [
+        "409_P3",
+        "409_P5",
+        "409_P6",
+        "412_P2",
+        "416_P4",
+        "416_P5",
+        "423_P1",
+        "423_P10",
+        "423_P7",
+        "423_P9",
+        "AL505_Sd2",
+        "DIJ06_P1",
+        "LF31_P3",
+        "LI10_P3",
+        "LI10_P4",
+        "LI10_P5",
+        "LI10_P6",
+        "NIC06_P3"
+      ],
+      "near_gp17_seed_members": [],
+      "excluded": false,
+      "exclusion_reasons": []
+    },
+    "phage-group-8bad335bc806ac19": {
+      "source_members": [
+        "LF31_P1"
+      ],
+      "membership_sha256": "8bad335bc806ac1970d3fc1f431c1b9e7885bb83ac92c39230e87448c7cbb204",
+      "member_genome_ids": [
+        "s053"
+      ],
+      "external_source_members": [
+        "LF31_P1"
+      ],
+      "target_members": [],
+      "model_table_members": [
+        "LF31_P1"
+      ],
+      "near_gp17_seed_members": [],
+      "excluded": false,
+      "exclusion_reasons": []
+    },
+    "phage-group-904196b57cd8764e": {
+      "source_members": [
+        "536_P6",
+        "536_P7",
+        "536_P9"
+      ],
+      "membership_sha256": "904196b57cd8764e7f58ace8b94beb2142e6292e423813abafb0f76dc2ec1c1c",
+      "member_genome_ids": [
+        "s026",
+        "s027",
+        "s028"
+      ],
+      "external_source_members": [
+        "536_P6",
+        "536_P7",
+        "536_P9"
+      ],
+      "target_members": [],
+      "model_table_members": [
+        "536_P6",
+        "536_P7",
+        "536_P9"
+      ],
+      "near_gp17_seed_members": [],
+      "excluded": false,
+      "exclusion_reasons": []
+    },
+    "phage-group-a848fa74e1fd0040": {
+      "source_members": [
+        "AL505_Ev3",
+        "LF73_P4"
+      ],
+      "membership_sha256": "a848fa74e1fd00407d1106ee63bd7491a211101d3e2290c5ed19ce669405f43c",
+      "member_genome_ids": [
+        "s031",
+        "s061"
+      ],
+      "external_source_members": [
+        "AL505_Ev3",
+        "LF73_P4"
+      ],
+      "target_members": [],
+      "model_table_members": [
+        "AL505_Ev3",
+        "LF73_P4"
+      ],
+      "near_gp17_seed_members": [],
+      "excluded": false,
+      "exclusion_reasons": []
+    },
+    "phage-group-b7e937bcab61d3bc": {
+      "source_members": [
+        "412_P1",
+        "412_P3",
+        "412_P4",
+        "412_P5"
+      ],
+      "membership_sha256": "b7e937bcab61d3bc08addfb545c412d218a8d6f43f18d7b7cf4d28dee953bd94",
+      "member_genome_ids": [
+        "s008",
+        "s010",
+        "s011",
+        "s012"
+      ],
+      "external_source_members": [
+        "412_P1",
+        "412_P3",
+        "412_P4",
+        "412_P5"
+      ],
+      "target_members": [],
+      "model_table_members": [
+        "412_P1",
+        "412_P3",
+        "412_P4",
+        "412_P5"
+      ],
+      "near_gp17_seed_members": [],
+      "excluded": false,
+      "exclusion_reasons": []
+    },
+    "phage-group-c6eeda0f2d4ce9cb": {
+      "source_members": [
+        "409_P1",
+        "423_P5",
+        "427_P3",
+        "427_P4",
+        "55989_P1",
+        "AN17_P1",
+        "AN24_P4",
+        "BDX03_P1",
+        "BDX03_P2",
+        "LI10_P1",
+        "LI10_P2",
+        "LM33_P1",
+        "MT1B1_3A1"
+      ],
+      "membership_sha256": "c6eeda0f2d4ce9cb1dbf56911f6517a6e696b11beeaaa8e49137e5bacb04a07b",
+      "member_genome_ids": [
+        "s000",
+        "s017",
+        "s021",
+        "s022",
+        "s029",
+        "s033",
+        "s037",
+        "s043",
+        "s044",
+        "s070",
+        "s071",
+        "s080",
+        "s084"
+      ],
+      "external_source_members": [
+        "409_P1",
+        "423_P5",
+        "427_P3",
+        "427_P4",
+        "55989_P1",
+        "AN17_P1",
+        "AN24_P4",
+        "BDX03_P1",
+        "BDX03_P2",
+        "LI10_P1",
+        "LI10_P2",
+        "LM33_P1",
+        "MT1B1_3A1"
+      ],
+      "target_members": [],
+      "model_table_members": [
+        "409_P1",
+        "423_P5",
+        "427_P3",
+        "427_P4",
+        "55989_P1",
+        "AN17_P1",
+        "AN24_P4",
+        "BDX03_P1",
+        "BDX03_P2",
+        "LI10_P1",
+        "LI10_P2",
+        "LM33_P1",
+        "MT1B1_3A1"
+      ],
+      "near_gp17_seed_members": [],
+      "excluded": false,
+      "exclusion_reasons": []
+    },
+    "phage-group-d09faf51164ddc8d": {
+      "source_members": [
+        "AN24_P2",
+        "AN24_P3",
+        "NAN33_P5"
+      ],
+      "membership_sha256": "d09faf51164ddc8d7b172ef96244c24c8c195e300a31c75ad4fcfe724985eab4",
+      "member_genome_ids": [
+        "s035",
+        "s036",
+        "s088"
+      ],
+      "external_source_members": [
+        "AN24_P2",
+        "AN24_P3",
+        "NAN33_P5"
+      ],
+      "target_members": [],
+      "model_table_members": [
+        "AN24_P2",
+        "AN24_P3",
+        "NAN33_P5"
+      ],
+      "near_gp17_seed_members": [],
+      "excluded": false,
+      "exclusion_reasons": []
+    },
+    "phage-group-d5762717e36ab5c5": {
+      "source_members": [
+        "427_P2",
+        "T7",
+        "T7_Portugal"
+      ],
+      "membership_sha256": "d5762717e36ab5c559d580c1c56ab181b710984ee2b89e045d76d4f9a0bb2f2d",
+      "member_genome_ids": [
+        "s020",
+        "s096",
+        "t000"
+      ],
+      "external_source_members": [
+        "427_P2",
+        "T7_Portugal"
+      ],
+      "target_members": [
+        "T7"
+      ],
+      "model_table_members": [
+        "427_P2"
+      ],
+      "near_gp17_seed_members": [
+        "427_P2",
+        "T7_Portugal"
+      ],
+      "excluded": true,
+      "exclusion_reasons": [
+        {
+          "kind": "target_containing_component",
+          "seed_source_id": "T7"
+        },
+        {
+          "kind": "near_gp17_seed_component",
+          "seed_source_id": "427_P2"
+        },
+        {
+          "kind": "near_gp17_seed_component",
+          "seed_source_id": "T7_Portugal"
+        }
+      ]
+    },
+    "phage-group-d821b99ebc25e1c6": {
+      "source_members": [
+        "LM02_P1"
+      ],
+      "membership_sha256": "d821b99ebc25e1c6b41867930256b6fb08a856c27dc198e8ad81cb3e6c52982f",
+      "member_genome_ids": [
+        "s076"
+      ],
+      "external_source_members": [
+        "LM02_P1"
+      ],
+      "target_members": [],
+      "model_table_members": [
+        "LM02_P1"
+      ],
+      "near_gp17_seed_members": [],
+      "excluded": false,
+      "exclusion_reasons": []
+    },
+    "phage-group-da04a09548f14c4b": {
+      "source_members": [
+        "411_P2",
+        "411_P3"
+      ],
+      "membership_sha256": "da04a09548f14c4b31098c8a2cc65f6d900cb3010eebd49b374163ea4667ae61",
+      "member_genome_ids": [
+        "s006",
+        "s007"
+      ],
+      "external_source_members": [
+        "411_P2",
+        "411_P3"
+      ],
+      "target_members": [],
+      "model_table_members": [
+        "411_P2"
+      ],
+      "near_gp17_seed_members": [],
+      "excluded": false,
+      "exclusion_reasons": []
+    },
+    "phage-group-dc2fc9e4f6706710": {
+      "source_members": [
+        "536_P11",
+        "NRG_12A1B"
+      ],
+      "membership_sha256": "dc2fc9e4f670671016841d2968aead31a53cd769bffc1fc94da8061c497ccf19",
+      "member_genome_ids": [
+        "s024",
+        "s094"
+      ],
+      "external_source_members": [
+        "536_P11",
+        "NRG_12A1B"
+      ],
+      "target_members": [],
+      "model_table_members": [
+        "536_P11",
+        "NRG_12A1B"
+      ],
+      "near_gp17_seed_members": [],
+      "excluded": false,
+      "exclusion_reasons": []
+    },
+    "phage-group-e483bfd412c482ef": {
+      "source_members": [
+        "T3"
+      ],
+      "membership_sha256": "e483bfd412c482ef0fce51191b6bc59a04ae21351943653d407cfc10b265c94c",
+      "member_genome_ids": [
+        "t001"
+      ],
+      "external_source_members": [],
+      "target_members": [
+        "T3"
+      ],
+      "model_table_members": [],
+      "near_gp17_seed_members": [],
+      "excluded": true,
+      "exclusion_reasons": [
+        {
+          "kind": "target_containing_component",
+          "seed_source_id": "T3"
+        }
+      ]
+    },
+    "phage-group-e4976f08707e5a1e": {
+      "source_members": [
+        "BCH953_P1",
+        "BCH953_P3"
+      ],
+      "membership_sha256": "e4976f08707e5a1ead05e58ba3a2b0e8940027d098e1a566a09ffafe99c360a7",
+      "member_genome_ids": [
+        "s038",
+        "s040"
+      ],
+      "external_source_members": [
+        "BCH953_P1",
+        "BCH953_P3"
+      ],
+      "target_members": [],
+      "model_table_members": [
+        "BCH953_P1",
+        "BCH953_P3"
+      ],
+      "near_gp17_seed_members": [],
+      "excluded": false,
+      "exclusion_reasons": []
+    },
+    "phage-group-fb73e6985b36d903": {
+      "source_members": [
+        "BCH953_P2",
+        "BCH953_P4",
+        "BCH953_P5",
+        "LF73_P1",
+        "LF73_P3",
+        "NIC06_P2",
+        "T4LD"
+      ],
+      "membership_sha256": "fb73e6985b36d903dfbb724120a539d9fbd1bb617c6b06ab9248370d722fbfdd",
+      "member_genome_ids": [
+        "s039",
+        "s041",
+        "s042",
+        "s059",
+        "s060",
+        "s090",
+        "s095"
+      ],
+      "external_source_members": [
+        "BCH953_P2",
+        "BCH953_P4",
+        "BCH953_P5",
+        "LF73_P1",
+        "LF73_P3",
+        "NIC06_P2",
+        "T4LD"
+      ],
+      "target_members": [],
+      "model_table_members": [
+        "BCH953_P2",
+        "BCH953_P4",
+        "BCH953_P5",
+        "LF73_P1",
+        "LF73_P3",
+        "NIC06_P2"
+      ],
+      "near_gp17_seed_members": [],
+      "excluded": false,
+      "exclusion_reasons": []
+    }
+  },
+  "source_phage_groups": {
+    "409_P1": "phage-group-c6eeda0f2d4ce9cb",
+    "409_P3": "phage-group-87adaa526dd71408",
+    "409_P5": "phage-group-87adaa526dd71408",
+    "409_P6": "phage-group-87adaa526dd71408",
+    "409_P8": "phage-group-4743421896b610b5",
+    "411_P1": "phage-group-1d51aa7bd0245354",
+    "411_P2": "phage-group-da04a09548f14c4b",
+    "411_P3": "phage-group-da04a09548f14c4b",
+    "412_P1": "phage-group-b7e937bcab61d3bc",
+    "412_P2": "phage-group-87adaa526dd71408",
+    "412_P3": "phage-group-b7e937bcab61d3bc",
+    "412_P4": "phage-group-b7e937bcab61d3bc",
+    "412_P5": "phage-group-b7e937bcab61d3bc",
+    "416_P4": "phage-group-87adaa526dd71408",
+    "416_P5": "phage-group-87adaa526dd71408",
+    "423_P1": "phage-group-87adaa526dd71408",
+    "423_P10": "phage-group-87adaa526dd71408",
+    "423_P5": "phage-group-c6eeda0f2d4ce9cb",
+    "423_P7": "phage-group-87adaa526dd71408",
+    "423_P9": "phage-group-87adaa526dd71408",
+    "427_P2": "phage-group-d5762717e36ab5c5",
+    "427_P3": "phage-group-c6eeda0f2d4ce9cb",
+    "427_P4": "phage-group-c6eeda0f2d4ce9cb",
+    "536_P1": "phage-group-319c3cc68406f4e8",
+    "536_P11": "phage-group-dc2fc9e4f6706710",
+    "536_P12": "phage-group-07a006c20878bb53",
+    "536_P6": "phage-group-904196b57cd8764e",
+    "536_P7": "phage-group-904196b57cd8764e",
+    "536_P9": "phage-group-904196b57cd8764e",
+    "55989_P1": "phage-group-c6eeda0f2d4ce9cb",
+    "55989_P2": "phage-group-60160659d777e6d1",
+    "AL505_Ev3": "phage-group-a848fa74e1fd0040",
+    "AL505_Sd2": "phage-group-87adaa526dd71408",
+    "AN17_P1": "phage-group-c6eeda0f2d4ce9cb",
+    "AN17_P8": "phage-group-2ee9dc5ff520c5b1",
+    "AN24_P2": "phage-group-d09faf51164ddc8d",
+    "AN24_P3": "phage-group-d09faf51164ddc8d",
+    "AN24_P4": "phage-group-c6eeda0f2d4ce9cb",
+    "BCH953_P1": "phage-group-e4976f08707e5a1e",
+    "BCH953_P2": "phage-group-fb73e6985b36d903",
+    "BCH953_P3": "phage-group-e4976f08707e5a1e",
+    "BCH953_P4": "phage-group-fb73e6985b36d903",
+    "BCH953_P5": "phage-group-fb73e6985b36d903",
+    "BDX03_P1": "phage-group-c6eeda0f2d4ce9cb",
+    "BDX03_P2": "phage-group-c6eeda0f2d4ce9cb",
+    "BDX09_P1": "phage-group-07a006c20878bb53",
+    "DIJ06_P1": "phage-group-87adaa526dd71408",
+    "DIJ07_P1": "phage-group-319c3cc68406f4e8",
+    "DIJ07_P2": "phage-group-319c3cc68406f4e8",
+    "LF110_P1": "phage-group-2ee9dc5ff520c5b1",
+    "LF110_P2": "phage-group-2ee9dc5ff520c5b1",
+    "LF110_P3": "phage-group-2ee9dc5ff520c5b1",
+    "LF110_P4": "phage-group-2ee9dc5ff520c5b1",
+    "LF31_P1": "phage-group-8bad335bc806ac19",
+    "LF31_P3": "phage-group-87adaa526dd71408",
+    "LF50_P3": "phage-group-4081e960f67ef5dc",
+    "LF7074_P1": "phage-group-77f34fd3dfb3d441",
+    "LF7074_P2": "phage-group-77f34fd3dfb3d441",
+    "LF7074_P3": "phage-group-77f34fd3dfb3d441",
+    "LF73_P1": "phage-group-fb73e6985b36d903",
+    "LF73_P3": "phage-group-fb73e6985b36d903",
+    "LF73_P4": "phage-group-a848fa74e1fd0040",
+    "LF82_P1": "phage-group-2ee9dc5ff520c5b1",
+    "LF82_P2": "phage-group-2ee9dc5ff520c5b1",
+    "LF82_P3": "phage-group-2ee9dc5ff520c5b1",
+    "LF82_P4": "phage-group-2ee9dc5ff520c5b1",
+    "LF82_P5": "phage-group-2ee9dc5ff520c5b1",
+    "LF82_P6": "phage-group-2ee9dc5ff520c5b1",
+    "LF82_P8": "phage-group-5a297af0e02aa97d",
+    "LF82_P9": "phage-group-2ee9dc5ff520c5b1",
+    "LI10_P1": "phage-group-c6eeda0f2d4ce9cb",
+    "LI10_P2": "phage-group-c6eeda0f2d4ce9cb",
+    "LI10_P3": "phage-group-87adaa526dd71408",
+    "LI10_P4": "phage-group-87adaa526dd71408",
+    "LI10_P5": "phage-group-87adaa526dd71408",
+    "LI10_P6": "phage-group-87adaa526dd71408",
+    "LM02_P1": "phage-group-d821b99ebc25e1c6",
+    "LM07_P1": "phage-group-73d63e84ada8487a",
+    "LM08_P1": "phage-group-4743421896b610b5",
+    "LM08_P2": "phage-group-4743421896b610b5",
+    "LM33_P1": "phage-group-c6eeda0f2d4ce9cb",
+    "LM40_P1": "phage-group-4081e960f67ef5dc",
+    "LM40_P2": "phage-group-4081e960f67ef5dc",
+    "LM40_P3": "phage-group-4081e960f67ef5dc",
+    "MT1B1_3A1": "phage-group-c6eeda0f2d4ce9cb",
+    "NAN33_P1": "phage-group-73d63e84ada8487a",
+    "NAN33_P2": "phage-group-73d63e84ada8487a",
+    "NAN33_P4": "phage-group-73d63e84ada8487a",
+    "NAN33_P5": "phage-group-d09faf51164ddc8d",
+    "NAN33_P6": "phage-group-73d63e84ada8487a",
+    "NIC06_P2": "phage-group-fb73e6985b36d903",
+    "NIC06_P3": "phage-group-87adaa526dd71408",
+    "NRG_11A2": "phage-group-2ee9dc5ff520c5b1",
+    "NRG_11B1": "phage-group-2ee9dc5ff520c5b1",
+    "NRG_12A1B": "phage-group-dc2fc9e4f6706710",
+    "T4LD": "phage-group-fb73e6985b36d903",
+    "T7_Portugal": "phage-group-d5762717e36ab5c5"
+  },
+  "target_phage_groups": {
+    "T3": "phage-group-e483bfd412c482ef",
+    "T7": "phage-group-d5762717e36ab5c5"
+  },
+  "model_phage_groups": {
+    "409_P1": "phage-group-c6eeda0f2d4ce9cb",
+    "409_P3": "phage-group-87adaa526dd71408",
+    "409_P5": "phage-group-87adaa526dd71408",
+    "409_P6": "phage-group-87adaa526dd71408",
+    "409_P8": "phage-group-4743421896b610b5",
+    "411_P1": "phage-group-1d51aa7bd0245354",
+    "411_P2": "phage-group-da04a09548f14c4b",
+    "412_P1": "phage-group-b7e937bcab61d3bc",
+    "412_P2": "phage-group-87adaa526dd71408",
+    "412_P3": "phage-group-b7e937bcab61d3bc",
+    "412_P4": "phage-group-b7e937bcab61d3bc",
+    "412_P5": "phage-group-b7e937bcab61d3bc",
+    "416_P4": "phage-group-87adaa526dd71408",
+    "416_P5": "phage-group-87adaa526dd71408",
+    "423_P1": "phage-group-87adaa526dd71408",
+    "423_P10": "phage-group-87adaa526dd71408",
+    "423_P5": "phage-group-c6eeda0f2d4ce9cb",
+    "423_P7": "phage-group-87adaa526dd71408",
+    "423_P9": "phage-group-87adaa526dd71408",
+    "427_P2": "phage-group-d5762717e36ab5c5",
+    "427_P3": "phage-group-c6eeda0f2d4ce9cb",
+    "427_P4": "phage-group-c6eeda0f2d4ce9cb",
+    "536_P1": "phage-group-319c3cc68406f4e8",
+    "536_P11": "phage-group-dc2fc9e4f6706710",
+    "536_P12": "phage-group-07a006c20878bb53",
+    "536_P6": "phage-group-904196b57cd8764e",
+    "536_P7": "phage-group-904196b57cd8764e",
+    "536_P9": "phage-group-904196b57cd8764e",
+    "55989_P1": "phage-group-c6eeda0f2d4ce9cb",
+    "55989_P2": "phage-group-60160659d777e6d1",
+    "AL505_Ev3": "phage-group-a848fa74e1fd0040",
+    "AL505_Sd2": "phage-group-87adaa526dd71408",
+    "AN17_P1": "phage-group-c6eeda0f2d4ce9cb",
+    "AN17_P8": "phage-group-2ee9dc5ff520c5b1",
+    "AN24_P2": "phage-group-d09faf51164ddc8d",
+    "AN24_P3": "phage-group-d09faf51164ddc8d",
+    "AN24_P4": "phage-group-c6eeda0f2d4ce9cb",
+    "BCH953_P1": "phage-group-e4976f08707e5a1e",
+    "BCH953_P2": "phage-group-fb73e6985b36d903",
+    "BCH953_P3": "phage-group-e4976f08707e5a1e",
+    "BCH953_P4": "phage-group-fb73e6985b36d903",
+    "BCH953_P5": "phage-group-fb73e6985b36d903",
+    "BDX03_P1": "phage-group-c6eeda0f2d4ce9cb",
+    "BDX03_P2": "phage-group-c6eeda0f2d4ce9cb",
+    "BDX09_P1": "phage-group-07a006c20878bb53",
+    "DIJ06_P1": "phage-group-87adaa526dd71408",
+    "DIJ07_P1": "phage-group-319c3cc68406f4e8",
+    "DIJ07_P2": "phage-group-319c3cc68406f4e8",
+    "LF110_P1": "phage-group-2ee9dc5ff520c5b1",
+    "LF110_P2": "phage-group-2ee9dc5ff520c5b1",
+    "LF110_P3": "phage-group-2ee9dc5ff520c5b1",
+    "LF110_P4": "phage-group-2ee9dc5ff520c5b1",
+    "LF31_P1": "phage-group-8bad335bc806ac19",
+    "LF31_P3": "phage-group-87adaa526dd71408",
+    "LF50_P3": "phage-group-4081e960f67ef5dc",
+    "LF7074_P1": "phage-group-77f34fd3dfb3d441",
+    "LF7074_P2": "phage-group-77f34fd3dfb3d441",
+    "LF7074_P3": "phage-group-77f34fd3dfb3d441",
+    "LF73_P1": "phage-group-fb73e6985b36d903",
+    "LF73_P3": "phage-group-fb73e6985b36d903",
+    "LF73_P4": "phage-group-a848fa74e1fd0040",
+    "LF82_P1": "phage-group-2ee9dc5ff520c5b1",
+    "LF82_P2": "phage-group-2ee9dc5ff520c5b1",
+    "LF82_P3": "phage-group-2ee9dc5ff520c5b1",
+    "LF82_P4": "phage-group-2ee9dc5ff520c5b1",
+    "LF82_P5": "phage-group-2ee9dc5ff520c5b1",
+    "LF82_P6": "phage-group-2ee9dc5ff520c5b1",
+    "LF82_P8": "phage-group-5a297af0e02aa97d",
+    "LF82_P9": "phage-group-2ee9dc5ff520c5b1",
+    "LI10_P1": "phage-group-c6eeda0f2d4ce9cb",
+    "LI10_P2": "phage-group-c6eeda0f2d4ce9cb",
+    "LI10_P3": "phage-group-87adaa526dd71408",
+    "LI10_P4": "phage-group-87adaa526dd71408",
+    "LI10_P5": "phage-group-87adaa526dd71408",
+    "LI10_P6": "phage-group-87adaa526dd71408",
+    "LM02_P1": "phage-group-d821b99ebc25e1c6",
+    "LM07_P1": "phage-group-73d63e84ada8487a",
+    "LM08_P1": "phage-group-4743421896b610b5",
+    "LM08_P2": "phage-group-4743421896b610b5",
+    "LM33_P1": "phage-group-c6eeda0f2d4ce9cb",
+    "LM40_P1": "phage-group-4081e960f67ef5dc",
+    "LM40_P2": "phage-group-4081e960f67ef5dc",
+    "LM40_P3": "phage-group-4081e960f67ef5dc",
+    "MT1B1_3A1": "phage-group-c6eeda0f2d4ce9cb",
+    "NAN33_P1": "phage-group-73d63e84ada8487a",
+    "NAN33_P2": "phage-group-73d63e84ada8487a",
+    "NAN33_P4": "phage-group-73d63e84ada8487a",
+    "NAN33_P5": "phage-group-d09faf51164ddc8d",
+    "NAN33_P6": "phage-group-73d63e84ada8487a",
+    "NIC06_P2": "phage-group-fb73e6985b36d903",
+    "NIC06_P3": "phage-group-87adaa526dd71408",
+    "NRG_11A2": "phage-group-2ee9dc5ff520c5b1",
+    "NRG_11B1": "phage-group-2ee9dc5ff520c5b1",
+    "NRG_12A1B": "phage-group-dc2fc9e4f6706710"
+  },
+  "near_gp17_seed_source_ids": [
+    "427_P2",
+    "T7_Portugal"
+  ],
+  "excluded_source_ids": [
+    "427_P2",
+    "T7_Portugal"
+  ],
+  "excluded_model_table_phages": [
+    "427_P2"
+  ],
+  "retained_model_table_phages": [
+    "409_P1",
+    "409_P3",
+    "409_P5",
+    "409_P6",
+    "409_P8",
+    "411_P1",
+    "411_P2",
+    "412_P1",
+    "412_P2",
+    "412_P3",
+    "412_P4",
+    "412_P5",
+    "416_P4",
+    "416_P5",
+    "423_P1",
+    "423_P10",
+    "423_P5",
+    "423_P7",
+    "423_P9",
+    "427_P3",
+    "427_P4",
+    "536_P1",
+    "536_P11",
+    "536_P12",
+    "536_P6",
+    "536_P7",
+    "536_P9",
+    "55989_P1",
+    "55989_P2",
+    "AL505_Ev3",
+    "AL505_Sd2",
+    "AN17_P1",
+    "AN17_P8",
+    "AN24_P2",
+    "AN24_P3",
+    "AN24_P4",
+    "BCH953_P1",
+    "BCH953_P2",
+    "BCH953_P3",
+    "BCH953_P4",
+    "BCH953_P5",
+    "BDX03_P1",
+    "BDX03_P2",
+    "BDX09_P1",
+    "DIJ06_P1",
+    "DIJ07_P1",
+    "DIJ07_P2",
+    "LF110_P1",
+    "LF110_P2",
+    "LF110_P3",
+    "LF110_P4",
+    "LF31_P1",
+    "LF31_P3",
+    "LF50_P3",
+    "LF7074_P1",
+    "LF7074_P2",
+    "LF7074_P3",
+    "LF73_P1",
+    "LF73_P3",
+    "LF73_P4",
+    "LF82_P1",
+    "LF82_P2",
+    "LF82_P3",
+    "LF82_P4",
+    "LF82_P5",
+    "LF82_P6",
+    "LF82_P8",
+    "LF82_P9",
+    "LI10_P1",
+    "LI10_P2",
+    "LI10_P3",
+    "LI10_P4",
+    "LI10_P5",
+    "LI10_P6",
+    "LM02_P1",
+    "LM07_P1",
+    "LM08_P1",
+    "LM08_P2",
+    "LM33_P1",
+    "LM40_P1",
+    "LM40_P2",
+    "LM40_P3",
+    "MT1B1_3A1",
+    "NAN33_P1",
+    "NAN33_P2",
+    "NAN33_P4",
+    "NAN33_P5",
+    "NAN33_P6",
+    "NIC06_P2",
+    "NIC06_P3",
+    "NRG_11A2",
+    "NRG_11B1",
+    "NRG_12A1B"
+  ],
+  "phenotype_tables_parsed": false,
+  "training_or_scoring_executed": false,
+  "source_representation_caveat": "Deposited representations retain the documented +60/+62bp source-length discrepancy; no trimming/substitution or stock-identity inference",
+  "interpretation": "Relatedness groups and whole-component exclusions are conservative project policies; no taxonomy, binding, host-range or assembly inference. Final roster admission and production run specification remain separate."
+}

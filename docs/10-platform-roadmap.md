@@ -8,6 +8,8 @@ The long-term product vision is a reusable tail-fiber scaffold, interchangeable 
 
 The original proposals of 12–16 characterized tips, approximately 25 strains and December/February decision gates are planning targets. Scope and quantities should follow the data, facilities and final team decisions. Current work is public-case retrospective evaluation; autonomous design and DNA export remain future software capabilities.
 
+The November 7 receptor clarification separates native LPS controls from future protein targeting. The [Classroom and primary-source follow-up](21-receptor-dependence-and-source-check.md) records that intent, corrects the proposed shared knockout-control labels and keeps direct binding, genetic dependence, entry and infection distinct. The combined table and exact stocks remain unverified; this discussion does not change the previously stated scope preference or authorize biological work.
+
 The [prior-art review](12-prior-art-and-innovation.md) establishes that modular phage swaps and protein-binder design already exist. The research opportunity is to define **when a recognition module remains useful after transfer**, and to encode that operating domain in a reusable, evidence-backed standard. A domain can be narrow and valuable; “universal socket” requires evidence spanning the proposed interfaces and contexts.
 
 ## Evidence ladder

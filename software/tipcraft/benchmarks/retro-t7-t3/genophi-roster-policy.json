@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-07",
+  "purpose": "Fixed source-roster admission and relatedness-group split rules before biological fitting; not a complete executable model run specification",
+  "inputs": [
+    {
+      "path": "data/processed/genophi-label-audit.json",
+      "sha256": "ed231b66715d4a25adc032420ff801db1d335620be6556f5683164efd929fe88"
+    },
+    {
+      "path": "data/processed/genophi-training-source-map.json",
+      "sha256": "39aaf9067132ea492622f13ee98f7acd1e12758366f521609f58b538df73e60d"
+    },
+    {
+      "path": "data/processed/genophi-host-core-groups.json",
+      "sha256": "8c1dab67755fed183daa2d12b15d64eb69d5bcec452177e068fe3b3898a36568"
+    },
+    {
+      "path": "data/processed/genophi-phage-inputs.json",
+      "sha256": "d0f66b3bba527aa8cc32b327ed7f15107fbcd0943faefa6b1fda2496f528185c"
+    },
+    {
+      "path": "data/processed/genophi-phage-overlap.json",
+      "sha256": "dc6a514fc081e9320edeeccabfe7aa61fd1f23d2b5232ec11957ea1fc230be90"
+    },
+    {
+      "path": "data/processed/genophi-phage-similarities.tsv",
+      "sha256": "4fffd628591f3fc8c4cb81aa24130f1aa4eee71b75be6e5ed09e26e31532caee"
+    },
+    {
+      "path": "data/processed/viridic-original-r-comparison-v2.json",
+      "sha256": "fae6206bb55734868eb2879215648e318600afe2a20f394d12fb321cf9400ee9"
+    },
+    {
+      "path": "software/tipcraft/benchmarks/retro-t7-t3/genophi-overlap-policy.json",
+      "sha256": "2d9fd98d19dc3b75f8f016a2ca87965d86ff305a8921e6b075d0a878df1da47e"
+    },
+    {
+      "path": "software/tipcraft/benchmarks/retro-t7-t3/genophi-phage-policy-v2.json",
+      "sha256": "d023b97b870b9b585eeeae7fc726ab23c6b90c9c1c6079b8c641fbf7defc79b0"
+    }
+  ],
+  "identifier_rule": "Use the label audit original-source bacteria ID; require exact equality with deposited source_id. Do not promote punctuation-only candidates to stock identity. All402 current original-source IDs exactly match deposit IDs; sequence bytes remain separately authenticated.",
+  "host_exclusion_rule": "Require all403 deposited host files and complete target ANI audit bindings. Seed exclusions from near/boundary/unreported/name flags and propagate to complete published core-distance components; do not retain another member of an excluded host group.",
+  "phage_grouping": {
+    "all_nodes": "All97 deposited representations plus2frozen target references, including nonmodel/excluded bridge nodes",
+    "similarity_percent": 70.0,
+    "boundary_buffer_percentage_points": 0.01,
+    "edge_rule": "similarity >=69.99; exact complete unrounded matrix, undirected connected components",
+    "exclusion_rule": "Exclude target-containing components and components containing any near-gp17 exclusion seed; retain source representation caveats"
+  },
+  "label_rule": "Exclude all156 original-source-empty pairs, every nonblank conflict, any unmapped input and every row involving an excluded genome/group. Record all reasons without double-counting removed pairs. No replacement labels.",
+  "group_splits": {
+    "regime": "both_unseen",
+    "host_folds": 3,
+    "phage_folds": 3,
+    "seed": 2027,
+    "assignment": "Hash seed+axis+group ID with SHA256; sort by digest then ID; assign cyclically to three folds. No label or genome-count optimization.",
+    "outer_blocks": "All3x3host/phage fold combinations; each eligible pair is test exactly once; train uses neither held-out host nor held-out phage fold; mixed quadrants are embargoed in that fold.",
+    "insufficient_groups_or_empty_partitions": "Fail explicitly; no random split fallback or automatic fold-count relaxation.",
+    "single_class_training_or_test": "Record explicitly; single-class fits must abstain and undefined binary-discrimination metrics stay undefined. Do not choose new partitions from labels.",
+    "publication_scope": "Original source collection is one experimental publication; disclose shared publication. These group folds do not constitute leave-publication-out validation."
+  },
+  "admission_requires": [
+    "Authenticated all403source-host files and actual host-audit matrix/report/executable/target/policy bindings",
+    "Authenticated deposited phage representations, full unrounded relatedness matrix and original-R validation",
+    "Consistent nonblank training labels and exact original-source-ID to deposit crosswalk",
+    "Retained/excluded row/genome/group manifests and explicit deterministic partitions"
+  ],
+  "still_required_before_fit": [
+    "Fold-specific train-only feature vocabularies, feature assignment and input-vector collision reports",
+    "Complete model/feature selection/weights/seed/dependency parameters frozen in actual run specification",
+    "Measured resource feasibility for full host feature construction and actual interaction modelling"
+  ],
+  "target_scores_generated": false,
+  "production_run_spec_complete": false
+}

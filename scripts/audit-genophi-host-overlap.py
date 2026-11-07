@@ -95,6 +95,7 @@ def run(args) -> dict:
         raise ValueError(f"skani exited {completed.returncode}; inspect run.log")
     result = summarize(list(csv.DictReader(matrix.open(), delimiter="\t")), refs, queries, policy["host_exclusion"])
     return {"schema_version": 1, "method": version, "executable_sha256": sha256(args.executable),
+            "wrapper_sha256": sha256(Path(__file__)),
             "policy_sha256": sha256(args.policy), "target_manifest_sha256": sha256(args.targets),
             "source_provenance": provenance, "input_file_sha256": input_hashes, "target_file_sha256": target_hashes,
             "matrix_sha256": sha256(matrix), "command": command, **result,

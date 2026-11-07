@@ -14,6 +14,8 @@ UWCSEA iGEM 2027 赛季仓库。软件包名为 **TipCraft**；项目名称仍�
 
 371–553 是已发表结构片段，不能据此认定整个片段可以随意替换。T7/T3 交换有发表先例；不等于通用插座已成立。天然 T7 的 LPS 识别与未来蛋白受体定向必须区分。BindCraft 的结合成功率不能当作尾丝组装成功率，后者目前未知。来源见核验表。
 
+[最新受体讨论核查](docs/21-receptor-dependence-and-source-check.md)已对照 Classroom 和原始论文：团队澄清了两类问题的意图；waaC/F/G/L 不能统一标成 T7 受体阴性对照，敲除后的噬菌斑变化也不能单独证明直接结合或组装成功。
+
 ## 运行
 
 在仓库根目录使用 Python 3.11+ 与 uv：
@@ -25,7 +27,7 @@ uv run --project software/tipcraft python -m unittest discover -s software/tipcr
 
 当前版本是证据与评估工具。已实际运行独立 WIsH 基因组评分：覆盖六条天然噬菌体观测、四条交换案例明确弃权；T3 的已知阳性排在两个阴性之后。详见 [12 月决策门报告](docs/07-december-gate-report.md)。匿名重跑结果一致，但方法选择时已见过标签，不能宣称盲测验证。结构预测、设计和 DNA 订单接口仍未实现。没有伪造模型得分、实验记录或订单。
 
-下一方法 GenoPHI 的训练来源已进一步映射：94 个噬菌体 ID 和 265 个宿主 ID 直接对应公开基因组文件元数据，另有 137 个宿主名称候选待核验。计算评分前继续核查序列身份、同源排除和训练配置，详见[输入准备记录](docs/09-next-method-feasibility.md#training-source-mapping-follow-up)。
+下一方法 GenoPHI 的 94 个噬菌体 ID 和全部 402 个训练宿主 ID，现已通过原始实验记录对应到公开存档文件元数据。[训练来源准入与分区](docs/20-source-admission-and-partitions.md)记录了命名映射及当前缺少完整宿主文件／ANI 排除的 HOLD 状态；实验菌株身份和预测能力仍需各自的证据。
 
 ## 决策与协作
 
