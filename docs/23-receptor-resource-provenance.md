@@ -59,6 +59,8 @@ Both parse without warnings and declare translation table 11 for their CDS featu
 uv run --project software/tipcraft --with biopython==1.86 python scripts/audit-receptor-target-containers.py --cache data/raw/receptor-resource/target-containers-v1 --output /tmp/receptor-target-container-audit.json
 ```
 
+The separate [method-readiness assessment](24-receptor-method-readiness.md) compares the official v1 metadata labels with the updated browser table. Their 260 IDs and model roles agree, but 12 receptor/LPS annotation cells differ across 11 phages. Source version therefore remains part of the model specification.
+
 ## Reproduction and next admission gate
 
 ```bash

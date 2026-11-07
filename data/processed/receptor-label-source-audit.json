@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "purpose": "All-row source-label serialization and vocabulary audit, not outcome conversion or method evaluation",
+  "policy_sha256": "5cf9cd579bf0fc7592e64bec7845da1ba38b568162cd46fb4e2757b0edfa7ef0",
+  "script_sha256": "13d6f458e441a691386f7158f2e950d4a5fff6aa9f55e497d284044f885a3f12",
+  "ooxml_parser_sha256": "98b88150c75d3102a38a4882ddc64af66320a5b73e5419eae6622a5c4ff93d35",
+  "authenticated_inputs": [
+    {
+      "path": "data/raw/receptor-resource/supplements/tables-v1.xlsx",
+      "sha256": "10de34fd37a7ba1d355b56cdb8b214b690fc71f8991108669dee9d223ab298b7"
+    },
+    {
+      "path": "data/raw/receptor-resource/Table_S1_updated.tsv",
+      "sha256": "c7c1eb51281d4c3121bf6918b6207e13cb7bae4482d2454e3d1975f9ec0ca79e"
+    }
+  ],
+  "workbook_parse": {
+    "worksheet_part": "xl/worksheets/sheet1.xml",
+    "empty_formatted_rows_after_header": [
+      267,
+      278,
+      279,
+      294
+    ],
+    "formula_source_rows": []
+  },
+  "workbook_rows": 260,
+  "browser_rows": 260,
+  "unique_paired_ids": 260,
+  "unresolved_keys": 0,
+  "literal_difference_count": 12,
+  "differences_by_field": {
+    "BW25113 receptor": 2,
+    "BL21 receptor": 5,
+    "BW25113 LPS sugar": 5
+  },
+  "literal_vocabularies": {
+    "workbook": {
+      "Predictive models set": {
+        "mutant": 5,
+        "testing": 49,
+        "training": 206
+      },
+      "BW25113 receptor": {
+        "BtuB": 41,
+        "FadL": 1,
+        "FhuA": 22,
+        "FhuA;NupG": 1,
+        "LPS": 12,
+        "LamB": 6,
+        "LptD": 11,
+        "LptD;NupG": 1,
+        "NGR": 29,
+        "OmpA": 12,
+        "OmpC": 18,
+        "OmpF": 8,
+        "OmpW": 2,
+        "Resistant": 54,
+        "TolC": 2,
+        "Tsx": 36,
+        "YncD": 4
+      },
+      "BW25113 LPS sugar": {
+        "GluI": 37,
+        "GluII": 1,
+        "GluIII": 2,
+        "HepI": 28,
+        "HepII": 5,
+        "HepIV": 3,
+        "Kdo": 47,
+        "None": 80,
+        "Resistant": 57
+      },
+      "BL21 receptor": {
+        "FhuA": 13,
+        "LPS": 7,
+        "LamB": 8,
+        "Not assayed": 143,
+        "NupG": 1,
+        "OmpA": 5,
+        "OmpF": 8,
+        "Resistant": 41,
+        "TolC": 2,
+        "Tsx": 27,
+        "Unknown": 3,
+        "YncD": 2
+      },
+      "BW25113 susceptibility": {
+        "No": 58,
+        "Yes": 202
+      },
+      "BL21 susceptibility": {
+        "No": 74,
+        "Not assayed": 96,
+        "Resistant": 1,
+        "Yes": 89
+      }
+    },
+    "browser": {
+      "Predictive models set": {
+        "mutant": 5,
+        "testing": 49,
+        "training": 206
+      },
+      "BW25113 receptor": {
+        "BtuB": 41,
+        "FadL": 1,
+        "FhuA": 23,
+        "LPS": 12,
+        "LamB": 6,
+        "LptD": 12,
+        "NGR": 29,
+        "OmpA": 12,
+        "OmpC": 18,
+        "OmpF": 8,
+        "OmpW": 2,
+        "Resistant": 54,
+        "TolC": 2,
+        "Tsx": 36,
+        "YncD": 4
+      },
+      "BW25113 LPS sugar": {
+        "GluI": 37,
+        "GluII": 1,
+        "GluIII": 2,
+        "HepI": 33,
+        "HepII": 5,
+        "HepIV": 3,
+        "Kdo": 42,
+        "None": 80,
+        "Resistant": 57
+      },
+      "BL21 receptor": {
+        "FhuA": 13,
+        "GluI": 2,
+        "LPS": 4,
+        "LamB": 8,
+        "Not assayed": 143,
+        "OmpA": 5,
+        "OmpF": 7,
+        "OmpF;GluI": 1,
+        "Resistant": 42,
+        "TolC": 2,
+        "Tsx": 27,
+        "Unknown": 4,
+        "YncD": 2
+      },
+      "BW25113 susceptibility": {
+        "No": 58,
+        "Yes": 202
+      },
+      "BL21 susceptibility": {
+        "No": 74,
+        "Not assayed": 96,
+        "Resistant": 1,
+        "Yes": 89
+      }
+    }
+  },
+  "detail_artifact": {
+    "path": "data/raw/receptor-resource/label-sources-v1/literal-label-source-details.json",
+    "sha256": "9ad8a3ca62318e6f0f7f1f13a541c6d26dcc37daaf6d3baefc8fda01d0987d5b"
+  },
+  "missing_or_unlisted_receptors_converted_to_negative": false,
+  "training_or_scoring_executed": false,
+  "new_benchmark_rows_admitted": 0,
+  "interpretation": "Literal source comparison and vocabulary inventory only. Matching source strings do not establish negative-label completeness, direct binding, stock identity or independent test eligibility."
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "purpose": "Authenticate every container in the frozen260-phage cohort plus separate catalogue T3 target candidate; inventory existing DNA and deposited CDS translations only.",
+  "roster_path": "data/processed/receptor-phage-roster-audit.json",
+  "roster_sha256": "d8065d07a2cb6c4be58a0b7a9384d02fe3a416429fc1a443b01df4584a52b91b",
+  "source_commit": "ae2b5e0e59b24f84666a8ebed01f5d1c0ded7b04",
+  "inventory_sha256": "b56008cf1e83e1f066bffea41ae303e34870cd0086d5f5ef5a68c94f61f76f32",
+  "selection": {
+    "all_cohort_records": 260,
+    "published_model_roles": {
+      "training": 206,
+      "testing": 49,
+      "mutant": 5
+    },
+    "separate_catalogue_extra": "T3",
+    "outcome_based_selection": false
+  },
+  "download_workers": 4,
+  "download_timeout_seconds": 45,
+  "download_retries": 0,
+  "existing_target_cache": "data/raw/receptor-resource/target-containers-v1",
+  "parse_policy": {
+    "biopython_version": "1.86",
+    "parser": "Bio.SeqIO genbank",
+    "source_order_records_and_features": true,
+    "nucleotides": "Uppercase existing source DNA; strict IUPAC DNA; preserve record boundaries and ambiguities.",
+    "proteins": "Uppercase deposited CDS translation qualifiers only; preserve X, all source letters and stop characters; report nonstandard letters/internal stops. No gene calling, retranslating or missing-annotation filling.",
+    "protein_annotation_errors": "Preserve errors and suppress incomplete protein FASTA; independently authenticated valid source DNA remains available.",
+    "nucleotide_ids": "c{sorted_container_index:03d}r{record_index:03d}; disjoint from separately defined t000/t001 reference IDs",
+    "protein_ids": "{neutral_nucleotide_id}p{CDS_index:05d}v{translation_value_index:02d}",
+    "contig_sequence_hash": "SHA256 domain TipCraft-contig-sequences-v1\\0; source record order;8-byte big-endian sequence byte length+uppercase ASCII perrecord; headers excluded",
+    "translation_agreement_with_DNA": "not_verified; source translation/location/transl_table/exception provenance retained without claiming agreement",
+    "phenotype_qualifiers_read": false
+  },
+  "failure_policy": {
+    "every261_entry_retained": true,
+    "changed_cached_payload": "error; do not overwrite or redownload",
+    "failed_fetch": "record error without exclusion or retry",
+    "new_output_required": true,
+    "raw_container_publication": "atomic after declared size and Git blob SHA1 verification",
+    "no_stock_identity_or_homology_clearance": true,
+    "no_training_or_scoring": true
+  }
+}
