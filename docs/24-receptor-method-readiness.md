@@ -51,6 +51,8 @@ The [candidate representation policy](../software/tipcraft/benchmarks/receptor-r
 
 This is a declared implementation adaptation. Its direct global projection has not been certified equivalent to the authors' novel-genome protein-family assignment workflow. It has not been used for phage-cohort feature preparation or interaction-model feature selection, fitting or scoring. Its separate host-reference capacity test is recorded below. Tests check protein boundaries, protein-level occurrence counting, held-out vocabulary exclusion, merged-member divergence, deterministic ordering and invalid-input rejection.
 
+The subsequent [family-assignment source probe](28-family-assignment-semantics.md) executes the pinned upstream mapping function on synthetic inputs. Its denominator includes reached family mappings; entirely unassigned genomes are omitted by that function. These observed semantics constrain a future family-aware capacity test. They do not establish biological performance or reverse the direct global encoder's measured collision.
+
 ## Executed annotation and near-homolog checks
 
 The [strict translation-consistency report](../data/processed/receptor-cds-translation-check.json) covers all 48,083 deposited translations under a policy fixed before checking:

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "scope": "Synthetic upstream feature-projection semantics only; no biological sequences, labels, fitting, parameter search or host prediction",
+  "upstream_commit": "f7e30abc1b0bbba1ae76b8f58a3363bbbc5cd54f",
+  "upstream_path": "genophi/workflows/kmer_assign_features_workflow.py",
+  "source_git_blob": "8f65647d058a09167456122d5f91eecc7eddcb97",
+  "source_sha256": "68e6978a617a5cb30907be7ef2c69aa436790a2b4ad0e5b9c550372fb042b994",
+  "execution": "Extract three unchanged function AST nodes; supply their declared dependencies; do not import or execute other upstream code",
+  "functions": ["load_aa_sequences_from_files", "process_row_for_kmer_matching", "map_features_with_kmers_and_sequences"],
+  "threads": 1,
+  "threshold": 0.75,
+  "threshold_rationale": "Deliberately separates one-of-two from one-of-one arithmetic in a synthetic contract probe; not a selected biological inference threshold",
+  "feature": "One merged feature with two distinct family/k-mer members: alpha/AAAAA and beta/CCCCC",
+  "cases": ["both families assigned, both k-mers present", "only alpha assigned, its k-mer present", "alpha assigned, its k-mer absent", "no assigned family"],
+  "record": "Record actual upstream rows and values, including omitted genomes; compare only with an explicitly different fixed-vocabulary denominator illustration",
+  "decision_boundary": "Do not call global OR projection or a newly implemented family-aware projection equivalent to upstream. Any later adaptation must freeze denominator, unmatched-genome, residue, assignment and feature-order rules before biological execution."
+}

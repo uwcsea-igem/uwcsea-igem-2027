@@ -1,0 +1,64 @@
+{
+  "biological_sequences_or_phenotypes_loaded": false,
+  "dependencies": {
+    "biopython": "1.86",
+    "pandas": "2.3.3",
+    "tqdm": "4.67.1"
+  },
+  "executed_functions": [
+    "load_aa_sequences_from_files",
+    "process_row_for_kmer_matching",
+    "map_features_with_kmers_and_sequences"
+  ],
+  "fixed_vocabulary_denominator_illustration": {
+    "both": 1,
+    "negative": 0,
+    "partial": 0,
+    "unassigned": 0
+  },
+  "interpretation": [
+    "Only members reached through assigned protein families enter the upstream denominator.",
+    "A missing family is absent from that denominator, rather than automatically counted as a failed vocabulary member.",
+    "A genome with no matched family rows is omitted by this function, rather than explicitly returned as an all-zero vector.",
+    "The fixed-vocabulary denominator is a different illustrative rule, not a certified correction or the paper's measured inference protocol.",
+    "No biological prediction, accuracy, threshold optimization or whole-workflow equivalence is established."
+  ],
+  "model_fitted": false,
+  "omitted_genomes": [
+    "unassigned"
+  ],
+  "policy_sha256": "0efdbba93f406a771a9766307bf48f5f2a3dd6aa638fc86fbf07d5adeef86df0",
+  "schema_version": 1,
+  "script_sha256": "f56ac6a9f8a8d1ea4725a0d2d7e6d5f653721c7f8d5c5957c53de013a8089351",
+  "source_git_blob": "8f65647d058a09167456122d5f91eecc7eddcb97",
+  "source_sha256": "68e6978a617a5cb30907be7ef2c69aa436790a2b4ad0e5b9c550372fb042b994",
+  "status": "executed_synthetic_contract_probe",
+  "synthetic_inputs": {
+    "members": [
+      "alpha_AAAAA",
+      "beta_CCCCC"
+    ],
+    "protein_genome_map": {
+      "both_a": "both",
+      "both_b": "both",
+      "negative_a": "negative",
+      "partial_a": "partial",
+      "unassigned": "unassigned"
+    },
+    "sequences": {
+      "both_a": "AAAAA",
+      "both_b": "CCCCC",
+      "negative_a": "TTTTT",
+      "partial_a": "AAAAA",
+      "unassigned": "DDDDD"
+    },
+    "threshold": 0.75
+  },
+  "upstream_commit": "f7e30abc1b0bbba1ae76b8f58a3363bbbc5cd54f",
+  "upstream_output": {
+    "both": 1,
+    "negative": 0,
+    "partial": 1
+  },
+  "upstream_path": "genophi/workflows/kmer_assign_features_workflow.py"
+}
