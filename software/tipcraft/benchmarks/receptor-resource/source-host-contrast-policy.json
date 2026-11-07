@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "scope": "Literal source susceptibility contrast/identifiability audit before model fitting; not phenotype admission or original target evaluation",
+  "inputs": [
+    {
+      "path": "data/raw/receptor-resource/Table_S1_updated.tsv",
+      "sha256": "c7c1eb51281d4c3121bf6918b6207e13cb7bae4482d2454e3d1975f9ec0ca79e"
+    },
+    {
+      "path": "data/processed/receptor-source-role-overlap.json",
+      "sha256": "acbe37674c627be2627fd7c4afe78df06f1e28c0285db5d82a5fb16ae3288ee1"
+    },
+    {
+      "path": "data/processed/receptor-whole-genome-groups.json",
+      "sha256": "2b540c24915b22edd6347f19efc2f445a7fa8e743f3a271203e91634ab141159"
+    }
+  ],
+  "source_version": "Pinned author TSV, not a merged receptor-label version",
+  "columns": [
+    "BW25113 susceptibility",
+    "BL21 susceptibility"
+  ],
+  "literal_states": "Only exact Yes and No form complete binary-state pairs for descriptive counting. All other strings remain separate with literal exclusions; no Resistant conversion or production-host labels.",
+  "partition": "Keep every one of the five existing 260-member role buckets; never move members based on susceptibility.",
+  "contrast": "Count BW25113=Yes/BL21=No and the reverse separately, including genomic group counts and identifiers.",
+  "identifiability": "If both opposite orientations occur, a single fixed host ordering cannot perfectly satisfy all comparisons. If only one orientation occurs, a suitable fixed host ordering can satisfy every descriptive mixed-state comparison. This logical diagnostic is not a fitted or evaluated predictor.",
+  "training_decision": "No labels admitted, model trained, original coverage added or both-unseen contract relaxed."
+}

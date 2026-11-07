@@ -57,6 +57,8 @@ The [family-conditioned biological pilot](29-family-host-capacity.md) now passes
 
 The [endpoint correction](30-collision-endpoint-correction.md) prevents overinterpreting this boundary: the two colliding K-12 hosts share labels in the native panel, so that collision alone is not a rejection criterion for the recorded concordance endpoint. The original all-host collision still forces positive-negative ties. A host-only ablation and independent label evaluation remain required.
 
+The subsequent [source-host contrast audit](31-source-host-contrast-readiness.md) finds complete literal two-host pairs for 43/84 candidate training phages and 6/49 testing phages. Only two testing phages supply mixed-state comparisons, both favoring BW25113. A fixed host ordering can satisfy those comparisons, so this subset alone cannot establish a phage-dependent ranking advantage. No source phenotype or model is admitted by this count.
+
 ## Executed annotation and near-homolog checks
 
 The [strict translation-consistency report](../data/processed/receptor-cds-translation-check.json) covers all 48,083 deposited translations under a policy fixed before checking:
