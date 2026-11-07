@@ -1,6 +1,6 @@
 # Next-method feasibility review
 
-Reviewed 2026-11-07; bounded primary-source and input audit, before any new model scores. **HOLD for another independent T7/T3 evaluation; prioritize GenoPHI for input preparation.** This is an input-readiness decision, not a measured failure of GenoPHI, a claim that no suitable method exists, or team approval. The previous WIsH NO-GO remains in force.
+Reviewed 2026-11-07; bounded primary-source and input audit, before any new model scores. **The GenoPHI route remains on HOLD; active method selection now follows the [alternative route](22-alternative-route.md) without requiring the Picard genome download.** The sections below preserve the original candidate review and executed preparation findings. This is not a measured GenoPHI failure or team approval. The previous WIsH NO-GO remains in force.
 
 ## Biological and methodological fit
 

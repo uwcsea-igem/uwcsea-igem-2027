@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-11-07",
+  "purpose": "Accessible alternative resource/schema discovery; not a selected prediction dataset",
+  "repository": "https://github.com/mjohnson11/PhageDataSheets",
+  "commit": "ae2b5e0e59b24f84666a8ebed01f5d1c0ded7b04",
+  "data_tree_sha1": "4bbf0da78655e8f8e28b5efd7631997618711f63",
+  "data_tree_entries": 1257,
+  "files": [
+    {
+      "file": "KEIO_EOP_reformatted.csv",
+      "commit": "ae2b5e0e59b24f84666a8ebed01f5d1c0ded7b04",
+      "header": "phage,Genotype,EOP,EOP (complemented)",
+      "review_scope": "Header only; full response retrieved, outcomes not inspected or selected",
+      "git_blob_sha1": "e23e55974c8193c5815ef48a8fc817049e6df864",
+      "expected_bytes": 35180
+    },
+    {
+      "file": "Table_S1_updated.tsv",
+      "commit": "ae2b5e0e59b24f84666a8ebed01f5d1c0ded7b04",
+      "header": "Phage\tAlternative name\tFull name\tProduction host strain\tLifestyle\tGenome accesion\tGenome size (bp)\tMorphotype\tClass\tFamily\tSubfamily\tGenus\tBW25113 susceptibility\tBL21 susceptibility\tBW25113 receptor\tBW25113 LPS sugar\tBL21 receptor\tReceptor-binding protein\tLPS sugar-binding protein\tAF3 model\tPredictive models set\tReference (doi)\tEnvironmental source (for in-house phages)\tNotes",
+      "review_scope": "Header only; full response retrieved, outcomes not inspected or selected",
+      "git_blob_sha1": "ff279b44697edc9908841515ff0681e6e9254c03",
+      "expected_bytes": 66168
+    }
+  ],
+  "payload_authentication": "Git object metadata recorded; independent payload checksum replay and record-level provenance checks remain pending",
+  "publication_status": "Associated2026preprint; full-text methods not yet reviewed",
+  "outcomes_used_for_method_training_or_selection": false,
+  "current_benchmark_changed": false,
+  "target_scores_generated": false,
+  "role": "Unassigned pending assay/material/source and overlap audit; no training/evaluation split or new performance claim"
+}

@@ -6,6 +6,8 @@ Season repository for a proposed UWCSEA iGEM 2027 team project. **TipCraft** is 
 
 Repository documentation, literature reviews and scientific evidence notes are maintained in English.
 
+[Active alternative route](docs/22-alternative-route.md): continue independent method and receptor-evidence selection without requiring the inaccessible Picard whole-host genome download. Existing measured results and source abstentions remain available below.
+
 [Long-term platform roadmap](docs/10-platform-roadmap.md) · [Official-rule evidence](docs/11-igem-rule-evidence.md) · [Prior art and innovation](docs/12-prior-art-and-innovation.md)
 
 ## One-page project plan
