@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-08",
+  "status": "prospective_complete_copy_symmetric_projection_probe_before_execution",
+  "helper_sha256": "4b3190bc6ed2e926d627ce7d517a0f30222bd130f2c707371be121408af80900",
+  "kernel_sha256": "a6ae6d3253507846c5a44075b9c159c2ec752cec5d52d78cace668c7b9076cbc",
+  "inputs": [
+    {
+      "path": "data/raw/genophi-external-validation/symmetric-panel-probe-v1/source.faa",
+      "sha256": "5ce58d70b192df2a45be43949b892fe2157e97cb20fdcfdc461f0f82cfec6190"
+    },
+    {
+      "path": "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+      "sha256": "837eaf6cc9be92ff320c42c4cf56ae0d75f2a53c6ff6b24a577e803e9e3951be"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/training.faa",
+      "sha256": "ad25571e5f884d07ba55bd52e02ac1835e04a4162ff100492555bea944499641"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/queries.faa",
+      "sha256": "db4c28e76be01cc685270c4443acd0b704ddcc8dc6058a5c3ed817f7a7847dc9"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/protein-map.json",
+      "sha256": "ab7e1e96094b3eb0d94f6d569d118a14b297e44034fbb7900da3240fb1ad16d1"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/vocabulary.json",
+      "sha256": "3b394f68639b7ee1eaab3ff3093c879f396e1261899a234aa714bc298d75bee9"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/query.tsv",
+      "sha256": "979c45fa74515c522048dd99216c6a447ca84f072a9aaad208eceb6d4e2a89a6"
+    },
+    {
+      "path": "scripts/check-genophi-phage-features.py",
+      "sha256": "c2c091b811ef6d9aaf590abe27cb71d19521354bfb0cac7baf9226f817b99875"
+    },
+    {
+      "path": "data/processed/secondary-features-v2-host1-phage0-host.json",
+      "sha256": "a9ef498e2544b815bc789d3e6004ee61400b8709462a1673395556fda7ba7de3"
+    },
+    {
+      "path": "data/processed/mmseqs-external-projection-probe.json",
+      "sha256": "f8e81e279f1590a5c932f21d5b400fdf3859eeaa7a2ef70673100f719a33b8df"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/train_db",
+      "sha256": "8432ba761bc176dc8dbd6934445b033bd5a73d20eb31635f74263c6e3b37b821"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/train_db.dbtype",
+      "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/train_db.index",
+      "sha256": "e8960da0e9bf52ed75984a43076000f1db5a247dd2d060e1c73f90bd55b11547"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/train_db.lookup",
+      "sha256": "c6949eb12cf1d6632e3d5a9610b379da99b88be500b3ae55df1673085ef51bbb"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/train_db.source",
+      "sha256": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/train_db_h",
+      "sha256": "f625f12e2698e7c4076f852d02f28fcab1d9ca9a9fe5ac84e0bcfa6f85d6928e"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/train_db_h.dbtype",
+      "sha256": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/train_db_h.index",
+      "sha256": "a270ca72b295d1e59cec7d3e5a266e7356a7e5676a682d8cd37d9ec2d4ca8d6b"
+    },
+    {
+      "path": "software/tipcraft/src/tipcraft/protein_features.py",
+      "sha256": "a6ae6d3253507846c5a44075b9c159c2ec752cec5d52d78cace668c7b9076cbc"
+    }
+  ],
+  "workdir": "data/raw/genophi-external-validation/symmetric-panel-probe-v1",
+  "commands": [
+    {
+      "id": "source-createdb",
+      "argv": [
+        "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "createdb",
+        "data/raw/genophi-external-validation/symmetric-panel-probe-v1/source.faa",
+        "data/raw/genophi-external-validation/symmetric-panel-probe-v1/source_db",
+        "-v",
+        "3"
+      ]
+    },
+    {
+      "id": "source-search",
+      "argv": [
+        "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "search",
+        "data/raw/genophi-external-validation/symmetric-panel-probe-v1/source_db",
+        "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/train_db",
+        "data/raw/genophi-external-validation/symmetric-panel-probe-v1/source_hits",
+        "data/raw/genophi-external-validation/symmetric-panel-probe-v1/tmp",
+        "-c",
+        "0.8",
+        "--min-seq-id",
+        "0.4",
+        "-s",
+        "7.5",
+        "--alignment-mode",
+        "3",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ]
+    },
+    {
+      "id": "source-createtsv",
+      "argv": [
+        "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "createtsv",
+        "data/raw/genophi-external-validation/symmetric-panel-probe-v1/source_db",
+        "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/train_db",
+        "data/raw/genophi-external-validation/symmetric-panel-probe-v1/source_hits",
+        "data/raw/genophi-external-validation/symmetric-panel-probe-v1/source.tsv",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ]
+    }
+  ],
+  "timeout_seconds_per_command": 1800,
+  "workers": 1,
+  "automatic_retry": false,
+  "protein_parser": "scripts/check-genophi-phage-features.py",
+  "training_faa": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/training.faa",
+  "query_faa": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/queries.faa",
+  "protein_map": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/protein-map.json",
+  "vocabulary": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/vocabulary.json",
+  "saved_query_tsv": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/query.tsv",
+  "copied_proteins": 4962,
+  "selection": "All ECOR12 copied-control proteins from the failed v2 task, in preserved map order; no selected favorable subset. Technical post-hoc diagnostic, not an independent new proteome.",
+  "comparison": "New ordinary external projection of all 4962 source proteins versus the authenticated existing external-copy search for the same amino acid strings. Existing target DB, families, vocabulary and v2 search options stay fixed. Both missing is counted separately from same assigned family; one-sided absence or different assigned families is a discrepancy.",
+  "prospective_expected_observation": "4960 same assigned families, two both-unassigned proteins, zero discrepancies and equal existing-vocabulary vectors. Report actual outcomes even when they contradict this expectation.",
+  "inference_scope": "This is a copied-proteome diagnostic using an existing vocabulary, not a newly rebuilt training vocabulary or full workflow admission. The saved copied query is not independently rerun here. A production change requires separate prospective versioning and controls.",
+  "biological_models_fitted_or_scored": false,
+  "failed_v2_control_waived": false
+}
