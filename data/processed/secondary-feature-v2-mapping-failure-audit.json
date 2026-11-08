@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "status": "completed_read_only_v2_mapping_failure_audit",
+  "failed_report": {
+    "path": "data/processed/secondary-features-v2-host1-phage0-host.json",
+    "sha256": "a9ef498e2544b815bc789d3e6004ee61400b8709462a1673395556fda7ba7de3"
+  },
+  "terminal_batch_ledger": {
+    "path": "data/raw/genophi-external-validation/secondary-feature-batch-v2/execution-ledger.json",
+    "sha256": "0042cf516ecc758a2037239261073ad2fd031dd03d45b11bb32fed021f6a683d"
+  },
+  "pinned_source": {
+    "path": "data/raw/genophi-external-validation/mapping-control-diagnostic-v1/mmseqs-source/Alignment.cpp",
+    "sha256": "5e313dc2a02dfa883aad7aa737ded89875dc12b5cb6e4d0b56f3b4fe3c30278e"
+  },
+  "completed_accepted_tasks": 6,
+  "failed_tasks": 1,
+  "unstarted_tasks": 11,
+  "all_failed_task_commands_observed_exit_zero": true,
+  "failed_task_commands_and_normalized_inputs_match_preplan": true,
+  "all_failed_report_artifact_hashes_verified": true,
+  "control_proteins": 4962,
+  "failed_control_proteins": 2,
+  "control_vector_equal": true,
+  "failed_records": [
+    {
+      "copied_protein": "control_htg0000p0004747",
+      "training_protein": "htg0000p0004747",
+      "expected_family": "htg0000p0004747",
+      "actual_family": null,
+      "passed": false,
+      "actual_sequence_equal": true,
+      "length": 46,
+      "sequence_sha256": "ba7e10bb3b1ee9fa43b1721b9b447b02c429cf8aa9cd950bf0c72b963d691582",
+      "training_raw_rows": [
+        [
+          "htg0000p0004747",
+          "htg0000p0004747",
+          "18",
+          "1.00",
+          "1.572E+03",
+          "0",
+          "45",
+          "46",
+          "0",
+          "45",
+          "46"
+        ]
+      ],
+      "copy_raw_rows": [],
+      "retained_feature": null,
+      "retained_occurrence": null
+    },
+    {
+      "copied_protein": "control_htg0000p0004956",
+      "training_protein": "htg0000p0004956",
+      "expected_family": "htg0000p0004956",
+      "actual_family": null,
+      "passed": false,
+      "actual_sequence_equal": true,
+      "length": 81,
+      "sequence_sha256": "06e93ba87f2c32bf2677a635158b4fca2a3eb31cf0379d723d7ba2bc6c01c475",
+      "training_raw_rows": [
+        [
+          "htg0000p0004956",
+          "htg0000p0004956",
+          "154",
+          "1.00",
+          "2.125E-44",
+          "0",
+          "80",
+          "81",
+          "0",
+          "80",
+          "81"
+        ]
+      ],
+      "copy_raw_rows": [],
+      "retained_feature": null,
+      "retained_occurrence": null
+    }
+  ],
+  "interpretation": "Two copied proteins have no retained raw query hit despite identical normalized amino acid sequences and a saved training self hit. Neither affected family survives the more-than-one-training-genome vocabulary filter, and source/control feature vectors agree. The stronger predeclared protein-family control still fails; it is not retrospectively waived. Actual-residue alignment mode does not establish candidate coverage or symmetric search acceptance.",
+  "source_code_scope": "Pinned Alignment.cpp lines548-560 permits isIdentity to bypass ordinary hit criteria. The 46-aa training self hit has E-value1572.0, above the configured search threshold. This can explain why that self hit is not evidence of ordinary external-query acceptance. The precise loss stage for the 81-aa copied query is unresolved: absence from final query.tsv does not distinguish prefilter loss from later filtering.",
+  "biological_models_fitted_or_scored": false,
+  "phenotype_labels_used_for_diagnostic": false,
+  "parameter_control_or_case_masks_changed": false,
+  "search_rerun": false,
+  "original_failed_status_preserved": true,
+  "next_action": "Inspect the two saved search paths using a separately frozen diagnostic plan before deciding whether to revise symmetric projection or report technical HOLD. Do not train from the six passing tasks or silently accept equal final vectors."
+}

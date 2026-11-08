@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "status": "completed_saved_prefilter_missing_candidate_audit",
+  "inputs": [
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/train_db.lookup",
+      "sha256": "c6949eb12cf1d6632e3d5a9610b379da99b88be500b3ae55df1673085ef51bbb"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/tmp_self/latest/pref_0.index",
+      "sha256": "3a92de94a964c735d271eaac3082387310f7f76749303ee66ee4085b744e57dc"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/tmp_self/latest/pref_0.0",
+      "sha256": "454e1490a550dce7c7e43b4daa75f65468727610bd144aba761b9f58e574d4af"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/tmp_self/latest/pref_0.1",
+      "sha256": "2fe135ef02eeceab2000b125f03fc6825b8ed100a57acadfe1ee79c9fd46a4a9"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/tmp_self/latest/pref_0.2",
+      "sha256": "451331f1dbb3d42b88f189441a66b36eba558a4150799abe49ee2b46a86e3254"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/tmp_self/latest/pref_0.3",
+      "sha256": "0a70bf75d56d46990a34aee9a7f8c5ce18c9dcd138d149bfefe801029da75b95"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/query_db.lookup",
+      "sha256": "3e499bfffb8569fc145cd8e05ec7097741e0c32c3ce6490389a1d8df518d69ab"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/tmp_query/14327748477521993906/pref_0.index",
+      "sha256": "a1cdc0e4e5c47b892e32e93afed7ca9c764d3846216513ce5dab91a02a701e1c"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/tmp_query/14327748477521993906/pref_0.0",
+      "sha256": "70e8fb6f9cdfad17c0cd071034f2514c3c39509530c69c0a30edada41c5117f8"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/tmp_query/14327748477521993906/pref_0.1",
+      "sha256": "e105f80840db73def58428a3b025a6dc23b5cedee03f0be3dc7fa0a2c392d9a5"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/tmp_query/14327748477521993906/pref_0.2",
+      "sha256": "069c6979c37a0a7e513197e4ba39a4aeb0939a5176d2259c21595dd09284b6ad"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/tmp_query/14327748477521993906/pref_0.3",
+      "sha256": "3bbf0071bfd349bbd360714f148e129142c2e044a536b14a8e5f52e103c20adf"
+    }
+  ],
+  "parent_audit": {
+    "path": "data/processed/secondary-feature-v2-mapping-failure-audit.json",
+    "sha256": "6445abd6969573b8e4892d9f7715aaa74f1d24fae881200a6bbc3493ce4126e4"
+  },
+  "records": [
+    {
+      "context": "tmp_self",
+      "protein": "htg0000p0004747",
+      "numeric_query_key": 28099,
+      "index_offset": 32770364,
+      "index_length": 15,
+      "chunk": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/tmp_self/latest/pref_0.1",
+      "chunk_offset": 8886495,
+      "raw_entry_hex": "323830393909363535333509300a00",
+      "prefilter_rows": [
+        [
+          28099,
+          65535,
+          0
+        ]
+      ]
+    },
+    {
+      "context": "tmp_self",
+      "protein": "htg0000p0004956",
+      "numeric_query_key": 71289,
+      "index_offset": 81935944,
+      "index_length": 15,
+      "chunk": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/tmp_self/latest/pref_0.3",
+      "chunk_offset": 11838806,
+      "raw_entry_hex": "373132383909363535333509300a00",
+      "prefilter_rows": [
+        [
+          71289,
+          65535,
+          0
+        ]
+      ]
+    },
+    {
+      "context": "tmp_query",
+      "protein": "control_htg0000p0004747",
+      "numeric_query_key": 10279,
+      "index_offset": 11622606,
+      "index_length": 1,
+      "chunk": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/tmp_query/14327748477521993906/pref_0.1",
+      "chunk_offset": 3187680,
+      "raw_entry_hex": "00",
+      "prefilter_rows": []
+    },
+    {
+      "context": "tmp_query",
+      "protein": "control_htg0000p0004956",
+      "numeric_query_key": 25942,
+      "index_offset": 28667803,
+      "index_length": 1,
+      "chunk": "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/tmp_query/14327748477521993906/pref_0.3",
+      "chunk_offset": 4233354,
+      "raw_entry_hex": "00",
+      "prefilter_rows": []
+    }
+  ],
+  "interpretation": "Both copied proteins already have empty candidate entries in the saved external-query prefilter database. Their training-self prefilter entries contain only the same numeric target key with score65535 and diagonal0. Thus neither missing external-query row is attributable solely to the alignment-mode identity calculation. This establishes the observed loss stage but not the precise upstream reason for no external prefilter seed candidate.",
+  "sequence_equality_established_in_parent_audit": true,
+  "search_rerun": false,
+  "parameters_or_controls_changed": false,
+  "biological_model_scores_generated": false
+}

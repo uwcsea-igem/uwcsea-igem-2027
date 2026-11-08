@@ -2,6 +2,8 @@
 
 Updated 2026-11-08. **Actual-residue identity restores family-assignment consistency for all 4,704 proteins in the saved copied-proteome control.** This broader technical replay supports a prospectively recorded v2 projection procedure. It is not host-prediction accuracy, an independent new-genome validation, or a waiver of the [failed v1 feature task](41-training-query-identity-control-failure.md).
 
+Current batch status: **stopped on the seventh task**, with six passing tasks, one mapping-control failure and eleven unstarted tasks. The [subsequent saved-prefilter audit](44-v2-prefilter-control-failure.md) localizes two missing copied hits to empty external-query candidate entries. The passing checkpoints below remain technical evidence, not full-batch admission.
+
 ## Complete copied-proteome evidence
 
 The [probe policy](../software/tipcraft/benchmarks/receptor-resource/mmseqs-control-panel-probe-policy.json), SHA256 `7c8e7b9feebe60801cb041963e4debf83328cdd92b79bdf544ef14fcbfd673a1`, was fixed before the [diagnostic helper](../scripts/probe-mmseqs-control-panel.py) ran. It selects every saved ECOR14 control member, verifies each actual normalized FAA copy against its training sequence, and preserves the full original sequence databases and saved prefilter candidates. Both contexts request alignment mode 3; no phenotype or native labels are supplied.
