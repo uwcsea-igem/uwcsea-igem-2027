@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-08",
+  "status": "prospective_saved_native_score_consumer_no_actual_native_score_evaluation",
+  "helper_sha256": "cbdecf5df47131a57ce817e2553bf58fc598855fa3309d6f951ce3a2e0006888",
+  "inputs": {
+    "native_design": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-native-transfer-design-policy.json",
+      "sha256": "78dbabbb29740951e12c2669228a604d41b7ecfa882a384d1f96f7c30b437bd0"
+    },
+    "method_contract": {
+      "path": "software/tipcraft/benchmarks/retro-t7-t3/next-method-contract.json",
+      "sha256": "58b3b57941cdc49396bcf604ff41521f135bbceb61a542aacc10b9613dd4275a"
+    },
+    "native_fitter": {
+      "path": "scripts/fit-native-transfer.py",
+      "sha256": "fee80c44c903a1d9125f76f42f8efec98dd6458115fee955fec75e2451e8d957"
+    },
+    "native_fitting_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/native-transfer-fitting-policy.json",
+      "sha256": "39af4698ec2bb65ec18755ca9795829ad197b885229ffadfd62e515231872e62"
+    },
+    "learning": {
+      "path": "software/tipcraft/src/tipcraft/learning.py",
+      "sha256": "a9c6bafc896c72584ff8a5e6a286a20563f6698468d9a9c2d81dd42f0185bcb5"
+    },
+    "source_evaluator": {
+      "path": "scripts/evaluate-secondary-scores.py",
+      "sha256": "be46663f98748537c470ad04d0321f62e88671da6c2a45193347921aabb4e82f"
+    },
+    "source_evaluation_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-evaluation-policy.json",
+      "sha256": "bc144c228ad2a5599eac116200d9b100db38690562d1355d980c829c5b74ea87"
+    },
+    "native_feature_helper": {
+      "path": "scripts/prepare-native-transfer-features.py",
+      "sha256": "c846e9ad453a02d24db38bd7e9dfde8fb2020224289c30a60e57eabeb51fc37b"
+    },
+    "native_feature_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/native-transfer-feature-policy.json",
+      "sha256": "82a77d51e82782aa27fea958e7639b5a8afd5d84fbd852d0659f2b7d297c594f"
+    },
+    "retrospective": {
+      "path": "software/tipcraft/src/tipcraft/retrospective.py",
+      "sha256": "7cc5ce0519ea21e6d4b56abdef7fcce611e1a83921d2630823480ced4910d7f4"
+    },
+    "benchmark": {
+      "path": "software/tipcraft/src/tipcraft/benchmark.py",
+      "sha256": "0ee32bfb891fecc8ab961f4933c0860d64e69fd203316367763b65bb233fe0a9"
+    },
+    "classification_metrics": {
+      "path": "software/tipcraft/src/tipcraft/rank.py",
+      "sha256": "9b257627d864aa0ac197bb3e9746b37218824e4ab06e6bf51adcf135c1b0cc80"
+    }
+  },
+  "outcome_inputs": {
+    "cases": {
+      "path": "software/tipcraft/benchmarks/retro-t7-t3/cases.csv",
+      "sha256": "716b09e3636c1d3c4653cac245bec7d7407c9a6a06eac08dcb5e353b0b0769c3"
+    },
+    "wish": {
+      "path": "data/processed/wish/named/scores.json",
+      "sha256": "1f901cf3c8af386cb78ba3c9fcb7d8acdb3bad2195a0d1ba7b1258e627744699"
+    }
+  },
+  "authentication_order": "Externally frozen completed six-pair native receipt SHA first; authenticate three model manifests, five artifacts each, pre-scoring boundary, pre-fit plan/provenance, all source rows, complete same-panel nine-block source evaluation, both-unseen/publication groups and fixed native feature report. Only then open cases.csv and historical WIsH.",
+  "scores": "Exactly paired/host_only/phage_only, native T7/T3 by BL21/BW25113/MG1655 finite raw margins; no swap construct scores or favorable common-subset fallback. Saved scores consumed only, no fitting, inference, calibration or retuning.",
+  "primary_endpoint": "Existing retrospective.evaluate_scores per-phage positive-negative concordance, ties0.5; mean informative phages only. T7 all3positive has no PN comparison; T3 alone informative. Old top1 primary is explicitly secondary here.",
+  "native_screen": "Complete6native observations; paired concordance strictly>0.5 and strictly>historicalWIsH on exactly the same6. Host-only/phage-only attribution reported separately; no new admission gate.",
+  "comparators": [
+    "tied",
+    "host_only",
+    "phage_only",
+    "WIsH"
+  ],
+  "coverage": "6of10 original cases; all4exchange cases remain abstained. A positive native screen cannot pass the complete ten-case gate.",
+  "source_evaluation": "Retain complete nine-block source screen/macro/denominators. Negative source interaction-attribution screen cannot be bypassed by a native win. Final native diagnostic was independently prespecified, so execution does not depend on favorable source performance.",
+  "attribution": "Record exact full frozen T7/T3 phage-vector equality and paired score-row equality without new admission gating. Equal phage vectors limit phage-input attribution. Whole-proteome association does not establish recognition-head representation.",
+  "permutation": "After score authentication, exhaust all3T3single-positive placements. Report actual upper-tail fraction and best possible1/3; no independent replicate or significance claim.",
+  "legacy_helper_handling": "Use existing retrospective evaluator numeric output. Move top1 to secondary_top1, rename legacy per-case mean_log_likelihood field to raw_score without numeric changes, omit hardcoded genome-composition/WIsH gate in favor of explicit new report decisions.",
+  "independence": "No target-label, donor-identity or homolog-phenotype lookup for fitting/selection. This evaluator reads target labels only after saved-score authentication; method selection previously saw labels and remains exploratory. Actual separate anonymous native rerun is not established here.",
+  "report": "Retain raw score matrices, all matched comparisons, tied/misordered cases, source negative results, coverage, stock uncertainty and limitations. No actual native report before authentic completed scores exist.",
+  "full_gate": "HOLD while four experimental swap sequence identities remain unverified and independent validation/inference controls remain incomplete.",
+  "scientific_limits": "No reliable generalization, protein/glycan binding, gp17 head engineering, assembly compatibility or functional infection claim; negative labels are condition-specific plaque nondetection.",
+  "new_model_execution_or_original_observation_changes": false
+}
