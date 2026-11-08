@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "purpose": "Direct gp17 near-hit audit of all 273 augmented nucleotide records, with official variants retained as distinct namespace keys. No graph inference, phenotype access, model or source admission.",
+  "recorded_before_first_augmented_gp17_search": true,
+  "wrapper_sha256": "fbdfa57d3544eba166919db4541f040396f6ec136c73d2773d59eb8f7b7ee079",
+  "original_gp17_policy": "software/tipcraft/benchmarks/receptor-resource/gp17-overlap-policy.json",
+  "preparation_helper": "scripts/audit-receptor-gp17-overlap.py",
+  "alignment_policy": "software/tipcraft/benchmarks/receptor-resource/official-variant-alignment-policy.json",
+  "alignment_helper": "scripts/align-official-basel-variants.py",
+  "alignment_plan": "data/raw/genophi-external-validation/official-variant-alignments-v1/frozen-plan.json",
+  "database_receipt": "data/raw/genophi-external-validation/official-variant-alignments-v1/step-1.json",
+  "database": "data/raw/genophi-external-validation/official-variant-alignments-v1/db",
+  "database_artifacts": [
+    "data/raw/genophi-external-validation/official-variant-alignments-v1/db.ndb",
+    "data/raw/genophi-external-validation/official-variant-alignments-v1/db.nhr",
+    "data/raw/genophi-external-validation/official-variant-alignments-v1/db.nin",
+    "data/raw/genophi-external-validation/official-variant-alignments-v1/db.njs",
+    "data/raw/genophi-external-validation/official-variant-alignments-v1/db.nog",
+    "data/raw/genophi-external-validation/official-variant-alignments-v1/db.nos",
+    "data/raw/genophi-external-validation/official-variant-alignments-v1/db.not",
+    "data/raw/genophi-external-validation/official-variant-alignments-v1/db.nsq",
+    "data/raw/genophi-external-validation/official-variant-alignments-v1/db.ntf",
+    "data/raw/genophi-external-validation/official-variant-alignments-v1/db.nto"
+  ],
+  "old_record_map": "data/raw/receptor-resource/whole-genome-alignments-v1/record-manifest.json",
+  "old_subjects": "data/raw/receptor-resource/whole-genome-alignments-v1/subjects.fna",
+  "target_manifest": "data/raw/genophi-phage-audit/normalized-v3/manifest.json",
+  "old_gp17_report": "data/processed/receptor-gp17-overlap.json",
+  "query_file": "data/raw/genophi-phage-audit/normalized-v3/reference-gp17.faa",
+  "tblastn_parameters": [
+    "-evalue",
+    "1e-5",
+    "-max_target_seqs",
+    "10000",
+    "-num_threads",
+    "4",
+    "-seg",
+    "yes"
+  ],
+  "tblastn_format": "7 qseqid sseqid pident qstart qend qlen sstart send sframe bitscore evalue",
+  "gp17_near_match": {
+    "identity_percent": 90.0,
+    "minimum_query_coverage_percent": 80.0,
+    "rule": "Any single local alignment meeting both thresholds excludes its complete source container via the explicit nucleotide-record-to-primary-ID map; no HSP coverage summation"
+  },
+  "broader_gp17_family_diagnostic": {
+    "identity_percent": 40.0,
+    "minimum_query_coverage_percent": 80.0,
+    "role": "Report only; no automatic broad-family exclusion or clearance"
+  },
+  "tblastn": {
+    "path": "data/raw/tools/blast-2.17.0/ncbi-blast-2.17.0+/bin/tblastn",
+    "sha256": "8bcde4b235916c6ed7e2a99bdccecdb4c46afbe4877d9d3952af9ac12042b535"
+  },
+  "timeout_seconds": 600,
+  "expected_nucleotide_records": 273,
+  "expected_container_nodes": 266,
+  "completion": "Both original full gp17 queries require exact outfmt7 query/hit counts, completed batches and original-reference self controls. Unchanged frozen helper validates all rows before direct hit reporting.",
+  "namespace_rule": "Every subject maps by exact nucleotide record ID to its container_key. Original sources, original reference controls and the three official variant versions remain distinct. Report reference-control keys too; never inherit a hit by shared primary name.",
+  "comparison": "Report all direct-near and broader-diagnostic classification changes among the 261 original source containers relative to the earlier 270-record gp17 screen; do not tune after results.",
+  "database_use": "Read-only existing completed makeblastdb artifacts. No database build or nucleotide search is run by this helper; ongoing root blastn output is neither read nor modified.",
+  "scope": "Direct near-hit reporting only. Broad40/80 results are diagnostic; no grouping propagation, source admission, stock identity or homology-free claim.",
+  "failure": "Preserve failed command/log/raw hits; mark every namespace unassessed and emit no accepted hit keys.",
+  "inputs": [
+    {
+      "path": "data/processed/receptor-whole-genome-alignments-v2.json",
+      "sha256": "96f872d6fc1700f777b6c740a975edaaa90bcf628271022f57551c3f24be3645"
+    },
+    {
+      "path": "data/processed/receptor-whole-genome-groups.json",
+      "sha256": "2b540c24915b22edd6347f19efc2f445a7fa8e743f3a271203e91634ab141159"
+    },
+    {
+      "path": "data/processed/basel-phage-accession-authentication.json",
+      "sha256": "ab7c7fd77f8134d1d1868975dd889b203b24c74a2a996d95f2128d462df63c92"
+    },
+    {
+      "path": "data/processed/basel-phage-accession-replay.json",
+      "sha256": "2e138991121b858c92580e673f50a706a63bee6c4aecf1c27f5dac393ce8113b"
+    },
+    {
+      "path": "scripts/authenticate-basel-phage-accessions.py",
+      "sha256": "b784dd9dcd2dc5701483fae811edb1cac4231a045a9bc76252f9962373793697"
+    },
+    {
+      "path": "scripts/align-receptor-cohort.py",
+      "sha256": "29a71b539b1baee466bed5924a8718e1b4bedf53c9ab59aee090ba58ab8856c7"
+    },
+    {
+      "path": "scripts/replay-receptor-alignments.py",
+      "sha256": "b43840a191ef867da9c3f5d1baafaead8544a12aea0ca9338535bb7e73bd522c"
+    },
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/record-manifest.json",
+      "sha256": "187c1296a3bbb5119c325771b7a9326e4322dcc52ac7003270839ad23b329d2c"
+    },
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/subjects.fna",
+      "sha256": "7c6457883048f140eba6840fcf7131c00c6ed14523c84f6e2dc307848c6f10d5"
+    },
+    {
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas06/fasta.txt",
+      "sha256": "0009ad01d168bed4e325a7adee2038ad1979d2f813bf4eb409e1346922dafc35"
+    },
+    {
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas21/fasta.txt",
+      "sha256": "9294d0b2ad7bfa7d1f0a3fe09073e0d92de34452836f335efc7a2b531c89bad9"
+    },
+    {
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas68/fasta.txt",
+      "sha256": "78d7747b3b71af04548702549a524bfe4f65fe2749877c63310cdb184dbf3eb4"
+    },
+    {
+      "path": "data/raw/tools/blast-2.17.0/ncbi-blast-2.17.0+/bin/makeblastdb",
+      "sha256": "b18159370061729a685e5714b5a1d349fd2951f4f3aeceb576b0e696b403fc72"
+    },
+    {
+      "path": "data/raw/tools/blast-2.17.0/ncbi-blast-2.17.0+/bin/blastn",
+      "sha256": "b13895ffdbc83a0a21025002bf33fb289c4be441536a1a88d7be80e8263c34a7"
+    },
+    {
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/official-variant-alignments-v1/record-manifest.json",
+      "sha256": "f64a53505fc127e947d755cebcb72ed76005d45a71ea9889e32ba13e3e06c8cb"
+    },
+    {
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/official-variant-alignments-v1/subjects.fna",
+      "sha256": "beb3059230016ffdc70c8fc0cb34996889f036377b2867791d8a6c87e46ff04d"
+    },
+    {
+      "path": "software/tipcraft/benchmarks/receptor-resource/gp17-overlap-policy.json",
+      "sha256": "8e175847865c0b4fb7dc0c195d93111e162a680bf0dfcbd4075715039d316ed3"
+    },
+    {
+      "path": "scripts/audit-receptor-gp17-overlap.py",
+      "sha256": "40c361775d48979b2dfdf2427dc7e6a1653ba71a156a25cf4c19dcee7e99bea3"
+    },
+    {
+      "path": "scripts/audit-genophi-phage-overlap.py",
+      "sha256": "8026b82db228b3cb7c5e673d1c927f53de598925e282e0a9b3b89c536c928464"
+    },
+    {
+      "path": "data/raw/genophi-phage-audit/normalized-v3/manifest.json",
+      "sha256": "d0f66b3bba527aa8cc32b327ed7f15107fbcd0943faefa6b1fda2496f528185c"
+    },
+    {
+      "path": "data/raw/genophi-phage-audit/normalized-v3/reference-gp17.faa",
+      "sha256": "04f19688217d4601d62c7b1b2c8650575a4cf34dfba813ab79780f2d7ee38965"
+    },
+    {
+      "path": "data/processed/receptor-gp17-overlap.json",
+      "sha256": "cb6e12c0d1e6b600e280a251a81bcdb263fba18c584bc00b05bf28279ff1f799"
+    },
+    {
+      "path": "scripts/align-official-basel-variants.py",
+      "sha256": "9869b31659ece78e007500893b525bc989462482ddc12e4b0df854eaed1e7712"
+    },
+    {
+      "path": "software/tipcraft/benchmarks/receptor-resource/official-variant-alignment-policy.json",
+      "sha256": "0fcbd525fc6f2ae19fb5a6928cec3a6ce35b8b5ec2c494401afd4673d79f2c8b"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/official-variant-alignments-v1/frozen-plan.json",
+      "sha256": "aad59f6edbc07374c69311517b870ef7728be51ed8d17662ec1610f447817b33"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/official-variant-alignments-v1/step-1.json",
+      "sha256": "f8b3bda12f89bbb8b06c1b7af088647a535fbff6113690bb3ff7c57e789d362c"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/official-variant-alignments-v1/step-1.log",
+      "sha256": "b07a1118c196dfa246b53ee9a6b0aa1f89e0cbb8f382990624a8a35a752f512b"
+    },
+    {
+      "path": "data/raw/wish/phages/T7.fna",
+      "sha256": "4411e203f3ffac4d85f42d6994714cb86d495440b678ebab9e5a075f5fdc7c7a"
+    },
+    {
+      "path": "data/raw/wish/phages/T3.fna",
+      "sha256": "1ac1012cd4b506b4bcf7ee13d3cccef1a21683cc40026feabec4ea0e8a3ef6a6"
+    },
+    {
+      "path": "data/raw/tools/blast-2.17.0/ncbi-blast-2.17.0+/bin/tblastn",
+      "sha256": "8bcde4b235916c6ed7e2a99bdccecdb4c46afbe4877d9d3952af9ac12042b535"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/official-variant-alignments-v1/db.ndb",
+      "sha256": "0abb013fed2a3daf9fcdfeb905283d463e38af96715d83355c3a1473449455d0"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/official-variant-alignments-v1/db.nhr",
+      "sha256": "07953f453dbedd9331512b2d78979d3d61e67307fe6bed58176faeb4c38ae7ec"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/official-variant-alignments-v1/db.nin",
+      "sha256": "4134b28b45b9e49707e13672590097123c7d5cc296b109e1778ea9864622e7da"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/official-variant-alignments-v1/db.njs",
+      "sha256": "424ee78960e5df845f6cecdcb22c3133781f79ddc5787a8acc4f0d498708a9eb"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/official-variant-alignments-v1/db.nog",
+      "sha256": "66f4f2bf36cf3138be09cdfbde359db9ad15cdae65765ec18dc3620fe32fa826"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/official-variant-alignments-v1/db.nos",
+      "sha256": "f78088dd1bbff4c2cc26656f5b9c5062aa05f2167e9b43ea27297cbc1f148722"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/official-variant-alignments-v1/db.not",
+      "sha256": "db30d92011e1e25a22401570ad5d2645c7c72fc1d79c69c45d0786148e7df94b"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/official-variant-alignments-v1/db.nsq",
+      "sha256": "b9f0c3a3b8d0d35f439a2e896fd9d266fdc2a74eb025facc51e39a3be444273e"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/official-variant-alignments-v1/db.ntf",
+      "sha256": "a4846cf83c6cd188b3fc3f9fa4f1f1d3c33692a85065b54dc1e42095af3e7552"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/official-variant-alignments-v1/db.nto",
+      "sha256": "91b80592e87859e0e1884bab2eadbc7a34d43469c7cce5ea0dfc70d14310d14d"
+    }
+  ]
+}

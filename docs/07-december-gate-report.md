@@ -1,6 +1,6 @@
 # December decision-gate report
 
-Computational evidence update · run date 2026-11-07 · team review pending.
+Computational evidence update · evidence reviewed 2026-11-08 · team review pending.
 
 **Decision supported today: NO-GO for using this WIsH model as TipCraft's strain-specific ranking engine; GO for reproducible evidence/evaluation work.** The pipeline now runs an independent, literature-backed sequence scorer and exposes a negative result. Neither the universal socket nor assembly prediction has been validated. This result does not invalidate all other modelling methods or determine wet-lab feasibility.
 
@@ -21,6 +21,8 @@ All 25 secondary-panel [ECOR WGS inputs are now authenticated](33-ecor-wgs-input
 The [complete ECOR host comparison](34-ecor-host-groups-and-target-exclusions.md) now resolves the host grouping prerequisite: all 900 comparisons and 30 self-controls pass, with the prior 25 controls exactly reproduced. ECOR13 and ECOR25 are excluded as target-related; 23 candidate hosts remain in 15 components. Phage accession checks, eligible-subset contrasts and a completed pre-score evaluation manifest remain pending; no model or new coverage is admitted.
 
 All 52 secondary-panel [official phage records are now verified across two formats](35-basel-phage-accession-correspondence.md). Forty-nine match old author-cache DNA exactly; Bas06, Bas21 and Bas68 do not. Their official genomes require measured genotype-group correspondence before old grouping can be reused. Input availability is distinct from stock identity and training admission; no new prediction or original-case coverage is claimed.
+
+The [2026-11-08 preparation and recovery review](36-secondary-preparation-and-resumption.md) records completed per-kind annotations for all 77 secondary references, 122,202 predicted proteins and matching BW25113/T7 technical controls. The augmented direct gp17 screen passes its controls without new near-hit seed changes. The full genomic comparison resumed its original child after a user pause, while its monitoring parent was missing; exit status remains unknown and any recovered artifact requires separate complete-output validation. Workbench supplied read-only runtime/catalog evidence, not a registered workflow execution. No new infection scores or original-case coverage are admitted.
 
 ## Method and fixed inputs
 

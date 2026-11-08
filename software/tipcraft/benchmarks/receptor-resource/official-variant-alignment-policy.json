@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "scope": "Full common-database genotype HSPs only, adding three official variants and retaining every prior record/node as a bridge",
+  "old_alignment_report": "data/processed/receptor-whole-genome-alignments-v2.json",
+  "official_replay": "data/processed/basel-phage-accession-replay.json",
+  "official_authentication": "data/processed/basel-phage-accession-authentication.json",
+  "official_variants": [
+    "Bas06",
+    "Bas21",
+    "Bas68"
+  ],
+  "inputs": [
+    {
+      "path": "data/processed/receptor-whole-genome-alignments-v2.json",
+      "sha256": "96f872d6fc1700f777b6c740a975edaaa90bcf628271022f57551c3f24be3645"
+    },
+    {
+      "path": "data/processed/receptor-whole-genome-groups.json",
+      "sha256": "2b540c24915b22edd6347f19efc2f445a7fa8e743f3a271203e91634ab141159"
+    },
+    {
+      "path": "data/processed/basel-phage-accession-authentication.json",
+      "sha256": "ab7c7fd77f8134d1d1868975dd889b203b24c74a2a996d95f2128d462df63c92"
+    },
+    {
+      "path": "data/processed/basel-phage-accession-replay.json",
+      "sha256": "2e138991121b858c92580e673f50a706a63bee6c4aecf1c27f5dac393ce8113b"
+    },
+    {
+      "path": "scripts/authenticate-basel-phage-accessions.py",
+      "sha256": "b784dd9dcd2dc5701483fae811edb1cac4231a045a9bc76252f9962373793697"
+    },
+    {
+      "path": "scripts/align-receptor-cohort.py",
+      "sha256": "29a71b539b1baee466bed5924a8718e1b4bedf53c9ab59aee090ba58ab8856c7"
+    },
+    {
+      "path": "scripts/replay-receptor-alignments.py",
+      "sha256": "b43840a191ef867da9c3f5d1baafaead8544a12aea0ca9338535bb7e73bd522c"
+    },
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/record-manifest.json",
+      "sha256": "187c1296a3bbb5119c325771b7a9326e4322dcc52ac7003270839ad23b329d2c"
+    },
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/subjects.fna",
+      "sha256": "7c6457883048f140eba6840fcf7131c00c6ed14523c84f6e2dc307848c6f10d5"
+    },
+    {
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas06/fasta.txt",
+      "sha256": "0009ad01d168bed4e325a7adee2038ad1979d2f813bf4eb409e1346922dafc35"
+    },
+    {
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas21/fasta.txt",
+      "sha256": "9294d0b2ad7bfa7d1f0a3fe09073e0d92de34452836f335efc7a2b531c89bad9"
+    },
+    {
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas68/fasta.txt",
+      "sha256": "78d7747b3b71af04548702549a524bfe4f65fe2749877c63310cdb184dbf3eb4"
+    }
+  ],
+  "executables": {
+    "makeblastdb": {
+      "path": "data/raw/tools/blast-2.17.0/ncbi-blast-2.17.0+/bin/makeblastdb",
+      "sha256": "b18159370061729a685e5714b5a1d349fd2951f4f3aeceb576b0e696b403fc72",
+      "version": "makeblastdb: 2.17.0+"
+    },
+    "blastn": {
+      "path": "data/raw/tools/blast-2.17.0/ncbi-blast-2.17.0+/bin/blastn",
+      "sha256": "b13895ffdbc83a0a21025002bf33fb289c4be441536a1a88d7be80e8263c34a7",
+      "version": "blastn: 2.17.0+"
+    }
+  },
+  "blastn_parameters": [
+    "-evalue",
+    "1",
+    "-max_target_seqs",
+    "10000",
+    "-num_threads",
+    "4",
+    "-word_size",
+    "7",
+    "-reward",
+    "2",
+    "-penalty",
+    "-3",
+    "-gapopen",
+    "5",
+    "-gapextend",
+    "2"
+  ],
+  "blastn_fields": [
+    "qseqid",
+    "sseqid",
+    "evalue",
+    "bitscore",
+    "qlen",
+    "slen",
+    "qstart",
+    "qend",
+    "sstart",
+    "send",
+    "qseq",
+    "sseq",
+    "nident",
+    "gaps"
+  ],
+  "expected_records": 273,
+  "expected_container_nodes": 266,
+  "preparation_parser": "Biopython1.86",
+  "search_context": "Recompute every query against the full273-record database with unchanged prior parameters. Do not merge old HSPs generated against a different database context. Old reports remain preserved.",
+  "completion": "Existing batch-aware validator and unchanged14-field HSP validator; all273 unique queries, per-query counts, terminal batches and self hits required; preserve exact HSP order and literals",
+  "no_DNA_manipulation": "Append separate FASTA records only; never concatenate sequence strings across records, trim, rotate, complement or edit DNA",
+  "monitoring": "Poll same child; no automatic restart, kill or resubmission. Approximate prior270-record runtime was69minutes; local compute remains available.",
+  "next_gate": "HSPs alone do not supply groups. Predeclare container aggregation, original-R equivalence checks, grouping thresholds and official-to-source mapping before numeric calculation.",
+  "no_training_or_scoring": true,
+  "expected_subjects_sha256": "beb3059230016ffdc70c8fc0cb34996889f036377b2867791d8a6c87e46ff04d"
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "purpose": "Recover the same suspended orphaned search after explicit user resume; no restart or fabricated process success",
+  "pid": 80646,
+  "process_identity": {
+    "command": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/tools/blast-2.17.0/ncbi-blast-2.17.0+/bin/blastn -query /Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/official-variant-alignments-v1/subjects.fna -db /Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/official-variant-alignments-v1/db -evalue 1 -max_target_seqs 10000 -num_threads 4 -word_size 7 -reward 2 -penalty -3 -gapopen 5 -gapextend 2 -outfmt 7 qseqid sseqid evalue bitscore qlen slen qstart qend sstart send qseq sseq nident gaps -out /Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/official-variant-alignments-v1/blastn.tsv",
+    "start_description": "Sat Nov  7 23:58:07 2026"
+  },
+  "workdir": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/official-variant-alignments-v1",
+  "frozen_plan": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/official-variant-alignments-v1/frozen-plan.json",
+  "bindings": [
+    {
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/scripts/align-official-basel-variants.py",
+      "sha256": "9869b31659ece78e007500893b525bc989462482ddc12e4b0df854eaed1e7712"
+    },
+    {
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/scripts/align-receptor-cohort.py",
+      "sha256": "29a71b539b1baee466bed5924a8718e1b4bedf53c9ab59aee090ba58ab8856c7"
+    },
+    {
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/scripts/replay-receptor-alignments.py",
+      "sha256": "b43840a191ef867da9c3f5d1baafaead8544a12aea0ca9338535bb7e73bd522c"
+    },
+    {
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/software/tipcraft/benchmarks/receptor-resource/official-variant-alignment-policy.json",
+      "sha256": "0fcbd525fc6f2ae19fb5a6928cec3a6ce35b8b5ec2c494401afd4673d79f2c8b"
+    },
+    {
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/official-variant-alignments-v1/frozen-plan.json",
+      "sha256": "aad59f6edbc07374c69311517b870ef7728be51ed8d17662ec1610f447817b33"
+    },
+    {
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/official-variant-alignments-v1/step-1.json",
+      "sha256": "f8b3bda12f89bbb8b06c1b7af088647a535fbff6113690bb3ff7c57e789d362c"
+    }
+  ],
+  "timing": "Frozen before resume and before raw output completion/validation",
+  "execution_limit": "Original controller is gone; child is not waitable. Its exit code remains null. Do not equate output completeness with observed exit success.",
+  "artifact_gate": "Only accept data after all273 unique queries, exact per-query HSP counts, valid terminal batches at EOF, all273 self hits and unchanged source/command bindings. Numeric extraction preserves raw order and literals.",
+  "next_gate": "Any downstream consumer must explicitly distinguish artifact validation from unknown execution exit status; original grouping policy is not silently relaxed.",
+  "resume_authority": "User explicitly requested continue and set goal active. Workbench catalog has no matching legacy custom pipeline; these are existing authorized local processes, not new Workbench executions."
+}

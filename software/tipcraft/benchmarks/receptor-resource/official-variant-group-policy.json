@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "scope": "Full266-node genomic graph with all273separate DNA records; retain official and author variants as distinct nodes",
+  "timing": "Frozen before first augmented container-pair calculation, while the full BLAST search is running",
+  "inputs": {
+    "source_report": {
+      "path": "data/processed/receptor-cohort-container-audit.json",
+      "sha256": "fd0f8fc39223336660b9f84a1e7ac7f6a2b374dd8880cdb99095e5b2086f5ab1"
+    },
+    "source_manifest": {
+      "path": "data/raw/receptor-resource/cohort-containers-v1/sequence-manifest.json",
+      "sha256": "56430d0452804aca4c69fd63872105bdda328f98c9fa150e59a506787cda4cd3"
+    },
+    "target_manifest": {
+      "path": "data/raw/genophi-phage-audit/normalized-v3/manifest.json",
+      "sha256": "d0f66b3bba527aa8cc32b327ed7f15107fbcd0943faefa6b1fda2496f528185c"
+    },
+    "adapter_source": {
+      "path": "scripts/third_party/viridic_directional.py",
+      "sha256": "e1d19de908f4f066ad79f88eb22bc021ea849b2b9b4c86baa501d371e9c872a4"
+    },
+    "R_comparison_helper": {
+      "path": "scripts/compare-viridic-original-r-v2.py",
+      "sha256": "e43c73516497712a2c13b187344340394f185ba07c7ea0be75b2e661db3a31d0"
+    },
+    "R_runtime_manifest": {
+      "path": "data/raw/tools/r-4.6.2/runtime-provenance.json",
+      "sha256": "0cff0ce62cea22306adacb707c87abd75800036678b47ba0916778569ed930b1"
+    },
+    "R_upstream_source": {
+      "path": "data/raw/tools/r-4.6.2/01_VIRIDIC_sim_calc.R",
+      "sha256": "2b74443ed33c761829211c29e463077b8878c1037c813f6cfd284b67d5d36e93"
+    },
+    "streaming_control_report": {
+      "path": "data/raw/receptor-resource/streaming-calculator-control-v1/report.json",
+      "sha256": "d62bf0b5327225ae8597da428fb7489980798ae5b32c36e9632f094b1e0821a9"
+    },
+    "aggregation_helpers": {
+      "path": "scripts/aggregate-receptor-genomes.py",
+      "sha256": "301e04ad358b52d13335c98bf4da6790c7cc6ac264a7f92cf0033ec7aa5398b9"
+    },
+    "alignment_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/official-variant-alignment-policy.json",
+      "sha256": "0fcbd525fc6f2ae19fb5a6928cec3a6ce35b8b5ec2c494401afd4673d79f2c8b"
+    },
+    "alignment_helper": {
+      "path": "scripts/align-official-basel-variants.py",
+      "sha256": "9869b31659ece78e007500893b525bc989462482ddc12e4b0df854eaed1e7712"
+    },
+    "original_HSP_validator": {
+      "path": "scripts/align-receptor-cohort.py",
+      "sha256": "29a71b539b1baee466bed5924a8718e1b4bedf53c9ab59aee090ba58ab8856c7"
+    },
+    "batch_validator": {
+      "path": "scripts/replay-receptor-alignments.py",
+      "sha256": "b43840a191ef867da9c3f5d1baafaead8544a12aea0ca9338535bb7e73bd522c"
+    },
+    "official_replay": {
+      "path": "data/processed/basel-phage-accession-replay.json",
+      "sha256": "2e138991121b858c92580e673f50a706a63bee6c4aecf1c27f5dac393ce8113b"
+    },
+    "gp17_report": {
+      "path": "data/processed/official-variant-gp17-audit.json",
+      "sha256": "a7a540c2c61ab5620a540b8eaf0289749873882ba0cb8308315e9fadfcac1909"
+    },
+    "gp17_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/official-variant-gp17-policy.json",
+      "sha256": "58da9cafe91da38cfb18dd9885b432bf09f11b4de6781d12d43540773afd0c72"
+    },
+    "frozen_alignment_plan": {
+      "path": "data/raw/genophi-external-validation/official-variant-alignments-v1/frozen-plan.json",
+      "sha256": "aad59f6edbc07374c69311517b870ef7728be51ed8d17662ec1610f447817b33"
+    }
+  },
+  "official_variants": [
+    "Bas06",
+    "Bas21",
+    "Bas68"
+  ],
+  "accepted_gp17_status": "completed_direct_gp17_screen",
+  "grouping": {
+    "similarity_percent": 70.0,
+    "boundary_buffer_percentage_points": 0.01
+  },
+  "known_ambiguous_source_ids": [
+    "JK36",
+    "JK42",
+    "T4",
+    "TP15"
+  ],
+  "self_controls": {
+    "known_ambiguous_source_ids": [
+      "JK36",
+      "JK42",
+      "T4",
+      "TP15"
+    ],
+    "canonical": "Exact R/Python selfnident and original-span statistic both equal summed container length. Original target references require this.",
+    "ambiguous": "Exact R/Python selfcounts agreement, finite integer nident>0 and<=summed length; original-span statistic finite positive integer. Do not force100% or bound span as union coverage.",
+    "generic_helper": "Retain original helper generic comparison, including its all-base self failures; separate dataset-specific selfcheck applies this already-frozen ambiguity rule."
+  },
+  "numeric_agreement": {
+    "nonself_directions": 70490,
+    "unordered_pairs": 35245,
+    "self_controls": 266,
+    "integer_nident_and_original_span_exact": true,
+    "unrounded_absolute_tolerance_percentage_points": 1e-12,
+    "rounded_three_decimal_scores_exact": true,
+    "generic_helper_failures": "Preserve generic ambiguity failures; require separately declared dataset-specific self rule. No forced100% or universal equivalence claim."
+  },
+  "GPL_external_boundary": {
+    "adapter": "Pinned external subprocess only, no in-package import or upstream edits. External driver retains GPL notice and calls existing adapter functions.",
+    "bridge_sha256": "156a77911e8f6bdf712561bda8d6bf7f403c3429111b95907f0cda1c3e8c4174",
+    "R_driver_sha256": "d27aee2b4a6063ae0bc30dad25a64effa3333593db71390509b92f5fa3f965d4"
+  },
+  "R_home": "data/raw/tools/r-4.6.2/framework/R.framework/Versions/4.6/Resources",
+  "R_library": "data/raw/tools/r-4.6.2/library",
+  "timeouts": {
+    "adapter": 1200,
+    "original_R": 1800
+  },
+  "node_semantics": "Old261source containers and2original references remain. Add3official genotype nodes with offset0 and exact public DNA; never merge by readable name. Preserve multirecord numeric offsets and every HSP literal/order as prior validated method.",
+  "seeds": "Original target reference roles plus every direct-near-hit container key from the new273-record gp17 audit; broader keys report-only, not exclusion seeds.",
+  "official_panel_mapping": "Map49exact official-author DNA matches to source:<ID>; map3mismatches to official:<ID>:<version>. Genotype correspondence only; no physical stock identity or label reassignment inferred.",
+  "old_vs_new_comparison": "Retain old matrix unchanged. Compare projected old-node component memberships and official-node affiliations after validation; do not assume old numeric values stay identical when database context changes.",
+  "next_gate": "No phenotype admission, split choice, model fitting or original case coverage. Derive final eligible panel only after both host and phage reference gates pass."
+}

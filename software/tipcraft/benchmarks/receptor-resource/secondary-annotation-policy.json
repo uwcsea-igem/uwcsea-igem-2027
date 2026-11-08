@@ -1,0 +1,2525 @@
+{
+  "schema_version": 1,
+  "recorded_before_new_gene_calls": true,
+  "recorded_date": "2026-11-08",
+  "purpose": "Per-genome annotations for ALL25officialECOR and52officialBASEL references, including excluded/pendinggroup cases; no model/training admission.",
+  "wrapper_sha256": "575b7b451c50cba293249ccf104440ec266f2a100423627d3f3da0cbccae79f5",
+  "inputs": {
+    "prior_annotation_report": {
+      "path": "data/processed/genophi-annotation-check.json",
+      "sha256": "4618f08ac18ca4eb739f2b4b6ec5c23dd0798570f95e3f3182a8a6835a0459cf"
+    },
+    "ecor_report": {
+      "path": "data/processed/ecor-wgs-input-authentication.json",
+      "sha256": "a8e6aafb15a172d59ea304fbb8bfc9cca356d385967e821260031b65272267c3"
+    },
+    "ecor_replay_report": {
+      "path": "data/processed/ecor-wgs-input-replay.json",
+      "sha256": "b635b30824ac65302c53746d8b84d4f3cf67db2d5c5eb4101e3d07677d265ce0"
+    },
+    "phage_report": {
+      "path": "data/processed/basel-phage-accession-authentication.json",
+      "sha256": "ab7c7fd77f8134d1d1868975dd889b203b24c74a2a996d95f2128d462df63c92"
+    },
+    "phage_replay_report": {
+      "path": "data/processed/basel-phage-accession-replay.json",
+      "sha256": "2e138991121b858c92580e673f50a706a63bee6c4aecf1c27f5dac393ce8113b"
+    },
+    "roster_authority": {
+      "path": "data/processed/basel-validation-source-audit.json",
+      "sha256": "5d2ae86d0ae4ee35a58174009b0675773cc88e10b4232088800f01980bd8ded4"
+    },
+    "annotation_helper": {
+      "path": "scripts/check-genophi-annotation.py",
+      "sha256": "27b2920501c08ccd5038920bfaefce33798da9553138df1c106b94cfa925c59f"
+    },
+    "ecor_helper": {
+      "path": "scripts/authenticate-ecor-wgs-inputs.py",
+      "sha256": "9f337fbec9ae4f775a9b2b28f47cb8b2a1ed4469a514669fb7e4c2f9f941c69f"
+    },
+    "phage_helper": {
+      "path": "scripts/authenticate-basel-phage-accessions.py",
+      "sha256": "b784dd9dcd2dc5701483fae811edb1cac4231a045a9bc76252f9962373793697"
+    },
+    "prior_annotation_policy": {
+      "path": "software/tipcraft/benchmarks/retro-t7-t3/genophi-annotation-check.json",
+      "sha256": "9374ccdd57b41f235fbffa2d61c940019031c2c9196e3714d1f120c0f1884dea"
+    },
+    "ecor_source_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/ecor-wgs-input-policy.json",
+      "sha256": "1d7cbf1d462f65df94cbcfbaf72bfb04d66ef0cecc226efc3639d3a54ba2312f"
+    },
+    "phage_source_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/basel-phage-accession-policy.json",
+      "sha256": "8131622f6523f1141ccb9180519a0bc8106688d46d046904ba7d2bfabbe6a330"
+    }
+  },
+  "source_files": [
+    {
+      "path": "data/raw/genophi-annotation/run-1/h_t001/input.fna",
+      "sha256": "32da2e2bd6d941cc8d3b9d5b6e7f92a831001eff3540b24080d1400da36475e3"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/h_t001/proteins.faa",
+      "sha256": "62c2d853f6ea4c21a59433ec13ed9079937227834756c2a83ac8c60faa2c9c5d"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_t000/input.fna",
+      "sha256": "7823c9fd497d5ad69e17d42d9329acb7fa0c3d40a9ac4d242535dfd083fa9bf7"
+    },
+    {
+      "path": "data/raw/genophi-annotation/run-1/p_t000/proteins.faa",
+      "sha256": "5626dfcaa7c3a75fd4f64558a0ce68e467bb49c97deddbc2824afdae4942c986"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas01/annotation.txt",
+      "sha256": "fcb8c8f9cd79f8d19770376d45691cc7150e80d2be934d324550c19dc45f3cb5"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas01/fasta.txt",
+      "sha256": "d166345698b6c52b443576f23b432782e35996dc0bbb3b97037bb61407f6afac"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas02/annotation.txt",
+      "sha256": "21721a94be46f2d994e8d5a36d669c2984d2907d15a40a03930bd9ae9cc50b6d"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas02/fasta.txt",
+      "sha256": "7b469a88627cd3cf1a90d5cfa55dd39d03a4d1a7bdc9fef569645209b6636e36"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas03/annotation.txt",
+      "sha256": "9512eab55cd154f659bb4c553ba77ea4123584489cc0ea52c099f29c4c3c7dc6"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas03/fasta.txt",
+      "sha256": "7dbbe12f80f709ce8bd0265893bcf0c59c0ab114e084b837215d83de85840648"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas04/annotation.txt",
+      "sha256": "31d9684c50f01796f74640d1654d7c70a9b95d48302909a13b5ea6f1edacddee"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas04/fasta.txt",
+      "sha256": "6a91420345d36fa3211fed962b5cd1eba80418facae982169daf002af4dec8d9"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas05/annotation.txt",
+      "sha256": "a2b764d820cfeead2f8c33c08c90eee0c8d6be1954473ce641bd5436629002ba"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas05/fasta.txt",
+      "sha256": "d88f265c3b38a3148fe890b5e33be611998c4bac4cde893f14756f86d4cef1ed"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas06/annotation.txt",
+      "sha256": "7297fe3ba096feb7343c780aa809d0cd32efcc00e946a711dd26ea2d4b8514e9"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas06/fasta.txt",
+      "sha256": "0009ad01d168bed4e325a7adee2038ad1979d2f813bf4eb409e1346922dafc35"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas07/annotation.txt",
+      "sha256": "276e2adc2ce30f71cbc95a589816da30a60f4d5a87833cd734ee024d88702d97"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas07/fasta.txt",
+      "sha256": "407a396e9de3ea1626c563898863823927ab943d6832da189c86ebf68853ae30"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas08/annotation.txt",
+      "sha256": "61c32ab509597f69295376e3acdc361464098d430acdfdc713181a48e7beb52e"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas08/fasta.txt",
+      "sha256": "4b003f6bb441c21fb83e54dd909613bd98b66613a7afd00e6e7f19a6aeae278e"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas09/annotation.txt",
+      "sha256": "53c1eae5a454bbb332a461e4e222b3800bd20fcc287c7d51c0c73f17fbdf5ea0"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas09/fasta.txt",
+      "sha256": "fdabffcbaa563f4d88801f067d5963ac93e040a75298bf0b7196a8909870033d"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas10/annotation.txt",
+      "sha256": "228a48d07c8a1d8eff94c0aaa0dba0620c643db0c9fc98cbbf9ddf033694ea41"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas10/fasta.txt",
+      "sha256": "c0c77b41e4d6e434bc9724c291f33e448710c98953270f469e48e56baa512b83"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas12/annotation.txt",
+      "sha256": "d4d1ed29279d4538d861483e0b41608e4655eac00242375f7a03ce98359f6f10"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas12/fasta.txt",
+      "sha256": "6e5a842055093b5f3e857fd105b2b1b66d62be12190ffc03a6e4889f1bffd7b1"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas13/annotation.txt",
+      "sha256": "f44b632e8d0a4b5faca3714838fabb19bc7de68a9abfdccab7528904cb3f354a"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas13/fasta.txt",
+      "sha256": "34913a21bbc5aa91766a7310e726afe93e857c30a76ff6153ea3dbf2d9387c61"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas14/annotation.txt",
+      "sha256": "5a5efefe287d6f35711024ba081e91c2ffe5f5420e498d324702b647e040d387"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas14/fasta.txt",
+      "sha256": "557375f3832979ad0c888875fc4e0198bcdb03d36e133f22a096979f43268764"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas15/annotation.txt",
+      "sha256": "0c05d84ad4ec843cf0ac9d1a2941e6aa422fdcbc8edb28c932bc628b2ffba043"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas15/fasta.txt",
+      "sha256": "f8e8514973acf692a855cb77d76ababd0584f33d8d9b421bead14816caee3ed5"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas16/annotation.txt",
+      "sha256": "1f4cda8597c614d63f0d180ef57c5c3ed5a66b5fa3dc087a416e753e726bbfc6"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas16/fasta.txt",
+      "sha256": "e7e8c3b5a1e473fa63f0ecaf9be7c1269869bea9bdf0ca659e531dbac16f285a"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas17/annotation.txt",
+      "sha256": "58f124eb60274f36d405d80652c353321f20219732770e65aab870d586b82337"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas17/fasta.txt",
+      "sha256": "87644352885e230b90f25b119ddf57d3b3dddaa5cfd9c8bc9e4e6e85d49ad3de"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas19/annotation.txt",
+      "sha256": "7311b3409935450cf27fca385c4eef9d50cef2a7d4fddcfcd92b2191bc6c6577"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas19/fasta.txt",
+      "sha256": "f39c144d15fb76339218f1b5a905eba0f8b3c86b594659c216253a74735ac401"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas20/annotation.txt",
+      "sha256": "a6eaab335bdca15ec695dd5a1c93ae6069afdfb81083c06dee2c42aafb393238"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas20/fasta.txt",
+      "sha256": "2c8a13b3792bd4fe9b5c142fb5297d6b746e8447075be8c00047665166e54026"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas21/annotation.txt",
+      "sha256": "42d82820a80f99aadd7b85aacb5a148673a92b5b610c97cf59976d757f7bc4f4"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas21/fasta.txt",
+      "sha256": "9294d0b2ad7bfa7d1f0a3fe09073e0d92de34452836f335efc7a2b531c89bad9"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas22/annotation.txt",
+      "sha256": "99812afb825e95f413166227786b2bec603ba1d6d9a6ee3d2f577f8111c90d1f"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas22/fasta.txt",
+      "sha256": "22e15f0b34634bcfe7588693f68ceb04a83dbc85537190255e4a6835f3a29eac"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas25/annotation.txt",
+      "sha256": "20aef63e949931f3bcd6d33cb5e7ed379408f5b402e2286d94584ef3b6115f75"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas25/fasta.txt",
+      "sha256": "63faee88db29b282e050a5e881fec2e8a9696f7d2c524169302e3eecf9f60bd2"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas27/annotation.txt",
+      "sha256": "f5b632cc2155d587d31fc05b2adfc4c1b83dabfecab7fe9a4cb738db33654358"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas27/fasta.txt",
+      "sha256": "69ea8808a89cf2d6a19a9283a23921a257862a5a3374b8b3359e19f1c1fbbab6"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas28/annotation.txt",
+      "sha256": "89b2c622a04c752ed95f8c025b59250fcf08e0d808c205c292e72d4e3b3fd69d"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas28/fasta.txt",
+      "sha256": "daa1f7dff618ce24c51294a5bedab7c490f65b32324103a2fe7f92528a6e1b3c"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas29/annotation.txt",
+      "sha256": "c019900dc672a28a1bfb02085d4036bcb3b6c789fa6cdd4f8cbdf922a125b4a1"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas29/fasta.txt",
+      "sha256": "890d9c1dfa2260fb7fc458fd210746a079e95ee6641abbc980694a4042a120ec"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas31/annotation.txt",
+      "sha256": "d0b34df8dd68bd144c9bf6ed0eb401f9175a0eeeb36c8f064ea354cafe048376"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas31/fasta.txt",
+      "sha256": "d3d44a6bd5050e03a52fb6893982e4d5578e1c60a99f7cb418a016e25a613f59"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas33/annotation.txt",
+      "sha256": "dcb42d3bf9e44084e33d2d0941a8d4e2d54129442c26b7dda078aac2b1cb8664"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas33/fasta.txt",
+      "sha256": "b98d042d229b5466a2110bd3c4c9544e4ab093126fe2bc599757ebfa1d1a65c8"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas34/annotation.txt",
+      "sha256": "634223be586245c7ecf02efb38919d8979be3fa34917c6cf0e3bfca1b8e0412a"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas34/fasta.txt",
+      "sha256": "8421e4c883364e0ebbf430e2e474075a374c60b11152c2b044e866b9324c2351"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas35/annotation.txt",
+      "sha256": "553a5182cf6326025975a2c22b96b9e7a675182b7b34363f0fe1647ea64f46c3"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas35/fasta.txt",
+      "sha256": "73295338368bfd25c0dd1000071b5827b55b002726a4c6008017f15b0a91c369"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas36/annotation.txt",
+      "sha256": "bdc25bd1be549b4b839dfd9b6b6a4627d19c86fe5a0758675e3152403f813cbe"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas36/fasta.txt",
+      "sha256": "64719307e248da1f0aaa9ef46f9e4e76cf00fe76d8426139bc2525048a987d17"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas37/annotation.txt",
+      "sha256": "1176913bd4ba303ee11aec7b7f0a2872c34c6d0ab0cd30c1a11752467600eee8"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas37/fasta.txt",
+      "sha256": "eeeeb858d2c44494c064a64e7b27d0ae8c8771dbbc87e9f0d57203e71c606d62"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas39/annotation.txt",
+      "sha256": "75747c138c4a34c8ce2689645c066f23bff8e72c0f747a55ecc0d9fcb0956a2b"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas39/fasta.txt",
+      "sha256": "5962fc827a8720ff6feec1110c091e1827ec8a20b95af4b06984e97688544f81"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas41/annotation.txt",
+      "sha256": "cc3ac4fbd0efe9d9a8daaff06378b21249ef21bebb1745f59cf9ff2255ee22cc"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas41/fasta.txt",
+      "sha256": "fa1d56feefac1b274977620e6a10e10e1b0771137c61d3b60c0f4156a655bcbe"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas42/annotation.txt",
+      "sha256": "60380db5d67b589a641d8d2959282aa82407e82a699dd990bc7aa24b6ba8d9e6"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas42/fasta.txt",
+      "sha256": "387fcf0fca2db84fa1b234a51d2935baf4684e0313a9a7a9d1fc91a068c9f33f"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas43/annotation.txt",
+      "sha256": "6ba8ade7d732da2c160aa00d68dab0c1b3c949bd412e1cc912c6e93dc4e7d055"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas43/fasta.txt",
+      "sha256": "5c9f01e441adf4dbb1457d2a270f57c77950d1771a6eb54de896d8bd43b210ef"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas45/annotation.txt",
+      "sha256": "c2e4894af6137b2177994c8399eddede78c4b8425a1fb5ea278f8f5553437744"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas45/fasta.txt",
+      "sha256": "816f0aa4d0003291ed20b698b1fd93d3fcfdfceab9407163deae49a660d0f1fa"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas47/annotation.txt",
+      "sha256": "5a06ea1cc44f0ab414109b8ec6378da700442e9cf0bebb998dbab9c9ee78a01f"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas47/fasta.txt",
+      "sha256": "bb3e6bc783d2c1f46687e190b6947735d245a37767f058f449b2c0159fcb0591"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas49/annotation.txt",
+      "sha256": "c2568cafc016d51e86fab71f64f6aeac4469ce1d9c748bda1628919ed7f2bef4"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas49/fasta.txt",
+      "sha256": "acda7bff87936054a8c2a48d3bd10d23b2757d40e035e9a422a601d183384349"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas51/annotation.txt",
+      "sha256": "e225f45f74026387cd8066c5ff165617a4fc3ce1f340cc722ed397aab3da9358"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas51/fasta.txt",
+      "sha256": "6b48592565c589df5a77c5820798c9945cd977e7f3c47f88bf593402dca99810"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas52/annotation.txt",
+      "sha256": "f4a17f5a806bb44b57b0861553153418e16c865dafee357658ebe101e031dfca"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas52/fasta.txt",
+      "sha256": "883b11bf33a4c76edc2d55fb7a5ae3b9292d2d1feb51b928494bb20ce08d0df9"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas54/annotation.txt",
+      "sha256": "4ce3c96811d95b32af0144e5143635e3822fe27a982439b62a1b626e9f4c2ebe"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas54/fasta.txt",
+      "sha256": "2bd5c23f1cf158f572fcca20911848bf41eadd2b4cc78bb8f9a735c35d4348fa"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas56/annotation.txt",
+      "sha256": "43f8a2719b384cc0b7e31c0dc03d7bf1b41386fc2e41ed5c34d25766f2b4f001"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas56/fasta.txt",
+      "sha256": "66e8099ee74d06fcf06e5e0e2f937a3428fe6a0a7a8715e39be0e6dfcb7714b6"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas57/annotation.txt",
+      "sha256": "fdd655a7fff4167a7b19cd72c63a0c5d79feb7032b8147260c1d59809388fc57"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas57/fasta.txt",
+      "sha256": "af1197d86eac92186c2bb911d450da317d79b1ede84e6f40b01c83cbe9939135"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas58/annotation.txt",
+      "sha256": "86c986dcd944f71fcb8f06c1ed63ca4c0496fbc7ebba01955b218e781f9d9c64"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas58/fasta.txt",
+      "sha256": "2130653c0d09315bc42baff8760857029b174e790a9a9254c188c125d00877e4"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas59/annotation.txt",
+      "sha256": "5aadcbfb9d0b73d181458e664ddafb36c02405ddd1e55328b26f5a3c8bdbedc4"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas59/fasta.txt",
+      "sha256": "5b952c043f9b07ac992559fc8eec07c2241ccfeaf3da9456a2fea53a7071f118"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas60/annotation.txt",
+      "sha256": "685c15516c6be8c2717573d50573a888ee65fb0b0fb1cc6ab66162e14587abcf"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas60/fasta.txt",
+      "sha256": "f62697cbc2d17f7087e416b78b71d513fd0fed8bf0db9f8958c8bdff0b834290"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas61/annotation.txt",
+      "sha256": "115ff85bea530d647afb210061a2f38d4143f1fb94ecf71b956b728d66c74164"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas61/fasta.txt",
+      "sha256": "428ef8c4fb10321ac94548dc6ce4f931047ded5271eee5acaf88d142716da5d9"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas63/annotation.txt",
+      "sha256": "0fe9a948841b086e5607f11314e183951953d38398224370f4578a0ed4f9b7a7"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas63/fasta.txt",
+      "sha256": "643642afd06c7a7976d4d1edae23ae043cec9454d5c81fddbd5cf975384028a4"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas64/annotation.txt",
+      "sha256": "25f81075ab4ef20262c2b8a45f951fbc3edcbbbbaf28708fc728f0f3b68524d7"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas64/fasta.txt",
+      "sha256": "e71044a072422f5ac752a43c5f79bb28deb638bd5d6a0c44673a428601b48555"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas65/annotation.txt",
+      "sha256": "78e00b0f90d7cf015bf582a31ff78c9cb71c3ca39adaf6ac08d287368938de2e"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas65/fasta.txt",
+      "sha256": "4e5555ff377a103bdde49b7afb2a85fe31bb3be5c16f2f027149d791e54d3768"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas67/annotation.txt",
+      "sha256": "24fab538b7a1f7fd40522f2e34d89ed1257910b4a29ee08a4b506f4d38aa8733"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas67/fasta.txt",
+      "sha256": "0c8e8856d172b8828d6847da24968a94ff56df63ec2da8da99160410e3871e73"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas68/annotation.txt",
+      "sha256": "bc192cc0bb3e92b71da8fbc6bddf6a6db165655d3b0a6627c891e85ef28b40cc"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas68/fasta.txt",
+      "sha256": "78d7747b3b71af04548702549a524bfe4f65fe2749877c63310cdb184dbf3eb4"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas69/annotation.txt",
+      "sha256": "7de3a00f6fe2953725524693721655a5edeb2e527d114c7625cf3c88edd1f182"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas69/fasta.txt",
+      "sha256": "3ef37bdae5edd0aead7f61e128699d3c6c6afda31ab743bd42e5a19dfdae4b92"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR12/contig-manifest.json",
+      "sha256": "79b9df8ce24e4505e2aa2cf80e64a269678ed556fc04c4b807fdd8eea4d557e6"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR12/contigs.fasta",
+      "sha256": "fa72709dd3cbac8987d87baa8bb6f1867a1fe416861d4ae8f112a9bc2f0277e2"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR12/contigs.fasta.gz",
+      "sha256": "6b55a85a8d8f35f2bef78cd7ef358e36d3ed09ce6de0f14ea16166b207e6db6f"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR12/master.embl",
+      "sha256": "f897aca4cd96275e16ea8160c9ca428568d162dfc2b7ad97ec1bc8b6dd0787e5"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR13/contig-manifest.json",
+      "sha256": "5c7ac9554a79e762bd9c6d4f7b56b2e96384cd78ab2b0c23cb2a982d13ef6ebb"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR13/contigs.fasta",
+      "sha256": "445f2b7c537d84cd2de232e9a60d6cc9d9312a3ff4f864bd46b9ce33c01827ed"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR13/contigs.fasta.gz",
+      "sha256": "2e19b68cfe1e511c373a4718668d2cfe747e4236361f1f96d6bacf9038dc560d"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR13/master.embl",
+      "sha256": "0bdd0ca014ee0b14d9d7e4fd8315e5f820b6a2355017ea14a4751973dfd2d395"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR14/contig-manifest.json",
+      "sha256": "af18bc037e03f3e60fa8c9286be4fbe204ad4b8c47ac4a9b896f4afd57280f31"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR14/contigs.fasta",
+      "sha256": "311b1c106fcabe30d1ff693a6fc83fc9bee5c39680eedbe03c47073a53706308"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR14/contigs.fasta.gz",
+      "sha256": "0a2270fc1ce8f9859f572fb5224a649e9b0d921cbe265718a3cebd0afc60d3f7"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR14/master.embl",
+      "sha256": "13492dce63f1add41f93ed3e315773958a8b018130563ba4401b0b69575c6ac9"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR15/contig-manifest.json",
+      "sha256": "ce6787f8ade7a2f25d36c16b20b87ef412aacbebc6c0940b26f40bd49bab499c"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR15/contigs.fasta",
+      "sha256": "8172961ebd7b0455b98b7a8b92a23e9fcdeba70212ee6b42df7c62d4adf86396"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR15/contigs.fasta.gz",
+      "sha256": "04780d1324e21189acb69d597e9f1a5ce82335a6537afeebd30cd8f9f3690f98"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR15/master.embl",
+      "sha256": "055929323f3317210a3b50f17f0c9a85e08612337cc9d7a4ae1af93d7f5b9383"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR16/contig-manifest.json",
+      "sha256": "f18ed789420f316c737bd525b0da3c4acb76ddc24246dd3307637c94f77f889b"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR16/contigs.fasta",
+      "sha256": "bc662f78e43129907102c0276d6d0e7e203f7412a30d84e04fe4d7b06ce05b29"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR16/contigs.fasta.gz",
+      "sha256": "41fae0ea4b59950fdf70aebd19fc0b408e808be3b313fb78a7f16ce2cd6c2799"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR16/master.embl",
+      "sha256": "e6473236fecaecfe02b601611dda3165182aa6436b790ae82bcd86e6b3534c92"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR17/contig-manifest.json",
+      "sha256": "56ac27443d0fd14d5c5ad85cad081ecdfd4fc869418c5b83ed9c5052339a9b84"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR17/contigs.fasta",
+      "sha256": "61c512368a766da8a6866ea1e8cbfa9226783174b7d93ae8f32e905651879e56"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR17/contigs.fasta.gz",
+      "sha256": "1b4b6dccdabdf98760dfb052ca26b538fb4818d12a998b8ec33fb3105a772b36"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR17/master.embl",
+      "sha256": "388043d40cc32672c32563b5f9f5eebb1ee4edfbc6923a5ed36498dca65a3124"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR18/contig-manifest.json",
+      "sha256": "343bd8851db3136344d8ff4168dafb64961944a651be3af99c2a6346b93be470"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR18/contigs.fasta",
+      "sha256": "171ffb1326f41e78d1980a0c9229a0425d20c68b89007421d4662c2fd7d3206b"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR18/contigs.fasta.gz",
+      "sha256": "5b782d48e4c80811de438b7653399451b97301cd29d1467ec292bb1e52645975"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR18/master.embl",
+      "sha256": "c6f304ff18b1894f202e21a1bfbfd99fb8e47c946b7199fc128495788d0c0d68"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR19/contig-manifest.json",
+      "sha256": "3a915e2da5dc929c6044c4fafaef80a7d89a377dd26bc1a2f021fca86b9b8a8d"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR19/contigs.fasta",
+      "sha256": "a487bd6287f691293343b17e0adbb82968e087810ff858c2894f13a8fc8864fe"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR19/contigs.fasta.gz",
+      "sha256": "4573d59b88b0b1cb35c88624251a5113ccff17a3b4821f783e29c4d625926c97"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR19/master.embl",
+      "sha256": "eb79998237b6dd0fad0a6993abecebf4d181311c8d07cc24f9d7913f458b322d"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR20/contig-manifest.json",
+      "sha256": "fdca31e4df04ced6d5c514f9b964ed81f1aa6ec109a955ff517a7e6d58ba24f2"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR20/contigs.fasta",
+      "sha256": "2c5df77923e07b488031c4e05603241192b2e1ff7838c20a23a9e04de58ae4db"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR20/contigs.fasta.gz",
+      "sha256": "3a822babbe567141b8c001c5470ad48b3959e0f33cbfad1c4389c259f299ccb0"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR20/master.embl",
+      "sha256": "7afb467b5a5b0c58f14749c666ed8f383c2c88f523ae0757d9b7112aa87c5a67"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR21/contig-manifest.json",
+      "sha256": "dac017bf60c53ffac5f0cfca24ac1826f24fc17c865e759cbf8502e366dc1b80"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR21/contigs.fasta",
+      "sha256": "be1169923f512d00964b7a0c09935b7652a5d570689ba4e0ad608dac33b42737"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR21/contigs.fasta.gz",
+      "sha256": "75139f740330b0e0f0274b3f0ee89cffe100c253bc887767da0bdf2d6f53faaf"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR21/master.embl",
+      "sha256": "553af32109c02e0214f6ca4c5a2620574e10e9be69a184e020ff15d67435339b"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR22/contig-manifest.json",
+      "sha256": "394aaffd0673a84b06c4ce0efb6b05e5e36508428da465853e57e02afb11c397"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR22/contigs.fasta",
+      "sha256": "9c9c34805cb65d6e0c29f87ce59453e4ca4b54b664c51e69e555da06a679232a"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR22/contigs.fasta.gz",
+      "sha256": "f3db6307d386fe86262b10ea1e97b3ed074590776657c09489cd1302d5c5cb19"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR22/master.embl",
+      "sha256": "7314047897b7bf8a58c988de764b63d6f13b5dbf39624bd54c246ab17bbea6fa"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR23/contig-manifest.json",
+      "sha256": "7c7397b1b3472f66747c86d4546cb718aa1fcf7673c7a4d15b621e92d536c45d"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR23/contigs.fasta",
+      "sha256": "d1cae07d5384667bcbdd8e210d9be761a3519711a27ebac06bae4ad1f00a9c9e"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR23/contigs.fasta.gz",
+      "sha256": "36aa9c379a8f91114724ca7e906ce46766481a01ba9942daf5b5afc2ac718b58"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR23/master.embl",
+      "sha256": "d6d70e949fb9d4ce1379c014d20992ea5d45465de0858910484becabc42cd9b1"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR24/contig-manifest.json",
+      "sha256": "02bc8efecaaca4329b1d94a285ba780b89ab5deb5e37412c5d22c57bfd93549d"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR24/contigs.fasta",
+      "sha256": "972b3ee45dd7e3312cf2d52ca99306636e2ead9794eba5fd0dad22e95086d17c"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR24/contigs.fasta.gz",
+      "sha256": "8dd7c2e190b7cf1dc822bfebdd6a3d5fde9222cea2dd31a1a33f5c1479382cd4"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR24/master.embl",
+      "sha256": "787875cb3166920af748a8cdc87328b5dbe15e2578f1214b5f50bd2feed15ba0"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR25/contig-manifest.json",
+      "sha256": "93a96aee30d406357509a32e9eda9d12a40cf205b2dc098895ca38888d7e7c32"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR25/contigs.fasta",
+      "sha256": "dd714da9312ff9840e518d45a6211a35aeb6b85806835b3a52a9139178aecea6"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR25/contigs.fasta.gz",
+      "sha256": "3cba9160046cd6cb853c6949eff61ec6ae9d2ced292542c07b26eff42db5679b"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR25/master.embl",
+      "sha256": "0a8fe26b883c40eac7f6721323d3f796ced2f97f48caf80456088d545abec6cb"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR26/contig-manifest.json",
+      "sha256": "7bc57919b6b653ff6d7c6d0d6797e89c74717159917cbdc57f25f75dc8ae2141"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR26/contigs.fasta",
+      "sha256": "d09ee85d085e4b599bf9ed8d85d7122e490332f02b34f9253caf32653bdeee6c"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR26/contigs.fasta.gz",
+      "sha256": "3abb3b8c0a04a9d0795db05019775d5d4fe5c9dab4e50d7b3f435d6df3313833"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR26/master.embl",
+      "sha256": "e6ff0231aa0c43ad28bc443268ad7c654ed5145972e2f715c75fe82d41810f11"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR27/contig-manifest.json",
+      "sha256": "069e1874b69cc16e09ea4024322b05446007b7cc108d11dea0ac70fbaaed0b85"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR27/contigs.fasta",
+      "sha256": "38e72a6d488e6d244e229bd0644e787b3965302eed0f9bcd81e5acbce8e3b702"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR27/contigs.fasta.gz",
+      "sha256": "6a3c7eaa25f4570aac054cf7e971bb2910fedf2c3f70f37196f768d2c39a5307"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR27/master.embl",
+      "sha256": "6445ee24d281bede324d5751b4511e948c4428ac288c94667ab8cca8296934ad"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR28/contig-manifest.json",
+      "sha256": "f855eaad617f3f081a9ad852021eca855a7883527ea27c49c6afed6df4339158"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR28/contigs.fasta",
+      "sha256": "8012e14d2c48b7035c15ad01b3b69f29f1b4d5b2b3884fb4dfde3c6c15403d6f"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR28/contigs.fasta.gz",
+      "sha256": "5d35d545a727b55dd8ba9e2d5c92ff1c3aeb4313f5f2d64f03c5f5f0350866f6"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR28/master.embl",
+      "sha256": "59977687eea2d7ffe5d9d4dc9b0f758f71f21c0b737de8933582dd21a01bf047"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR29/contig-manifest.json",
+      "sha256": "cc77bbc33002b7255567555fdec969355de35b6b7f4fabdef2029735214be55d"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR29/contigs.fasta",
+      "sha256": "3899c4cfb22ffc8bdc9069b8e973b149c7c61db81fad787f9b11a88870873229"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR29/contigs.fasta.gz",
+      "sha256": "f9a915347e3ef0c22fdeeb379365545c676bdd0a533e1fd09568efb72358739e"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR29/master.embl",
+      "sha256": "b4b582e1d91e4ba3c1b694a22bb4db2a86979e7a7a1c62f6b28fbb9c81e795e4"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR30/contig-manifest.json",
+      "sha256": "f05f5ba6bb2292888286c01699fb56a1bedbfc11ea19ccb98ecf307e9e153432"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR30/contigs.fasta",
+      "sha256": "960e4be00c685568dd5434aa5ea5a0bb5f8f6880768ed3ba1408545a9e671bd4"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR30/contigs.fasta.gz",
+      "sha256": "84cd1d940d7b7e49bc0b6d585a94020b89dd9e57b09c89dcbcd204efa383647f"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR30/master.embl",
+      "sha256": "c557e789c21d8320d82056666ed76fdb717a27816a1b219471a01a695b8cab62"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR31/contig-manifest.json",
+      "sha256": "1d0bac1a4cb606696e048135a282f6b6b2c483d5ec4583687f6478f908bb7c7b"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR31/contigs.fasta",
+      "sha256": "89377dae8b0359e257e650f4ac756ba11e745b3c8fd365436239416483bef71f"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR31/contigs.fasta.gz",
+      "sha256": "77d6898b3e7727ed5cc09fb09e6659e9e1ab7dacb063c806fdd2f9b40ec2645f"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR31/master.embl",
+      "sha256": "e0aa0dba12e6fe39de00c44c01f7e8ffc7f812730f97b6caa309488f9599bf48"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR32/contig-manifest.json",
+      "sha256": "0cfa80a3ca79d283a61a02cba24ca769c5bafae2831ec60e48245e4995cb8e7d"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR32/contigs.fasta",
+      "sha256": "29e764c4d8b217bf24ec3221ee5af2fef08a9a587d1b7910cf1cd7a16c232b5d"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR32/contigs.fasta.gz",
+      "sha256": "f6ac85ee2816ea83f5180e492ac0f15265c0c7fc2bf022106f301863d25dcccf"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR32/master.embl",
+      "sha256": "e694b814d37f2ab750d3d88908485c4dd57b1ae855f757c7f012c520d809536f"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR33/contig-manifest.json",
+      "sha256": "338e693174d1d5fe81b9ea76f5d1ddbda56641c2bdf538c58730466631d804a2"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR33/contigs.fasta",
+      "sha256": "7a4b2912e7ef37f31d4c8848357ef847f01b77b640be55d35df6e96ecd085c34"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR33/contigs.fasta.gz",
+      "sha256": "233929ec74ec592f9e90ade72f34816117721e87d9817670b7163602267b71f5"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR33/master.embl",
+      "sha256": "f7e05f5426f1af1714bdd6a11ce3e44b4d6af0ee46f3c027759ea08e93f4cf9d"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR34/contig-manifest.json",
+      "sha256": "be256387d4b2dc5fcddc96bd4e75ee0c17d75e288a98866a73345cbe48cd2fef"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR34/contigs.fasta",
+      "sha256": "1dcb5736a834e0503ef83710f49f1987646cb291a8d4fb9611f1b8da3029d072"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR34/contigs.fasta.gz",
+      "sha256": "d8ab5afb4b669976c36f72ad918dd9290346f70724925523a75fc5622b938551"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR34/master.embl",
+      "sha256": "40a14484514e7679b66fcc89751450a27b2a7ad1a2b513cd6398774ce2bce2bb"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR35/contig-manifest.json",
+      "sha256": "be7443102ab3cd9250ab55baf603c301cfcc70b4f02cbe8173c8063c8fd8b675"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR35/contigs.fasta",
+      "sha256": "0362b2e6442ccc3e2582df11ad89d105e582875df538df4ca01aab15b5f92ed4"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR35/contigs.fasta.gz",
+      "sha256": "95d68e00f0cd4b4e65b0607d9d24c8a65e98ec06ea57efcbed0504407488f7af"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR35/master.embl",
+      "sha256": "f09dbdf4c4ff0cc8baec091a8c144a5a8d05fc7212e59ad9574e278049b51914"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR38/contig-manifest.json",
+      "sha256": "ecdf0b702ada4c0fb6f0e65ed96d3c7f44b27509865b5a9a0d531a96b953658b"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR38/contigs.fasta",
+      "sha256": "bddd9a3d45e7fe19e628012cff102300c5ca54b8870a8380a3d57dab82b9827d"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR38/contigs.fasta.gz",
+      "sha256": "87457bf2707ca63501651ddd7e4313ca6951cebbf769f95a614af6056105d557"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR38/master.embl",
+      "sha256": "7251a836386d47601ae9e82008356c4a31caa40c1d63d5cd7f252994bd0d44a1"
+    }
+  ],
+  "tools": {
+    "host": {
+      "provenance_path": "data/raw/tools/prodigal-2.6.3/provenance.json",
+      "provenance_sha256": "fca12f2b49e9835ec5ee842d865331ca2abe04532134b1d6b971b30f9647a40a",
+      "repository": "https://github.com/hyattpd/Prodigal",
+      "commit": "004218fbeb2cf54fe12d88ec2eede6a27d70ebf7",
+      "executable": "data/raw/tools/prodigal-2.6.3/source/prodigal",
+      "executable_sha256": "4d797d04df4c259e5f46c512269a543d9d53f9614c27eef07a2e6f10ebdb898e",
+      "version_stderr": "\nProdigal V2.6.3: February, 2016\n\n"
+    },
+    "phage": {
+      "provenance_path": "data/raw/tools/prodigal-gv-2.11.0/provenance.json",
+      "provenance_sha256": "ca1a66af44590ec22001c431e0edee0cb75c50fdc45aff4c671690629839905b",
+      "repository": "https://github.com/apcamargo/prodigal-gv",
+      "commit": "80e488b3cdd7123684f001759eaf50cdb879c81a",
+      "executable": "data/raw/tools/prodigal-gv-2.11.0/source/prodigal-gv",
+      "executable_sha256": "e91deecbdefaad79dfc7ce37610deab0c6eee3b47b30d91a1c1581d24269c900",
+      "version_stderr": "\nProdigal V2.11.0-gv: March, 2023\n\n"
+    }
+  },
+  "flags": {
+    "host": [
+      "-p",
+      "single",
+      "-g",
+      "11",
+      "-q",
+      "-f",
+      "gff"
+    ],
+    "phage": [
+      "-p",
+      "meta",
+      "-q",
+      "-f",
+      "gff"
+    ]
+  },
+  "genomes": [
+    {
+      "id": "h000",
+      "kind": "host",
+      "source_id": "ECOR12",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR12/contigs.fasta",
+        "sha256": "fa72709dd3cbac8987d87baa8bb6f1867a1fe416861d4ae8f112a9bc2f0277e2"
+      },
+      "master_file": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR12/master.embl",
+        "sha256": "f897aca4cd96275e16ea8160c9ca428568d162dfc2b7ad97ec1bc8b6dd0787e5"
+      },
+      "contig_manifest": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR12/contig-manifest.json",
+        "sha256": "79b9df8ce24e4505e2aa2cf80e64a269678ed556fc04c4b807fdd8eea4d557e6"
+      },
+      "wgs_accession": "QOWX00000000",
+      "project": "PRJNA230969"
+    },
+    {
+      "id": "h001",
+      "kind": "host",
+      "source_id": "ECOR13",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR13/contigs.fasta",
+        "sha256": "445f2b7c537d84cd2de232e9a60d6cc9d9312a3ff4f864bd46b9ce33c01827ed"
+      },
+      "master_file": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR13/master.embl",
+        "sha256": "0bdd0ca014ee0b14d9d7e4fd8315e5f820b6a2355017ea14a4751973dfd2d395"
+      },
+      "contig_manifest": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR13/contig-manifest.json",
+        "sha256": "5c7ac9554a79e762bd9c6d4f7b56b2e96384cd78ab2b0c23cb2a982d13ef6ebb"
+      },
+      "wgs_accession": "QOWY00000000",
+      "project": "PRJNA230969"
+    },
+    {
+      "id": "h002",
+      "kind": "host",
+      "source_id": "ECOR14",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR14/contigs.fasta",
+        "sha256": "311b1c106fcabe30d1ff693a6fc83fc9bee5c39680eedbe03c47073a53706308"
+      },
+      "master_file": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR14/master.embl",
+        "sha256": "13492dce63f1add41f93ed3e315773958a8b018130563ba4401b0b69575c6ac9"
+      },
+      "contig_manifest": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR14/contig-manifest.json",
+        "sha256": "af18bc037e03f3e60fa8c9286be4fbe204ad4b8c47ac4a9b896f4afd57280f31"
+      },
+      "wgs_accession": "QOWZ00000000",
+      "project": "PRJNA230969"
+    },
+    {
+      "id": "h003",
+      "kind": "host",
+      "source_id": "ECOR15",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR15/contigs.fasta",
+        "sha256": "8172961ebd7b0455b98b7a8b92a23e9fcdeba70212ee6b42df7c62d4adf86396"
+      },
+      "master_file": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR15/master.embl",
+        "sha256": "055929323f3317210a3b50f17f0c9a85e08612337cc9d7a4ae1af93d7f5b9383"
+      },
+      "contig_manifest": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR15/contig-manifest.json",
+        "sha256": "ce6787f8ade7a2f25d36c16b20b87ef412aacbebc6c0940b26f40bd49bab499c"
+      },
+      "wgs_accession": "QOXA00000000",
+      "project": "PRJNA230969"
+    },
+    {
+      "id": "h004",
+      "kind": "host",
+      "source_id": "ECOR16",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR16/contigs.fasta",
+        "sha256": "bc662f78e43129907102c0276d6d0e7e203f7412a30d84e04fe4d7b06ce05b29"
+      },
+      "master_file": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR16/master.embl",
+        "sha256": "e6473236fecaecfe02b601611dda3165182aa6436b790ae82bcd86e6b3534c92"
+      },
+      "contig_manifest": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR16/contig-manifest.json",
+        "sha256": "f18ed789420f316c737bd525b0da3c4acb76ddc24246dd3307637c94f77f889b"
+      },
+      "wgs_accession": "QOXB00000000",
+      "project": "PRJNA230969"
+    },
+    {
+      "id": "h005",
+      "kind": "host",
+      "source_id": "ECOR17",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR17/contigs.fasta",
+        "sha256": "61c512368a766da8a6866ea1e8cbfa9226783174b7d93ae8f32e905651879e56"
+      },
+      "master_file": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR17/master.embl",
+        "sha256": "388043d40cc32672c32563b5f9f5eebb1ee4edfbc6923a5ed36498dca65a3124"
+      },
+      "contig_manifest": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR17/contig-manifest.json",
+        "sha256": "56ac27443d0fd14d5c5ad85cad081ecdfd4fc869418c5b83ed9c5052339a9b84"
+      },
+      "wgs_accession": "QOXC00000000",
+      "project": "PRJNA230969"
+    },
+    {
+      "id": "h006",
+      "kind": "host",
+      "source_id": "ECOR18",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR18/contigs.fasta",
+        "sha256": "171ffb1326f41e78d1980a0c9229a0425d20c68b89007421d4662c2fd7d3206b"
+      },
+      "master_file": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR18/master.embl",
+        "sha256": "c6f304ff18b1894f202e21a1bfbfd99fb8e47c946b7199fc128495788d0c0d68"
+      },
+      "contig_manifest": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR18/contig-manifest.json",
+        "sha256": "343bd8851db3136344d8ff4168dafb64961944a651be3af99c2a6346b93be470"
+      },
+      "wgs_accession": "QOXD00000000",
+      "project": "PRJNA230969"
+    },
+    {
+      "id": "h007",
+      "kind": "host",
+      "source_id": "ECOR19",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR19/contigs.fasta",
+        "sha256": "a487bd6287f691293343b17e0adbb82968e087810ff858c2894f13a8fc8864fe"
+      },
+      "master_file": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR19/master.embl",
+        "sha256": "eb79998237b6dd0fad0a6993abecebf4d181311c8d07cc24f9d7913f458b322d"
+      },
+      "contig_manifest": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR19/contig-manifest.json",
+        "sha256": "3a915e2da5dc929c6044c4fafaef80a7d89a377dd26bc1a2f021fca86b9b8a8d"
+      },
+      "wgs_accession": "QOXE00000000",
+      "project": "PRJNA230969"
+    },
+    {
+      "id": "h008",
+      "kind": "host",
+      "source_id": "ECOR20",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR20/contigs.fasta",
+        "sha256": "2c5df77923e07b488031c4e05603241192b2e1ff7838c20a23a9e04de58ae4db"
+      },
+      "master_file": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR20/master.embl",
+        "sha256": "7afb467b5a5b0c58f14749c666ed8f383c2c88f523ae0757d9b7112aa87c5a67"
+      },
+      "contig_manifest": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR20/contig-manifest.json",
+        "sha256": "fdca31e4df04ced6d5c514f9b964ed81f1aa6ec109a955ff517a7e6d58ba24f2"
+      },
+      "wgs_accession": "QOXF00000000",
+      "project": "PRJNA230969"
+    },
+    {
+      "id": "h009",
+      "kind": "host",
+      "source_id": "ECOR21",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR21/contigs.fasta",
+        "sha256": "be1169923f512d00964b7a0c09935b7652a5d570689ba4e0ad608dac33b42737"
+      },
+      "master_file": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR21/master.embl",
+        "sha256": "553af32109c02e0214f6ca4c5a2620574e10e9be69a184e020ff15d67435339b"
+      },
+      "contig_manifest": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR21/contig-manifest.json",
+        "sha256": "dac017bf60c53ffac5f0cfca24ac1826f24fc17c865e759cbf8502e366dc1b80"
+      },
+      "wgs_accession": "QOXG00000000",
+      "project": "PRJNA230969"
+    },
+    {
+      "id": "h010",
+      "kind": "host",
+      "source_id": "ECOR22",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR22/contigs.fasta",
+        "sha256": "9c9c34805cb65d6e0c29f87ce59453e4ca4b54b664c51e69e555da06a679232a"
+      },
+      "master_file": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR22/master.embl",
+        "sha256": "7314047897b7bf8a58c988de764b63d6f13b5dbf39624bd54c246ab17bbea6fa"
+      },
+      "contig_manifest": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR22/contig-manifest.json",
+        "sha256": "394aaffd0673a84b06c4ce0efb6b05e5e36508428da465853e57e02afb11c397"
+      },
+      "wgs_accession": "QOXH00000000",
+      "project": "PRJNA230969"
+    },
+    {
+      "id": "h011",
+      "kind": "host",
+      "source_id": "ECOR23",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR23/contigs.fasta",
+        "sha256": "d1cae07d5384667bcbdd8e210d9be761a3519711a27ebac06bae4ad1f00a9c9e"
+      },
+      "master_file": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR23/master.embl",
+        "sha256": "d6d70e949fb9d4ce1379c014d20992ea5d45465de0858910484becabc42cd9b1"
+      },
+      "contig_manifest": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR23/contig-manifest.json",
+        "sha256": "7c7397b1b3472f66747c86d4546cb718aa1fcf7673c7a4d15b621e92d536c45d"
+      },
+      "wgs_accession": "QOXI00000000",
+      "project": "PRJNA230969"
+    },
+    {
+      "id": "h012",
+      "kind": "host",
+      "source_id": "ECOR24",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR24/contigs.fasta",
+        "sha256": "972b3ee45dd7e3312cf2d52ca99306636e2ead9794eba5fd0dad22e95086d17c"
+      },
+      "master_file": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR24/master.embl",
+        "sha256": "787875cb3166920af748a8cdc87328b5dbe15e2578f1214b5f50bd2feed15ba0"
+      },
+      "contig_manifest": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR24/contig-manifest.json",
+        "sha256": "02bc8efecaaca4329b1d94a285ba780b89ab5deb5e37412c5d22c57bfd93549d"
+      },
+      "wgs_accession": "QOXJ00000000",
+      "project": "PRJNA230969"
+    },
+    {
+      "id": "h013",
+      "kind": "host",
+      "source_id": "ECOR25",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR25/contigs.fasta",
+        "sha256": "dd714da9312ff9840e518d45a6211a35aeb6b85806835b3a52a9139178aecea6"
+      },
+      "master_file": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR25/master.embl",
+        "sha256": "0a8fe26b883c40eac7f6721323d3f796ced2f97f48caf80456088d545abec6cb"
+      },
+      "contig_manifest": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR25/contig-manifest.json",
+        "sha256": "93a96aee30d406357509a32e9eda9d12a40cf205b2dc098895ca38888d7e7c32"
+      },
+      "wgs_accession": "QOXK00000000",
+      "project": "PRJNA230969"
+    },
+    {
+      "id": "h014",
+      "kind": "host",
+      "source_id": "ECOR26",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR26/contigs.fasta",
+        "sha256": "d09ee85d085e4b599bf9ed8d85d7122e490332f02b34f9253caf32653bdeee6c"
+      },
+      "master_file": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR26/master.embl",
+        "sha256": "e6ff0231aa0c43ad28bc443268ad7c654ed5145972e2f715c75fe82d41810f11"
+      },
+      "contig_manifest": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR26/contig-manifest.json",
+        "sha256": "7bc57919b6b653ff6d7c6d0d6797e89c74717159917cbdc57f25f75dc8ae2141"
+      },
+      "wgs_accession": "QOXL00000000",
+      "project": "PRJNA230969"
+    },
+    {
+      "id": "h015",
+      "kind": "host",
+      "source_id": "ECOR27",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR27/contigs.fasta",
+        "sha256": "38e72a6d488e6d244e229bd0644e787b3965302eed0f9bcd81e5acbce8e3b702"
+      },
+      "master_file": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR27/master.embl",
+        "sha256": "6445ee24d281bede324d5751b4511e948c4428ac288c94667ab8cca8296934ad"
+      },
+      "contig_manifest": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR27/contig-manifest.json",
+        "sha256": "069e1874b69cc16e09ea4024322b05446007b7cc108d11dea0ac70fbaaed0b85"
+      },
+      "wgs_accession": "QOXM00000000",
+      "project": "PRJNA230969"
+    },
+    {
+      "id": "h016",
+      "kind": "host",
+      "source_id": "ECOR28",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR28/contigs.fasta",
+        "sha256": "8012e14d2c48b7035c15ad01b3b69f29f1b4d5b2b3884fb4dfde3c6c15403d6f"
+      },
+      "master_file": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR28/master.embl",
+        "sha256": "59977687eea2d7ffe5d9d4dc9b0f758f71f21c0b737de8933582dd21a01bf047"
+      },
+      "contig_manifest": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR28/contig-manifest.json",
+        "sha256": "f855eaad617f3f081a9ad852021eca855a7883527ea27c49c6afed6df4339158"
+      },
+      "wgs_accession": "QOXN00000000",
+      "project": "PRJNA230969"
+    },
+    {
+      "id": "h017",
+      "kind": "host",
+      "source_id": "ECOR29",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR29/contigs.fasta",
+        "sha256": "3899c4cfb22ffc8bdc9069b8e973b149c7c61db81fad787f9b11a88870873229"
+      },
+      "master_file": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR29/master.embl",
+        "sha256": "b4b582e1d91e4ba3c1b694a22bb4db2a86979e7a7a1c62f6b28fbb9c81e795e4"
+      },
+      "contig_manifest": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR29/contig-manifest.json",
+        "sha256": "cc77bbc33002b7255567555fdec969355de35b6b7f4fabdef2029735214be55d"
+      },
+      "wgs_accession": "QOXO00000000",
+      "project": "PRJNA230969"
+    },
+    {
+      "id": "h018",
+      "kind": "host",
+      "source_id": "ECOR30",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR30/contigs.fasta",
+        "sha256": "960e4be00c685568dd5434aa5ea5a0bb5f8f6880768ed3ba1408545a9e671bd4"
+      },
+      "master_file": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR30/master.embl",
+        "sha256": "c557e789c21d8320d82056666ed76fdb717a27816a1b219471a01a695b8cab62"
+      },
+      "contig_manifest": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR30/contig-manifest.json",
+        "sha256": "f05f5ba6bb2292888286c01699fb56a1bedbfc11ea19ccb98ecf307e9e153432"
+      },
+      "wgs_accession": "QOXP00000000",
+      "project": "PRJNA230969"
+    },
+    {
+      "id": "h019",
+      "kind": "host",
+      "source_id": "ECOR31",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR31/contigs.fasta",
+        "sha256": "89377dae8b0359e257e650f4ac756ba11e745b3c8fd365436239416483bef71f"
+      },
+      "master_file": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR31/master.embl",
+        "sha256": "e0aa0dba12e6fe39de00c44c01f7e8ffc7f812730f97b6caa309488f9599bf48"
+      },
+      "contig_manifest": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR31/contig-manifest.json",
+        "sha256": "1d0bac1a4cb606696e048135a282f6b6b2c483d5ec4583687f6478f908bb7c7b"
+      },
+      "wgs_accession": "QOXQ00000000",
+      "project": "PRJNA230969"
+    },
+    {
+      "id": "h020",
+      "kind": "host",
+      "source_id": "ECOR32",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR32/contigs.fasta",
+        "sha256": "29e764c4d8b217bf24ec3221ee5af2fef08a9a587d1b7910cf1cd7a16c232b5d"
+      },
+      "master_file": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR32/master.embl",
+        "sha256": "e694b814d37f2ab750d3d88908485c4dd57b1ae855f757c7f012c520d809536f"
+      },
+      "contig_manifest": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR32/contig-manifest.json",
+        "sha256": "0cfa80a3ca79d283a61a02cba24ca769c5bafae2831ec60e48245e4995cb8e7d"
+      },
+      "wgs_accession": "QOXR00000000",
+      "project": "PRJNA230969"
+    },
+    {
+      "id": "h021",
+      "kind": "host",
+      "source_id": "ECOR33",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR33/contigs.fasta",
+        "sha256": "7a4b2912e7ef37f31d4c8848357ef847f01b77b640be55d35df6e96ecd085c34"
+      },
+      "master_file": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR33/master.embl",
+        "sha256": "f7e05f5426f1af1714bdd6a11ce3e44b4d6af0ee46f3c027759ea08e93f4cf9d"
+      },
+      "contig_manifest": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR33/contig-manifest.json",
+        "sha256": "338e693174d1d5fe81b9ea76f5d1ddbda56641c2bdf538c58730466631d804a2"
+      },
+      "wgs_accession": "QOXS00000000",
+      "project": "PRJNA230969"
+    },
+    {
+      "id": "h022",
+      "kind": "host",
+      "source_id": "ECOR34",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR34/contigs.fasta",
+        "sha256": "1dcb5736a834e0503ef83710f49f1987646cb291a8d4fb9611f1b8da3029d072"
+      },
+      "master_file": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR34/master.embl",
+        "sha256": "40a14484514e7679b66fcc89751450a27b2a7ad1a2b513cd6398774ce2bce2bb"
+      },
+      "contig_manifest": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR34/contig-manifest.json",
+        "sha256": "be256387d4b2dc5fcddc96bd4e75ee0c17d75e288a98866a73345cbe48cd2fef"
+      },
+      "wgs_accession": "QOXT00000000",
+      "project": "PRJNA230969"
+    },
+    {
+      "id": "h023",
+      "kind": "host",
+      "source_id": "ECOR35",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR35/contigs.fasta",
+        "sha256": "0362b2e6442ccc3e2582df11ad89d105e582875df538df4ca01aab15b5f92ed4"
+      },
+      "master_file": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR35/master.embl",
+        "sha256": "f09dbdf4c4ff0cc8baec091a8c144a5a8d05fc7212e59ad9574e278049b51914"
+      },
+      "contig_manifest": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR35/contig-manifest.json",
+        "sha256": "be7443102ab3cd9250ab55baf603c301cfcc70b4f02cbe8173c8063c8fd8b675"
+      },
+      "wgs_accession": "QOXU00000000",
+      "project": "PRJNA230969"
+    },
+    {
+      "id": "h024",
+      "kind": "host",
+      "source_id": "ECOR38",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR38/contigs.fasta",
+        "sha256": "bddd9a3d45e7fe19e628012cff102300c5ca54b8870a8380a3d57dab82b9827d"
+      },
+      "master_file": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR38/master.embl",
+        "sha256": "7251a836386d47601ae9e82008356c4a31caa40c1d63d5cd7f252994bd0d44a1"
+      },
+      "contig_manifest": {
+        "path": "data/raw/genophi-external-validation/ecor-wgs-inputs-v1/ECOR38/contig-manifest.json",
+        "sha256": "ecdf0b702ada4c0fb6f0e65ed96d3c7f44b27509865b5a9a0d531a96b953658b"
+      },
+      "wgs_accession": "QOXX00000000",
+      "project": "PRJNA230969"
+    },
+    {
+      "id": "p000",
+      "kind": "phage",
+      "source_id": "Bas01",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas01/fasta.txt",
+        "sha256": "d166345698b6c52b443576f23b432782e35996dc0bbb3b97037bb61407f6afac"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas01/annotation.txt",
+        "sha256": "fcb8c8f9cd79f8d19770376d45691cc7150e80d2be934d324550c19dc45f3cb5"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445405",
+      "versioned_accession": "PZ445405.1",
+      "expected_length": 50126,
+      "expected_sequence_sha256": "eb27d3f5fb6e79329610ad7cdc0537d890b6eb523029902a29c08f1b2080d5a6",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p001",
+      "kind": "phage",
+      "source_id": "Bas02",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas02/fasta.txt",
+        "sha256": "7b469a88627cd3cf1a90d5cfa55dd39d03a4d1a7bdc9fef569645209b6636e36"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas02/annotation.txt",
+        "sha256": "21721a94be46f2d994e8d5a36d669c2984d2907d15a40a03930bd9ae9cc50b6d"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445406",
+      "versioned_accession": "PZ445406.1",
+      "expected_length": 47149,
+      "expected_sequence_sha256": "f67025c980399ae62c889b5f45e9780c296a1a8b6a44fcd64ed9d65001ff3202",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p002",
+      "kind": "phage",
+      "source_id": "Bas03",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas03/fasta.txt",
+        "sha256": "7dbbe12f80f709ce8bd0265893bcf0c59c0ab114e084b837215d83de85840648"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas03/annotation.txt",
+        "sha256": "9512eab55cd154f659bb4c553ba77ea4123584489cc0ea52c099f29c4c3c7dc6"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445407",
+      "versioned_accession": "PZ445407.1",
+      "expected_length": 47731,
+      "expected_sequence_sha256": "1ce15311041ae158df9616366352125aca96ee83ed708d8c55b4ac1690205cfb",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p003",
+      "kind": "phage",
+      "source_id": "Bas04",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas04/fasta.txt",
+        "sha256": "6a91420345d36fa3211fed962b5cd1eba80418facae982169daf002af4dec8d9"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas04/annotation.txt",
+        "sha256": "31d9684c50f01796f74640d1654d7c70a9b95d48302909a13b5ea6f1edacddee"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445408",
+      "versioned_accession": "PZ445408.1",
+      "expected_length": 51777,
+      "expected_sequence_sha256": "5070864898ed06e4617178dcf0257a963d549e743560ec91760bfc1922859c33",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p004",
+      "kind": "phage",
+      "source_id": "Bas05",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas05/fasta.txt",
+        "sha256": "d88f265c3b38a3148fe890b5e33be611998c4bac4cde893f14756f86d4cef1ed"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas05/annotation.txt",
+        "sha256": "a2b764d820cfeead2f8c33c08c90eee0c8d6be1954473ce641bd5436629002ba"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445409",
+      "versioned_accession": "PZ445409.1",
+      "expected_length": 47775,
+      "expected_sequence_sha256": "c653a9e6b2b1d1c137618021265425ed8d623597e0498083e1c8ae711db8e804",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p005",
+      "kind": "phage",
+      "source_id": "Bas06",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas06/fasta.txt",
+        "sha256": "0009ad01d168bed4e325a7adee2038ad1979d2f813bf4eb409e1346922dafc35"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas06/annotation.txt",
+        "sha256": "7297fe3ba096feb7343c780aa809d0cd32efcc00e946a711dd26ea2d4b8514e9"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445410",
+      "versioned_accession": "PZ445410.1",
+      "expected_length": 51474,
+      "expected_sequence_sha256": "3279887f2553d321c6af49171f0cbd363a6036a62dda8b8a5cb1de17ac12df14",
+      "author_DNA_exact_match": false
+    },
+    {
+      "id": "p006",
+      "kind": "phage",
+      "source_id": "Bas07",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas07/fasta.txt",
+        "sha256": "407a396e9de3ea1626c563898863823927ab943d6832da189c86ebf68853ae30"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas07/annotation.txt",
+        "sha256": "276e2adc2ce30f71cbc95a589816da30a60f4d5a87833cd734ee024d88702d97"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445411",
+      "versioned_accession": "PZ445411.1",
+      "expected_length": 51129,
+      "expected_sequence_sha256": "e08e53edfa7d522d11aa347f59e688d89f6a8d0f4beaf3b628d600ad87a22b73",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p007",
+      "kind": "phage",
+      "source_id": "Bas08",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas08/fasta.txt",
+        "sha256": "4b003f6bb441c21fb83e54dd909613bd98b66613a7afd00e6e7f19a6aeae278e"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas08/annotation.txt",
+        "sha256": "61c32ab509597f69295376e3acdc361464098d430acdfdc713181a48e7beb52e"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445412",
+      "versioned_accession": "PZ445412.1",
+      "expected_length": 50731,
+      "expected_sequence_sha256": "e37a86b4cbf8997223367592fbcf68b16f3644231121a07d9ae803291253fde6",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p008",
+      "kind": "phage",
+      "source_id": "Bas09",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas09/fasta.txt",
+        "sha256": "fdabffcbaa563f4d88801f067d5963ac93e040a75298bf0b7196a8909870033d"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas09/annotation.txt",
+        "sha256": "53c1eae5a454bbb332a461e4e222b3800bd20fcc287c7d51c0c73f17fbdf5ea0"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445413",
+      "versioned_accession": "PZ445413.1",
+      "expected_length": 51285,
+      "expected_sequence_sha256": "17718b438f69a4b275ac4e4f8a224c12b5cef8f1bd94db84177a9be5654bb725",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p009",
+      "kind": "phage",
+      "source_id": "Bas10",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas10/fasta.txt",
+        "sha256": "c0c77b41e4d6e434bc9724c291f33e448710c98953270f469e48e56baa512b83"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas10/annotation.txt",
+        "sha256": "228a48d07c8a1d8eff94c0aaa0dba0620c643db0c9fc98cbbf9ddf033694ea41"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445414",
+      "versioned_accession": "PZ445414.1",
+      "expected_length": 49911,
+      "expected_sequence_sha256": "c27c460f4353158c52da9ee2112b3aac43916dad81408a0d07b0cc072bdda6fd",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p010",
+      "kind": "phage",
+      "source_id": "Bas12",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas12/fasta.txt",
+        "sha256": "6e5a842055093b5f3e857fd105b2b1b66d62be12190ffc03a6e4889f1bffd7b1"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas12/annotation.txt",
+        "sha256": "d4d1ed29279d4538d861483e0b41608e4655eac00242375f7a03ce98359f6f10"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "MZ501053",
+      "versioned_accession": "MZ501053.1",
+      "expected_length": 49298,
+      "expected_sequence_sha256": "bd57afd371a88e4a717c99dc3221e6f0ff48cdd441cb4578cffd25f6c015731b",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p011",
+      "kind": "phage",
+      "source_id": "Bas13",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas13/fasta.txt",
+        "sha256": "34913a21bbc5aa91766a7310e726afe93e857c30a76ff6153ea3dbf2d9387c61"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas13/annotation.txt",
+        "sha256": "f44b632e8d0a4b5faca3714838fabb19bc7de68a9abfdccab7528904cb3f354a"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445416",
+      "versioned_accession": "PZ445416.1",
+      "expected_length": 50192,
+      "expected_sequence_sha256": "fbaa322c04f0ae76b8fc2f9eb83b855d92321fb7955fe9c59dd75df1244070d3",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p012",
+      "kind": "phage",
+      "source_id": "Bas14",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas14/fasta.txt",
+        "sha256": "557375f3832979ad0c888875fc4e0198bcdb03d36e133f22a096979f43268764"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas14/annotation.txt",
+        "sha256": "5a5efefe287d6f35711024ba081e91c2ffe5f5420e498d324702b647e040d387"
+      },
+      "annotation_format": "genbank",
+      "requested_accession": "NC_073062",
+      "versioned_accession": "NC_073062.1",
+      "expected_length": 43627,
+      "expected_sequence_sha256": "9dad1f981892b672154f7585d6c07fa59c06a70934c2f2bcde114de85af59393",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p013",
+      "kind": "phage",
+      "source_id": "Bas15",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas15/fasta.txt",
+        "sha256": "f8e8514973acf692a855cb77d76ababd0584f33d8d9b421bead14816caee3ed5"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas15/annotation.txt",
+        "sha256": "0c05d84ad4ec843cf0ac9d1a2941e6aa422fdcbc8edb28c932bc628b2ffba043"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445417",
+      "versioned_accession": "PZ445417.1",
+      "expected_length": 44550,
+      "expected_sequence_sha256": "c1f983df30b24306efc93eda4386179e402535b14f9d4cd56b90427e2d5dfdb2",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p014",
+      "kind": "phage",
+      "source_id": "Bas16",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas16/fasta.txt",
+        "sha256": "e7e8c3b5a1e473fa63f0ecaf9be7c1269869bea9bdf0ca659e531dbac16f285a"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas16/annotation.txt",
+        "sha256": "1f4cda8597c614d63f0d180ef57c5c3ed5a66b5fa3dc087a416e753e726bbfc6"
+      },
+      "annotation_format": "genbank",
+      "requested_accession": "NC_073066",
+      "versioned_accession": "NC_073066.1",
+      "expected_length": 44295,
+      "expected_sequence_sha256": "62ec7816e579cc02148f634370406f50ff45606bc8b292c56a7f2e8bd87b4132",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p015",
+      "kind": "phage",
+      "source_id": "Bas17",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas17/fasta.txt",
+        "sha256": "87644352885e230b90f25b119ddf57d3b3dddaa5cfd9c8bc9e4e6e85d49ad3de"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas17/annotation.txt",
+        "sha256": "58f124eb60274f36d405d80652c353321f20219732770e65aab870d586b82337"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445418",
+      "versioned_accession": "PZ445418.1",
+      "expected_length": 43104,
+      "expected_sequence_sha256": "1c22c66d9f223cdeaa3181c5ee3158b31fffc309560abe84213e69149f355b5f",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p016",
+      "kind": "phage",
+      "source_id": "Bas19",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas19/fasta.txt",
+        "sha256": "f39c144d15fb76339218f1b5a905eba0f8b3c86b594659c216253a74735ac401"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas19/annotation.txt",
+        "sha256": "7311b3409935450cf27fca385c4eef9d50cef2a7d4fddcfcd92b2191bc6c6577"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445420",
+      "versioned_accession": "PZ445420.1",
+      "expected_length": 58073,
+      "expected_sequence_sha256": "0273ebf70ee8291be50e746bc68f6c892f9e8e3f29b592a2336efd7ca379a5a1",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p017",
+      "kind": "phage",
+      "source_id": "Bas20",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas20/fasta.txt",
+        "sha256": "2c8a13b3792bd4fe9b5c142fb5297d6b746e8447075be8c00047665166e54026"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas20/annotation.txt",
+        "sha256": "a6eaab335bdca15ec695dd5a1c93ae6069afdfb81083c06dee2c42aafb393238"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445421",
+      "versioned_accession": "PZ445421.1",
+      "expected_length": 59835,
+      "expected_sequence_sha256": "11a2c203aa309d991b492e19bade3c4ccdc918f9a515cc307e04f7decbf2ba30",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p018",
+      "kind": "phage",
+      "source_id": "Bas21",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas21/fasta.txt",
+        "sha256": "9294d0b2ad7bfa7d1f0a3fe09073e0d92de34452836f335efc7a2b531c89bad9"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas21/annotation.txt",
+        "sha256": "42d82820a80f99aadd7b85aacb5a148673a92b5b610c97cf59976d757f7bc4f4"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445422",
+      "versioned_accession": "PZ445422.1",
+      "expected_length": 56589,
+      "expected_sequence_sha256": "d2dba21f96bffc6dd0cbdcf6756fa6b985dbdeeb47212e67e59f54dd93171961",
+      "author_DNA_exact_match": false
+    },
+    {
+      "id": "p019",
+      "kind": "phage",
+      "source_id": "Bas22",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas22/fasta.txt",
+        "sha256": "22e15f0b34634bcfe7588693f68ceb04a83dbc85537190255e4a6835f3a29eac"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas22/annotation.txt",
+        "sha256": "99812afb825e95f413166227786b2bec603ba1d6d9a6ee3d2f577f8111c90d1f"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445423",
+      "versioned_accession": "PZ445423.1",
+      "expected_length": 58567,
+      "expected_sequence_sha256": "fd03c976c262105a2c176354ee04f4abaf262e0c5b301f39d31e849ef9babd75",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p020",
+      "kind": "phage",
+      "source_id": "Bas25",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas25/fasta.txt",
+        "sha256": "63faee88db29b282e050a5e881fec2e8a9696f7d2c524169302e3eecf9f60bd2"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas25/annotation.txt",
+        "sha256": "20aef63e949931f3bcd6d33cb5e7ed379408f5b402e2286d94584ef3b6115f75"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445426",
+      "versioned_accession": "PZ445426.1",
+      "expected_length": 58342,
+      "expected_sequence_sha256": "586bdf1020434c48d97f78b232e206299b54af741316ce06fd815c67c9277b5b",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p021",
+      "kind": "phage",
+      "source_id": "Bas27",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas27/fasta.txt",
+        "sha256": "69ea8808a89cf2d6a19a9283a23921a257862a5a3374b8b3359e19f1c1fbbab6"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas27/annotation.txt",
+        "sha256": "f5b632cc2155d587d31fc05b2adfc4c1b83dabfecab7fe9a4cb738db33654358"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445428",
+      "versioned_accession": "PZ445428.1",
+      "expected_length": 114181,
+      "expected_sequence_sha256": "8ff6cc0e6e6cc8a94c58dd11f57d125390889fa380c472cfe3f1cc2911d2b3dc",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p022",
+      "kind": "phage",
+      "source_id": "Bas28",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas28/fasta.txt",
+        "sha256": "daa1f7dff618ce24c51294a5bedab7c490f65b32324103a2fe7f92528a6e1b3c"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas28/annotation.txt",
+        "sha256": "89b2c622a04c752ed95f8c025b59250fcf08e0d808c205c292e72d4e3b3fd69d"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445429",
+      "versioned_accession": "PZ445429.1",
+      "expected_length": 115446,
+      "expected_sequence_sha256": "1cc00d606000417d2a8e4547934ee581c0c62bf23d2bfa272933682977d87dfa",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p023",
+      "kind": "phage",
+      "source_id": "Bas29",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas29/fasta.txt",
+        "sha256": "890d9c1dfa2260fb7fc458fd210746a079e95ee6641abbc980694a4042a120ec"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas29/annotation.txt",
+        "sha256": "c019900dc672a28a1bfb02085d4036bcb3b6c789fa6cdd4f8cbdf922a125b4a1"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445430",
+      "versioned_accession": "PZ445430.1",
+      "expected_length": 110823,
+      "expected_sequence_sha256": "9533d31946ce99f9e3f3ecf7989ab71ddba150c27824a6975eceefbf9c9019cf",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p024",
+      "kind": "phage",
+      "source_id": "Bas31",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas31/fasta.txt",
+        "sha256": "d3d44a6bd5050e03a52fb6893982e4d5578e1c60a99f7cb418a016e25a613f59"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas31/annotation.txt",
+        "sha256": "d0b34df8dd68bd144c9bf6ed0eb401f9175a0eeeb36c8f064ea354cafe048376"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "MZ501058",
+      "versioned_accession": "MZ501058.1",
+      "expected_length": 113532,
+      "expected_sequence_sha256": "31e801fc449fde3db239895bc894f77228136608875b04bbc3c4e085922920bb",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p025",
+      "kind": "phage",
+      "source_id": "Bas33",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas33/fasta.txt",
+        "sha256": "b98d042d229b5466a2110bd3c4c9544e4ab093126fe2bc599757ebfa1d1a65c8"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas33/annotation.txt",
+        "sha256": "dcb42d3bf9e44084e33d2d0941a8d4e2d54129442c26b7dda078aac2b1cb8664"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445432",
+      "versioned_accession": "PZ445432.1",
+      "expected_length": 106566,
+      "expected_sequence_sha256": "c620a1128337c1e0d92bd5323186ff8906b6ac864b83e64dda66b62f2f51a160",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p026",
+      "kind": "phage",
+      "source_id": "Bas34",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas34/fasta.txt",
+        "sha256": "8421e4c883364e0ebbf430e2e474075a374c60b11152c2b044e866b9324c2351"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas34/annotation.txt",
+        "sha256": "634223be586245c7ecf02efb38919d8979be3fa34917c6cf0e3bfca1b8e0412a"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "MZ501103",
+      "versioned_accession": "MZ501103.1",
+      "expected_length": 107080,
+      "expected_sequence_sha256": "7f04f2aec355668ecdff9cdfcf7be7c02a34c9d6b44e3fbe9f05faf3e71103c8",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p027",
+      "kind": "phage",
+      "source_id": "Bas35",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas35/fasta.txt",
+        "sha256": "73295338368bfd25c0dd1000071b5827b55b002726a4c6008017f15b0a91c369"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas35/annotation.txt",
+        "sha256": "553a5182cf6326025975a2c22b96b9e7a675182b7b34363f0fe1647ea64f46c3"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445433",
+      "versioned_accession": "PZ445433.1",
+      "expected_length": 166861,
+      "expected_sequence_sha256": "7925de364f153d84077c845ee3517bfc96e3b406d5aac1895d9994d7dbdf5a48",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p028",
+      "kind": "phage",
+      "source_id": "Bas36",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas36/fasta.txt",
+        "sha256": "64719307e248da1f0aaa9ef46f9e4e76cf00fe76d8426139bc2525048a987d17"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas36/annotation.txt",
+        "sha256": "bdc25bd1be549b4b839dfd9b6b6a4627d19c86fe5a0758675e3152403f813cbe"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445434",
+      "versioned_accession": "PZ445434.1",
+      "expected_length": 167732,
+      "expected_sequence_sha256": "f3ee25a79f31ef38cea4ae8321a6bbb57a72d85a2236d9012617b5a4f0dda61b",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p029",
+      "kind": "phage",
+      "source_id": "Bas37",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas37/fasta.txt",
+        "sha256": "eeeeb858d2c44494c064a64e7b27d0ae8c8771dbbc87e9f0d57203e71c606d62"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas37/annotation.txt",
+        "sha256": "1176913bd4ba303ee11aec7b7f0a2872c34c6d0ab0cd30c1a11752467600eee8"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "MZ501089",
+      "versioned_accession": "MZ501089.1",
+      "expected_length": 167832,
+      "expected_sequence_sha256": "82072cb7fda87ec335c6b905cfb7b969e54bfd042bf9df77271cbfa04b01652b",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p030",
+      "kind": "phage",
+      "source_id": "Bas39",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas39/fasta.txt",
+        "sha256": "5962fc827a8720ff6feec1110c091e1827ec8a20b95af4b06984e97688544f81"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas39/annotation.txt",
+        "sha256": "75747c138c4a34c8ce2689645c066f23bff8e72c0f747a55ecc0d9fcb0956a2b"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "MZ501066",
+      "versioned_accession": "MZ501066.1",
+      "expected_length": 169509,
+      "expected_sequence_sha256": "8ee4b789008459ccf4ce143441ae19f8beb9c64fb0b37b9dc17b85755cdc307b",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p031",
+      "kind": "phage",
+      "source_id": "Bas41",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas41/fasta.txt",
+        "sha256": "fa1d56feefac1b274977620e6a10e10e1b0771137c61d3b60c0f4156a655bcbe"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas41/annotation.txt",
+        "sha256": "cc3ac4fbd0efe9d9a8daaff06378b21249ef21bebb1745f59cf9ff2255ee22cc"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "MZ501067",
+      "versioned_accession": "MZ501067.1",
+      "expected_length": 165574,
+      "expected_sequence_sha256": "3f07bcbb5c9e4ec448daf432c476982198ee0bfe05ff2f403a4002c6da7f1dc0",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p032",
+      "kind": "phage",
+      "source_id": "Bas42",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas42/fasta.txt",
+        "sha256": "387fcf0fca2db84fa1b234a51d2935baf4684e0313a9a7a9d1fc91a068c9f33f"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas42/annotation.txt",
+        "sha256": "60380db5d67b589a641d8d2959282aa82407e82a699dd990bc7aa24b6ba8d9e6"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445436",
+      "versioned_accession": "PZ445436.1",
+      "expected_length": 168255,
+      "expected_sequence_sha256": "f6ff74b01ae2f9ff997f8c260cc4e60c70eb6434f64e1db61ed0cf26412e06a3",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p033",
+      "kind": "phage",
+      "source_id": "Bas43",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas43/fasta.txt",
+        "sha256": "5c9f01e441adf4dbb1457d2a270f57c77950d1771a6eb54de896d8bd43b210ef"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas43/annotation.txt",
+        "sha256": "6ba8ade7d732da2c160aa00d68dab0c1b3c949bd412e1cc912c6e93dc4e7d055"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445437",
+      "versioned_accession": "PZ445437.1",
+      "expected_length": 166115,
+      "expected_sequence_sha256": "6b31e89a8a5416bcf8006b10ee5dc318d8dcdabe36cd7742766c13615a5b2cf9",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p034",
+      "kind": "phage",
+      "source_id": "Bas45",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas45/fasta.txt",
+        "sha256": "816f0aa4d0003291ed20b698b1fd93d3fcfdfceab9407163deae49a660d0f1fa"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas45/annotation.txt",
+        "sha256": "c2e4894af6137b2177994c8399eddede78c4b8425a1fb5ea278f8f5553437744"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445439",
+      "versioned_accession": "PZ445439.1",
+      "expected_length": 170053,
+      "expected_sequence_sha256": "5e6e72a7ad369b13f2bd42a3941919b90a6b7f0ea83d03c5b272b97f82205ff5",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p035",
+      "kind": "phage",
+      "source_id": "Bas47",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas47/fasta.txt",
+        "sha256": "bb3e6bc783d2c1f46687e190b6947735d245a37767f058f449b2c0159fcb0591"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas47/annotation.txt",
+        "sha256": "5a06ea1cc44f0ab414109b8ec6378da700442e9cf0bebb998dbab9c9ee78a01f"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "MZ501047",
+      "versioned_accession": "MZ501047.1",
+      "expected_length": 168968,
+      "expected_sequence_sha256": "752f5c71ef4672d34cb4ddc92d3b3789f7985cb6cbbcf57e3ea93d84751689bf",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p036",
+      "kind": "phage",
+      "source_id": "Bas49",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas49/fasta.txt",
+        "sha256": "acda7bff87936054a8c2a48d3bd10d23b2757d40e035e9a422a601d183384349"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas49/annotation.txt",
+        "sha256": "c2568cafc016d51e86fab71f64f6aeac4469ce1d9c748bda1628919ed7f2bef4"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445442",
+      "versioned_accession": "PZ445442.1",
+      "expected_length": 140076,
+      "expected_sequence_sha256": "2d8ce1822a4cb336d10c91d79396434126099c3d1187275cae3aef381ec662b5",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p037",
+      "kind": "phage",
+      "source_id": "Bas51",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas51/fasta.txt",
+        "sha256": "6b48592565c589df5a77c5820798c9945cd977e7f3c47f88bf593402dca99810"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas51/annotation.txt",
+        "sha256": "e225f45f74026387cd8066c5ff165617a4fc3ce1f340cc722ed397aab3da9358"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445444",
+      "versioned_accession": "PZ445444.1",
+      "expected_length": 140659,
+      "expected_sequence_sha256": "d569dad393abb70fbc69caad6b339507b69ab3899814bb23ae0f42ea85157645",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p038",
+      "kind": "phage",
+      "source_id": "Bas52",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas52/fasta.txt",
+        "sha256": "883b11bf33a4c76edc2d55fb7a5ae3b9292d2d1feb51b928494bb20ce08d0df9"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas52/annotation.txt",
+        "sha256": "f4a17f5a806bb44b57b0861553153418e16c865dafee357658ebe101e031dfca"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445445",
+      "versioned_accession": "PZ445445.1",
+      "expected_length": 137380,
+      "expected_sequence_sha256": "b2d324739bf20719748b140e7533bdf6bb1adb704e4837219d699c29bdfcfd3a",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p039",
+      "kind": "phage",
+      "source_id": "Bas54",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas54/fasta.txt",
+        "sha256": "2bd5c23f1cf158f572fcca20911848bf41eadd2b4cc78bb8f9a735c35d4348fa"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas54/annotation.txt",
+        "sha256": "4ce3c96811d95b32af0144e5143635e3822fe27a982439b62a1b626e9f4c2ebe"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445447",
+      "versioned_accession": "PZ445447.1",
+      "expected_length": 136346,
+      "expected_sequence_sha256": "ce42a33678bac596a95ea2e3f8373a0155a35efefe670c520a2c852c791aecec",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p040",
+      "kind": "phage",
+      "source_id": "Bas56",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas56/fasta.txt",
+        "sha256": "66e8099ee74d06fcf06e5e0e2f937a3428fe6a0a7a8715e39be0e6dfcb7714b6"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas56/annotation.txt",
+        "sha256": "43f8a2719b384cc0b7e31c0dc03d7bf1b41386fc2e41ed5c34d25766f2b4f001"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445448",
+      "versioned_accession": "PZ445448.1",
+      "expected_length": 135345,
+      "expected_sequence_sha256": "8366e2228124915fdaff7944c282da0f8ea04e1c0b26f59b121eb2b62716cf52",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p041",
+      "kind": "phage",
+      "source_id": "Bas57",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas57/fasta.txt",
+        "sha256": "af1197d86eac92186c2bb911d450da317d79b1ede84e6f40b01c83cbe9939135"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas57/annotation.txt",
+        "sha256": "fdd655a7fff4167a7b19cd72c63a0c5d79feb7032b8147260c1d59809388fc57"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "MZ501094",
+      "versioned_accession": "MZ501094.1",
+      "expected_length": 135061,
+      "expected_sequence_sha256": "87a0dc5bb3a12bf8842778cc210d3ebfccca8cb4943839de1c9b1f29d8db0df0",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p042",
+      "kind": "phage",
+      "source_id": "Bas58",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas58/fasta.txt",
+        "sha256": "2130653c0d09315bc42baff8760857029b174e790a9a9254c188c125d00877e4"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas58/annotation.txt",
+        "sha256": "86c986dcd944f71fcb8f06c1ed63ca4c0496fbc7ebba01955b218e781f9d9c64"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445449",
+      "versioned_accession": "PZ445449.1",
+      "expected_length": 136906,
+      "expected_sequence_sha256": "f79460f82a5442734b2d72fe9ff50be2a079acdf919a84b76021730d62aa35cc",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p043",
+      "kind": "phage",
+      "source_id": "Bas59",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas59/fasta.txt",
+        "sha256": "5b952c043f9b07ac992559fc8eec07c2241ccfeaf3da9456a2fea53a7071f118"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas59/annotation.txt",
+        "sha256": "5aadcbfb9d0b73d181458e664ddafb36c02405ddd1e55328b26f5a3c8bdbedc4"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445450",
+      "versioned_accession": "PZ445450.1",
+      "expected_length": 131526,
+      "expected_sequence_sha256": "d63f2fdc22e1cfffdc43874e9ab229b66c24eb70c204ca06eb3c92653ba06f7f",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p044",
+      "kind": "phage",
+      "source_id": "Bas60",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas60/fasta.txt",
+        "sha256": "f62697cbc2d17f7087e416b78b71d513fd0fed8bf0db9f8958c8bdff0b834290"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas60/annotation.txt",
+        "sha256": "685c15516c6be8c2717573d50573a888ee65fb0b0fb1cc6ab66162e14587abcf"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445451",
+      "versioned_accession": "PZ445451.1",
+      "expected_length": 150425,
+      "expected_sequence_sha256": "8f7017aa1b407987ddf2d30e2e8bcd95ea5d7369efbd9aa98aa98ff8cae561c0",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p045",
+      "kind": "phage",
+      "source_id": "Bas61",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas61/fasta.txt",
+        "sha256": "428ef8c4fb10321ac94548dc6ce4f931047ded5271eee5acaf88d142716da5d9"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas61/annotation.txt",
+        "sha256": "115ff85bea530d647afb210061a2f38d4143f1fb94ecf71b956b728d66c74164"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445452",
+      "versioned_accession": "PZ445452.1",
+      "expected_length": 146666,
+      "expected_sequence_sha256": "61dca6cb4df1773585ff2a0eb52cca70182bd53ad7f38ba1dc14faefd45e2895",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p046",
+      "kind": "phage",
+      "source_id": "Bas63",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas63/fasta.txt",
+        "sha256": "643642afd06c7a7976d4d1edae23ae043cec9454d5c81fddbd5cf975384028a4"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas63/annotation.txt",
+        "sha256": "0fe9a948841b086e5607f11314e183951953d38398224370f4578a0ed4f9b7a7"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445454",
+      "versioned_accession": "PZ445454.1",
+      "expected_length": 87100,
+      "expected_sequence_sha256": "d943c9ba17aad0398240c23274a7fe17743cbfd5a756905c8ee22bbc636989fa",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p047",
+      "kind": "phage",
+      "source_id": "Bas64",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas64/fasta.txt",
+        "sha256": "e71044a072422f5ac752a43c5f79bb28deb638bd5d6a0c44673a428601b48555"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas64/annotation.txt",
+        "sha256": "25f81075ab4ef20262c2b8a45f951fbc3edcbbbbaf28708fc728f0f3b68524d7"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "MZ501081",
+      "versioned_accession": "MZ501081.1",
+      "expected_length": 39842,
+      "expected_sequence_sha256": "f2ced350fe23ef7913aaac44912020da442f871404e372b1dfcfe2a3dab23b2c",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p048",
+      "kind": "phage",
+      "source_id": "Bas65",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas65/fasta.txt",
+        "sha256": "4e5555ff377a103bdde49b7afb2a85fe31bb3be5c16f2f027149d791e54d3768"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas65/annotation.txt",
+        "sha256": "78e00b0f90d7cf015bf582a31ff78c9cb71c3ca39adaf6ac08d287368938de2e"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445455",
+      "versioned_accession": "PZ445455.1",
+      "expected_length": 39451,
+      "expected_sequence_sha256": "dc194e3540c904cbe6a40f15ecb2e67560855433fbc7bc8908a71324153857f7",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p049",
+      "kind": "phage",
+      "source_id": "Bas67",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas67/fasta.txt",
+        "sha256": "0c8e8856d172b8828d6847da24968a94ff56df63ec2da8da99160410e3871e73"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas67/annotation.txt",
+        "sha256": "24fab538b7a1f7fd40522f2e34d89ed1257910b4a29ee08a4b506f4d38aa8733"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445456",
+      "versioned_accession": "PZ445456.1",
+      "expected_length": 39315,
+      "expected_sequence_sha256": "c2f85081c240b664638b70d99827b8ab7914aca80ebb581522f355b538d41aa9",
+      "author_DNA_exact_match": true
+    },
+    {
+      "id": "p050",
+      "kind": "phage",
+      "source_id": "Bas68",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas68/fasta.txt",
+        "sha256": "78d7747b3b71af04548702549a524bfe4f65fe2749877c63310cdb184dbf3eb4"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas68/annotation.txt",
+        "sha256": "bc192cc0bb3e92b71da8fbc6bddf6a6db165655d3b0a6627c891e85ef28b40cc"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445457",
+      "versioned_accession": "PZ445457.1",
+      "expected_length": 39466,
+      "expected_sequence_sha256": "56dc4e3c18aadb45245af9bfb05bd61e2c14065665da6b5653fcf6eb05fd65f1",
+      "author_DNA_exact_match": false
+    },
+    {
+      "id": "p051",
+      "kind": "phage",
+      "source_id": "Bas69",
+      "role": "secondary_reference_not_admitted",
+      "fasta": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas69/fasta.txt",
+        "sha256": "3ef37bdae5edd0aead7f61e128699d3c6c6afda31ab743bd42e5a19dfdae4b92"
+      },
+      "annotation": {
+        "path": "data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas69/annotation.txt",
+        "sha256": "7de3a00f6fe2953725524693721655a5edeb2e527d114c7625cf3c88edd1f182"
+      },
+      "annotation_format": "embl",
+      "requested_accession": "PZ445458",
+      "versioned_accession": "PZ445458.1",
+      "expected_length": 70850,
+      "expected_sequence_sha256": "603e835dab4886ce04c7f706e8212282762a36c41a04472ea3c8bae99c82d648",
+      "author_DNA_exact_match": true
+    }
+  ],
+  "controls": [
+    {
+      "id": "ch000",
+      "kind": "host",
+      "source_id": "BW25113",
+      "role": "technical_control",
+      "fasta": {
+        "path": "data/raw/genophi-annotation/run-1/h_t001/input.fna",
+        "sha256": "32da2e2bd6d941cc8d3b9d5b6e7f92a831001eff3540b24080d1400da36475e3"
+      },
+      "expected_faa": {
+        "path": "data/raw/genophi-annotation/run-1/h_t001/proteins.faa",
+        "sha256": "62c2d853f6ea4c21a59433ec13ed9079937227834756c2a83ac8c60faa2c9c5d"
+      },
+      "expected_proteome_multiset_sha256": "900cea010049b4389adf32c061df2317da0652260894cb252e098f6478ce5043"
+    },
+    {
+      "id": "cp000",
+      "kind": "phage",
+      "source_id": "T7",
+      "role": "technical_control",
+      "fasta": {
+        "path": "data/raw/genophi-annotation/run-1/p_t000/input.fna",
+        "sha256": "7823c9fd497d5ad69e17d42d9329acb7fa0c3d40a9ac4d242535dfd083fa9bf7"
+      },
+      "expected_faa": {
+        "path": "data/raw/genophi-annotation/run-1/p_t000/proteins.faa",
+        "sha256": "5626dfcaa7c3a75fd4f64558a0ce68e467bb49c97deddbc2824afdae4942c986"
+      },
+      "expected_proteome_multiset_sha256": "a8bda1e2f26be4f39b15fcc76d697760f1b9edde6282054ca533460e101b0a32"
+    }
+  ],
+  "parser": "Biopython1.86 official records; exact hash-pinned prior DNA/protein parsers and ECOR/BASEL record checks.",
+  "execution": {
+    "workers": 1,
+    "timeout_seconds_per_genome": 180,
+    "retries": 0,
+    "controls_required_before_panel_calls": true,
+    "failure_rule": "Any input-preparation failure stops all calls, preserving all77statusrows; either technicalcontrol mismatch/failure stops all77panelcalls. Once admitted to annotation only, per-genome caller/output errors retained and remaining independent genomes still attempted, without retry/flag substitution.",
+    "source_preservation": "Verify source hashes before/aftereachcall and globallybefore/afterexecution; inputFASTA hashes before/aftercaller.",
+    "max_gene_caller_children_at_any_time": 1
+  },
+  "normalization": {
+    "contigs": "Keep exact original source order, boundaries, uppercased DNA and repeated sequences; never concatenate/trim/rotate/reverse-complement.",
+    "neutral_ids": "hNNNcMMMMMM or pNNNcMMMMMM; technicalcontrols ch000/cp000 in separate namespaces; source names/roles not used as features.",
+    "proteins": "Preserve raw caller FAA; existing strict parser accepts one terminalstop for multiset hashing only and rejects internal/double stops/invalidAA.",
+    "validation": "Nonempty FAA and every protein matched1:1 by callerID to bounded GFF CDS with matching contig/coordinates/strand/partial flags; phase0/1/2. Contigs withoutCDS retained with zero count.",
+    "genetic_code": "Host fixed11 as priorcaller; phage metagenomic code selection left exactly as priorGV defaults/flags, reported in raw output; no forcedcode basedonresults."
+  },
+  "controls_interpretation": "Exact proteome-multiset replay after neutralheader changes is caller/representation compatibility, not biological performance or specificity validation.",
+  "independent_CDS_translation_validation": false,
+  "all77_included_regardless_of_grouping_or_author_correspondence": true,
+  "phenotype_tables_features_models_or_scores_read_or_created": false,
+  "Picard_collection_accessed": false
+}

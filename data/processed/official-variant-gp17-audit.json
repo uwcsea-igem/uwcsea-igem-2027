@@ -1,0 +1,3411 @@
+{
+  "schema_version": 1,
+  "status": "completed_direct_gp17_screen",
+  "policy_sha256": "58da9cafe91da38cfb18dd9885b432bf09f11b4de6781d12d43540773afd0c72",
+  "wrapper_sha256": "fbdfa57d3544eba166919db4541f040396f6ec136c73d2773d59eb8f7b7ee079",
+  "tool_version": "tblastn: 2.17.0+",
+  "nucleotide_records": 273,
+  "container_nodes": 266,
+  "database_records_verified": 273,
+  "database_reused_read_only": true,
+  "direct_near_hit_container_keys": [
+    "reference:T3",
+    "reference:T7",
+    "source:Bas66",
+    "source:T3",
+    "source:T7"
+  ],
+  "broader_diagnostic_container_keys": [
+    "reference:T3",
+    "reference:T7",
+    "source:Bas64",
+    "source:Bas66",
+    "source:T3",
+    "source:T7"
+  ],
+  "phenotype_tables_loaded": false,
+  "training_or_scoring_executed": false,
+  "whole_genome_group_analysis_complete": false,
+  "graph_exclusions_applied": false,
+  "homology_free_training_claimed": false,
+  "stock_identity_verified": false,
+  "interpretation": "Direct translated gp17 similarity only, preserving namespace-qualified controls, sources and official variants. No qualifying hit means no reported single HSP meeting fixed thresholds, not absence of homology or group clearance.",
+  "command": {
+    "argv": [
+      "data/raw/tools/blast-2.17.0/ncbi-blast-2.17.0+/bin/tblastn",
+      "-query",
+      "data/raw/genophi-phage-audit/normalized-v3/reference-gp17.faa",
+      "-db",
+      "data/raw/genophi-external-validation/official-variant-alignments-v1/db",
+      "-evalue",
+      "1e-5",
+      "-max_target_seqs",
+      "10000",
+      "-num_threads",
+      "4",
+      "-seg",
+      "yes",
+      "-outfmt",
+      "7 qseqid sseqid pident qstart qend qlen sstart send sframe bitscore evalue",
+      "-out",
+      "data/raw/genophi-external-validation/official-variant-gp17-v1/tblastn.tsv"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 0.5110905000474304,
+    "log": "data/raw/genophi-external-validation/official-variant-gp17-v1/step-1.log",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "near_matches": [
+    {
+      "query": "t000_gp17",
+      "nucleotide_record_id": "t000",
+      "container_key": "reference:T7",
+      "source_id": "T7",
+      "role": "target_reference",
+      "identity_percent": 100.0,
+      "single_hsp_query_coverage_percent": 100.0,
+      "subject_start": 34624,
+      "subject_end": 36282,
+      "subject_frame": 1
+    },
+    {
+      "query": "t000_gp17",
+      "nucleotide_record_id": "c251r000",
+      "container_key": "source:T7",
+      "source_id": "T7",
+      "role": "external_collection",
+      "identity_percent": 100.0,
+      "single_hsp_query_coverage_percent": 100.0,
+      "subject_start": 34624,
+      "subject_end": 36282,
+      "subject_frame": 1
+    },
+    {
+      "query": "t001_gp17",
+      "nucleotide_record_id": "t001",
+      "container_key": "reference:T3",
+      "source_id": "T3",
+      "role": "target_reference",
+      "identity_percent": 100.0,
+      "single_hsp_query_coverage_percent": 100.0,
+      "subject_start": 32832,
+      "subject_end": 34505,
+      "subject_frame": 3
+    },
+    {
+      "query": "t001_gp17",
+      "nucleotide_record_id": "c247r000",
+      "container_key": "source:T3",
+      "source_id": "T3",
+      "role": "external_collection",
+      "identity_percent": 100.0,
+      "single_hsp_query_coverage_percent": 100.0,
+      "subject_start": 32834,
+      "subject_end": 34507,
+      "subject_frame": 2
+    },
+    {
+      "query": "t001_gp17",
+      "nucleotide_record_id": "c071r000",
+      "container_key": "source:Bas66",
+      "source_id": "Bas66",
+      "role": "external_collection",
+      "identity_percent": 100.0,
+      "single_hsp_query_coverage_percent": 100.0,
+      "subject_start": 32834,
+      "subject_end": 34507,
+      "subject_frame": 2
+    }
+  ],
+  "broader_family_matches": [
+    {
+      "query": "t000_gp17",
+      "nucleotide_record_id": "t000",
+      "container_key": "reference:T7",
+      "source_id": "T7",
+      "role": "target_reference",
+      "identity_percent": 100.0,
+      "single_hsp_query_coverage_percent": 100.0,
+      "subject_start": 34624,
+      "subject_end": 36282,
+      "subject_frame": 1
+    },
+    {
+      "query": "t000_gp17",
+      "nucleotide_record_id": "c251r000",
+      "container_key": "source:T7",
+      "source_id": "T7",
+      "role": "external_collection",
+      "identity_percent": 100.0,
+      "single_hsp_query_coverage_percent": 100.0,
+      "subject_start": 34624,
+      "subject_end": 36282,
+      "subject_frame": 1
+    },
+    {
+      "query": "t000_gp17",
+      "nucleotide_record_id": "t001",
+      "container_key": "reference:T3",
+      "source_id": "T3",
+      "role": "target_reference",
+      "identity_percent": 86.355,
+      "single_hsp_query_coverage_percent": 99.81916817359856,
+      "subject_start": 32832,
+      "subject_end": 34502,
+      "subject_frame": 3
+    },
+    {
+      "query": "t000_gp17",
+      "nucleotide_record_id": "c247r000",
+      "container_key": "source:T3",
+      "source_id": "T3",
+      "role": "external_collection",
+      "identity_percent": 86.355,
+      "single_hsp_query_coverage_percent": 99.81916817359856,
+      "subject_start": 32834,
+      "subject_end": 34504,
+      "subject_frame": 2
+    },
+    {
+      "query": "t000_gp17",
+      "nucleotide_record_id": "c071r000",
+      "container_key": "source:Bas66",
+      "source_id": "Bas66",
+      "role": "external_collection",
+      "identity_percent": 86.355,
+      "single_hsp_query_coverage_percent": 99.81916817359856,
+      "subject_start": 32834,
+      "subject_end": 34504,
+      "subject_frame": 2
+    },
+    {
+      "query": "t000_gp17",
+      "nucleotide_record_id": "c069r000",
+      "container_key": "source:Bas64",
+      "source_id": "Bas64",
+      "role": "external_collection",
+      "identity_percent": 42.47,
+      "single_hsp_query_coverage_percent": 100.0,
+      "subject_start": 37865,
+      "subject_end": 39793,
+      "subject_frame": 2
+    },
+    {
+      "query": "t001_gp17",
+      "nucleotide_record_id": "t001",
+      "container_key": "reference:T3",
+      "source_id": "T3",
+      "role": "target_reference",
+      "identity_percent": 100.0,
+      "single_hsp_query_coverage_percent": 100.0,
+      "subject_start": 32832,
+      "subject_end": 34505,
+      "subject_frame": 3
+    },
+    {
+      "query": "t001_gp17",
+      "nucleotide_record_id": "c247r000",
+      "container_key": "source:T3",
+      "source_id": "T3",
+      "role": "external_collection",
+      "identity_percent": 100.0,
+      "single_hsp_query_coverage_percent": 100.0,
+      "subject_start": 32834,
+      "subject_end": 34507,
+      "subject_frame": 2
+    },
+    {
+      "query": "t001_gp17",
+      "nucleotide_record_id": "c071r000",
+      "container_key": "source:Bas66",
+      "source_id": "Bas66",
+      "role": "external_collection",
+      "identity_percent": 100.0,
+      "single_hsp_query_coverage_percent": 100.0,
+      "subject_start": 32834,
+      "subject_end": 34507,
+      "subject_frame": 2
+    },
+    {
+      "query": "t001_gp17",
+      "nucleotide_record_id": "t000",
+      "container_key": "reference:T7",
+      "source_id": "T7",
+      "role": "target_reference",
+      "identity_percent": 86.355,
+      "single_hsp_query_coverage_percent": 99.82078853046595,
+      "subject_start": 34624,
+      "subject_end": 36279,
+      "subject_frame": 1
+    },
+    {
+      "query": "t001_gp17",
+      "nucleotide_record_id": "c251r000",
+      "container_key": "source:T7",
+      "source_id": "T7",
+      "role": "external_collection",
+      "identity_percent": 86.355,
+      "single_hsp_query_coverage_percent": 99.82078853046595,
+      "subject_start": 34624,
+      "subject_end": 36279,
+      "subject_frame": 1
+    },
+    {
+      "query": "t001_gp17",
+      "nucleotide_record_id": "c069r000",
+      "container_key": "source:Bas64",
+      "source_id": "Bas64",
+      "role": "external_collection",
+      "identity_percent": 40.835,
+      "single_hsp_query_coverage_percent": 99.6415770609319,
+      "subject_start": 37865,
+      "subject_end": 39787,
+      "subject_frame": 2
+    }
+  ],
+  "target_self_controls_passed": [
+    "t000_gp17",
+    "t001_gp17"
+  ],
+  "containers": [
+    {
+      "container_key": "official:Bas06:PZ445410.1",
+      "source_id": "Bas06",
+      "role": "official_reference_version",
+      "nucleotide_record_ids": [
+        "official_Bas06"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "official:Bas21:PZ445422.1",
+      "source_id": "Bas21",
+      "role": "official_reference_version",
+      "nucleotide_record_ids": [
+        "official_Bas21"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "official:Bas68:PZ445457.1",
+      "source_id": "Bas68",
+      "role": "official_reference_version",
+      "nucleotide_record_ids": [
+        "official_Bas68"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "reference:T3",
+      "source_id": "T3",
+      "role": "target_reference",
+      "nucleotide_record_ids": [
+        "t001"
+      ],
+      "direct_near_hit": true,
+      "broader_diagnostic_hit": true,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "reference:T7",
+      "source_id": "T7",
+      "role": "target_reference",
+      "nucleotide_record_ids": [
+        "t000"
+      ],
+      "direct_near_hit": true,
+      "broader_diagnostic_hit": true,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas01",
+      "source_id": "Bas01",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c000r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas02",
+      "source_id": "Bas02",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c001r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas03",
+      "source_id": "Bas03",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c002r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas04",
+      "source_id": "Bas04",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c003r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas05",
+      "source_id": "Bas05",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c004r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas06",
+      "source_id": "Bas06",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c005r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas07",
+      "source_id": "Bas07",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c006r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas08",
+      "source_id": "Bas08",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c007r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas09",
+      "source_id": "Bas09",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c008r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas10",
+      "source_id": "Bas10",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c009r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas100",
+      "source_id": "Bas100",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c010r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas101",
+      "source_id": "Bas101",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c011r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas102",
+      "source_id": "Bas102",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c012r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas103",
+      "source_id": "Bas103",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c013r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas105",
+      "source_id": "Bas105",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c014r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas106",
+      "source_id": "Bas106",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c015r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas11",
+      "source_id": "Bas11",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c016r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas12",
+      "source_id": "Bas12",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c017r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas13",
+      "source_id": "Bas13",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c018r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas14",
+      "source_id": "Bas14",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c019r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas15",
+      "source_id": "Bas15",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c020r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas16",
+      "source_id": "Bas16",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c021r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas17",
+      "source_id": "Bas17",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c022r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas18",
+      "source_id": "Bas18",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c023r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas19",
+      "source_id": "Bas19",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c024r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas20",
+      "source_id": "Bas20",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c025r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas21",
+      "source_id": "Bas21",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c026r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas22",
+      "source_id": "Bas22",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c027r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas23",
+      "source_id": "Bas23",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c028r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas24",
+      "source_id": "Bas24",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c029r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas25",
+      "source_id": "Bas25",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c030r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas26",
+      "source_id": "Bas26",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c031r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas27",
+      "source_id": "Bas27",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c032r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas28",
+      "source_id": "Bas28",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c033r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas29",
+      "source_id": "Bas29",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c034r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas30",
+      "source_id": "Bas30",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c035r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas31",
+      "source_id": "Bas31",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c036r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas32",
+      "source_id": "Bas32",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c037r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas33",
+      "source_id": "Bas33",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c038r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas34",
+      "source_id": "Bas34",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c039r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas35",
+      "source_id": "Bas35",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c040r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas36",
+      "source_id": "Bas36",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c041r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas37",
+      "source_id": "Bas37",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c042r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas38",
+      "source_id": "Bas38",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c043r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas39",
+      "source_id": "Bas39",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c044r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas40",
+      "source_id": "Bas40",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c045r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas41",
+      "source_id": "Bas41",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c046r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas42",
+      "source_id": "Bas42",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c047r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas43",
+      "source_id": "Bas43",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c048r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas44",
+      "source_id": "Bas44",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c049r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas45",
+      "source_id": "Bas45",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c050r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas46",
+      "source_id": "Bas46",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c051r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas47",
+      "source_id": "Bas47",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c052r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas48",
+      "source_id": "Bas48",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c053r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas49",
+      "source_id": "Bas49",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c054r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas50",
+      "source_id": "Bas50",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c055r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas51",
+      "source_id": "Bas51",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c056r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas52",
+      "source_id": "Bas52",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c057r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas53",
+      "source_id": "Bas53",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c058r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas54",
+      "source_id": "Bas54",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c059r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas55",
+      "source_id": "Bas55",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c060r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas56",
+      "source_id": "Bas56",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c061r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas57",
+      "source_id": "Bas57",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c062r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas58",
+      "source_id": "Bas58",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c063r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas59",
+      "source_id": "Bas59",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c064r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas60",
+      "source_id": "Bas60",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c065r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas61",
+      "source_id": "Bas61",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c066r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas62",
+      "source_id": "Bas62",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c067r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas63",
+      "source_id": "Bas63",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c068r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas64",
+      "source_id": "Bas64",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c069r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": true,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas65",
+      "source_id": "Bas65",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c070r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas66",
+      "source_id": "Bas66",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c071r000"
+      ],
+      "direct_near_hit": true,
+      "broader_diagnostic_hit": true,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas67",
+      "source_id": "Bas67",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c072r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas68",
+      "source_id": "Bas68",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c073r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas69",
+      "source_id": "Bas69",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c074r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas70",
+      "source_id": "Bas70",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c075r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas71",
+      "source_id": "Bas71",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c076r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas72",
+      "source_id": "Bas72",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c077r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas73",
+      "source_id": "Bas73",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c078r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas74",
+      "source_id": "Bas74",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c079r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas75",
+      "source_id": "Bas75",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c080r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas76",
+      "source_id": "Bas76",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c081r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas77",
+      "source_id": "Bas77",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c082r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas78",
+      "source_id": "Bas78",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c083r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas79",
+      "source_id": "Bas79",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c084r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas81",
+      "source_id": "Bas81",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c085r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas82",
+      "source_id": "Bas82",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c086r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas83",
+      "source_id": "Bas83",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c087r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas84",
+      "source_id": "Bas84",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c088r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas85",
+      "source_id": "Bas85",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c089r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas86",
+      "source_id": "Bas86",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c090r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas87",
+      "source_id": "Bas87",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c091r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas90",
+      "source_id": "Bas90",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c092r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas91",
+      "source_id": "Bas91",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c093r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas92",
+      "source_id": "Bas92",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c094r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas93",
+      "source_id": "Bas93",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c095r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas94",
+      "source_id": "Bas94",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c096r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas96",
+      "source_id": "Bas96",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c097r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas97",
+      "source_id": "Bas97",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c098r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas98",
+      "source_id": "Bas98",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c099r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Bas99",
+      "source_id": "Bas99",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c100r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Borec",
+      "source_id": "Borec",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c101r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:C16",
+      "source_id": "C16",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c102r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:CBA120",
+      "source_id": "CBA120",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c103r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:CEV1",
+      "source_id": "CEV1",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c104r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:CEV2",
+      "source_id": "CEV2",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c105r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:CM1",
+      "source_id": "CM1",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c106r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:CM8",
+      "source_id": "CM8",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c107r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:CM8m1",
+      "source_id": "CM8m1",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c108r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:CM8m3",
+      "source_id": "CM8m3",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c109r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:CM8m4",
+      "source_id": "CM8m4",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c110r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:CPL00124",
+      "source_id": "CPL00124",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c111r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:CPL00134L",
+      "source_id": "CPL00134L",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c112r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:CPL00136",
+      "source_id": "CPL00136",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c113r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:CPL00144L",
+      "source_id": "CPL00144L",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c114r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:CPL00146S",
+      "source_id": "CPL00146S",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c115r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:CPL00151",
+      "source_id": "CPL00151",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c116r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:CPL00152",
+      "source_id": "CPL00152",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c117r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:CPL00159",
+      "source_id": "CPL00159",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c118r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:CPL00160",
+      "source_id": "CPL00160",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c119r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:CPL00168",
+      "source_id": "CPL00168",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c120r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:CPL00169L",
+      "source_id": "CPL00169L",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c121r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:CPL00169S",
+      "source_id": "CPL00169S",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c122r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:CPL00172",
+      "source_id": "CPL00172",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c123r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:CPL00187",
+      "source_id": "CPL00187",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c124r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:CPL00188L",
+      "source_id": "CPL00188L",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c125r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:CPL00220",
+      "source_id": "CPL00220",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c126r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:CPL00221",
+      "source_id": "CPL00221",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c127r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:CPL00224",
+      "source_id": "CPL00224",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c128r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:CPL00229",
+      "source_id": "CPL00229",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c129r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:CPL00259L",
+      "source_id": "CPL00259L",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c130r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:CPL00262",
+      "source_id": "CPL00262",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c131r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:EV116",
+      "source_id": "EV116",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c132r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:EV146",
+      "source_id": "EV146",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c133r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:EV156",
+      "source_id": "EV156",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c134r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:EV212",
+      "source_id": "EV212",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c135r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:EV219",
+      "source_id": "EV219",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c136r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:EV240",
+      "source_id": "EV240",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c137r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:G17",
+      "source_id": "G17",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c138r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Goslar",
+      "source_id": "Goslar",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c139r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:HSDP1",
+      "source_id": "HSDP1",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c140r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:HSDP2",
+      "source_id": "HSDP2",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c141r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:HSDP3",
+      "source_id": "HSDP3",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c142r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:JK16",
+      "source_id": "JK16",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c143r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:JK23",
+      "source_id": "JK23",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c144r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:JK32",
+      "source_id": "JK32",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c145r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:JK36",
+      "source_id": "JK36",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c146r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:JK38",
+      "source_id": "JK38",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c147r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:JK42",
+      "source_id": "JK42",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c148r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:JK45",
+      "source_id": "JK45",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c149r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:K11",
+      "source_id": "K11",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c150r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:K18",
+      "source_id": "K18",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c151r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:K20",
+      "source_id": "K20",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c152r000",
+        "c152r001",
+        "c152r002"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:K25",
+      "source_id": "K25",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c153r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:K3",
+      "source_id": "K3",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c154r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:K30",
+      "source_id": "K30",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c155r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:K5",
+      "source_id": "K5",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c156r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:K8",
+      "source_id": "K8",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c157r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:K9",
+      "source_id": "K9",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c158r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:KCP017",
+      "source_id": "KCP017",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c159r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:KCP031",
+      "source_id": "KCP031",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c160r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:KCP042",
+      "source_id": "KCP042",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c161r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:KCP045",
+      "source_id": "KCP045",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c162r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:KCP055",
+      "source_id": "KCP055",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c163r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:KCP064",
+      "source_id": "KCP064",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c164r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:KCP068",
+      "source_id": "KCP068",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c165r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:KCP072",
+      "source_id": "KCP072",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c166r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:L24",
+      "source_id": "L24",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c167r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:L25",
+      "source_id": "L25",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c168r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:LZ1",
+      "source_id": "LZ1",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c169r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:LZ10",
+      "source_id": "LZ10",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c170r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:LZ3",
+      "source_id": "LZ3",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c171r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:LZ4",
+      "source_id": "LZ4",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c172r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:LZ5",
+      "source_id": "LZ5",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c173r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:LZ6",
+      "source_id": "LZ6",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c174r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:LZ7",
+      "source_id": "LZ7",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c175r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:LZ9",
+      "source_id": "LZ9",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c176r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Lambda",
+      "source_id": "Lambda",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c177r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:M1",
+      "source_id": "M1",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c178r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Mnm1",
+      "source_id": "Mnm1",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c179r000",
+        "c179r001",
+        "c179r002",
+        "c179r003",
+        "c179r004"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Mnm10",
+      "source_id": "Mnm10",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c180r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Mnm11",
+      "source_id": "Mnm11",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c181r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Mnm2",
+      "source_id": "Mnm2",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c182r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Mnm3",
+      "source_id": "Mnm3",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c183r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Mnm4",
+      "source_id": "Mnm4",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c184r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Mnm5",
+      "source_id": "Mnm5",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c185r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Mnm6",
+      "source_id": "Mnm6",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c186r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Mnm7",
+      "source_id": "Mnm7",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c187r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Mnm8",
+      "source_id": "Mnm8",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c188r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Mpec1",
+      "source_id": "Mpec1",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c189r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Mpec10",
+      "source_id": "Mpec10",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c190r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Mpec11",
+      "source_id": "Mpec11",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c191r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Mpec13",
+      "source_id": "Mpec13",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c192r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Mpec15",
+      "source_id": "Mpec15",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c193r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Mpec16",
+      "source_id": "Mpec16",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c194r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Mpec18",
+      "source_id": "Mpec18",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c195r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Mpec2",
+      "source_id": "Mpec2",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c196r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Mpec20",
+      "source_id": "Mpec20",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c197r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Mpec24",
+      "source_id": "Mpec24",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c198r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Mpec26",
+      "source_id": "Mpec26",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c199r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Mpec3",
+      "source_id": "Mpec3",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c200r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Mpec4",
+      "source_id": "Mpec4",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c201r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Mpec5",
+      "source_id": "Mpec5",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c202r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Mpec6",
+      "source_id": "Mpec6",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c203r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Mpec7",
+      "source_id": "Mpec7",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c204r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:N4",
+      "source_id": "N4",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c205r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:NpA",
+      "source_id": "NpA",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c206r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:NpAA",
+      "source_id": "NpAA",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c207r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:NpB",
+      "source_id": "NpB",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c208r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:NpD",
+      "source_id": "NpD",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c209r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:NpE",
+      "source_id": "NpE",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c210r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:NpG",
+      "source_id": "NpG",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c211r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:NpJ",
+      "source_id": "NpJ",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c212r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:NpK",
+      "source_id": "NpK",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c213r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:NpM",
+      "source_id": "NpM",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c214r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:NpN",
+      "source_id": "NpN",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c215r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:NpO",
+      "source_id": "NpO",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c216r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:NpR",
+      "source_id": "NpR",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c217r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:NpS",
+      "source_id": "NpS",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c218r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:NpU",
+      "source_id": "NpU",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c219r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:NpV",
+      "source_id": "NpV",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c220r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:NpW",
+      "source_id": "NpW",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c221r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:NpY",
+      "source_id": "NpY",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c222r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Ox2",
+      "source_id": "Ox2",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c223r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Ox4",
+      "source_id": "Ox4",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c224r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:P1vir",
+      "source_id": "P1vir",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c225r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:P2vir",
+      "source_id": "P2vir",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c226r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Phoecom",
+      "source_id": "Phoecom",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c227r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:RB14",
+      "source_id": "RB14",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c228r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:RB2",
+      "source_id": "RB2",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c229r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:RB23",
+      "source_id": "RB23",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c230r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:RB25",
+      "source_id": "RB25",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c231r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:RB26",
+      "source_id": "RB26",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c232r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:RB33",
+      "source_id": "RB33",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c233r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:RB36",
+      "source_id": "RB36",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c234r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:RB38",
+      "source_id": "RB38",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c235r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:RB49",
+      "source_id": "RB49",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c236r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:RB51",
+      "source_id": "RB51",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c237r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:RB51m1",
+      "source_id": "RB51m1",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c238r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:RB58",
+      "source_id": "RB58",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c239r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:RB68",
+      "source_id": "RB68",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c240r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:RB68m1",
+      "source_id": "RB68m1",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c241r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:RB69",
+      "source_id": "RB69",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c242r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Sew11",
+      "source_id": "Sew11",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c243r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:Sew9",
+      "source_id": "Sew9",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c244r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:T1",
+      "source_id": "T1",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c245r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:T2",
+      "source_id": "T2",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c246r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:T3",
+      "source_id": "T3",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c247r000"
+      ],
+      "direct_near_hit": true,
+      "broader_diagnostic_hit": true,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:T4",
+      "source_id": "T4",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c248r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:T5",
+      "source_id": "T5",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c249r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:T6",
+      "source_id": "T6",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c250r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:T7",
+      "source_id": "T7",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c251r000"
+      ],
+      "direct_near_hit": true,
+      "broader_diagnostic_hit": true,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:TP11",
+      "source_id": "TP11",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c252r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:TP15",
+      "source_id": "TP15",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c253r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:TP3",
+      "source_id": "TP3",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c254r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:TP5",
+      "source_id": "TP5",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c255r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:TP6",
+      "source_id": "TP6",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c256r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:TP7",
+      "source_id": "TP7",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c257r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:TP9",
+      "source_id": "TP9",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c258r000",
+        "c258r001"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:TulB",
+      "source_id": "TulB",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c259r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    },
+    {
+      "container_key": "source:phi92",
+      "source_id": "phi92",
+      "role": "external_collection",
+      "nucleotide_record_ids": [
+        "c260r000"
+      ],
+      "direct_near_hit": false,
+      "broader_diagnostic_hit": false,
+      "whole_genome_group_clearance": false
+    }
+  ],
+  "query_completion": {
+    "completed_queries": 2,
+    "completed_batch_query_counts": [
+      2
+    ],
+    "reported_rows_by_query": {
+      "t000_gp17": 17,
+      "t001_gp17": 16
+    }
+  },
+  "old_source_comparison": {
+    "compared_source_containers": 261,
+    "changed_source_classifications": []
+  },
+  "input_hashes_verified_after_execution": true,
+  "authenticated_inputs": [
+    {
+      "path": "software/tipcraft/benchmarks/receptor-resource/official-variant-gp17-policy.json",
+      "sha256": "58da9cafe91da38cfb18dd9885b432bf09f11b4de6781d12d43540773afd0c72"
+    },
+    {
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/scripts/audit-official-variant-gp17.py",
+      "sha256": "fbdfa57d3544eba166919db4541f040396f6ec136c73d2773d59eb8f7b7ee079"
+    },
+    {
+      "path": "data/processed/receptor-whole-genome-alignments-v2.json",
+      "sha256": "96f872d6fc1700f777b6c740a975edaaa90bcf628271022f57551c3f24be3645"
+    },
+    {
+      "path": "data/processed/receptor-whole-genome-groups.json",
+      "sha256": "2b540c24915b22edd6347f19efc2f445a7fa8e743f3a271203e91634ab141159"
+    },
+    {
+      "path": "data/processed/basel-phage-accession-authentication.json",
+      "sha256": "ab7c7fd77f8134d1d1868975dd889b203b24c74a2a996d95f2128d462df63c92"
+    },
+    {
+      "path": "data/processed/basel-phage-accession-replay.json",
+      "sha256": "2e138991121b858c92580e673f50a706a63bee6c4aecf1c27f5dac393ce8113b"
+    },
+    {
+      "path": "scripts/authenticate-basel-phage-accessions.py",
+      "sha256": "b784dd9dcd2dc5701483fae811edb1cac4231a045a9bc76252f9962373793697"
+    },
+    {
+      "path": "scripts/align-receptor-cohort.py",
+      "sha256": "29a71b539b1baee466bed5924a8718e1b4bedf53c9ab59aee090ba58ab8856c7"
+    },
+    {
+      "path": "scripts/replay-receptor-alignments.py",
+      "sha256": "b43840a191ef867da9c3f5d1baafaead8544a12aea0ca9338535bb7e73bd522c"
+    },
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/record-manifest.json",
+      "sha256": "187c1296a3bbb5119c325771b7a9326e4322dcc52ac7003270839ad23b329d2c"
+    },
+    {
+      "path": "data/raw/receptor-resource/whole-genome-alignments-v1/subjects.fna",
+      "sha256": "7c6457883048f140eba6840fcf7131c00c6ed14523c84f6e2dc307848c6f10d5"
+    },
+    {
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas06/fasta.txt",
+      "sha256": "0009ad01d168bed4e325a7adee2038ad1979d2f813bf4eb409e1346922dafc35"
+    },
+    {
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas21/fasta.txt",
+      "sha256": "9294d0b2ad7bfa7d1f0a3fe09073e0d92de34452836f335efc7a2b531c89bad9"
+    },
+    {
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/basel-phage-accessions-v1/Bas68/fasta.txt",
+      "sha256": "78d7747b3b71af04548702549a524bfe4f65fe2749877c63310cdb184dbf3eb4"
+    },
+    {
+      "path": "data/raw/tools/blast-2.17.0/ncbi-blast-2.17.0+/bin/makeblastdb",
+      "sha256": "b18159370061729a685e5714b5a1d349fd2951f4f3aeceb576b0e696b403fc72"
+    },
+    {
+      "path": "data/raw/tools/blast-2.17.0/ncbi-blast-2.17.0+/bin/blastn",
+      "sha256": "b13895ffdbc83a0a21025002bf33fb289c4be441536a1a88d7be80e8263c34a7"
+    },
+    {
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/official-variant-alignments-v1/record-manifest.json",
+      "sha256": "f64a53505fc127e947d755cebcb72ed76005d45a71ea9889e32ba13e3e06c8cb"
+    },
+    {
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/official-variant-alignments-v1/subjects.fna",
+      "sha256": "beb3059230016ffdc70c8fc0cb34996889f036377b2867791d8a6c87e46ff04d"
+    },
+    {
+      "path": "software/tipcraft/benchmarks/receptor-resource/gp17-overlap-policy.json",
+      "sha256": "8e175847865c0b4fb7dc0c195d93111e162a680bf0dfcbd4075715039d316ed3"
+    },
+    {
+      "path": "scripts/audit-receptor-gp17-overlap.py",
+      "sha256": "40c361775d48979b2dfdf2427dc7e6a1653ba71a156a25cf4c19dcee7e99bea3"
+    },
+    {
+      "path": "scripts/audit-genophi-phage-overlap.py",
+      "sha256": "8026b82db228b3cb7c5e673d1c927f53de598925e282e0a9b3b89c536c928464"
+    },
+    {
+      "path": "data/raw/genophi-phage-audit/normalized-v3/manifest.json",
+      "sha256": "d0f66b3bba527aa8cc32b327ed7f15107fbcd0943faefa6b1fda2496f528185c"
+    },
+    {
+      "path": "data/raw/genophi-phage-audit/normalized-v3/reference-gp17.faa",
+      "sha256": "04f19688217d4601d62c7b1b2c8650575a4cf34dfba813ab79780f2d7ee38965"
+    },
+    {
+      "path": "data/processed/receptor-gp17-overlap.json",
+      "sha256": "cb6e12c0d1e6b600e280a251a81bcdb263fba18c584bc00b05bf28279ff1f799"
+    },
+    {
+      "path": "scripts/align-official-basel-variants.py",
+      "sha256": "9869b31659ece78e007500893b525bc989462482ddc12e4b0df854eaed1e7712"
+    },
+    {
+      "path": "software/tipcraft/benchmarks/receptor-resource/official-variant-alignment-policy.json",
+      "sha256": "0fcbd525fc6f2ae19fb5a6928cec3a6ce35b8b5ec2c494401afd4673d79f2c8b"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/official-variant-alignments-v1/frozen-plan.json",
+      "sha256": "aad59f6edbc07374c69311517b870ef7728be51ed8d17662ec1610f447817b33"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/official-variant-alignments-v1/step-1.json",
+      "sha256": "f8b3bda12f89bbb8b06c1b7af088647a535fbff6113690bb3ff7c57e789d362c"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/official-variant-alignments-v1/step-1.log",
+      "sha256": "b07a1118c196dfa246b53ee9a6b0aa1f89e0cbb8f382990624a8a35a752f512b"
+    },
+    {
+      "path": "data/raw/wish/phages/T7.fna",
+      "sha256": "4411e203f3ffac4d85f42d6994714cb86d495440b678ebab9e5a075f5fdc7c7a"
+    },
+    {
+      "path": "data/raw/wish/phages/T3.fna",
+      "sha256": "1ac1012cd4b506b4bcf7ee13d3cccef1a21683cc40026feabec4ea0e8a3ef6a6"
+    },
+    {
+      "path": "data/raw/tools/blast-2.17.0/ncbi-blast-2.17.0+/bin/tblastn",
+      "sha256": "8bcde4b235916c6ed7e2a99bdccecdb4c46afbe4877d9d3952af9ac12042b535"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/official-variant-alignments-v1/db.ndb",
+      "sha256": "0abb013fed2a3daf9fcdfeb905283d463e38af96715d83355c3a1473449455d0"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/official-variant-alignments-v1/db.nhr",
+      "sha256": "07953f453dbedd9331512b2d78979d3d61e67307fe6bed58176faeb4c38ae7ec"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/official-variant-alignments-v1/db.nin",
+      "sha256": "4134b28b45b9e49707e13672590097123c7d5cc296b109e1778ea9864622e7da"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/official-variant-alignments-v1/db.njs",
+      "sha256": "424ee78960e5df845f6cecdcb22c3133781f79ddc5787a8acc4f0d498708a9eb"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/official-variant-alignments-v1/db.nog",
+      "sha256": "66f4f2bf36cf3138be09cdfbde359db9ad15cdae65765ec18dc3620fe32fa826"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/official-variant-alignments-v1/db.nos",
+      "sha256": "f78088dd1bbff4c2cc26656f5b9c5062aa05f2167e9b43ea27297cbc1f148722"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/official-variant-alignments-v1/db.not",
+      "sha256": "db30d92011e1e25a22401570ad5d2645c7c72fc1d79c69c45d0786148e7df94b"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/official-variant-alignments-v1/db.nsq",
+      "sha256": "b9f0c3a3b8d0d35f439a2e896fd9d266fdc2a74eb025facc51e39a3be444273e"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/official-variant-alignments-v1/db.ntf",
+      "sha256": "a4846cf83c6cd188b3fc3f9fa4f1f1d3c33692a85065b54dc1e42095af3e7552"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/official-variant-alignments-v1/db.nto",
+      "sha256": "91b80592e87859e0e1884bab2eadbc7a34d43469c7cce5ea0dfc70d14310d14d"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/official-variant-gp17-v1/frozen-plan.json",
+      "sha256": "a1c6b83e49b5f87133a97068a36f11f93e8b133c1da30f807176e2609f41a858"
+    }
+  ],
+  "raw_artifacts": [
+    {
+      "path": "data/raw/genophi-external-validation/official-variant-gp17-v1/frozen-plan.json",
+      "sha256": "a1c6b83e49b5f87133a97068a36f11f93e8b133c1da30f807176e2609f41a858",
+      "bytes": 8565
+    },
+    {
+      "path": "data/raw/genophi-external-validation/official-variant-gp17-v1/step-1.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "data/raw/genophi-external-validation/official-variant-gp17-v1/tblastn.tsv",
+      "sha256": "a06d701dbaeb2a09e3d11df17c679ec95c38dbb42ceccad5dbbba5f4ff2c2bcc",
+      "bytes": 2597
+    }
+  ]
+}

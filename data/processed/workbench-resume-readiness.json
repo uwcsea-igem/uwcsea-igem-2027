@@ -1,0 +1,38 @@
+{
+  "authorization": "User requested continue and set goal active; existing local processes were resumed under prior scope. No execute_plan call or new Workbench workflow launch occurred.",
+  "catalog_inspection": {
+    "matching_existing_BLAST_Prodigal_VIRIDIC_workflow_found": false,
+    "method_substituted": false,
+    "workflow_count": 12,
+    "workflow_selected_or_saved": false
+  },
+  "legacy_jobs": {
+    "BLAST_original_pid": 80646,
+    "BLAST_resumed_without_restart": true,
+    "annotation_original_child_pid": 35722,
+    "annotation_original_wrapper_pid": 29918,
+    "annotation_resumed_child_then_wrapper": true,
+    "original_BLAST_controller_pid_missing": 80604
+  },
+  "local_target_inspection": {
+    "interpretation": "This tool did not provide local executable inspection; local runtime snapshot and direct process/input checks supply separate evidence.",
+    "result": "bounded SSH inspection requires a configured SSH target",
+    "tool": "inspect_compute_target"
+  },
+  "observed_runtime_snapshot": {
+    "controller_candidates": [],
+    "docker_client_available": true,
+    "docker_daemon_reachable": false,
+    "expires_at": "2026-11-08T10:03:04.886330Z",
+    "host_arch": "arm64",
+    "host_os": "darwin",
+    "nextflow": "missing",
+    "observed_at": "2026-11-08T09:58:04.886330Z",
+    "snakemake": "missing",
+    "snapshot_id": "runtime-ccc4de85c55b4cff8df1d634350db77f",
+    "target_id": "local"
+  },
+  "schema_version": 1,
+  "scientific_boundary": "Runtime/catalog discovery does not establish genome identity, gene-call accuracy, host prediction, binding or assembly.",
+  "scope": "Read-only Workbench discovery and recovery routing for existing legacy TipCraft processes; no Workbench execution plan or run created"
+}
