@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-08",
+  "status": "prospective_final_source_native_fitter_pending_actual_inputs",
+  "helper_sha256": "fee80c44c903a1d9125f76f42f8efec98dd6458115fee955fec75e2451e8d957",
+  "inputs": {
+    "native_design": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-native-transfer-design-policy.json",
+      "sha256": "78dbabbb29740951e12c2669228a604d41b7ecfa882a384d1f96f7c30b437bd0"
+    },
+    "design": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-model-design-policy.json",
+      "sha256": "7afafbb2c4fd5097d5c8b7e7ff0afde8f28328994d4f192f313d39c039e82eff"
+    },
+    "panel_helper": {
+      "path": "scripts/prepare-secondary-panel.py",
+      "sha256": "9e19f19538cfa6f52d73d9cc0714a9e917753d0d7484e6c025267e4cf0ab8932"
+    },
+    "panel_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-panel-policy.json",
+      "sha256": "89ece08e66aee4d1a914a798ffdf0f7dd6d310a1d6e8f82d4be294643fdef543"
+    },
+    "source_fitter": {
+      "path": "scripts/fit-secondary-block.py",
+      "sha256": "078e2676b805a02cee1d9372235d9187ab17624ec101462b7d1dd21fa8de47c2"
+    },
+    "source_fitting_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-fitting-policy.json",
+      "sha256": "e4dfd58d5b715ff47733f45fb39c213cc86a4ecd0f0e8607f2e30cd7c41a8378"
+    },
+    "source_evaluator": {
+      "path": "scripts/evaluate-secondary-scores.py",
+      "sha256": "be46663f98748537c470ad04d0321f62e88671da6c2a45193347921aabb4e82f"
+    },
+    "source_evaluation_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-evaluation-policy.json",
+      "sha256": "bc144c228ad2a5599eac116200d9b100db38690562d1355d980c829c5b74ea87"
+    },
+    "native_feature_helper": {
+      "path": "scripts/prepare-native-transfer-features.py",
+      "sha256": "c846e9ad453a02d24db38bd7e9dfde8fb2020224289c30a60e57eabeb51fc37b"
+    },
+    "native_feature_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/native-transfer-feature-policy.json",
+      "sha256": "82a77d51e82782aa27fea958e7639b5a8afd5d84fbd852d0659f2b7d297c594f"
+    },
+    "learning": {
+      "path": "software/tipcraft/src/tipcraft/learning.py",
+      "sha256": "a9c6bafc896c72584ff8a5e6a286a20563f6698468d9a9c2d81dd42f0185bcb5"
+    },
+    "runtime_lock": {
+      "path": "software/tipcraft/experiments/learning/uv.lock",
+      "sha256": "fbeda0630d21b8bc27631be9bd826564f498ca27907cb83355ecd0966e59ae0e"
+    }
+  },
+  "runtime": {
+    "python": "3.12.5",
+    "packages": {
+      "catboost": "1.2.7",
+      "numpy": "1.26.4",
+      "scikit-learn": "1.5.2",
+      "pandas": "2.2.2",
+      "scipy": "1.14.1"
+    }
+  },
+  "mode": "final_source_native_transfer; distinct from outer cross-validation",
+  "source_training": "All and only observed admitted source rows after fixed genotype exclusions; no target labels or donor phenotypes",
+  "source_evaluation_prerequisite": "Complete nine-block matched source evaluation for the same panel; require execution/coverage validity, not a favorable screen. Negative source performance cannot select new settings or prevent the prespecified native diagnostic.",
+  "group_validation": "Measured original host and reference:T7/T3 groups from the same bound grouping reports; both-unseen plus publication holdout",
+  "settings": "Bound source design fixed settings and per-scope feature cap; no source-CV or native performance tuning",
+  "scopes": [
+    "paired",
+    "host_only",
+    "phage_only"
+  ],
+  "query_pairs": 6,
+  "exchange_construct_pairs_abstained": 4,
+  "inference_boundary": "All three source-only bundle manifests frozen before native scoring; complete six-pair matrices saved before separate native-label evaluation",
+  "label_access": "Fitter does not parse Ando cases or historical WIsH scores. Source labels are selected only for admitted training Sample rows.",
+  "failure": "Preserve partial artifacts and failed-attempt receipt; no automatic retry or source/parameter repair",
+  "biological_execution_performed_at_policy_freeze": false,
+  "interpretation": "Whole-proteome association scores, uncalibrated; no binding, receptor causality, assembly, design or orderable DNA capability"
+}
