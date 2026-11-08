@@ -25,3 +25,7 @@ The machine reports 14 logical CPUs and 38,654,705,664 bytes of memory. After th
 The package suite passes 393 tests with Biopython 1.86. Tests cover the nine-command source/native orchestration, vocabulary freezing before external queries, matched missing assignments, one-sided absence, vector discrepancies and duplicate controls. Five locked-runtime CatBoost integration tests pass, including saved-model worker replays on synthetic data and the versioned native fitting component. No recent remote CI result is claimed.
 
 These checks do not establish a completed v3 production vocabulary, host-prediction accuracy, reliable generalization, binding or tail-fiber assembly. New-method Ando coverage remains 0/10; the four exact exchange-construct cases still abstain and WIsH's measured negative result remains preserved. Biological fitting remains pending the full actual feature and experiment manifests.
+
+## Launch checkpoint
+
+The initial `host1-phage0-host` validation task has started under the frozen plan; the other 17 tasks remain unstarted. Its raw command ledger and final structured receipt determine the actual nine-command inventory. The reused historical command runner still prints an `/8` denominator in progress messages; that display label is not the v3 command count and does not alter command execution or structured provenance. No pinned implementation is changed during the running task.
