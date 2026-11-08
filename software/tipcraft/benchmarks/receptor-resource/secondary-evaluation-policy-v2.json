@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-08",
+  "status": "prospective_complete_source_evaluation_consumer_no_biological_scores_yet",
+  "helper_sha256": "be46663f98748537c470ad04d0321f62e88671da6c2a45193347921aabb4e82f",
+  "inputs": {
+    "design": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-model-design-policy-v2.json",
+      "sha256": "273e03ccebb0fdb593d82bd515e89d3f99ae149c0318b0a050d2e375ecf41768"
+    },
+    "panel_helper": {
+      "path": "scripts/prepare-secondary-panel.py",
+      "sha256": "9e19f19538cfa6f52d73d9cc0714a9e917753d0d7484e6c025267e4cf0ab8932"
+    },
+    "panel_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-panel-policy.json",
+      "sha256": "89ece08e66aee4d1a914a798ffdf0f7dd6d310a1d6e8f82d4be294643fdef543"
+    },
+    "fitting_helper": {
+      "path": "scripts/fit-secondary-block.py",
+      "sha256": "078e2676b805a02cee1d9372235d9187ab17624ec101462b7d1dd21fa8de47c2"
+    },
+    "fitting_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-fitting-policy-v2.json",
+      "sha256": "99e0adf93672cff33841b2415e0abcccfe090dea2955788ee18bc3f3c25289d6"
+    },
+    "learning": {
+      "path": "software/tipcraft/src/tipcraft/learning.py",
+      "sha256": "a9c6bafc896c72584ff8a5e6a286a20563f6698468d9a9c2d81dd42f0185bcb5"
+    },
+    "partition": {
+      "path": "software/tipcraft/src/tipcraft/partition.py",
+      "sha256": "c13020085c54e375bda4dc6542f647f5e32039b762eac704958db31907366be4"
+    },
+    "ranking": {
+      "path": "software/tipcraft/src/tipcraft/blocked_ranking.py",
+      "sha256": "e0c8c13b8ede8c9982b0321095a26b43331305837053d87db9b7b63b71600338"
+    },
+    "revision_failed_v1_feature_report": {
+      "path": "data/processed/secondary-features-host0-phage0-host.json",
+      "sha256": "76fbcb6abbe3342078b354881e59f2498296219bf74321e6bfae9d3ee9802f95"
+    },
+    "revision_focal_artifact_diagnostic": {
+      "path": "data/processed/secondary-feature-mapping-control-diagnostic.json",
+      "sha256": "4c0c9f74366582df9e98c92bae0c282700b98f37fedc2dd34ff3ba83dc730d41"
+    },
+    "revision_focal_mode_probe": {
+      "path": "data/processed/mmseqs-identity-mode-probe.json",
+      "sha256": "18d11f305c332f2337bef37b3ac8713acc79516142a51fb56ee590169b5698ae"
+    },
+    "revision_complete_copy_mode3_probe": {
+      "path": "data/processed/mmseqs-control-panel-probe.json",
+      "sha256": "efb5dc6e0466e6ac899ce02448268dce3c628cb24b61c98ee5e05624c6705813"
+    }
+  },
+  "score_manifest": "Explicit frozen panel binding and exactly nine score receipt bindings; externally frozen manifest SHA required before evaluator reads labels",
+  "required_blocks": [
+    "host0-phage0",
+    "host0-phage1",
+    "host0-phage2",
+    "host1-phage0",
+    "host1-phage1",
+    "host1-phage2",
+    "host2-phage0",
+    "host2-phage1",
+    "host2-phage2"
+  ],
+  "scopes": [
+    "paired",
+    "host_only",
+    "phage_only"
+  ],
+  "complete_matched_coverage_required": true,
+  "missing_or_failed_block_behavior": "HOLD; never evaluate a favorable completed subset",
+  "bundle_authentication": "Require all-three pre-score manifest hashes; verify each scope manifest, all five bundle artifacts, implementation and source-input provenance",
+  "attribution_controls": "Within one fitted model, host-only scores for an identical host must not depend on phage; phage-only scores for an identical phage must not depend on host",
+  "ranking": "Use pinned within-model blocked ranking, informative blocks per phage then phages per genetic group then equal group mean; no cross-model raw-margin host ordering",
+  "screen": "Descriptive paired group-macro concordance strictly >0.5 and strictly >host-only on exact same units; absent informative units is HOLD",
+  "report": "Full score matrices, informative counts, group deltas, eligible-row coverage and scored fraction of full source observation roster, unknown-pair count",
+  "inference": "Exploratory retrospective source spot-clearance screen; no significance/independent-replicate/generalization/native plaque/assembly claim",
+  "original_native_case_coverage": 0,
+  "prospective_attribution_interpretation": "Paired concordance above a separately fitted host-only model is an ablation-screen difference, not proof that the paired model learned phage-conditional host ordering. Existing source screen keys and thresholds remain unchanged for compatibility; inspect within-model query variation and representation limits separately.",
+  "policy_revision": 2,
+  "parent_v1": {
+    "path": "software/tipcraft/benchmarks/receptor-resource/secondary-evaluation-policy.json",
+    "sha256": "bc144c228ad2a5599eac116200d9b100db38690562d1355d980c829c5b74ea87"
+  },
+  "revision_inputs": {
+    "failed_v1_feature_report": {
+      "path": "data/processed/secondary-features-host0-phage0-host.json",
+      "sha256": "76fbcb6abbe3342078b354881e59f2498296219bf74321e6bfae9d3ee9802f95"
+    },
+    "focal_artifact_diagnostic": {
+      "path": "data/processed/secondary-feature-mapping-control-diagnostic.json",
+      "sha256": "4c0c9f74366582df9e98c92bae0c282700b98f37fedc2dd34ff3ba83dc730d41"
+    },
+    "focal_mode_probe": {
+      "path": "data/processed/mmseqs-identity-mode-probe.json",
+      "sha256": "18d11f305c332f2337bef37b3ac8713acc79516142a51fb56ee590169b5698ae"
+    },
+    "complete_copy_mode3_probe": {
+      "path": "data/processed/mmseqs-control-panel-probe.json",
+      "sha256": "efb5dc6e0466e6ac899ce02448268dce3c628cb24b61c98ee5e05624c6705813"
+    }
+  },
+  "revision_reason": "Technical identity-reporting repair after preserved v1 copied-proteome failure and fixed-context mode probes; frozen before any interaction-model fitting, without phenotype/native outcomes.",
+  "identity_semantics": "Only the two SEARCH commands request --alignment-mode 3: aligned-residue sequence identity is computed for their --min-seq-id 0.4 criterion and downstream hit ranking, under unchanged seq-id/coverage defaults. Clustering retains its original --min-seq-id 0.4 score-based estimated-similarity parameter/default behavior; this is not an assertion of exact-identity clustering or exhaustive homology detection."
+}

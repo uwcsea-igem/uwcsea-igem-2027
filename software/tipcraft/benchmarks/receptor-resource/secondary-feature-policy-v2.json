@@ -1,0 +1,287 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-08",
+  "purpose": "One frozen secondary reference-panel block and host/phage axis; train-only protein-family feature preparation, no interaction fitting",
+  "helper_sha256": "afea1d119943ee5d15e2c5ac58fae2513f5cd0d6b3abf87fcd6e30d495463d5c",
+  "inputs": {
+    "panel_helper": {
+      "path": "scripts/prepare-secondary-panel.py",
+      "sha256": "9e19f19538cfa6f52d73d9cc0714a9e917753d0d7484e6c025267e4cf0ab8932"
+    },
+    "panel_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-panel-policy.json",
+      "sha256": "89ece08e66aee4d1a914a798ffdf0f7dd6d310a1d6e8f82d4be294643fdef543"
+    },
+    "design": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-model-design-policy-v2.json",
+      "sha256": "273e03ccebb0fdb593d82bd515e89d3f99ae149c0318b0a050d2e375ecf41768"
+    },
+    "ledger_helper": {
+      "path": "scripts/check-genophi-phage-fold-features.py",
+      "sha256": "9baf11774e06a988f9d11a189a78a04badb460e48e614c8813df9b879c792a34"
+    },
+    "protein_parser": {
+      "path": "scripts/check-genophi-phage-features.py",
+      "sha256": "c2c091b811ef6d9aaf590abe27cb71d19521354bfb0cac7baf9226f817b99875"
+    },
+    "template_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/mmseqs-search-template-policy-v2.json",
+      "sha256": "1a91a9688828ab61192a22dfe93c0ad012b035a1e4fd2a6cffa61607516c69eb"
+    },
+    "kernel": {
+      "path": "software/tipcraft/src/tipcraft/protein_features.py",
+      "sha256": "a6ae6d3253507846c5a44075b9c159c2ec752cec5d52d78cace668c7b9076cbc"
+    },
+    "partition": {
+      "path": "software/tipcraft/src/tipcraft/partition.py",
+      "sha256": "c13020085c54e375bda4dc6542f647f5e32039b762eac704958db31907366be4"
+    },
+    "revision_failed_v1_feature_report": {
+      "path": "data/processed/secondary-features-host0-phage0-host.json",
+      "sha256": "76fbcb6abbe3342078b354881e59f2498296219bf74321e6bfae9d3ee9802f95"
+    },
+    "revision_focal_artifact_diagnostic": {
+      "path": "data/processed/secondary-feature-mapping-control-diagnostic.json",
+      "sha256": "4c0c9f74366582df9e98c92bae0c282700b98f37fedc2dd34ff3ba83dc730d41"
+    },
+    "revision_focal_mode_probe": {
+      "path": "data/processed/mmseqs-identity-mode-probe.json",
+      "sha256": "18d11f305c332f2337bef37b3ac8713acc79516142a51fb56ee590169b5698ae"
+    },
+    "revision_complete_copy_mode3_probe": {
+      "path": "data/processed/mmseqs-control-panel-probe.json",
+      "sha256": "efb5dc6e0466e6ac899ce02448268dce3c628cb24b61c98ee5e05624c6705813"
+    }
+  },
+  "panel": "Require completed frozen_secondary_reference_panel, exact external panel SHA, authenticated annotation join and reconstruction of every train/test/embargo block. Read no source phenotype CSV; panel label dictionary is not consumed for feature construction.",
+  "mode": "source_panel_block_axis_only; final-source/native query orchestration pending",
+  "mmseqs_executable": "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+  "mmseqs_sha256": "837eaf6cc9be92ff320c42c4cf56ae0d75f2a53c6ff6b24a577e803e9e3951be",
+  "software_deviation": "MMseqs18-8cc5c rather than paper-listed15.6f452; effective defaults retained in logs; v2 SEARCH alignment-mode3, clustering unchanged",
+  "command_templates": [
+    {
+      "argv": [
+        "{mmseqs}",
+        "createdb",
+        "stdin",
+        "{fold_dir}/train_db",
+        "-v",
+        "3"
+      ],
+      "stdin": "{fold_dir}/training.faa",
+      "input_prefixes": [
+        "{fold_dir}/training.faa"
+      ],
+      "output_prefixes": [
+        "{fold_dir}/train_db"
+      ]
+    },
+    {
+      "argv": [
+        "{mmseqs}",
+        "cluster",
+        "{fold_dir}/train_db",
+        "{fold_dir}/clusters",
+        "{fold_dir}/tmp_cluster",
+        "-c",
+        "0.8",
+        "--min-seq-id",
+        "0.4",
+        "-s",
+        "7.5",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "stdin": null,
+      "input_prefixes": [
+        "{fold_dir}/train_db"
+      ],
+      "output_prefixes": [
+        "{fold_dir}/clusters"
+      ]
+    },
+    {
+      "argv": [
+        "{mmseqs}",
+        "createtsv",
+        "{fold_dir}/train_db",
+        "{fold_dir}/train_db",
+        "{fold_dir}/clusters",
+        "{fold_dir}/clusters.tsv",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "stdin": null,
+      "input_prefixes": [
+        "{fold_dir}/train_db",
+        "{fold_dir}/clusters"
+      ],
+      "output_prefixes": [
+        "{fold_dir}/clusters.tsv"
+      ]
+    },
+    {
+      "argv": [
+        "{mmseqs}",
+        "search",
+        "{fold_dir}/train_db",
+        "{fold_dir}/train_db",
+        "{fold_dir}/self_hits",
+        "{fold_dir}/tmp_self",
+        "-c",
+        "0.8",
+        "--min-seq-id",
+        "0.4",
+        "-s",
+        "7.5",
+        "--alignment-mode",
+        "3",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "stdin": null,
+      "input_prefixes": [
+        "{fold_dir}/train_db"
+      ],
+      "output_prefixes": [
+        "{fold_dir}/self_hits"
+      ]
+    },
+    {
+      "argv": [
+        "{mmseqs}",
+        "createtsv",
+        "{fold_dir}/train_db",
+        "{fold_dir}/train_db",
+        "{fold_dir}/self_hits",
+        "{fold_dir}/self.tsv",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "stdin": null,
+      "input_prefixes": [
+        "{fold_dir}/train_db",
+        "{fold_dir}/self_hits"
+      ],
+      "output_prefixes": [
+        "{fold_dir}/self.tsv"
+      ]
+    },
+    {
+      "argv": [
+        "{mmseqs}",
+        "createdb",
+        "stdin",
+        "{fold_dir}/query_db",
+        "-v",
+        "3"
+      ],
+      "stdin": "{fold_dir}/queries.faa",
+      "input_prefixes": [
+        "{fold_dir}/queries.faa"
+      ],
+      "output_prefixes": [
+        "{fold_dir}/query_db"
+      ]
+    },
+    {
+      "argv": [
+        "{mmseqs}",
+        "search",
+        "{fold_dir}/query_db",
+        "{fold_dir}/train_db",
+        "{fold_dir}/query_hits",
+        "{fold_dir}/tmp_query",
+        "-c",
+        "0.8",
+        "--min-seq-id",
+        "0.4",
+        "-s",
+        "7.5",
+        "--alignment-mode",
+        "3",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "stdin": null,
+      "input_prefixes": [
+        "{fold_dir}/query_db",
+        "{fold_dir}/train_db"
+      ],
+      "output_prefixes": [
+        "{fold_dir}/query_hits"
+      ]
+    },
+    {
+      "argv": [
+        "{mmseqs}",
+        "createtsv",
+        "{fold_dir}/query_db",
+        "{fold_dir}/train_db",
+        "{fold_dir}/query_hits",
+        "{fold_dir}/query.tsv",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "stdin": null,
+      "input_prefixes": [
+        "{fold_dir}/query_db",
+        "{fold_dir}/train_db",
+        "{fold_dir}/query_hits"
+      ],
+      "output_prefixes": [
+        "{fold_dir}/query.tsv"
+      ]
+    }
+  ],
+  "workers": 1,
+  "timeout_seconds_per_command": 1800,
+  "timeout_rationale": "Declared before secondary runs: complete reference annotation inventories contain 114719 host proteins, substantially larger than source phage pilots. Bounded 1800s per serial command; no retry or parameter change on timeout.",
+  "input_normalization": "Use bound strict FAA parser; remove exactly one terminal stop, reject internal/double stops and invalid/empty proteins. Preserve sequence, input order and per-genome copies; unique neutral IDs distinguish train/query/control. Bind source normalized DNA, FAA/GFF and contig/protein inventories; never concatenate DNA.",
+  "training_boundary": "Train/query genomes derive only from exact block train/test Sample IDs. No embargo-only genomes, target references or technical annotation controls admitted to training. Cloned lexicographically first training proteome is a separately named mapping-control query, never vocabulary training.",
+  "vocabulary": "Complete training cluster member coverage and training self-query hit coverage. Rare families occur in >1 unique training genome. Consolidate identical train-only occurrence tuples. Save/hash vocabulary and assignments after step5 and before query-createdb step6.",
+  "assignment": "Search query proteins only against all training proteins. Kernel retains float32 identity descending/evalue ascending/raw-first tie behavior and reports cross-family ties; binary OR projection preserves all zero rows.",
+  "mapping_control": "Require every copied protein to match its training self-query best-family assignment and exact feature vector. Report nonzero status separately; a zero control alone is not failure. Empty axis vocabulary remains valid representation but ready_for_fitting=false. This criterion is an explicit adaptation from prior pilot nonzero-control gate.",
+  "reports": "Vectors cover exactly training_genomes union query_genomes, control vector separate; artifact bindings list path/sha256; all8 commands must exit0 for completed status; effective logs/resource receipts retained.",
+  "plan_only": "No external command and no output/workdir creation; planned/missing-prerequisite statuses never claim execution.",
+  "failure": "Preserve completed raw outputs/ledger; no automatic rerun, dropped genome, cutoff change or fold search.",
+  "training_or_target_scoring_authorized_by_policy": false,
+  "original_case_coverage": 0,
+  "policy_revision": 2,
+  "parent_v1": {
+    "path": "software/tipcraft/benchmarks/receptor-resource/secondary-feature-policy.json",
+    "sha256": "e2bd31014e1af65be10d46e7e44725a59ac65357ba0040d546e779d30df014f9"
+  },
+  "revision_inputs": {
+    "failed_v1_feature_report": {
+      "path": "data/processed/secondary-features-host0-phage0-host.json",
+      "sha256": "76fbcb6abbe3342078b354881e59f2498296219bf74321e6bfae9d3ee9802f95"
+    },
+    "focal_artifact_diagnostic": {
+      "path": "data/processed/secondary-feature-mapping-control-diagnostic.json",
+      "sha256": "4c0c9f74366582df9e98c92bae0c282700b98f37fedc2dd34ff3ba83dc730d41"
+    },
+    "focal_mode_probe": {
+      "path": "data/processed/mmseqs-identity-mode-probe.json",
+      "sha256": "18d11f305c332f2337bef37b3ac8713acc79516142a51fb56ee590169b5698ae"
+    },
+    "complete_copy_mode3_probe": {
+      "path": "data/processed/mmseqs-control-panel-probe.json",
+      "sha256": "efb5dc6e0466e6ac899ce02448268dce3c628cb24b61c98ee5e05624c6705813"
+    }
+  },
+  "revision_reason": "Technical identity-reporting repair after preserved v1 copied-proteome failure and fixed-context mode probes; frozen before any interaction-model fitting, without phenotype/native outcomes.",
+  "identity_semantics": "Only the two SEARCH commands request --alignment-mode 3: aligned-residue sequence identity is computed for their --min-seq-id 0.4 criterion and downstream hit ranking, under unchanged seq-id/coverage defaults. Clustering retains its original --min-seq-id 0.4 score-based estimated-similarity parameter/default behavior; this is not an assertion of exact-identity clustering or exhaustive homology detection."
+}

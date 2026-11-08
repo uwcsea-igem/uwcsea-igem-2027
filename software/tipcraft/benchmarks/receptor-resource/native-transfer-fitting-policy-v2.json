@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-08",
+  "status": "prospective_final_source_native_fitter_pending_actual_inputs",
+  "helper_sha256": "fee80c44c903a1d9125f76f42f8efec98dd6458115fee955fec75e2451e8d957",
+  "inputs": {
+    "native_design": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-native-transfer-design-policy-v2.json",
+      "sha256": "8bc99479d2b3031f86d4951ef04bae646e787539fde723081656c1575a4c1c6e"
+    },
+    "design": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-model-design-policy-v2.json",
+      "sha256": "273e03ccebb0fdb593d82bd515e89d3f99ae149c0318b0a050d2e375ecf41768"
+    },
+    "panel_helper": {
+      "path": "scripts/prepare-secondary-panel.py",
+      "sha256": "9e19f19538cfa6f52d73d9cc0714a9e917753d0d7484e6c025267e4cf0ab8932"
+    },
+    "panel_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-panel-policy.json",
+      "sha256": "89ece08e66aee4d1a914a798ffdf0f7dd6d310a1d6e8f82d4be294643fdef543"
+    },
+    "source_fitter": {
+      "path": "scripts/fit-secondary-block.py",
+      "sha256": "078e2676b805a02cee1d9372235d9187ab17624ec101462b7d1dd21fa8de47c2"
+    },
+    "source_fitting_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-fitting-policy-v2.json",
+      "sha256": "99e0adf93672cff33841b2415e0abcccfe090dea2955788ee18bc3f3c25289d6"
+    },
+    "source_evaluator": {
+      "path": "scripts/evaluate-secondary-scores.py",
+      "sha256": "be46663f98748537c470ad04d0321f62e88671da6c2a45193347921aabb4e82f"
+    },
+    "source_evaluation_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-evaluation-policy-v2.json",
+      "sha256": "95b686036ca088ee7dbe017cd220849580e30af79fbbc8641f450da8654fa2f3"
+    },
+    "native_feature_helper": {
+      "path": "scripts/prepare-native-transfer-features.py",
+      "sha256": "c846e9ad453a02d24db38bd7e9dfde8fb2020224289c30a60e57eabeb51fc37b"
+    },
+    "native_feature_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/native-transfer-feature-policy-v2.json",
+      "sha256": "80f78ba5bc8ec8bb2992abdf49d99ad587a9f629e9a937b3158e2d1b73b9f1e9"
+    },
+    "learning": {
+      "path": "software/tipcraft/src/tipcraft/learning.py",
+      "sha256": "a9c6bafc896c72584ff8a5e6a286a20563f6698468d9a9c2d81dd42f0185bcb5"
+    },
+    "runtime_lock": {
+      "path": "software/tipcraft/experiments/learning/uv.lock",
+      "sha256": "fbeda0630d21b8bc27631be9bd826564f498ca27907cb83355ecd0966e59ae0e"
+    },
+    "revision_failed_v1_feature_report": {
+      "path": "data/processed/secondary-features-host0-phage0-host.json",
+      "sha256": "76fbcb6abbe3342078b354881e59f2498296219bf74321e6bfae9d3ee9802f95"
+    },
+    "revision_focal_artifact_diagnostic": {
+      "path": "data/processed/secondary-feature-mapping-control-diagnostic.json",
+      "sha256": "4c0c9f74366582df9e98c92bae0c282700b98f37fedc2dd34ff3ba83dc730d41"
+    },
+    "revision_focal_mode_probe": {
+      "path": "data/processed/mmseqs-identity-mode-probe.json",
+      "sha256": "18d11f305c332f2337bef37b3ac8713acc79516142a51fb56ee590169b5698ae"
+    },
+    "revision_complete_copy_mode3_probe": {
+      "path": "data/processed/mmseqs-control-panel-probe.json",
+      "sha256": "efb5dc6e0466e6ac899ce02448268dce3c628cb24b61c98ee5e05624c6705813"
+    }
+  },
+  "runtime": {
+    "python": "3.12.5",
+    "packages": {
+      "catboost": "1.2.7",
+      "numpy": "1.26.4",
+      "scikit-learn": "1.5.2",
+      "pandas": "2.2.2",
+      "scipy": "1.14.1"
+    }
+  },
+  "mode": "final_source_native_transfer; distinct from outer cross-validation",
+  "source_training": "All and only observed admitted source rows after fixed genotype exclusions; no target labels or donor phenotypes",
+  "source_evaluation_prerequisite": "Complete nine-block matched source evaluation for the same panel; require execution/coverage validity, not a favorable screen. Negative source performance cannot select new settings or prevent the prespecified native diagnostic.",
+  "group_validation": "Measured original host and reference:T7/T3 groups from the same bound grouping reports; both-unseen plus publication holdout",
+  "settings": "Bound source design fixed settings and per-scope feature cap; no source-CV or native performance tuning",
+  "scopes": [
+    "paired",
+    "host_only",
+    "phage_only"
+  ],
+  "query_pairs": 6,
+  "exchange_construct_pairs_abstained": 4,
+  "inference_boundary": "All three source-only bundle manifests frozen before native scoring; complete six-pair matrices saved before separate native-label evaluation",
+  "label_access": "Fitter does not parse Ando cases or historical WIsH scores. Source labels are selected only for admitted training Sample rows.",
+  "failure": "Preserve partial artifacts and failed-attempt receipt; no automatic retry or source/parameter repair",
+  "biological_execution_performed_at_policy_freeze": false,
+  "interpretation": "Whole-proteome association scores, uncalibrated; no binding, receptor causality, assembly, design or orderable DNA capability",
+  "prospective_attribution_interpretation": "Paired concordance above a separately fitted host-only model is an ablation-screen difference, not proof that the paired model learned phage-conditional host ordering. Existing source screen keys and thresholds remain unchanged for compatibility; inspect within-model query variation and representation limits separately.",
+  "policy_revision": 2,
+  "parent_v1": {
+    "path": "software/tipcraft/benchmarks/receptor-resource/native-transfer-fitting-policy.json",
+    "sha256": "39af4698ec2bb65ec18755ca9795829ad197b885229ffadfd62e515231872e62"
+  },
+  "revision_inputs": {
+    "failed_v1_feature_report": {
+      "path": "data/processed/secondary-features-host0-phage0-host.json",
+      "sha256": "76fbcb6abbe3342078b354881e59f2498296219bf74321e6bfae9d3ee9802f95"
+    },
+    "focal_artifact_diagnostic": {
+      "path": "data/processed/secondary-feature-mapping-control-diagnostic.json",
+      "sha256": "4c0c9f74366582df9e98c92bae0c282700b98f37fedc2dd34ff3ba83dc730d41"
+    },
+    "focal_mode_probe": {
+      "path": "data/processed/mmseqs-identity-mode-probe.json",
+      "sha256": "18d11f305c332f2337bef37b3ac8713acc79516142a51fb56ee590169b5698ae"
+    },
+    "complete_copy_mode3_probe": {
+      "path": "data/processed/mmseqs-control-panel-probe.json",
+      "sha256": "efb5dc6e0466e6ac899ce02448268dce3c628cb24b61c98ee5e05624c6705813"
+    }
+  },
+  "revision_reason": "Technical identity-reporting repair after preserved v1 copied-proteome failure and fixed-context mode probes; frozen before any interaction-model fitting, without phenotype/native outcomes.",
+  "identity_semantics": "Only the two SEARCH commands request --alignment-mode 3: aligned-residue sequence identity is computed for their --min-seq-id 0.4 criterion and downstream hit ranking, under unchanged seq-id/coverage defaults. Clustering retains its original --min-seq-id 0.4 score-based estimated-similarity parameter/default behavior; this is not an assertion of exact-identity clustering or exhaustive homology detection."
+}

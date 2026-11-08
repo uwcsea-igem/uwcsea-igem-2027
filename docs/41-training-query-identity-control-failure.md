@@ -1,5 +1,7 @@
 # An exact-copy control detects a training/query encoding mismatch
 
+For the subsequent complete copied-proteome replay and versioned projection correction, see [Complete-copy replay and versioned projection correction](42-complete-copy-replay-and-v2-protocol.md). The failed v1 task below remains preserved.
+
 Updated 2026-11-08. **The first biological feature task stopped on an exact-copy mapping control before any interaction model was fitted.** The same 385-aa protein acquired different reported identity values in training-self and external-query contexts, changing one binary feature. A prespecified focal diagnostic reproduces the asymmetry and removes it when actual aligned-residue identity is requested. The original failed task remains failed; the focal diagnostic does not validate the full feature pipeline.
 
 ## Observed failure and preserved boundary

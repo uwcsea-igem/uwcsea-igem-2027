@@ -1,0 +1,450 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-08",
+  "status": "frozen_before_complete_control_probe",
+  "helper_sha256": "dda1eb9f5db072339f84f928011ee0c21f562b9a42474f9d1174ecaa95369eba",
+  "kernel_sha256": "a6ae6d3253507846c5a44075b9c159c2ec752cec5d52d78cace668c7b9076cbc",
+  "inputs": [
+    {
+      "path": "data/processed/secondary-features-host0-phage0-host.json",
+      "sha256": "76fbcb6abbe3342078b354881e59f2498296219bf74321e6bfae9d3ee9802f95"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/step-04.log",
+      "sha256": "17ba563cd7ee0174d5bdfc3c8061a80d463b613a79edebf917ccc04b95c4a604"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/self-key.txt",
+      "sha256": "3ab515a379d93e13a240a0c8fdd62aec1147384008e0bd89c6ea3e644c4fa480"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/train_db.lookup",
+      "sha256": "dec279526954ecb57ed6edfb885b5845cdfe4f9baa65eb54af1d86a8107c98b5"
+    },
+    {
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+      "sha256": "837eaf6cc9be92ff320c42c4cf56ae0d75f2a53c6ff6b24a577e803e9e3951be"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/train_db.index",
+      "sha256": "6fa0cc4461edc6de24084407c1922769c54ca2ff703b0e7f82614c2e241a26c3"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/train_db_h",
+      "sha256": "c1ad4fb83fed74667b006f0762aed3fae52d4f07b980a81418db5bf2eb3963da"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/train_db.dbtype",
+      "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/train_db.source",
+      "sha256": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/train_db_h.index",
+      "sha256": "c6b85b736cee417b35919da451b0fc478212799703c2b4b833546ab395fffe91"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/train_db",
+      "sha256": "d997ee78438efce4b3ea2880094209b51dc657e10a9562c449b3abd9921463cd"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/train_db_h.dbtype",
+      "sha256": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/tmp_self/730516382992759347/pref_0.index",
+      "sha256": "f48657efbc28c7fd15c550918fe17de0da9241bbfae167fb0ee9191f1bfb773b"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/tmp_self/730516382992759347/pref_0.dbtype",
+      "sha256": "e8613f5a5bc9f9feeda32a8e7c80b69dd4878e47b6a91723fb15eb84236b6a2b"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/tmp_self/730516382992759347/pref_0.2",
+      "sha256": "e7e54bb9a91f861ac9390328d2cc62e2f029de1ff6987ac0087e6a366ee02c94"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/tmp_self/730516382992759347/pref_0.3",
+      "sha256": "261fd194fbbcdab9a5f38e7d9cfd0900de4ca23a564e8cfd3c971209d9a252e5"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/tmp_self/730516382992759347/pref_0.1",
+      "sha256": "303cf052ca27456271980bfa1fa23e5bad6739fd03adf2a27400702a1c581d34"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/tmp_self/730516382992759347/pref_0.0",
+      "sha256": "0d506238bc455c88d250a200e84d8f924c5b48d38225111f5d6e59edfbab5646"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/step-07.log",
+      "sha256": "6b1e70e26b9f40d1b38409b7dbc62397ae50e6ea4777a2c175eb8b90ad3423dd"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/external-key.txt",
+      "sha256": "780adbf3dcc2de57ffb6657020488bb6b8da8e8760cb77e32c4a2d554b494888"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/query_db.lookup",
+      "sha256": "8c41c31de39d23bd7e185b08d5d0bd37a542710af2c8ebc4be7bfee862cc529b"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/query_db",
+      "sha256": "9e92a2fb71fb58f6d5a0af04878b6df3dcd7b7e8320ec060742f2c062df082b1"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/query_db_h.dbtype",
+      "sha256": "42f4aeb81c1ef81f771f3de8abca9dcf66901c575530e7672e4b1146474ae650"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/query_db.dbtype",
+      "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/query_db.source",
+      "sha256": "fc286fec17aa3338bc309494ce102a5e1fab58a99bb1e1415327ba8c6b9881eb"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/query_db.index",
+      "sha256": "d6abf3d6b662105a8ac728fd1c5266ff2c97fe4417f4eeacbdcc342563da01f5"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/query_db_h",
+      "sha256": "f088d1d579a9c26bb6593496ba4da0930f56a546d8199422113487de992aea85"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/query_db_h.index",
+      "sha256": "135aa8b7babca8d3e89ae141e32176f41ab10cc3b89d27f97369819f0876d36b"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/tmp_query/2906807135690034208/pref_0.index",
+      "sha256": "4550a7a14b1d00b2c78e185bbf62abbd6d7afa29fea4a935d19787e97ea9d427"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/tmp_query/2906807135690034208/pref_0.dbtype",
+      "sha256": "e8613f5a5bc9f9feeda32a8e7c80b69dd4878e47b6a91723fb15eb84236b6a2b"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/tmp_query/2906807135690034208/pref_0.2",
+      "sha256": "68f38817348b74d7be1659f24a2c7aa1c7facc5fb67e28698a43696dd969ec44"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/tmp_query/2906807135690034208/pref_0.3",
+      "sha256": "855637dba27c78aab99592bfb372acda0844a7a1c080ee801103147d16497158"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/tmp_query/2906807135690034208/pref_0.1",
+      "sha256": "5395e1eca272d0e649660651538d71314ebe011c8d63d432f3438f35b4f7a306"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/tmp_query/2906807135690034208/pref_0.0",
+      "sha256": "6356813fa40af32d90d7a6cae207d5945cd6e286369accaf0f6a96fd08e42799"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/protein-map.json",
+      "sha256": "03d0a6e1a495fd8ec4e76bd99a50cee5318dacc05965f7d357b108c460ee845a"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/vocabulary.json",
+      "sha256": "3fc9e0e2ff7fb533e68916a05838b7bc9631863309d12410baff8f6bb9b6b2b5"
+    },
+    {
+      "path": "data/processed/secondary-feature-mapping-control-diagnostic.json",
+      "sha256": "4c0c9f74366582df9e98c92bae0c282700b98f37fedc2dd34ff3ba83dc730d41"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/mapping-control-diagnostic-v1/mmseqs-source/Matcher.cpp",
+      "sha256": "1996e760e8ac444b86f262be29bfafbf1ae2df0eb1538bff106d0bd8efa71290"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/mapping-control-diagnostic-v1/mmseqs-source/Alignment.cpp",
+      "sha256": "5e313dc2a02dfa883aad7aa737ded89875dc12b5cb6e4d0b56f3b4fe3c30278e"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/mmseqs-control-panel-probe-v1/self-keys.txt",
+      "sha256": "ab96d7cac282e202d23d528ae8683bae5c49c2cc462a244d5dc8aad16032f82a"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/mmseqs-control-panel-probe-v1/external-keys.txt",
+      "sha256": "6badd347018acaeaa8d4710f9b9626cf7b0de2b5a54d801289218024dc1fbef2"
+    },
+    {
+      "path": "scripts/check-genophi-phage-features.py",
+      "sha256": "c2c091b811ef6d9aaf590abe27cb71d19521354bfb0cac7baf9226f817b99875"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/training.faa",
+      "sha256": "99c0784ec41c137ac102e6413bffeb0ffd0977b34c4dc61e5d8ac6bb7ae690b2"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/queries.faa",
+      "sha256": "81984635c09993fec91cbe7727094fe3e1ef15dada6397bac150afd44db3a1d2"
+    },
+    {
+      "path": "software/tipcraft/src/tipcraft/protein_features.py",
+      "sha256": "a6ae6d3253507846c5a44075b9c159c2ec752cec5d52d78cace668c7b9076cbc"
+    }
+  ],
+  "workdir": "data/raw/genophi-external-validation/mmseqs-control-panel-probe-v1",
+  "copied_protein_count": 4704,
+  "contexts": [
+    {
+      "context": "self",
+      "raw_tsv": "data/raw/genophi-external-validation/mmseqs-control-panel-probe-v1/self-mode3.tsv",
+      "selected_queries": 4704,
+      "source_prefilter": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/tmp_self/730516382992759347/pref_0",
+      "query_db": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/train_db",
+      "target_db": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/train_db"
+    },
+    {
+      "context": "external",
+      "raw_tsv": "data/raw/genophi-external-validation/mmseqs-control-panel-probe-v1/external-mode3.tsv",
+      "selected_queries": 4704,
+      "source_prefilter": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/tmp_query/2906807135690034208/pref_0",
+      "query_db": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/query_db",
+      "target_db": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/train_db"
+    }
+  ],
+  "commands": [
+    {
+      "id": "self-subset",
+      "argv": [
+        "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "createsubdb",
+        "data/raw/genophi-external-validation/mmseqs-control-panel-probe-v1/self-keys.txt",
+        "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/tmp_self/730516382992759347/pref_0",
+        "data/raw/genophi-external-validation/mmseqs-control-panel-probe-v1/self-prefilter",
+        "--subdb-mode",
+        "0",
+        "--id-mode",
+        "0",
+        "-v",
+        "3"
+      ]
+    },
+    {
+      "id": "self-mode3-align",
+      "argv": [
+        "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "align",
+        "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/train_db",
+        "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/train_db",
+        "data/raw/genophi-external-validation/mmseqs-control-panel-probe-v1/self-prefilter",
+        "data/raw/genophi-external-validation/mmseqs-control-panel-probe-v1/self-mode3",
+        "--sub-mat",
+        "aa:blosum62.out,nucl:nucleotide.out",
+        "-a",
+        "0",
+        "--alignment-mode",
+        "3",
+        "--alignment-output-mode",
+        "0",
+        "--wrapped-scoring",
+        "0",
+        "-e",
+        "0.001",
+        "--min-seq-id",
+        "0.4",
+        "--min-aln-len",
+        "0",
+        "--seq-id-mode",
+        "0",
+        "--alt-ali",
+        "0",
+        "-c",
+        "0.8",
+        "--cov-mode",
+        "0",
+        "--max-seq-len",
+        "65535",
+        "--comp-bias-corr",
+        "1",
+        "--comp-bias-corr-scale",
+        "1",
+        "--max-rejected",
+        "2147483647",
+        "--max-accept",
+        "2147483647",
+        "--add-self-matches",
+        "0",
+        "--db-load-mode",
+        "0",
+        "--pca",
+        "substitution:1.100,context:1.400",
+        "--pcb",
+        "substitution:4.100,context:5.800",
+        "--score-bias",
+        "0",
+        "--realign",
+        "0",
+        "--realign-score-bias",
+        "-0.2",
+        "--realign-max-seqs",
+        "2147483647",
+        "--corr-score-weight",
+        "0",
+        "--gap-open",
+        "aa:11,nucl:5",
+        "--gap-extend",
+        "aa:1,nucl:2",
+        "--zdrop",
+        "40",
+        "--threads",
+        "4",
+        "--compressed",
+        "0",
+        "-v",
+        "3"
+      ]
+    },
+    {
+      "id": "self-mode3-tsv",
+      "argv": [
+        "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "createtsv",
+        "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/train_db",
+        "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/train_db",
+        "data/raw/genophi-external-validation/mmseqs-control-panel-probe-v1/self-mode3",
+        "data/raw/genophi-external-validation/mmseqs-control-panel-probe-v1/self-mode3.tsv",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ]
+    },
+    {
+      "id": "external-subset",
+      "argv": [
+        "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "createsubdb",
+        "data/raw/genophi-external-validation/mmseqs-control-panel-probe-v1/external-keys.txt",
+        "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/tmp_query/2906807135690034208/pref_0",
+        "data/raw/genophi-external-validation/mmseqs-control-panel-probe-v1/external-prefilter",
+        "--subdb-mode",
+        "0",
+        "--id-mode",
+        "0",
+        "-v",
+        "3"
+      ]
+    },
+    {
+      "id": "external-mode3-align",
+      "argv": [
+        "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "align",
+        "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/query_db",
+        "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/train_db",
+        "data/raw/genophi-external-validation/mmseqs-control-panel-probe-v1/external-prefilter",
+        "data/raw/genophi-external-validation/mmseqs-control-panel-probe-v1/external-mode3",
+        "--sub-mat",
+        "aa:blosum62.out,nucl:nucleotide.out",
+        "-a",
+        "0",
+        "--alignment-mode",
+        "3",
+        "--alignment-output-mode",
+        "0",
+        "--wrapped-scoring",
+        "0",
+        "-e",
+        "0.001",
+        "--min-seq-id",
+        "0.4",
+        "--min-aln-len",
+        "0",
+        "--seq-id-mode",
+        "0",
+        "--alt-ali",
+        "0",
+        "-c",
+        "0.8",
+        "--cov-mode",
+        "0",
+        "--max-seq-len",
+        "65535",
+        "--comp-bias-corr",
+        "1",
+        "--comp-bias-corr-scale",
+        "1",
+        "--max-rejected",
+        "2147483647",
+        "--max-accept",
+        "2147483647",
+        "--add-self-matches",
+        "0",
+        "--db-load-mode",
+        "0",
+        "--pca",
+        "substitution:1.100,context:1.400",
+        "--pcb",
+        "substitution:4.100,context:5.800",
+        "--score-bias",
+        "0",
+        "--realign",
+        "0",
+        "--realign-score-bias",
+        "-0.2",
+        "--realign-max-seqs",
+        "2147483647",
+        "--corr-score-weight",
+        "0",
+        "--gap-open",
+        "aa:11,nucl:5",
+        "--gap-extend",
+        "aa:1,nucl:2",
+        "--zdrop",
+        "40",
+        "--threads",
+        "4",
+        "--compressed",
+        "0",
+        "-v",
+        "3"
+      ]
+    },
+    {
+      "id": "external-mode3-tsv",
+      "argv": [
+        "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "createtsv",
+        "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/query_db",
+        "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/train_db",
+        "data/raw/genophi-external-validation/mmseqs-control-panel-probe-v1/external-mode3",
+        "data/raw/genophi-external-validation/mmseqs-control-panel-probe-v1/external-mode3.tsv",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ]
+    }
+  ],
+  "timeout_seconds_per_command": 600,
+  "automatic_retry": false,
+  "comparison": "All saved copied-proteome members, no favorable subset; retain missing hits/mismatched families",
+  "choice_basis": "Official actual-identity mode and focal technical counterexample, no phenotype or native ranking result",
+  "scope": "Broader replay of existing ECOR14 technical copy against saved candidates; not independent new-genome validation or full pipeline authorization",
+  "original_failure_preserved": true,
+  "production_batch_resume_authorized": false,
+  "protein_parser": {
+    "path": "scripts/check-genophi-phage-features.py",
+    "sha256": "c2c091b811ef6d9aaf590abe27cb71d19521354bfb0cac7baf9226f817b99875"
+  },
+  "protein_map": {
+    "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/protein-map.json",
+    "sha256": "03d0a6e1a495fd8ec4e76bd99a50cee5318dacc05965f7d357b108c460ee845a"
+  },
+  "vocabulary": {
+    "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/vocabulary.json",
+    "sha256": "3fc9e0e2ff7fb533e68916a05838b7bc9631863309d12410baff8f6bb9b6b2b5"
+  },
+  "training_faa": {
+    "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/training.faa",
+    "sha256": "99c0784ec41c137ac102e6413bffeb0ffd0977b34c4dc61e5d8ac6bb7ae690b2"
+  },
+  "query_faa": {
+    "path": "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/queries.faa",
+    "sha256": "81984635c09993fec91cbe7727094fe3e1ef15dada6397bac150afd44db3a1d2"
+  }
+}

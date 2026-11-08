@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-08",
+  "status": "prospective_pure_post_score_diagnostic_before_first_biological_model_scores",
+  "kernel": {
+    "path": "software/tipcraft/src/tipcraft/conditional_ordering.py",
+    "sha256": "490e2b2d90efef977fb3869275c25cab64713d19dc586ff0a0fa57d3991ba6c5"
+  },
+  "function": "diagnose_conditional_ordering(samples, paired_predictions, selected_feature_names_by_block)",
+  "purpose": "Describe conditional ordering in existing paired-model predictions without altering the frozen paired-versus-separately-fitted-host-only screen.",
+  "reason": "Beating a separately selected/fitted host-only comparator does not logically demonstrate phage-dependent host ordering: additive f(host)+g(phage) scores can beat that comparator.",
+  "input_contract": {
+    "samples": "Full scored source universe of valid Sample metadata with unique row IDs and host/phage pairs and consistent genome-group mappings; no labels.",
+    "paired_predictions": "Nonempty mapping of block ID to exactly one valid model_id string and a nonempty row-ID-to-finite-numeric-score map. Every source row occurs in exactly one block; booleans and unknown/duplicate/missing rows are rejected.",
+    "selected_feature_names_by_block": "Exact same block keys; unique nonempty host:/phage: selected-feature names from authenticated paired-bundle manifests. Caller authenticates reports, manifests and implementation dependencies.",
+    "provenance": "The pure function does not itself authenticate model execution, partitions or score/artifact provenance."
+  },
+  "definitions": {
+    "selected_columns": "Report host and phage selected-column counts separately for each block/model; counts alone do not establish conditional behavior.",
+    "host_pair": "Canonical lexical host-ID pair drawn only from hosts observed in one block. Never pool the same pair across blocks, even if model IDs happen to match.",
+    "eligibility": "At least two phages in the same block must each have observed scores for both hosts. Missing cells are never imputed; no-joint-phage and single-joint-phage pair counts/identities remain reported.",
+    "difference": "For each common observed phage p, d(p)=float(score(first_host,p))-float(score(second_host,p)). Report contributing row IDs, d(p), minimum, maximum and max-minus-min range.",
+    "order_states": {
+      "-1": "first host scores lower",
+      "0": "exact stored-score tie",
+      "1": "first host scores higher"
+    },
+    "state_change": "At least two exact order states observed for that eligible host pair within the block.",
+    "strict_reversal": "Both -1 and +1 observed for that eligible host pair within the block.",
+    "coverage": "Complete source row coverage required. Per block report eligible/possible canonical host pairs (null if no possible pair), unassessed pairs, and sum choose(common_phages,2) as a descriptive comparison count, never independent replicates.",
+    "numeric_behavior": "No tolerance, smoothing, score normalization or significance threshold. Reject nonfinite derived differences/ranges rather than emit invalid JSON numbers; expose raw magnitudes including tiny floating-point effects."
+  },
+  "interpretation_limits": [
+    "Exact ordering changes/reversals describe recorded predictions on the observed grid only; tiny changes can be numerical effects.",
+    "Difference variation without a reversal need not change host ordering. Do not infer global score non-additivity, prediction accuracy, biological interaction or mechanism from these diagnostics.",
+    "No observed change cannot establish global additivity or absence of conditional behavior elsewhere.",
+    "Feature counts and paired-versus-host-only performance do not by themselves prove phage-dependent ordering."
+  ],
+  "labels_accepted": false,
+  "models_fitted_or_scored": false,
+  "source_predictions_generated": false,
+  "cross_model_comparisons": false,
+  "primary_screen_modified": false,
+  "admission_gate_added": false,
+  "metric_or_parameter_selection_from_results": false
+}

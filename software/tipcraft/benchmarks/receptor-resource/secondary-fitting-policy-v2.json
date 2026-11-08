@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-08",
+  "status": "fixed_block_consumer_pending_actual_panel_features_and_full_run_manifest",
+  "helper_sha256": "078e2676b805a02cee1d9372235d9187ab17624ec101462b7d1dd21fa8de47c2",
+  "inputs": {
+    "design": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-model-design-policy-v2.json",
+      "sha256": "273e03ccebb0fdb593d82bd515e89d3f99ae149c0318b0a050d2e375ecf41768"
+    },
+    "panel_helper": {
+      "path": "scripts/prepare-secondary-panel.py",
+      "sha256": "9e19f19538cfa6f52d73d9cc0714a9e917753d0d7484e6c025267e4cf0ab8932"
+    },
+    "panel_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-panel-policy.json",
+      "sha256": "89ece08e66aee4d1a914a798ffdf0f7dd6d310a1d6e8f82d4be294643fdef543"
+    },
+    "feature_helper": {
+      "path": "scripts/prepare-secondary-features.py",
+      "sha256": "afea1d119943ee5d15e2c5ac58fae2513f5cd0d6b3abf87fcd6e30d495463d5c"
+    },
+    "feature_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-feature-policy-v2.json",
+      "sha256": "765f2920e0624124682484a4f7a4aeebb0a21b429a9a8a36662088913170027e"
+    },
+    "learning": {
+      "path": "software/tipcraft/src/tipcraft/learning.py",
+      "sha256": "a9c6bafc896c72584ff8a5e6a286a20563f6698468d9a9c2d81dd42f0185bcb5"
+    },
+    "partition": {
+      "path": "software/tipcraft/src/tipcraft/partition.py",
+      "sha256": "c13020085c54e375bda4dc6542f647f5e32039b762eac704958db31907366be4"
+    },
+    "ranking": {
+      "path": "software/tipcraft/src/tipcraft/blocked_ranking.py",
+      "sha256": "e0c8c13b8ede8c9982b0321095a26b43331305837053d87db9b7b63b71600338"
+    },
+    "runtime_project": {
+      "path": "software/tipcraft/experiments/learning/pyproject.toml",
+      "sha256": "c4cfabcc3573d81f0eb100f354807bcc7b8e82dfd007cedcb55e122903789b05"
+    },
+    "runtime_lock": {
+      "path": "software/tipcraft/experiments/learning/uv.lock",
+      "sha256": "fbeda0630d21b8bc27631be9bd826564f498ca27907cb83355ecd0966e59ae0e"
+    },
+    "revision_failed_v1_feature_report": {
+      "path": "data/processed/secondary-features-host0-phage0-host.json",
+      "sha256": "76fbcb6abbe3342078b354881e59f2498296219bf74321e6bfae9d3ee9802f95"
+    },
+    "revision_focal_artifact_diagnostic": {
+      "path": "data/processed/secondary-feature-mapping-control-diagnostic.json",
+      "sha256": "4c0c9f74366582df9e98c92bae0c282700b98f37fedc2dd34ff3ba83dc730d41"
+    },
+    "revision_focal_mode_probe": {
+      "path": "data/processed/mmseqs-identity-mode-probe.json",
+      "sha256": "18d11f305c332f2337bef37b3ac8713acc79516142a51fb56ee590169b5698ae"
+    },
+    "revision_complete_copy_mode3_probe": {
+      "path": "data/processed/mmseqs-control-panel-probe.json",
+      "sha256": "efb5dc6e0466e6ac899ce02448268dce3c628cb24b61c98ee5e05624c6705813"
+    }
+  },
+  "runtime": {
+    "python": "3.12.5",
+    "packages": {
+      "catboost": "1.2.7",
+      "numpy": "1.26.4",
+      "scikit-learn": "1.5.2",
+      "pandas": "2.2.2",
+      "scipy": "1.14.1"
+    }
+  },
+  "scope": "one authenticated both-unseen source outer block; not final-source/native inference",
+  "feature_reports": "Require exact frozen panel/block/axis membership, all declared artifact hashes, pinned producers/policies, actual zero command exit codes and mapping-control pass",
+  "fitting": "Bound design determines all three scopes, per-scope P/K/RFE step, weights, trees, seed and thread count. No test labels are supplied to fitting or selection. Supplied panel JSON may contain held-out labels; no process-level inaccessibility claim.",
+  "scoring_boundary": "Save all three scope bundles; bind their manifests before scoring any held-out row; preserve score-only output without labels",
+  "before_first_biological_fit": "Freeze complete executable experiment manifest enumerating all nine source blocks, both feature reports and hashes per block, exact fit commands/destinations, pinned policies and full matched-coverage evaluation. This consumer alone does not assert whole-experiment readiness.",
+  "full_evaluation": "All nine blocks must score every eligible observed test row exactly once for all three scopes. Compare within-model phage/host-test-block units; no selection of favorable completed blocks. Report source roster exclusions, unknowns and informative-unit counts.",
+  "failure": "Preserve raw partial bundles and failed-attempt receipt; never automatically rerun or silently change features/splits/parameters",
+  "current_biological_model_executed": false,
+  "native_case_coverage": 0,
+  "prospective_attribution_interpretation": "Paired concordance above a separately fitted host-only model is an ablation-screen difference, not proof that the paired model learned phage-conditional host ordering. Existing source screen keys and thresholds remain unchanged for compatibility; inspect within-model query variation and representation limits separately.",
+  "policy_revision": 2,
+  "parent_v1": {
+    "path": "software/tipcraft/benchmarks/receptor-resource/secondary-fitting-policy.json",
+    "sha256": "e4dfd58d5b715ff47733f45fb39c213cc86a4ecd0f0e8607f2e30cd7c41a8378"
+  },
+  "revision_inputs": {
+    "failed_v1_feature_report": {
+      "path": "data/processed/secondary-features-host0-phage0-host.json",
+      "sha256": "76fbcb6abbe3342078b354881e59f2498296219bf74321e6bfae9d3ee9802f95"
+    },
+    "focal_artifact_diagnostic": {
+      "path": "data/processed/secondary-feature-mapping-control-diagnostic.json",
+      "sha256": "4c0c9f74366582df9e98c92bae0c282700b98f37fedc2dd34ff3ba83dc730d41"
+    },
+    "focal_mode_probe": {
+      "path": "data/processed/mmseqs-identity-mode-probe.json",
+      "sha256": "18d11f305c332f2337bef37b3ac8713acc79516142a51fb56ee590169b5698ae"
+    },
+    "complete_copy_mode3_probe": {
+      "path": "data/processed/mmseqs-control-panel-probe.json",
+      "sha256": "efb5dc6e0466e6ac899ce02448268dce3c628cb24b61c98ee5e05624c6705813"
+    }
+  },
+  "revision_reason": "Technical identity-reporting repair after preserved v1 copied-proteome failure and fixed-context mode probes; frozen before any interaction-model fitting, without phenotype/native outcomes.",
+  "identity_semantics": "Only the two SEARCH commands request --alignment-mode 3: aligned-residue sequence identity is computed for their --min-seq-id 0.4 criterion and downstream hit ranking, under unchanged seq-id/coverage defaults. Clustering retains its original --min-seq-id 0.4 score-based estimated-similarity parameter/default behavior; this is not an assertion of exact-identity clustering or exhaustive homology detection."
+}
