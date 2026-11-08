@@ -1,5 +1,7 @@
 # Strain-level scoring through a matched grouped evaluation
 
+For the subsequent component implementation, software checks and remaining execution prerequisites, see [Executing the fixed secondary evaluation](38-secondary-execution-components.md).
+
 Updated 2026-11-08. **The next experiment will test whether paired phage–host features add ranking signal beyond host background alone.** The [prospective design policy](../software/tipcraft/benchmarks/receptor-resource/secondary-model-design-policy.json) fixes the model settings and comparison rules before any biological model fit. Final genomic groups and exact eligible memberships are pending, so this is a design freeze, not a complete executable run manifest or an executed prediction result.
 
 ## Scientific question

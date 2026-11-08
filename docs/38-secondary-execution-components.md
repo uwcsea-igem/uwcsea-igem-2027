@@ -1,0 +1,31 @@
+# Executing the fixed secondary evaluation
+
+Updated 2026-11-08. **The grouped source experiment now has connected membership, feature-preparation and three-scope fitting components.** They implement the [fixed scoring design](37-secondary-scoring-design.md); their software checks do not establish host-prediction accuracy. The actual secondary-panel manifest remains unavailable pending complete genomic comparison and original-R-checked grouping.
+
+| Stage | Consumer | Required evidence and output |
+| --- | --- | --- |
+| Membership | [prepare-secondary-panel.py](../scripts/prepare-secondary-panel.py) | Authenticated source observations, official genotypes, host/phage exclusions and an externally frozen completed-group report hash; exact eligible rows and nine train/test/embargo blocks |
+| Per-block host or phage features | [prepare-secondary-features.py](../scripts/prepare-secondary-features.py) | Exact frozen panel and block; training-only vocabulary, query projection, vectors and command/artifact receipts |
+| Per-block fitting | [fit-secondary-block.py](../scripts/fit-secondary-block.py) | Both completed axis reports with externally frozen hashes; paired, host-only and phage-only bundles and identical test-row score coverage |
+
+The [feature policy](../software/tipcraft/benchmarks/receptor-resource/secondary-feature-policy.json) reuses the pinned MMseqs 18 command templates and occurrence-feature kernel. It runs eight serial steps, with a declared 1,800-second limit per command and no automatic retry. This increases the old small-phage-pilot limit for the larger host-proteome workload; it is an execution budget, not a measured runtime estimate. The executable's recorded four-thread settings remain unchanged. Failed attempts retain their completed commands and raw artifacts.
+
+Only training proteins enter clustering, training self-search, rare-family filtering and occurrence consolidation. The vocabulary and training hit map are hash-frozen after the fifth command, before creating the query database. Held-out proteins then search the same training database. Genome/protein maps bind every normalized sequence to its exact annotation source. Embargo rows do not add genomes to training, and raw annotation directories are never globbed to include technical controls.
+
+A cloned training proteome supplies a mapping control outside vocabulary fitting. Every copied protein must recover its expected training family, and its projected vector must equal the source vector. A zero source vector can pass exact control correspondence; nonzero status is reported separately. Real zero query rows remain in the matrix. An entire empty axis vocabulary cannot support the three-scope fit and yields HOLD without a representation fallback.
+
+The [fitting policy](../software/tipcraft/benchmarks/receptor-resource/secondary-fitting-policy.json) binds the fitting consumer, panel and feature producers, design, ranking kernel and locked runtime. It checks both the repository file and the actual imported fitting module's path and hash. It requires Python 3.12.5 and the declared package versions. Each scope receives the same source training rows and training-derived weights, with the fixed scope-specific feature cap and RFE step. Both-unseen group boundaries and exact training/query genome sets are checked before fitting. All three bundle manifests are frozen before any test score is generated.
+
+The consumer selects training labels explicitly and never passes test labels to fitting, feature selection or early stopping. The supplied panel JSON also contains test annotations: this is an input-use boundary, not a claim of process-level label inaccessibility. Its score receipt contains no test labels. Partial fitting/scoring failures retain a separate failed-attempt receipt and partial bundles; no automatic parameter repair or retry follows.
+
+## Verified software evidence
+
+- **342 package tests pass** with Biopython 1.86. New checks cover label-independent membership, exact feature/block/genome correspondence, vocabulary-freeze ordering, zero-vector controls, source corruption, training-label selection and imported-code identity.
+- **Three locked-runtime CatBoost integration tests pass.** The new block test fits and saves all three scopes on synthetic data, then scores the same unseen rows. Host-only scores are invariant across phages for an identical host; phage-only scores are invariant across hosts for an identical phage. These tests assert execution and attribution properties, not biological accuracy.
+- The actual missing-input feature command, `uv run --project software/tipcraft python scripts/prepare-secondary-features.py --panel data/processed/secondary-reference-panel.json --block-id host0-phage0 --axis host --workdir data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host --output data/processed/secondary-features-host0-phage0-host.json --plan-only`, returns exit 2 with `HOLD_missing_frozen_panel` and `execution_started: false`. No MMseqs command or biological fit was launched.
+
+## Remaining path to a scientific result
+
+Accept the complete HSP artifact under the explicit recovery protocol, validate the augmented similarity matrix against the original R implementation, and generate the exact eligible source panel. Prepare both axes for all nine blocks, then freeze the complete experiment manifest with their actual report hashes, fit commands, output destinations and matched-coverage evaluation before the first biological fit. Evaluate all blocks together with the within-model ranking kernel; do not promote a favorable completed subset. Report source-wide exclusions and unknowns separately from scoring coverage and informative mixed-label contrasts.
+
+The final all-source refit/native-query orchestration is still pending; the [native-transfer design](../software/tipcraft/benchmarks/receptor-resource/secondary-native-transfer-design-policy.json) already fixes its settings and five original query proteomes. Neither these components nor their tests supply new Ando scores: new-method coverage remains **0/10**, WIsH's measured failure is retained, and all four exact exchange-construct cases still abstain. Binding, recognition-head design, assembly and productive infection are not validated by this execution layer.

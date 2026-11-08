@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-08",
+  "status": "fixed_block_consumer_pending_actual_panel_features_and_full_run_manifest",
+  "helper_sha256": "078e2676b805a02cee1d9372235d9187ab17624ec101462b7d1dd21fa8de47c2",
+  "inputs": {
+    "design": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-model-design-policy.json",
+      "sha256": "7afafbb2c4fd5097d5c8b7e7ff0afde8f28328994d4f192f313d39c039e82eff"
+    },
+    "panel_helper": {
+      "path": "scripts/prepare-secondary-panel.py",
+      "sha256": "9e19f19538cfa6f52d73d9cc0714a9e917753d0d7484e6c025267e4cf0ab8932"
+    },
+    "panel_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-panel-policy.json",
+      "sha256": "89ece08e66aee4d1a914a798ffdf0f7dd6d310a1d6e8f82d4be294643fdef543"
+    },
+    "feature_helper": {
+      "path": "scripts/prepare-secondary-features.py",
+      "sha256": "afea1d119943ee5d15e2c5ac58fae2513f5cd0d6b3abf87fcd6e30d495463d5c"
+    },
+    "feature_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-feature-policy.json",
+      "sha256": "e2bd31014e1af65be10d46e7e44725a59ac65357ba0040d546e779d30df014f9"
+    },
+    "learning": {
+      "path": "software/tipcraft/src/tipcraft/learning.py",
+      "sha256": "a9c6bafc896c72584ff8a5e6a286a20563f6698468d9a9c2d81dd42f0185bcb5"
+    },
+    "partition": {
+      "path": "software/tipcraft/src/tipcraft/partition.py",
+      "sha256": "c13020085c54e375bda4dc6542f647f5e32039b762eac704958db31907366be4"
+    },
+    "ranking": {
+      "path": "software/tipcraft/src/tipcraft/blocked_ranking.py",
+      "sha256": "e0c8c13b8ede8c9982b0321095a26b43331305837053d87db9b7b63b71600338"
+    },
+    "runtime_project": {
+      "path": "software/tipcraft/experiments/learning/pyproject.toml",
+      "sha256": "c4cfabcc3573d81f0eb100f354807bcc7b8e82dfd007cedcb55e122903789b05"
+    },
+    "runtime_lock": {
+      "path": "software/tipcraft/experiments/learning/uv.lock",
+      "sha256": "fbeda0630d21b8bc27631be9bd826564f498ca27907cb83355ecd0966e59ae0e"
+    }
+  },
+  "runtime": {
+    "python": "3.12.5",
+    "packages": {
+      "catboost": "1.2.7",
+      "numpy": "1.26.4",
+      "scikit-learn": "1.5.2",
+      "pandas": "2.2.2",
+      "scipy": "1.14.1"
+    }
+  },
+  "scope": "one authenticated both-unseen source outer block; not final-source/native inference",
+  "feature_reports": "Require exact frozen panel/block/axis membership, all declared artifact hashes, pinned producers/policies, actual zero command exit codes and mapping-control pass",
+  "fitting": "Bound design determines all three scopes, per-scope P/K/RFE step, weights, trees, seed and thread count. No test labels are supplied to fitting or selection. Supplied panel JSON may contain held-out labels; no process-level inaccessibility claim.",
+  "scoring_boundary": "Save all three scope bundles; bind their manifests before scoring any held-out row; preserve score-only output without labels",
+  "before_first_biological_fit": "Freeze complete executable experiment manifest enumerating all nine source blocks, both feature reports and hashes per block, exact fit commands/destinations, pinned policies and full matched-coverage evaluation. This consumer alone does not assert whole-experiment readiness.",
+  "full_evaluation": "All nine blocks must score every eligible observed test row exactly once for all three scopes. Compare within-model phage/host-test-block units; no selection of favorable completed blocks. Report source roster exclusions, unknowns and informative-unit counts.",
+  "failure": "Preserve raw partial bundles and failed-attempt receipt; never automatically rerun or silently change features/splits/parameters",
+  "current_biological_model_executed": false,
+  "native_case_coverage": 0
+}
