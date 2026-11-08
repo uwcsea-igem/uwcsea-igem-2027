@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "status": "HOLD_mapping_control_before_model_fitting",
+  "plan": {
+    "path": "data/processed/secondary-feature-execution-plan.json",
+    "sha256": "2daf06d281cab07095d8b724c6614f340596601e825d00523c72c2c9a92a09a1"
+  },
+  "ledger": {
+    "path": "data/raw/genophi-external-validation/secondary-feature-batch-v1/execution-ledger.json",
+    "sha256": "abb8d18e5d1b30f93540920eb49734c79eb750ca1a239cb4685b3ce3c698ead7"
+  },
+  "failed_feature_receipt": {
+    "path": "data/processed/secondary-features-host0-phage0-host.json",
+    "sha256": "76fbcb6abbe3342078b354881e59f2498296219bf74321e6bfae9d3ee9802f95"
+  },
+  "started_tasks": 1,
+  "valid_completed_tasks": 0,
+  "unstarted_tasks": [
+    "host0-phage0-phage",
+    "host0-phage1-host",
+    "host0-phage1-phage",
+    "host0-phage2-host",
+    "host0-phage2-phage",
+    "host1-phage0-host",
+    "host1-phage0-phage",
+    "host1-phage1-host",
+    "host1-phage1-phage",
+    "host1-phage2-host",
+    "host1-phage2-phage",
+    "host2-phage0-host",
+    "host2-phage0-phage",
+    "host2-phage1-host",
+    "host2-phage1-phage",
+    "host2-phage2-host",
+    "host2-phage2-phage"
+  ],
+  "all_eight_MMseqs_commands_observed_exit_zero": true,
+  "control_failure_overridden": false,
+  "automatic_retry": false,
+  "biological_model_fitted": false,
+  "new_Ando_scores": 0,
+  "pinned_source_code_bindings": [
+    {
+      "path": "data/raw/genophi-external-validation/mapping-control-diagnostic-v1/mmseqs-source/Matcher.cpp",
+      "sha256": "1996e760e8ac444b86f262be29bfafbf1ae2df0eb1538bff106d0bd8efa71290",
+      "Git_blob_sha1": "efce6684e72a7136aa850a0cad172575652a0085",
+      "source_url": "https://github.com/soedinglab/MMseqs2/blob/18-8cc5c/src/alignment/Matcher.cpp"
+    },
+    {
+      "path": "data/raw/genophi-external-validation/mapping-control-diagnostic-v1/mmseqs-source/Alignment.cpp",
+      "sha256": "5e313dc2a02dfa883aad7aa737ded89875dc12b5cb6e4d0b56f3b4fe3c30278e",
+      "Git_blob_sha1": "59625c84270da887e8c0a84f6091cf40c40d60b0",
+      "source_url": "https://github.com/soedinglab/MMseqs2/blob/18-8cc5c/src/alignment/Alignment.cpp"
+    }
+  ]
+}

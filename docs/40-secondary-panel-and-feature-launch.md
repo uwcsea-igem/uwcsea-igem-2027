@@ -1,5 +1,7 @@
 # Authenticated grouped source panel and feature launch
 
+For the subsequent first-task control failure and diagnosis, see [An exact-copy control detects a training/query encoding mismatch](41-training-query-identity-control-failure.md). The frozen launch record below is retained; the batch has not completed successfully.
+
 Updated 2026-11-08. **The completed genomic comparison supports a fixed secondary panel of 50 phages and 23 hosts, with 1,093 observed pairs in nine crossed group blocks.** All 18 host/phage feature tasks were planned and hash-frozen before execution. This establishes actual source membership and preprocessing inputs; no interaction model or native prediction has been executed.
 
 ## Accepted genomic calculation

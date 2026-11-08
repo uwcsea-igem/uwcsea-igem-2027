@@ -1,0 +1,656 @@
+{
+  "schema_version": 1,
+  "status": "completed_focal_identity_mode_probe",
+  "policy": {
+    "path": "software/tipcraft/benchmarks/receptor-resource/mmseqs-identity-mode-probe-policy.json",
+    "sha256": "42a12a3784cfb505493c50d9ed8bb008390a91c753a52471b2380e4c04390acd"
+  },
+  "results": [
+    {
+      "context": "self",
+      "mode": 2,
+      "rows": 47,
+      "best": {
+        "target": "htg0000p0000695",
+        "family": "htg0013p0001800",
+        "identity_float32": 1.0,
+        "evalue_float32": 0.0,
+        "raw_row": 8
+      },
+      "original_self_target_rows": [
+        [
+          "htg0000p0000695",
+          "htg0000p0000695",
+          "745",
+          "1.00",
+          "1.408E-243",
+          "0",
+          "384",
+          "385",
+          "0",
+          "384",
+          "385"
+        ]
+      ],
+      "raw_tsv": {
+        "path": "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/self-mode2.tsv",
+        "sha256": "4bb0580d439196dd481fb23e2c6fb00d142833431afb2adad87067333cf615d9"
+      },
+      "cross_family_ties": []
+    },
+    {
+      "context": "self",
+      "mode": 3,
+      "rows": 47,
+      "best": {
+        "target": "htg0008p0003268",
+        "family": "htg0005p0001328",
+        "identity_float32": 1.0,
+        "evalue_float32": 0.0,
+        "raw_row": 1
+      },
+      "original_self_target_rows": [
+        [
+          "htg0000p0000695",
+          "htg0000p0000695",
+          "745",
+          "1.00",
+          "1.408E-243",
+          "0",
+          "384",
+          "385",
+          "0",
+          "384",
+          "385"
+        ]
+      ],
+      "raw_tsv": {
+        "path": "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/self-mode3.tsv",
+        "sha256": "88d5b7b2488d22100dadf2e5e09d256e248a67d2bfd42b4374cacd89a5974a45"
+      },
+      "cross_family_ties": [
+        {
+          "query": "htg0000p0000695",
+          "families": [
+            "htg0005p0001328",
+            "htg0013p0001800"
+          ],
+          "chosen": {
+            "target": "htg0008p0003268",
+            "family": "htg0005p0001328",
+            "identity_float32": 1.0,
+            "evalue_float32": 0.0,
+            "raw_row": 1
+          }
+        }
+      ]
+    },
+    {
+      "context": "external",
+      "mode": 2,
+      "rows": 47,
+      "best": {
+        "target": "htg0008p0003268",
+        "family": "htg0005p0001328",
+        "identity_float32": 0.9229999780654907,
+        "evalue_float32": 0.0,
+        "raw_row": 1
+      },
+      "original_self_target_rows": [
+        [
+          "control_htg0000p0000695",
+          "htg0000p0000695",
+          "745",
+          "0.923",
+          "1.408E-243",
+          "0",
+          "384",
+          "385",
+          "0",
+          "384",
+          "385"
+        ]
+      ],
+      "raw_tsv": {
+        "path": "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/external-mode2.tsv",
+        "sha256": "a81d7a166d827b599e01bb64e7e3cdaab26655151c625d665261e69db7e7786e"
+      },
+      "cross_family_ties": [
+        {
+          "query": "control_htg0000p0000695",
+          "families": [
+            "htg0005p0001328",
+            "htg0013p0001800"
+          ],
+          "chosen": {
+            "target": "htg0008p0003268",
+            "family": "htg0005p0001328",
+            "identity_float32": 0.9229999780654907,
+            "evalue_float32": 0.0,
+            "raw_row": 1
+          }
+        }
+      ]
+    },
+    {
+      "context": "external",
+      "mode": 3,
+      "rows": 47,
+      "best": {
+        "target": "htg0008p0003268",
+        "family": "htg0005p0001328",
+        "identity_float32": 1.0,
+        "evalue_float32": 0.0,
+        "raw_row": 1
+      },
+      "original_self_target_rows": [
+        [
+          "control_htg0000p0000695",
+          "htg0000p0000695",
+          "745",
+          "1.00",
+          "1.408E-243",
+          "0",
+          "384",
+          "385",
+          "0",
+          "384",
+          "385"
+        ]
+      ],
+      "raw_tsv": {
+        "path": "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/external-mode3.tsv",
+        "sha256": "8c53b197b1da09ca2cfd189cc907e8ff006011662f214d38eba9c81dee9a3462"
+      },
+      "cross_family_ties": [
+        {
+          "query": "control_htg0000p0000695",
+          "families": [
+            "htg0005p0001328",
+            "htg0013p0001800"
+          ],
+          "chosen": {
+            "target": "htg0008p0003268",
+            "family": "htg0005p0001328",
+            "identity_float32": 1.0,
+            "evalue_float32": 0.0,
+            "raw_row": 1
+          }
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "2": {
+      "self_family": "htg0013p0001800",
+      "external_family": "htg0005p0001328",
+      "family_equal": false,
+      "self_original_identity": [
+        "1.00"
+      ],
+      "external_original_identity": [
+        "0.923"
+      ]
+    },
+    "3": {
+      "self_family": "htg0005p0001328",
+      "external_family": "htg0005p0001328",
+      "family_equal": true,
+      "self_original_identity": [
+        "1.00"
+      ],
+      "external_original_identity": [
+        "1.00"
+      ]
+    }
+  },
+  "commands": [
+    {
+      "id": "self-subset",
+      "argv": [
+        "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "createsubdb",
+        "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/self-key.txt",
+        "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/tmp_self/730516382992759347/pref_0",
+        "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/self-prefilter",
+        "--subdb-mode",
+        "0",
+        "--id-mode",
+        "0",
+        "-v",
+        "3"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/self-subset.log",
+        "sha256": "929c1c73cf550906b8018a92b24e59460796fad7989f21d6074e64612a143da1"
+      }
+    },
+    {
+      "id": "self-mode2-align",
+      "argv": [
+        "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "align",
+        "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/train_db",
+        "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/train_db",
+        "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/self-prefilter",
+        "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/self-mode2",
+        "--sub-mat",
+        "aa:blosum62.out,nucl:nucleotide.out",
+        "-a",
+        "0",
+        "--alignment-mode",
+        "2",
+        "--alignment-output-mode",
+        "0",
+        "--wrapped-scoring",
+        "0",
+        "-e",
+        "0.001",
+        "--min-seq-id",
+        "0.4",
+        "--min-aln-len",
+        "0",
+        "--seq-id-mode",
+        "0",
+        "--alt-ali",
+        "0",
+        "-c",
+        "0.8",
+        "--cov-mode",
+        "0",
+        "--max-seq-len",
+        "65535",
+        "--comp-bias-corr",
+        "1",
+        "--comp-bias-corr-scale",
+        "1",
+        "--max-rejected",
+        "2147483647",
+        "--max-accept",
+        "2147483647",
+        "--add-self-matches",
+        "0",
+        "--db-load-mode",
+        "0",
+        "--pca",
+        "substitution:1.100,context:1.400",
+        "--pcb",
+        "substitution:4.100,context:5.800",
+        "--score-bias",
+        "0",
+        "--realign",
+        "0",
+        "--realign-score-bias",
+        "-0.2",
+        "--realign-max-seqs",
+        "2147483647",
+        "--corr-score-weight",
+        "0",
+        "--gap-open",
+        "aa:11,nucl:5",
+        "--gap-extend",
+        "aa:1,nucl:2",
+        "--zdrop",
+        "40",
+        "--threads",
+        "4",
+        "--compressed",
+        "0",
+        "-v",
+        "3"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/self-mode2-align.log",
+        "sha256": "d8fc612eeff38b101c3b83a00c6b71782e12bf2b2d37288549d9c387923fc3be"
+      }
+    },
+    {
+      "id": "self-mode2-tsv",
+      "argv": [
+        "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "createtsv",
+        "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/train_db",
+        "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/train_db",
+        "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/self-mode2",
+        "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/self-mode2.tsv",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/self-mode2-tsv.log",
+        "sha256": "986c9d27aebe8d8659402ec3d9eb5ad8b7a90eccbac4ab162f92efc06dc40e05"
+      }
+    },
+    {
+      "id": "self-mode3-align",
+      "argv": [
+        "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "align",
+        "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/train_db",
+        "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/train_db",
+        "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/self-prefilter",
+        "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/self-mode3",
+        "--sub-mat",
+        "aa:blosum62.out,nucl:nucleotide.out",
+        "-a",
+        "0",
+        "--alignment-mode",
+        "3",
+        "--alignment-output-mode",
+        "0",
+        "--wrapped-scoring",
+        "0",
+        "-e",
+        "0.001",
+        "--min-seq-id",
+        "0.4",
+        "--min-aln-len",
+        "0",
+        "--seq-id-mode",
+        "0",
+        "--alt-ali",
+        "0",
+        "-c",
+        "0.8",
+        "--cov-mode",
+        "0",
+        "--max-seq-len",
+        "65535",
+        "--comp-bias-corr",
+        "1",
+        "--comp-bias-corr-scale",
+        "1",
+        "--max-rejected",
+        "2147483647",
+        "--max-accept",
+        "2147483647",
+        "--add-self-matches",
+        "0",
+        "--db-load-mode",
+        "0",
+        "--pca",
+        "substitution:1.100,context:1.400",
+        "--pcb",
+        "substitution:4.100,context:5.800",
+        "--score-bias",
+        "0",
+        "--realign",
+        "0",
+        "--realign-score-bias",
+        "-0.2",
+        "--realign-max-seqs",
+        "2147483647",
+        "--corr-score-weight",
+        "0",
+        "--gap-open",
+        "aa:11,nucl:5",
+        "--gap-extend",
+        "aa:1,nucl:2",
+        "--zdrop",
+        "40",
+        "--threads",
+        "4",
+        "--compressed",
+        "0",
+        "-v",
+        "3"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/self-mode3-align.log",
+        "sha256": "6a5a0eef19c71512f846988404b1596eb6037003835a3bb1e0c898e740489b70"
+      }
+    },
+    {
+      "id": "self-mode3-tsv",
+      "argv": [
+        "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "createtsv",
+        "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/train_db",
+        "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/train_db",
+        "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/self-mode3",
+        "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/self-mode3.tsv",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/self-mode3-tsv.log",
+        "sha256": "06d1794b6f683d4c84dd5b8faf0868480f519cf796a551eea89891abb170017f"
+      }
+    },
+    {
+      "id": "external-subset",
+      "argv": [
+        "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "createsubdb",
+        "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/external-key.txt",
+        "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/tmp_query/2906807135690034208/pref_0",
+        "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/external-prefilter",
+        "--subdb-mode",
+        "0",
+        "--id-mode",
+        "0",
+        "-v",
+        "3"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/external-subset.log",
+        "sha256": "4bae238ef0b9054df04e8e5d3efa039eb469dee110a4e5effa3b8128023267fb"
+      }
+    },
+    {
+      "id": "external-mode2-align",
+      "argv": [
+        "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "align",
+        "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/query_db",
+        "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/train_db",
+        "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/external-prefilter",
+        "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/external-mode2",
+        "--sub-mat",
+        "aa:blosum62.out,nucl:nucleotide.out",
+        "-a",
+        "0",
+        "--alignment-mode",
+        "2",
+        "--alignment-output-mode",
+        "0",
+        "--wrapped-scoring",
+        "0",
+        "-e",
+        "0.001",
+        "--min-seq-id",
+        "0.4",
+        "--min-aln-len",
+        "0",
+        "--seq-id-mode",
+        "0",
+        "--alt-ali",
+        "0",
+        "-c",
+        "0.8",
+        "--cov-mode",
+        "0",
+        "--max-seq-len",
+        "65535",
+        "--comp-bias-corr",
+        "1",
+        "--comp-bias-corr-scale",
+        "1",
+        "--max-rejected",
+        "2147483647",
+        "--max-accept",
+        "2147483647",
+        "--add-self-matches",
+        "0",
+        "--db-load-mode",
+        "0",
+        "--pca",
+        "substitution:1.100,context:1.400",
+        "--pcb",
+        "substitution:4.100,context:5.800",
+        "--score-bias",
+        "0",
+        "--realign",
+        "0",
+        "--realign-score-bias",
+        "-0.2",
+        "--realign-max-seqs",
+        "2147483647",
+        "--corr-score-weight",
+        "0",
+        "--gap-open",
+        "aa:11,nucl:5",
+        "--gap-extend",
+        "aa:1,nucl:2",
+        "--zdrop",
+        "40",
+        "--threads",
+        "4",
+        "--compressed",
+        "0",
+        "-v",
+        "3"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/external-mode2-align.log",
+        "sha256": "0026162a7606d4ba82803f0fab229f4b377dcee09e922ef8fb23147a63c1fa38"
+      }
+    },
+    {
+      "id": "external-mode2-tsv",
+      "argv": [
+        "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "createtsv",
+        "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/query_db",
+        "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/train_db",
+        "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/external-mode2",
+        "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/external-mode2.tsv",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/external-mode2-tsv.log",
+        "sha256": "e60442aabe80eb5efba76322c368de6685fd14340eec69c6928c97dbee539910"
+      }
+    },
+    {
+      "id": "external-mode3-align",
+      "argv": [
+        "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "align",
+        "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/query_db",
+        "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/train_db",
+        "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/external-prefilter",
+        "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/external-mode3",
+        "--sub-mat",
+        "aa:blosum62.out,nucl:nucleotide.out",
+        "-a",
+        "0",
+        "--alignment-mode",
+        "3",
+        "--alignment-output-mode",
+        "0",
+        "--wrapped-scoring",
+        "0",
+        "-e",
+        "0.001",
+        "--min-seq-id",
+        "0.4",
+        "--min-aln-len",
+        "0",
+        "--seq-id-mode",
+        "0",
+        "--alt-ali",
+        "0",
+        "-c",
+        "0.8",
+        "--cov-mode",
+        "0",
+        "--max-seq-len",
+        "65535",
+        "--comp-bias-corr",
+        "1",
+        "--comp-bias-corr-scale",
+        "1",
+        "--max-rejected",
+        "2147483647",
+        "--max-accept",
+        "2147483647",
+        "--add-self-matches",
+        "0",
+        "--db-load-mode",
+        "0",
+        "--pca",
+        "substitution:1.100,context:1.400",
+        "--pcb",
+        "substitution:4.100,context:5.800",
+        "--score-bias",
+        "0",
+        "--realign",
+        "0",
+        "--realign-score-bias",
+        "-0.2",
+        "--realign-max-seqs",
+        "2147483647",
+        "--corr-score-weight",
+        "0",
+        "--gap-open",
+        "aa:11,nucl:5",
+        "--gap-extend",
+        "aa:1,nucl:2",
+        "--zdrop",
+        "40",
+        "--threads",
+        "4",
+        "--compressed",
+        "0",
+        "-v",
+        "3"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/external-mode3-align.log",
+        "sha256": "92f7011b7be5f7e8eff749c702ffaa46b562dcbc83e4c3bd90f8a78bbad86362"
+      }
+    },
+    {
+      "id": "external-mode3-tsv",
+      "argv": [
+        "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "createtsv",
+        "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/query_db",
+        "data/raw/genophi-external-validation/secondary-features-v1/host0-phage0/host/train_db",
+        "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/external-mode3",
+        "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/external-mode3.tsv",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": "data/raw/genophi-external-validation/mmseqs-identity-mode-probe-v1/external-mode3-tsv.log",
+        "sha256": "e3102a405d7b1a9a00403aab4f3fb242a128f3d719b6f07bcf9ab55bc6c72986"
+      }
+    }
+  ],
+  "old_failed_batch_restarted": false,
+  "old_control_relaxed_or_rewritten": false,
+  "phenotypes_used": false,
+  "model_fitted_or_scored": false,
+  "full_feature_pipeline_validated": false
+}
