@@ -29,3 +29,9 @@ These checks do not establish a completed v3 production vocabulary, host-predict
 ## Launch checkpoint
 
 The initial `host1-phage0-host` validation task has started under the frozen plan; the other 17 tasks remain unstarted. Its raw command ledger and final structured receipt determine the actual nine-command inventory. The reused historical command runner still prints an `/8` denominator in progress messages; that display label is not the v3 command count and does not alter command execution or structured provenance. No pinned implementation is changed during the running task.
+
+## Remaining-task runner
+
+The [remaining-task runner](../scripts/run-v3-secondary-feature-batch.py) requires the externally fixed plan hash and a completed, observed-zero-exit initial validation receipt before it schedules any of the 17 remaining jobs. It preserves an immutable copy of the initial ledger before updating the mutable batch ledger. It authenticates the declared producer, policy, per-job plans and completed report identities, compares all nine actual commands and normalized-input hashes with the fixed plan, and preserves logs/observed process exits. At most two tasks run concurrently; a failure prevents additional process starts while active tasks finish with their receipts retained. No model is fitted by this runner.
+
+Three additional focused tests pass for complete versus incomplete/mismatched/duplicate evidence and the no-process-start boundary while initial validation is running. The runner is prepared but has not launched the remaining jobs at this checkpoint. Its executed source hash will be recorded in the batch ledger before any remaining task starts. This addition changes no pinned feature producer, policy, model setting or first-stage computation.
