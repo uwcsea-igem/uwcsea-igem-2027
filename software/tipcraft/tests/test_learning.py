@@ -96,7 +96,7 @@ class FitValidationTests(unittest.TestCase):
         host_inconsistent = [[0, 0], [1, 1], [1, 0], [1, 1]]
         phage_inconsistent = [[0, 0], [0, 1], [1, 1], [1, 1]]
         with tempfile.TemporaryDirectory() as tmp:
-            for scope in ["paired", "host_only"]:
+            for scope in ["paired", "host_only", "phage_only"]:
                 for matrix, prefix in [(host_inconsistent, "host:"), (phage_inconsistent, "phage:")]:
                     with self.subTest(scope=scope, prefix=prefix), self.assertRaisesRegex(ValueError, f"Inconsistent {prefix}"):
                         fit_bundle(matrix, [0, 1, 1, 0], rows, ["host:f1", "phage:f2"],
@@ -117,6 +117,9 @@ class FitValidationTests(unittest.TestCase):
                  ([[1, 0], [0, 1]], [0, 1], [rows[0], rows[0]], names, settings()),
                  ([[1, 0], [0, 1]], [0, 1], rows, names, settings(n_selected_features=3)),
                  ([[1, 0], [0, 1]], [0, 1], rows, names, settings(feature_scope="host_only", n_selected_features=2)),
+                 ([[1, 0], [0, 1]], [0, 1], rows, names, settings(feature_scope="phage_only", n_selected_features=2)),
+                 ([[1, 0], [0, 1]], [0, 1], rows, ["host:f1", "host:f2"], settings(feature_scope="phage_only")),
+                 ([[1, 0], [0, 1]], [0, 1], rows, names, settings(feature_scope="phage")),
                  ([[1, 0], [0, 1]], [0, 1], rows, names, settings(rfe_step=0)),
                  ([[1, 0], [0, 1]], [0, 1], rows, names, settings(learning_rate=float("inf"))),
                  ([[1, 0], [0, 1]], [0, 1], rows, names, settings(weight_method="lookup"))]

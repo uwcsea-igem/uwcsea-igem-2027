@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "inputs": {
+    "component": {
+      "path": "software/tipcraft/src/tipcraft/learning.py",
+      "sha256": "a9c6bafc896c72584ff8a5e6a286a20563f6698468d9a9c2d81dd42f0185bcb5"
+    },
+    "helper": {
+      "path": "scripts/check-learning-phage-only.py",
+      "sha256": "29688ef5c5b92c493a208754bde3c100d68788a998f26162f52db134ad489e58"
+    },
+    "fixture_helper": {
+      "path": "scripts/check-learning-fit.py",
+      "sha256": "400e3c09e7202b692a5c4251150b443eedb212e5de6aa2ef2fdfb055ab184e34"
+    },
+    "fixture_spec": {
+      "path": "software/tipcraft/experiments/learning/synthetic-check-spec.json",
+      "sha256": "c0b16a228f3dc5ef62700da98665a00191a9af382c255f965d355e56c0cbbb44"
+    },
+    "runtime_lock": {
+      "path": "software/tipcraft/experiments/learning/uv.lock",
+      "sha256": "fbeda0630d21b8bc27631be9bd826564f498ca27907cb83355ecd0966e59ae0e"
+    },
+    "legacy_source": {
+      "path": "data/raw/learning-phage-only-check/source-before-change-v1/learning.py",
+      "sha256": "698024df5a680e24b87ca8d35ebca7c97c0106eefaf9a6c629b78ea895f093f3"
+    },
+    "legacy_report": {
+      "path": "data/processed/learning-engine-check.json",
+      "sha256": "d1b77fab398c93e24f59c33daef2404cdb72f29bfecd5f62b89bc9cb5ef5585a"
+    }
+  },
+  "checks": {
+    "selected_columns_phage_only": true,
+    "finite_nonconstant_margins": true,
+    "save_load_scores_equal": true,
+    "host_perturbation_at_scoring_invariant": true,
+    "host_perturbation_at_fit_invariant": true,
+    "legacy_paired_load_scores_equal": true,
+    "legacy_renamed_load_scores_equal": true,
+    "legacy_host-only_load_scores_equal": true,
+    "input_sources_unchanged": true,
+    "frozen_bundle_manifests_unchanged": true,
+    "historical_bundle_manifests_unchanged": true
+  },
+  "settings": {
+    "rfe_iterations": 30,
+    "final_iterations": 40,
+    "depth": 3,
+    "learning_rate": 0.1,
+    "l2_leaf_reg": 3.0,
+    "n_selected_features": 3,
+    "rfe_step": 1,
+    "seed": 2027,
+    "threads": 1,
+    "feature_scope": "phage_only",
+    "weight_method": "per_phage_log10"
+  },
+  "plan_before_fitting": {
+    "path": "data/raw/learning-phage-only-check/run-2/plan-before-fitting.json",
+    "sha256": "38a73dbd764c4fc41260cd39f5354b634745d125be2e587c96fe4b213c683eae"
+  },
+  "pre_scoring_boundary": {
+    "path": "data/raw/learning-phage-only-check/run-2/bundles-before-scoring.json",
+    "sha256": "f6dbf89433c50b0e3149f8a0b86b14736ea345c6518c5be1a868f3bf9a826333"
+  },
+  "bundle_manifests": [
+    {
+      "path": "data/raw/learning-phage-only-check/run-2/phage-only/manifest.json",
+      "sha256": "1dff65e2a236250db6adfaaccd087df271e41b40be13cbcf37e82500a701c407"
+    },
+    {
+      "path": "data/raw/learning-phage-only-check/run-2/host-perturbed-fit/manifest.json",
+      "sha256": "afb9db970b5a9df726772032b14b0a195c5501130482d42c34924166f31ff07e"
+    }
+  ],
+  "versions": {
+    "python": "3.12.5",
+    "numpy": "1.26.4",
+    "scikit_learn": "1.5.2",
+    "catboost": "1.2.7"
+  },
+  "architecture": "arm64",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "wall_seconds": 0.9647739168722183,
+  "absolute_score_comparison_tolerance": 1e-12,
+  "legacy_source_git_revision": "4666b4d60e548847a38d7fd589cebc84cf2c9d83",
+  "legacy_artifacts_rewritten": false,
+  "biological_training_executed": false,
+  "target_infection_scores_generated": false,
+  "new_method_covered_cases": 0,
+  "interpretation": "Synthetic software checks only; phage-only raw margins are not calibrated infection probabilities"
+}

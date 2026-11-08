@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-08",
+  "status": "prospective_design_only_pending_final_membership_and_executable_run_manifest",
+  "biological_fit_authorized_by_this_file": false,
+  "study_type": "exploratory_retrospective; source and target outcomes already inspected during method development",
+  "resource": "independently sourced BASEL-ECOR; no Picard download",
+  "scope": "whole-proteome association scoring, not receptor binding or assembly prediction",
+  "partition": {
+    "host_folds": 3,
+    "phage_folds": 3,
+    "seed": 2027,
+    "assignment": "assign_group_folds: hash order then cyclic, labels not input",
+    "regime": "both_unseen",
+    "mixed_quadrants": "embargo",
+    "invalid_block": "HOLD; no fold or split search"
+  },
+  "feature_preparation": {
+    "separate_host_phage_vocabularies": true,
+    "training_genomes_only": true,
+    "mmseqs_release": "18-8cc5c",
+    "coverage": 0.8,
+    "minimum_sequence_identity": 0.4,
+    "sensitivity": 7.5,
+    "threads": 4,
+    "verbosity": 3,
+    "unoverridden_defaults_from_bound_pilot": true,
+    "rare_family_rule": "present in >1 unique training genome per axis",
+    "consolidation": "equal training-genome occurrence vectors",
+    "projection": "best hit against all frozen training proteins; binary OR; retain zero vectors",
+    "technical_controls_in_training": false
+  },
+  "fit": {
+    "scopes": [
+      "paired",
+      "host_only",
+      "phage_only"
+    ],
+    "rfe_iterations": 500,
+    "final_iterations": 500,
+    "depth": 4,
+    "learning_rate": 0.1,
+    "l2_leaf_reg": 3.0,
+    "n_selected_features_rule": "min(100,P) after scope filtering; P=0 is HOLD",
+    "rfe_step_rule": "max(1,int((P-K)/10))",
+    "seed": 2027,
+    "threads": 1,
+    "weight_method": "per_phage_log10",
+    "hyperparameter_search": false,
+    "early_stopping": false,
+    "calibration": false,
+    "score_type": "RawFormulaVal; uncalibrated"
+  },
+  "evaluation": {
+    "primary_unit": "phage within one host test block, from one fitted model",
+    "ties": 0.5,
+    "aggregation": "mean informative blocks per phage, then mean phages per genetic group, then equal group mean",
+    "cross_model_host_ranking": false,
+    "comparators": [
+      "tied",
+      "host_only",
+      "phage_only"
+    ],
+    "complete_matched_coverage_required": true,
+    "missing_source_pairs": "unknown; never imputed negative",
+    "secondary_screen": "paired group macro strictly >0.5 and strictly >host_only on identical units; otherwise no source interaction-attribution signal",
+    "uncertainty": "descriptive; do not treat correlated pairs as independent replicates or claim reliable generalization",
+    "native_endpoint": "bound original next-method-contract.json unchanged; WIsH matched subset required"
+  },
+  "remaining_before_biological_fit": [
+    "accepted full HSP recovery and original-R-checked genomic grouping",
+    "exact official-node/phenotype correspondence and eligible row/genome/group manifests",
+    "nine explicit train/test/embargo blocks and authenticated per-fold vocabulary commands",
+    "bind current fitting source, runner, dependencies, input/output schemas and model receipts",
+    "record native target projection and final source-only model specification without using target outcomes"
+  ],
+  "bound_design_inputs": [
+    {
+      "path": "software/tipcraft/src/tipcraft/blocked_ranking.py",
+      "sha256": "e0c8c13b8ede8c9982b0321095a26b43331305837053d87db9b7b63b71600338"
+    },
+    {
+      "path": "software/tipcraft/src/tipcraft/partition.py",
+      "sha256": "c13020085c54e375bda4dc6542f647f5e32039b762eac704958db31907366be4"
+    },
+    {
+      "path": "software/tipcraft/src/tipcraft/protein_features.py",
+      "sha256": "a6ae6d3253507846c5a44075b9c159c2ec752cec5d52d78cace668c7b9076cbc"
+    },
+    {
+      "path": "software/tipcraft/benchmarks/retro-t7-t3/next-method-contract.json",
+      "sha256": "58b3b57941cdc49396bcf604ff41521f135bbceb61a542aacc10b9613dd4275a"
+    },
+    {
+      "path": "software/tipcraft/benchmarks/retro-t7-t3/genophi-phage-feature-pilot.json",
+      "sha256": "bf97695296231cfe440d905dda515dec8430d5353983c7c7945413dadfbf55a2"
+    },
+    {
+      "path": "software/tipcraft/experiments/learning/uv.lock",
+      "sha256": "fbeda0630d21b8bc27631be9bd826564f498ca27907cb83355ecd0966e59ae0e"
+    },
+    {
+      "path": "data/processed/secondary-reference-annotation-replay.json",
+      "sha256": "202fc8abc33fea472ff08025dc05deb5466adc557a9761a18c83b4461a189e58"
+    },
+    {
+      "path": "software/tipcraft/src/tipcraft/learning.py",
+      "sha256": "a9c6bafc896c72584ff8a5e6a286a20563f6698468d9a9c2d81dd42f0185bcb5"
+    },
+    {
+      "path": "data/processed/learning-phage-only-check.json",
+      "sha256": "1c9230a823c208221900111eaea3a3a0f1cdc11d7d38de84c6ba7b9688733fb5"
+    }
+  ]
+}

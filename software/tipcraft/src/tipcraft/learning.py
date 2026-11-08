@@ -126,7 +126,7 @@ def _settings(settings):
             raise ValueError(f"{name} must be finite numeric")
     if not 0 < settings.learning_rate <= 1 or settings.l2_leaf_reg < 0:
         raise ValueError("Require learning_rate in (0, 1] and nonnegative l2_leaf_reg")
-    if settings.feature_scope not in {"paired", "host_only"}:
+    if settings.feature_scope not in {"paired", "host_only", "phage_only"}:
         raise ValueError("Unknown feature_scope")
     if settings.weight_method not in {"none", "per_phage_log10"}:
         raise ValueError("Unknown weight_method")
@@ -141,6 +141,13 @@ def _feature_names(feature_names):
     if len(set(names)) != len(names):
         raise ValueError("Duplicate feature names")
     return names
+
+
+def _eligible_indices(names, scope):
+    if scope == "paired":
+        return list(range(len(names)))
+    prefix = {"host_only": "host:", "phage_only": "phage:"}[scope]
+    return [i for i, name in enumerate(names) if name.startswith(prefix)]
 
 
 def _matrix(X, width):
@@ -238,7 +245,7 @@ def fit_bundle(X_train, y_train, samples, feature_names, settings, output_dir, p
         raise ValueError("Sample metadata count differs from training rows")
     _validate_genotype_features(matrix, metadata, names)
     labels = _labels(y_train, len(matrix), both_classes=True)
-    eligible = [i for i, name in enumerate(names) if settings.feature_scope == "paired" or name.startswith("host:")]
+    eligible = _eligible_indices(names, settings.feature_scope)
     if not eligible or settings.n_selected_features > len(eligible):
         raise ValueError("n_selected_features exceeds eligible feature count")
     weights = training_weights(labels, metadata, settings.weight_method)
@@ -342,7 +349,7 @@ def score_bundle(X, feature_names, bundle_dir, *, expected_manifest_sha256):
     settings = FitSettings(**spec["settings"])
     _settings(settings)
     indices = selected["global_indices"]
-    eligible = [i for i, name in enumerate(names) if settings.feature_scope == "paired" or name.startswith("host:")]
+    eligible = _eligible_indices(names, settings.feature_scope)
     if (spec["eligible_global_indices"] != eligible or len(indices) != settings.n_selected_features
             or any(isinstance(i, bool) or not isinstance(i, int) or i not in eligible for i in indices)
             or len(set(indices)) != len(indices) or indices != sorted(indices)
