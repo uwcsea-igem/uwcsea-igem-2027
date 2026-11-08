@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-08",
+  "status": "prospective_panel_preparation_pending_completed_official_variant_groups",
+  "helper_sha256": "9e19f19538cfa6f52d73d9cc0714a9e917753d0d7484e6c025267e4cf0ab8932",
+  "inputs": {
+    "design": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-model-design-policy.json",
+      "sha256": "7afafbb2c4fd5097d5c8b7e7ff0afde8f28328994d4f192f313d39c039e82eff"
+    },
+    "authority": {
+      "path": "data/processed/basel-validation-source-audit.json",
+      "sha256": "5d2ae86d0ae4ee35a58174009b0675773cc88e10b4232088800f01980bd8ded4"
+    },
+    "observations": {
+      "path": "data/raw/genophi-external-validation/BASEL_ECOR_interaction_matrix.csv",
+      "sha256": "bc0426a80b392281815ab24066e97cdc445399a62d67bb4f8e56511088947ba5"
+    },
+    "host_groups": {
+      "path": "data/processed/ecor-host-reference-groups.json",
+      "sha256": "afbc1be21ed3819f337d4c23c83b195307e75170cc5a5739355700861efec1d6"
+    },
+    "host_groups_replay": {
+      "path": "data/processed/ecor-host-reference-groups-replay.json",
+      "sha256": "12b33cf8c9b19780291e9513728b775289ef7ea43cfe4397461b301ac270f815"
+    },
+    "host_authentication": {
+      "path": "data/processed/ecor-wgs-input-authentication.json",
+      "sha256": "a8e6aafb15a172d59ea304fbb8bfc9cca356d385967e821260031b65272267c3"
+    },
+    "phage_accession_replay": {
+      "path": "data/processed/basel-phage-accession-replay.json",
+      "sha256": "2e138991121b858c92580e673f50a706a63bee6c4aecf1c27f5dac393ce8113b"
+    },
+    "annotation_report": {
+      "path": "data/processed/secondary-reference-annotation.json",
+      "sha256": "54cc4d963aca3cf7a2a93b2ddea0d6304a79c0961ec40b88983137ba5417077a"
+    },
+    "annotation_replay": {
+      "path": "data/processed/secondary-reference-annotation-replay.json",
+      "sha256": "202fc8abc33fea472ff08025dc05deb5466adc557a9761a18c83b4461a189e58"
+    },
+    "annotation_manifest": {
+      "path": "data/raw/genophi-external-validation/secondary-annotation-v1/annotation-manifest.json",
+      "sha256": "cada17ee1cedc742e4da2ad96359f6f75b31d7dc347f8a34669e4912acbf448c"
+    },
+    "phage_group_helper": {
+      "path": "scripts/group-official-basel-variants.py",
+      "sha256": "4ce63be29a6edbef2f1fc8fed6e0b8860b81176ac3d419965dcc6fb909b70a08"
+    },
+    "group_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/official-variant-group-policy.json",
+      "sha256": "c3c4845595cb06af4406d24e728f8364dd2792e7a8ba1767c02bea836e3a4d4d"
+    },
+    "recovered_group_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/official-variant-group-recovery-policy.json",
+      "sha256": "6745462038ae39dcf7452b91a9fce9e6081f89326911de3899a83bd806a6a8db"
+    }
+  },
+  "future_phage_groups": {
+    "path": "data/processed/official-variant-genome-groups.json",
+    "required_status": "completed_original_R_checked_official_variant_groups",
+    "externally_frozen_sha256_required_at_execution": true,
+    "all_266_container_nodes_retained_as_bridges": true,
+    "complete_unordered_pairs": 35245,
+    "numeric_matrix_for_grouping_verified": true,
+    "original_R_directional_verification_required": true,
+    "node_map": "49 exact author DNA source nodes plus 3 official variant nodes; derive exact map from bound 52-phage official-format replay; no aliases"
+  },
+  "accepted_group_policies": [
+    "group_policy",
+    "recovered_group_policy"
+  ],
+  "source_roster": {
+    "observed_rows": 1240,
+    "hosts": 25,
+    "phages": 52,
+    "unknown_pairs": 60,
+    "missing": "unknown; never negative",
+    "admission": "exclude complete host target components and primary phage target/direct-gp17-seed components before partitions; preserve every excluded observation/reason"
+  },
+  "partition": {
+    "host_folds": 3,
+    "phage_folds": 3,
+    "seed": 2027,
+    "regime": "both_unseen",
+    "mixed_quadrants": "embargo",
+    "labels_used": false,
+    "search_or_fallback": false,
+    "single_class_training_block": "HOLD without reassignment"
+  },
+  "labels": "Separate row-ID dictionary; only source membership labels, no native Ando outcome inputs. Informative test diagnostics are calculated after assignments and never select folds.",
+  "annotations": "Join all77 reference entries by exact kind/source/accession/genotype; technical controls excluded; retain excluded references in inventory. Authenticate FAA/GFF and normalization/coordinate inventories.",
+  "scope": "Reference-genotype membership/preprocessing readiness only. Experimental stock identity unverified for all52 phages and all25 hosts. Spot-clearance observations are not automatically productive infection. Training authorization and original benchmark coverage remain false/zero."
+}
