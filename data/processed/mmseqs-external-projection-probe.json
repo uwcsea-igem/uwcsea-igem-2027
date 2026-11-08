@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "status": "completed_focal_external_projection_probe",
+  "policy": {
+    "path": "software/tipcraft/benchmarks/receptor-resource/external-projection-probe-policy.json",
+    "sha256": "d40a7fc3b2d9138b721262e603334cf7ed01c6f3303f9527fbe44ed6f7994884"
+  },
+  "commands": [
+    {
+      "id": "training_external-createdb",
+      "argv": [
+        "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "createdb",
+        "data/raw/genophi-external-validation/external-projection-probe-v1/training_external.faa",
+        "data/raw/genophi-external-validation/external-projection-probe-v1/training_external_db",
+        "-v",
+        "3"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/external-projection-probe-v1/training_external-createdb.log",
+        "sha256": "b6157a25b5ad4f233d19dbeb1b16a078b45bcd527485cb90eff05cb135d2990c"
+      }
+    },
+    {
+      "id": "training_external-search",
+      "argv": [
+        "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "search",
+        "data/raw/genophi-external-validation/external-projection-probe-v1/training_external_db",
+        "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/train_db",
+        "data/raw/genophi-external-validation/external-projection-probe-v1/training_external_hits",
+        "data/raw/genophi-external-validation/external-projection-probe-v1/training_external_tmp",
+        "-c",
+        "0.8",
+        "--min-seq-id",
+        "0.4",
+        "-s",
+        "7.5",
+        "--alignment-mode",
+        "3",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/external-projection-probe-v1/training_external-search.log",
+        "sha256": "c0f9ea263870d7aca20ebd8e907921d4724ccb47b6e9e5692c335eeb9cf1f943"
+      }
+    },
+    {
+      "id": "training_external-createtsv",
+      "argv": [
+        "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "createtsv",
+        "data/raw/genophi-external-validation/external-projection-probe-v1/training_external_db",
+        "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/train_db",
+        "data/raw/genophi-external-validation/external-projection-probe-v1/training_external_hits",
+        "data/raw/genophi-external-validation/external-projection-probe-v1/training_external.tsv",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/external-projection-probe-v1/training_external-createtsv.log",
+        "sha256": "6228ea9991b64280304ca899670b7ed706bdabc93acded393203e3d9f36bac44"
+      }
+    },
+    {
+      "id": "copied_external-createdb",
+      "argv": [
+        "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "createdb",
+        "data/raw/genophi-external-validation/external-projection-probe-v1/copied_external.faa",
+        "data/raw/genophi-external-validation/external-projection-probe-v1/copied_external_db",
+        "-v",
+        "3"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/external-projection-probe-v1/copied_external-createdb.log",
+        "sha256": "d76b80e55fbda73bb163aa5c94e887daef47b77ad43888815ea5d8c77c8abe9b"
+      }
+    },
+    {
+      "id": "copied_external-search",
+      "argv": [
+        "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "search",
+        "data/raw/genophi-external-validation/external-projection-probe-v1/copied_external_db",
+        "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/train_db",
+        "data/raw/genophi-external-validation/external-projection-probe-v1/copied_external_hits",
+        "data/raw/genophi-external-validation/external-projection-probe-v1/copied_external_tmp",
+        "-c",
+        "0.8",
+        "--min-seq-id",
+        "0.4",
+        "-s",
+        "7.5",
+        "--alignment-mode",
+        "3",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/external-projection-probe-v1/copied_external-search.log",
+        "sha256": "a65099dce922cd46824e3b223aeff319baef463bcbbb2fa78263f7880edb481b"
+      }
+    },
+    {
+      "id": "copied_external-createtsv",
+      "argv": [
+        "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+        "createtsv",
+        "data/raw/genophi-external-validation/external-projection-probe-v1/copied_external_db",
+        "data/raw/genophi-external-validation/secondary-features-v2/host1-phage0/host/train_db",
+        "data/raw/genophi-external-validation/external-projection-probe-v1/copied_external_hits",
+        "data/raw/genophi-external-validation/external-projection-probe-v1/copied_external.tsv",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "exit_code": 0,
+      "log": {
+        "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/external-projection-probe-v1/copied_external-createtsv.log",
+        "sha256": "590c74365235c13ec94f7ace4b3b2aacda06a52ecdbeb8ad3e9f75bc82508002"
+      }
+    }
+  ],
+  "contexts": {
+    "training_external": {
+      "raw_rows": [],
+      "query_ids_without_hits": [
+        "htg0000p0004747",
+        "htg0000p0004956"
+      ]
+    },
+    "copied_external": {
+      "raw_rows": [],
+      "query_ids_without_hits": [
+        "control_htg0000p0004747",
+        "control_htg0000p0004956"
+      ]
+    }
+  },
+  "artifacts": [
+    {
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/external-projection-probe-v1/training_external.tsv",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027/data/raw/genophi-external-validation/external-projection-probe-v1/copied_external.tsv",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "both_contexts_have_no_focal_hits": true,
+  "existing_target_database_reused": true,
+  "training_self_search_special_case_used": false,
+  "source_proteins_tested": 2,
+  "full_proteome_validated": false,
+  "new_vocabulary_or_model_fitted": false,
+  "phenotype_or_native_labels_used": false,
+  "failed_control_waived_or_batch_resumed": false,
+  "interpretation": "Focal technical probe only. Equal absence is not recovered family assignment, full-proteome consistency, method admission or host-prediction accuracy."
+}
