@@ -24,3 +24,19 @@ For `host1-phage0-host`, the complete final feature-name list and every training
 Two of 18 v3 tasks are accepted at this checkpoint. After initial validation passed, the remaining-task runner started the frozen second stage, with at most two tasks active at once. `host0-phage0-host` and `host0-phage1-host` are running. The initial-stage ledger snapshot, executed runner hash and child process IDs are retained in the raw batch ledger. No automatic retry occurs.
 
 Complete feature admission is not inferred from these two tasks. All 18 actual accepted receipts and the full nine-block fitting/evaluation manifest still precede biological model fitting. No partial-block prediction metric is reported. Original Ando new-method coverage remains 0/10, the four exact exchange-construct cases abstain and the measured WIsH negative result remains preserved. Binding and tail-fiber assembly compatibility are unvalidated.
+
+## Seven-task checkpoint
+
+Five additional tasks complete and pass exact nine-command/preplan comparisons, normalized-input and all listed raw artifact hashes, and the command-6 pre-query vocabulary boundary. All copied-proteome vectors agree and all assignment discrepancy counts are zero.
+
+| Additional task | Features | Same assigned control families | Both unassigned | Zero-vector genomes |
+| --- | ---: | ---: | ---: | --- |
+| [host0-phage0-host](../data/processed/secondary-features-v3-host0-phage0-host.json) | 691 | 4,704 | 0 | None |
+| [host0-phage1-host](../data/processed/secondary-features-v3-host0-phage1-host.json) | 691 | 4,704 | 0 | None |
+| [host0-phage1-phage](../data/processed/secondary-features-v3-host0-phage1-phage.json) | 143 | 74 | 0 | Bas67, Bas68 |
+| [host0-phage2-phage](../data/processed/secondary-features-v3-host0-phage2-phage.json) | 149 | 77 | 0 | None |
+| [host1-phage0-phage](../data/processed/secondary-features-v3-host1-phage0-phage.json) | 113 | 74 | 0 | None |
+
+The Bas67/Bas68 zero vectors remain in the fixed `host0-phage1` test block and are not removed or replaced. They express a limitation of that training-derived phage representation, not missing genomes, absent proteins or known-negative phenotypes. The subsequent paired model must report its actual predictions on these inputs and the same-subset baselines; zero vectors cannot be silently excluded to improve a metric.
+
+Seven of 18 v3 tasks are accepted at this checkpoint. `host0-phage2-host` and `host1-phage1-host` are running under the two-worker plan. Complete feature admission is still pending; no source/native interaction model has been fitted and no partial-run accuracy is reported.
