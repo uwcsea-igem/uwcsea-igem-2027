@@ -1,0 +1,7 @@
+# Prospective native inference replay
+
+Recorded 2026-11-08, before any biological model fit or score. The [replay protocol](../software/tipcraft/benchmarks/receptor-resource/native-inference-replay-policy.json) fixes two checks on all six native pairs and all three saved model scopes: a fresh-process numeric replay in the original row order, and a separate replay using opaque row identifiers, a new input filename and a fixed row permutation. Both require exact finite raw-margin equality and unchanged authenticated model artifacts. Differences and failed process exits will be preserved. No tolerance or model setting will be selected from replay outcomes.
+
+These checks operate at the inference boundary. They reuse the frozen sequence-derived features and saved models; they do not rerun annotation, protein searches, vocabulary construction or training. The scorer input carries no target phenotype vector. Its runtime is not a security boundary, and model provenance remains readable. Passing these checks would establish reproducible inference under the specified input transformation, not an anonymous end-to-end experiment, label inaccessibility, biological accuracy or blinding.
+
+A complete actual-input/command manifest will precede replay execution. The replay has not run, no biological scores exist at this checkpoint, and new-method Ando coverage remains 0/10. The four exact exchange-construct cases continue to abstain. This supplementary procedure changes neither the frozen primary evaluation nor the source/native fitting parameters.

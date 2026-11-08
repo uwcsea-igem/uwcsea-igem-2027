@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-08",
+  "status": "prospective_inference_replay_protocol_before_first_biological_model_scores",
+  "purpose": "Check saved-model numeric reproducibility and inference invariance to opaque row identifiers, input filenames and a fixed row permutation.",
+  "inputs": {
+    "0": {
+      "path": "software/tipcraft/src/tipcraft/learning.py",
+      "sha256": "a9c6bafc896c72584ff8a5e6a286a20563f6698468d9a9c2d81dd42f0185bcb5"
+    },
+    "1": {
+      "path": "scripts/fit-native-transfer.py",
+      "sha256": "fee80c44c903a1d9125f76f42f8efec98dd6458115fee955fec75e2451e8d957"
+    },
+    "2": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/native-transfer-fitting-policy-v2.json",
+      "sha256": "9a4e1acefac190650de1a96a75af152de9ef9e3eb39060ddbb86ee7ba4b72e6f"
+    },
+    "3": {
+      "path": "software/tipcraft/experiments/learning/uv.lock",
+      "sha256": "fbeda0630d21b8bc27631be9bd826564f498ca27907cb83355ecd0966e59ae0e"
+    }
+  },
+  "scope": "The final six native host/phage pairs, for each of paired, host_only and phage_only bundles. No retraining, gene calling, protein search, vocabulary construction, feature selection or calibration is repeated.",
+  "before_replay": "Freeze a run manifest binding the completed native score receipt, both actual final feature reports, all three bundle manifests and artifacts, this policy, exact worker source/command, runtime and fresh destinations before any replay score is computed.",
+  "numeric_replay": {
+    "input_order": [
+      "T7:BL21",
+      "T7:BW25113",
+      "T7:MG1655",
+      "T3:BL21",
+      "T3:BW25113",
+      "T3:MG1655"
+    ],
+    "procedure": "Reconstruct each six-row input matrix from the authenticated host and phage feature reports, preserving the exact frozen feature schema. In a fresh locked-runtime process load each saved bundle through score_bundle and compare every raw margin with the original saved score."
+  },
+  "opaque_replay": {
+    "permutation_zero_based": [
+      4,
+      0,
+      5,
+      2,
+      1,
+      3
+    ],
+    "opaque_row_ids": [
+      "q000",
+      "q001",
+      "q002",
+      "q003",
+      "q004",
+      "q005"
+    ],
+    "packet": "Serialize only opaque row IDs, reordered numeric feature rows, the exact feature schema and frozen bundle bindings to a fresh opaque-named input file. Keep the opaque-to-original row map outside the scorer input. The worker scores the packet in a separate fresh process and returns opaque IDs and margins.",
+    "comparison": "After worker output is saved, the controller reverses the fixed permutation and compares all 18 raw margins with the original scores and numeric replay."
+  },
+  "acceptance": {
+    "required_values_per_replay": 18,
+    "comparison": "Exact equality of finite stored float margins after restoration of original row order. Report every difference and maximum absolute difference per scope even when all values match.",
+    "failure": "Preserve inputs, outputs, process exits and all discrepancies. Mark the corresponding replay failed; do not silently loosen tolerances, change parameters, overwrite outputs or retry for a passing result. A replay failure is a technical issue, not evidence of biological prediction failure."
+  },
+  "provenance": "Record command arguments, Python/package versions, all input/output SHA256 bindings, observed worker exits and pre/post bundle hashes. Require unchanged original score receipt, feature reports, bundles and protocol.",
+  "interpretation_limits": [
+    "This is an inference-boundary replay, not an anonymous end-to-end sequence-to-feature rerun. It cannot establish label isolation of feature preparation or training.",
+    "Opaque row names are not model features; invariance is an expected software property rather than biological signal.",
+    "Workers receive no target phenotype vector. No claim is made that their filesystem or saved bundle provenance makes all phenotype information inaccessible.",
+    "Method selection previously saw native labels. Passing replay does not turn this exploratory retrospective analysis into a blind study.",
+    "Matching numeric scores does not validate receptor recognition, binding, tail-fiber assembly or productive infection."
+  ],
+  "target_labels_used_for_replay": false,
+  "replay_executed": false,
+  "biological_scores_available_at_recording": false,
+  "primary_evaluation_or_parameters_modified": false
+}
