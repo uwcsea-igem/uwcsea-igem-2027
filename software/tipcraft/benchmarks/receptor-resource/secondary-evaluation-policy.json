@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-08",
+  "status": "prospective_complete_source_evaluation_consumer_no_biological_scores_yet",
+  "helper_sha256": "be46663f98748537c470ad04d0321f62e88671da6c2a45193347921aabb4e82f",
+  "inputs": {
+    "design": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-model-design-policy.json",
+      "sha256": "7afafbb2c4fd5097d5c8b7e7ff0afde8f28328994d4f192f313d39c039e82eff"
+    },
+    "panel_helper": {
+      "path": "scripts/prepare-secondary-panel.py",
+      "sha256": "9e19f19538cfa6f52d73d9cc0714a9e917753d0d7484e6c025267e4cf0ab8932"
+    },
+    "panel_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-panel-policy.json",
+      "sha256": "89ece08e66aee4d1a914a798ffdf0f7dd6d310a1d6e8f82d4be294643fdef543"
+    },
+    "fitting_helper": {
+      "path": "scripts/fit-secondary-block.py",
+      "sha256": "078e2676b805a02cee1d9372235d9187ab17624ec101462b7d1dd21fa8de47c2"
+    },
+    "fitting_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-fitting-policy.json",
+      "sha256": "e4dfd58d5b715ff47733f45fb39c213cc86a4ecd0f0e8607f2e30cd7c41a8378"
+    },
+    "learning": {
+      "path": "software/tipcraft/src/tipcraft/learning.py",
+      "sha256": "a9c6bafc896c72584ff8a5e6a286a20563f6698468d9a9c2d81dd42f0185bcb5"
+    },
+    "partition": {
+      "path": "software/tipcraft/src/tipcraft/partition.py",
+      "sha256": "c13020085c54e375bda4dc6542f647f5e32039b762eac704958db31907366be4"
+    },
+    "ranking": {
+      "path": "software/tipcraft/src/tipcraft/blocked_ranking.py",
+      "sha256": "e0c8c13b8ede8c9982b0321095a26b43331305837053d87db9b7b63b71600338"
+    }
+  },
+  "score_manifest": "Explicit frozen panel binding and exactly nine score receipt bindings; externally frozen manifest SHA required before evaluator reads labels",
+  "required_blocks": [
+    "host0-phage0",
+    "host0-phage1",
+    "host0-phage2",
+    "host1-phage0",
+    "host1-phage1",
+    "host1-phage2",
+    "host2-phage0",
+    "host2-phage1",
+    "host2-phage2"
+  ],
+  "scopes": [
+    "paired",
+    "host_only",
+    "phage_only"
+  ],
+  "complete_matched_coverage_required": true,
+  "missing_or_failed_block_behavior": "HOLD; never evaluate a favorable completed subset",
+  "bundle_authentication": "Require all-three pre-score manifest hashes; verify each scope manifest, all five bundle artifacts, implementation and source-input provenance",
+  "attribution_controls": "Within one fitted model, host-only scores for an identical host must not depend on phage; phage-only scores for an identical phage must not depend on host",
+  "ranking": "Use pinned within-model blocked ranking, informative blocks per phage then phages per genetic group then equal group mean; no cross-model raw-margin host ordering",
+  "screen": "Descriptive paired group-macro concordance strictly >0.5 and strictly >host-only on exact same units; absent informative units is HOLD",
+  "report": "Full score matrices, informative counts, group deltas, eligible-row coverage and scored fraction of full source observation roster, unknown-pair count",
+  "inference": "Exploratory retrospective source spot-clearance screen; no significance/independent-replicate/generalization/native plaque/assembly claim",
+  "original_native_case_coverage": 0
+}
