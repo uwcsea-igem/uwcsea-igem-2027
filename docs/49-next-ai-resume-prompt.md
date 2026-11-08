@@ -20,6 +20,8 @@ State at handoff:
 5. The first rebuilt host partition passed with 4,960 matching families, two matched absences, zero discrepancies and 816 features; its final feature names and all genome vectors equal its failed v2 output. Bas67/Bas68 still have zero phage vectors in their fixed test block; retain them in evaluation.
 6. Handoff checks passed: 396 package tests with Biopython 1.86 and five locked-runtime synthetic CatBoost integration tests. No biological accuracy or remote-CI result follows from these checks.
 
+The verified raw migration package is available on NAS share `AdminHome`, folder `00_Inbox/TipCraft-raw-2026-11-08_225713`, archive `tipcraft-data-raw.tar.zst` (3.69 GB). Archive SHA256: `729139c9a71e7b3157f2de600bad9b3e4057d9f0cec7d41ea2b16e950599e8e6`. It includes per-file checksums, a restore verifier and restoration instructions; the original Mac mount is `/Volumes/AdminHome/00_Inbox/TipCraft-raw-2026-11-08_225713`. Extract to a new staging directory and verify before using it.
+
 Before resuming computation, check whether the ignored `data/raw/` tree was transferred. It contains approximately 24 GB of indispensable input sequences, logs, databases and receipts and is not on GitHub. A clone alone is insufficient for verified recovery. Transfer missing local artifacts if available; do not download the skipped Picard/Figshare collection or its mirrors. Preserve original artifact bytes/hashes. Absolute old paths and macOS-bound tool binaries require an audited relocation/platform plan; do not silently edit old manifests or swap binaries. Rebuild virtual environments from lock files rather than copying them. Ask about compute only if measurements show it is needed.
 
 Then proceed in this order:

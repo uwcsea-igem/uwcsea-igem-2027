@@ -1,0 +1,20 @@
+{
+  "status": "verified_complete_raw_data_transfer",
+  "destination": "/Volumes/AdminHome/00_Inbox/TipCraft-raw-2026-11-08_225713",
+  "archive": "tipcraft-data-raw.tar.zst",
+  "archive_bytes": 3690772655,
+  "archive_sha256": "729139c9a71e7b3157f2de600bad9b3e4057d9f0cec7d41ea2b16e950599e8e6",
+  "manifest_sha256": "f3369c45a75bef1fbba957b58c67782091e0d4f3462223d9cf7adc262e506f4a",
+  "verified_regular_files": 12567,
+  "verified_symlinks": 666,
+  "verified_directories": 1691,
+  "verified_logical_file_bytes": 22376443674,
+  "archive_read_back_from_nas": true,
+  "all_extracted_file_sha256_match_source": true,
+  "compression_integrity_exit_code": 0,
+  "tar_exit_code": 0,
+  "zstd_exit_code": 0,
+  "original_source_retained": true,
+  "historical_paths_and_manifests_rewritten": false,
+  "elapsed_seconds": 84.8
+}

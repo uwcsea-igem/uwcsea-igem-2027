@@ -52,3 +52,9 @@ Install/sync the locked learning project on a fresh environment before using `--
 6. Perform the predeclared numeric/opaque inference replays using saved models. This checks the inference boundary, not end-to-end anonymity or blinding. Finish an English decision report with actual results and a justified GO/HOLD/NO-GO. Small retrospective samples do not establish reliable generalization.
 
 Chat with the user in Chinese. Repository/scientific writing stays English. Use the installed anti-defensive-writing skills for clear evidence-led writing, while preserving all material negative results and limitations. Do not download the skipped Picard collection, generate new recognition heads/orderable DNA, infer assembly compatibility from host prediction, promise awards, recreate a cleared goal, or launch an automation without the user's request.
+
+## Verified NAS migration package
+
+The complete raw tree is now available in the NAS `AdminHome` share at `00_Inbox/TipCraft-raw-2026-11-08_225713`. On the original Mac this is `/Volumes/AdminHome/00_Inbox/TipCraft-raw-2026-11-08_225713`. The archive is `tipcraft-data-raw.tar.zst` (3,690,772,655 bytes, approximately 3.69 GB). It contains 12,567 regular files (22,376,443,674 logical bytes), 666 preserved symlinks and 1,691 directories. NAS readback verified every regular file SHA256, symlink string, directory inventory and compressed-stream integrity. Original local files remain intact.
+
+Archive SHA256: `729139c9a71e7b3157f2de600bad9b3e4057d9f0cec7d41ea2b16e950599e8e6`. The package includes `raw-manifest.json`, `SHA256SUMS`, `verification.json`, `README-RESTORE.md`, a portable `verify-raw-tree.py`, and a copy of the next-AI prompt. Follow its staging-directory extraction instructions, then verify the restored tree before relocation or scientific execution. This archive is on the private NAS, not GitHub.
