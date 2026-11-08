@@ -1,5 +1,7 @@
 # uwcsea-igem-2027
 
+**Environment migration (2026-11-08):** read the [current handoff](docs/48-development-environment-handoff.md) and [copyable next-AI resume prompt](docs/49-next-ai-resume-prompt.md). The seven-task checkpoint is interrupted, not still running; ignored raw data must be transferred separately.
+
 Season repository for a proposed UWCSEA iGEM 2027 team project. **TipCraft** is the software package name. The team has not selected a project name.
 
 [Role submission record](docs/role-answer.md) · [Literature audit](docs/02-literature.md) · [Contribution record](docs/05-roles.md)

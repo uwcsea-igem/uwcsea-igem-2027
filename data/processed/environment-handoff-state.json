@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "observed_at_utc": "2026-11-08T14:49:18.507288+00:00",
+  "purpose": "Environment migration handoff only; no scientific computation resumed.",
+  "branch": "codex/independent-method-feasibility",
+  "scientific_head_before_handoff": "a3ead81",
+  "remote": "https://github.com/uwcsea-igem/uwcsea-igem-2027.git",
+  "old_repository_root": "/Users/hahatt/Documents/GitHub/uwcsea-igem-2027",
+  "goal_state": "User paused then cleared the persistent goal; do not recreate it automatically.",
+  "v3_plan": {
+    "path": "data/processed/secondary-feature-execution-plan-v3.json",
+    "sha256": "cd553f808b6eb6d8db293da2493add096f2e20db9864ed99014f0f074b3c534d"
+  },
+  "old_v3_ledger": {
+    "path": "data/raw/genophi-external-validation/secondary-feature-batch-v3/execution-ledger.json",
+    "sha256": "7b98556491b4287bb09d4a1c05758cfa30099f827f603247f020e36d20a2e53e"
+  },
+  "old_ledger_status_is_stale": true,
+  "related_compute_processes_observed_running": false,
+  "accepted_v3_feature_tasks": [
+    "host1-phage0-host",
+    "host0-phage0-host",
+    "host0-phage0-phage",
+    "host0-phage1-host",
+    "host0-phage1-phage",
+    "host0-phage2-phage",
+    "host1-phage0-phage"
+  ],
+  "interrupted_incomplete_tasks": [
+    {
+      "id": "host0-phage2-host",
+      "former_pid": 76512,
+      "stale_ledger_status": "running",
+      "public_final_report_exists": false,
+      "overall_exit_code": "unobservable after controller/producer loss; not zero",
+      "last_logged_stage": "command5 ordinary training projection; no complete final feature report"
+    },
+    {
+      "id": "host1-phage1-host",
+      "former_pid": 77314,
+      "stale_ledger_status": "running",
+      "public_final_report_exists": false,
+      "overall_exit_code": "unobservable after controller/producer loss; not zero",
+      "last_logged_stage": "command5 ordinary training projection; no complete final feature report"
+    }
+  ],
+  "unstarted_v3_tasks": [
+    "host1-phage1-phage",
+    "host1-phage2-host",
+    "host1-phage2-phage",
+    "host2-phage0-host",
+    "host2-phage0-phage",
+    "host2-phage1-host",
+    "host2-phage1-phage",
+    "host2-phage2-host",
+    "host2-phage2-phage"
+  ],
+  "validation_at_handoff": {
+    "package_tests": 396,
+    "package_tests_passed": true,
+    "locked_runtime_catboost_integration_tests": 5,
+    "locked_runtime_tests_passed": true,
+    "remote_ci_for_handoff_commit": "not yet run"
+  },
+  "biological_model_fitted_or_scored": false,
+  "new_method_Ando_prediction_coverage": "0/10",
+  "raw_data_transfer": {
+    "git_ignored": true,
+    "github_upload_includes_raw_data": false,
+    "file_count": 13121,
+    "total_file_bytes": 23561068464,
+    "directory": "data/raw",
+    "inventory_is_not_a_checksum_audit": true,
+    "instruction": "Copy the ignored raw tree separately, retain original bytes and paths in receipts, then verify existing SHA256 bindings. Do not include private exports or credentials in public Git commits."
+  },
+  "recovery_boundary": "Preserve all original plans, reports, ledgers, partial work directories and unknown exits. The existing remaining-task runner is not a resume command: its initial-validation-only guard will reject the stale ledger. Audit relocation/platform and interruption before a prospectively recorded recovery attempt in fresh destinations; do not overwrite old directories or relabel unknown exits as zero."
+}

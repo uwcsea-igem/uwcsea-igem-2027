@@ -2,6 +2,8 @@
 
 Computational evidence update · evidence reviewed 2026-11-08 · team review pending.
 
+**Environment handoff:** seven v3 feature tasks are accepted, two were interrupted without final reports and nine never started. No related computation was running at the handoff inspection; the raw running ledger is stale. See the [migration snapshot and recovery boundary](48-development-environment-handoff.md) and [next-AI prompt](49-next-ai-resume-prompt.md). No biological model has been fitted or scored.
+
 **Decision supported today: NO-GO for using this WIsH model as TipCraft's strain-specific ranking engine; GO for reproducible evidence/evaluation work.** The pipeline now runs an independent, literature-backed sequence scorer and exposes a negative result. Neither the universal socket nor assembly prediction has been validated. This result does not invalidate all other modelling methods or determine wet-lab feasibility.
 
 The [alternative route](22-alternative-route.md) now proceeds without the unavailable Picard host-genome collection. Authenticated receptor-study tables, complete workbook/browser correspondence and two existing target GenBank containers support further input and method validation. This is source-feasibility progress: new independent-method coverage of the ten Ando observations remains **0/10**. The receptor-annotation route requires an additional justified host-context model before it can address strain rankings; its accuracy would not establish assembly compatibility.
