@@ -4,6 +4,8 @@ import importlib.util
 import json
 import math
 from pathlib import Path
+import subprocess
+import sys
 import tempfile
 import unittest
 
@@ -44,6 +46,26 @@ class NativeTransferIntegrationTests(unittest.TestCase):
             self.assertEqual(host_only["T7"], host_only["T3"])
             for hosts in result["methods"]["phage_only"]["scores"].values():
                 self.assertEqual(len(set(hosts.values())), 1)
+            # Exercise the real worker in separate processes using saved models.
+            # This synthetic test is not the biological replay receipt.
+            worker = ROOT / "scripts/replay-native-inference-worker.py"
+            replay = load("native_worker_integration", "scripts/replay-native-inference-worker.py")
+            for index, order in enumerate([list(range(6)), [4, 0, 5, 2, 1, 3]]):
+                packet = {"schema_version": 1, "row_ids": [f"q{i:03d}" for i in range(6)],
+                          "feature_names": data["feature_names"],
+                          "matrix": [data["X_query"][i] for i in order], "bundles": result["bundles"]}
+                packet_path = Path(directory) / f"q-input-{index}.json"
+                output_path = Path(directory) / f"q-output-{index}.json"
+                packet_path.write_text(json.dumps(packet))
+                subprocess.run([sys.executable, str(worker), "--packet", str(packet_path),
+                                "--expected-packet-sha256", replay.sha(packet_path),
+                                "--output", str(output_path)], check=True, capture_output=True, text=True)
+                replayed = json.loads(output_path.read_text())
+                for scope in result["methods"]:
+                    original = [result["methods"][scope]["scores"][row.phage_id][row.host_id]
+                                for row in data["target"]]
+                    self.assertEqual(list(replayed["methods"][scope]["scores"].values()),
+                                     [original[i] for i in order])
 
 
 if __name__ == "__main__":
