@@ -1,0 +1,353 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-08",
+  "purpose": "One frozen secondary reference-panel block and host/phage axis; train-only protein-family feature preparation, no interaction fitting",
+  "helper_sha256": "7d4f0d6b1991097edaeb53d0881e018ed4c80c965a3e906d3ccc8ab547e3a309",
+  "inputs": {
+    "panel_helper": {
+      "path": "scripts/prepare-secondary-panel.py",
+      "sha256": "9e19f19538cfa6f52d73d9cc0714a9e917753d0d7484e6c025267e4cf0ab8932"
+    },
+    "panel_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-panel-policy.json",
+      "sha256": "89ece08e66aee4d1a914a798ffdf0f7dd6d310a1d6e8f82d4be294643fdef543"
+    },
+    "design": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-model-design-policy-v3.json",
+      "sha256": "4def30c6ca81a4388e5a3e82fe5b94cfdc75c35b13f4da4f2d3bff7e52857cca"
+    },
+    "ledger_helper": {
+      "path": "scripts/check-genophi-phage-fold-features.py",
+      "sha256": "9baf11774e06a988f9d11a189a78a04badb460e48e614c8813df9b879c792a34"
+    },
+    "protein_parser": {
+      "path": "scripts/check-genophi-phage-features.py",
+      "sha256": "c2c091b811ef6d9aaf590abe27cb71d19521354bfb0cac7baf9226f817b99875"
+    },
+    "template_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/mmseqs-search-template-policy-v3.json",
+      "sha256": "5e31313ba0a350ce53ab5d5b597901be0fa9bc36f3405a25de7bd32cc05aa30c"
+    },
+    "kernel": {
+      "path": "software/tipcraft/src/tipcraft/protein_features.py",
+      "sha256": "a6ae6d3253507846c5a44075b9c159c2ec752cec5d52d78cace668c7b9076cbc"
+    },
+    "partition": {
+      "path": "software/tipcraft/src/tipcraft/partition.py",
+      "sha256": "c13020085c54e375bda4dc6542f647f5e32039b762eac704958db31907366be4"
+    },
+    "revision_failed_v1_feature_report": {
+      "path": "data/processed/secondary-features-host0-phage0-host.json",
+      "sha256": "76fbcb6abbe3342078b354881e59f2498296219bf74321e6bfae9d3ee9802f95"
+    },
+    "revision_focal_artifact_diagnostic": {
+      "path": "data/processed/secondary-feature-mapping-control-diagnostic.json",
+      "sha256": "4c0c9f74366582df9e98c92bae0c282700b98f37fedc2dd34ff3ba83dc730d41"
+    },
+    "revision_focal_mode_probe": {
+      "path": "data/processed/mmseqs-identity-mode-probe.json",
+      "sha256": "18d11f305c332f2337bef37b3ac8713acc79516142a51fb56ee590169b5698ae"
+    },
+    "revision_complete_copy_mode3_probe": {
+      "path": "data/processed/mmseqs-control-panel-probe.json",
+      "sha256": "efb5dc6e0466e6ac899ce02448268dce3c628cb24b61c98ee5e05624c6705813"
+    },
+    "v3_revision_0": {
+      "path": "data/processed/secondary-features-v2-host1-phage0-host.json",
+      "sha256": "a9ef498e2544b815bc789d3e6004ee61400b8709462a1673395556fda7ba7de3"
+    },
+    "v3_revision_1": {
+      "path": "data/processed/secondary-feature-v2-prefilter-failure-audit.json",
+      "sha256": "30960cbd073bedddc84e912f6baa1ec80ed35b324b9ec3710428c399eb36f9fa"
+    },
+    "v3_revision_2": {
+      "path": "data/processed/mmseqs-external-projection-probe.json",
+      "sha256": "f8e81e279f1590a5c932f21d5b400fdf3859eeaa7a2ef70673100f719a33b8df"
+    },
+    "v3_revision_3": {
+      "path": "data/processed/mmseqs-symmetric-panel-probe.json",
+      "sha256": "e2fd80864e218ff82cc339fc1c4e1dda88ed3969b3ab1caa81922f7eaa66a838"
+    }
+  },
+  "panel": "Require completed frozen_secondary_reference_panel, exact external panel SHA, authenticated annotation join and reconstruction of every train/test/embargo block. Read no source phenotype CSV; panel label dictionary is not consumed for feature construction.",
+  "mode": "source_panel_block_axis_only; final-source/native query orchestration pending",
+  "mmseqs_executable": "data/raw/tools/mmseqs-18/mmseqs/bin/mmseqs",
+  "mmseqs_sha256": "837eaf6cc9be92ff320c42c4cf56ae0d75f2a53c6ff6b24a577e803e9e3951be",
+  "software_deviation": "MMseqs18-8cc5c rather than paper-listed15.6f452; effective defaults retained in logs; v2 SEARCH alignment-mode3, clustering unchanged; v3 adds ordinary external training projection and explicitly versions mapping-outcome controls.",
+  "command_templates": [
+    {
+      "argv": [
+        "{mmseqs}",
+        "createdb",
+        "stdin",
+        "{fold_dir}/train_db",
+        "-v",
+        "3"
+      ],
+      "stdin": "{fold_dir}/training.faa",
+      "input_prefixes": [
+        "{fold_dir}/training.faa"
+      ],
+      "output_prefixes": [
+        "{fold_dir}/train_db"
+      ]
+    },
+    {
+      "argv": [
+        "{mmseqs}",
+        "cluster",
+        "{fold_dir}/train_db",
+        "{fold_dir}/clusters",
+        "{fold_dir}/tmp_cluster",
+        "-c",
+        "0.8",
+        "--min-seq-id",
+        "0.4",
+        "-s",
+        "7.5",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "stdin": null,
+      "input_prefixes": [
+        "{fold_dir}/train_db"
+      ],
+      "output_prefixes": [
+        "{fold_dir}/clusters"
+      ]
+    },
+    {
+      "argv": [
+        "{mmseqs}",
+        "createtsv",
+        "{fold_dir}/train_db",
+        "{fold_dir}/train_db",
+        "{fold_dir}/clusters",
+        "{fold_dir}/clusters.tsv",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "stdin": null,
+      "input_prefixes": [
+        "{fold_dir}/train_db",
+        "{fold_dir}/clusters"
+      ],
+      "output_prefixes": [
+        "{fold_dir}/clusters.tsv"
+      ]
+    },
+    {
+      "argv": [
+        "{mmseqs}",
+        "createdb",
+        "stdin",
+        "{fold_dir}/train_projection_db",
+        "-v",
+        "3"
+      ],
+      "stdin": "{fold_dir}/training.faa",
+      "input_prefixes": [
+        "{fold_dir}/training.faa"
+      ],
+      "output_prefixes": [
+        "{fold_dir}/train_projection_db"
+      ]
+    },
+    {
+      "argv": [
+        "{mmseqs}",
+        "search",
+        "{fold_dir}/train_projection_db",
+        "{fold_dir}/train_db",
+        "{fold_dir}/self_hits",
+        "{fold_dir}/tmp_self",
+        "-c",
+        "0.8",
+        "--min-seq-id",
+        "0.4",
+        "-s",
+        "7.5",
+        "--alignment-mode",
+        "3",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "stdin": null,
+      "input_prefixes": [
+        "{fold_dir}/train_projection_db",
+        "{fold_dir}/train_db"
+      ],
+      "output_prefixes": [
+        "{fold_dir}/self_hits"
+      ]
+    },
+    {
+      "argv": [
+        "{mmseqs}",
+        "createtsv",
+        "{fold_dir}/train_projection_db",
+        "{fold_dir}/train_db",
+        "{fold_dir}/self_hits",
+        "{fold_dir}/self.tsv",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "stdin": null,
+      "input_prefixes": [
+        "{fold_dir}/train_projection_db",
+        "{fold_dir}/train_db",
+        "{fold_dir}/self_hits"
+      ],
+      "output_prefixes": [
+        "{fold_dir}/self.tsv"
+      ]
+    },
+    {
+      "argv": [
+        "{mmseqs}",
+        "createdb",
+        "stdin",
+        "{fold_dir}/query_db",
+        "-v",
+        "3"
+      ],
+      "stdin": "{fold_dir}/queries.faa",
+      "input_prefixes": [
+        "{fold_dir}/queries.faa"
+      ],
+      "output_prefixes": [
+        "{fold_dir}/query_db"
+      ]
+    },
+    {
+      "argv": [
+        "{mmseqs}",
+        "search",
+        "{fold_dir}/query_db",
+        "{fold_dir}/train_db",
+        "{fold_dir}/query_hits",
+        "{fold_dir}/tmp_query",
+        "-c",
+        "0.8",
+        "--min-seq-id",
+        "0.4",
+        "-s",
+        "7.5",
+        "--alignment-mode",
+        "3",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "stdin": null,
+      "input_prefixes": [
+        "{fold_dir}/query_db",
+        "{fold_dir}/train_db"
+      ],
+      "output_prefixes": [
+        "{fold_dir}/query_hits"
+      ]
+    },
+    {
+      "argv": [
+        "{mmseqs}",
+        "createtsv",
+        "{fold_dir}/query_db",
+        "{fold_dir}/train_db",
+        "{fold_dir}/query_hits",
+        "{fold_dir}/query.tsv",
+        "--threads",
+        "4",
+        "-v",
+        "3"
+      ],
+      "stdin": null,
+      "input_prefixes": [
+        "{fold_dir}/query_db",
+        "{fold_dir}/train_db",
+        "{fold_dir}/query_hits"
+      ],
+      "output_prefixes": [
+        "{fold_dir}/query.tsv"
+      ]
+    }
+  ],
+  "workers": 1,
+  "timeout_seconds_per_command": 1800,
+  "timeout_rationale": "Declared before secondary runs: complete reference annotation inventories contain 114719 host proteins, substantially larger than source phage pilots. Bounded 1800s per serial command; no retry or parameter change on timeout.",
+  "input_normalization": "Use bound strict FAA parser; remove exactly one terminal stop, reject internal/double stops and invalid/empty proteins. Preserve sequence, input order and per-genome copies; unique neutral IDs distinguish train/query/control. Bind source normalized DNA, FAA/GFF and contig/protein inventories; never concatenate DNA.",
+  "training_boundary": "Train/query genomes derive only from exact block train/test Sample IDs. No embargo-only genomes, target references or technical annotation controls admitted to training. Cloned lexicographically first training proteome is a separately named mapping-control query, never vocabulary training.",
+  "vocabulary": "Fit from ordinary external training projections, including explicit missing-hit diagnostics; occurrence>1 training genome and occurrence-vector consolidation unchanged. Freeze after command6 before external query createdb command7.",
+  "assignment": "Create an independent train_projection_db from the same normalized training.faa, then search it against train_db. No same-prefix training-self projection. Clustering still uses train_db only. Ordinary query_db against the same frozen train_db with identical SEARCH option vectors. Float32 identity/evalue/raw-first ranking and binary OR remain unchanged.",
+  "mapping_control": "Compare every copied protein under ordinary external training/query projection: count same assigned family, both unassigned and assignment discrepancies separately. Require zero assignment discrepancies, complete unique comparison coverage and exact feature-vector equality. Matched absence is not successful family identification. Report nonzero status separately; empty vocabulary is ready_for_fitting=false. This new v3 contract never relabels a v1/v2 failure.",
+  "reports": "Complete status requires all nine declared commands with observed zero exits and the v3 mapping-outcome/vector control. Preserve exact inventories, missing-hit diagnostics, zero vectors, command logs and all artifact hashes.",
+  "plan_only": "No external command and no output/workdir creation; planned/missing-prerequisite statuses never claim execution.",
+  "failure": "Preserve completed raw outputs/ledger; no automatic rerun, dropped genome, cutoff change or fold search.",
+  "training_or_target_scoring_authorized_by_policy": false,
+  "original_case_coverage": 0,
+  "policy_revision": 3,
+  "parent_v1": {
+    "path": "software/tipcraft/benchmarks/receptor-resource/secondary-feature-policy.json",
+    "sha256": "e2bd31014e1af65be10d46e7e44725a59ac65357ba0040d546e779d30df014f9"
+  },
+  "revision_inputs": {
+    "failed_v1_feature_report": {
+      "path": "data/processed/secondary-features-host0-phage0-host.json",
+      "sha256": "76fbcb6abbe3342078b354881e59f2498296219bf74321e6bfae9d3ee9802f95"
+    },
+    "focal_artifact_diagnostic": {
+      "path": "data/processed/secondary-feature-mapping-control-diagnostic.json",
+      "sha256": "4c0c9f74366582df9e98c92bae0c282700b98f37fedc2dd34ff3ba83dc730d41"
+    },
+    "focal_mode_probe": {
+      "path": "data/processed/mmseqs-identity-mode-probe.json",
+      "sha256": "18d11f305c332f2337bef37b3ac8713acc79516142a51fb56ee590169b5698ae"
+    },
+    "complete_copy_mode3_probe": {
+      "path": "data/processed/mmseqs-control-panel-probe.json",
+      "sha256": "efb5dc6e0466e6ac899ce02448268dce3c628cb24b61c98ee5e05624c6705813"
+    }
+  },
+  "revision_reason": "Before any biological model fit: replace privileged training-self projection with ordinary external-query projection after the preserved v2 candidate-control failure and prospectively fixed focal/complete-copy diagnostics. Version the missing-assignment control contract explicitly. No phenotype-dependent selection or threshold adjustment.",
+  "identity_semantics": "Only the two SEARCH commands request --alignment-mode 3: aligned-residue sequence identity is computed for their --min-seq-id 0.4 criterion and downstream hit ranking, under unchanged seq-id/coverage defaults. Clustering retains its original --min-seq-id 0.4 score-based estimated-similarity parameter/default behavior; this is not an assertion of exact-identity clustering or exhaustive homology detection.",
+  "parent_v2": {
+    "path": "software/tipcraft/benchmarks/receptor-resource/secondary-feature-policy-v2.json",
+    "sha256": "765f2920e0624124682484a4f7a4aeebb0a21b429a9a8a36662088913170027e"
+  },
+  "v3_revision_inputs": [
+    {
+      "path": "data/processed/secondary-features-v2-host1-phage0-host.json",
+      "sha256": "a9ef498e2544b815bc789d3e6004ee61400b8709462a1673395556fda7ba7de3"
+    },
+    {
+      "path": "data/processed/secondary-feature-v2-prefilter-failure-audit.json",
+      "sha256": "30960cbd073bedddc84e912f6baa1ec80ed35b324b9ec3710428c399eb36f9fa"
+    },
+    {
+      "path": "data/processed/mmseqs-external-projection-probe.json",
+      "sha256": "f8e81e279f1590a5c932f21d5b400fdf3859eeaa7a2ef70673100f719a33b8df"
+    },
+    {
+      "path": "data/processed/mmseqs-symmetric-panel-probe.json",
+      "sha256": "e2fd80864e218ff82cc339fc1c4e1dda88ed3969b3ab1caa81922f7eaa66a838"
+    }
+  ],
+  "projection_symmetry": {
+    "training_projection": "Create an independent train_projection_db from the same normalized training.faa, then search it against train_db. No same-prefix training-self projection. Clustering still uses train_db only.",
+    "query_projection": "Ordinary query_db against the same frozen train_db with identical SEARCH option vectors.",
+    "vocabulary_boundary": "Fit from ordinary external training projections, including explicit missing-hit diagnostics; occurrence>1 training genome and occurrence-vector consolidation unchanged. Freeze after command6 before external query createdb command7.",
+    "control": "Compare every copied protein under ordinary external training/query projection: count same assigned family, both unassigned and assignment discrepancies separately. Require zero assignment discrepancies, complete unique comparison coverage and exact feature-vector equality. Matched absence is not successful family identification. Report nonzero status separately; empty vocabulary is ready_for_fitting=false. This new v3 contract never relabels a v1/v2 failure.",
+    "legacy_artifact_names": "self.tsv and best-self.json retain their filenames but now store ordinary external training projection, explicitly identified in the report.",
+    "unchanged": "Source/target rosters, group splits, masks, labels, model settings, RFE rules, baselines, endpoints, decision thresholds and study interpretation."
+  },
+  "v3_revision_reason": "Before any biological model fit: replace privileged training-self projection with ordinary external-query projection after the preserved v2 candidate-control failure and prospectively fixed focal/complete-copy diagnostics. Version the missing-assignment control contract explicitly. No phenotype-dependent selection or threshold adjustment."
+}

@@ -1,0 +1,249 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-08",
+  "status": "prospective_native_transfer_design_pending_complete_executable_manifest",
+  "biological_fit_or_scoring_authorized_by_this_file": false,
+  "purpose": "Fix final source-only training and native evaluation behavior before secondary biological scores exist",
+  "bound_inputs": [
+    {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-model-design-policy-v3.json",
+      "sha256": "4def30c6ca81a4388e5a3e82fe5b94cfdc75c35b13f4da4f2d3bff7e52857cca"
+    },
+    {
+      "path": "software/tipcraft/benchmarks/retro-t7-t3/next-method-contract.json",
+      "sha256": "58b3b57941cdc49396bcf604ff41521f135bbceb61a542aacc10b9613dd4275a"
+    },
+    {
+      "path": "software/tipcraft/benchmarks/retro-t7-t3/cases.csv",
+      "sha256": "716b09e3636c1d3c4653cac245bec7d7407c9a6a06eac08dcb5e353b0b0769c3"
+    },
+    {
+      "path": "software/tipcraft/benchmarks/retro-t7-t3/wish-inputs.json",
+      "sha256": "939af977b8c00763b957ad9640e58c68387a306f8bde69068cf4a78baac28528"
+    },
+    {
+      "path": "data/processed/genophi-annotation-check.json",
+      "sha256": "4618f08ac18ca4eb739f2b4b6ec5c23dd0798570f95e3f3182a8a6835a0459cf"
+    },
+    {
+      "path": "data/processed/wish/named/scores.json",
+      "sha256": "1f901cf3c8af386cb78ba3c9fcb7d8acdb3bad2195a0d1ba7b1258e627744699"
+    },
+    {
+      "path": "data/processed/secondary-features-host0-phage0-host.json",
+      "sha256": "76fbcb6abbe3342078b354881e59f2498296219bf74321e6bfae9d3ee9802f95"
+    },
+    {
+      "path": "data/processed/secondary-feature-mapping-control-diagnostic.json",
+      "sha256": "4c0c9f74366582df9e98c92bae0c282700b98f37fedc2dd34ff3ba83dc730d41"
+    },
+    {
+      "path": "data/processed/mmseqs-identity-mode-probe.json",
+      "sha256": "18d11f305c332f2337bef37b3ac8713acc79516142a51fb56ee590169b5698ae"
+    },
+    {
+      "path": "data/processed/mmseqs-control-panel-probe.json",
+      "sha256": "efb5dc6e0466e6ac899ce02448268dce3c628cb24b61c98ee5e05624c6705813"
+    }
+  ],
+  "source_training_rows": "All eligible observed BASEL-ECOR rows after frozen target/genotype exclusions; no outer test rows remain held out for this separately labelled final refit",
+  "source_final_features": "Refit separate host/phage vocabularies and scope-specific RFE on all and only admitted source training genomes; original target genomes projected into frozen source vocabularies; training proteins use ordinary external projection, retain and report unassigned proteins, and freeze vocabulary before native query preparation.",
+  "settings": "Same fixed settings, scope-specific K and weights as bound secondary design; no selection using source cross-validation performance or native outcomes",
+  "scopes": [
+    "paired",
+    "host_only",
+    "phage_only"
+  ],
+  "execute_if_source_cv_disappoints": true,
+  "invalid_prerequisite_behavior": "HOLD; no fallback data, annotation, feature parameters or split; no native accuracy-based repair",
+  "native_candidates": {
+    "phages": [
+      "T7",
+      "T3"
+    ],
+    "hosts": [
+      "BL21",
+      "BW25113",
+      "MG1655"
+    ]
+  },
+  "native_pairs_required": 6,
+  "exchange_construct_pairs_abstained": 4,
+  "target_labels_donor_identity_homolog_phenotype_used_for_fit_or_model_selection": false,
+  "technical_annotation_control_role": "Original-target proteomes may be query inputs for final inference only; never source vocabulary, occurrence consolidation, RFE, weights, calibration or fitting",
+  "score_boundary": "Freeze authenticated final feature maps, selected columns, all three model bundles and complete six-pair score manifest before evaluator reads native labels",
+  "comparison": "Original next-method contract and same-subset historical WIsH; report host-only/phage-only attribution and source CV result even if native ordering looks favorable",
+  "interpretation": "Native improvement alongside poor source validation cannot establish a generalizable strain-specific engine or override source NO-GO; six natural cases never become ten-case coverage; no binding/assembly capability inferred",
+  "native_query_proteomes": [
+    {
+      "source_id": "T7",
+      "kind": "phage",
+      "accession": "NC_001604.1",
+      "annotation_id": "p_t000",
+      "source_sequence_sha256": "00ce104454ea06f9b47d6fba8e62499bfbff7e84bc17141665b96a80588a81fd",
+      "predicted_proteins": 49,
+      "query_only": true,
+      "normalized_DNA": {
+        "path": "data/raw/genophi-annotation/run-1/p_t000/input.fna",
+        "sha256": "7823c9fd497d5ad69e17d42d9329acb7fa0c3d40a9ac4d242535dfd083fa9bf7"
+      },
+      "proteins": {
+        "path": "data/raw/genophi-annotation/run-1/p_t000/proteins.faa",
+        "sha256": "5626dfcaa7c3a75fd4f64558a0ce68e467bb49c97deddbc2824afdae4942c986"
+      },
+      "GFF": {
+        "path": "data/raw/genophi-annotation/run-1/p_t000/genes.gff",
+        "sha256": "2d6167f0d166e1f1350d1408199dd6811466c87180d4b156cf74e90029e24737"
+      }
+    },
+    {
+      "source_id": "T3",
+      "kind": "phage",
+      "accession": "NC_003298.1",
+      "annotation_id": "p_t001",
+      "source_sequence_sha256": "a53b31f426a5bf450257f4f1a5dc5ee625f70c8df85204eed8e0033e6fe0d338",
+      "predicted_proteins": 43,
+      "query_only": true,
+      "normalized_DNA": {
+        "path": "data/raw/genophi-annotation/run-1/p_t001/input.fna",
+        "sha256": "21f85f3ca2350a8c5952fcd3d89b01c49b15029368943dc4c0d0c2122343f2ae"
+      },
+      "proteins": {
+        "path": "data/raw/genophi-annotation/run-1/p_t001/proteins.faa",
+        "sha256": "9fa94e6899e1761991f9bc0e4d4b2490e0be336758516dbab58a75b58a7e567b"
+      },
+      "GFF": {
+        "path": "data/raw/genophi-annotation/run-1/p_t001/genes.gff",
+        "sha256": "70be0460354dc6768f1ca9846777ba619efceeb66777e4bd149936081f3e72de"
+      }
+    },
+    {
+      "source_id": "BL21",
+      "kind": "host",
+      "accession": "CP010816.1",
+      "annotation_id": "h_t000",
+      "source_sequence_sha256": "669a5120ac4305418137e69b37e85d8c5c099908b4f49f212d78effa6455fff9",
+      "predicted_proteins": 4234,
+      "query_only": true,
+      "normalized_DNA": {
+        "path": "data/raw/genophi-annotation/run-1/h_t000/input.fna",
+        "sha256": "c32db8dc23aeb3b000b40cc337103bd72c3a9e82dd0da9de236b8778315e6242"
+      },
+      "proteins": {
+        "path": "data/raw/genophi-annotation/run-1/h_t000/proteins.faa",
+        "sha256": "ca283d9fcab37135334a334b405221d4083ad547c10e31a9e4e802a52e135699"
+      },
+      "GFF": {
+        "path": "data/raw/genophi-annotation/run-1/h_t000/genes.gff",
+        "sha256": "2dbdd4227d91b84843eb6137167f447542ff1c3a46b9f5eb06ea570020dac16a"
+      }
+    },
+    {
+      "source_id": "BW25113",
+      "kind": "host",
+      "accession": "CP009273.1",
+      "annotation_id": "h_t001",
+      "source_sequence_sha256": "3761072f8884add5e9facdafc583de5d81a4cf5dbc7e51023ba966f3cf4887ce",
+      "predicted_proteins": 4314,
+      "query_only": true,
+      "normalized_DNA": {
+        "path": "data/raw/genophi-annotation/run-1/h_t001/input.fna",
+        "sha256": "32da2e2bd6d941cc8d3b9d5b6e7f92a831001eff3540b24080d1400da36475e3"
+      },
+      "proteins": {
+        "path": "data/raw/genophi-annotation/run-1/h_t001/proteins.faa",
+        "sha256": "62c2d853f6ea4c21a59433ec13ed9079937227834756c2a83ac8c60faa2c9c5d"
+      },
+      "GFF": {
+        "path": "data/raw/genophi-annotation/run-1/h_t001/genes.gff",
+        "sha256": "1bf1fae9e09027fcf8f145163529b407b992f1447d195276b5e4b7c5076186b8"
+      }
+    },
+    {
+      "source_id": "MG1655",
+      "kind": "host",
+      "accession": "U00096.3",
+      "annotation_id": "h_t002",
+      "source_sequence_sha256": "e999dceccb76562d40e49a10d9e6d4cf1c05d184f4f80b92bb32d4a2420c11d0",
+      "predicted_proteins": 4319,
+      "query_only": true,
+      "normalized_DNA": {
+        "path": "data/raw/genophi-annotation/run-1/h_t002/input.fna",
+        "sha256": "284b593aab98308ce62c3e8fca1d738149663c8cedf1f791bef31382db9e3782"
+      },
+      "proteins": {
+        "path": "data/raw/genophi-annotation/run-1/h_t002/proteins.faa",
+        "sha256": "c253fff8298229a782b6bb81f1666d9d09cd2b80389ffc027aabdd2790a4fcc0"
+      },
+      "GFF": {
+        "path": "data/raw/genophi-annotation/run-1/h_t002/genes.gff",
+        "sha256": "f0690b903a164a3c72acb1e7dc0dbc717424be25b80fdf9b3be18957e6f2a757"
+      }
+    }
+  ],
+  "native_proteome_inventory_verified": {
+    "genomes": 5,
+    "predicted_proteins": 12959,
+    "input_DNA_FAA_GFF_hashes_rechecked": true,
+    "matches_original_WIsH_reference_sequence_hashes": true,
+    "gene_callers_rerun": false,
+    "independent_DNA_retranslation_claimed": false
+  },
+  "prospective_attribution_interpretation": "Paired concordance above a separately fitted host-only model is an ablation-screen difference, not proof that the paired model learned phage-conditional host ordering. Existing source screen keys and thresholds remain unchanged for compatibility; inspect within-model query variation and representation limits separately.",
+  "policy_revision": 3,
+  "parent_v1": {
+    "path": "software/tipcraft/benchmarks/receptor-resource/secondary-native-transfer-design-policy.json",
+    "sha256": "78dbabbb29740951e12c2669228a604d41b7ecfa882a384d1f96f7c30b437bd0"
+  },
+  "revision_inputs": {
+    "failed_v1_feature_report": {
+      "path": "data/processed/secondary-features-host0-phage0-host.json",
+      "sha256": "76fbcb6abbe3342078b354881e59f2498296219bf74321e6bfae9d3ee9802f95"
+    },
+    "focal_artifact_diagnostic": {
+      "path": "data/processed/secondary-feature-mapping-control-diagnostic.json",
+      "sha256": "4c0c9f74366582df9e98c92bae0c282700b98f37fedc2dd34ff3ba83dc730d41"
+    },
+    "focal_mode_probe": {
+      "path": "data/processed/mmseqs-identity-mode-probe.json",
+      "sha256": "18d11f305c332f2337bef37b3ac8713acc79516142a51fb56ee590169b5698ae"
+    },
+    "complete_copy_mode3_probe": {
+      "path": "data/processed/mmseqs-control-panel-probe.json",
+      "sha256": "efb5dc6e0466e6ac899ce02448268dce3c628cb24b61c98ee5e05624c6705813"
+    }
+  },
+  "revision_reason": "Before any biological model fit: replace privileged training-self projection with ordinary external-query projection after the preserved v2 candidate-control failure and prospectively fixed focal/complete-copy diagnostics. Version the missing-assignment control contract explicitly. No phenotype-dependent selection or threshold adjustment.",
+  "identity_semantics": "Only the two SEARCH commands request --alignment-mode 3: aligned-residue sequence identity is computed for their --min-seq-id 0.4 criterion and downstream hit ranking, under unchanged seq-id/coverage defaults. Clustering retains its original --min-seq-id 0.4 score-based estimated-similarity parameter/default behavior; this is not an assertion of exact-identity clustering or exhaustive homology detection.",
+  "parent_v2": {
+    "path": "software/tipcraft/benchmarks/receptor-resource/secondary-native-transfer-design-policy-v2.json",
+    "sha256": "8bc99479d2b3031f86d4951ef04bae646e787539fde723081656c1575a4c1c6e"
+  },
+  "v3_revision_inputs": [
+    {
+      "path": "data/processed/secondary-features-v2-host1-phage0-host.json",
+      "sha256": "a9ef498e2544b815bc789d3e6004ee61400b8709462a1673395556fda7ba7de3"
+    },
+    {
+      "path": "data/processed/secondary-feature-v2-prefilter-failure-audit.json",
+      "sha256": "30960cbd073bedddc84e912f6baa1ec80ed35b324b9ec3710428c399eb36f9fa"
+    },
+    {
+      "path": "data/processed/mmseqs-external-projection-probe.json",
+      "sha256": "f8e81e279f1590a5c932f21d5b400fdf3859eeaa7a2ef70673100f719a33b8df"
+    },
+    {
+      "path": "data/processed/mmseqs-symmetric-panel-probe.json",
+      "sha256": "e2fd80864e218ff82cc339fc1c4e1dda88ed3969b3ab1caa81922f7eaa66a838"
+    }
+  ],
+  "projection_symmetry": {
+    "training_projection": "Create an independent train_projection_db from the same normalized training.faa, then search it against train_db. No same-prefix training-self projection. Clustering still uses train_db only.",
+    "query_projection": "Ordinary query_db against the same frozen train_db with identical SEARCH option vectors.",
+    "vocabulary_boundary": "Fit from ordinary external training projections, including explicit missing-hit diagnostics; occurrence>1 training genome and occurrence-vector consolidation unchanged. Freeze after command6 before external query createdb command7.",
+    "control": "Compare every copied protein under ordinary external training/query projection: count same assigned family, both unassigned and assignment discrepancies separately. Require zero assignment discrepancies, complete unique comparison coverage and exact feature-vector equality. Matched absence is not successful family identification. Report nonzero status separately; empty vocabulary is ready_for_fitting=false. This new v3 contract never relabels a v1/v2 failure.",
+    "legacy_artifact_names": "self.tsv and best-self.json retain their filenames but now store ordinary external training projection, explicitly identified in the report.",
+    "unchanged": "Source/target rosters, group splits, masks, labels, model settings, RFE rules, baselines, endpoints, decision thresholds and study interpretation."
+  },
+  "v3_revision_reason": "Before any biological model fit: replace privileged training-self projection with ordinary external-query projection after the preserved v2 candidate-control failure and prospectively fixed focal/complete-copy diagnostics. Version the missing-assignment control contract explicitly. No phenotype-dependent selection or threshold adjustment."
+}

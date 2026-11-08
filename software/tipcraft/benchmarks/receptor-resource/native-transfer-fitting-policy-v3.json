@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-11-08",
+  "status": "prospective_final_source_native_fitter_pending_actual_inputs",
+  "helper_sha256": "e4bc7e8c539f1f24fc6da99134f35606a2425efcafe7c249a36b2f36dc14eaf7",
+  "inputs": {
+    "native_design": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-native-transfer-design-policy-v3.json",
+      "sha256": "1c80503733eccd75e6c926299c29cc17a8ed9128b2e59fa1d0603f5d9fd67141"
+    },
+    "design": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-model-design-policy-v3.json",
+      "sha256": "4def30c6ca81a4388e5a3e82fe5b94cfdc75c35b13f4da4f2d3bff7e52857cca"
+    },
+    "panel_helper": {
+      "path": "scripts/prepare-secondary-panel.py",
+      "sha256": "9e19f19538cfa6f52d73d9cc0714a9e917753d0d7484e6c025267e4cf0ab8932"
+    },
+    "panel_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-panel-policy.json",
+      "sha256": "89ece08e66aee4d1a914a798ffdf0f7dd6d310a1d6e8f82d4be294643fdef543"
+    },
+    "source_fitter": {
+      "path": "scripts/fit-secondary-block.py",
+      "sha256": "078e2676b805a02cee1d9372235d9187ab17624ec101462b7d1dd21fa8de47c2"
+    },
+    "source_fitting_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-fitting-policy-v3.json",
+      "sha256": "193423a43f773442178de0aa60784818b93429507c87f1549ba74157e2626db6"
+    },
+    "source_evaluator": {
+      "path": "scripts/evaluate-secondary-scores.py",
+      "sha256": "be46663f98748537c470ad04d0321f62e88671da6c2a45193347921aabb4e82f"
+    },
+    "source_evaluation_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/secondary-evaluation-policy-v3.json",
+      "sha256": "0deab5cc4c20915ed8374286ddbbbced8349b9a1d469dc70dfb562c62b378f85"
+    },
+    "native_feature_helper": {
+      "path": "scripts/prepare-native-transfer-features-v3.py",
+      "sha256": "a1f90a7eb0b3ead0e577f6b902ae63b8dd049169573e4fc6175e3de6b260d994"
+    },
+    "native_feature_policy": {
+      "path": "software/tipcraft/benchmarks/receptor-resource/native-transfer-feature-policy-v3.json",
+      "sha256": "a6a99e979952202f151e400cf375f8eda4071f41ad394a1154be5b6d9acc8007"
+    },
+    "learning": {
+      "path": "software/tipcraft/src/tipcraft/learning.py",
+      "sha256": "a9c6bafc896c72584ff8a5e6a286a20563f6698468d9a9c2d81dd42f0185bcb5"
+    },
+    "runtime_lock": {
+      "path": "software/tipcraft/experiments/learning/uv.lock",
+      "sha256": "fbeda0630d21b8bc27631be9bd826564f498ca27907cb83355ecd0966e59ae0e"
+    },
+    "revision_failed_v1_feature_report": {
+      "path": "data/processed/secondary-features-host0-phage0-host.json",
+      "sha256": "76fbcb6abbe3342078b354881e59f2498296219bf74321e6bfae9d3ee9802f95"
+    },
+    "revision_focal_artifact_diagnostic": {
+      "path": "data/processed/secondary-feature-mapping-control-diagnostic.json",
+      "sha256": "4c0c9f74366582df9e98c92bae0c282700b98f37fedc2dd34ff3ba83dc730d41"
+    },
+    "revision_focal_mode_probe": {
+      "path": "data/processed/mmseqs-identity-mode-probe.json",
+      "sha256": "18d11f305c332f2337bef37b3ac8713acc79516142a51fb56ee590169b5698ae"
+    },
+    "revision_complete_copy_mode3_probe": {
+      "path": "data/processed/mmseqs-control-panel-probe.json",
+      "sha256": "efb5dc6e0466e6ac899ce02448268dce3c628cb24b61c98ee5e05624c6705813"
+    },
+    "v3_revision_0": {
+      "path": "data/processed/secondary-features-v2-host1-phage0-host.json",
+      "sha256": "a9ef498e2544b815bc789d3e6004ee61400b8709462a1673395556fda7ba7de3"
+    },
+    "v3_revision_1": {
+      "path": "data/processed/secondary-feature-v2-prefilter-failure-audit.json",
+      "sha256": "30960cbd073bedddc84e912f6baa1ec80ed35b324b9ec3710428c399eb36f9fa"
+    },
+    "v3_revision_2": {
+      "path": "data/processed/mmseqs-external-projection-probe.json",
+      "sha256": "f8e81e279f1590a5c932f21d5b400fdf3859eeaa7a2ef70673100f719a33b8df"
+    },
+    "v3_revision_3": {
+      "path": "data/processed/mmseqs-symmetric-panel-probe.json",
+      "sha256": "e2fd80864e218ff82cc339fc1c4e1dda88ed3969b3ab1caa81922f7eaa66a838"
+    }
+  },
+  "runtime": {
+    "python": "3.12.5",
+    "packages": {
+      "catboost": "1.2.7",
+      "numpy": "1.26.4",
+      "scikit-learn": "1.5.2",
+      "pandas": "2.2.2",
+      "scipy": "1.14.1"
+    }
+  },
+  "mode": "final_source_native_transfer; distinct from outer cross-validation",
+  "source_training": "All and only observed admitted source rows after fixed genotype exclusions; no target labels or donor phenotypes",
+  "source_evaluation_prerequisite": "Complete nine-block matched source evaluation for the same panel; require execution/coverage validity, not a favorable screen. Negative source performance cannot select new settings or prevent the prespecified native diagnostic.",
+  "group_validation": "Measured original host and reference:T7/T3 groups from the same bound grouping reports; both-unseen plus publication holdout",
+  "settings": "Bound source design fixed settings and per-scope feature cap; no source-CV or native performance tuning",
+  "scopes": [
+    "paired",
+    "host_only",
+    "phage_only"
+  ],
+  "query_pairs": 6,
+  "exchange_construct_pairs_abstained": 4,
+  "inference_boundary": "All three source-only bundle manifests frozen before native scoring; complete six-pair matrices saved before separate native-label evaluation",
+  "label_access": "Fitter does not parse Ando cases or historical WIsH scores. Source labels are selected only for admitted training Sample rows.",
+  "failure": "Preserve partial artifacts and failed-attempt receipt; no automatic retry or source/parameter repair",
+  "biological_execution_performed_at_policy_freeze": false,
+  "interpretation": "Whole-proteome association scores, uncalibrated; no binding, receptor causality, assembly, design or orderable DNA capability",
+  "prospective_attribution_interpretation": "Paired concordance above a separately fitted host-only model is an ablation-screen difference, not proof that the paired model learned phage-conditional host ordering. Existing source screen keys and thresholds remain unchanged for compatibility; inspect within-model query variation and representation limits separately.",
+  "policy_revision": 3,
+  "parent_v1": {
+    "path": "software/tipcraft/benchmarks/receptor-resource/native-transfer-fitting-policy.json",
+    "sha256": "39af4698ec2bb65ec18755ca9795829ad197b885229ffadfd62e515231872e62"
+  },
+  "revision_inputs": {
+    "failed_v1_feature_report": {
+      "path": "data/processed/secondary-features-host0-phage0-host.json",
+      "sha256": "76fbcb6abbe3342078b354881e59f2498296219bf74321e6bfae9d3ee9802f95"
+    },
+    "focal_artifact_diagnostic": {
+      "path": "data/processed/secondary-feature-mapping-control-diagnostic.json",
+      "sha256": "4c0c9f74366582df9e98c92bae0c282700b98f37fedc2dd34ff3ba83dc730d41"
+    },
+    "focal_mode_probe": {
+      "path": "data/processed/mmseqs-identity-mode-probe.json",
+      "sha256": "18d11f305c332f2337bef37b3ac8713acc79516142a51fb56ee590169b5698ae"
+    },
+    "complete_copy_mode3_probe": {
+      "path": "data/processed/mmseqs-control-panel-probe.json",
+      "sha256": "efb5dc6e0466e6ac899ce02448268dce3c628cb24b61c98ee5e05624c6705813"
+    }
+  },
+  "revision_reason": "Before any biological model fit: replace privileged training-self projection with ordinary external-query projection after the preserved v2 candidate-control failure and prospectively fixed focal/complete-copy diagnostics. Version the missing-assignment control contract explicitly. No phenotype-dependent selection or threshold adjustment.",
+  "identity_semantics": "Only the two SEARCH commands request --alignment-mode 3: aligned-residue sequence identity is computed for their --min-seq-id 0.4 criterion and downstream hit ranking, under unchanged seq-id/coverage defaults. Clustering retains its original --min-seq-id 0.4 score-based estimated-similarity parameter/default behavior; this is not an assertion of exact-identity clustering or exhaustive homology detection.",
+  "parent_v2": {
+    "path": "software/tipcraft/benchmarks/receptor-resource/native-transfer-fitting-policy-v2.json",
+    "sha256": "9a4e1acefac190650de1a96a75af152de9ef9e3eb39060ddbb86ee7ba4b72e6f"
+  },
+  "v3_revision_inputs": [
+    {
+      "path": "data/processed/secondary-features-v2-host1-phage0-host.json",
+      "sha256": "a9ef498e2544b815bc789d3e6004ee61400b8709462a1673395556fda7ba7de3"
+    },
+    {
+      "path": "data/processed/secondary-feature-v2-prefilter-failure-audit.json",
+      "sha256": "30960cbd073bedddc84e912f6baa1ec80ed35b324b9ec3710428c399eb36f9fa"
+    },
+    {
+      "path": "data/processed/mmseqs-external-projection-probe.json",
+      "sha256": "f8e81e279f1590a5c932f21d5b400fdf3859eeaa7a2ef70673100f719a33b8df"
+    },
+    {
+      "path": "data/processed/mmseqs-symmetric-panel-probe.json",
+      "sha256": "e2fd80864e218ff82cc339fc1c4e1dda88ed3969b3ab1caa81922f7eaa66a838"
+    }
+  ],
+  "projection_symmetry": {
+    "training_projection": "Create an independent train_projection_db from the same normalized training.faa, then search it against train_db. No same-prefix training-self projection. Clustering still uses train_db only.",
+    "query_projection": "Ordinary query_db against the same frozen train_db with identical SEARCH option vectors.",
+    "vocabulary_boundary": "Fit from ordinary external training projections, including explicit missing-hit diagnostics; occurrence>1 training genome and occurrence-vector consolidation unchanged. Freeze after command6 before external query createdb command7.",
+    "control": "Compare every copied protein under ordinary external training/query projection: count same assigned family, both unassigned and assignment discrepancies separately. Require zero assignment discrepancies, complete unique comparison coverage and exact feature-vector equality. Matched absence is not successful family identification. Report nonzero status separately; empty vocabulary is ready_for_fitting=false. This new v3 contract never relabels a v1/v2 failure.",
+    "legacy_artifact_names": "self.tsv and best-self.json retain their filenames but now store ordinary external training projection, explicitly identified in the report.",
+    "unchanged": "Source/target rosters, group splits, masks, labels, model settings, RFE rules, baselines, endpoints, decision thresholds and study interpretation."
+  },
+  "v3_revision_reason": "Before any biological model fit: replace privileged training-self projection with ordinary external-query projection after the preserved v2 candidate-control failure and prospectively fixed focal/complete-copy diagnostics. Version the missing-assignment control contract explicitly. No phenotype-dependent selection or threshold adjustment."
+}

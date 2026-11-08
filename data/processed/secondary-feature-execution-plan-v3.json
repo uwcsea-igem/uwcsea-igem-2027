@@ -1,0 +1,753 @@
+{
+  "schema_version": 1,
+  "status": "frozen_v3_secondary_feature_execution_plan",
+  "recorded_utc": "2026-11-08T13:27:55.652622+00:00",
+  "panel": {
+    "path": "data/processed/secondary-reference-panel.json",
+    "sha256": "2dddb92bd5022d3cd38f3a99a6d8a47537378d713b0410311ef50ff224945d73"
+  },
+  "producer": {
+    "path": "scripts/prepare-secondary-features-v3.py",
+    "sha256": "7d4f0d6b1991097edaeb53d0881e018ed4c80c965a3e906d3ccc8ab547e3a309"
+  },
+  "feature_policy": {
+    "path": "software/tipcraft/benchmarks/receptor-resource/secondary-feature-policy-v3.json",
+    "sha256": "d90194b4cc07d87124e021de934a975e44ca7ddbac9606e570dbbab060c271cd"
+  },
+  "parent_v2_plan": {
+    "path": "data/processed/secondary-feature-execution-plan-v2.json",
+    "sha256": "296a1426b86bfc5a2f9704bd1a7eda15a3e27e43c2711e1d63117be234c367fe"
+  },
+  "jobs": [
+    {
+      "id": "host1-phage0-host",
+      "block_id": "host1-phage0",
+      "axis": "host",
+      "argv": [
+        "uv",
+        "run",
+        "--project",
+        "software/tipcraft",
+        "python",
+        "scripts/prepare-secondary-features-v3.py",
+        "--policy",
+        "software/tipcraft/benchmarks/receptor-resource/secondary-feature-policy-v3.json",
+        "--panel",
+        "data/processed/secondary-reference-panel.json",
+        "--expected-panel-sha256",
+        "2dddb92bd5022d3cd38f3a99a6d8a47537378d713b0410311ef50ff224945d73",
+        "--block-id",
+        "host1-phage0",
+        "--axis",
+        "host",
+        "--workdir",
+        "data/raw/genophi-external-validation/secondary-features-v3/host1-phage0/host",
+        "--output",
+        "data/processed/secondary-features-v3-host1-phage0-host.json"
+      ],
+      "pre_execution_plan": {
+        "path": "data/raw/genophi-external-validation/secondary-feature-batch-v3/plans/host1-phage0-host.json",
+        "sha256": "d09b7fd34a74aef8e7923c94c13e0f1c3afc0fb8bcdd90b3ab074d020d4d592d"
+      },
+      "normalized_sha256": {
+        "training.faa": "ad25571e5f884d07ba55bd52e02ac1835e04a4162ff100492555bea944499641",
+        "queries.faa": "db4c28e76be01cc685270c4443acd0b704ddcc8dc6058a5c3ed817f7a7847dc9",
+        "protein-map.json": "ab7e1e96094b3eb0d94f6d569d118a14b297e44034fbb7900da3240fb1ad16d1"
+      },
+      "output": "data/processed/secondary-features-v3-host1-phage0-host.json",
+      "log": "data/raw/genophi-external-validation/secondary-feature-batch-v3/host1-phage0-host.log"
+    },
+    {
+      "id": "host0-phage0-host",
+      "block_id": "host0-phage0",
+      "axis": "host",
+      "argv": [
+        "uv",
+        "run",
+        "--project",
+        "software/tipcraft",
+        "python",
+        "scripts/prepare-secondary-features-v3.py",
+        "--policy",
+        "software/tipcraft/benchmarks/receptor-resource/secondary-feature-policy-v3.json",
+        "--panel",
+        "data/processed/secondary-reference-panel.json",
+        "--expected-panel-sha256",
+        "2dddb92bd5022d3cd38f3a99a6d8a47537378d713b0410311ef50ff224945d73",
+        "--block-id",
+        "host0-phage0",
+        "--axis",
+        "host",
+        "--workdir",
+        "data/raw/genophi-external-validation/secondary-features-v3/host0-phage0/host",
+        "--output",
+        "data/processed/secondary-features-v3-host0-phage0-host.json"
+      ],
+      "pre_execution_plan": {
+        "path": "data/raw/genophi-external-validation/secondary-feature-batch-v3/plans/host0-phage0-host.json",
+        "sha256": "011f866890849145cc9d5f082368e84176e1a25971b4fbf8023750b95b1d8aff"
+      },
+      "normalized_sha256": {
+        "training.faa": "99c0784ec41c137ac102e6413bffeb0ffd0977b34c4dc61e5d8ac6bb7ae690b2",
+        "queries.faa": "81984635c09993fec91cbe7727094fe3e1ef15dada6397bac150afd44db3a1d2",
+        "protein-map.json": "03d0a6e1a495fd8ec4e76bd99a50cee5318dacc05965f7d357b108c460ee845a"
+      },
+      "output": "data/processed/secondary-features-v3-host0-phage0-host.json",
+      "log": "data/raw/genophi-external-validation/secondary-feature-batch-v3/host0-phage0-host.log"
+    },
+    {
+      "id": "host0-phage0-phage",
+      "block_id": "host0-phage0",
+      "axis": "phage",
+      "argv": [
+        "uv",
+        "run",
+        "--project",
+        "software/tipcraft",
+        "python",
+        "scripts/prepare-secondary-features-v3.py",
+        "--policy",
+        "software/tipcraft/benchmarks/receptor-resource/secondary-feature-policy-v3.json",
+        "--panel",
+        "data/processed/secondary-reference-panel.json",
+        "--expected-panel-sha256",
+        "2dddb92bd5022d3cd38f3a99a6d8a47537378d713b0410311ef50ff224945d73",
+        "--block-id",
+        "host0-phage0",
+        "--axis",
+        "phage",
+        "--workdir",
+        "data/raw/genophi-external-validation/secondary-features-v3/host0-phage0/phage",
+        "--output",
+        "data/processed/secondary-features-v3-host0-phage0-phage.json"
+      ],
+      "pre_execution_plan": {
+        "path": "data/raw/genophi-external-validation/secondary-feature-batch-v3/plans/host0-phage0-phage.json",
+        "sha256": "c6fc5d689e804e3d6bf94a3fe60d4e6807124310c1270b13730438663d0347d7"
+      },
+      "normalized_sha256": {
+        "training.faa": "8ae3897fe6409616eb9b064ac9d31d6fb691c5b19579994f1a4ac4d593ef0b75",
+        "queries.faa": "69342c515102b0fe4828ca196d02e92f362d7055dabb3d4de1d23adc41d2dd3b",
+        "protein-map.json": "17cbf4ea3c4ca4c1e87e04cbaae5d9665a17c2a4c63873d09088ecb5417855de"
+      },
+      "output": "data/processed/secondary-features-v3-host0-phage0-phage.json",
+      "log": "data/raw/genophi-external-validation/secondary-feature-batch-v3/host0-phage0-phage.log"
+    },
+    {
+      "id": "host0-phage1-host",
+      "block_id": "host0-phage1",
+      "axis": "host",
+      "argv": [
+        "uv",
+        "run",
+        "--project",
+        "software/tipcraft",
+        "python",
+        "scripts/prepare-secondary-features-v3.py",
+        "--policy",
+        "software/tipcraft/benchmarks/receptor-resource/secondary-feature-policy-v3.json",
+        "--panel",
+        "data/processed/secondary-reference-panel.json",
+        "--expected-panel-sha256",
+        "2dddb92bd5022d3cd38f3a99a6d8a47537378d713b0410311ef50ff224945d73",
+        "--block-id",
+        "host0-phage1",
+        "--axis",
+        "host",
+        "--workdir",
+        "data/raw/genophi-external-validation/secondary-features-v3/host0-phage1/host",
+        "--output",
+        "data/processed/secondary-features-v3-host0-phage1-host.json"
+      ],
+      "pre_execution_plan": {
+        "path": "data/raw/genophi-external-validation/secondary-feature-batch-v3/plans/host0-phage1-host.json",
+        "sha256": "70bc2c021c73b3e7e4b38fe0c854a76605784c71e16e6da2f82e5fac5b8d779e"
+      },
+      "normalized_sha256": {
+        "training.faa": "99c0784ec41c137ac102e6413bffeb0ffd0977b34c4dc61e5d8ac6bb7ae690b2",
+        "queries.faa": "81984635c09993fec91cbe7727094fe3e1ef15dada6397bac150afd44db3a1d2",
+        "protein-map.json": "03d0a6e1a495fd8ec4e76bd99a50cee5318dacc05965f7d357b108c460ee845a"
+      },
+      "output": "data/processed/secondary-features-v3-host0-phage1-host.json",
+      "log": "data/raw/genophi-external-validation/secondary-feature-batch-v3/host0-phage1-host.log"
+    },
+    {
+      "id": "host0-phage1-phage",
+      "block_id": "host0-phage1",
+      "axis": "phage",
+      "argv": [
+        "uv",
+        "run",
+        "--project",
+        "software/tipcraft",
+        "python",
+        "scripts/prepare-secondary-features-v3.py",
+        "--policy",
+        "software/tipcraft/benchmarks/receptor-resource/secondary-feature-policy-v3.json",
+        "--panel",
+        "data/processed/secondary-reference-panel.json",
+        "--expected-panel-sha256",
+        "2dddb92bd5022d3cd38f3a99a6d8a47537378d713b0410311ef50ff224945d73",
+        "--block-id",
+        "host0-phage1",
+        "--axis",
+        "phage",
+        "--workdir",
+        "data/raw/genophi-external-validation/secondary-features-v3/host0-phage1/phage",
+        "--output",
+        "data/processed/secondary-features-v3-host0-phage1-phage.json"
+      ],
+      "pre_execution_plan": {
+        "path": "data/raw/genophi-external-validation/secondary-feature-batch-v3/plans/host0-phage1-phage.json",
+        "sha256": "0858a74381aae90030e7733cc0cac974948dea138f083f2b20e2f3b6c0e81ca5"
+      },
+      "normalized_sha256": {
+        "training.faa": "f09a2b364938217d08c9af31fa413a426f7b28c75e0634ed7a2029726c1594d3",
+        "queries.faa": "7232724594c5f872976f4f37fac4598eef15f6654afd744bd41d9611ced083d6",
+        "protein-map.json": "ddea7f9743963a0fede242fdbc4fe9a2b40cad597d754012ecf5d83389fb6e86"
+      },
+      "output": "data/processed/secondary-features-v3-host0-phage1-phage.json",
+      "log": "data/raw/genophi-external-validation/secondary-feature-batch-v3/host0-phage1-phage.log"
+    },
+    {
+      "id": "host0-phage2-host",
+      "block_id": "host0-phage2",
+      "axis": "host",
+      "argv": [
+        "uv",
+        "run",
+        "--project",
+        "software/tipcraft",
+        "python",
+        "scripts/prepare-secondary-features-v3.py",
+        "--policy",
+        "software/tipcraft/benchmarks/receptor-resource/secondary-feature-policy-v3.json",
+        "--panel",
+        "data/processed/secondary-reference-panel.json",
+        "--expected-panel-sha256",
+        "2dddb92bd5022d3cd38f3a99a6d8a47537378d713b0410311ef50ff224945d73",
+        "--block-id",
+        "host0-phage2",
+        "--axis",
+        "host",
+        "--workdir",
+        "data/raw/genophi-external-validation/secondary-features-v3/host0-phage2/host",
+        "--output",
+        "data/processed/secondary-features-v3-host0-phage2-host.json"
+      ],
+      "pre_execution_plan": {
+        "path": "data/raw/genophi-external-validation/secondary-feature-batch-v3/plans/host0-phage2-host.json",
+        "sha256": "9c939b39946b8b3258b166aea956b97efa4c39b00eded3d65aaefd28ff55642a"
+      },
+      "normalized_sha256": {
+        "training.faa": "99c0784ec41c137ac102e6413bffeb0ffd0977b34c4dc61e5d8ac6bb7ae690b2",
+        "queries.faa": "81984635c09993fec91cbe7727094fe3e1ef15dada6397bac150afd44db3a1d2",
+        "protein-map.json": "03d0a6e1a495fd8ec4e76bd99a50cee5318dacc05965f7d357b108c460ee845a"
+      },
+      "output": "data/processed/secondary-features-v3-host0-phage2-host.json",
+      "log": "data/raw/genophi-external-validation/secondary-feature-batch-v3/host0-phage2-host.log"
+    },
+    {
+      "id": "host0-phage2-phage",
+      "block_id": "host0-phage2",
+      "axis": "phage",
+      "argv": [
+        "uv",
+        "run",
+        "--project",
+        "software/tipcraft",
+        "python",
+        "scripts/prepare-secondary-features-v3.py",
+        "--policy",
+        "software/tipcraft/benchmarks/receptor-resource/secondary-feature-policy-v3.json",
+        "--panel",
+        "data/processed/secondary-reference-panel.json",
+        "--expected-panel-sha256",
+        "2dddb92bd5022d3cd38f3a99a6d8a47537378d713b0410311ef50ff224945d73",
+        "--block-id",
+        "host0-phage2",
+        "--axis",
+        "phage",
+        "--workdir",
+        "data/raw/genophi-external-validation/secondary-features-v3/host0-phage2/phage",
+        "--output",
+        "data/processed/secondary-features-v3-host0-phage2-phage.json"
+      ],
+      "pre_execution_plan": {
+        "path": "data/raw/genophi-external-validation/secondary-feature-batch-v3/plans/host0-phage2-phage.json",
+        "sha256": "1318a85bccc8fed6f01a59b98624c7e70cb8b96e682f9db163354f6a96833ab1"
+      },
+      "normalized_sha256": {
+        "training.faa": "27b43dc9c190b67d2157b74819b7ef873c077ea1c7f5dbb1e99d38a43efa3cd6",
+        "queries.faa": "0ae30ac34ea2b1a1882e9f9675b6ab0e3a4a0dd89ebbede70352d01dde6b2403",
+        "protein-map.json": "ae73032c6388f6bc5f7b53920bfa5e45cad13a4b797dad5308c1d2b5322080a1"
+      },
+      "output": "data/processed/secondary-features-v3-host0-phage2-phage.json",
+      "log": "data/raw/genophi-external-validation/secondary-feature-batch-v3/host0-phage2-phage.log"
+    },
+    {
+      "id": "host1-phage0-phage",
+      "block_id": "host1-phage0",
+      "axis": "phage",
+      "argv": [
+        "uv",
+        "run",
+        "--project",
+        "software/tipcraft",
+        "python",
+        "scripts/prepare-secondary-features-v3.py",
+        "--policy",
+        "software/tipcraft/benchmarks/receptor-resource/secondary-feature-policy-v3.json",
+        "--panel",
+        "data/processed/secondary-reference-panel.json",
+        "--expected-panel-sha256",
+        "2dddb92bd5022d3cd38f3a99a6d8a47537378d713b0410311ef50ff224945d73",
+        "--block-id",
+        "host1-phage0",
+        "--axis",
+        "phage",
+        "--workdir",
+        "data/raw/genophi-external-validation/secondary-features-v3/host1-phage0/phage",
+        "--output",
+        "data/processed/secondary-features-v3-host1-phage0-phage.json"
+      ],
+      "pre_execution_plan": {
+        "path": "data/raw/genophi-external-validation/secondary-feature-batch-v3/plans/host1-phage0-phage.json",
+        "sha256": "80f26e501a027659284b50c26148904fa92a73ba68d5769a0f04743ac825d7c0"
+      },
+      "normalized_sha256": {
+        "training.faa": "8ae3897fe6409616eb9b064ac9d31d6fb691c5b19579994f1a4ac4d593ef0b75",
+        "queries.faa": "69342c515102b0fe4828ca196d02e92f362d7055dabb3d4de1d23adc41d2dd3b",
+        "protein-map.json": "17cbf4ea3c4ca4c1e87e04cbaae5d9665a17c2a4c63873d09088ecb5417855de"
+      },
+      "output": "data/processed/secondary-features-v3-host1-phage0-phage.json",
+      "log": "data/raw/genophi-external-validation/secondary-feature-batch-v3/host1-phage0-phage.log"
+    },
+    {
+      "id": "host1-phage1-host",
+      "block_id": "host1-phage1",
+      "axis": "host",
+      "argv": [
+        "uv",
+        "run",
+        "--project",
+        "software/tipcraft",
+        "python",
+        "scripts/prepare-secondary-features-v3.py",
+        "--policy",
+        "software/tipcraft/benchmarks/receptor-resource/secondary-feature-policy-v3.json",
+        "--panel",
+        "data/processed/secondary-reference-panel.json",
+        "--expected-panel-sha256",
+        "2dddb92bd5022d3cd38f3a99a6d8a47537378d713b0410311ef50ff224945d73",
+        "--block-id",
+        "host1-phage1",
+        "--axis",
+        "host",
+        "--workdir",
+        "data/raw/genophi-external-validation/secondary-features-v3/host1-phage1/host",
+        "--output",
+        "data/processed/secondary-features-v3-host1-phage1-host.json"
+      ],
+      "pre_execution_plan": {
+        "path": "data/raw/genophi-external-validation/secondary-feature-batch-v3/plans/host1-phage1-host.json",
+        "sha256": "fdf2698aa97720c92070c72b9ce1209680662f3657e1bb63c7de3c2470c3400d"
+      },
+      "normalized_sha256": {
+        "training.faa": "ad25571e5f884d07ba55bd52e02ac1835e04a4162ff100492555bea944499641",
+        "queries.faa": "db4c28e76be01cc685270c4443acd0b704ddcc8dc6058a5c3ed817f7a7847dc9",
+        "protein-map.json": "ab7e1e96094b3eb0d94f6d569d118a14b297e44034fbb7900da3240fb1ad16d1"
+      },
+      "output": "data/processed/secondary-features-v3-host1-phage1-host.json",
+      "log": "data/raw/genophi-external-validation/secondary-feature-batch-v3/host1-phage1-host.log"
+    },
+    {
+      "id": "host1-phage1-phage",
+      "block_id": "host1-phage1",
+      "axis": "phage",
+      "argv": [
+        "uv",
+        "run",
+        "--project",
+        "software/tipcraft",
+        "python",
+        "scripts/prepare-secondary-features-v3.py",
+        "--policy",
+        "software/tipcraft/benchmarks/receptor-resource/secondary-feature-policy-v3.json",
+        "--panel",
+        "data/processed/secondary-reference-panel.json",
+        "--expected-panel-sha256",
+        "2dddb92bd5022d3cd38f3a99a6d8a47537378d713b0410311ef50ff224945d73",
+        "--block-id",
+        "host1-phage1",
+        "--axis",
+        "phage",
+        "--workdir",
+        "data/raw/genophi-external-validation/secondary-features-v3/host1-phage1/phage",
+        "--output",
+        "data/processed/secondary-features-v3-host1-phage1-phage.json"
+      ],
+      "pre_execution_plan": {
+        "path": "data/raw/genophi-external-validation/secondary-feature-batch-v3/plans/host1-phage1-phage.json",
+        "sha256": "15ec5039b1ede7559bdf9ce75271203f446d24c8496e142d481f760970b1e066"
+      },
+      "normalized_sha256": {
+        "training.faa": "f09a2b364938217d08c9af31fa413a426f7b28c75e0634ed7a2029726c1594d3",
+        "queries.faa": "7232724594c5f872976f4f37fac4598eef15f6654afd744bd41d9611ced083d6",
+        "protein-map.json": "ddea7f9743963a0fede242fdbc4fe9a2b40cad597d754012ecf5d83389fb6e86"
+      },
+      "output": "data/processed/secondary-features-v3-host1-phage1-phage.json",
+      "log": "data/raw/genophi-external-validation/secondary-feature-batch-v3/host1-phage1-phage.log"
+    },
+    {
+      "id": "host1-phage2-host",
+      "block_id": "host1-phage2",
+      "axis": "host",
+      "argv": [
+        "uv",
+        "run",
+        "--project",
+        "software/tipcraft",
+        "python",
+        "scripts/prepare-secondary-features-v3.py",
+        "--policy",
+        "software/tipcraft/benchmarks/receptor-resource/secondary-feature-policy-v3.json",
+        "--panel",
+        "data/processed/secondary-reference-panel.json",
+        "--expected-panel-sha256",
+        "2dddb92bd5022d3cd38f3a99a6d8a47537378d713b0410311ef50ff224945d73",
+        "--block-id",
+        "host1-phage2",
+        "--axis",
+        "host",
+        "--workdir",
+        "data/raw/genophi-external-validation/secondary-features-v3/host1-phage2/host",
+        "--output",
+        "data/processed/secondary-features-v3-host1-phage2-host.json"
+      ],
+      "pre_execution_plan": {
+        "path": "data/raw/genophi-external-validation/secondary-feature-batch-v3/plans/host1-phage2-host.json",
+        "sha256": "4d527ee2898405464ca3c2159a24f64c031b7f33c53d173f4cd575ec7a6b9c60"
+      },
+      "normalized_sha256": {
+        "training.faa": "ad25571e5f884d07ba55bd52e02ac1835e04a4162ff100492555bea944499641",
+        "queries.faa": "db4c28e76be01cc685270c4443acd0b704ddcc8dc6058a5c3ed817f7a7847dc9",
+        "protein-map.json": "ab7e1e96094b3eb0d94f6d569d118a14b297e44034fbb7900da3240fb1ad16d1"
+      },
+      "output": "data/processed/secondary-features-v3-host1-phage2-host.json",
+      "log": "data/raw/genophi-external-validation/secondary-feature-batch-v3/host1-phage2-host.log"
+    },
+    {
+      "id": "host1-phage2-phage",
+      "block_id": "host1-phage2",
+      "axis": "phage",
+      "argv": [
+        "uv",
+        "run",
+        "--project",
+        "software/tipcraft",
+        "python",
+        "scripts/prepare-secondary-features-v3.py",
+        "--policy",
+        "software/tipcraft/benchmarks/receptor-resource/secondary-feature-policy-v3.json",
+        "--panel",
+        "data/processed/secondary-reference-panel.json",
+        "--expected-panel-sha256",
+        "2dddb92bd5022d3cd38f3a99a6d8a47537378d713b0410311ef50ff224945d73",
+        "--block-id",
+        "host1-phage2",
+        "--axis",
+        "phage",
+        "--workdir",
+        "data/raw/genophi-external-validation/secondary-features-v3/host1-phage2/phage",
+        "--output",
+        "data/processed/secondary-features-v3-host1-phage2-phage.json"
+      ],
+      "pre_execution_plan": {
+        "path": "data/raw/genophi-external-validation/secondary-feature-batch-v3/plans/host1-phage2-phage.json",
+        "sha256": "bded138752a76d465bfb90ddb96fca76d393f755785f7e8f89f3e363ecc7c9c4"
+      },
+      "normalized_sha256": {
+        "training.faa": "27b43dc9c190b67d2157b74819b7ef873c077ea1c7f5dbb1e99d38a43efa3cd6",
+        "queries.faa": "0ae30ac34ea2b1a1882e9f9675b6ab0e3a4a0dd89ebbede70352d01dde6b2403",
+        "protein-map.json": "ae73032c6388f6bc5f7b53920bfa5e45cad13a4b797dad5308c1d2b5322080a1"
+      },
+      "output": "data/processed/secondary-features-v3-host1-phage2-phage.json",
+      "log": "data/raw/genophi-external-validation/secondary-feature-batch-v3/host1-phage2-phage.log"
+    },
+    {
+      "id": "host2-phage0-host",
+      "block_id": "host2-phage0",
+      "axis": "host",
+      "argv": [
+        "uv",
+        "run",
+        "--project",
+        "software/tipcraft",
+        "python",
+        "scripts/prepare-secondary-features-v3.py",
+        "--policy",
+        "software/tipcraft/benchmarks/receptor-resource/secondary-feature-policy-v3.json",
+        "--panel",
+        "data/processed/secondary-reference-panel.json",
+        "--expected-panel-sha256",
+        "2dddb92bd5022d3cd38f3a99a6d8a47537378d713b0410311ef50ff224945d73",
+        "--block-id",
+        "host2-phage0",
+        "--axis",
+        "host",
+        "--workdir",
+        "data/raw/genophi-external-validation/secondary-features-v3/host2-phage0/host",
+        "--output",
+        "data/processed/secondary-features-v3-host2-phage0-host.json"
+      ],
+      "pre_execution_plan": {
+        "path": "data/raw/genophi-external-validation/secondary-feature-batch-v3/plans/host2-phage0-host.json",
+        "sha256": "c202eebe8f515b89816eb08c155ac3f89c41f9fe70b3cba0d62d53a7a201a9ee"
+      },
+      "normalized_sha256": {
+        "training.faa": "c70bf99740d10a24739131ac4e3b780c6ea3c28a566c05b89762e4903928440c",
+        "queries.faa": "e5f06b049b5ced803d96e0b64090ba16ee581762997c19c7604381ccc056b6b9",
+        "protein-map.json": "b0992fa2e4555cd0f334cfc631106a26a4815b723c42a35635cf62d50afca7db"
+      },
+      "output": "data/processed/secondary-features-v3-host2-phage0-host.json",
+      "log": "data/raw/genophi-external-validation/secondary-feature-batch-v3/host2-phage0-host.log"
+    },
+    {
+      "id": "host2-phage0-phage",
+      "block_id": "host2-phage0",
+      "axis": "phage",
+      "argv": [
+        "uv",
+        "run",
+        "--project",
+        "software/tipcraft",
+        "python",
+        "scripts/prepare-secondary-features-v3.py",
+        "--policy",
+        "software/tipcraft/benchmarks/receptor-resource/secondary-feature-policy-v3.json",
+        "--panel",
+        "data/processed/secondary-reference-panel.json",
+        "--expected-panel-sha256",
+        "2dddb92bd5022d3cd38f3a99a6d8a47537378d713b0410311ef50ff224945d73",
+        "--block-id",
+        "host2-phage0",
+        "--axis",
+        "phage",
+        "--workdir",
+        "data/raw/genophi-external-validation/secondary-features-v3/host2-phage0/phage",
+        "--output",
+        "data/processed/secondary-features-v3-host2-phage0-phage.json"
+      ],
+      "pre_execution_plan": {
+        "path": "data/raw/genophi-external-validation/secondary-feature-batch-v3/plans/host2-phage0-phage.json",
+        "sha256": "67d7a168a4487f61e34a4b84bbe57e0234a4b5f392d80e67d88095dd881c3310"
+      },
+      "normalized_sha256": {
+        "training.faa": "8ae3897fe6409616eb9b064ac9d31d6fb691c5b19579994f1a4ac4d593ef0b75",
+        "queries.faa": "69342c515102b0fe4828ca196d02e92f362d7055dabb3d4de1d23adc41d2dd3b",
+        "protein-map.json": "17cbf4ea3c4ca4c1e87e04cbaae5d9665a17c2a4c63873d09088ecb5417855de"
+      },
+      "output": "data/processed/secondary-features-v3-host2-phage0-phage.json",
+      "log": "data/raw/genophi-external-validation/secondary-feature-batch-v3/host2-phage0-phage.log"
+    },
+    {
+      "id": "host2-phage1-host",
+      "block_id": "host2-phage1",
+      "axis": "host",
+      "argv": [
+        "uv",
+        "run",
+        "--project",
+        "software/tipcraft",
+        "python",
+        "scripts/prepare-secondary-features-v3.py",
+        "--policy",
+        "software/tipcraft/benchmarks/receptor-resource/secondary-feature-policy-v3.json",
+        "--panel",
+        "data/processed/secondary-reference-panel.json",
+        "--expected-panel-sha256",
+        "2dddb92bd5022d3cd38f3a99a6d8a47537378d713b0410311ef50ff224945d73",
+        "--block-id",
+        "host2-phage1",
+        "--axis",
+        "host",
+        "--workdir",
+        "data/raw/genophi-external-validation/secondary-features-v3/host2-phage1/host",
+        "--output",
+        "data/processed/secondary-features-v3-host2-phage1-host.json"
+      ],
+      "pre_execution_plan": {
+        "path": "data/raw/genophi-external-validation/secondary-feature-batch-v3/plans/host2-phage1-host.json",
+        "sha256": "65d0c716da0eec93b5ef9205cb1692ff0e673a7eb1e4648c09dfe937d451f903"
+      },
+      "normalized_sha256": {
+        "training.faa": "c70bf99740d10a24739131ac4e3b780c6ea3c28a566c05b89762e4903928440c",
+        "queries.faa": "e5f06b049b5ced803d96e0b64090ba16ee581762997c19c7604381ccc056b6b9",
+        "protein-map.json": "b0992fa2e4555cd0f334cfc631106a26a4815b723c42a35635cf62d50afca7db"
+      },
+      "output": "data/processed/secondary-features-v3-host2-phage1-host.json",
+      "log": "data/raw/genophi-external-validation/secondary-feature-batch-v3/host2-phage1-host.log"
+    },
+    {
+      "id": "host2-phage1-phage",
+      "block_id": "host2-phage1",
+      "axis": "phage",
+      "argv": [
+        "uv",
+        "run",
+        "--project",
+        "software/tipcraft",
+        "python",
+        "scripts/prepare-secondary-features-v3.py",
+        "--policy",
+        "software/tipcraft/benchmarks/receptor-resource/secondary-feature-policy-v3.json",
+        "--panel",
+        "data/processed/secondary-reference-panel.json",
+        "--expected-panel-sha256",
+        "2dddb92bd5022d3cd38f3a99a6d8a47537378d713b0410311ef50ff224945d73",
+        "--block-id",
+        "host2-phage1",
+        "--axis",
+        "phage",
+        "--workdir",
+        "data/raw/genophi-external-validation/secondary-features-v3/host2-phage1/phage",
+        "--output",
+        "data/processed/secondary-features-v3-host2-phage1-phage.json"
+      ],
+      "pre_execution_plan": {
+        "path": "data/raw/genophi-external-validation/secondary-feature-batch-v3/plans/host2-phage1-phage.json",
+        "sha256": "9d25a3b666ac45364875f5a54649a3f4d5570b34e545f6756685cebbc6c55d66"
+      },
+      "normalized_sha256": {
+        "training.faa": "f09a2b364938217d08c9af31fa413a426f7b28c75e0634ed7a2029726c1594d3",
+        "queries.faa": "7232724594c5f872976f4f37fac4598eef15f6654afd744bd41d9611ced083d6",
+        "protein-map.json": "ddea7f9743963a0fede242fdbc4fe9a2b40cad597d754012ecf5d83389fb6e86"
+      },
+      "output": "data/processed/secondary-features-v3-host2-phage1-phage.json",
+      "log": "data/raw/genophi-external-validation/secondary-feature-batch-v3/host2-phage1-phage.log"
+    },
+    {
+      "id": "host2-phage2-host",
+      "block_id": "host2-phage2",
+      "axis": "host",
+      "argv": [
+        "uv",
+        "run",
+        "--project",
+        "software/tipcraft",
+        "python",
+        "scripts/prepare-secondary-features-v3.py",
+        "--policy",
+        "software/tipcraft/benchmarks/receptor-resource/secondary-feature-policy-v3.json",
+        "--panel",
+        "data/processed/secondary-reference-panel.json",
+        "--expected-panel-sha256",
+        "2dddb92bd5022d3cd38f3a99a6d8a47537378d713b0410311ef50ff224945d73",
+        "--block-id",
+        "host2-phage2",
+        "--axis",
+        "host",
+        "--workdir",
+        "data/raw/genophi-external-validation/secondary-features-v3/host2-phage2/host",
+        "--output",
+        "data/processed/secondary-features-v3-host2-phage2-host.json"
+      ],
+      "pre_execution_plan": {
+        "path": "data/raw/genophi-external-validation/secondary-feature-batch-v3/plans/host2-phage2-host.json",
+        "sha256": "67fa27cf824c962ec35dc8b9f0677de948d38149db64c570389286bbcb696c12"
+      },
+      "normalized_sha256": {
+        "training.faa": "c70bf99740d10a24739131ac4e3b780c6ea3c28a566c05b89762e4903928440c",
+        "queries.faa": "e5f06b049b5ced803d96e0b64090ba16ee581762997c19c7604381ccc056b6b9",
+        "protein-map.json": "b0992fa2e4555cd0f334cfc631106a26a4815b723c42a35635cf62d50afca7db"
+      },
+      "output": "data/processed/secondary-features-v3-host2-phage2-host.json",
+      "log": "data/raw/genophi-external-validation/secondary-feature-batch-v3/host2-phage2-host.log"
+    },
+    {
+      "id": "host2-phage2-phage",
+      "block_id": "host2-phage2",
+      "axis": "phage",
+      "argv": [
+        "uv",
+        "run",
+        "--project",
+        "software/tipcraft",
+        "python",
+        "scripts/prepare-secondary-features-v3.py",
+        "--policy",
+        "software/tipcraft/benchmarks/receptor-resource/secondary-feature-policy-v3.json",
+        "--panel",
+        "data/processed/secondary-reference-panel.json",
+        "--expected-panel-sha256",
+        "2dddb92bd5022d3cd38f3a99a6d8a47537378d713b0410311ef50ff224945d73",
+        "--block-id",
+        "host2-phage2",
+        "--axis",
+        "phage",
+        "--workdir",
+        "data/raw/genophi-external-validation/secondary-features-v3/host2-phage2/phage",
+        "--output",
+        "data/processed/secondary-features-v3-host2-phage2-phage.json"
+      ],
+      "pre_execution_plan": {
+        "path": "data/raw/genophi-external-validation/secondary-feature-batch-v3/plans/host2-phage2-phage.json",
+        "sha256": "56f5da045693426aea745e525e721df2a4b6da1d99e3f651ac5a99c7e334f2ba"
+      },
+      "normalized_sha256": {
+        "training.faa": "27b43dc9c190b67d2157b74819b7ef873c077ea1c7f5dbb1e99d38a43efa3cd6",
+        "queries.faa": "0ae30ac34ea2b1a1882e9f9675b6ab0e3a4a0dd89ebbede70352d01dde6b2403",
+        "protein-map.json": "ae73032c6388f6bc5f7b53920bfa5e45cad13a4b797dad5308c1d2b5322080a1"
+      },
+      "output": "data/processed/secondary-features-v3-host2-phage2-phage.json",
+      "log": "data/raw/genophi-external-validation/secondary-feature-batch-v3/host2-phage2-phage.log"
+    }
+  ],
+  "job_count": 18,
+  "execution_stages": [
+    {
+      "stage": "rebuilt_vocabulary_validation",
+      "jobs": [
+        "host1-phage0-host"
+      ],
+      "workers": 1,
+      "reason": "Run the previously failed partition first for technical validation, not phenotype-based selection."
+    },
+    {
+      "stage": "remaining_fixed_tasks",
+      "jobs": [
+        "host0-phage0-host",
+        "host0-phage0-phage",
+        "host0-phage1-host",
+        "host0-phage1-phage",
+        "host0-phage2-host",
+        "host0-phage2-phage",
+        "host1-phage0-phage",
+        "host1-phage1-host",
+        "host1-phage1-phage",
+        "host1-phage2-host",
+        "host1-phage2-phage",
+        "host2-phage0-host",
+        "host2-phage0-phage",
+        "host2-phage1-host",
+        "host2-phage1-phage",
+        "host2-phage2-host",
+        "host2-phage2-phage"
+      ],
+      "maximum_workers": 2,
+      "prerequisite": "First task completes with mapping-outcome/vector control and nonempty axis vocabulary."
+    }
+  ],
+  "individual_task_workers": 1,
+  "threads_per_mmseqs_command": 4,
+  "hardware_snapshot": {
+    "logical_cpus": 14,
+    "memory_bytes": 38654705664
+  },
+  "parallel_failure_behavior": "Stop scheduling new tasks after any failure; let already-running tasks finish and preserve their outcomes. No automatic retry. No partial-coverage model evaluation.",
+  "automatic_retry": false,
+  "biological_model_fitted_or_scored": false,
+  "before_first_biological_fit": "All18 actual completed feature reports and the separate nine-block fit/evaluation manifest remain required.",
+  "v1_v2_failures_or_partial_outputs_reused_as_passing_v3": false
+}
