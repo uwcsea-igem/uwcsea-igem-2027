@@ -1,5 +1,7 @@
 # Complete common-context alignment evidence
 
+For the subsequent completed numerical comparison, admitted panel and feature launch, see [Authenticated grouped source panel and feature launch](40-secondary-panel-and-feature-launch.md).
+
 Updated 2026-11-08. **The augmented reference corpus now has a complete, validated common-database nucleotide alignment artifact.** All 273 record queries, all declared alignment-row counts and all record self-controls pass. This removes the missing-search-artifact prerequisite for the original-R-checked grouping calculation; it does not yet establish accepted groups, source admission or prediction performance.
 
 The [official accession audit](35-basel-phage-accession-correspondence.md) found three official reference genotypes that differ from the author cache. The search retains all 263 previous genome containers as bridges and adds those three official genotypes as distinct nodes. Multi-record containers remain separate DNA records, giving 266 containers and 273 queries. Every query searched the same complete database under the original fixed parameters. No different database contexts are mixed, and no reference DNA is concatenated, repaired or designed.
