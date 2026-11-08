@@ -61,3 +61,16 @@ The `host0-phage1` [host](../data/processed/secondary-features-v2-host0-phage1-h
 The two phage query genomes with zero vectors remain in the fixed panel. Zero means that no retained training-derived feature is present under this procedure; it does not mean an empty proteome, absence of infection or failure of the copied-proteome control. Their feature representation carries no distinguishing phage signal in this block. They are neither removed nor replaced, and their eventual predictions and limitations must be reported. No model score or accuracy result exists at this checkpoint.
 
 Four of 18 feature tasks are now accepted. The batch has started `host0-phage2-host`; complete feature readiness and the actual nine-block fitting/evaluation manifest still precede biological model fitting.
+
+## Third production checkpoint
+
+The `host0-phage2` [host](../data/processed/secondary-features-v2-host0-phage2-host.json) and [phage](../data/processed/secondary-features-v2-host0-phage2-phage.json) tasks pass their copied-proteome family/vector controls. All eight commands per task have observed zero exits. Exact executed commands and normalized-input hashes match the pre-execution plans, and all listed output artifacts pass SHA256 verification.
+
+| Axis | Training genomes | Query genomes | Consolidated features | Copied-control proteins | Zero-vector genomes |
+| --- | ---: | ---: | ---: | ---: | --- |
+| Host | 15 | 8 | 691 | 4,704 | None |
+| Phage | 35 | 15 | 149 | 77 | None |
+
+The three independently executed host-axis tasks for host fold 0 have exactly equal feature names and genome vectors, as expected from their identical host training/query rosters and unchanged procedure. This consistency is a technical check, not an independent biological replicate. The zero-vector Bas67/Bas68 queries recorded in `host0-phage1` remain part of that block; absence of zero vectors in a different block does not resolve their representation limitation.
+
+Six of 18 tasks are accepted. The batch has started `host1-phage0-host`. No source interaction model has been fitted, no partial-block accuracy is reported, and original Ando new-method coverage remains 0/10.
