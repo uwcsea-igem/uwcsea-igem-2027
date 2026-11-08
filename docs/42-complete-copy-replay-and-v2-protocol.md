@@ -34,7 +34,7 @@ The [18-task v2 plan](../data/processed/secondary-feature-execution-plan-v2.json
 
 A separately fixed [conditional-order diagnostic](../software/tipcraft/benchmarks/receptor-resource/conditional-ordering-diagnostic-policy.json) adds interpretation without changing the primary screen. A paired model can outperform a separately fitted host-only comparator while retaining a fixed host order, for example through additive host and phage scores or different selected host features. The [label-free diagnostic kernel](../software/tipcraft/src/tipcraft/conditional_ordering.py) therefore records selected host/phage feature counts and matched host-pair score differences, order states and reversals within each authenticated fitted model. It uses neither labels nor missing-cell imputation, applies no new significance/admission threshold, and never pools margins across models. This avoids treating a comparator improvement alone as proof of conditional host ordering or receptor biology.
 
-The package suite passes **373 tests** with Biopython 1.86, including ten synthetic tests for that diagnostic. The previously recorded four synthetic CatBoost integration tests remain the model-execution evidence; no biological interaction model has been fitted. Actual v2 production feature outcomes, source ranking performance and native scores remain pending. Original Ando new-method coverage is **0/10**, WIsH's measured failure is retained, and the four exact exchange-construct cases still abstain. No binding, assembly or sequence-design capability is established.
+The package suite passes **373 tests** with Biopython 1.86, including ten synthetic tests for that diagnostic. The previously recorded four synthetic CatBoost integration tests remain the model-execution evidence; no biological interaction model has been fitted. Complete v2 production-batch outcomes, source ranking performance and native scores remain pending. Original Ando new-method coverage is **0/10**, WIsH's measured failure is retained, and the four exact exchange-construct cases still abstain. No binding, assembly or sequence-design capability is established.
 
 ## First production checkpoint
 
@@ -48,3 +48,16 @@ The first complete v2 block now has passing [host-axis](../data/processed/second
 All 69,656 host training proteins have self-search hits. Neither report has a zero-vector genome. These are completed feature/mapping results, not host-specificity scores or a requirement that every named host have a distinct vector. A repeated feature count does not imply that the v2 feature definitions or vectors equal the failed v1 result.
 
 Two of 18 feature tasks are accepted at this checkpoint; the fixed batch has started `host0-phage1-host`. Global fitting readiness is not asserted from this first block. The other feature reports and the complete fitting/evaluation manifest still precede the first biological model fit. No partial-block prediction metric is reported and no v1 failed output is reused as passing v2 evidence.
+
+## Second production checkpoint
+
+The `host0-phage1` [host](../data/processed/secondary-features-v2-host0-phage1-host.json) and [phage](../data/processed/secondary-features-v2-host0-phage1-phage.json) tasks also complete successfully. All eight observed command exits per task are zero. Actual command arguments and normalized-input hashes match the pre-execution plans; the normalized inputs and every listed output artifact pass SHA256 verification.
+
+| Axis | Training genomes | Query genomes | Consolidated features | Copied-control proteins | Control family/vector equality | Zero-vector genomes |
+| --- | ---: | ---: | ---: | ---: | --- | --- |
+| Host | 15 | 8 | 691 | 4,704 | Pass | None |
+| Phage | 33 | 17 | 143 | 74 | Pass | Bas67, Bas68 |
+
+The two phage query genomes with zero vectors remain in the fixed panel. Zero means that no retained training-derived feature is present under this procedure; it does not mean an empty proteome, absence of infection or failure of the copied-proteome control. Their feature representation carries no distinguishing phage signal in this block. They are neither removed nor replaced, and their eventual predictions and limitations must be reported. No model score or accuracy result exists at this checkpoint.
+
+Four of 18 feature tasks are now accepted. The batch has started `host0-phage2-host`; complete feature readiness and the actual nine-block fitting/evaluation manifest still precede biological model fitting.
